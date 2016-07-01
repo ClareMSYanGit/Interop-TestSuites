@@ -1,0 +1,808 @@
+> ![](media/image1.png){width="4.052910104986877in"
+> height="1.3855741469816274in"}
+
+Exchange MAPI Test Suite Deployment Guide
+
+<span id="_Toc404164586" class="anchor"><span id="_Toc397328551" class="anchor"></span></span>Overview
+======================================================================================================
+
+The Exchange MAPI Protocol Test Suites are implemented as synthetic
+clients running against a server-side implementation of a given Exchange
+protocol. They are designed in a client-to-server relationship and were
+originally developed for the in-house testing of the Microsoft Open
+Specifications. Test Suites have been used extensively in Plugfests and
+Interoperability Labs to test partner implementations.
+
+The Exchange MAPI Test Suite Deployment Guide introduces the hardware
+and software requirements of the test suite client, and the requirements
+of the system under test (SUT) if the test suites run against Exchange
+Server. The guide also introduces how to deploy, configure and run the
+test suites, and view test suite reports.
+
+Prerequisites
+=============
+
+This section describes the hardware and software requirements for the
+test suites. In an Exchange Server environment, the test suite
+deployment takes place on both the client and server side. The following
+information will help test suite users to plan their deployment.
+
+<span id="_Toc308770202" class="anchor"><span id="_Toc397328552" class="anchor"><span id="_Toc404164588" class="anchor"></span></span></span>Hardware requirements
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+### <span id="_Toc397328553" class="anchor"><span id="_Toc404164589" class="anchor"><span id="_Toc308770203" class="anchor"></span></span></span>System under test
+
+The SUT is the server side of the test suite environment. Exchange
+Server(s) and Active Directory have defined system requirements which
+should be taken into account during deployment. The Exchange MAPI
+Protocol test suites do not have any additional SUT resource
+requirements.
+
+### <span id="_Toc397328554" class="anchor"><span id="_Toc404164590" class="anchor"></span></span>Test suite client
+
+The test suite client is the client side of the test suite environment.
+The following table shows the minimum resource requirements for the test
+suite client.
+
+Test suite client resource requirements
+
+  Component   Test suite client minimum requirement
+  ----------- ---------------------------------------
+  RAM         2GB
+  Hard Disk   500M of free space
+  Processor   &gt;= 1GHz
+
+<span id="_Toc397328555" class="anchor"><span id="_Toc404164591" class="anchor"></span></span>Software requirements
+-------------------------------------------------------------------------------------------------------------------
+
+### <span id="_Toc308770208" class="anchor"><span id="_Toc397328556" class="anchor"><span id="_Toc404164592" class="anchor"><span id="_Toc308770207" class="anchor"></span></span></span></span>System under test 
+
+This section is only relevant when running the test suites against the
+following versions of Exchange Server. Some test suites (MS-OXCFOLD,
+MS-OXCFXICS, MS-OXCROPS, and MS-OXCSTOR) support two SUTs depending on
+the protocol requirements:
+
+-   Microsoft Exchange Server 2007 Service Pack 3 (SP3)
+
+-   Microsoft Exchange Server 2010 Service Pack 3 (SP3)
+
+-   Microsoft Exchange Server 2013 Service Pack 1 (SP1)
+
+The following table describes the necessary server roles required for a
+test suite deployment with a Microsoft implementation. An Exchange
+Server installed on a domain controller (DC) is not recommended. For the
+MS-OXNSPI test suite, the DC and SUT should be installed on two separate
+servers.
+
+Required SUT roles
+
+  Role                                          Description
+  --------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Active Directory Domain Controller (DC)       Active Directory Domain Controller (AD DC) is required for Exchange. Key Distribution Center (KDC) is a service that runs on the AD DC and is required when Kerberos is used as the authentication method in the test suite.
+  Exchange Server \#1 (SUT1)                    The first Exchange server in the topology.
+  Exchange Server \#2 (SUT2, Redirect Server)   Installation of this server is optional. If this server is not present, then the dependent test cases will not be run. The presence of SUT2 will enable certain multi-server scenarios and other test cases that pertain to a second SUT.
+
+<span id="_SUT_resource_requirements" class="anchor"></span>The
+following diagram is an example of what a typical Exchange test suite
+environment may look like. This example uses an IPv4, but IPv6 is also
+supported by the test suites.
+
+### <span id="_Toc397328557" class="anchor"><span id="_Toc404164593" class="anchor"></span></span>Test suite client
+
+This section describes the prerequisite software for installing the
+Exchange MAPI Protocol test suites on the test suite client.<span
+id="_Pre-requisites/Dependencies" class="anchor"></span> The following
+table outlines the software dependencies for the test suite client.
+
+Test suite client software dependencies
+
+  --------------------------------------------------------------------------------
+  **Operating systems**   Windows 7 x64 Service Pack 1 and above
+                          
+                          Windows 8 x64 and above
+                          
+                          Windows 2008 R2 x64 Service Pack 1 and above
+  ----------------------- --------------------------------------------------------
+  **Software**            Microsoft Visual Studio 2013 Professional
+                          
+                          Microsoft Protocol Test Framework 1.0.2220.0 and above
+                          
+                          Microsoft Spec Explorer 3.6.14230.01 and above
+  --------------------------------------------------------------------------------
+
+<span id="_Toc397328558" class="anchor"><span id="_Toc404164594" class="anchor"></span></span>Deploying the test suites
+=======================================================================================================================
+
+<span id="_Installation_instructions_2" class="anchor"></span>This
+section describes the deployment of the Exchange MAPI Protocol test
+suites on the test suite client and the SUT. The Exchange MAPI Protocol
+test suites are packaged in a .zip file which is available on [Microsoft
+Connect](http://go.microsoft.com/fwlink/?LinkId=516921). Once you
+download the test suites, you need to perform the following steps in
+order to be able to successfully configure the test suites.
+
+1.  Extract the **Exchange MAPI Protocol Test Suites** folder to a
+    directory of your choice on the test suite client.
+
+2.  Copy the **SUT** and **Common** folders under **…\\Exchange MAPI
+    Protocol Test Suites\\Setup** to a directory of your choice on
+    the SUT. The SUT configuration scripts are the only requirement for
+    the SUT. The scripts facilitate the SUT configuration process and
+    are contained within the
+    **ExchangeMAPIProtocolTestSuites.zip** file.
+
+**Note**   If your computer blocks scripts downloaded from the Internet
+for security reasons, you will need to follow these steps to unblock
+PowerShell scripts.
+
+  --------------------------------------------------------
+  1.  Right-click xxxx.ps1 and select **Properties**.   
+                                                        
+                                                        
+  ----------------------------------------------------- --
+  1.  Click **Unblock** and then click **OK**.          
+                                                        
+                                                        
+  --------------------------------------------------------
+
+<span id="_Test_suite_client" class="anchor"><span
+id="_Test_suite_directories" class="anchor"><span
+id="_Test_suite_client_1" class="anchor"><span
+id="_Installation_Instructions_1" class="anchor"><span
+id="_Installation_Instructions" class="anchor"><span id="_Toc387851232"
+class="anchor"><span id="_Toc308770209" class="anchor"><span
+id="_Toc397328559"
+class="anchor"></span></span></span></span></span></span></span></span>
+
+Test suite directories
+======================
+
+In this section you will find a list of the folder structures that are
+contained within the **ExchangeMAPIProtocolTestSuites.zip** file.
+
+ExchangeMAPIProtocolTestSuites.zip file contents
+
+  Directory/file                                       Description
+  ---------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  EULA.rtf                                             The End-User License Agreement
+  ReadMe.txt                                           A file that contains information about the deployment guide and prerequisite software.
+  Exchange MAPI Protocol Test Suites                   
+  - Docs                                               A directory that contains documents of all protocol test suites.
+  - ExchangeMAPITestSuiteDeploymentGuide.docx          A file relevant to the protocol test suite deployment guidance
+  - ExchangeMAPITestSuiteSpecification.docx            A file that contains test suites design, test suites architecture, adapter and test suites details.
+  + MS-XXXX                                            MS-XXXX Help documentation
+  - \[MS-XXXX\].pdf                                    The technical specification for the protocol.
+  - MS-XXXX \_SUTControlAdapter.chm                    Contains information about the SUT control adapter class library such as declaration syntaxes and their description.
+  - MS-XXXX \_RequirementSpecification.xlsx            A spreadsheet that outlines all requirements associated with the technical specification.
+  - Setup                                              A directory that contains configuration scripts.
+  - Test Suite Client                                  A directory that contains the configuration script to configure the test suite client.
+  - ExchangeClientConfiguration.cmd                    A command file that runs the ExchangeClientConfiguration.ps1 file to configure the properties for the protocol test suites.
+  - ExchangeClientConfiguration.ps1                    A configuration script that will be triggered by the ExchangeClientConfiguration.cmd.
+  - SUT                                                A folder that contains the configuration script to configure the Exchange Server
+  - ExchangeSUTConfiguration.cmd                       A command file that runs the ExchangeSUTConfiguration.ps1 file to create resources and configure settings on the first SUT.
+  - ExchangeSecondSUTConfiguration.cmd                 A command file that runs the ExchangeSecondSUTConfiguration.ps1 file to create resources and configure settings on the second SUT.
+  - ExchangeSUTConfiguration.ps1                       A configuration script that will be triggered by ExchangeSUTConfiguration.cmd.
+  - ExchangeSecondSUTConfiguration.ps1                 A configuration script that will be triggered by ExchangeSecondSUTConfiguration.cmd.
+  - Common                                             A folder that contains common configuration scripts and resources.
+  - CommonConfiguration.ps1                            A library that contains common functions for configuring the Microsoft server SUT and test suite client.
+  - ExchangeCommonConfiguration.ps1                    A library that contains common functions for configuring Exchange Server.
+  - ExchangeTestSuite.config                           The configuration file to store all configuration resources.
+  - Source                                             A folder with Microsoft Visual Studio solutions that contain source code for the test suites.
+  - Common                                             A folder with Microsoft Visual Studio projects that contains source code that are common to the test suites.
+  - Common                                             A folder that contains common methods or properties used by the test suites
+  - ExchangeCommonConfiguration.deployment.ptfconfig   The common configuration file.
+  + OXCRPCStub                                         RPC transport with unmanaged code.
+  - ExchangeMAPIProtocolTestSuites.sln                 A Microsoft Visual Studio solution that contains projects of the test suites source code.
+  - ExchangeMAPIProtocolTestSuites.runsettings         A configuration file used for unit test.
+  - ExchangeMAPIProtocolTestSuites.testsettings        A configuration file used for running test cases.
+  - MS-XXXX                                            MS-XXXX test suite code directory.
+  - MS-XXXX.sln                                        A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.
+  - MS-XXXX.runsettings                                A configuration file used for MS-XXXX unit test.
+  - MS-XXXX.testsettings                               A configuration file used for MS-XXXX running test cases.
+  + Adapter                                            Adapter test suite code.
+  + TestSuite                                          Test suite code.
+  - Scripts                                            Exchange MAPI test suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.
+  - RunAllExchangeMAPITestCases.cmd                    A script that can be used to run all test cases in the whole package.
+  - MS-XXXX                                            A folder containing scripts that belong to the MS-XXXX test suite.
+  - RunAllMSXXXXTestCases.cmd                          A script that can be used to run all test cases of MS-XXXX.
+  - RunMSXXXX\_SXX\_TCXX\_TestCaseName.cmd             A script that can be used to run a single test case of MS-XXXX.
+
+Configuring the test suites
+===========================
+
+This section provides the necessary guidance to configure the Exchange
+MAPI Protocol test suites on the SUT and the test suite client. The
+configuration should be done in this order: configure the SUT1,
+configure the SUT2 (optional), and then configure the test suite client.
+
+For the configuration script, the exit code definition is as follows:
+
+1.  A normal termination will set the exit code to 0.
+
+2.  An uncaught THROW will set the exit code to 1.
+
+3.  Script execution warning and issues will set the exit code to 2.
+
+4.  Exit code is set to the actual error code for other issues.
+
+<span id="_Toc397328560" class="anchor"><span id="_Toc404164597" class="anchor"></span></span>Configuring the SUT
+-----------------------------------------------------------------------------------------------------------------
+
+You can configure the SUT using automated scripts, as described in
+sections [5.1.2](#_Configuring_the_SUT1_2) and
+[5.1.4](#_Configuring_the_SUT2_1); or configure the SUT manually, as
+described in sections [5.1.3](#_Configuring_the_SUT1) and
+[5.1.5](#_Configuring_test_suite).
+
+**Note**   The scripts should be run by a user who has domain
+administrator rights with a mailbox on the Exchange Server.
+
+### <span id="_Configuring_the_SUT1_1" class="anchor"><span id="_Toc397328561" class="anchor"><span id="_Toc404164598" class="anchor"></span></span></span>SUT resource requirements 
+
+Each test suite contained within the Exchange MAPI Protocol test suites
+package may require a varying level of resources on Exchange Server. The
+following table outlines these resources for each test suite. The SUT
+configuration scripts will automatically create all the required
+resources for the Microsoft server implementation. To configure the SUT
+manually, see sections [5.1.3](#_Configuring_the_SUT1) and
+[5.1.5](#_Configuring_test_suite).
+
+The client configuration script follows the naming convention shown in
+the following table. If a change to the resource name is required, the
+corresponding change to the resource name defined in the
+ExchangeTestSuite.config is required.
+
+Exchange server resources
+
+  Test suite       Resource type                             Resource name                              Note
+  ---------------- ----------------------------------------- ------------------------------------------ --------------------------------------------------------------------------------------------------------------------
+  All              Public Folder Database                    PublicFolderDatabase                       A public folder database is required on Microsoft Exchange Server 2007 SP3 and Microsoft Exchange Server 2010 SP3.
+                   Redirect Server Public Folder Database    PublicFolderDatabase2                      A redirect server is optional.
+                   Public Folder Mailbox                     PublicFolderMailbox\_&lt;Server1Name&gt;   A public folder mailbox is required on Microsoft Exchange Server 2013 SP1.
+                   Redirect Server\* Public Folder Mailbox   PublicFolderMailbox\_&lt;Server2Name&gt;   
+  MS-OXCFOLD       Mailbox                                   MSOXCFOLD\_TestUser01                      The mailbox name should be below 20 characters.
+                   Mailbox                                   MSOXCFOLD\_TestUser02                      
+                   Public Folder                             MSOXCFOLD\_PublicFolderMailEnabled         All public folders are created directly in the root directory.
+                   Redirect Server Public Folder             MSOXCFOLD\_PublicFolderGhosted             
+  MS-OXCFXICS      Public Folder                             MSOXCFXICS\_GhostedPublicFolder            
+                   Public Folder                             MSOXCFXICS\_PublicFolder01                 
+                   Mailbox                                   MSOXCFXICS\_TestUser                       The mailbox name should be below 20 characters.
+                   Redirect Server Mailbox                   MSOXCFXICS\_TestUser2                      
+  MS-OXCMAPIHTTP   Mailbox                                   MSOXCMAPIHTTP\_User01                      MS-OXCMAPIHTTP is supported from Microsoft Exchange 2013 SP1. The mailbox name should be below 20 characters.
+                   Mailbox                                   MSOXCMAPIHTTP\_User02                      The mailbox name should be below 20 characters.
+                   Distribution Group                        MSOXCMAPIHTTP\_ATDG01                      
+  MS-OXCMSG        Mailbox                                   MSOXCMSG\_TestUser01                       The mailbox name should be below 20 characters.
+                   Mailbox                                   MSOXCMSG\_TestUser02                       The mailbox name should be below 20 characters.
+  MS-OXCNOTIF      Mailbox                                   MSOXCNOTIF\_TestUser                       The mailbox name should be below 20 characters.
+  MS-OXCPERM       Mailbox                                   MSOXCPERM\_TestUser01                      The mailbox name should be below 20 characters.
+                   Mailbox                                   MSOXCPERM\_TestUser                        The mailbox name should be below 20 characters.
+  MS-OXCPRPT       Mailbox                                   MSOXCPRPT\_TestUser                        The mailbox name should be below 20 characters.
+                   Public Folder                             MSOXCPRPT\_PublicFolder01                  
+  MS-OXCROPS       Mailbox                                   MSOXCROPS\_TestUser01                      The mailbox name should be below 20 characters.
+                   Mailbox                                   MSOXCROPS\_TestUser                        The mailbox name should be below 20 characters.
+                   Redirect Server Public Folder             MSOXCROPS\_PublicFolderGhosted             
+  MS-OXCRPC        Mailbox                                   MSOXCRPC\_TestUser01                       The mailbox name should be below 20 characters.
+                   Mailbox                                   MSOXCRPC\_TestUser                         The mailbox name should be below 20 characters.
+  MS-OXCSTOR       Mailbox                                   MSOXCSTOR\_TestUser01                      The mailbox name should be below 20 characters.
+                   Redirect Server Mailbox                   MSOXCSTOR\_TestUser02                      
+                   Mailbox                                   MSOXCSTOR\_TestUser03                      The mailbox name should be below 20 characters.
+                   Mailbox                                   MSOXCSTOR\_TestUser                        The mailbox name should be below 20 characters.
+  MS-OXCTABL       Mailbox                                   MSOXCTABL\_TestUser01                      The mailbox name should be below 20 characters.
+                   Mailbox                                   MSOXCTABL\_TestUser02                      The mailbox name should be below 20 characters.
+  MS-OXNSPI        Mailbox                                   MSOXNSPI\_TestUser01                       MS-OXNSPI is not supported in Microsoft Exchange Server 2007 SP3. The mailbox name should be below 20 characters.
+                   Mailbox                                   MSOXNSPI\_TestUser02                       The mailbox name should be below 20 characters.
+                   Mailbox                                   MSOXNSPI\_TestUser                         The mailbox name should be below 20 characters.
+                   Public Folder                             MSOXNSPI\_PublicFolderMailEnabled          
+                   Dynamic Distribution Group                MSOXNSPI\_ADDG01                           
+                   Distribution Group                        MSOXNSPI\_ATDG01                           
+                   Mail Contact                              MSOXNSPI\_MailContact01                    
+  MS-OXORULE       Mailbox                                   MSOXORULE\_TestUser01                      The mailbox name should be below 20 characters.
+                   Mailbox                                   MSOXORULE\_TestUser02                      The mailbox name should be below 20 characters.
+
+### <span id="_Configuring_the_SUT1_2" class="anchor"><span id="_Toc397328562" class="anchor"><span id="_Toc404164599" class="anchor"></span></span></span>Configuring SUT1 using the setup configuration script
+
+The setup configuration script is only used for configuring Microsoft
+Exchange Server on the Windows platform.
+
+To configure SUT1 using the setup configuration script, navigate to the
+**SUT** folder, right-click **ExchangeSUTConfiguration.cmd** and select
+**Run as administrator**.
+
+### <span id="_Configuring_the_SUT1" class="anchor"><span id="_Toc397328563" class="anchor"><span id="_Toc404164600" class="anchor"></span></span></span>Configuring SUT1 manually
+
+If the SUT is a non-Microsoft implementation of Exchange Server, you
+will not be able to run the setup configuration script. The following
+steps explain what needs to be created or configured on the SUT in order
+to run the test suites.
+
+1.  Configure the web site which contains the application that
+    implements the MAPI protocols.
+
+<!-- -->
+
+a.  Configure Secure Sockets Layer (SSL) as not required and ignore
+    client certificates.
+
+b.  Enable "Anonymous Authentication", "Basic Authentication" and
+    "Windows Authentication", disable the rest of options. Set the
+    anonymous user identity as “IUSR” with empty password.
+
+<!-- -->
+
+1.  Create the following mailbox users:
+
+    MSOXCFOLD\_TestUser01, MSOXCFOLD\_TestUser02, MSOXCFXICS\_TestUser,
+    MSOXCMAPIHTTP\_User01, MSOXCMAPIHTTP\_User02, MSOXCMSG\_TestUser01,
+    MSOXCMSG\_TestUser02, MSOXCNOTIF\_TestUser, MSOXCPERM\_TestUser01,
+    MSOXCPERM\_TestUser, MSOXCPRPT\_TestUser, MSOXCROPS\_TestUser01,
+    MSOXCROPS\_TestUser, MSOXCRPC\_TestUser01, MSOXCRPC\_TestUser,
+    MSOXCSTOR\_TestUser01, MSOXCSTOR\_TestUser03, MSOXCSTOR\_TestUser,
+    MSOXCTABL\_TestUser01, MSOXCTABL\_TestUser02, MSOXNSPI\_TestUser01,
+    MSOXNSPI\_TestUser02, MSOXNSPI\_TestUser, MSOXORULE\_TestUser01, and
+    MSOXORULE\_TestUser02
+
+2.  Set the appropriate values for the mailbox users
+    MSOXNSPI\_TestUser01 and MSOXNSPI\_TestUser02:
+
+<!-- -->
+
+a.  For MSOXNSPI\_TestUser01, set the following values:
+
+-   AssistantName: "assistant"
+
+-   PhoneticDisplayName: "phoneticdisplayname"
+
+a.  For MSOXNSPI\_TestUser02, set the following values:
+
+-   AssistantName: "assistant"
+
+-   PhoneticDisplayName: "phoneticdisplayname"
+
+-   Office: "Test"
+
+-   Department: "Test"
+
+-   OtherHomePhone: "BusinessOne"
+
+1.  Export the HTTPS certificate of the web site which contains the
+    application that implements the MAPI protocols, and add the
+    certificate to the mailbox user MSOXNSPI\_TestUser01.
+
+2.  Add the mailbox users MSOXNSPI\_TestUser01, MSOXCSTOR\_TestUser,
+    MSOXCFOLD\_TestUser02, MSOXCMAPIHTTP\_User01, MSOXCMSG\_TestUser02,
+    and MSOXCRPC\_TestUser to the Exchange Organization
+    Management group.
+
+3.  Create a mail contact MSOXNSPI\_MailContact01.
+
+4.  Create a dynamic distribution group called MSOXNSPI\_ADDG01.
+
+5.  Create two distribution groups called MSOXNSPI\_ATDG01
+    and MSOXCMAPIHTTP\_ATDG01.
+
+6.  Set the MSOXNSPI\_ATDG01 group to be managed
+    by MSOXNSPI\_TestUser01.
+
+7.  Create the following public folders:
+
+MSOXCFOLD\_PublicFolderMailEnabled, MSOXCFXICS\_PublicFolderGhosted,
+MSOXCFXICS\_PublicFolder01, MSOXCPRPT\_PublicFolder01,
+MSOXNSPI\_PublicFolderMailEnabled
+
+1.  Grant the mailbox users MSOXCFXICS\_TestUser, MSOXCROPS\_TestUser,
+    MSOXCFOLD\_TestUser02, MSOXCPRPT\_TestUser, MSOXCMSG\_TestUser02 and
+    MSOXORULE\_TestUser01 permission to manage public folders.
+
+2.  Set the public folders MSOXCFOLD\_PublicFolderMailEnabled and
+    MSOXNSPI\_PublicFolderMailEnabled to mail-enabled.
+
+3.  Disable encryption.
+
+4.  If the SUT supports MAPI over HTTP, enable the feature.
+
+5.  Ensure that auxiliary buffers on EcDoConnectEx and EcDoRpcExt2
+    methods can be returned from the SUT to the test suite client.
+
+6.  Set the Max Extended Rule Size to 96KB.
+
+7.  By default, the test suites use Exchange Web Service and Windows
+    PowerShell script in the SUT control adapter. If you chose
+    interactive mode for the SUT control adapter as described in section
+    [5.2.2.1](#set-the-test-suite-to-interactive-mode), skip the
+    following steps.
+
+<!-- -->
+
+a.  The test suites use Exchange Web Service in SUT control adapter to
+    send email, get user free busy status, set a user’s Out of
+    Office state. Configure the Exchange Web Services to require SSL and
+    ignore client certificates.
+
+b.  Set the execution policy to **RemoteSigned**, enable remoting, and
+    increase the memory allocated per shell for remote shell management
+    to **1024MB** or more.
+
+c.  The MS-OXCSTOR protocol test suite runs DisableMailbox.ps1 and
+    EnableMailbox.ps1 on the SUT to disable and enable mailbox. The test
+    suite keeps the script files path in registry.
+
+    Registry Key:
+    HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\ExchangeTestSuite
+
+> Value type: String
+
+Value data: the absolute folder path where the DisableMailbox.ps1 and
+EnableMailbox.ps1 reside.
+
+### <span id="_Configuring_the_SUT2_1" class="anchor"><span id="_Toc397328564" class="anchor"><span id="_Toc404164601" class="anchor"></span></span></span>Configuring SUT2 using the setup configuration script
+
+<span id="_Configure_the_SUT2" class="anchor"><span
+id="_Configure_the_SUT2_1" class="anchor"></span></span>The setup
+configuration script is only used for configuring Microsoft Exchange
+Server on Windows.
+
+To configure SUT2 using the setup configuration script, navigate to the
+SUT folder, right-click on the **ExchangeSecondSUTConfiguration.cmd**
+and select **Run as administrator.**
+
+### <span id="_Configuring_test_suite" class="anchor"><span id="_Configuring_the_SUT2" class="anchor"><span id="_Toc397328565" class="anchor"><span id="_Toc404164602" class="anchor"></span></span></span></span>Configuring SUT2 manually
+
+If the SUT is a non-Microsoft implementation of Exchange Server, you are
+not able to run the setup configuration script. The following steps
+explain what needs to be created or configured on the SUT in order to
+run the test suites.
+
+1.  Configure the web site which contains the application that
+    implements the MAPI protocols.
+
+2.  Create the following mailbox users:
+
+MSOXCFXICS\_TestUser2, MSOXCSTOR\_TestUser02
+
+1.  Create the following public folders:
+
+MSOXCFOLD\_PublicFolderGhosted, MSOXCROPS\_PublicFolderGhosted
+
+1.  Replicate the MSOXCFXICS\_PublicFolderGhosted public folder on the
+    first SUT to the public folder database on the second SUT, assuming
+    the two SUTs support the **FolderReplicaInfo** structure defined in
+    MS-OXCFXICS protocol.
+
+2.  Disable encryption on the SUT.
+
+3.  In Windows PowerShell, set the execution policy to **RemoteSigned**
+    and enable remoting if you plan to run the SUT control adapter in
+    Windows PowerShell mode.
+
+<span id="_Configuring_the_test_1" class="anchor"><span id="_Toc397328566" class="anchor"><span id="_Toc404164603" class="anchor"></span></span></span>Configuring the test suite client
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+The test suite client is managed through a common configuration file,
+two test suite-specific configuration files, and three SHOULD/MAY
+configuration files that all have a “.ptfconfig” extension. These
+configuration files can be modified directly. The common configuration
+file and the test suite-specific configuration files can also be
+modified through a script.
+
+### <span id="_Test_Suite_Specific" class="anchor"><span id="Text10" class="anchor"><span id="ControlAdapterConfig" class="anchor"><span id="_Configuring_the_test" class="anchor"><span id="_Toc397328567" class="anchor"><span id="_Toc404164604" class="anchor"></span></span></span></span></span></span>Common configuration file
+
+The common configuration file contains configurable properties common to
+all Exchange MAPI Protocol test suites. This file must be modified to
+match the characteristics of the environment where the test suites are
+installed.
+
+  **Configuration file**                             **Description**
+  -------------------------------------------------- ----------------------------------------------------------------------------------------------------------
+  ExchangeCommonConfiguration.deployment.ptfconfig   The deployment configuration file provides the environmental details that are common to the test suites.
+
+### <span id="_Toc397328568" class="anchor"><span id="_Toc404164605" class="anchor"></span></span>Test-suite specific configuration files
+
+In addition to the common configuration file, each individual test suite
+has the following two configuration files for test suite-specific
+modification.
+
+Test-suite specific configuration files
+
+  Configuration file                        Description
+  ----------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  MS-XXXX\_TestSuite.deployment.ptfconfig   The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows test suite-specific customization.
+  MS-XXXX\_TestSuite.ptfconfig              The test suite configuration file contains details that specify the behavior of the test suite operation.
+
+Both files are present in the TestSuite folder inside each test suite
+directory.
+
+If you need to modify the common configuration values for a specific
+test suite, you must copy the common properties to the
+**MS-XXXX\_TestSuite.deployment.ptfconfig** file and change the values
+of the properties. The specific configuration file will take precedence
+over the common configuration file when the same property exists in both
+places.
+
+#### Set the test suite to interactive mode
+
+If the SUT is a non-Microsoft implementation of Exchange Server, it is
+recommended that you further configure the test suite by setting the
+test suite to interactive mode. Interactive mode enables the test suite
+to function in a manual way, enabling you to perform setup, teardown,
+and other tasks in a step-by-step approach. To enable interactive mode
+for a specific test suite, do the following:
+
+1.  Browse to the **MS-XXXX\_TestSuite.ptfconfig** configuration file
+    within the **\\Source\\MS-XXXX\\TestSuite\\**.
+
+2.  Set the type value of Adapter property to **interactive** for the
+    SUT control adapter\*\*.
+
+Interactive mode values
+
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Property name   Default value\*         Optional value    Description
+  --------------- ----------------------- ----------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Adapter         managed or powershell   interactive\*\*   **managed**:
+                                                            
+                                                            The SUT control adapter is implemented in C\# managed code.
+                                                            
+                                                            **powershell**:
+                                                            
+                                                            The SUT control adapter is implemented through Windows PowerShell.
+                                                            
+                                                            **interactive**:
+                                                            
+                                                            Interactive adapters are used when manually configuring a server. Interactive adapter uses a dialog box to perform a manual test each time one of its methods is called. The dialog box contains the method name, parameter names, and values\*\*\*
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+\**The Adapter property value is set to either managed or powershell
+depending on whether the SUT control adapter was implemented in managed
+C\# code or through Windows PowerShell.*
+
+\*\**When changing to interactive mode from managed mode, the
+“adaptertype” attribute must be deleted to avoid a runtime error.* *When
+changing to interactive mode from powershell mode, an additional step is
+required—delete the “scriptdir” attribute to avoid a runtime error.*
+
+\*\*\**When the manual operation completes successfully, enter the
+return values in **Action Results** (if any) and click **Succeed**
+button in the dialog-box. When the manual operation is unable to
+complete, enter the error messages in the **Failure Message** text box
+and click **Fail** to terminate the test. In this case, the test will be
+treated as “Inconclusive”.*
+
+Further customization can be done by creating your own SUT control
+adapter that matches the server implementation. For more information
+about how to create a SUT control adapter, see the Protocol Test
+Framework (PTF) user documentation.
+
+#### Configure TSAP broadcast
+
+Test Session Announcement Protocol (TSAP) is used by PTF to broadcast
+test information when the test suite is running. TSAP broadcasts helps
+in mapping test cases to captured frames.
+
+By default, TSAP packets are broadcasted in the network. User can change
+a TSAP broadcast by adding an entry “BeaconLogTargetServer” to
+TestSuite.deployment.ptfconfig to target the TSAP only to the specified
+machine.
+
+To change the TSAP packet broadcast, do the following:
+
+1.  Browse to the **MS-XXXX\_TestSuite.deployment.ptfconfig**
+    configuration file in the **\\Source\\MS-XXXX\\TestSuite\\** folder.
+
+2.  Add a property “BeaconLogTargetServer” with the value of the
+    specified machine name.
+
+For example: &lt;Property name="BeaconLogTargetServer" value="dc01"
+/&gt;
+
+### <span id="_Toc397328569" class="anchor"><span id="_Toc404164606" class="anchor"></span></span>SHOULD/MAY configuration files
+
+The test suite has three SHOULD/MAY configuration files that are
+specific to all supported versions of the SUT. Each SHOULD/MAY
+requirement have an associated parameter with a value of either “true”
+or “false” corresponding to the server version that is supported. “true”
+represents that the requirement must be validated, whereas “false” means
+that the requirement must not be validated.
+
+If the SUT is a non-Microsoft implementation of Exchange Server,
+configure the properties in the configuration file for the Exchange
+Server which is the closest match to the SUT implementation.
+
+SHOULD/MAY configuration files
+
+  Configuration file                                            Description
+  ------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------
+  MS-XXXX\_ExchangeServer2007\_SHOULDMAY.deployment.ptfconfig   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2007 Service Pack 3 (SP3).
+  MS-XXXX\_ExchangeServer2010\_SHOULDMAY.deployment.ptfconfig   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2010 Service Pack 3 (SP3).
+  MS-XXXX\_ExchangeServer2013\_SHOULDMAY.deployment.ptfconfig   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2013 Service Pack 1 (SP1).
+
+### <span id="_Configuring_the_test_2" class="anchor"><span id="_Toc397328570" class="anchor"><span id="_Toc404164607" class="anchor"></span></span></span>Configuring the test suite client using setup configuration script
+
+<span id="_Configure_the_test" class="anchor"><span
+id="_Configure_the_test_1" class="anchor"></span></span>The setup
+configuration script is only implemented for configuring the test suite
+client on the Windows platform.
+
+To configure the test suite using the setup configuration script,
+navigate to the **Setup\\Test Suite Client**\\ folder, right-click
+**ExchangeClientConfiguration.cmd** and select **Run as administrator.**
+
+### <span id="Configuringthetestsuiteclientmanual" class="anchor"><span id="_Toc397328571" class="anchor"><span id="_Toc404164608" class="anchor"><span id="_Toc335752278" class="anchor"></span></span></span></span>Configuring the test suite client manually
+
+If you didn’t use the setup configuration script to configure the test
+suite client as described in the previous section, follow the steps
+below to update configuration files and configure the test suite client.
+
+1.  Update the property value in the common configuration file and the
+    test suite-specific configuration files according to the comment of
+    the property.
+
+2.  Add two firewall rules to allow local port to receive UDP data. The
+    port numbers should be the value of property "NotificationPort" in
+    **MS-OXCRPC\_TestSuite.deployment.ptfconfig** and
+    **MS-OXCNOTIF\_TestSuite.deployment.ptfconfig**.
+
+3.  Export the HTTPS certificate of the web site which contains the
+    application that implements the MAPI protocols, and import it to
+    local computer's Trusted Root Certification Authorities store.
+
+4.  By default, the test suites use Windows PowerShell script in the SUT
+    control adapter to configure the SUT. If you chose interactive mode
+    for the SUT control adapter as described in section
+    [5.2.2.1](#set-the-test-suite-to-interactive-mode), skip this step.
+
+<!-- -->
+
+a.  Set the execution policy to RemoteSigned.
+
+b.  Add the SUT to the TrustedHosts to ensure that the Windows Remote
+    Management (WinRM) client can process remote calls against the SUT
+    when the test suite client is not joined to the domain.
+
+<span id="_Toc397328572" class="anchor"><span id="_Toc404164609" class="anchor"></span></span>Running test suites
+=================================================================================================================
+
+<span id="_Toc306892175" class="anchor"></span>Once the required
+software has been installed and both the SUT and test suite client have
+been configured appropriately, the test suite is ready to run. The test
+suite can run only on the test suite client and can be initiated in one
+of the following two ways: Visual Studio or batch scripts.
+
+<span id="_Toc397328573" class="anchor"><span id="_Toc404164610" class="anchor"></span></span>Microsoft Visual Studio
+---------------------------------------------------------------------------------------------------------------------
+
+A Microsoft Visual Studio solution file
+**ExchangeMAPIProtocolTestSuites.sln** is provided in the **Source**
+folder. You can run a single or multiple test cases in Visual Studio.
+
+  -------------------------------------------------------------------------------------------------------------------------------------------
+  1.  Open **ExchangeMAPIProtocolTestSuites.sln** in Microsoft Visual Studio.                                                              
+                                                                                                                                           
+                                                                                                                                           
+  ---------------------------------------------------------------------------------------------------------------------------------------- --
+  1.  In the **Solution Explorer** pane, right-click **Solution ‘ExchangeMAPIProtocolTestSuites’**, and then click **Rebuild Solution**.   
+                                                                                                                                           
+                                                                                                                                           
+
+  1.  Open **Test Explorer**. Select **TEST** and click **Windows**, then select **Test Explorer**.                                        
+                                                                                                                                           
+                                                                                                                                           
+
+  1.  Select the test case to run, right-click and then select **Run Selected Tests**.                                                     
+                                                                                                                                           
+                                                                                                                                           
+  -------------------------------------------------------------------------------------------------------------------------------------------
+
+<span id="_Command_line" class="anchor"><span id="_Toc306892176"
+class="anchor"></span></span>A Microsoft Visual Studio solution file
+**MS-XXXX.sln** is provided in each test suite folder.
+
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  1.  Select the test suite you would like to run. Let’s take MS-OXCROPS as an example here, so browse to the **Source\\MS-OXCROPS** directory.
+
+  ----------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------
+  1.  Open **MS-OXCROPS.sln** in Microsoft Visual Studio.
+
+  1.  In the **Solution Explorer** pane, right-click **Solution ‘MS-OXCROPS’**, and then click **Rebuild Solution**.
+
+  1.  Open **Test Explorer**. Select **TEST** and click **Windows**, then select **Test Explorer**..
+
+  1.  Select the test case to run, right-click and then select **Run Selected Tests**.
+
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<span id="_Command_line_1" class="anchor"><span id="_Toc306892177" class="anchor"><span id="_Toc397328575" class="anchor"><span id="_Toc404164611" class="anchor"></span></span></span></span>Batch scripts 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Exchange MAPI Protocol test suites are installed with a collection of
+scripts that enable a user to run individual test cases
+(RunMSXXXX\_SYY\_TCZZ\_Name.cmd) or all test cases in a test suite
+(RunAllMSXXXXTestCases.cmd), or all test cases of Exchange MAPI Protocol
+test suites at once (RunAllExchangeMAPITestCases.cmd). These scripts can
+be found in the **\\Source\\Scripts** directory.
+
+**Note**   These scripts depend on having the compiled binaries in the
+bin folder.
+
+  **Batch script**                  **Script description**
+  --------------------------------- ----------------------------------------------------------------------
+  RunAllExchangeMAPITestCases.cmd   Runs all the test cases within the Server MAPI Protocol test suites.
+  RunAllMSXXXXTestCases.cmd         Runs all MS-XXXX test cases.
+  RunMSXXXX\_SYY\_TCZZ\_Name.cmd    Runs a specific test case within the test suite.
+
+<span id="_Toc397328576" class="anchor"><span id="_Toc404164612" class="anchor"></span></span>Test suite results, logs, and reporting
+=====================================================================================================================================
+
+The test suites provide detailed reporting in a variety of formats that
+will enable users to quickly debug failures.
+
+<span id="_Toc397328577" class="anchor"><span id="_Toc404164613" class="anchor"></span></span>Test suite configuration logs
+---------------------------------------------------------------------------------------------------------------------------
+
+The configuration logs contain information about whether each
+configuration step succeeds or not, and detail error information if the
+configuration step fails.
+
+### <span id="_Toc404164614" class="anchor"><span id="_Toc397328578" class="anchor"></span></span>SUT configuration logs
+
+The SUT configuration scripts create a directory named **SetupLogs**
+under **…\\Setup\\SUT\\** at runtime. The SUT configuration scripts save
+the logs as “ExchangeSUTConfiguration.ps1.debug.log” and
+“ExchangeSUTConfiguration.ps1.log”.
+
+The second SUT configuration scripts save the logs as
+“ExchangeSecondSUTConfiguration.ps1.debug.log” and
+“ExchangeSecondSUTConfiguration.ps1.log”.
+
+### Test suite client configuration logs
+
+The configuration scripts create a directory named **SetupLogs** under
+**…\\Setup\\Test Suite Client\\** at runtime. The test suite client
+configuration scripts save the logs as
+“ExchangeClientConfiguration.ps1.debug.log” and
+“ExchangeClientConfiguration.ps1.log”.
+
+Test suite reports
+------------------
+
+### <span id="_Toc404164617" class="anchor"><span id="_Toc397328579" class="anchor"><span id="_Toc308770210" class="anchor"></span></span></span>Microsoft Visual Studio
+
+Reports are created only after the package level solution or an
+individual test suite solution has run successfully in Visual Studio.
+
+-   Reporting information for **ExchangeMAPIProtocolTestSuites.sln** is
+    saved in **…\\Source\\TestResults**.
+
+-   Reporting information for an individual test suite **MS-XXXX.sln**
+    is saved in **…\\Source\\MS-XXXX\\TestResults**.
+
+### Batch scripts
+
+If the Exchange MAPI Protocol test suites are run by the
+RunAllExchangeMAPITestCases.cmd batch file, the reporting information is
+saved in **…\\Source\\Scripts\\TestResults**.
+
+If the test suite is run by the batch file RunAllMSXXXXTestCases.cmd or
+RunMSXXXX\_SYY\_TCZZ\_Name.cmd, the reporting information is saved in
+**…\\Source\\Scripts\\MS-XXXX\\TestResults.**
+
+By default, a .trx file containing the pass/fail information of the run
+is created in the TestResults folder, along with an associated directory
+named **user\_MACHINENAME DateTimeStamp** that contains a log file in
+XML format and an HTML report.
+
+ Appendix
+=========
+
+For more information, see the following:
+
+  References                                                                                      Description
+  ----------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------
+  <dochelp@microsoft.com>                                                                         Alias for Interoperability documentation help. Provides support for the Open Specifications and protocol test suites.
+  [Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)                     Microsoft Customer Support Services forums. Actively monitored forums provide support for the Open Specifications and protocol test suites.
+  [Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)           Open Specifications home page on MSDN
+  [Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)                            Open Specifications documentation on MSDN
+  [Exchange Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=119904)   Exchange Server Open Specifications documentation on MSDN
+  [RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)                                        Normative language reference
+  [Exchange Server 2013 deployment](http://go.microsoft.com/fwlink/?LinkID=266569)                Exchange Server 2013 planning and deployment on TechNet
+  [Exchange Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkID=517397)                Exchange Server 2010 planning and deployment on TechNet
+  [Exchange Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkID=512508)                Exchange Server 2007 deployment on TechNet
