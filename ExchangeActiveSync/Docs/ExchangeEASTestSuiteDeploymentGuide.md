@@ -1,9 +1,8 @@
-> ![](media/image1.png){width="4.052910104986877in"
-> height="1.3855741469816274in"}
+![alt tag](/Doc-Images/ExLogo.png)
 
 Exchange EAS Test Suite Deployment Guide
 
-<span id="_Toc404161754" class="anchor"><span id="_Toc397328551" class="anchor"></span></span>Overview
+Overview
 ======================================================================================================
 
 The Exchange Server EAS Protocol Test Suites are implemented as
@@ -20,7 +19,7 @@ the system under test (SUT) if the test suites run against Exchange
 Server. The guide also introduces how to deploy, configure and run the
 test suites, and view test suite reports.
 
-<span id="_Toc402534602" class="anchor"><span id="_Toc402799293" class="anchor"><span id="_Toc402880175" class="anchor"><span id="_Toc404161755" class="anchor"></span></span></span></span>Prerequisites
+Prerequisites
 =========================================================================================================================================================================================================
 
 This section describes the hardware and software requirements for the
@@ -28,10 +27,10 @@ test suites. In an Exchange server environment, the test suite
 deployment takes place on both the client and server side. The following
 information will help test suite users to plan their deployment.
 
-<span id="_Toc308770202" class="anchor"><span id="_Toc397328552" class="anchor"><span id="_Toc404161756" class="anchor"></span></span></span>Hardware requirements
+Hardware requirements
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### <span id="_Toc397328553" class="anchor"><span id="_Toc404161757" class="anchor"><span id="_Toc308770203" class="anchor"></span></span></span>System under test
+### System under test
 
 The SUT is the server side of the test suite environment. Exchange
 server(s) and Active Directory have defined system requirements which
@@ -39,7 +38,7 @@ should be taken into account during deployment. The Exchange Server EAS
 Protocol test suites do not have any additional SUT resource
 requirements.
 
-### <span id="_Toc397328554" class="anchor"><span id="_Toc404161758" class="anchor"></span></span>Test suite client
+### Test suite client
 
 The test suite client is the client side of the test suite environment.
 The following table shows the minimum resource requirements for the test
@@ -53,10 +52,10 @@ Test suite client resource requirements
   Hard Disk   3G of free space
   Processor   &gt;= 1GHz
 
-<span id="_Toc397328555" class="anchor"><span id="_Toc404161759" class="anchor"></span></span>Software requirements
+Software requirements
 -------------------------------------------------------------------------------------------------------------------
 
-### <span id="_Toc308770208" class="anchor"><span id="_Toc397328556" class="anchor"><span id="_Toc404161760" class="anchor"><span id="_Toc308770207" class="anchor"></span></span></span></span>System under test 
+### System under test 
 
 This section is only relevant when running the test suites against the
 following versions of Exchange Server:
