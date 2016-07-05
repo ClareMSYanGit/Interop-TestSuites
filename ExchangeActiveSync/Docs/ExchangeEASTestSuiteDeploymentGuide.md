@@ -70,19 +70,11 @@ The following table describes the necessary server roles required for a
 test suite deployment with a Microsoft implementation. Installing
 Exchange Server on a domain controller (DC) is not recommended.
 
-Required SUT roles
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-  |Role                                              Description
-
-  |**Active Directory Domain Controller (AD DC)**   |Active Directory Domain Controller is used to provide secure data for users and | |                                                 |computers. An AD DC can coexist with an Exchange server. A typical test       |
-  |                                                 |configuration has an AD DC and Exchange Server installed on separate machines.|
-  Domain Name System Server (DNS)                   |Domain Name System (DNS) Server provides a name resolution for TCP/IP networks. A|                                                   |DNS Server is easier to manage when it is installed on the server as Active Directory Domain Services.
-  **Exchange Server (SUT)**                         |The Exchange server in the topology.
+| Role  | Description |
+| --- | --- |
+| **Active Directory Domain Controller (AD DC)** |Active Directory Domain Controller is used to provide secure data for users and   computers. An AD DC can coexist with an Exchange server. A typical test configuration has an AD DC and Exchange Server installed on separate machines.|
+| Domain Name System Server (DNS)  |Domain Name System (DNS) Server provides a name resolution for TCP/IP networks. A                 DNS Server is easier to manage when it is installed on the server as Active Directory Domain Services.  |
+|  **Exchange Server (SUT)** |The Exchange server in the topology. |
 
 The following diagram is an example of what a typical Exchange test suite environment may look like. This example uses an IPv4, but IPv6 is also supported by the test suites.
 
@@ -110,11 +102,10 @@ Test suite client software dependencies
                           Microsoft Protocol Test Framework 1.0.2220.0 and above
   --------------------------------------------------------------------------------
 
-<span id="_Toc397328558" class="anchor"><span id="_Toc404161762" class="anchor"></span></span>Deploying the test suites
+Deploying the test suites
 =======================================================================================================================
 
-<span id="_Installation_instructions_2" class="anchor"></span>This
-section describes the deployment of the Exchange Server EAS Protocol
+This section describes the deployment of the Exchange Server EAS Protocol
 test suites on the test suite client and the SUT. The Exchange Server
 EAS Protocol test suites are packaged in a .zip file which is available
 on [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=516921).
@@ -144,15 +135,6 @@ PowerShell scripts and the MS\_OXWSDLGM\_ServerAdapter.dll file.
                                                              
   -------------------------------------------------------------
 
-<span id="_Test_suite_client" class="anchor"><span
-id="_Test_suite_directories" class="anchor"><span
-id="_Test_suite_client_1" class="anchor"><span
-id="_Installation_Instructions_1" class="anchor"><span
-id="_Installation_Instructions" class="anchor"><span id="_Toc387851232"
-class="anchor"><span id="_Toc308770209" class="anchor"><span
-id="_Toc397328559"
-class="anchor"></span></span></span></span></span></span></span></span>
-
 To unblock MS\_OXWSDLGM\_ServerAdapter.dll, do the following:
 
 1.  Browse to file **MS\_OXWSDLGM\_ServerAdapter.dll** within the
@@ -168,8 +150,8 @@ To unblock MS\_OXWSDLGM\_ServerAdapter.dll, do the following:
                                                                                           
   ------------------------------------------------------------------------------------------
 
-<span id="_Toc402534611" class="anchor"><span id="_Toc402799302" class="anchor"><span id="_Toc402880184" class="anchor"><span id="_Toc404161763" class="anchor"></span></span></span></span>Test suite directories
-==================================================================================================================================================================================================================
+Test suite directories
+=======================================================================================================================================
 
 In this section you will find a list of the folder structures that are
 contained within the **ExchangeServerEASProtocolTestSuites.zip** file.
@@ -212,7 +194,7 @@ ExchangeServerEASProtocolTestSuites.zip file contents
   - RunAllMSXXXXTestCases.cmd                          A script that can be used to run all test cases of MS-XXXX.
   - RunMSXXXX\_SXX\_TCXX\_Name.cmd                     A script that can be used to run a single test case of MS-XXXX.
 
-<span id="_Toc402534740" class="anchor"><span id="_Toc402799431" class="anchor"><span id="_Toc402880313" class="anchor"><span id="_Toc404161764" class="anchor"></span></span></span></span>Configuring the test suites
+Configuring the test suites
 =======================================================================================================================================================================================================================
 
 This section provides the necessary guidance to configure the Exchange
@@ -230,7 +212,7 @@ For the configuration script, the exit code definition is as follows:
 
 -   Exit code is set to the actual error code for other issues.
 
-<span id="_Toc402534955" class="anchor"><span id="_Toc402799646" class="anchor"><span id="_Toc402880528" class="anchor"><span id="_Toc402534956" class="anchor"><span id="_Toc402799647" class="anchor"><span id="_Toc402880529" class="anchor"><span id="_Toc402534957" class="anchor"><span id="_Toc402799648" class="anchor"><span id="_Toc402880530" class="anchor"><span id="_Toc402534958" class="anchor"><span id="_Toc402799649" class="anchor"><span id="_Toc402880531" class="anchor"><span id="_Toc402534959" class="anchor"><span id="_Toc402799650" class="anchor"><span id="_Toc402880532" class="anchor"><span id="_Toc397328560" class="anchor"><span id="_Toc404161765" class="anchor"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>Configuring the SUT
+Configuring the SUT
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 You can configure the SUT using automated scripts, as described in
@@ -240,7 +222,7 @@ manually, as described in section [5.1.3](#_Configuring_the_SUT1).
 **Note**   The scripts should be run by a user who has domain
 administrator rights with a mailbox on Exchange Server.
 
-### <span id="_Configuring_the_SUT1_1" class="anchor"><span id="_Toc397328561" class="anchor"><span id="_Toc404161766" class="anchor"></span></span></span>SUT resource requirements 
+### SUT resource requirements 
 
 Each test suite contained within the Exchange Server EAS Protocol test
 suites package may require a varying level of resources on Exchange
@@ -317,7 +299,7 @@ Exchange server resources
   MS-ASTASK    User Mailbox                        MSASTASK\_User01                             --
   MS-ASWBXML   --                                  --                                           --
 
-### <span id="_Toc402534972" class="anchor"><span id="_Toc402799663" class="anchor"><span id="_Toc402880545" class="anchor"><span id="_Toc402534977" class="anchor"><span id="_Toc402799668" class="anchor"><span id="_Toc402880550" class="anchor"><span id="_Toc402534982" class="anchor"><span id="_Toc402799673" class="anchor"><span id="_Toc402880555" class="anchor"><span id="_Toc402534992" class="anchor"><span id="_Toc402799683" class="anchor"><span id="_Toc402880565" class="anchor"><span id="_Toc402534997" class="anchor"><span id="_Toc402799688" class="anchor"><span id="_Toc402880570" class="anchor"><span id="_Toc402535002" class="anchor"><span id="_Toc402799693" class="anchor"><span id="_Toc402880575" class="anchor"><span id="_Toc402535012" class="anchor"><span id="_Toc402799703" class="anchor"><span id="_Toc402880585" class="anchor"><span id="_Toc402535017" class="anchor"><span id="_Toc402799708" class="anchor"><span id="_Toc402880590" class="anchor"><span id="_Toc402535022" class="anchor"><span id="_Toc402799713" class="anchor"><span id="_Toc402880595" class="anchor"><span id="_Toc402535032" class="anchor"><span id="_Toc402799723" class="anchor"><span id="_Toc402880605" class="anchor"><span id="_Toc402535037" class="anchor"><span id="_Toc402799728" class="anchor"><span id="_Toc402880610" class="anchor"><span id="_Toc402535047" class="anchor"><span id="_Toc402799738" class="anchor"><span id="_Toc402880620" class="anchor"><span id="_Toc402535062" class="anchor"><span id="_Toc402799753" class="anchor"><span id="_Toc402880635" class="anchor"><span id="_Toc402535072" class="anchor"><span id="_Toc402799763" class="anchor"><span id="_Toc402880645" class="anchor"><span id="_Toc402535082" class="anchor"><span id="_Toc402799773" class="anchor"><span id="_Toc402880655" class="anchor"><span id="_Toc402535087" class="anchor"><span id="_Toc402799778" class="anchor"><span id="_Toc402880660" class="anchor"><span id="_Toc402535097" class="anchor"><span id="_Toc402799788" class="anchor"><span id="_Toc402880670" class="anchor"><span id="_Toc402535107" class="anchor"><span id="_Toc402799798" class="anchor"><span id="_Toc402880680" class="anchor"><span id="_Toc402535112" class="anchor"><span id="_Toc402799803" class="anchor"><span id="_Toc402880685" class="anchor"><span id="_Toc402535117" class="anchor"><span id="_Toc402799808" class="anchor"><span id="_Toc402880690" class="anchor"><span id="_Toc402535127" class="anchor"><span id="_Toc402799818" class="anchor"><span id="_Toc402880700" class="anchor"><span id="_Toc402535137" class="anchor"><span id="_Toc402799828" class="anchor"><span id="_Toc402880710" class="anchor"><span id="_Toc402535142" class="anchor"><span id="_Toc402799833" class="anchor"><span id="_Toc402880715" class="anchor"><span id="_Toc402535147" class="anchor"><span id="_Toc402799838" class="anchor"><span id="_Toc402880720" class="anchor"><span id="_Toc402535152" class="anchor"><span id="_Toc402799843" class="anchor"><span id="_Toc402880725" class="anchor"><span id="_Toc402535157" class="anchor"><span id="_Toc402799848" class="anchor"><span id="_Toc402880730" class="anchor"><span id="_Toc402535162" class="anchor"><span id="_Toc402799853" class="anchor"><span id="_Toc402880735" class="anchor"><span id="_Toc402535172" class="anchor"><span id="_Toc402799863" class="anchor"><span id="_Toc402880745" class="anchor"><span id="_Configuring_the_SUT1_2" class="anchor"><span id="_Toc397328562" class="anchor"><span id="_Toc404161767" class="anchor"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>Configuring SUT using the setup configuration script
+### Configuring SUT using the setup configuration script
 
 The setup configuration script is only used for configuring Exchange
 Server on the Windows platform.
@@ -537,8 +519,8 @@ a.  Configure Secure Sockets Layer (SSL) as not required and ignore
 
 2.  Enable IRM features to allow the client to access the SUT.
 
-<span id="_Toc402535179" class="anchor"><span id="_Toc402799870" class="anchor"><span id="_Toc402880752" class="anchor"><span id="_Toc402535180" class="anchor"><span id="_Toc402799871" class="anchor"><span id="_Toc402880753" class="anchor"><span id="_Toc402535181" class="anchor"><span id="_Toc402799872" class="anchor"><span id="_Toc402880754" class="anchor"><span id="_Toc402535182" class="anchor"><span id="_Toc402799873" class="anchor"><span id="_Toc402880755" class="anchor"><span id="_Toc402535183" class="anchor"><span id="_Toc402799874" class="anchor"><span id="_Toc402880756" class="anchor"><span id="_Toc402535184" class="anchor"><span id="_Toc402799875" class="anchor"><span id="_Toc402880757" class="anchor"><span id="_Toc402535185" class="anchor"><span id="_Toc402799876" class="anchor"><span id="_Toc402880758" class="anchor"><span id="_Toc402535186" class="anchor"><span id="_Toc402799877" class="anchor"><span id="_Toc402880759" class="anchor"><span id="_Toc402535187" class="anchor"><span id="_Toc402799878" class="anchor"><span id="_Toc402880760" class="anchor"><span id="_Toc402535188" class="anchor"><span id="_Toc402799879" class="anchor"><span id="_Toc402880761" class="anchor"><span id="_Toc402535189" class="anchor"><span id="_Toc402799880" class="anchor"><span id="_Toc402880762" class="anchor"><span id="_Toc402535190" class="anchor"><span id="_Toc402799881" class="anchor"><span id="_Toc402880763" class="anchor"><span id="_Toc402535191" class="anchor"><span id="_Toc402799882" class="anchor"><span id="_Toc402880764" class="anchor"><span id="_Toc402535192" class="anchor"><span id="_Toc402799883" class="anchor"><span id="_Toc402880765" class="anchor"><span id="_Toc402535193" class="anchor"><span id="_Toc402799884" class="anchor"><span id="_Toc402880766" class="anchor"><span id="_Toc402535194" class="anchor"><span id="_Toc402799885" class="anchor"><span id="_Toc402880767" class="anchor"><span id="_Toc402535195" class="anchor"><span id="_Toc402799886" class="anchor"><span id="_Toc402880768" class="anchor"><span id="_Toc402535196" class="anchor"><span id="_Toc402799887" class="anchor"><span id="_Toc402880769" class="anchor"><span id="_Toc402535197" class="anchor"><span id="_Toc402799888" class="anchor"><span id="_Toc402880770" class="anchor"><span id="_Toc402535198" class="anchor"><span id="_Toc402799889" class="anchor"><span id="_Toc402880771" class="anchor"><span id="_Toc402535199" class="anchor"><span id="_Toc402799890" class="anchor"><span id="_Toc402880772" class="anchor"><span id="_Toc402535200" class="anchor"><span id="_Toc402799891" class="anchor"><span id="_Toc402880773" class="anchor"><span id="_Toc402535201" class="anchor"><span id="_Toc402799892" class="anchor"><span id="_Toc402880774" class="anchor"><span id="_Toc402535202" class="anchor"><span id="_Toc402799893" class="anchor"><span id="_Toc402880775" class="anchor"><span id="_Toc402535203" class="anchor"><span id="_Toc402799894" class="anchor"><span id="_Toc402880776" class="anchor"><span id="_Toc402535204" class="anchor"><span id="_Toc402799895" class="anchor"><span id="_Toc402880777" class="anchor"><span id="_Toc402535205" class="anchor"><span id="_Toc402799896" class="anchor"><span id="_Toc402880778" class="anchor"><span id="_Toc402535206" class="anchor"><span id="_Toc402799897" class="anchor"><span id="_Toc402880779" class="anchor"><span id="_Toc402535207" class="anchor"><span id="_Toc402799898" class="anchor"><span id="_Toc402880780" class="anchor"><span id="_Toc402535208" class="anchor"><span id="_Toc402799899" class="anchor"><span id="_Toc402880781" class="anchor"><span id="_Toc402535209" class="anchor"><span id="_Toc402799900" class="anchor"><span id="_Toc402880782" class="anchor"><span id="_Toc402535210" class="anchor"><span id="_Toc402799901" class="anchor"><span id="_Toc402880783" class="anchor"><span id="_Toc402535211" class="anchor"><span id="_Toc402799902" class="anchor"><span id="_Toc402880784" class="anchor"><span id="_Toc402535212" class="anchor"><span id="_Toc402799903" class="anchor"><span id="_Toc402880785" class="anchor"><span id="_Toc402535213" class="anchor"><span id="_Toc402799904" class="anchor"><span id="_Toc402880786" class="anchor"><span id="_Toc402535214" class="anchor"><span id="_Toc402799905" class="anchor"><span id="_Toc402880787" class="anchor"><span id="_Configuring_the_SUT2_1" class="anchor"><span id="_Toc402535215" class="anchor"><span id="_Toc402799906" class="anchor"><span id="_Toc402880788" class="anchor"><span id="_Configure_the_SUT2" class="anchor"><span id="_Configure_the_SUT2_1" class="anchor"><span id="_Toc402535216" class="anchor"><span id="_Toc402799907" class="anchor"><span id="_Toc402880789" class="anchor"><span id="_Toc402535217" class="anchor"><span id="_Toc402799908" class="anchor"><span id="_Toc402880790" class="anchor"><span id="_Configuring_test_suite" class="anchor"><span id="_Configuring_the_SUT2" class="anchor"><span id="_Toc402535218" class="anchor"><span id="_Toc402799909" class="anchor"><span id="_Toc402880791" class="anchor"><span id="_Toc402535219" class="anchor"><span id="_Toc402799910" class="anchor"><span id="_Toc402880792" class="anchor"><span id="_Toc402535220" class="anchor"><span id="_Toc402799911" class="anchor"><span id="_Toc402880793" class="anchor"><span id="_Toc402535221" class="anchor"><span id="_Toc402799912" class="anchor"><span id="_Toc402880794" class="anchor"><span id="_Toc402535222" class="anchor"><span id="_Toc402799913" class="anchor"><span id="_Toc402880795" class="anchor"><span id="_Toc402535223" class="anchor"><span id="_Toc402799914" class="anchor"><span id="_Toc402880796" class="anchor"><span id="_Toc402535224" class="anchor"><span id="_Toc402799915" class="anchor"><span id="_Toc402880797" class="anchor"><span id="_Toc402535225" class="anchor"><span id="_Toc402799916" class="anchor"><span id="_Toc402880798" class="anchor"><span id="_Toc402535226" class="anchor"><span id="_Toc402799917" class="anchor"><span id="_Toc402880799" class="anchor"><span id="_Toc402535227" class="anchor"><span id="_Toc402799918" class="anchor"><span id="_Toc402880800" class="anchor"><span id="_Configuring_the_test_1" class="anchor"><span id="_Toc397328566" class="anchor"><span id="_Toc404161769" class="anchor"></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>Configuring the test suite client
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Configuring the test suite client
+---------------------------------------------------------------------------------------------------------------------------------------
 
 The test suite client is managed through a common configuration file,
 two test suite-specific configuration files, and three SHOULD/MAY
@@ -547,7 +529,7 @@ configuration files can be modified directly. The common configuration
 file and the test suite-specific configuration files can also be
 modified through a script.
 
-### <span id="_Test_Suite_Specific" class="anchor"><span id="Text10" class="anchor"><span id="ControlAdapterConfig" class="anchor"><span id="_Configuring_the_test" class="anchor"><span id="_Toc397328567" class="anchor"><span id="_Toc404161770" class="anchor"></span></span></span></span></span></span>Common configuration file
+### Common configuration file
 
 The common configuration file contains configurable properties common to
 all Exchange Server EAS Protocol test suites. This file must be modified
@@ -558,7 +540,7 @@ are installed.
   -------------------------------------------------- ----------------------------------------------------------------------------------------------------------
   ExchangeCommonConfiguration.deployment.ptfconfig   The deployment configuration file provides the environmental details that are common to the test suites.
 
-### <span id="_Toc397328568" class="anchor"><span id="_Toc404161771" class="anchor"></span></span>Test-suite specific configuration files
+### Test-suite specific configuration files
 
 In addition to the common configuration file, each individual test suite
 has the following two configuration files for test suite-specific
@@ -736,7 +718,7 @@ Studio.
                                                                                                                                                 
                                                                                                                                                 
   --------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------
-  1.  In the **Solution Explorer** pane, right-click **Solution ‘ExchangeServerEASProtocolTestSuites’**, and then click **Rebuild Solution**.   ![](media/image8.png){width="2.6458333333333335in" height="1.84375in"}
+  1.  In the **Solution Explorer** pane, right-click **Solution ‘ExchangeServerEASProtocolTestSuites’**, and then click **Rebuild Solution**.   ![](media/image8.png)
                                                                                                                                                 
                                                                                                                                                 
 
@@ -748,8 +730,7 @@ Studio.
 
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<span id="_Command_line" class="anchor"><span id="_Toc306892176"
-class="anchor"></span></span>A Visual Studio solution file
+A Visual Studio solution file
 **MS-XXXX.sln** is provided in each test suite folder.
 
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -766,7 +747,7 @@ class="anchor"></span></span>A Visual Studio solution file
 
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-<span id="_Command_line_1" class="anchor"><span id="_Toc306892177" class="anchor"><span id="_Toc397328575" class="anchor"><span id="_Toc404161777" class="anchor"></span></span></span></span>Batch scripts 
+Batch scripts 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Exchange Server EAS Protocol test suites are installed with a collection
@@ -785,20 +766,20 @@ bin folder.
   RunAllMSXXXXTestCases.cmd        Runs all MS-XXXX test cases.
   RunMSXXXX\_SXX\_TCXX\_Name.cmd   Runs a specific test case within the test suite.
 
-<span id="_Toc397328576" class="anchor"><span id="_Toc404161778" class="anchor"></span></span>Test suite results, logs, and reporting
+Test suite results, logs, and reporting
 =====================================================================================================================================
 
 The test suites provide detailed reporting in a variety of formats that
 will enable users to quickly debug failures.
 
-<span id="_Toc397328577" class="anchor"><span id="_Toc404161779" class="anchor"></span></span>Test suite configuration logs
+Test suite configuration logs
 ---------------------------------------------------------------------------------------------------------------------------
 
 The configuration logs contain information about whether each
 configuration step succeeds or not, and detail error information if the
 configuration step fails.
 
-### <span id="_Toc404161780" class="anchor"><span id="_Toc397328578" class="anchor"></span></span>SUT configuration logs
+### SUT configuration logs
 
 The SUT configuration scripts create a directory named **SetupLogs**
 under **…\\Setup\\SUT\\** at runtime. The SUT configuration scripts save
@@ -816,7 +797,7 @@ configuration scripts save the logs as
 Test suite reports
 ------------------
 
-### <span id="_Toc404161783" class="anchor"><span id="_Toc397328579" class="anchor"><span id="_Toc308770210" class="anchor"></span></span></span>Microsoft Visual Studio
+### Microsoft Visual Studio
 
 Reports are created only after the package level solution or an
 individual test suite solution has run successfully in Visual Studio.
@@ -828,7 +809,7 @@ individual test suite solution has run successfully in Visual Studio.
 -   Reporting information for an individual test suite **MS-XXXX.sln**
     is saved in **…\\Source\\MS-XXXX\\TestResults**.
 
-### <span id="_Toc402880834" class="anchor"><span id="_Toc404161784" class="anchor"></span></span>Batch scripts
+### Batch scripts
 
 If the Exchange Server EAS Protocol test suites are run by the
 RunAllExchangeEASTestCases.cmd batch file, the reporting information is
