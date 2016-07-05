@@ -9,7 +9,6 @@ Exchange EAS Test Suite Deployment Guide
 - [Test suite directories](#test-suite-directories)
 - [Configuring the test suites](#Cconfiguring-the-test-suites)
 - [Running the test suites](#running-the-test-suites)
-- [Test suite results, logs, and reporting](#test-suite-results,-logs,-and-reporting)
 - [Appendix](#appendix)
 
 Overview
@@ -202,7 +201,7 @@ ExchangeServerEASProtocolTestSuites.zip file contents
   - RunMSXXXX\_SXX\_TCXX\_Name.cmd                     A script that can be used to run a single test case of MS-XXXX.
 
 Configuring the test suites
-=======================================================================================================================================================================================================================
+======================================================================================================================================
 
 This section provides the necessary guidance to configure the Exchange
 Server EAS Protocol test suites on the SUT and the test suite client.
@@ -315,7 +314,7 @@ To configure SUT using the setup configuration script, navigate to the
 **SUT** folder, right-click **ExchangeSUTConfiguration.cmd** and select
 **Run as administrator**.
 
-### <span id="_Configuring_the_SUT1" class="anchor"><span id="_Toc397328563" class="anchor"><span id="_Toc404161768" class="anchor"></span></span></span>Configuring SUT manually
+### Configuring SUT manually
 
 If the SUT is a non-Microsoft implementation of Exchange Server, you
 will not be able to run the setup configuration script. The following
@@ -669,10 +668,9 @@ SHOULD/MAY configuration files
   MS-XXXX\_ExchangeServer2010\_SHOULDMAY.deployment.ptfconfig   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2010 Service Pack 3 (SP3).
   MS-XXXX\_ExchangeServer2013\_SHOULDMAY.deployment.ptfconfig   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2013 Service Pack 1 (SP1).
 
-### <span id="_Configuring_the_test_2" class="anchor"><span id="_Toc397328570" class="anchor"><span id="_Toc404161773" class="anchor"></span></span></span>Configuring the test suite client using setup configuration script
+### Configuring the test suite client using setup configuration script
 
-<span id="_Configure_the_test" class="anchor"><span
-id="_Configure_the_test_1" class="anchor"></span></span>**Note** The
+**Note** The
 setup configuration script is only implemented for configuring the test
 suite client on the Windows platform.
 
@@ -680,7 +678,7 @@ To configure the test suite using the setup configuration script,
 navigate to the **Setup\\Test Suite Client**\\ folder, right-click
 **ExchangeClientConfiguration.cmd** and select **Run as administrator.**
 
-### <span id="Configuringthetestsuiteclientmanual" class="anchor"><span id="_Toc397328571" class="anchor"><span id="_Toc404161774" class="anchor"><span id="_Toc335752278" class="anchor"></span></span></span></span>Configuring the test suite client manually
+### Configuring the test suite client manually
 
 If you didn’t use the setup configuration script to configure the test
 suite client as described in the previous section, follow the steps
@@ -703,16 +701,15 @@ b.  Add the SUT to TrustedHosts to ensure that the Windows Remote
     Management (WinRM) client can process remote calls against the SUT
     when the test suite client is not joined to the domain.
 
-<span id="_Toc397328572" class="anchor"><span id="_Toc404161775" class="anchor"></span></span>Running test suites
+Running test suites
 =================================================================================================================
 
-<span id="_Toc306892175" class="anchor"></span>Once the required
-software has been installed and both the SUT and test suite client have
+Once the required software has been installed and both the SUT and test suite client have
 been configured appropriately, the test suite is ready to run. The test
 suite can run only on the test suite client and can be initiated in one
 of the following two ways: Visual Studio or batch scripts.
 
-<span id="_Toc397328573" class="anchor"><span id="_Toc404161776" class="anchor"></span></span>Microsoft Visual Studio
+Microsoft Visual Studio
 ---------------------------------------------------------------------------------------------------------------------
 
 A Microsoft Visual Studio solution file
@@ -831,14 +828,15 @@ is created in the TestResults folder, along with an associated directory
 named **user\_MACHINENAME DateTimeStamp** that contains a log file in
 XML format and an HTML report.
 
- Appendix
-=========
+Appendix
+===================================================================================================
 
 For more information, see the following:
 
-  References                                                                                      Description
-  ----------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------
-  <dochelp@microsoft.com>                                                                         Alias for Interoperability documentation help. Provides support for the Open Specifications and protocol test suites.
+
+  |Role  |Description |                                                                                  Description
+  | :--- | :--- |
+  |<dochelp@microsoft.com>|                                                                        Alias for Interoperability documentation help. Provides support for the Open Specifications and protocol test suites.
   [Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)                     Microsoft Customer Support Services forums. Actively monitored forums provide support for the Open Specifications and protocol test suites.
   [Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)           Open Specifications home page on MSDN
   [Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)                            Open Specifications documentation on MSDN
