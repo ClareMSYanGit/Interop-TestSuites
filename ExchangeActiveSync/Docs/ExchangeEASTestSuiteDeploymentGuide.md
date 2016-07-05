@@ -80,29 +80,24 @@ Exchange Server on a domain controller (DC) is not recommended.
 
 The following diagram is an example of what a typical Exchange test suite environment may look like. This example uses an IPv4, but IPv6 is also supported by the test suites.
 
-**Note** AD DC and SUT are in the same machine, test cases for MS-ASRM
-will be failed.
+**Note** *AD DC and SUT are in the same machine, test cases for MS-ASRM
+will be failed*.
 
 ### Test suite client
 
 This section describes the prerequisite software for installing the
-Exchange Server EAS Protocol test suites on the test suite client.<span
-id="_Pre-requisites/Dependencies" class="anchor"></span> The following
+Exchange Server EAS Protocol test suites on the test suite client.The following
 table outlines the software dependencies for the test suite client.
 
-Test suite client software dependencies
+**Test suite client software dependencies**
 
-  --------------------------------------------------------------------------------
-  **Operating systems**   Windows 7 x64 Service Pack 1 and above
-                          
-                          Windows 8 x64 and above
-                          
-                          Windows 2008 R2 x64 Service Pack 1 and above
-  ----------------------- --------------------------------------------------------
-  **Software**            Microsoft Visual Studio 2013 Professional
-                          
-                          Microsoft Protocol Test Framework 1.0.2220.0 and above
-  --------------------------------------------------------------------------------
+|Operating systems  |Software |
+| :--- | :--- |
+| Windows 7 x64 Service Pack 1 and above| Microsoft Visual Studio 2013 Professional| 
+|Windows 8 x64 and above|Microsoft Protocol Test Framework 1.0.2220.0 and above| 
+|Windows 2008 R2 x64 Service Pack 1 and above|
+
+
 
 Deploying the test suites
 =======================================================================================================================
