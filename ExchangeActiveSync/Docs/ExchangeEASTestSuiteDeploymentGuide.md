@@ -20,7 +20,7 @@ Server. The guide also introduces how to deploy, configure and run the
 test suites, and view test suite reports.
 
 Prerequisites
-=========================================================================================================================================================================================================
+=======================================================================================================================================
 
 This section describes the hardware and software requirements for the
 test suites. In an Exchange server environment, the test suite
@@ -71,22 +71,25 @@ test suite deployment with a Microsoft implementation. Installing
 Exchange Server on a domain controller (DC) is not recommended.
 
 Required SUT roles
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
-  Role                                             Description
-  ------------------------------------------------ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Active Directory Domain Controller (AD DC)**   Active Directory Domain Controller is used to provide secure data for users and computers. An AD DC can coexist with an Exchange server. A typical test configuration has an AD DC and Exchange Server installed on separate machines.
-  Domain Name System Server (DNS)                  Domain Name System (DNS) Server provides a name resolution for TCP/IP networks. A DNS Server is easier to manage when it is installed on the server as Active Directory Domain Services.
-  **Exchange Server (SUT)**                        The Exchange server in the topology.
+  |Role                                              Description
 
-<span id="_SUT_resource_requirements" class="anchor"></span>The
-following diagram is an example of what a typical Exchange test suite
-environment may look like. This example uses an IPv4, but IPv6 is also
-supported by the test suites.
+  |**Active Directory Domain Controller (AD DC)**   |Active Directory Domain Controller is used to provide secure data for users and | |                                                 |computers. An AD DC can coexist with an Exchange server. A typical test       |
+  |                                                 |configuration has an AD DC and Exchange Server installed on separate machines.|
+  Domain Name System Server (DNS)                   |Domain Name System (DNS) Server provides a name resolution for TCP/IP networks. A|                                                   |DNS Server is easier to manage when it is installed on the server as Active Directory Domain Services.
+  **Exchange Server (SUT)**                         |The Exchange server in the topology.
+
+The following diagram is an example of what a typical Exchange test suite environment may look like. This example uses an IPv4, but IPv6 is also supported by the test suites.
 
 **Note** AD DC and SUT are in the same machine, test cases for MS-ASRM
 will be failed.
 
-### <span id="_Toc397328557" class="anchor"><span id="_Toc404161761" class="anchor"></span></span>Test suite client
+### Test suite client
 
 This section describes the prerequisite software for installing the
 Exchange Server EAS Protocol test suites on the test suite client.<span
