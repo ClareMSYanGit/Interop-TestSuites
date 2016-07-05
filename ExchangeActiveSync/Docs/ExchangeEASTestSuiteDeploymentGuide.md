@@ -70,8 +70,10 @@ The following table describes the necessary server roles required for a
 test suite deployment with a Microsoft implementation. Installing
 Exchange Server on a domain controller (DC) is not recommended.
 
-| Role  | Description |
-| --- | --- |
+**Required SUT roles**
+
+|Role  |Description |
+| :--- | :--- |
 | **Active Directory Domain Controller (AD DC)** |Active Directory Domain Controller is used to provide secure data for users and   computers. An AD DC can coexist with an Exchange server. A typical test configuration has an AD DC and Exchange Server installed on separate machines.|
 | Domain Name System Server (DNS)  |Domain Name System (DNS) Server provides a name resolution for TCP/IP networks. A                 DNS Server is easier to manage when it is installed on the server as Active Directory Domain Services.  |
 |  **Exchange Server (SUT)** |The Exchange server in the topology. |
