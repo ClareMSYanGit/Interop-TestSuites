@@ -1,5 +1,4 @@
-> ![](media/image1.png){width="4.052910104986877in"
-> height="1.3855741469816274in"}
+![alt tag](/Doc-Images/ExLogo.png)
 
 Exchange MAPI Test Suite Deployment Guide
 
