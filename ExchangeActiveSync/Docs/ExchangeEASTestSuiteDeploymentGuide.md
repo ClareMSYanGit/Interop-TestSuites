@@ -834,9 +834,9 @@ Appendix
 For more information, see the following:
 
 
-  |Role  |Description |                                                                                  Description
+  |Role  |Description |                                                                                  
   | :--- | :--- |
-  |<dochelp@microsoft.com>|                                                                        Alias for Interoperability documentation help. Provides support for the Open Specifications and protocol test suites.
+  |<dochelp@microsoft.com>|Alias for Interoperability documentation help. Provides support for the Open Specifications and protocol test suites.|
   [Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)                     Microsoft Customer Support Services forums. Actively monitored forums provide support for the Open Specifications and protocol test suites.
   [Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)           Open Specifications home page on MSDN
   [Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)                            Open Specifications documentation on MSDN
