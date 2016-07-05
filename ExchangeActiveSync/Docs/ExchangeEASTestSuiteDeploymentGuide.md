@@ -701,7 +701,7 @@ b.  Add the SUT to TrustedHosts to ensure that the Windows Remote
     Management (WinRM) client can process remote calls against the SUT
     when the test suite client is not joined to the domain.
 
-Running test suites
+Running the test suites
 =================================================================================================================
 
 Once the required software has been installed and both the SUT and test suite client have
