@@ -7,7 +7,7 @@ Exchange EAS Test Suite Deployment Guide
 - [Prerequisites](#prerequisites)
 - [Deploying the test suites](#deploying-the-test-suites)
 - [Test suite directories](#test-suite-directories)
-- [Configuring the test suites](#Cconfiguring-the-test-suites)
+- [Configuring the test suites](#configuring-the-test-suites)
 - [Running the test suites](#running-the-test-suites)
 - [Appendix](#appendix)
 
