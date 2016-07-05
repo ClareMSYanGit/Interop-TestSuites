@@ -1,9 +1,8 @@
-> ![](media/image1.png){width="4.052910104986877in"
-> height="1.3855741469816274in"}
+![alt tag](/Doc-Images/ExLogo.png)
 
 Exchange EWS Test Suite Deployment Guide
 
-<span id="_Toc404089091" class="anchor"><span id="_Toc397328551" class="anchor"></span></span>Overview
+Overview
 ======================================================================================================
 
 The Exchange Server EWS Protocol Test Suites are implemented as
@@ -20,7 +19,7 @@ the system under test (SUT) if the test suites run against Exchange
 Server. The guide also introduces how to deploy, configure and run the
 test suites, and view test suite reports.
 
-<span id="_Toc402541974" class="anchor"><span id="_Toc402863716" class="anchor"><span id="_Toc402864865" class="anchor"><span id="_Toc404089092" class="anchor"></span></span></span></span>Prerequisites
+Prerequisites
 =========================================================================================================================================================================================================
 
 This section describes the hardware and software requirements for the
