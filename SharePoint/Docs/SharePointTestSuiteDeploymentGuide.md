@@ -1,5 +1,4 @@
-![](media/image1.png){width="6.145833333333333in"
-height="1.7658169291338583in"}
+![alt tag](/Doc-Images/SPLogo.png)
 
 SharePoint Test Suite Deployment Guide
 
