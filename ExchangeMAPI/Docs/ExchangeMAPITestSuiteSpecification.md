@@ -1,6 +1,4 @@
-<span id="_Toc63679053"
-class="anchor"></span>![](media/image1.png){width="5.447916666666667in"
-height="1.625in"}
+![alt tag](/Doc-Images/ExLogo.png)
 
 **Exchange MAPI Test Suites Specification**
 
