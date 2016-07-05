@@ -30,7 +30,7 @@ Server. The guide also introduces how to deploy, configure and run the
 test suites, and view test suite reports.
 
 ##Prerequisites
-======================================================================================================
+
 
 This section describes the hardware and software requirements for the
 test suites. In an Exchange server environment, the test suite
