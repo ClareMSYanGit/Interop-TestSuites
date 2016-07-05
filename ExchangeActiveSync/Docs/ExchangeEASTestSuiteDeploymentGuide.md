@@ -3,14 +3,14 @@
 Exchange EAS Test Suite Deployment Guide
 ======================================================================================================
 
-- [Overview](#Overview)
-- [Prerequisites](#Prerequisites)
-- [Deploying the test suites](#Deploying-the-test-suites)
-- [Test suite directories](#Test-suite-directories)
-- [Configuring the test suites](#Configuring-the-test-suites)
-- [Running the test suites](#Running-the-test-suites)
-- [Test suite results, logs, and reporting](#Test-suite-results,-logs,-and-reporting)
-- [Appendix](#Appendix)
+- [Overview](#overview)
+- [Prerequisites](#prerequisites)
+- [Deploying the test suites](#deploying-the-test-suites)
+- [Test suite directories](#test-suite-directories)
+- [Configuring the test suites](#Cconfiguring-the-test-suites)
+- [Running the test suites](#running-the-test-suites)
+- [Test suite results, logs, and reporting](#test-suite-results,-logs,-and-reporting)
+- [Appendix](#appendix)
 
 Overview
 ======================================================================================================
@@ -29,8 +29,8 @@ the system under test (SUT) if the test suites run against Exchange
 Server. The guide also introduces how to deploy, configure and run the
 test suites, and view test suite reports.
 
-##Prerequisites
-
+Prerequisites
+======================================================================================================
 
 This section describes the hardware and software requirements for the
 test suites. In an Exchange server environment, the test suite
