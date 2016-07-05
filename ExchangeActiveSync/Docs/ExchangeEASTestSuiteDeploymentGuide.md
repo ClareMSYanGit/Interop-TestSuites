@@ -29,8 +29,8 @@ the system under test (SUT) if the test suites run against Exchange
 Server. The guide also introduces how to deploy, configure and run the
 test suites, and view test suite reports.
 
-#Prerequisites
-=======================================================================================================================================
+##Prerequisites
+======================================================================================================
 
 This section describes the hardware and software requirements for the
 test suites. In an Exchange server environment, the test suite
