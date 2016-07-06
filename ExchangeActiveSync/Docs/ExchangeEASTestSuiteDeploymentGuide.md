@@ -742,28 +742,7 @@ bin folder.
 | RunAllMSXXXXTestCases.cmd       |  Runs all MS-XXXX test cases.| 
 | RunMSXXXX\_SXX\_TCXX\_Name.cmd  |  Runs a specific test case within the test suite.| 
 
-Appendix
-===================================================================================================
 
-For more information, see the following:
-|Batch script| Script Description |
-| :--- | :--- |
-| RunAllExchangeEASTestCases.cmd  |  Runs all the test cases within the Exchange Server EAS Protocol test suites.| 
-| RunAllMSXXXXTestCases.cmd       |  Runs all MS-XXXX test cases.| 
-| RunMSXXXX\_SXX\_TCXX\_Name.cmd  |  Runs a specific test case within the test suite.| 
-
-
-  |Reference  |Description |                                                                                  
-  | :--- | :--- |
-  |<dochelp@microsoft.com>|Alias for Interoperability documentation help. |Provides support for the Open Specifications and protocol test suites.|
-  |[Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)| Microsoft Customer Support Services forums. Actively monitored forums provide support for the Open Specifications and protocol test suites.|
-  |[Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)| Open Specifications home page on MSDN|
-  |[Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)| Open Specifications documentation on MSDN|
-  |[Exchange Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=119904) |Exchange Server Open Specifications documentation on MSDN|
-  |[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)|Normative language reference|
-  |[Exchange Server 2013 deployment](http://go.microsoft.com/fwlink/?LinkID=266569) |Exchange Server 2013 planning and deployment on TechNet
-  |[Exchange Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkID=517397) |Exchange Server 2010 planning and deployment on TechNet
-  |[Exchange Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkID=512508)|Exchange Server 2007 deployment on TechNet|
 
 Test suite results, logs, and reporting
 =============================================================================================================================
@@ -823,4 +802,27 @@ is created in the TestResults folder, along with an associated directory
 named **user\_MACHINENAME DateTimeStamp** that contains a log file in
 XML format and an HTML report.
 
+Appendix
+===================================================================================================
+For more information, see the following:
 
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
+
+
+
+
+
+  |Reference  |Description |                                                                                  
+  | :--- | :--- |
+  |<dochelp@microsoft.com>|Alias for Interoperability documentation help. |Provides support for the Open Specifications and protocol test suites.|
+  |[Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)| Microsoft Customer Support Services forums. Actively monitored forums provide support for the Open Specifications and protocol test suites.|
+  |[Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)| Open Specifications home page on MSDN|
+  |[Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)| Open Specifications documentation on MSDN|
+  |[Exchange Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=119904) |Exchange Server Open Specifications documentation on MSDN|
+  |[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)|Normative language reference|
+  |[Exchange Server 2013 deployment](http://go.microsoft.com/fwlink/?LinkID=266569) |Exchange Server 2013 planning and deployment on TechNet
+  |[Exchange Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkID=517397) |Exchange Server 2010 planning and deployment on TechNet
+  |[Exchange Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkID=512508)|Exchange Server 2007 deployment on TechNet|
