@@ -438,8 +438,7 @@ to run the test suites.
 
 19.  Configure the web site which contains the application that
     implements the EAS protocols.
-
-a.  Configure Secure Sockets Layer (SSL) as not required and ignore
+  a.  Configure Secure Sockets Layer (SSL) as not required and ignore
     client certificates on the following sites: Default Web Site, Server
     ActiveSync website, and Autodiscover website.
 
@@ -509,7 +508,7 @@ a.  Configure Secure Sockets Layer (SSL) as not required and ignore
 2.  Enable IRM features to allow the client to access the SUT.
 
 Configuring the test suite client
----------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
 
 The test suite client is managed through a common configuration file,
 two test suite-specific configuration files, and three SHOULD/MAY
@@ -525,9 +524,10 @@ all Exchange Server EAS Protocol test suites. This file must be modified
 to match the characteristics of the environment where the test suites
 are installed.
 
-  **Configuration file**                             **Description**
-  -------------------------------------------------- ----------------------------------------------------------------------------------------------------------
-  ExchangeCommonConfiguration.deployment.ptfconfig   The deployment configuration file provides the environmental details that are common to the test suites.
+| Configuration file | Description |
+| :--- | :--- |
+| ExchangeCommonConfiguration.deployment.ptfconfig|The deployment configuration file provides the environmental details that are common to the test suites. |
+
 
 ### Test-suite specific configuration files
 
@@ -535,12 +535,11 @@ In addition to the common configuration file, each individual test suite
 has the following two configuration files for test suite-specific
 modification.
 
-Test-suite specific configuration files
-
-  Configuration file                        Description
-  ----------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  MS-XXXX\_TestSuite.deployment.ptfconfig   The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows for test suite-specific customization.
-  MS-XXXX\_TestSuite.ptfconfig              The test suite configuration file contains details that specify the behavior of the test suite operation.
+**Test-suite specific configuration files**
+| Configuration file | Description |
+| :--- | :--- |
+| MS-XXXX\_TestSuite.deployment.ptfconfig | The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows for test suite-specific customization.|
+| MS-XXXX\_TestSuite.ptfconfig| The test suite configuration file contains details that specify the behavior of the test suite operation.|
 
 Both files are present in the TestSuite folder inside each test suite
 directory.
