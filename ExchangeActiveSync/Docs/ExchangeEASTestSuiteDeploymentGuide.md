@@ -79,6 +79,7 @@ following versions of Exchange Server:
 The following table describes the necessary server roles required for a
 test suite deployment with a Microsoft implementation. Installing
 Exchange Server on a domain controller (DC) is not recommended.
+![alt tag](/Doc-Images/EAS_RequiredSUTroles.png)
 
 **Required SUT roles**
 
