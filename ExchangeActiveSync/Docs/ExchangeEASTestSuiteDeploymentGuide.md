@@ -244,6 +244,9 @@ corresponding change to the resource name defined in the client
 configuration script is required.
 
 **Exchange server resources**
+
+
+
 |  Test suite | Resource type |  Resource name | Note |
 | :--- | :--- | :--- |:--- |
 |  All       |   --        |                          --|                                           --|
