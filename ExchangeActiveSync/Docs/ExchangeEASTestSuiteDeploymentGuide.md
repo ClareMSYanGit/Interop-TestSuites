@@ -804,10 +804,11 @@ Appendix
 ===================================================================================================
 
 For more information, see the following:
-| Command | Description |
-| --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
+|Batch script| Script Description |
+| :--- | :--- |
+| RunAllExchangeEASTestCases.cmd  |  Runs all the test cases within the Exchange Server EAS Protocol test suites.| 
+| RunAllMSXXXXTestCases.cmd       |  Runs all MS-XXXX test cases.| 
+| RunMSXXXX\_SXX\_TCXX\_Name.cmd  |  Runs a specific test case within the test suite.| 
 
 
   |Reference  |Description |                                                                                  
