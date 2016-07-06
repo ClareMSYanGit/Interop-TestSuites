@@ -324,166 +324,154 @@ to run the test suites.
 
 1.  Create the following mailbox users:
 
-MSASAIRS\_User01, MSASAIRS\_User02, MSASCAL\_User01, MSASCAL\_User02,
-MSASCMD\_UserY, MSASCMD\_SearchUser01, MSASCMD\_SearchUser02,
-MSASCNTC\_User01, MSASCNTC\_User02, MSASCON\_User01, MSASCON\_User02,
-MSASCON\_User03, MSASDOC\_User01, MSASEMAIL\_User01, MSASEMAIL\_User02,
-MSASEMAIL\_User03, MSASEMAIL\_User04, MSASEMAIL\_User05,
-MSASHTTP\_User01, MSASHTTP\_User02, MSASHTTP\_User03, MSASHTTP\_User04,
-MSASNOTE\_User01, MSASPROV\_User01, MSASPROV\_User02, MSASPROV\_User03,
-and MSASTASK\_User01
+    MSASAIRS\_User01, MSASAIRS\_User02, MSASCAL\_User01, MSASCAL\_User02,
+    MSASCMD\_UserY, MSASCMD\_SearchUser01, MSASCMD\_SearchUser02,
+    MSASCNTC\_User01, MSASCNTC\_User02, MSASCON\_User01, MSASCON\_User02,
+    MSASCON\_User03, MSASDOC\_User01, MSASEMAIL\_User01, MSASEMAIL\_User02,
+    MSASEMAIL\_User03, MSASEMAIL\_User04, MSASEMAIL\_User05,
+    MSASHTTP\_User01, MSASHTTP\_User02, MSASHTTP\_User03, MSASHTTP\_User04,
+    MSASNOTE\_User01, MSASPROV\_User01, MSASPROV\_User02, MSASPROV\_User03,
+    and MSASTASK\_User01
 
-1.  Create the mailbox user MSASCMD\_UserY specified in the SUT resource
+2.  Create the mailbox user MSASCMD\_UserY specified in the SUT resource
     requirements table in section 5.1.1.
 
-2.  Add a delegate of MSASCMD\_User07 to MSASCMD\_User08, and also add a
+3.  Add a delegate of MSASCMD\_User07 to MSASCMD\_User08, and also add a
     delegate of MSASEMAIL\_User04 to MSASEMAIL\_User05., The delegated
     user will be granted Edit permissions on Calendar, Tasks, Inbox,
     Contacts, Notes and Journal.
 
-3.  Set the following properties for MSASCMD\_User01.
+4.  Set the following properties for MSASCMD\_User01.
 
--   SamAccountName: "MSASCMD\_User01"
+    -   SamAccountName: "MSASCMD\_User01"
+    
+    -   GivenName: "MSASCMD\_FirstName"
+    
+    -   Surname: "MSASCMD\_LastName"
+    
+    -   Office: "D1042"
+    
+    -   Company: “MS”
+    
+    -   Title: “Manager”
+    
+    -   HomePhone: “22222286”
+    
+    -   OfficePhone: “55555501”
+    
+    -   MobilePhone: “8612345678910”
 
--   GivenName: "MSASCMD\_FirstName"
-
--   Surname: "MSASCMD\_LastName"
-
--   Office: "D1042"
-
--   Company: “MS”
-
--   Title: “Manager”
-
--   HomePhone: “22222286”
-
--   OfficePhone: “55555501”
-
--   MobilePhone: “8612345678910”
-
-1.  Create the following distribution groups:\
+5.  Create the following distribution groups:\
     MSASCMD\_TestGroup, MSASCMD\_LargeGroup, MSASRM\_SuperUserGroup.
 
-2.  Create two ActiveSync mailbox policies MSASPROV\_UserPolicy01 and
+6.  Create two ActiveSync mailbox policies MSASPROV\_UserPolicy01 and
     MSASPROV\_UserPolicy02
 
-3.  Create a shared folder MSASCMD\_SharedFolder. Also, remove read
+7.  Create a shared folder MSASCMD\_SharedFolder. Also, remove read
     permissions to MSASCMD\_User02. Under the folder
     MSASCMD\_SharedFolder, create a non-empty document named
     MSASCMD\_Non-emptyDocument.txt, and an empty document
     named MSASCMD\_EmptyDocument.txt.
 
-> **Note** The file size of MSASCMD\_Non-emptyDocument.txt should be at
-> least 4 bytes.
+**Note** The file size of MSASCMD\_Non-emptyDocument.txt should be at least 4 bytes.
 
-1.  Create a shared folder named MSASDOC\_SharedFolder. Also, grant full
+8.  Create a shared folder named MSASDOC\_SharedFolder. Also, grant full
     control to MSASDOC\_User01. Under the folder MSASDOC\_SharedFolder,
     create a hidden folder named MSASDOC\_HiddenFolder, a visible folder
     named MSASDOC\_VisibleFolder, a hidden document named
     MSASDOC\_HiddenDocument.txt, and a visible
     document MSASDOC\_VisibleDocument.txt.
+**Note** The document MSASDOC\_HiddenDocument.txt and MSASDOC\_VisibleDocument.txt should not be empty.
 
-> **Note** The document MSASDOC\_HiddenDocument.txt and
-> MSASDOC\_VisibleDocument.txt should not be empty.
-
-1.  Grant local administrator permissions to the following mailbox
+9.  Grant local administrator permissions to the following mailbox
     users:\
     MSASCMD\_User03, MSASHTTP\_User04, MSASPROV\_User01
 
-2.  Grant administrator permissions to the SUT for the following mailbox
+10. Grant administrator permissions to the SUT for the following mailbox
     users:
-
     MSASCMD\_User03, MSASPROV\_User01.
 
-3.  Grant distribute message permissions to the group
+11. Grant distribute message permissions to the group
     MSASCMD\_TestGroup, and add the following mailbox users into the
     group:
-
     MSASCMD\_User01, MSASCMD\_User02.
 
-4.  Grant distribute message permissions to the group
+12. Grant distribute message permissions to the group
     MSASCMD\_LargerGroup, and add 19 mailbox users specified in
     MSASCMD\_UserY section 5.1.1, MSASCMD\_SerachUser01, and
     MSASCMD\_SearchUser02 into the group MSASCMD\_LargerGroup.
 
-5.  Apply the following policy settings for the Mobile Device mailbox
+13.  Apply the following policy settings for the Mobile Device mailbox
     policy MSASPROV\_UserPolicy02. The value of *Allow non-provisionable
     devices* must be set to false, while the value for other properties
     listed below are not restricted.
 
--   Allow non-provisionable devices
+    -   Allow non-provisionable devices
+    
+    -   Password expiration (days)
+    
+    -   Maximum attachment size (KB)
+    
+    -   Number of failed attempts allowed
+    
+    -   Time without user input before password must be re-entered
+        (in minutes)
+    
+    -   Minimum password length
+    
+    -   Blocked applications
+    
+    -   Allowed applications
 
--   Password expiration (days)
-
--   Maximum attachment size (KB)
-
--   Number of failed attempts allowed
-
--   Time without user input before password must be re-entered
-    (in minutes)
-
--   Minimum password length
-
--   Blocked applications
-
--   Allowed applications
-
-1.  Set the mailbox policy MSASPROV\_UserPolicy01 MSASPROV\_User01 and
+14.  Set the mailbox policy MSASPROV\_UserPolicy01 MSASPROV\_User01 and
     MSASPROV\_UserPolicy02 to MSASPROV\_User02.
 
-2.  Enable the setting of moving meeting forward notification email to
+15.  Enable the setting of moving meeting forward notification email to
     Deleted Items for MSASCMD\_User01 and MSASHTTP\_User03.
 
-3.  Disable ActiveSync for MSASCMD\_User04.
+16.  Disable ActiveSync for MSASCMD\_User04.
 
-4.  Add an SMTP email address to MSASCMD\_User01.
+17.  Add an SMTP email address to MSASCMD\_User01.
 
-5.  Configure external URL of ActiveSync virtual directory on
+18.  Configure external URL of ActiveSync virtual directory on
     the server.
 
-6.  Configure the web site which contains the application that
+19.  Configure the web site which contains the application that
     implements the EAS protocols.
-
-<!-- -->
 
 a.  Configure Secure Sockets Layer (SSL) as not required and ignore
     client certificates on the following sites: Default Web Site, Server
     ActiveSync website, and Autodiscover website.
 
-<!-- -->
-
-1.  Configure Certificate Authority and Certificate Authority Web
+20.  Configure Certificate Authority and Certificate Authority Web
     enrollment services.
 
-2.  Create and export a user certificate named MSASCMD\_PfxFile to be
+21.  Create and export a user certificate named MSASCMD\_PfxFile to be
     able to send a secure email to MSASCMD\_User03.
 
-3.  MSASCMD\_User03 should send an email to MSASCMD\_User09.\
-    ***Note*** *The subsequent steps in this procedure are only
-    necessary for Exchange Server 2010 or Exchange Server 2013.*
+22.  MSASCMD\_User03 should send an email to MSASCMD\_User09.\
+    ***Note*** *The subsequent steps in this procedure are only necessary for Exchange Server 2010 or Exchange Server 2013.*
 
-4.  Add the photo MSASCMD\_User01Photo.jpg to MSASCMD\_User01 and
+23.  Add the photo MSASCMD\_User01Photo.jpg to MSASCMD\_User01 and
     MSASCMD\_User02Photo.jpg to MSASMCD\_User02.
 
-5.  Create a user named MSASRM\_ADUser.
+24.  Create a user named MSASRM\_ADUser.
 
-6.  Create a local group named AD RMS Enterprise Administrators and add
+25.  Create a local group named AD RMS Enterprise Administrators and add
     the user MSASRM\_ADUser into this group.
 
-7.  Create mailbox users MSASRM\_User01, MSASRM\_User02, MSASRM\_User03,
+26.  Create mailbox users MSASRM\_User01, MSASRM\_User02, MSASRM\_User03,
     and MSASRM\_User04.
 
-8.  Grant local administrator permission to MSASRM\_User04.
+27.  Grant local administrator permission to MSASRM\_User04.
 
-9.  Create a distribution group named MSASRM\_SuperUserGroup.
+28.  Create a distribution group named MSASRM\_SuperUserGroup.
 
-10. Install the Active Directory Right Management Service (AD RMS)
+29. Install the Active Directory Right Management Service (AD RMS)
     role .
 
-11. Configure the website which contains the application that implements
+30. Configure the website which contains the application that implements
     the EAS protocols.
-
-<!-- -->
 
 a.  Configure Secure Sockets Layer (SSL) as not required and ignore
     client certificates on the following sites:\
@@ -491,25 +479,19 @@ a.  Configure Secure Sockets Layer (SSL) as not required and ignore
     Default Web Site/\_wmcs/certification Default Web
     Site/\_wmcs/licensing
 
-<!-- -->
-
-1.  Add Read and Execute permission for the groups Users, Product
+31.  Add Read and Execute permission for the groups Users, Product
     Servers, and AD RMS Service Group on the
     ServerCertification.asmx file.
 
-2.  Add Read and Execute permission for the group Product Servers on the
+32.  Add Read and Execute permission for the group Product Servers on the
     license.asmx file.
 
-3.  Add RMS shared identity user into the distribution
+33.  Add RMS shared identity user into the distribution
     group MSASRM\_SuperUserGroup.
 
-<!-- -->
+34.  Set MSASRM\_SuperUserGroup as the super user group.
 
-1.  Set MSASRM\_SuperUserGroup as the super user group.
-
-<!-- -->
-
-1.  Create the following distributed rights policy templates:
+35.  Create the following distributed rights policy templates:
 
   Template Name                                Rights
   -------------------------------------------- -----------------------------------------------------------------------------------------------------------------
