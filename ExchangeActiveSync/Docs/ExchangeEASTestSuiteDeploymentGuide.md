@@ -202,7 +202,7 @@ contained within the **ExchangeServerEASProtocolTestSuites.zip** file.
 | - RunMSXXXX\_SXX\_TCXX\_Name.cmd|                      A script that can be used to run a single test case of MS-XXXX.| 
 
 Configuring the test suites
-======================================================================================================================================
+==============================================================================================================================
 
 This section provides the necessary guidance to configure the Exchange
 Server EAS Protocol test suites on the SUT and the test suite client.
@@ -267,14 +267,14 @@ configuration script is required.
 | | User Mailbox  |MSASCNTC\_User02|--| 
 |   MS-ASCON|      User Mailbox|  MSASCON\_User01 |                              --| 
 | |                User Mailbox| MSASCON\_User02  |                             --| 
-| |                User Mailbox|                         MSASCON\_User03                          |     | 
-  | MS-ASDOC|      User Mailbox|                         MSASDOC\_User01|                               --| 
+| |                User Mailbox|                         MSASCON\_User03                          |   --  | 
+| MS-ASDOC|      User Mailbox|                         MSASDOC\_User01|                               --| 
 | |                Folder|                               MSASDOC\_SharedFolder|The folder is shared and full control should be granted to the specified user MSASDOC\_User01.| 
 | |                Folder|                               MSASDOC\_VisibleFolder|                        The folder should be created under MSASDOC\_SharedFolder.| 
 | |                Folder|                               MSASDOC\_HiddenFolder|                         The folder is hidden and should be created under MSASDOC\_SharedFolder.| 
 | | TextFile|                             MSASDOC\_VisibleDocument|                      The document should be created under MSASDOC\_SharedFolder.| 
-| | TextFile|                             MSASDOC\_HiddenDocument|                       The document is hidden and should be created under MSASDOC\_SharedFolder.| 
-  | MS-ASEMAIL|    User Mailbox|                         MSASEMAIL\_User01  |                           --| 
+| | TextFile| MSASDOC\_HiddenDocument|The document is hidden and should be created under MSASDOC\_SharedFolder.| 
+| MS-ASEMAIL|    User Mailbox|                         MSASEMAIL\_User01  |                           --| 
 | |                User Mailbox|                         MSASEMAIL\_User02|                             --| 
 | |                User Mailbox  |                       MSASEMAIL\_User03  |                           --| 
 | |                User Mailbox |                        MSASEMAIL\_User04  |                           --| 
@@ -282,29 +282,29 @@ configuration script is required.
 | |   MS-ASHTTP   |  User Mailbox|                         MSASHTTP\_User01 |                             --| 
 | |                User Mailbox|                         MSASHTTP\_User02|                              --|
 | | User Mailbox                        | MSASHTTP\_User03|                              --| 
- | |    User Mailbox|                         MSASHTTP\_User04|                              --| 
-  | MS-ASNOTE|     User Mailbox|                         | MSASNOTE\_User01|                              --| 
-  | MS-ASPROV|     User Mailbox|                         | MSASPROV\_User01 |                             --| 
-  | |        User Mailbox                        | MSASPROV\_User02 | |                             
-  | |        User Mailbox    |                     MSASPROV\_User03| |                              
-        | |        Active sync mailbox policy          MSASPROV\_UserPolicy01| |                        
-        | |        Active sync mailbox policy          MSASPROV\_UserPolicy02| |                        
-  | MS-ASRM|       User Mailbox   |                      MSASRM\_User01       |                         --| 
-  | |              User Mailbox|                         MSASRM\_User02|                                --| 
-  | |              User Mailbox |                        MSASRM\_User03|                                --| 
- | |              User Mailbox        |                MSASRM\_User04                               --|
-| |               User               |                 MSASRM\_ADUser |A domain user and granted AD RMS Enterprise Administrator permission.|
- | |              DistributionGroup   |                MSASRM\_SuperUserGroup    |                   --|
-| |               Distributed Right Policy Template |  MSASRM\_AllRights\_AllowedTemplate|           Allowed all rights|
-| |               Distributed Right Policy Template |  MSASRM\_View\_AllowedTemplate|                Denied all rights except View|
-| |               Distributed Right Policy Template |  MSASRM\_ViewReplyAll\_AllowedTemplate|        Allowed View and ReplyAll|
-| |               Distributed Right Policy Template |  MSASRM\_ViewReply\_AllowedTemplate|           Allowed View and Reply|
-| |               Distributed Right Policy Template |  MSASRM\_ViewReplyReplyAll\_AllowedTemplate|   Allowed View, Reply, and ReplyAll|
-| |               Distributed Right Policy Template |  MSASRM\_EditExport\_NotAllowedTemplate|       Allowed all rights except Edit and Export|
-| |               Distributed Right Policy Template |  MSASRM\_Export\_NotAllowedTemplate      |     Allowed all rights except Export
-| |               Distributed Right Policy Template |  MSASRMReplyAll\_NotAllowedTemplate       |    Allowed all rights except ReplyAll
- | MS-ASTASK|    User Mailbox |                       MSASTASK\_User01    |                         --|
-  |MS-ASWBXML |  --                             |     --                             |              --|
+| |    User Mailbox|                         MSASHTTP\_User04|                              --| 
+| MS-ASNOTE|     User Mailbox|                         | MSASNOTE\_User01|                              --| 
+| MS-ASPROV|     User Mailbox|                         | MSASPROV\_User01 |                             --| 
+| |        User Mailbox                        | MSASPROV\_User02 | |                             
+| |        User Mailbox    |                     MSASPROV\_User03| |                              
+| |        Active sync mailbox policy|           MSASPROV\_UserPolicy01| |                        
+| |        Active sync mailbox policy|           MSASPROV\_UserPolicy02| |                        
+| MS-ASRM|       User Mailbox   |                      MSASRM\_User01       |                         --| 
+| |              User Mailbox|                         MSASRM\_User02|                                --| 
+| |              User Mailbox |                        MSASRM\_User03|                                --| 
+| |              User Mailbox        |                MSASRM\_User04                               --|
+| |               User               |  MSASRM\_ADUser |A domain user and granted AD RMS Enterprise Administrator permission.|
+| |              DistributionGroup   |                MSASRM\_SuperUserGroup    |   --|
+| |     Distributed Right Policy Template |  MSASRM\_AllRights\_AllowedTemplate|Allowed all rights|
+| |     Distributed Right Policy Template |  MSASRM\_View\_AllowedTemplate| Denied all rights except View|
+| |   Distributed Right Policy Template |  MSASRM\_ViewReplyAll\_AllowedTemplate| Allowed View and ReplyAll|
+| |               Distributed Right Policy Template |  MSASRM\_ViewReply\_AllowedTemplate|Allowed View and Reply|
+| | Distributed Right Policy Template |  MSASRM\_ViewReplyReplyAll\_AllowedTemplate|   Allowed View, Reply, and ReplyAll|
+| | Distributed Right Policy Template |  MSASRM\_EditExport\_NotAllowedTemplate|Allowed all rights except Edit and Export|
+| | Distributed Right Policy Template |  MSASRM\_Export\_NotAllowedTemplate      |     Allowed all rights except Export
+| | Distributed Right Policy Template |  MSASRMReplyAll\_NotAllowedTemplate       |    Allowed all rights except ReplyAll
+| MS-ASTASK|    User Mailbox |    MSASTASK\_User01    |                         --|
+|MS-ASWBXML |  --     |     --                             |              --|
 
 ### Configuring SUT using the setup configuration script
 
