@@ -804,6 +804,10 @@ Appendix
 ===================================================================================================
 
 For more information, see the following:
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
   |Reference  |Description |                                                                                  
   | :--- | :--- |
   |<dochelp@microsoft.com>|Alias for Interoperability documentation help. |Provides support for the Open Specifications and protocol test suites.|
