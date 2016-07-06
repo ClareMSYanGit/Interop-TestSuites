@@ -189,8 +189,8 @@ contained within the **ExchangeServerEASProtocolTestSuites.zip** file.
 |**- ExchangeServerEASProtocolTestSuites.runsettings** |A configuration file used for unit test.| 
 |**- ExchangeServerEASProtocolTestSuites.sln**| A Visual Studio solution that contains projects of the test suites source code.| 
 |**- ExchangeServerEASProtocolTestSuites.testsettings**  |  A configuration file used for running test cases.| 
-|**- MS-XXXX **                                          |  MS-XXXX test suite code directory.| 
-|**- MS-XXXX.sln **|  A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.| 
+|**- MS-XXXX**                                          |  MS-XXXX test suite code directory.| 
+|**- MS-XXXX.sln**|  A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.| 
 |**- MS-XXXX.runsettings** | A configuration file used for MS-XXXX unit test.| 
 |**- MS-XXXX.testsettings**|  A configuration file used for MS-XXXX running test cases.| 
 |**+ Adapter**|Adapter test suite code.| 
