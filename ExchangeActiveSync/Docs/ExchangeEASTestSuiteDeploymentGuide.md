@@ -569,38 +569,13 @@ for a specific test suite, do the following:
     SUT control adapter\*\*.
 
 **Interactive mode values**
-| Command | Description |
-| --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
 
 | Property name  | Default value\*|Optional value| Description|
 | :--- | :--- |:--- |:--- |
 |  Adapter   | managed or powershell | interactive\*\* | **managed**:
-                                                      **powershell**:
-                                                            
-                                                            The SUT control adapter is implemented through Windows PowerShell.
-                                                            
-                                                            **interactive**:
-                                                            
-                                                            Interactive adapters are used for manually configuring a server. Interactive adapter displays a dialog box to perform a manual test each time one of its methods is called. The dialog box will show the method name, parameter names, and values\*\*\*|
-
-
-  Property name   Default value\*         Optional value    Description
-  --------------- ----------------------- ----------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Adapter         managed or powershell   interactive\*\*   **managed**:
-                                                            
-                                                            The SUT control adapter is implemented in C\# managed code.
-                                                            
-                                                            **powershell**:
-                                                            
-                                                            The SUT control adapter is implemented through Windows PowerShell.
-                                                            
-                                                            **interactive**:
-                                                            
-                                                            Interactive adapters are used for manually configuring a server. Interactive adapter displays a dialog box to perform a manual test each time one of its methods is called. The dialog box will show the method name, parameter names, and values\*\*\*
+||||**powershell**: The SUT control adapter is implemented through Windows PowerShell.
+||||**interactive**:Interactive adapters are used for manually configuring a server. Interactive adapter displays a dialog box to perform a manual test each time one of its methods is called. The dialog box will show the method name, parameter names, and values\*\*\*|
  
-
 \**The Adapter property value is set to either managed or powershell
 depending on whether the SUT control adapter was implemented in managed
 C\# code or through PowerShell.*
