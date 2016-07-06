@@ -164,41 +164,42 @@ contained within the **ExchangeServerEASProtocolTestSuites.zip** file.
 
 **ExchangeServerEASProtocolTestSuites.zip file contents**
 
+
 | Directory/file | Description |
 | :--- | :--- |
-|  EULA.rtf    | The End-User License Agreement. |
-|ReadMe.txt     | A file that contains information about the deployment guide and prerequisite software. |
+|  EULA.rtf   | The End-User License Agreement. |
+|ReadMe.txt   | A file that contains information about the deployment guide and prerequisite software. |
 | Exchange Server EAS Protocol Test Suites ||            
-| - Docs  |                                           A directory that contains documents of all protocol test suites.|
-| - ExchangeEASTestSuiteDeploymentGuide.docx |        A file relevant to the protocol test suite deployment guidance. |
-  + MS-XXXX                                            MS-XXXX Help documentation
-  - \[MS-XXXX\].pdf                                    The technical specification for the protocol.
-  - MS-XXXX \_SUTControlAdapter.chm                    Contains information about the SUT control adapter class library such as declaration syntaxes and their description.
-  - MS-XXXX \_RequirementSpecification.xlsx            A spreadsheet that outlines all requirements associated with the technical specification.
-  - Setup                                              A directory that contains configuration scripts.
-  - Test Suite Client                                  A directory that contains the configuration script to configure the test suite client.
-  - ExchangeClientConfiguration.cmd                    A command file that runs the ExchangeClientConfiguration.ps1 file to configure the properties for the protocol test suites.
-  - ExchangeClientConfiguration.ps1                    A configuration script that will be triggered by the ExchangeClientConfiguration.cmd.
-  - SUT                                                A folder that contains the configuration script to configure the Exchange Server
-  - ExchangeSUTConfiguration.cmd                       A command file that runs the ExchangeSUTConfiguration.ps1 file to create resources and configure settings on the SUT.
-  - ExchangeSUTConfiguration.ps1                       A configuration script that will be triggered by ExchangeSUTConfiguration.cmd.
-  - Source                                             A folder with Microsoft Visual Studio solutions that contain source code for the test suites.
-  - Common                                             A folder with Microsoft Visual Studio projects that contains source code that are common to the test suites.
-  - ExchangeCommonConfiguration.deployment.ptfconfig   The common configuration file.
-  - ExchangeServerEASProtocolTestSuites.runsettings    A configuration file used for unit test.
-  - ExchangeServerEASProtocolTestSuites.sln            A Visual Studio solution that contains projects of the test suites source code.
-  - ExchangeServerEASProtocolTestSuites.testsettings   A configuration file used for running test cases.
-  - MS-XXXX                                            MS-XXXX test suite code directory.
-  - MS-XXXX.sln                                        A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.
-  - MS-XXXX.runsettings                                A configuration file used for MS-XXXX unit test.
-  - MS-XXXX.testsettings                               A configuration file used for MS-XXXX running test cases.
-  + Adapter                                            Adapter test suite code.
-  + TestSuite                                          Test suite code.
-  - Scripts                                            Exchange Server EWS test suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.
-  - RunAllExchangeEASTestCases.cmd                     A script that can be used to run all test cases in the whole package.
-  - MS-XXXX                                            A folder containing scripts that belong to the MS-XXXX test suite.
-  - RunAllMSXXXXTestCases.cmd                          A script that can be used to run all test cases of MS-XXXX.
-  - RunMSXXXX\_SXX\_TCXX\_Name.cmd                     A script that can be used to run a single test case of MS-XXXX.
+| - Docs  | A directory that contains documents of all protocol test suites.|
+| - ExchangeEASTestSuiteDeploymentGuide.docx |A file relevant to the protocol test suite deployment guidance. |
+| + MS-XXXX | MS-XXXX Help documentation | 
+| - \[MS-XXXX\].pdf   | The technical specification for the protocol.| 
+| - MS-XXXX \_SUTControlAdapter.chm  |Contains information about the SUT control adapter class library such as declaration syntaxes and their description.| 
+| - MS-XXXX \_RequirementSpecification.xlsx  |A spreadsheet that outlines all requirements associated with the technical specification.| 
+| - Setup|A directory that contains configuration scripts.| 
+| - Test Suite Client | A directory that contains the configuration script to configure the test suite client.| 
+| - ExchangeClientConfiguration.cmd | A command file that runs the ExchangeClientConfiguration.ps1 file to configure the properties for the protocol test suites.| 
+| - ExchangeClientConfiguration.ps1|A configuration script that will be triggered by the ExchangeClientConfiguration.cmd.| 
+| - SUT | A folder that contains the configuration script to configure the Exchange Server| 
+| - ExchangeSUTConfiguration.cmd| A command file that runs the ExchangeSUTConfiguration.ps1 file to create resources and configure settings on the SUT.| 
+| - ExchangeSUTConfiguration.ps1| A configuration script that will be triggered by ExchangeSUTConfiguration.cmd.| 
+| - Source | A folder with Microsoft Visual Studio solutions that contain source code for the test suites.| 
+| - Common | A folder with Microsoft Visual Studio projects that contains source code that are common to the test suites.| 
+| - ExchangeCommonConfiguration.deployment.ptfconfig|The common configuration file.| 
+| - ExchangeServerEASProtocolTestSuites.runsettings |A configuration file used for unit test.| 
+| - ExchangeServerEASProtocolTestSuites.sln| A Visual Studio solution that contains projects of the test suites source code.| 
+| - ExchangeServerEASProtocolTestSuites.testsettings  |  A configuration file used for running test cases.| 
+| - MS-XXXX                                           |  MS-XXXX test suite code directory.| 
+| - MS-XXXX.sln |  A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.| 
+| - MS-XXXX.runsettings | A configuration file used for MS-XXXX unit test.| 
+| - MS-XXXX.testsettings|  A configuration file used for MS-XXXX running test cases.| 
+| + Adapter|Adapter test suite code.| 
+| + TestSuite|Test suite code.| 
+| - Scripts | Exchange Server EWS test suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.| 
+| - RunAllExchangeEASTestCases.cmd|                      A script that can be used to run all test cases in the whole package.| 
+| - MS-XXXX|                                             A folder containing scripts that belong to the MS-XXXX test suite.| 
+| - RunAllMSXXXXTestCases.cmd|                           A script that can be used to run all test cases of MS-XXXX.| 
+| - RunMSXXXX\_SXX\_TCXX\_Name.cmd|                      A script that can be used to run a single test case of MS-XXXX.| 
 
 Configuring the test suites
 ======================================================================================================================================
