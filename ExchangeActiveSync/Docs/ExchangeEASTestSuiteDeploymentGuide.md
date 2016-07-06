@@ -382,7 +382,7 @@ to run the test suites.
     MSASDOC\_HiddenDocument.txt, and a visible
     document MSASDOC\_VisibleDocument.txt.
 
-**Note** The document MSASDOC\_HiddenDocument.txt and MSASDOC\_VisibleDocument.txt should not be empty.
+ **Note** The document MSASDOC\_HiddenDocument.txt and MSASDOC\_VisibleDocument.txt should not be empty.
 
 9.  Grant local administrator permissions to the following mailbox
     users:
