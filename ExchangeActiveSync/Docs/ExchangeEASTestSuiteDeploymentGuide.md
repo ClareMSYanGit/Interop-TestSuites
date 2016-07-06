@@ -220,7 +220,7 @@ For the configuration script, the exit code definition is as follows:
 -   Exit code is set to the actual error code for other issues.
 
 Configuring the SUT
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
 
 You can configure the SUT using automated scripts, as described in
 section [5.1.2](#_Configuring_the_SUT1_2); or configure the SUT
@@ -243,12 +243,13 @@ the following table. If a change to the resource name is required, the
 corresponding change to the resource name defined in the client
 configuration script is required.
 
-Exchange server resources
+**Exchange server resources**
+|  Test suite | Resource type |  Resource name | Note |
+| :--- | :--- | :--- |:--- |
+|  All       |   --        |                          --|                                           --|
+|  MS-ASAIRS  |  User Mailbox |                       MSASAIRS\_User01  |                           --|
 
-  Test suite   Resource type                       Resource name                                Note
-  ------------ ----------------------------------- -------------------------------------------- -------------------------------------------------------------------------------------------------------------------------
-  All          --                                  --                                           --
-  MS-ASAIRS    User Mailbox                        MSASAIRS\_User01                             --
+
                User Mailbox                        MSASAIRS\_User02                             --
   MS-ASCAL     User Mailbox                        MSASCAL\_User01                              --
                User Mailbox                        MSASCAL\_User02                              --
