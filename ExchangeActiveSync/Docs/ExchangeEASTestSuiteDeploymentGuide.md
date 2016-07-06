@@ -90,10 +90,9 @@ Exchange Server on a domain controller (DC) is not recommended.
 
 The following diagram is an example of what a typical Exchange test suite environment may look like. This example uses an IPv4, but IPv6 is also supported by the test suites.
 
-![alt tag](/Doc-Images/EAS_RequiredSUTroles.png)
-
 **Note** *AD DC and SUT are in the same machine, test cases for MS-ASRM
 will be failed*.
+![alt tag](/Doc-Images/EAS_RequiredSUTroles.png)
 
 ### Test suite client
 
