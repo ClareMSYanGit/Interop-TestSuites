@@ -494,9 +494,7 @@ to run the test suites.
 
 34.  Set MSASRM\_SuperUserGroup as the super user group.
 
-35.  Create the following distributed rights policy templates:
-  
-|  Template Name | Rights |
+35.  Create the following distributed rights policy templates: |  Template Name | Rights |
 | :--- | :--- |
 |**MSASRM\_View\_AllowedTemplate**|       View and View Rights|
 |**MSASRM\_ViewReplyAll\_AllowedTemplate**|      View, Reply All, and View Rights|
