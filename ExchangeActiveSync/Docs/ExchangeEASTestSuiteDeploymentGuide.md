@@ -54,13 +54,13 @@ The test suite client is the client side of the test suite environment.
 The following table shows the minimum resource requirements for the test
 suite client.
 
-Test suite client resource requirements
+**Test suite client resource requirements**
 
-  Component   Test suite client minimum requirement
-  ----------- ---------------------------------------
-  RAM         2GB
-  Hard Disk   3G of free space
-  Processor   &gt;= 1GHz
+| Component | List all new or modified files |
+| :--- | :--- |
+|  RAM| 2GB|
+|  Hard Disk| 3G of free space|
+|  Processor| >= 1GHz|
 
 Software requirements
 -------------------------------------------------------------------------------------------------------------------
@@ -92,8 +92,6 @@ The following diagram is an example of what a typical Exchange test suite enviro
 
 **Note** *AD DC and SUT are in the same machine, test cases for MS-ASRM
 will be failed*.
-
-![alt tag](/Doc-Images/EAS_RequiredSUTroles.png)
 
 ### Test suite client
 
@@ -170,38 +168,39 @@ contained within the **ExchangeServerEASProtocolTestSuites.zip** file.
 
 | Directory/file | Description |
 | :--- | :--- |
-|**EULA.rtf** | The End-User License Agreement. |
-|**ReadMe.txt** | A file that contains information about the deployment guide and prerequisite software. |
-| **Exchange Server EAS Protocol Test Suites** ||            
-|**- Docs**| A directory that contains documents of all protocol test suites.|
-|**- ExchangeEASTestSuiteDeploymentGuide.docx** |A file relevant to the protocol test suite deployment guidance. |
-|**+ MS-XXXX** | MS-XXXX Help documentation | 
-| **- \[MS-XXXX\].pdf**   | The technical specification for the protocol.| 
-| **- MS-XXXX \_SUTControlAdapter.chm**  |Contains information about the SUT control adapter class library such as declaration syntaxes and their description.| 
-|**- MS-XXXX \_RequirementSpecification.xlsx**|A spreadsheet that outlines all requirements associated with the technical specification.| 
-|**- Setup**|A directory that contains configuration scripts.| 
-| **- Test Suite Client**| A directory that contains the configuration script to configure the test suite client.| 
-| **- ExchangeClientConfiguration.cmd** | A command file that runs the ExchangeClientConfiguration.ps1 file to configure the properties for the protocol test suites.| 
-| **- ExchangeClientConfiguration.ps1**|A configuration script that will be triggered by the ExchangeClientConfiguration.cmd.| 
-| **- SUT** | A folder that contains the configuration script to configure the Exchange Server| 
-|**- ExchangeSUTConfiguration.cmd**| A command file that runs the ExchangeSUTConfiguration.ps1 file to create resources and configure settings on the SUT.| 
-|**- ExchangeSUTConfiguration.ps1**| A configuration script that will be triggered by ExchangeSUTConfiguration.cmd.| 
-|**- Source** | A folder with Microsoft Visual Studio solutions that contain source code for the test suites.| 
-|**- Common** | A folder with Microsoft Visual Studio projects that contains source code that are common to the test suites.| |**- ExchangeCommonConfiguration.deployment.ptfconfig**|The common configuration file.| 
-|**- ExchangeServerEASProtocolTestSuites.runsettings** |A configuration file used for unit test.| 
-|**- ExchangeServerEASProtocolTestSuites.sln**| A Visual Studio solution that contains projects of the test suites source code.| 
-|**- ExchangeServerEASProtocolTestSuites.testsettings**  |  A configuration file used for running test cases.| 
-|**- MS-XXXX**                                          |  MS-XXXX test suite code directory.| 
-|**- MS-XXXX.sln**|  A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.| 
-|**- MS-XXXX.runsettings** | A configuration file used for MS-XXXX unit test.| 
-|**- MS-XXXX.testsettings**|  A configuration file used for MS-XXXX running test cases.| 
-|**+ Adapter**|Adapter test suite code.| 
-|**+ TestSuite**|Test suite code.| 
-|**- Scripts** | Exchange Server EWS test suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.| 
-|**- RunAllExchangeEASTestCases.cmd**|                      A script that can be used to run all test cases in the whole package.| 
-|**- MS-XXXX**|                                             A folder containing scripts that belong to the MS-XXXX test suite.| 
-|**- RunAllMSXXXXTestCases.cmd**|                           A script that can be used to run all test cases of MS-XXXX.| 
-|**- RunMSXXXX\_SXX\_TCXX\_Name.cmd**|                      A script that can be used to run a single test case of MS-XXXX.| 
+|  EULA.rtf   | The End-User License Agreement. |
+|ReadMe.txt   | A file that contains information about the deployment guide and prerequisite software. |
+| Exchange Server EAS Protocol Test Suites ||            
+| - Docs  | A directory that contains documents of all protocol test suites.|
+| - ExchangeEASTestSuiteDeploymentGuide.docx |A file relevant to the protocol test suite deployment guidance. |
+| + MS-XXXX | MS-XXXX Help documentation | 
+| - \[MS-XXXX\].pdf   | The technical specification for the protocol.| 
+| - MS-XXXX \_SUTControlAdapter.chm  |Contains information about the SUT control adapter class library such as declaration syntaxes and their description.| 
+| - MS-XXXX \_RequirementSpecification.xlsx  |A spreadsheet that outlines all requirements associated with the technical specification.| 
+| - Setup|A directory that contains configuration scripts.| 
+| - Test Suite Client | A directory that contains the configuration script to configure the test suite client.| 
+| - ExchangeClientConfiguration.cmd | A command file that runs the ExchangeClientConfiguration.ps1 file to configure the properties for the protocol test suites.| 
+| - ExchangeClientConfiguration.ps1|A configuration script that will be triggered by the ExchangeClientConfiguration.cmd.| 
+| - SUT | A folder that contains the configuration script to configure the Exchange Server| 
+| - ExchangeSUTConfiguration.cmd| A command file that runs the ExchangeSUTConfiguration.ps1 file to create resources and configure settings on the SUT.| 
+| - ExchangeSUTConfiguration.ps1| A configuration script that will be triggered by ExchangeSUTConfiguration.cmd.| 
+| - Source | A folder with Microsoft Visual Studio solutions that contain source code for the test suites.| 
+| - Common | A folder with Microsoft Visual Studio projects that contains source code that are common to the test suites.| 
+| - ExchangeCommonConfiguration.deployment.ptfconfig|The common configuration file.| 
+| - ExchangeServerEASProtocolTestSuites.runsettings |A configuration file used for unit test.| 
+| - ExchangeServerEASProtocolTestSuites.sln| A Visual Studio solution that contains projects of the test suites source code.| 
+| - ExchangeServerEASProtocolTestSuites.testsettings  |  A configuration file used for running test cases.| 
+| - MS-XXXX                                           |  MS-XXXX test suite code directory.| 
+| - MS-XXXX.sln |  A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.| 
+| - MS-XXXX.runsettings | A configuration file used for MS-XXXX unit test.| 
+| - MS-XXXX.testsettings|  A configuration file used for MS-XXXX running test cases.| 
+| + Adapter|Adapter test suite code.| 
+| + TestSuite|Test suite code.| 
+| - Scripts | Exchange Server EWS test suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.| 
+| - RunAllExchangeEASTestCases.cmd|                      A script that can be used to run all test cases in the whole package.| 
+| - MS-XXXX|                                             A folder containing scripts that belong to the MS-XXXX test suite.| 
+| - RunAllMSXXXXTestCases.cmd|                           A script that can be used to run all test cases of MS-XXXX.| 
+| - RunMSXXXX\_SXX\_TCXX\_Name.cmd|                      A script that can be used to run a single test case of MS-XXXX.| 
 
 Configuring the test suites
 ==============================================================================================================================
@@ -249,64 +248,64 @@ configuration script is required.
 
 |  Test suite | Resource type |  Resource name | Note |
 | :--- | :--- | :--- |:--- |
-|  **All**       |   --   |   --|   --|
-|  **MS-ASAIRS**  |  User Mailbox | MSASAIRS\_User01  | --|
+|  All       |   --   |   --|   --|
+|  MS-ASAIRS  |  User Mailbox | MSASAIRS\_User01  | --|
 |             |User Mailbox | MSASAIRS\_User02| --| 
-| **MS-ASCAL**  |User Mailbox  | MSASCAL\_User01  | --| 
+|   MS-ASCAL  |User Mailbox  | MSASCAL\_User01  | --| 
 |             |User Mailbox |   MSASCAL\_User02 | --| 
-| **MS-ASCMD**|User Mailbox | MSASCMD\_UserY  | “Y” represents the numerate value count and the value range of Y is from 01 to 19, since 19 mailbox users will be used.| 
-| | User Mailbox     | MSASCMD\_SearchUser01 | --| 
-| | User Mailbox     | MSASCMD\_SearchUser02 |--| 
-| | DistributionGroup| MSASCMD\_TestGroup | --| 
-| | DistributionGroup| MSASCMD\_LargeGroup| --| 
+|   MS-ASCMD    |User Mailbox | MSASCMD\_UserY  | “Y” represents the numerate value count and the value range of Y is from 01 to 19, since 19 mailbox users will be used.| 
+| |                User Mailbox     |                   MSASCMD\_SearchUser01 | --| 
+| |                User Mailbox     |                    MSASCMD\_SearchUser02 |--| 
+| |                DistributionGroup|                    MSASCMD\_TestGroup | --| 
+| | DistributionGroup|                    MSASCMD\_LargeGroup| --| 
 | | Folder| MSASCMD\_SharedFolder| The folder is shared and read permissions are granted to user MSASCMD\_User01 and denied to user MSASCMD\_User02.| 
 | | TextFile| MSASCMD\_Non-emptyDocument.txt|The document should be created under MSASCMD\_SharedFolder be at least 4 bytes in size.| 
 | | TextFile| MSASCMD\_EmptyDocument.txt| The document should be created under MSASCMD\_SharedFolder and be empty.| 
 | | Picture | MSASCMD\_User01Photo| The file size should be bigger than 1KB.| 
 | | Picture | MSASCMD\_User02Photo  | The file size should be smaller than 1KB.| 
-| | EMail| MSASCMD\_SecureEmailForTest|--| 
-| **MS-ASCNT**  | User Mailbox |   MSASCNTC\_User01  | --| 
+| | EMail| MSASCMD\_SecureEmailForTest| | 
+|   MS-ASCNT  |    User Mailbox |   MSASCNTC\_User01  |                            --| 
 | | User Mailbox  |MSASCNTC\_User02|--| 
-|**MS-ASCON**| User Mailbox|  MSASCON\_User01 |--| 
-| | User Mailbox| MSASCON\_User02  |--| 
-| | User Mailbox| MSASCON\_User03  |--| 
-|**MS-ASDOC**| User Mailbox| MSASDOC\_User01|--| 
-| | Folder| MSASDOC\_SharedFolder|The folder is shared and full control should be granted to the specified user MSASDOC\_User01.| 
-| |  Folder| MSASDOC\_VisibleFolder|The folder should be created under MSASDOC\_SharedFolder.| 
-| | Folder| MSASDOC\_HiddenFolder|The folder is hidden and should be created under MSASDOC\_SharedFolder.| 
-| | TextFile|MSASDOC\_VisibleDocument|  The document should be created under MSASDOC\_SharedFolder.| 
+|   MS-ASCON|      User Mailbox|  MSASCON\_User01 |                              --| 
+| |                User Mailbox| MSASCON\_User02  |                             --| 
+| |                User Mailbox|                         MSASCON\_User03                          |   --  | 
+| MS-ASDOC|      User Mailbox|                         MSASDOC\_User01|                               --| 
+| |                Folder|                               MSASDOC\_SharedFolder|The folder is shared and full control should be granted to the specified user MSASDOC\_User01.| 
+| |                Folder|                               MSASDOC\_VisibleFolder|                        The folder should be created under MSASDOC\_SharedFolder.| 
+| |                Folder|                               MSASDOC\_HiddenFolder|                         The folder is hidden and should be created under MSASDOC\_SharedFolder.| 
+| | TextFile|                             MSASDOC\_VisibleDocument|                      The document should be created under MSASDOC\_SharedFolder.| 
 | | TextFile| MSASDOC\_HiddenDocument|The document is hidden and should be created under MSASDOC\_SharedFolder.| 
-| **MS-ASEMAIL**|User Mailbox| MSASEMAIL\_User01  |--| 
-| | User Mailbox| MSASEMAIL\_User02|--| 
-| | User Mailbox| MSASEMAIL\_User03|--| 
-| | User Mailbox| MSASEMAIL\_User04|--| 
-| | User Mailbox| MSASEMAIL\_User05|--| 
-| | MS-ASHTTP   | User Mailbox|MSASHTTP\_User01 |--| 
-| | User Mailbox| MSASHTTP\_User02|--|
-| | User Mailbox| MSASHTTP\_User03|--| 
-| | User Mailbox| MSASHTTP\_User04|--| 
-|**MS-ASNOTE**|User Mailbox|MSASNOTE\_User01|--| 
-|**MS-ASPROV**|User Mailbox|MSASPROV\_User01|--| 
-| | User Mailbox| MSASPROV\_User02 |--|                             
-| | User Mailbox| MSASPROV\_User03|--|                              
-| | Active sync mailbox policy|MSASPROV\_UserPolicy01|--|                        
-| | Active sync mailbox policy|MSASPROV\_UserPolicy02|--|                        
-|**MS-ASRM**|User Mailbox  |  MSASRM\_User01|--| 
-| | User Mailbox| MSASRM\_User02|--| 
-| | User Mailbox| MSASRM\_User03|--| 
-| | User Mailbox| MSASRM\_User04|--|
-| | User|  MSASRM\_ADUser |A domain user and granted AD RMS Enterprise Administrator permission.|
-| | DistributionGroup   | MSASRM\_SuperUserGroup    |   --|
-| | Distributed Right Policy Template |  MSASRM\_AllRights\_AllowedTemplate|Allowed all rights|
-| | Distributed Right Policy Template |  MSASRM\_View\_AllowedTemplate| Denied all rights except View|
-| | Distributed Right Policy Template |  MSASRM\_ViewReplyAll\_AllowedTemplate| Allowed View and ReplyAll|
-| | Distributed Right Policy Template |  MSASRM\_ViewReply\_AllowedTemplate|Allowed View and Reply|
+| MS-ASEMAIL|    User Mailbox|                         MSASEMAIL\_User01  |                           --| 
+| |                User Mailbox|                         MSASEMAIL\_User02|                             --| 
+| |                User Mailbox  |                       MSASEMAIL\_User03  |                           --| 
+| |                User Mailbox |                        MSASEMAIL\_User04  |                           --| 
+| |                User Mailbox |                        MSASEMAIL\_User05  |                           --| 
+| |   MS-ASHTTP   |  User Mailbox|                         MSASHTTP\_User01 |                             --| 
+| |                User Mailbox|                         MSASHTTP\_User02|                              --|
+| | User Mailbox                        | MSASHTTP\_User03|                              --| 
+| |    User Mailbox|                         MSASHTTP\_User04|                              --| 
+| MS-ASNOTE|     User Mailbox|                         | MSASNOTE\_User01|                              --| 
+| MS-ASPROV|     User Mailbox|                         | MSASPROV\_User01 |                             --| 
+| |        User Mailbox                        | MSASPROV\_User02 | |                             
+| |        User Mailbox    |                     MSASPROV\_User03| |                              
+| |        Active sync mailbox policy|           MSASPROV\_UserPolicy01| |                        
+| |        Active sync mailbox policy|           MSASPROV\_UserPolicy02| |                        
+| MS-ASRM|       User Mailbox   |                      MSASRM\_User01       |                         --| 
+| |              User Mailbox|                         MSASRM\_User02|                                --| 
+| |              User Mailbox |                        MSASRM\_User03|                                --| 
+| |              User Mailbox        |                MSASRM\_User04                               --|
+| |               User               |  MSASRM\_ADUser |A domain user and granted AD RMS Enterprise Administrator permission.|
+| |              DistributionGroup   |                MSASRM\_SuperUserGroup    |   --|
+| |     Distributed Right Policy Template |  MSASRM\_AllRights\_AllowedTemplate|Allowed all rights|
+| |     Distributed Right Policy Template |  MSASRM\_View\_AllowedTemplate| Denied all rights except View|
+| |   Distributed Right Policy Template |  MSASRM\_ViewReplyAll\_AllowedTemplate| Allowed View and ReplyAll|
+| |               Distributed Right Policy Template |  MSASRM\_ViewReply\_AllowedTemplate|Allowed View and Reply|
 | | Distributed Right Policy Template |  MSASRM\_ViewReplyReplyAll\_AllowedTemplate|   Allowed View, Reply, and ReplyAll|
 | | Distributed Right Policy Template |  MSASRM\_EditExport\_NotAllowedTemplate|Allowed all rights except Edit and Export|
 | | Distributed Right Policy Template |  MSASRM\_Export\_NotAllowedTemplate      |     Allowed all rights except Export
 | | Distributed Right Policy Template |  MSASRMReplyAll\_NotAllowedTemplate       |    Allowed all rights except ReplyAll
-|**MS-ASTASK**|User Mailbox |MSASTASK\_User01    |--|
-|**MS-ASWBXML** |--|--|--|
+| MS-ASTASK|    User Mailbox |    MSASTASK\_User01    |                         --|
+|MS-ASWBXML |  --     |     --                             |              --|
 
 ### Configuring SUT using the setup configuration script
 
@@ -346,7 +345,7 @@ to run the test suites.
 4.  Set the following properties for MSASCMD\_User01.
 
     -   SamAccountName: "MSASCMD\_User01"
-        
+    
     -   GivenName: "MSASCMD\_FirstName"
     
     -   Surname: "MSASCMD\_LastName"
@@ -363,7 +362,7 @@ to run the test suites.
     
     -   MobilePhone: “8612345678910”
 
-5.  Create the following distribution groups:
+5.  Create the following distribution groups:\
     MSASCMD\_TestGroup, MSASCMD\_LargeGroup, MSASRM\_SuperUserGroup.
 
 6.  Create two ActiveSync mailbox policies MSASPROV\_UserPolicy01 and
@@ -373,9 +372,9 @@ to run the test suites.
     permissions to MSASCMD\_User02. Under the folder
     MSASCMD\_SharedFolder, create a non-empty document named
     MSASCMD\_Non-emptyDocument.txt, and an empty document
-    named MSASCMD\_EmptyDocument.txt. 
- 
- **Note** The file size of MSASCMD\_Non-emptyDocument.txt should be at least 4 bytes.
+    named MSASCMD\_EmptyDocument.txt.
+
+**Note** The file size of MSASCMD\_Non-emptyDocument.txt should be at least 4 bytes.
 
 8.  Create a shared folder named MSASDOC\_SharedFolder. Also, grant full
     control to MSASDOC\_User01. Under the folder MSASDOC\_SharedFolder,
@@ -383,17 +382,14 @@ to run the test suites.
     named MSASDOC\_VisibleFolder, a hidden document named
     MSASDOC\_HiddenDocument.txt, and a visible
     document MSASDOC\_VisibleDocument.txt.
-
- **Note** The document MSASDOC\_HiddenDocument.txt and MSASDOC\_VisibleDocument.txt should not be empty.
+**Note** The document MSASDOC\_HiddenDocument.txt and MSASDOC\_VisibleDocument.txt should not be empty.
 
 9.  Grant local administrator permissions to the following mailbox
-    users:
-
+    users:\
     MSASCMD\_User03, MSASHTTP\_User04, MSASPROV\_User01
 
 10. Grant administrator permissions to the SUT for the following mailbox
     users:
-    
     MSASCMD\_User03, MSASPROV\_User01.
 
 11. Grant distribute message permissions to the group
@@ -406,7 +402,7 @@ to run the test suites.
     MSASCMD\_UserY section 5.1.1, MSASCMD\_SerachUser01, and
     MSASCMD\_SearchUser02 into the group MSASCMD\_LargerGroup.
 
-13. Apply the following policy settings for the Mobile Device mailbox
+13.  Apply the following policy settings for the Mobile Device mailbox
     policy MSASPROV\_UserPolicy02. The value of *Allow non-provisionable
     devices* must be set to false, while the value for other properties
     listed below are not restricted.
@@ -453,9 +449,8 @@ to run the test suites.
 21.  Create and export a user certificate named MSASCMD\_PfxFile to be
     able to send a secure email to MSASCMD\_User03.
 
-22.  MSASCMD\_User03 should send an email to MSASCMD\_User09.
-    
-  **Note** The subsequent steps in this procedure are only necessary for Exchange Server 2010 or Exchange Server 2013.
+22.  MSASCMD\_User03 should send an email to MSASCMD\_User09.\
+    **Note** The subsequent steps in this procedure are only necessary for Exchange Server 2010 or Exchange Server 2013.
 
 23.  Add the photo MSASCMD\_User01Photo.jpg to MSASCMD\_User01 and
     MSASCMD\_User02Photo.jpg to MSASMCD\_User02.
@@ -496,18 +491,19 @@ to run the test suites.
 
 34.  Set MSASRM\_SuperUserGroup as the super user group.
 
-35.  Create the following distributed rights policy templates: 
+35.  Create the following distributed rights policy templates:
+  
+|  Template Name | Rights |
+| :--- | :--- |
+|MSASRM\_View\_AllowedTemplate         |       View and View Rights|
+|MSASRM\_ViewReplyAll\_AllowedTemplate  |      View, Reply All, and View Rights|
+|MSASRM\_ViewReply\_AllowedTemplate     |      View, Reply, and View Rights|
+|MSASRM\_ViewReplyReplyAll\_AllowedTemplate|   View, Reply, Reply All, and View Rights|
+|MSASRM\_EditExport\_NotAllowedTemplate|View, Print, Forward, Reply, Reply All, Extract, Allow Macros, and View Rights|
+|MSASRM\_Export\_NotAllowedTemplate | View, Edit, Save, Print, Forward, Reply, Reply All, Extract, Allow Macros, View Rights, and Edit Rights|
+|MSASRMReplyAll\_NotAllowedTemplate |View, Edit, Save, Export, Print, Forward, Reply, Extract, Allow Macros, View Rights, and Edit Rights|
+| MSASRM\_AllRights\_AllowedTemplate  | View, Edit, Save, Export, Print, Forward, Reply, Reply All, Extract, Allow Macros, View Rights, and Edit Rights|
 
-  |  Template Name | Rights |
-  | :--- | :--- |
-  |**MSASRM\_View\_AllowedTemplate**|       View and View Rights|
-  |**MSASRM\_ViewReplyAll\_AllowedTemplate**|      View, Reply All, and View Rights|
-  |**MSASRM\_ViewReply\_AllowedTemplate** |      View, Reply, and View Rights|
-  |**MSASRM\_ViewReplyReplyAll\_AllowedTemplate**|   View, Reply, Reply All, and View Rights|
-  |**MSASRM\_EditExport\_NotAllowedTemplate**|View, Print, Forward, Reply, Reply All, Extract, Allow Macros, and View Rights|
-  |**MSASRM\_Export\_NotAllowedTemplate**| View, Edit, Save, Print, Forward, Reply, Reply All, Extract, Allow Macros, View Rights, and Edit Rights|
-  |**MSASRMReplyAll\_NotAllowedTemplate**|View, Edit, Save, Export, Print, Forward, Reply, Extract, Allow Macros, View Rights, and Edit Rights|
-  |**MSASRM\_AllRights\_AllowedTemplate**| View, Edit, Save, Export, Print, Forward, Reply, Reply All, Extract, Allow Macros, View Rights, and Edit Rights|
 36.  Configure IRM features to enable licensing for internal messages.
 
 37.  Enable IRM features to allow the client to access the SUT.
@@ -746,8 +742,6 @@ bin folder.
 | RunAllMSXXXXTestCases.cmd       |  Runs all MS-XXXX test cases.| 
 | RunMSXXXX\_SXX\_TCXX\_Name.cmd  |  Runs a specific test case within the test suite.| 
 
-
-
 Test suite results, logs, and reporting
 =============================================================================================================================
 
@@ -808,16 +802,22 @@ XML format and an HTML report.
 
 Appendix
 ===================================================================================================
-For more information, see the following:
 
-| Reference  | Description |
-| :--- | :--- |
-|<dochelp@microsoft.com>|Alias for Interoperability documentation help. |Provides support for the Open Specifications and protocol test suites.|
-|[Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)| Microsoft Customer Support Services forums. Actively monitored forums provide support for the Open Specifications and protocol test suites.|
-|[Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)| Open Specifications home page on MSDN|
-|[Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)| Open Specifications documentation on MSDN|
-|[Exchange Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=119904) |Exchange Server Open Specifications documentation on MSDN|
-|[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)|Normative language reference|
-|[Exchange Server 2013 deployment](http://go.microsoft.com/fwlink/?LinkID=266569) |Exchange Server 2013 planning and deployment on TechNet
-|[Exchange Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkID=517397) |Exchange Server 2010 planning and deployment on TechNet
-|[Exchange Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkID=512508)|Exchange Server 2007 deployment on TechNet|
+For more information, see the following:
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
+
+
+  |Reference  |Description |                                                                                  
+  | :--- | :--- |
+  |<dochelp@microsoft.com>|Alias for Interoperability documentation help. |Provides support for the Open Specifications and protocol test suites.|
+  |[Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)| Microsoft Customer Support Services forums. Actively monitored forums provide support for the Open Specifications and protocol test suites.|
+  |[Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)| Open Specifications home page on MSDN|
+  |[Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)| Open Specifications documentation on MSDN|
+  |[Exchange Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=119904) |Exchange Server Open Specifications documentation on MSDN|
+  |[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)|Normative language reference|
+  |[Exchange Server 2013 deployment](http://go.microsoft.com/fwlink/?LinkID=266569) |Exchange Server 2013 planning and deployment on TechNet
+  |[Exchange Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkID=517397) |Exchange Server 2010 planning and deployment on TechNet
+  |[Exchange Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkID=512508)|Exchange Server 2007 deployment on TechNet|
