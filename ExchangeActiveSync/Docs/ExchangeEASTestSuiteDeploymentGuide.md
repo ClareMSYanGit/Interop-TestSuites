@@ -362,8 +362,7 @@ to run the test suites.
     -   MobilePhone: “8612345678910”
 
 5.  Create the following distribution groups:
-    
-MSASCMD\_TestGroup, MSASCMD\_LargeGroup, MSASRM\_SuperUserGroup.
+    MSASCMD\_TestGroup, MSASCMD\_LargeGroup, MSASRM\_SuperUserGroup.
 
 6.  Create two ActiveSync mailbox policies MSASPROV\_UserPolicy01 and
     MSASPROV\_UserPolicy02
