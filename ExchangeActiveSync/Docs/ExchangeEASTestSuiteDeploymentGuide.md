@@ -492,7 +492,6 @@ to run the test suites.
 34.  Set MSASRM\_SuperUserGroup as the super user group.
 
 35.  Create the following distributed rights policy templates:
-
   
 |  Template Name | Rights |
 | :--- | :--- |
@@ -722,10 +721,10 @@ A Visual Studio solution file
 
   1.  Select the test case to run. Right-click and then select **Run Selected Tests**.
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  -------------------------------------------------------------------------------------------------------------------------------------
 
 Batch scripts 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
 
 Exchange Server EAS Protocol test suites are installed with a collection
 of scripts that enable a user to run individual test cases
@@ -809,6 +808,8 @@ For more information, see the following:
 | --- | --- |
 | git status | List all new or modified files |
 | git diff | Show file differences that haven't been staged |
+
+
   |Reference  |Description |                                                                                  
   | :--- | :--- |
   |<dochelp@microsoft.com>|Alias for Interoperability documentation help. |Provides support for the Open Specifications and protocol test suites.|
