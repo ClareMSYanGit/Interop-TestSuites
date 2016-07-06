@@ -248,12 +248,12 @@ configuration script is required.
 
 |  Test suite | Resource type |  Resource name | Note |
 | :--- | :--- | :--- |:--- |
-|  All       |   --   |   --|   --|
-|  MS-ASAIRS  |  User Mailbox | MSASAIRS\_User01  | --|
+|  **All**       |   --   |   --|   --|
+|  **MS-ASAIRS**  |  User Mailbox | MSASAIRS\_User01  | --|
 |             |User Mailbox | MSASAIRS\_User02| --| 
-|   MS-ASCAL  |User Mailbox  | MSASCAL\_User01  | --| 
+| **MS-ASCAL**  |User Mailbox  | MSASCAL\_User01  | --| 
 |             |User Mailbox |   MSASCAL\_User02 | --| 
-|   MS-ASCMD    |User Mailbox | MSASCMD\_UserY  | “Y” represents the numerate value count and the value range of Y is from 01 to 19, since 19 mailbox users will be used.| 
+| **MS-ASCMD**|User Mailbox | MSASCMD\_UserY  | “Y” represents the numerate value count and the value range of Y is from 01 to 19, since 19 mailbox users will be used.| 
 | | User Mailbox     | MSASCMD\_SearchUser01 | --| 
 | | User Mailbox     | MSASCMD\_SearchUser02 |--| 
 | | DistributionGroup| MSASCMD\_TestGroup | --| 
@@ -263,19 +263,19 @@ configuration script is required.
 | | TextFile| MSASCMD\_EmptyDocument.txt| The document should be created under MSASCMD\_SharedFolder and be empty.| 
 | | Picture | MSASCMD\_User01Photo| The file size should be bigger than 1KB.| 
 | | Picture | MSASCMD\_User02Photo  | The file size should be smaller than 1KB.| 
-| | EMail| MSASCMD\_SecureEmailForTest| | 
-| MS-ASCNT  | User Mailbox |   MSASCNTC\_User01  | --| 
+| | EMail| MSASCMD\_SecureEmailForTest|--| 
+| **MS-ASCNT**  | User Mailbox |   MSASCNTC\_User01  | --| 
 | | User Mailbox  |MSASCNTC\_User02|--| 
-| MS-ASCON| User Mailbox|  MSASCON\_User01 |--| 
+|**MS-ASCON**| User Mailbox|  MSASCON\_User01 |--| 
 | | User Mailbox| MSASCON\_User02  |--| 
 | | User Mailbox| MSASCON\_User03  |--| 
-| MS-ASDOC| User Mailbox| MSASDOC\_User01|--| 
+|**MS-ASDOC**| User Mailbox| MSASDOC\_User01|--| 
 | | Folder| MSASDOC\_SharedFolder|The folder is shared and full control should be granted to the specified user MSASDOC\_User01.| 
 | |  Folder| MSASDOC\_VisibleFolder|The folder should be created under MSASDOC\_SharedFolder.| 
 | | Folder| MSASDOC\_HiddenFolder|The folder is hidden and should be created under MSASDOC\_SharedFolder.| 
 | | TextFile|MSASDOC\_VisibleDocument|  The document should be created under MSASDOC\_SharedFolder.| 
 | | TextFile| MSASDOC\_HiddenDocument|The document is hidden and should be created under MSASDOC\_SharedFolder.| 
-| MS-ASEMAIL|User Mailbox| MSASEMAIL\_User01  |--| 
+| **MS-ASEMAIL**|User Mailbox| MSASEMAIL\_User01  |--| 
 | | User Mailbox| MSASEMAIL\_User02|--| 
 | | User Mailbox| MSASEMAIL\_User03|--| 
 | | User Mailbox| MSASEMAIL\_User04|--| 
@@ -284,13 +284,13 @@ configuration script is required.
 | | User Mailbox| MSASHTTP\_User02|--|
 | | User Mailbox| MSASHTTP\_User03|--| 
 | | User Mailbox| MSASHTTP\_User04|--| 
-| MS-ASNOTE|User Mailbox|MSASNOTE\_User01|--| 
-| MS-ASPROV|User Mailbox|MSASPROV\_User01|--| 
+|**MS-ASNOTE**|User Mailbox|MSASNOTE\_User01|--| 
+|**MS-ASPROV**|User Mailbox|MSASPROV\_User01|--| 
 | | User Mailbox| MSASPROV\_User02 |--|                             
 | | User Mailbox| MSASPROV\_User03|--|                              
 | | Active sync mailbox policy|MSASPROV\_UserPolicy01|--|                        
 | | Active sync mailbox policy|MSASPROV\_UserPolicy02|--|                        
-| MS-ASRM|User Mailbox  |  MSASRM\_User01|--| 
+|**MS-ASRM**|User Mailbox  |  MSASRM\_User01|--| 
 | | User Mailbox| MSASRM\_User02|--| 
 | | User Mailbox| MSASRM\_User03|--| 
 | | User Mailbox| MSASRM\_User04|--|
@@ -304,8 +304,8 @@ configuration script is required.
 | | Distributed Right Policy Template |  MSASRM\_EditExport\_NotAllowedTemplate|Allowed all rights except Edit and Export|
 | | Distributed Right Policy Template |  MSASRM\_Export\_NotAllowedTemplate      |     Allowed all rights except Export
 | | Distributed Right Policy Template |  MSASRMReplyAll\_NotAllowedTemplate       |    Allowed all rights except ReplyAll
-| MS-ASTASK|User Mailbox |MSASTASK\_User01    |--|
-|MS-ASWBXML |--|--|--|
+|**MS-ASTASK**|User Mailbox |MSASTASK\_User01    |--|
+|**MS-ASWBXML** |--|--|--|
 
 ### Configuring SUT using the setup configuration script
 
