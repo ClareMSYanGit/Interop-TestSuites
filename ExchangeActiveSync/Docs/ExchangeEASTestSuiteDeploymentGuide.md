@@ -449,7 +449,7 @@ to run the test suites.
     able to send a secure email to MSASCMD\_User03.
 
 22.  MSASCMD\_User03 should send an email to MSASCMD\_User09.\
-    ***Note*** *The subsequent steps in this procedure are only necessary for Exchange Server 2010 or Exchange Server 2013.*
+    **Note** The subsequent steps in this procedure are only necessary for Exchange Server 2010 or Exchange Server 2013.
 
 23.  Add the photo MSASCMD\_User01Photo.jpg to MSASCMD\_User01 and
     MSASCMD\_User02Photo.jpg to MSASMCD\_User02.
@@ -472,7 +472,7 @@ to run the test suites.
 30. Configure the website which contains the application that implements
     the EAS protocols.
 
-a.  Configure Secure Sockets Layer (SSL) as not required and ignore
+  a.  Configure Secure Sockets Layer (SSL) as not required and ignore
     client certificates on the following sites:\
     Default Web Site/\_wmcs Default Web Site/\_wmcs/admin\
     Default Web Site/\_wmcs/certification Default Web
@@ -492,20 +492,21 @@ a.  Configure Secure Sockets Layer (SSL) as not required and ignore
 
 35.  Create the following distributed rights policy templates:
 
-  Template Name                                Rights
-  -------------------------------------------- -----------------------------------------------------------------------------------------------------------------
-  MSASRM\_View\_AllowedTemplate                View and View Rights
-  MSASRM\_ViewReplyAll\_AllowedTemplate        View, Reply All, and View Rights
-  MSASRM\_ViewReply\_AllowedTemplate           View, Reply, and View Rights
-  MSASRM\_ViewReplyReplyAll\_AllowedTemplate   View, Reply, Reply All, and View Rights
-  MSASRM\_EditExport\_NotAllowedTemplate       View, Print, Forward, Reply, Reply All, Extract, Allow Macros, and View Rights
-  MSASRM\_Export\_NotAllowedTemplate           View, Edit, Save, Print, Forward, Reply, Reply All, Extract, Allow Macros, View Rights, and Edit Rights
-  MSASRMReplyAll\_NotAllowedTemplate           View, Edit, Save, Export, Print, Forward, Reply, Extract, Allow Macros, View Rights, and Edit Rights
-  MSASRM\_AllRights\_AllowedTemplate           View, Edit, Save, Export, Print, Forward, Reply, Reply All, Extract, Allow Macros, View Rights, and Edit Rights
+  
+|  Template Name | Rights |
+| :--- | :--- |
+|MSASRM\_View\_AllowedTemplate         |       View and View Rights|
+|MSASRM\_ViewReplyAll\_AllowedTemplate  |      View, Reply All, and View Rights|
+|MSASRM\_ViewReply\_AllowedTemplate     |      View, Reply, and View Rights|
+|MSASRM\_ViewReplyReplyAll\_AllowedTemplate|   View, Reply, Reply All, and View Rights|
+|MSASRM\_EditExport\_NotAllowedTemplate|View, Print, Forward, Reply, Reply All, Extract, Allow Macros, and View Rights|
+|MSASRM\_Export\_NotAllowedTemplate | View, Edit, Save, Print, Forward, Reply, Reply All, Extract, Allow Macros, View Rights, and Edit Rights|
+|MSASRMReplyAll\_NotAllowedTemplate |View, Edit, Save, Export, Print, Forward, Reply, Extract, Allow Macros, View Rights, and Edit Rights|
+| MSASRM\_AllRights\_AllowedTemplate  | View, Edit, Save, Export, Print, Forward, Reply, Reply All, Extract, Allow Macros, View Rights, and Edit Rights|
 
-1.  Configure IRM features to enable licensing for internal messages.
+36.  Configure IRM features to enable licensing for internal messages.
 
-2.  Enable IRM features to allow the client to access the SUT.
+37.  Enable IRM features to allow the client to access the SUT.
 
 Configuring the test suite client
 ------------------------------------------------------------------------------------------------------------------------------
@@ -536,6 +537,7 @@ has the following two configuration files for test suite-specific
 modification.
 
 **Test-suite specific configuration files**
+
 | Configuration file | Description |
 | :--- | :--- |
 | MS-XXXX\_TestSuite.deployment.ptfconfig | The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows for test suite-specific customization.|
