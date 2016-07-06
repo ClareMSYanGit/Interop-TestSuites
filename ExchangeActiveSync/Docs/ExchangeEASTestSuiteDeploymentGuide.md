@@ -343,23 +343,23 @@ to run the test suites.
 
 4.  Set the following properties for MSASCMD\_User01.
 
-    -   SamAccountName: "MSASCMD\_User01"
+-   SamAccountName: "MSASCMD\_User01"
     
-    -   GivenName: "MSASCMD\_FirstName"
-    
-    -   Surname: "MSASCMD\_LastName"
-    
-    -   Office: "D1042"
-    
-    -   Company: “MS”
-    
-    -   Title: “Manager”
-    
-    -   HomePhone: “22222286”
-    
-    -   OfficePhone: “55555501”
-    
-    -   MobilePhone: “8612345678910”
+-   GivenName: "MSASCMD\_FirstName"
+
+-   Surname: "MSASCMD\_LastName"
+
+-   Office: "D1042"
+
+-   Company: “MS”
+
+-   Title: “Manager”
+
+-   HomePhone: “22222286”
+
+-   OfficePhone: “55555501”
+
+-   MobilePhone: “8612345678910”
 
 5.  Create the following distribution groups:\
     MSASCMD\_TestGroup, MSASCMD\_LargeGroup, MSASRM\_SuperUserGroup.
@@ -371,9 +371,9 @@ to run the test suites.
     permissions to MSASCMD\_User02. Under the folder
     MSASCMD\_SharedFolder, create a non-empty document named
     MSASCMD\_Non-emptyDocument.txt, and an empty document
-    named MSASCMD\_EmptyDocument.txt.
-
-**Note** The file size of MSASCMD\_Non-emptyDocument.txt should be at least 4 bytes.
+    named MSASCMD\_EmptyDocument.txt. 
+ 
+ >**Note** The file size of MSASCMD\_Non-emptyDocument.txt should be at least 4 bytes.
 
 8.  Create a shared folder named MSASDOC\_SharedFolder. Also, grant full
     control to MSASDOC\_User01. Under the folder MSASDOC\_SharedFolder,
