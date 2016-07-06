@@ -451,8 +451,9 @@ to run the test suites.
 21.  Create and export a user certificate named MSASCMD\_PfxFile to be
     able to send a secure email to MSASCMD\_User03.
 
-22.  MSASCMD\_User03 should send an email to MSASCMD\_User09.\
-    **Note** The subsequent steps in this procedure are only necessary for Exchange Server 2010 or Exchange Server 2013.
+22.  MSASCMD\_User03 should send an email to MSASCMD\_User09.
+    
+  **Note** The subsequent steps in this procedure are only necessary for Exchange Server 2010 or Exchange Server 2013.
 
 23.  Add the photo MSASCMD\_User01Photo.jpg to MSASCMD\_User01 and
     MSASCMD\_User02Photo.jpg to MSASMCD\_User02.
@@ -505,7 +506,6 @@ to run the test suites.
 |**MSASRM\_Export\_NotAllowedTemplate**| View, Edit, Save, Print, Forward, Reply, Reply All, Extract, Allow Macros, View Rights, and Edit Rights|
 |**MSASRMReplyAll\_NotAllowedTemplate**|View, Edit, Save, Export, Print, Forward, Reply, Extract, Allow Macros, View Rights, and Edit Rights|
 |**MSASRM\_AllRights\_AllowedTemplate**| View, Edit, Save, Export, Print, Forward, Reply, Reply All, Extract, Allow Macros, View Rights, and Edit Rights|
-
 36.  Configure IRM features to enable licensing for internal messages.
 
 37.  Enable IRM features to allow the client to access the SUT.
