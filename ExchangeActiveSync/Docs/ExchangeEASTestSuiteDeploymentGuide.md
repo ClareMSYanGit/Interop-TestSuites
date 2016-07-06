@@ -392,7 +392,7 @@ to run the test suites.
 10. Grant administrator permissions to the SUT for the following mailbox
     users:
     
-MSASCMD\_User03, MSASPROV\_User01.
+    MSASCMD\_User03, MSASPROV\_User01.
 
 11. Grant distribute message permissions to the group
     MSASCMD\_TestGroup, and add the following mailbox users into the
