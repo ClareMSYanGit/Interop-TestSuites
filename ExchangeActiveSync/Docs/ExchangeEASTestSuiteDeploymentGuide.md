@@ -343,26 +343,27 @@ to run the test suites.
 
 4.  Set the following properties for MSASCMD\_User01.
 
--   SamAccountName: "MSASCMD\_User01"
+    -   SamAccountName: "MSASCMD\_User01"
+        
+    -   GivenName: "MSASCMD\_FirstName"
     
--   GivenName: "MSASCMD\_FirstName"
+    -   Surname: "MSASCMD\_LastName"
+    
+    -   Office: "D1042"
+    
+    -   Company: “MS”
+    
+    -   Title: “Manager”
+    
+    -   HomePhone: “22222286”
+    
+    -   OfficePhone: “55555501”
+    
+    -   MobilePhone: “8612345678910”
 
--   Surname: "MSASCMD\_LastName"
-
--   Office: "D1042"
-
--   Company: “MS”
-
--   Title: “Manager”
-
--   HomePhone: “22222286”
-
--   OfficePhone: “55555501”
-
--   MobilePhone: “8612345678910”
-
-5.  Create the following distribution groups:\
-    MSASCMD\_TestGroup, MSASCMD\_LargeGroup, MSASRM\_SuperUserGroup.
+5.  Create the following distribution groups:
+    
+MSASCMD\_TestGroup, MSASCMD\_LargeGroup, MSASRM\_SuperUserGroup.
 
 6.  Create two ActiveSync mailbox policies MSASPROV\_UserPolicy01 and
     MSASPROV\_UserPolicy02
@@ -373,7 +374,7 @@ to run the test suites.
     MSASCMD\_Non-emptyDocument.txt, and an empty document
     named MSASCMD\_EmptyDocument.txt. 
  
- >**Note** The file size of MSASCMD\_Non-emptyDocument.txt should be at least 4 bytes.
+ **Note** The file size of MSASCMD\_Non-emptyDocument.txt should be at least 4 bytes.
 
 8.  Create a shared folder named MSASDOC\_SharedFolder. Also, grant full
     control to MSASDOC\_User01. Under the folder MSASDOC\_SharedFolder,
@@ -381,15 +382,18 @@ to run the test suites.
     named MSASDOC\_VisibleFolder, a hidden document named
     MSASDOC\_HiddenDocument.txt, and a visible
     document MSASDOC\_VisibleDocument.txt.
+
 **Note** The document MSASDOC\_HiddenDocument.txt and MSASDOC\_VisibleDocument.txt should not be empty.
 
 9.  Grant local administrator permissions to the following mailbox
-    users:\
+    users:
+
     MSASCMD\_User03, MSASHTTP\_User04, MSASPROV\_User01
 
 10. Grant administrator permissions to the SUT for the following mailbox
     users:
-    MSASCMD\_User03, MSASPROV\_User01.
+    
+MSASCMD\_User03, MSASPROV\_User01.
 
 11. Grant distribute message permissions to the group
     MSASCMD\_TestGroup, and add the following mailbox users into the
@@ -401,7 +405,7 @@ to run the test suites.
     MSASCMD\_UserY section 5.1.1, MSASCMD\_SerachUser01, and
     MSASCMD\_SearchUser02 into the group MSASCMD\_LargerGroup.
 
-13.  Apply the following policy settings for the Mobile Device mailbox
+13. Apply the following policy settings for the Mobile Device mailbox
     policy MSASPROV\_UserPolicy02. The value of *Allow non-provisionable
     devices* must be set to false, while the value for other properties
     listed below are not restricted.
