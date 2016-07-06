@@ -58,9 +58,9 @@ suite client.
 
 | Component | List all new or modified files |
 | :--- | :--- |
-|  RAM| 2GB|
-|  Hard Disk| 3G of free space|
-|  Processor| >= 1GHz|
+|**RAM**|2GB|
+|**Hard Disk**| 3G of free space|
+|**Processor**| >= 1GHz|
 
 Software requirements
 -------------------------------------------------------------------------------------------------------------------
