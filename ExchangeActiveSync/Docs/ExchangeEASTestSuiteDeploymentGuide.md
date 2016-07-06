@@ -79,7 +79,6 @@ following versions of Exchange Server:
 The following table describes the necessary server roles required for a
 test suite deployment with a Microsoft implementation. Installing
 Exchange Server on a domain controller (DC) is not recommended.
-![alt tag](/Doc-Images/EAS_RequiredSUTroles.png)
 
 **Required SUT roles**
 
@@ -90,6 +89,8 @@ Exchange Server on a domain controller (DC) is not recommended.
 |  **Exchange Server (SUT)** |The Exchange server in the topology. |
 
 The following diagram is an example of what a typical Exchange test suite environment may look like. This example uses an IPv4, but IPv6 is also supported by the test suites.
+
+![alt tag](/Doc-Images/EAS_RequiredSUTroles.png)
 
 **Note** *AD DC and SUT are in the same machine, test cases for MS-ASRM
 will be failed*.
