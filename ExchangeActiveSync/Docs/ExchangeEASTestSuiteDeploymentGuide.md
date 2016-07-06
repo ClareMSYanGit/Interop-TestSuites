@@ -619,7 +619,7 @@ To change the TSAP packet broadcast, do the following:
 For example: &lt;Property name="BeaconLogTargetServer" value="dc01"
 /&gt;
 
-### <span id="_Toc397328569" class="anchor"><span id="_Toc404161772" class="anchor"></span></span>SHOULD/MAY configuration files
+###SHOULD/MAY configuration files
 
 The test suite has three SHOULD/MAY configuration files that are
 specific to all supported versions of the SUT. Each SHOULD/MAY
@@ -634,11 +634,11 @@ Server which is the closest match to the SUT implementation.
 
 SHOULD/MAY configuration files
 
-  Configuration file                                            Description
-  ------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------
-  MS-XXXX\_ExchangeServer2007\_SHOULDMAY.deployment.ptfconfig   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2007 Service Pack 3 (SP3).
-  MS-XXXX\_ExchangeServer2010\_SHOULDMAY.deployment.ptfconfig   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2010 Service Pack 3 (SP3).
-  MS-XXXX\_ExchangeServer2013\_SHOULDMAY.deployment.ptfconfig   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2013 Service Pack 1 (SP1).
+|Configuration file  | Description |
+| :--- | :--- |
+|MS-XXXX\_ExchangeServer2007\_SHOULDMAY.deployment.ptfconfig| Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2007 Service Pack 3 (SP3).|
+|MS-XXXX\_ExchangeServer2010\_SHOULDMAY.deployment.ptfconfig| Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2010 Service Pack 3 (SP3).|
+|MS-XXXX\_ExchangeServer2013\_SHOULDMAY.deployment.ptfconfig| Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2013 Service Pack 1 (SP1).|
 
 ### Configuring the test suite client using setup configuration script
 
@@ -736,14 +736,14 @@ scripts can be found in the **\\Source\\Scripts** directory.
 **Note**   These scripts depend on having the compiled binaries in the
 bin folder.
 
-  **Batch script**                 **Script description**
-  -------------------------------- ------------------------------------------------------------------------------
-  RunAllExchangeEASTestCases.cmd   Runs all the test cases within the Exchange Server EAS Protocol test suites.
-  RunAllMSXXXXTestCases.cmd        Runs all MS-XXXX test cases.
-  RunMSXXXX\_SXX\_TCXX\_Name.cmd   Runs a specific test case within the test suite.
+|Batch script| Script Description |
+| :--- | :--- |
+| RunAllExchangeEASTestCases.cmd  |  Runs all the test cases within the Exchange Server EAS Protocol test suites.| 
+| RunAllMSXXXXTestCases.cmd       |  Runs all MS-XXXX test cases.| 
+| RunMSXXXX\_SXX\_TCXX\_Name.cmd  |  Runs a specific test case within the test suite.| 
 
 Test suite results, logs, and reporting
-=====================================================================================================================================
+=============================================================================================================================
 
 The test suites provide detailed reporting in a variety of formats that
 will enable users to quickly debug failures.
@@ -762,7 +762,7 @@ under **…\\Setup\\SUT\\** at runtime. The SUT configuration scripts save
 the logs as “ExchangeSUTConfiguration.ps1.debug.log” and
 “ExchangeSUTConfiguration.ps1.log”.
 
-### <span id="_Toc402535257" class="anchor"><span id="_Toc402799948" class="anchor"><span id="_Toc402880830" class="anchor"><span id="_Toc404161781" class="anchor"></span></span></span></span>Test suite client configuration logs
+### Test suite client configuration logs
 
 The configuration scripts create a directory named **SetupLogs** under
 **…\\Setup\\Test Suite Client\\** at runtime. The test suite client
@@ -804,16 +804,14 @@ Appendix
 ===================================================================================================
 
 For more information, see the following:
-
-
-  |Role  |Description |                                                                                  
+  |Reference  |Description |                                                                                  
   | :--- | :--- |
-  |<dochelp@microsoft.com>|Alias for Interoperability documentation help. Provides support for the Open Specifications and protocol test suites.|
-  [Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)                     Microsoft Customer Support Services forums. Actively monitored forums provide support for the Open Specifications and protocol test suites.
-  [Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)           Open Specifications home page on MSDN
-  [Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)                            Open Specifications documentation on MSDN
-  [Exchange Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=119904)   Exchange Server Open Specifications documentation on MSDN
-  [RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)                                        Normative language reference
-  [Exchange Server 2013 deployment](http://go.microsoft.com/fwlink/?LinkID=266569)                Exchange Server 2013 planning and deployment on TechNet
-  [Exchange Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkID=517397)                Exchange Server 2010 planning and deployment on TechNet
-  [Exchange Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkID=512508)                Exchange Server 2007 deployment on TechNet
+  |<dochelp@microsoft.com>|Alias for Interoperability documentation help. |Provides support for the Open Specifications and protocol test suites.|
+  |[Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)| Microsoft Customer Support Services forums. Actively monitored forums provide support for the Open Specifications and protocol test suites.|
+  |[Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)| Open Specifications home page on MSDN|
+  |[Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)| Open Specifications documentation on MSDN|
+  |[Exchange Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=119904) |Exchange Server Open Specifications documentation on MSDN|
+  |[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)|Normative language reference|
+  |[Exchange Server 2013 deployment](http://go.microsoft.com/fwlink/?LinkID=266569) |Exchange Server 2013 planning and deployment on TechNet
+  |[Exchange Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkID=517397) |Exchange Server 2010 planning and deployment on TechNet
+  |[Exchange Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkID=512508)|Exchange Server 2007 deployment on TechNet|
