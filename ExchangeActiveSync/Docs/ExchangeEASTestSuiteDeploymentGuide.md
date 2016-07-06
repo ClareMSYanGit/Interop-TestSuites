@@ -37,7 +37,7 @@ deployment takes place on both the client and server side. The following
 information will help test suite users to plan their deployment.
 
 Hardware requirements
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------
 
 ### System under test
 
@@ -162,15 +162,15 @@ Test suite directories
 In this section you will find a list of the folder structures that are
 contained within the **ExchangeServerEASProtocolTestSuites.zip** file.
 
-ExchangeServerEASProtocolTestSuites.zip file contents
+**ExchangeServerEASProtocolTestSuites.zip file contents**
 
-  Directory/file                                       Description
-  ---------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  EULA.rtf                                             The End-User License Agreement
-  ReadMe.txt                                           A file that contains information about the deployment guide and prerequisite software.
-  Exchange Server EAS Protocol Test Suites             
-  - Docs                                               A directory that contains documents of all protocol test suites.
-  - ExchangeEASTestSuiteDeploymentGuide.docx           A file relevant to the protocol test suite deployment guidance
+| Directory/file | Description |
+| :--- | :--- |
+|  EULA.rtf    | The End-User License Agreement. |
+|ReadMe.txt     | A file that contains information about the deployment guide and prerequisite software. |
+| Exchange Server EAS Protocol Test Suites ||            
+| - Docs  |                                           A directory that contains documents of all protocol test suites.|
+| - ExchangeEASTestSuiteDeploymentGuide.docx |        A file relevant to the protocol test suite deployment guidance. |
   + MS-XXXX                                            MS-XXXX Help documentation
   - \[MS-XXXX\].pdf                                    The technical specification for the protocol.
   - MS-XXXX \_SUTControlAdapter.chm                    Contains information about the SUT control adapter class library such as declaration syntaxes and their description.
