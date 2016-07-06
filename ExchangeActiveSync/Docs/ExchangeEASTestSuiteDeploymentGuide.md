@@ -495,14 +495,14 @@ to run the test suites.
   
 |  Template Name | Rights |
 | :--- | :--- |
-|MSASRM\_View\_AllowedTemplate         |       View and View Rights|
-|MSASRM\_ViewReplyAll\_AllowedTemplate  |      View, Reply All, and View Rights|
-|MSASRM\_ViewReply\_AllowedTemplate     |      View, Reply, and View Rights|
-|MSASRM\_ViewReplyReplyAll\_AllowedTemplate|   View, Reply, Reply All, and View Rights|
-|MSASRM\_EditExport\_NotAllowedTemplate|View, Print, Forward, Reply, Reply All, Extract, Allow Macros, and View Rights|
-|MSASRM\_Export\_NotAllowedTemplate | View, Edit, Save, Print, Forward, Reply, Reply All, Extract, Allow Macros, View Rights, and Edit Rights|
-|MSASRMReplyAll\_NotAllowedTemplate |View, Edit, Save, Export, Print, Forward, Reply, Extract, Allow Macros, View Rights, and Edit Rights|
-| MSASRM\_AllRights\_AllowedTemplate  | View, Edit, Save, Export, Print, Forward, Reply, Reply All, Extract, Allow Macros, View Rights, and Edit Rights|
+|**MSASRM\_View\_AllowedTemplate**|       View and View Rights|
+|**MSASRM\_ViewReplyAll\_AllowedTemplate**|      View, Reply All, and View Rights|
+|**MSASRM\_ViewReply\_AllowedTemplate** |      View, Reply, and View Rights|
+|**MSASRM\_ViewReplyReplyAll\_AllowedTemplate**|   View, Reply, Reply All, and View Rights|
+|**MSASRM\_EditExport\_NotAllowedTemplate**|View, Print, Forward, Reply, Reply All, Extract, Allow Macros, and View Rights|
+|**MSASRM\_Export\_NotAllowedTemplate**| View, Edit, Save, Print, Forward, Reply, Reply All, Extract, Allow Macros, View Rights, and Edit Rights|
+|**MSASRMReplyAll\_NotAllowedTemplate**|View, Edit, Save, Export, Print, Forward, Reply, Extract, Allow Macros, View Rights, and Edit Rights|
+|**MSASRM\_AllRights\_AllowedTemplate**| View, Edit, Save, Export, Print, Forward, Reply, Reply All, Extract, Allow Macros, View Rights, and Edit Rights|
 
 36.  Configure IRM features to enable licensing for internal messages.
 
