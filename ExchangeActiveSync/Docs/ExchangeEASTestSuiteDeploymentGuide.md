@@ -495,6 +495,7 @@ to run the test suites.
 34.  Set MSASRM\_SuperUserGroup as the super user group.
 
 35.  Create the following distributed rights policy templates: 
+
 |  Template Name | Rights |
 | :--- | :--- |
 |**MSASRM\_View\_AllowedTemplate**|       View and View Rights|
@@ -505,9 +506,9 @@ to run the test suites.
 |**MSASRM\_Export\_NotAllowedTemplate**| View, Edit, Save, Print, Forward, Reply, Reply All, Extract, Allow Macros, View Rights, and Edit Rights|
 |**MSASRMReplyAll\_NotAllowedTemplate**|View, Edit, Save, Export, Print, Forward, Reply, Extract, Allow Macros, View Rights, and Edit Rights|
 |**MSASRM\_AllRights\_AllowedTemplate**| View, Edit, Save, Export, Print, Forward, Reply, Reply All, Extract, Allow Macros, View Rights, and Edit Rights|
-36.  Configure IRM features to enable licensing for internal messages.
+\36.  Configure IRM features to enable licensing for internal messages.
 
-37.  Enable IRM features to allow the client to access the SUT.
+\37.  Enable IRM features to allow the client to access the SUT.
 
 Configuring the test suite client
 ------------------------------------------------------------------------------------------------------------------------------
