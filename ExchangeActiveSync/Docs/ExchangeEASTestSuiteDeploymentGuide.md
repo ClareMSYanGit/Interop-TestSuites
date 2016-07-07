@@ -185,7 +185,7 @@ contained within the **ExchangeServerEASProtocolTestSuites.zip** file.
 |**- ExchangeSUTConfiguration.cmd**| A command file that runs the ExchangeSUTConfiguration.ps1 file to create resources and configure settings on the SUT.| 
 |**- ExchangeSUTConfiguration.ps1**| A configuration script that will be triggered by ExchangeSUTConfiguration.cmd.| 
 |**- Source** | A folder with Microsoft Visual Studio solutions that contain source code for the test suites.| 
-|**- Common** | A folder with Microsoft Visual Studio projects that contains source code that are common to the test suites.| |**-ExchangeCommonConfiguration.deployment.ptfconfig**|The common configuration file.| 
+|**- Common** | A folder with Microsoft Visual Studio projects that contains source code that are common to the test suites.| 
 |**- ExchangeCommonConfiguration.deployment.ptfconfig** | The common configuration file.| 
 |**- ExchangeServerEASProtocolTestSuites.runsettings** |A configuration file used for unit test.| 
 |**- ExchangeServerEASProtocolTestSuites.sln**| A Visual Studio solution that contains projects of the test suites source code.| 
