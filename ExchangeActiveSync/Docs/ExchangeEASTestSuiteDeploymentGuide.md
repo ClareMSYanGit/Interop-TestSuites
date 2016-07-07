@@ -718,7 +718,8 @@ A Visual Studio solution file
 
   ------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------
   1.  Open **MS-ASDOC.sln** in Visual Studio. 
-    ![alt tag](/Doc-Images/EAS_RunningTS5.png)
+    
+	![alt tag](/Doc-Images/EAS_RunningTS5.png)
 
   1.  In the **Solution Explorer** pane, right-click **Solution ‘MS-ASDOC’**, and then click **Rebuild Solution**. ![alt tag](/Doc-Images/EAS_RunningTS6.png)
 
