@@ -128,9 +128,9 @@ steps in order to be able to successfully configure the test suites.
     scripts facilitate the SUT configuration process and are contained
     within the **ExchangeServerEASProtocolTestSuites.zip** file.
 
-**Note**   If your computer blocks scripts downloaded from the Internet
+**Note**   *If your computer blocks scripts downloaded from the Internet
 for security reasons, you will need to follow these steps to unblock
-PowerShell scripts and the MS\_OXWSDLGM\_ServerAdapter.dll file.
+PowerShell scripts and the MS\_OXWSDLGM\_ServerAdapter.dll file.*
 
   -------------------------------------------------------------
  1.  Right-click xxxx.ps1, and then click **Properties**. 
@@ -228,8 +228,8 @@ You can configure the SUT using automated scripts, as described in
 section [5.1.2](#_Configuring_the_SUT1_2); or configure the SUT
 manually, as described in section [5.1.3](#_Configuring_the_SUT1).
 
-**Note**   The scripts should be run by a user who has domain
-administrator rights with a mailbox on Exchange Server.
+**Note**   *The scripts should be run by a user who has domain
+administrator rights with a mailbox on Exchange Server.*
 
 ### SUT resource requirements 
 
@@ -375,7 +375,7 @@ to run the test suites.
     MSASCMD\_Non-emptyDocument.txt, and an empty document
     named MSASCMD\_EmptyDocument.txt. 
  
- **Note** The file size of MSASCMD\_Non-emptyDocument.txt should be at least 4 bytes.
+ **Note** *The file size of MSASCMD\_Non-emptyDocument.txt should be at least 4 bytes.*
 
 8.  Create a shared folder named MSASDOC\_SharedFolder. Also, grant full
     control to MSASDOC\_User01. Under the folder MSASDOC\_SharedFolder,
@@ -384,7 +384,7 @@ to run the test suites.
     MSASDOC\_HiddenDocument.txt, and a visible
     document MSASDOC\_VisibleDocument.txt.
 
- **Note** The document MSASDOC\_HiddenDocument.txt and MSASDOC\_VisibleDocument.txt should not be empty.
+ **Note** *The document MSASDOC\_HiddenDocument.txt and MSASDOC\_VisibleDocument.txt should not be empty.*
 
 9.  Grant local administrator permissions to the following mailbox
     users:
@@ -455,7 +455,7 @@ to run the test suites.
 
 22.  MSASCMD\_User03 should send an email to MSASCMD\_User09.
     
-  **Note** The subsequent steps in this procedure are only necessary for Exchange Server 2010 or Exchange Server 2013.
+  **Note** *The subsequent steps in this procedure are only necessary for Exchange Server 2010 or Exchange Server 2013.*
 
 23.  Add the photo MSASCMD\_User01Photo.jpg to MSASCMD\_User01 and
     MSASCMD\_User02Photo.jpg to MSASMCD\_User02.
@@ -646,9 +646,9 @@ SHOULD/MAY configuration files
 
 ### Configuring the test suite client using setup configuration script
 
-**Note** The
+**Note** *The
 setup configuration script is only implemented for configuring the test
-suite client on the Windows platform.
+suite client on the Windows platform.*
 
 To configure the test suite using the setup configuration script,
 navigate to the **Setup\\Test Suite Client**\\ folder, right-click
@@ -741,8 +741,8 @@ of scripts that enable a user to run individual test cases
 Protocol test suites at once (RunAllExchangeEASTestCases.cmd). These
 scripts can be found in the **\\Source\\Scripts** directory.
 
-**Note**   These scripts depend on having the compiled binaries in the
-bin folder.
+**Note**   *These scripts depend on having the compiled binaries in the
+bin folder.*
 
 |Batch script| Script Description |
 | :--- | :--- |
