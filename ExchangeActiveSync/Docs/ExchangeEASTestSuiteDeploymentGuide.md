@@ -638,9 +638,9 @@ SHOULD/MAY configuration files
 
 |Configuration file  | Description |
 | :--- | :--- |
-|MS-XXXX\_ExchangeServer2007\_SHOULDMAY.deployment.ptfconfig| Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2007 Service Pack 3 (SP3).|
-|MS-XXXX\_ExchangeServer2010\_SHOULDMAY.deployment.ptfconfig| Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2010 Service Pack 3 (SP3).|
-|MS-XXXX\_ExchangeServer2013\_SHOULDMAY.deployment.ptfconfig| Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2013 Service Pack 1 (SP1).|
+|**MS-XXXX\_ExchangeServer2007\_SHOULDMAY.deployment.ptfconfig**| Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2007 Service Pack 3 (SP3).|
+|**MS-XXXX\_ExchangeServer2010\_SHOULDMAY.deployment.ptfconfig**| Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2010 Service Pack 3 (SP3).|
+|**MS-XXXX\_ExchangeServer2013\_SHOULDMAY.deployment.ptfconfig**| Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2013 Service Pack 1 (SP1).|
 
 ### Configuring the test suite client using setup configuration script
 
@@ -669,9 +669,9 @@ below to update configuration files and configure the test suite client.
 
 <!-- -->
 
-a.  Set the execution policy to **RemoteSigned**.
+    a.  Set the execution policy to **RemoteSigned**.
 
-b.  Add the SUT to TrustedHosts to ensure that the Windows Remote
+    b.  Add the SUT to TrustedHosts to ensure that the Windows Remote
     Management (WinRM) client can process remote calls against the SUT
     when the test suite client is not joined to the domain.
 
@@ -740,9 +740,9 @@ bin folder.
 
 |Batch script| Script Description |
 | :--- | :--- |
-| RunAllExchangeEASTestCases.cmd  |  Runs all the test cases within the Exchange Server EAS Protocol test suites.| 
-| RunAllMSXXXXTestCases.cmd       |  Runs all MS-XXXX test cases.| 
-| RunMSXXXX\_SXX\_TCXX\_Name.cmd  |  Runs a specific test case within the test suite.| 
+| **RunAllExchangeEASTestCases.cmd**  |  Runs all the test cases within the Exchange Server EAS Protocol test suites.| 
+| **RunAllMSXXXXTestCases.cmd**       |  Runs all MS-XXXX test cases.| 
+| **RunMSXXXX\_SXX\_TCXX\_Name.cmd**  |  Runs a specific test case within the test suite.| 
 
 
 
