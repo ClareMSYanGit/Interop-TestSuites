@@ -280,7 +280,7 @@ configuration script is required.
 | | User Mailbox| MSASEMAIL\_User03|--| 
 | | User Mailbox| MSASEMAIL\_User04|--| 
 | | User Mailbox| MSASEMAIL\_User05|--| 
-| | MS-ASHTTP   | User Mailbox|MSASHTTP\_User01 |--| 
+| **MS-ASHTTP** | User Mailbox|MSASHTTP\_User01 |--| 
 | | User Mailbox| MSASHTTP\_User02|--|
 | | User Mailbox| MSASHTTP\_User03|--| 
 | | User Mailbox| MSASHTTP\_User04|--| 
