@@ -139,7 +139,7 @@ PowerShell scripts and the MS\_OXWSDLGM\_ServerAdapter.dll file.
                                                              
   ---------------------------------------------------------- --
   1.  Click **Unblock,** and then click **OK**.              
-                                                             
+ ![alt tag](/Doc-Images/EAS_Deploy2.png)                                                              
                                                              
   -------------------------------------------------------------
 
