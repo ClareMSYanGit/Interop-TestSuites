@@ -694,7 +694,7 @@ Studio.
   1.  Open **ExchangeServerEASProtocolTestSuites.sln** in Visual Studio                                                                         
                                                                                                                                                 
       ![alt tag](/Doc-Images/EAS_RunningTS1.png)                                                                                                                                          
-  --------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------
+  --------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------
   1.  In the **Solution Explorer** pane, right-click **Solution ‘ExchangeServerEASProtocolTestSuites’**, and then click **Rebuild Solution**.   
                                                                                                                                                 
       ![alt tag](/Doc-Images/EAS_RunningTS2.png)                                                                                                                                         
