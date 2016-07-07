@@ -38,7 +38,7 @@ deployment takes place on both the client and server side. The following
 information will help test suite users to plan their deployment.
 
 Hardware requirements
----------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
 
 ### System under test
 
@@ -54,24 +54,16 @@ The test suite client is the client side of the test suite environment.
 The following table shows the minimum resource requirements for the test
 suite client.
 
-Test suite client resource requirements
+**Test suite client resource requirements**
 
-<<<<<<< HEAD
-| Component | List all new or modified files |
+| Component | Test suite client minimum requirement |
 | :--- | :--- |
 |**RAM**|2GB|
 |**Hard Disk**| 3G of free space|
 |**Processor**| >= 1GHz|
-=======
-  Component   Test suite client minimum requirement
-  ----------- ---------------------------------------
-  RAM         2GB
-  Hard Disk   3G of free space
-  Processor   &gt;= 1GHz
->>>>>>> parent of e60d140... Update ExchangeEASTestSuiteDeploymentGuide.md
 
 Software requirements
--------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
 
 ### System under test 
 
@@ -102,8 +94,6 @@ The following diagram is an example of what a typical Exchange test suite enviro
 will be failed*.
 ![alt tag](/Doc-Images/EAS_RequiredSUTroles.png)
 
-![alt tag](/Doc-Images/EAS_RequiredSUTroles.png)
-
 ### Test suite client
 
 This section describes the prerequisite software for installing the
@@ -117,7 +107,6 @@ table outlines the software dependencies for the test suite client.
 | Windows 7 x64 Service Pack 1 and above| Microsoft Visual Studio 2013 Professional| 
 |Windows 8 x64 and above|Microsoft Protocol Test Framework 1.0.2220.0 and above| 
 |Windows 2008 R2 x64 Service Pack 1 and above|
-
 
 
 Deploying the test suites
