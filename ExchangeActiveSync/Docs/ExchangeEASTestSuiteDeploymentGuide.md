@@ -707,7 +707,7 @@ Studio.
   1.  Select the test case to run. Right-click and then select **Run Selected Tests**.
 	  
 	  ![alt tag](/Doc-Images/EAS_RunningTS4.png)
-  --------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------
+ 
 
 A Visual Studio solution file
 **MS-XXXX.sln** is provided in each test suite folder.
