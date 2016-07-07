@@ -223,7 +223,7 @@ Configuring the SUT
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 You can configure the SUT using automated scripts, as described in
-section [5.1.2](#_Configuring_the_SUT1_2); or configure the SUT
+section [Configuring SUT using the setup configuration script](#configuring_sut_using_the_setup_configuration_script); or configure the SUT
 manually, as described in section [5.1.3](#_Configuring_the_SUT1).
 
 **Note**   *The scripts should be run by a user who has domain
@@ -301,15 +301,15 @@ configuration script is required.
 | | Distributed Right Policy Template |  MSASRM\_ViewReply\_AllowedTemplate|Allowed View and Reply|
 | | Distributed Right Policy Template |  MSASRM\_ViewReplyReplyAll\_AllowedTemplate|   Allowed View, Reply, and ReplyAll|
 | | Distributed Right Policy Template |  MSASRM\_EditExport\_NotAllowedTemplate|Allowed all rights except Edit and Export|
-| | Distributed Right Policy Template |  MSASRM\_Export\_NotAllowedTemplate      |     Allowed all rights except Export
-| | Distributed Right Policy Template |  MSASRMReplyAll\_NotAllowedTemplate       |    Allowed all rights except ReplyAll
-|**MS-ASTASK**|User Mailbox |MSASTASK\_User01    |--|
+| | Distributed Right Policy Template |  MSASRM\_Export\_NotAllowedTemplate  | Allowed all rights except Export|
+| | Distributed Right Policy Template |  MSASRMReplyAll\_NotAllowedTemplate  | Allowed all rights except ReplyAll|
+|**MS-ASTASK**|User Mailbox |MSASTASK\_User01 |--|
 |**MS-ASWBXML** |--|--|--|
 
 ### Configuring SUT using the setup configuration script
 
-The setup configuration script is only used for configuring Exchange
-Server on the Windows platform.
+*The setup configuration script is only used for configuring Exchange
+Server on the Windows platform.*
 
 To configure SUT using the setup configuration script, navigate to the
 **SUT** folder, right-click **ExchangeSUTConfiguration.cmd** and select
