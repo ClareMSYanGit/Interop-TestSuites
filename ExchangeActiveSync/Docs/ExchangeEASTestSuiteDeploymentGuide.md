@@ -691,7 +691,6 @@ A Microsoft Visual Studio solution file
 **Source** folder. You can run a single or multiple test cases in Visual
 Studio.
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   1.  Open **ExchangeServerEASProtocolTestSuites.sln** in Visual Studio                                                                         
                                                                                                                                                 
       ![alt tag](/Doc-Images/EAS_RunningTS1.png)                                                                                                                                          
@@ -715,7 +714,6 @@ Studio.
 A Visual Studio solution file
 **MS-XXXX.sln** is provided in each test suite folder.
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   1.  Select the test suite you would like to run. Let’s take MS-ASDOC as an example here, so browse to the **Source\\MS-ASDOC** directory.
 
   ------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------
