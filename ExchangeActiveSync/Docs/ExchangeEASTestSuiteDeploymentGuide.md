@@ -145,21 +145,21 @@ PowerShell scripts and the MS\_OXWSDLGM\_ServerAdapter.dll file.
 
 To unblock MS\_OXWSDLGM\_ServerAdapter.dll, do the following:
 
-1.  Browse to file **MS\_OXWSDLGM\_ServerAdapter.dll** within the
-    > **\\Setup\\SUT**.
+1.  Browse to file **MS\_OXWSDLGM\_ServerAdapter.dll** within the **\\Setup\\SUT**.
 
   ------------------------------------------------------------------------------------------
-  1.  Right click “**MS\_OXWSDLGM\_ServerAdapter.dll”,** and then click **Properties**.   
-      ![alt tag](/Doc-Images/EAS_Deploy3.png)                                                                                        
+1.  Right click “**MS\_OXWSDLGM\_ServerAdapter.dll”,** and then click **Properties**.   
+   
+   ![alt tag](/Doc-Images/EAS_Deploy3.png)                                                                                        
                                                                                           
   --------------------------------------------------------------------------------------- --
-  1.  Click **Unblock,** and then click **OK**.                                           
+1.  Click **Unblock,** and then click **OK**.                                           
       ![alt tag](/Doc-Images/EAS_Deploy4.png)                                                                                       
                                                                                           
   ------------------------------------------------------------------------------------------
 
 Test suite directories
-=======================================================================================================================================
+============================================================================================================
 
 In this section you will find a list of the folder structures that are
 contained within the **ExchangeServerEASProtocolTestSuites.zip** file.
@@ -716,13 +716,15 @@ A Visual Studio solution file
   1.  Select the test suite you would like to run. Let’s take MS-ASDOC as an example here, so browse to the **Source\\MS-ASDOC** directory.
 
   ------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------
-  1.  Open **MS-ASDOC.sln** in Visual Studio. ![alt tag](/Doc-Images/EAS_RunningTS5.png)
+  1.  Open **MS-ASDOC.sln** in Visual Studio. 
+    ![alt tag](/Doc-Images/EAS_RunningTS5.png)
 
   1.  In the **Solution Explorer** pane, right-click **Solution ‘MS-ASDOC’**, and then click **Rebuild Solution**. ![alt tag](/Doc-Images/EAS_RunningTS6.png)
 
   1.  Open Test Explorer. On the ribbon, click **TEST**, then click **Windows**, and finally click **Test Explorer**. ![alt tag](/Doc-Images/EAS_RunningTS7.png)
 
-  1.  Select the test case to run. Right-click and then select **Run Selected Tests**. ![alt tag](/Doc-Images/EAS_RunningTS8.png)
+  1.  Select the test case to run. Right-click and then select **Run Selected Tests**. 
+    ![alt tag](/Doc-Images/EAS_RunningTS8.png)
 
   -------------------------------------------------------------------------------------------------------------------------------------
 
