@@ -236,7 +236,7 @@ suites package may require a varying level of resources on Exchange
 Server. The following table outlines these resources for each test
 suite. The SUT configuration scripts will automatically create all the
 required resources for the Microsoft server implementation. To configure
-the SUT manually, see section Configuring SUT manually.
+the SUT manually, see section *Configuring SUT manually*.
 
 The client configuration script follows the naming convention shown in
 the following table. If a change to the resource name is required, the
@@ -555,7 +555,7 @@ of the properties. The specific configuration file will take precedence
 over the common configuration file when the same property exists in both
 places.
 
-#### Set the test suite to interactive mode
+#### Set the test suite to interactive mode <a id="set-the-test-suite-to-interactive-mode"></a>
 
 If the SUT is a non-Microsoft implementation of Exchange Server, it is
 recommended that you further configure the test suite by setting the
@@ -665,7 +665,7 @@ below to update configuration files and configure the test suite client.
 2.  By default, the test suites use PowerShell script in the SUT control
     adapter to configure the SUT. If you chose interactive mode for the
     SUT control adapter as described in section
-    [5.2.2.1](#set-the-test-suite-to-interactive-mode), skip this step.
+    [Set the test suite to interactive mode](#set-the-test-suite-to-interactive-mode), skip this step.
 
     a.  Set the execution policy to **RemoteSigned**.
 
