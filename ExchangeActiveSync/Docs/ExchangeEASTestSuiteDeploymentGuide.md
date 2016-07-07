@@ -224,7 +224,7 @@ Configuring the SUT
 
 You can configure the SUT using automated scripts, as described in
 section [Configuring SUT using the setup configuration script](#configuring-sut-using-the-setup-configuration-script); or configure the SUT
-manually, as described in section [5.1.3](#_Configuring_the_SUT1).
+manually, as described in section [Configuring SUT manually](#configuring-sut-manually).
 
 **Note**   *The scripts should be run by a user who has domain
 administrator rights with a mailbox on Exchange Server.*
@@ -315,7 +315,7 @@ To configure SUT using the setup configuration script, navigate to the
 **SUT** folder, right-click **ExchangeSUTConfiguration.cmd** and select
 **Run as administrator**.
 
-### Configuring SUT manually
+### Configuring SUT manually <a id="configuring-sut-manually" ></a>
 
 If the SUT is a non-Microsoft implementation of Exchange Server, you
 will not be able to run the setup configuration script. The following
