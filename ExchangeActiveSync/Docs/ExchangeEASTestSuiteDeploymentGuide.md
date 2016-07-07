@@ -669,8 +669,6 @@ below to update configuration files and configure the test suite client.
     SUT control adapter as described in section
     [5.2.2.1](#set-the-test-suite-to-interactive-mode), skip this step.
 
-<!-- -->
-
     a.  Set the execution policy to **RemoteSigned**.
 
     b.  Add the SUT to TrustedHosts to ensure that the Windows Remote
@@ -703,10 +701,12 @@ Studio.
       ![alt tag](/Doc-Images/EAS_RunningTS2.png)                                                                                                                                         
 
   1.  Open **Test Explorer**. On the ribbon, click **TEST** then click **Windows**, and finally click **Test Explorer**.                        
-      ![alt tag](/Doc-Images/EAS_RunningTS3.png)                                                                                                                                         
+      
+	  ![alt tag](/Doc-Images/EAS_RunningTS3.png)                                                                                                                                         
                                                                                                                                                 
 
   1.  Select the test case to run. Right-click and then select **Run Selected Tests**.
+	  
 	  ![alt tag](/Doc-Images/EAS_RunningTS4.png)
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -725,7 +725,8 @@ A Visual Studio solution file
   1.  Open Test Explorer. On the ribbon, click **TEST**, then click **Windows**, and finally click **Test Explorer**. ![alt tag](/Doc-Images/EAS_RunningTS7.png)
 
   1.  Select the test case to run. Right-click and then select **Run Selected Tests**. 
-    ![alt tag](/Doc-Images/EAS_RunningTS8.png)
+    
+	![alt tag](/Doc-Images/EAS_RunningTS8.png)
 
   -------------------------------------------------------------------------------------------------------------------------------------
 
