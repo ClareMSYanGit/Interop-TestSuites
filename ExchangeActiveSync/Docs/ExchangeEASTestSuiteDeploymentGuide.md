@@ -1,5 +1,3 @@
-![alt tag](/Doc-Images/ExLogo.png)
-
 Exchange EAS Test Suite Deployment Guide
 ======================================================================================================
 
