@@ -133,12 +133,12 @@ for security reasons, you will need to follow these steps to unblock
 PowerShell scripts and the MS\_OXWSDLGM\_ServerAdapter.dll file.
 
   -------------------------------------------------------------
-  1.  Right-click xxxx.ps1, and then click **Properties**. 
+ 1.  Right-click xxxx.ps1, and then click **Properties**. 
  ![alt tag](/Doc-Images/EAS_Deploy1.png)  
                                                              
                                                              
   ---------------------------------------------------------- --
-  1.  Click **Unblock,** and then click **OK**.              
+ 1.  Click **Unblock,** and then click **OK**.              
  ![alt tag](/Doc-Images/EAS_Deploy2.png)                                                              
                                                              
   -------------------------------------------------------------
