@@ -2,10 +2,10 @@
 
 **Contents**
 
-[Introduction](#introduction)
-[Requirement specification](#requirement-specification)
-[Design considerations](#design-considerations)
-[Package design](#package-design)
+- [Introduction](#introduction)
+- [Requirement specification](#requirement-specification)
+- [Design considerations](#design-considerations)
+- [Package design](#package-design)
 
 Introduction
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
@@ -433,8 +433,8 @@ Three scenarios are designed to verify the server-side, testable
 requirements in MS-ASTASK test suite. The following table lists the
 scenarios designed in this test suite.
 
- | Scenario | Description |
+| Scenario | Description |
 | :--- | :--- |
- | S01\_SyncCommand|             This scenario is to test Task class element on the server by using Sync command.|
- | S02\_ItemOperationsCommand|   This scenario is to test Task class element on the server by using ItemOperations command.|
- | S03\_SearchCommand |          This scenario is to test Task class element on the server by using Search command.|
+| S01\_SyncCommand|             This scenario is to test Task class element on the server by using Sync command.|
+| S02\_ItemOperationsCommand|   This scenario is to test Task class element on the server by using ItemOperations command.|
+| S03\_SearchCommand |          This scenario is to test Task class element on the server by using Search command.|
