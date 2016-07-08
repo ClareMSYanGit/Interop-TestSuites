@@ -402,7 +402,7 @@ to run the test suites.
 
 12. Grant distribute message permissions to the group
     MSASCMD\_LargerGroup, and add 19 mailbox users specified in
-    MSASCMD\_UserY section *SUT resource requirements*, MSASCMD\_SerachUser01, and
+    MSASCMD\_UserY section [SUT resource requirements](#sut-resource-requirements), MSASCMD\_SerachUser01, and
     MSASCMD\_SearchUser02 into the group MSASCMD\_LargerGroup.
 
 13. Apply the following policy settings for the Mobile Device mailbox
