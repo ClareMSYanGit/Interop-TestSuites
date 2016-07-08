@@ -25,7 +25,7 @@ The Microsoft Open Specifications were written using the normative
 language defined in
 [RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453). The
 statements of them are extracted as protocol requirements which are
-listed in the requirement specification described in section 2. The test
+listed in the requirement specification described in [Requirement specification](#requirement-specification). The test
 suites are developed to test the normative protocol requirements. In a
 single test suite, similar or related requirements are grouped into one
 test case, and the test cases about same command or operation are
@@ -54,7 +54,7 @@ technical specifications is v20150630.
 |  **MS-ASTASK** |                [Exchange ActiveSync: Tasks Class Protocol](http://go.microsoft.com/fwlink/?LinkID=301341) |
 |  **MS-ASWBXML**|                [Exchange ActiveSync: WAP Binary XML (WBXML) Algorithm](http://go.microsoft.com/fwlink/?LinkID=708454) |
 
-Requirement specification
+Requirement specification <a name="requirement-specification"></a>
 ======================================================================================================================================================================================================================================================================
 
 A requirement specification contains a list of requirements that are
