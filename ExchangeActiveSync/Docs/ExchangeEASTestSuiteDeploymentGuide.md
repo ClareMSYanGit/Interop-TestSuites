@@ -592,10 +592,10 @@ changing to interactive mode from powershell mode, an additional step is
 required—delete the “scriptdir” attribute to avoid a runtime error.*
 
 \*\*\**When the manual operation completes successfully, enter the
-return values (if any) in **Action Results** and click **Succeed** in
+return values (if any) in* **Action Results** *and* click **Succeed** *in
 the dialog-box. When the manual operation is unable to complete, enter
-the error messages in the **Failure Message** text box and click
-**Fail** to terminate the test. In this case, the test will be treated
+the error messages in the* **Failure Message** *text box and click*
+**Fail** *to terminate the test. In this case, the test will be treated
 as “Inconclusive”.*
 
 Further customization can be done by creating your own SUT control
