@@ -8,53 +8,53 @@
 
 [*3* *Design considerations* ](#design-considerations)
 
-	[*3.1* *Assumptions* ](#assumptions)
+[*3.1* *Assumptions* ](#assumptions)
 
-	[*3.2* *Dependencies* ](#dependencies)
+[*3.2* *Dependencies* ](#dependencies)
 
 [*4* *Package design* ](#package-design)
 
-	[*4.1* *Architecture* ](#architecture)
+[*4.1* *Architecture* ](#architecture)
 
-	[*4.2* *Common library* ](#common-library)
+[*4.2* *Common library* ](#common-library)
 
-		[*4.2.1* *ActiveSyncClient* ](#activesyncclient)
+[*4.2.1* *ActiveSyncClient* ](#activesyncclient)
 
-		[*4.2.2* *Helper methods* ](#helper-methods)
+[*4.2.2* *Helper methods* ](#helper-methods)
 
-		[*4.2.3* *Message structures* ](#message-structures)
+[*4.2.3* *Message structures* ](#message-structures)
 
-	[*4.3* *Adapter* ](#adapter)
+[*4.3* *Adapter* ](#adapter)
 
-		[*4.3.1* *Protocol Adapter* ](#protocol-adapter)
+[*4.3.1* *Protocol Adapter* ](#protocol-adapter)
 
-		[*4.3.2* *SUT Control Adapter* ](#sut-control-adapter)
+[*4.3.2* *SUT Control Adapter* ](#sut-control-adapter)
 
-	[*4.4* *Test suite* ](#test-suite)
+[*4.4* *Test suite* ](#test-suite)
 
-		[*4.4.1* *MS-ASAIRS* ](#ms-asairs)
+[*4.4.1* *MS-ASAIRS* ](#ms-asairs)
 
-		[*4.4.2* *MS-ASCAL* ](#ms-ascal)
+[*4.4.2* *MS-ASCAL* ](#ms-ascal)
 
-		[*4.4.3* *MS-ASCMD* ](#ms-ascmd)
+[*4.4.3* *MS-ASCMD* ](#ms-ascmd)
 
-		[*4.4.4* *MS-ASCNTC* ](#ms-ascntc)
+[*4.4.4* *MS-ASCNTC* ](#ms-ascntc)
 
-		[*4.4.5* *MS-ASCON* ](#ms-ascon)
+[*4.4.5* *MS-ASCON* ](#ms-ascon)
 
-		[*4.4.6* *MS-ASDOC* ](#ms-asdoc)
+[*4.4.6* *MS-ASDOC* ](#ms-asdoc)
 
-		[*4.4.7* *MS-ASEMAIL* ](#ms-asemail)
+[*4.4.7* *MS-ASEMAIL* ](#ms-asemail)
 
-		[*4.4.8* *MS-ASHTTP* ](#ms-ashttp)
+[*4.4.8* *MS-ASHTTP* ](#ms-ashttp)
 
-		[*4.4.9* *MS-ASNOTE* ](#ms-asnote)
+[*4.4.9* *MS-ASNOTE* ](#ms-asnote)
 
-		[*4.4.10* *MS-ASPROV* ](#ms-asprov)
+[*4.4.10* *MS-ASPROV* ](#ms-asprov)
 
-		[*4.4.11* *MS-ASRM* ](#ms-asrm)
+[*4.4.11* *MS-ASRM* ](#ms-asrm)
 
-		[*4.4.12* *MS-ASTASK* ](#ms-astask)
+[*4.4.12* *MS-ASTASK* ](#ms-astask)
 
 Introduction
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
