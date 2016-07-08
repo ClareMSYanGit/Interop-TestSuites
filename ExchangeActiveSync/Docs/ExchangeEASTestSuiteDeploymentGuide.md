@@ -402,7 +402,7 @@ to run the test suites.
 
 12. Grant distribute message permissions to the group
     MSASCMD\_LargerGroup, and add 19 mailbox users specified in
-    MSASCMD\_UserY section [SUT resource requirements](#sut-resource-requirements), MSASCMD\_SerachUser01, and
+    MSASCMD\_UserY section *SUT resource requirements*, MSASCMD\_SerachUser01, and
     MSASCMD\_SearchUser02 into the group MSASCMD\_LargerGroup.
 
 13. Apply the following policy settings for the Mobile Device mailbox
@@ -442,7 +442,7 @@ to run the test suites.
 
 19.  Configure the web site which contains the application that
     implements the EAS protocols.
-  a.  Configure Secure Sockets Layer (SSL) as not required and ignore
+	a.  Configure Secure Sockets Layer (SSL) as not required and ignore
     client certificates on the following sites: Default Web Site, Server
     ActiveSync website, and Autodiscover website.
 
@@ -477,11 +477,13 @@ to run the test suites.
 30. Configure the website which contains the application that implements
     the EAS protocols.
 
-  a.  Configure Secure Sockets Layer (SSL) as not required and ignore
-    client certificates on the following sites:\
-    Default Web Site/\_wmcs Default Web Site/\_wmcs/admin\
-    Default Web Site/\_wmcs/certification Default Web
-    Site/\_wmcs/licensing
+	a.  Configure Secure Sockets Layer (SSL) as not required and ignore
+    client certificates on the following sites:
+	
+    - Default Web Site/\_wmcs 
+	- Default Web Site/\_wmcs/admin
+    - Default Web Site/\_wmcs/certification 
+	- Default Web Site/\_wmcs/licensing
 
 31.  Add Read and Execute permission for the groups Users, Product
     Servers, and AD RMS Service Group on the
