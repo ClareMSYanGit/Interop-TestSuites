@@ -1,6 +1,5 @@
 **Exchange EAS Test Suites Specification**
-
-**Contents**
+======================================================================================================
 
 - [Introduction](#introduction)
 - [Requirement specification](#requirement-specification)
