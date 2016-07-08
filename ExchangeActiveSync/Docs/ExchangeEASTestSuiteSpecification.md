@@ -1,66 +1,62 @@
-<span id="_Toc63679053"
-class="anchor"></span>![](media/image1.png){width="5.447916666666667in"
-height="1.625in"}
-
 **Exchange EAS Test Suites Specification**
 
 **Contents**
 
-[*1* *Introduction* 3](#_Toc435694095)
+[*1* *Introduction* ](#introduction)
 
-[*2* *Requirement specification* 4](#_Toc435694096)
+[*2* *Requirement specification* ](#requirement-specification)
 
-[*3* *Design considerations* 5](#design-considerations)
+[*3* *Design considerations* ](#design-considerations)
 
-[*3.1* *Assumptions* 5](#assumptions)
+	[*3.1* *Assumptions* ](#assumptions)
 
-[*3.2* *Dependencies* 5](#dependencies)
+	[*3.2* *Dependencies* ](#dependencies)
 
-[*4* *Package design* 6](#package-design)
+[*4* *Package design* ](#package-design)
 
-[*4.1* *Architecture* 6](#architecture)
+	[*4.1* *Architecture* ](#architecture)
 
-[*4.2* *Common library* 7](#common-library)
+	[*4.2* *Common library* ](#common-library)
 
-[*4.2.1* *ActiveSyncClient* 7](#activesyncclient)
+		[*4.2.1* *ActiveSyncClient* ](#activesyncclient)
 
-[*4.2.2* *Helper methods* 7](#helper-methods)
+		[*4.2.2* *Helper methods* ](#helper-methods)
 
-[*4.2.3* *Message structures* 7](#message-structures)
+		[*4.2.3* *Message structures* ](#message-structures)
 
-[*4.3* *Adapter* 7](#adapter)
+	[*4.3* *Adapter* ](#adapter)
 
-[*4.3.1* *Protocol Adapter* 7](#protocol-adapter)
+		[*4.3.1* *Protocol Adapter* ](#protocol-adapter)
 
-[*4.3.2* *SUT Control Adapter* 7](#sut-control-adapter)
+		[*4.3.2* *SUT Control Adapter* ](#sut-control-adapter)
 
-[*4.4* *Test suite* 8](#test-suite)
+	[*4.4* *Test suite* ](#test-suite)
 
-[*4.4.1* *MS-ASAIRS* 8](#ms-asairs)
+		[*4.4.1* *MS-ASAIRS* ](#ms-asairs)
 
-[*4.4.2* *MS-ASCAL* 8](#ms-ascal)
+		[*4.4.2* *MS-ASCAL* ](#ms-ascal)
 
-[*4.4.3* *MS-ASCMD* 8](#_Toc435694112)
+		[*4.4.3* *MS-ASCMD* ](#ms-ascmd)
 
-[*4.4.4* *MS-ASCNTC* 9](#ms-ascntc)
+		[*4.4.4* *MS-ASCNTC* ](#ms-ascntc)
 
-[*4.4.5* *MS-ASCON* 10](#_Toc435694114)
+		[*4.4.5* *MS-ASCON* ](#ms-ascon)
 
-[*4.4.6* *MS-ASDOC* 10](#ms-asdoc)
+		[*4.4.6* *MS-ASDOC* ](#ms-asdoc)
 
-[*4.4.7* *MS-ASEMAIL* 10](#ms-asemail)
+		[*4.4.7* *MS-ASEMAIL* ](#ms-asemail)
 
-[*4.4.8* *MS-ASHTTP* 10](#ms-ashttp)
+		[*4.4.8* *MS-ASHTTP* ](#ms-ashttp)
 
-[*4.4.9* *MS-ASNOTE* 11](#_Toc435694118)
+		[*4.4.9* *MS-ASNOTE* ](#ms-asnote)
 
-[*4.4.10* *MS-ASPROV* 11](#_Toc435694119)
+		[*4.4.10* *MS-ASPROV* ](#ms-asprov)
 
-[*4.4.11* *MS-ASRM* 11](#ms-asrm)
+		[*4.4.11* *MS-ASRM* ](#ms-asrm)
 
-[*4.4.12* *MS-ASTASK* 11](#ms-astask)
+		[*4.4.12* *MS-ASTASK* ](#ms-astask)
 
-<span id="_Technical_Document_Introduction" class="anchor"><span id="_Test_Method" class="anchor"><span id="_Toc332648623" class="anchor"><span id="_Toc332794509" class="anchor"><span id="_Toc332876776" class="anchor"><span id="_Toc332899509" class="anchor"><span id="_Toc351540483" class="anchor"><span id="_Toc106428318" class="anchor"><span id="_Toc435694095" class="anchor"></span></span></span></span></span></span></span></span></span>Introduction
+Introduction
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 The Exchange EAS Protocol Test Suites are implemented as synthetic
@@ -108,7 +104,7 @@ Exchange EAS Protocol technical specifications
   MS-ASTASK                 [*Exchange ActiveSync: Tasks Class Protocol*](http://go.microsoft.com/fwlink/?LinkID=301341)
   MS-ASWBXML                [*Exchange ActiveSync: WAP Binary XML (WBXML) Algorithm*](http://go.microsoft.com/fwlink/?LinkID=708454)
 
-<span id="_Document_scope" class="anchor"><span id="_Toc329982556" class="anchor"><span id="_Toc308770200" class="anchor"><span id="_Toc387851220" class="anchor"><span id="_Toc435694096" class="anchor"></span></span></span></span></span>Requirement specification
+Requirement specification
 ======================================================================================================================================================================================================================================================================
 
 A requirement specification contains a list of requirements that are
