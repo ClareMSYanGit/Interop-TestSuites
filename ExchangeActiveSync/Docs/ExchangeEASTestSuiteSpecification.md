@@ -1,4 +1,4 @@
-**Exchange EAS Test Suites Specification**
+Exchange EAS Test Suites Specification
 ======================================================================================================
 
 - [Introduction](#introduction)
