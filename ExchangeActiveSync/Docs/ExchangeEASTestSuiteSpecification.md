@@ -85,24 +85,24 @@ The technical specifications listed in the following table are included
 in the Exchange EAS Protocol Test Suites package. The version of these
 technical specifications is v20150630.
 
-Exchange EAS Protocol technical specifications
+**Exchange EAS Protocol technical specifications**
 
-  Technical specification   Protocol name
-  ------------------------- ----------------------------------------------------------------------------------------------------------
-  MS-ASAIRS                 [*Exchange ActiveSync: AirSyncBase Namespace Protocol*](http://go.microsoft.com/fwlink/?LinkID=301330)
-  MS-ASCAL                  [*Exchange ActiveSync: Calendar Class Protocol*](http://go.microsoft.com/fwlink/?LinkID=301331)
-  MS-ASCMD                  [*Exchange ActiveSync: Command Reference Protocol*](http://go.microsoft.com/fwlink/?LinkID=301332)
-  MS-ASCNTC                 [*Exchange ActiveSync: Contact Class Protocol*](http://go.microsoft.com/fwlink/?LinkID=301333)
-  MS-ASCON                  [*Exchange ActiveSync: Conversations Protocol*](http://go.microsoft.com/fwlink/?LinkID=301334)
-  MS-ASDOC                  [*Exchange ActiveSync: Document Class Protocol*](http://go.microsoft.com/fwlink/?LinkID=301335)
-  MS-ASDTYPE                [*Exchange ActiveSync: Data Types*](http://go.microsoft.com/fwlink/?LinkID=708453)
-  MS-ASEMAIL                [*Exchange ActiveSync: Email Class Protocol*](http://go.microsoft.com/fwlink/?LinkID=301336)
-  MS-ASHTTP                 [*Exchange ActiveSync: HTTP Protocol*](http://go.microsoft.com/fwlink/?LinkID=301337)
-  MS-ASNOTE                 [*Exchange ActiveSync: Notes Class Protocol*](http://go.microsoft.com/fwlink/?LinkID=301338)
-  MS-ASPROV                 [*Exchange ActiveSync: Provisioning Protocol*](http://go.microsoft.com/fwlink/?LinkID=301339)
-  MS-ASRM                   [*Exchange ActiveSync: Rights Management Protocol*](http://go.microsoft.com/fwlink/?LinkID=301340)
-  MS-ASTASK                 [*Exchange ActiveSync: Tasks Class Protocol*](http://go.microsoft.com/fwlink/?LinkID=301341)
-  MS-ASWBXML                [*Exchange ActiveSync: WAP Binary XML (WBXML) Algorithm*](http://go.microsoft.com/fwlink/?LinkID=708454)
+| Technical specification | Protocol name |
+| :--- | :--- |
+|  **MS-ASAIRS** |                [*Exchange ActiveSync: AirSyncBase Namespace Protocol*](http://go.microsoft.com/fwlink/?LinkID=301330) |
+|  **MS-ASCAL**  |                [*Exchange ActiveSync: Calendar Class Protocol*](http://go.microsoft.com/fwlink/?LinkID=301331) |
+|  **MS-ASCMD**  |                [*Exchange ActiveSync: Command Reference Protocol*](http://go.microsoft.com/fwlink/?LinkID=301332) |
+|  **MS-ASCNTC** |                [*Exchange ActiveSync: Contact Class Protocol*](http://go.microsoft.com/fwlink/?LinkID=301333) |
+|  **MS-ASCON**  |                [*Exchange ActiveSync: Conversations Protocol*](http://go.microsoft.com/fwlink/?LinkID=301334) |
+|  **MS-ASDOC**  |                [*Exchange ActiveSync: Document Class Protocol*](http://go.microsoft.com/fwlink/?LinkID=301335) |
+|  **MS-ASDTYPE**|                [*Exchange ActiveSync: Data Types*](http://go.microsoft.com/fwlink/?LinkID=708453) |
+|  **MS-ASEMAIL**|                [*Exchange ActiveSync: Email Class Protocol*](http://go.microsoft.com/fwlink/?LinkID=301336) |
+|  **MS-ASHTTP** |                [*Exchange ActiveSync: HTTP Protocol*](http://go.microsoft.com/fwlink/?LinkID=301337) |
+|  **MS-ASNOTE** |                [*Exchange ActiveSync: Notes Class Protocol*](http://go.microsoft.com/fwlink/?LinkID=301338) |
+|  **MS-ASPROV** |                [*Exchange ActiveSync: Provisioning Protocol*](http://go.microsoft.com/fwlink/?LinkID=301339) |
+|  **MS-ASRM**   |                [*Exchange ActiveSync: Rights Management Protocol*](http://go.microsoft.com/fwlink/?LinkID=301340) |
+|  **MS-ASTASK** |                [*Exchange ActiveSync: Tasks Class Protocol*](http://go.microsoft.com/fwlink/?LinkID=301341) |
+|  **MS-ASWBXML**|                [*Exchange ActiveSync: WAP Binary XML (WBXML) Algorithm*](http://go.microsoft.com/fwlink/?LinkID=708454) |
 
 Requirement specification
 ======================================================================================================================================================================================================================================================================
