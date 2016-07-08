@@ -442,6 +442,7 @@ to run the test suites.
 
 19.  Configure the web site which contains the application that
     implements the EAS protocols.
+	
 	a.  Configure Secure Sockets Layer (SSL) as not required and ignore
     client certificates on the following sites: Default Web Site, Server
     ActiveSync website, and Autodiscover website.
