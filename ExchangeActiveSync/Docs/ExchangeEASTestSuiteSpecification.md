@@ -370,10 +370,10 @@ scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-|  S01\_Email |                 Test normal e-mail events, including sending an e-mail to server, synchronizing e-mails with server, retrieving e-mail items that match the criteria specified by the client from server, retrieving data from the server for one or more specific e-mail items.|
-|  S02\_EmailVoiceAttachment|   Test voice attachment e-mail events, including sending an e-mail with voice attachment to server, synchronizing the e-mail with voice attachment with server.|
-|  S03\_EmailFlag              Test flag events, include setting a flag on email or task, updating a flag on email or task, marking a flag on email or task as complete, clearing a flag from email or task.|
-|  S04\_MeetingRequest|         Test meeting request events, including sending a meeting request to server, synchronizing the meeting request with server.|
+|  S01\_Email | Test normal e-mail events, including sending an e-mail to server, synchronizing e-mails with server, retrieving e-mail items that match the criteria specified by the client from server, retrieving data from the server for one or more specific e-mail items.|
+|  S02\_EmailVoiceAttachment| Test voice attachment e-mail events, including sending an e-mail with voice attachment to server, synchronizing the e-mail with voice attachment with server.|
+|  S03\_EmailFlag | Test flag events, include setting a flag on email or task, updating a flag on email or task, marking a flag on email or task as complete, clearing a flag from email or task.|
+|  S04\_MeetingRequest| Test meeting request events, including sending a meeting request to server, synchronizing the meeting request with server.|
 
 ### MS-ASHTTP
 
@@ -383,10 +383,10 @@ scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-| S01\_HTTPPOSTPositive|         Test the positive behaviors issued by HTTP POST command.|
-| S02\_HTTPPOSTNegative |        Test the negative behaviors issued by HTTP POST command.|
-| S03\_HTTPPOSTOptionalHeader |  Test optional request header of HTTP POST command.|
-| S04\_HTTPOPTIONSMessage  |     Test HTTP OPTIONS command.|
+| S01\_HTTPPOSTPositive| Test the positive behaviors issued by HTTP POST command.|
+| S02\_HTTPPOSTNegative | Test the negative behaviors issued by HTTP POST command.|
+| S03\_HTTPPOSTOptionalHeader | Test optional request header of HTTP POST command.|
+| S04\_HTTPOPTIONSMessage  | Test HTTP OPTIONS command.|
 
 ### MS-ASNOTE
 
