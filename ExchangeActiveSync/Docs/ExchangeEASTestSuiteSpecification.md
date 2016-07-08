@@ -146,6 +146,8 @@ Architecture
 The following figure illustrates the Exchange EAS Protocol Test Suites
 architecture.
 
+![alt tag](/Doc-Images/EAS_Spec_Architecture.png)
+
 **Figure 1: Architecture**
 
 The following outlines the details of the test suites architecture:
