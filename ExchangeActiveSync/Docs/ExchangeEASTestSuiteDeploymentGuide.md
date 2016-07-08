@@ -230,7 +230,7 @@ manually, as described in section [Configuring SUT manually](#configuring-sut-ma
 **Note**   *The scripts should be run by a user who has domain
 administrator rights with a mailbox on Exchange Server.*
 
-### SUT resource requirements 
+### SUT resource requirements <a id="sut-resource-requirements"></a>
 
 Each test suite contained within the Exchange Server EAS Protocol test
 suites package may require a varying level of resources on Exchange
@@ -335,7 +335,7 @@ to run the test suites.
     and MSASTASK\_User01
 
 2.  Create the mailbox user MSASCMD\_UserY specified in the SUT resource
-    requirements table in section 5.1.1.
+    requirements table in section [SUT resource requirements](#sut-resource-requirements).
 
 3.  Add a delegate of MSASCMD\_User07 to MSASCMD\_User08, and also add a
     delegate of MSASEMAIL\_User04 to MSASEMAIL\_User05., The delegated
@@ -402,7 +402,7 @@ to run the test suites.
 
 12. Grant distribute message permissions to the group
     MSASCMD\_LargerGroup, and add 19 mailbox users specified in
-    MSASCMD\_UserY section 5.1.1, MSASCMD\_SerachUser01, and
+    MSASCMD\_UserY section [SUT resource requirements](#sut-resource-requirements), MSASCMD\_SerachUser01, and
     MSASCMD\_SearchUser02 into the group MSASCMD\_LargerGroup.
 
 13. Apply the following policy settings for the Mobile Device mailbox
