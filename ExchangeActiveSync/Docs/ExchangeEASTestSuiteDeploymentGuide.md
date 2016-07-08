@@ -237,7 +237,7 @@ suites package may require a varying level of resources on Exchange
 Server. The following table outlines these resources for each test
 suite. The SUT configuration scripts will automatically create all the
 required resources for the Microsoft server implementation. To configure
-the SUT manually, see section *Configuring SUT manually*.
+the SUT manually, see section [Configuring SUT manually](#configuring-sut-manually).
 
 The client configuration script follows the naming convention shown in
 the following table. If a change to the resource name is required, the
@@ -316,7 +316,7 @@ To configure SUT using the setup configuration script, navigate to the
 **SUT** folder, right-click **ExchangeSUTConfiguration.cmd** and select
 **Run as administrator**.
 
-### Configuring SUT manually <a id="configuring-sut-manually" ></a>
+### Configuring SUT manually <a name="configuring-sut-manually" ></a>
 
 If the SUT is a non-Microsoft implementation of Exchange Server, you
 will not be able to run the setup configuration script. The following
