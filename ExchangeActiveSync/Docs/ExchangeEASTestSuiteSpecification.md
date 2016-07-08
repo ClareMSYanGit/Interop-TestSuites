@@ -2,59 +2,10 @@
 
 **Contents**
 
-[*1* *Introduction* ](#introduction)
-
-[*2* *Requirement specification* ](#requirement-specification)
-
-[*3* *Design considerations* ](#design-considerations)
-
-[*3.1* *Assumptions* ](#assumptions)
-
-[*3.2* *Dependencies* ](#dependencies)
-
-[*4* *Package design* ](#package-design)
-
-[*4.1* *Architecture* ](#architecture)
-
-[*4.2* *Common library* ](#common-library)
-
-[*4.2.1* *ActiveSyncClient* ](#activesyncclient)
-
-[*4.2.2* *Helper methods* ](#helper-methods)
-
-[*4.2.3* *Message structures* ](#message-structures)
-
-[*4.3* *Adapter* ](#adapter)
-
-[*4.3.1* *Protocol Adapter* ](#protocol-adapter)
-
-[*4.3.2* *SUT Control Adapter* ](#sut-control-adapter)
-
-[*4.4* *Test suite* ](#test-suite)
-
-[*4.4.1* *MS-ASAIRS* ](#ms-asairs)
-
-[*4.4.2* *MS-ASCAL* ](#ms-ascal)
-
-[*4.4.3* *MS-ASCMD* ](#ms-ascmd)
-
-[*4.4.4* *MS-ASCNTC* ](#ms-ascntc)
-
-[*4.4.5* *MS-ASCON* ](#ms-ascon)
-
-[*4.4.6* *MS-ASDOC* ](#ms-asdoc)
-
-[*4.4.7* *MS-ASEMAIL* ](#ms-asemail)
-
-[*4.4.8* *MS-ASHTTP* ](#ms-ashttp)
-
-[*4.4.9* *MS-ASNOTE* ](#ms-asnote)
-
-[*4.4.10* *MS-ASPROV* ](#ms-asprov)
-
-[*4.4.11* *MS-ASRM* ](#ms-asrm)
-
-[*4.4.12* *MS-ASTASK* ](#ms-astask)
+[Introduction](#introduction)
+[Requirement specification](#requirement-specification)
+[Design considerations](#design-considerations)
+[Package design](#package-design)
 
 Introduction
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
@@ -89,20 +40,20 @@ technical specifications is v20150630.
 
 | Technical specification | Protocol name |
 | :--- | :--- |
-|  **MS-ASAIRS** |                [*Exchange ActiveSync: AirSyncBase Namespace Protocol*](http://go.microsoft.com/fwlink/?LinkID=301330) |
-|  **MS-ASCAL**  |                [*Exchange ActiveSync: Calendar Class Protocol*](http://go.microsoft.com/fwlink/?LinkID=301331) |
-|  **MS-ASCMD**  |                [*Exchange ActiveSync: Command Reference Protocol*](http://go.microsoft.com/fwlink/?LinkID=301332) |
-|  **MS-ASCNTC** |                [*Exchange ActiveSync: Contact Class Protocol*](http://go.microsoft.com/fwlink/?LinkID=301333) |
-|  **MS-ASCON**  |                [*Exchange ActiveSync: Conversations Protocol*](http://go.microsoft.com/fwlink/?LinkID=301334) |
-|  **MS-ASDOC**  |                [*Exchange ActiveSync: Document Class Protocol*](http://go.microsoft.com/fwlink/?LinkID=301335) |
-|  **MS-ASDTYPE**|                [*Exchange ActiveSync: Data Types*](http://go.microsoft.com/fwlink/?LinkID=708453) |
-|  **MS-ASEMAIL**|                [*Exchange ActiveSync: Email Class Protocol*](http://go.microsoft.com/fwlink/?LinkID=301336) |
-|  **MS-ASHTTP** |                [*Exchange ActiveSync: HTTP Protocol*](http://go.microsoft.com/fwlink/?LinkID=301337) |
-|  **MS-ASNOTE** |                [*Exchange ActiveSync: Notes Class Protocol*](http://go.microsoft.com/fwlink/?LinkID=301338) |
-|  **MS-ASPROV** |                [*Exchange ActiveSync: Provisioning Protocol*](http://go.microsoft.com/fwlink/?LinkID=301339) |
-|  **MS-ASRM**   |                [*Exchange ActiveSync: Rights Management Protocol*](http://go.microsoft.com/fwlink/?LinkID=301340) |
-|  **MS-ASTASK** |                [*Exchange ActiveSync: Tasks Class Protocol*](http://go.microsoft.com/fwlink/?LinkID=301341) |
-|  **MS-ASWBXML**|                [*Exchange ActiveSync: WAP Binary XML (WBXML) Algorithm*](http://go.microsoft.com/fwlink/?LinkID=708454) |
+|  **MS-ASAIRS** |                [Exchange ActiveSync: AirSyncBase Namespace Protocol](http://go.microsoft.com/fwlink/?LinkID=301330) |
+|  **MS-ASCAL**  |                [Exchange ActiveSync: Calendar Class Protocol](http://go.microsoft.com/fwlink/?LinkID=301331) |
+|  **MS-ASCMD**  |                [Exchange ActiveSync: Command Reference Protocol](http://go.microsoft.com/fwlink/?LinkID=301332) |
+|  **MS-ASCNTC** |                [Exchange ActiveSync: Contact Class Protocol](http://go.microsoft.com/fwlink/?LinkID=301333) |
+|  **MS-ASCON**  |                [Exchange ActiveSync: Conversations Protocol](http://go.microsoft.com/fwlink/?LinkID=301334) |
+|  **MS-ASDOC**  |                [Exchange ActiveSync: Document Class Protocol](http://go.microsoft.com/fwlink/?LinkID=301335) |
+|  **MS-ASDTYPE**|                [Exchange ActiveSync: Data Types*](http://go.microsoft.com/fwlink/?LinkID=708453) |
+|  **MS-ASEMAIL**|                [Exchange ActiveSync: Email Class Protocol](http://go.microsoft.com/fwlink/?LinkID=301336) |
+|  **MS-ASHTTP** |                [Exchange ActiveSync: HTTP Protocol](http://go.microsoft.com/fwlink/?LinkID=301337) |
+|  **MS-ASNOTE** |                [Exchange ActiveSync: Notes Class Protocol](http://go.microsoft.com/fwlink/?LinkID=301338) |
+|  **MS-ASPROV** |                [Exchange ActiveSync: Provisioning Protocol](http://go.microsoft.com/fwlink/?LinkID=301339) |
+|  **MS-ASRM**   |                [Exchange ActiveSync: Rights Management Protocol](http://go.microsoft.com/fwlink/?LinkID=301340) |
+|  **MS-ASTASK** |                [Exchange ActiveSync: Tasks Class Protocol](http://go.microsoft.com/fwlink/?LinkID=301341) |
+|  **MS-ASWBXML**|                [Exchange ActiveSync: WAP Binary XML (WBXML) Algorithm](http://go.microsoft.com/fwlink/?LinkID=708454) |
 
 Requirement specification
 ======================================================================================================================================================================================================================================================================
@@ -324,14 +275,14 @@ Six scenarios are designed to verify the server-side, testable
 requirements in MS-ASAIRS test suite. The following table lists the
 scenarios designed in the test suite.
 
-  Scenario                      Description
-  ----------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  S01\_BodyPartPreference       Test the BodyPartPreference element and BodyPart element in the AirSyncBase namespace, which is used by the Sync command, Search command and ItemOperations command to identify the data sent by and returned to client.
-  S02\_BodyPreference           Test the BodyPreference element and Body element in the AirSyncBase namespace, which is used by the Sync command, Search command and ItemOperations command to identify the data sent by and returned to client.
-  S03\_Attachment               Test the Attachments element and its subelements in the AirSyncBase namespace, which is used by the Sync command, Search command and ItemOperations command to identify the data sent by and returned to client.
-  S04\_StatusError              Test the status error which is returned by the Sync command, Search command and ItemOperations command when the XML elements in AirSyncBase namespace don't comply with the requirements regarding data type, number of instance, order and placement in the XML hierarchy.
-  S05\_Location                 This scenario is designed to test the Location element and its sub elements, which is used by the Sync command, Search command and ItemOperations command.
-  S06\_MeetingResponseCommand   This scenario is designed to test the MeetingResponse command.
+| Scenario | Description |
+| :--- | :--- |
+|  S01\_BodyPartPreference  |     Test the BodyPartPreference element and BodyPart element in the AirSyncBase namespace, which is used by the Sync command, Search command and ItemOperations command to identify the data sent by and returned to client.|
+|  S02\_BodyPreference      |     Test the BodyPreference element and Body element in the AirSyncBase namespace, which is used by the Sync command, Search command and ItemOperations command to identify the data sent by and returned to client.|
+|  S03\_Attachment          |     Test the Attachments element and its subelements in the AirSyncBase namespace, which is used by the Sync command, Search command and ItemOperations command to identify the data sent by and returned to client.|
+|  S04\_StatusError         |     Test the status error which is returned by the Sync command, Search command and ItemOperations command when the XML elements in AirSyncBase namespace don't comply with the requirements regarding data type, number of instance, order and placement in the XML hierarchy.|
+|  S05\_Location            |     This scenario is designed to test the Location element and its sub elements, which is used by the Sync command, Search command and ItemOperations command.|
+|  S06\_MeetingResponseCommand |  This scenario is designed to test the MeetingResponse command.|
 
 ### MS-ASCAL
 
@@ -339,41 +290,41 @@ Two scenarios are designed to verify the server-side, testable
 requirements in MS-ASCAL test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario               Description
-  ---------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  S01\_CalendarElement   This scenario is to test Calendar class elements, which are not attached in a Meeting request, including synchronizing the calendar on the server, fetching information of the calendar or searching a specific calendar.
-  S02\_MeetingElement    This scenario is to test Calendar class elements, which are attached in a Meeting request, when meeting is either accepted, tentative accepted, cancelled or declined.
+| Scenario | Description |
+| :--- | :--- |
+|   S01\_CalendarElement |   This scenario is to test Calendar class elements, which are not attached in a Meeting request, including synchronizing the calendar on the server, fetching information of the calendar or searching a specific calendar.| 
+|   S02\_MeetingElement  |   This scenario is to test Calendar class elements, which are attached in a Meeting request, when meeting is either accepted, tentative accepted, cancelled or declined.| 
 
-### <span id="_MS-OXCRPC_S01_SynchronousCall" class="anchor"><span id="_Toc435694112" class="anchor"></span></span>MS-ASCMD
+### MS-ASCMD
 
 22 scenarios are designed to verify the server-side, testable
 requirements in MS-ASCMD test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario                 Description
-  ------------------------ ---------------------------------------------------------------------------------------------------------------------------------------------------------
-  S01\_Autodiscover        Discover the account settings by using the Autodiscover command.
-  S02\_FolderCreate        Create the folders by using the FolderCreate command.
-  S03\_FolderDelete        Delete the folders by using the FolderDelete command.
-  S04\_FolderSync          Synchronize the folders by using the FolderSync command.
-  S05\_FolderUpdate        Update the folders by using the FolderUpdate command.
-  S06\_GetAttachment       Retrieve an email attachment from the server by using GetAttachment command.
-  S07\_GetItemEstimate     Get an estimate of the number of items in a collection or folder on the server that have to be synchronized by using GetItemEstimate command.
-  S08\_ItemOperations      Provide the batched online handling of Fetch, empty the folder contents and move the operations against the server by using the ItemOperations command.
-  S09\_MeetingResponse     Accept, tentatively accept, or decline a meeting request in the user's Inbox folder or Calendar folder by using the MeetingResponse command.
-  S10\_MoveItems           Move an item or items from one folder on the server to another by using the MoveItems command.
-  S11\_Ping                Ping the server for updating the folder by using the Ping command.
-  S12\_Provision           Download and acknowledge policies of Provision by using the Provision command.
-  S13\_ResolveRecipients   Resolve the recipients and retrieve the free or busy data by using the ResolveRecipients command.
-  S14\_Search              Find the entries in an address book, mailbox, or document library by using the Search command.
-  S15\_SendMail            Send the email message by using the SendMail command.
-  S16\_Settings            Set or change the device information, OOF setting and user information by using the Settings command.
-  S17\_SmartForward        Forward the email message by using the SmartForward command.
-  S18\_SmartReply          Reply the email message by using the SmartReply command.
-  S19\_Sync                Synchronize the data by using the Sync command.
-  S20\_ValidateCert        Validate a certificate that has been received via an S/MIME mail by using ValidateCert command.
-  S21\_CommonStatusCode    Test the common negative status for the commands.
-  S22\_GetHierarchy        This scenario is designed to test the GetHierarchy command.
+| Scenario | Description |
+| :--- | :--- |
+| S01\_Autodiscover    |  Discover the account settings by using the Autodiscover command.|
+| S02\_FolderCreate    |   Create the folders by using the FolderCreate command.|
+| S03\_FolderDelete    |   Delete the folders by using the FolderDelete command.|
+| S04\_FolderSync      |   Synchronize the folders by using the FolderSync command.|
+| S05\_FolderUpdate    |  Update the folders by using the FolderUpdate command.|
+| S06\_GetAttachment   | Retrieve an email attachment from the server by using GetAttachment command.|
+| S07\_GetItemEstimate | Get an estimate of the number of items in a collection or folder on the server that have to be synchronized by using GetItemEstimate command.|
+| S08\_ItemOperations  | Provide the batched online handling of Fetch, empty the folder contents and move the operations against the server by using the ItemOperations command.|
+| S09\_MeetingResponse |   Accept, tentatively accept, or decline a meeting request in the user's Inbox folder or Calendar folder by using the MeetingResponse command.|
+| S10\_MoveItems        |   Move an item or items from one folder on the server to another by using the MoveItems command.|
+| S11\_Ping             |   Ping the server for updating the folder by using the Ping command.|
+| S12\_Provision        |  Download and acknowledge policies of Provision by using the Provision command.|
+| S13\_ResolveRecipients|   Resolve the recipients and retrieve the free or busy data by using the ResolveRecipients command.|
+| S14\_Search           |   Find the entries in an address book, mailbox, or document library by using the Search command.|
+| S15\_SendMail         |   Send the email message by using the SendMail command.|
+| S16\_Settings         |   Set or change the device information, OOF setting and user information by using the Settings command.|
+| S17\_SmartForward     |   Forward the email message by using the SmartForward command.|
+| S18\_SmartReply       |   Reply the email message by using the SmartReply command.|
+| S19\_Sync             |   Synchronize the data by using the Sync command.|
+| S20\_ValidateCert     |  Validate a certificate that has been received via an S/MIME mail by using ValidateCert command.|
+| S21\_CommonStatusCode |   Test the common negative status for the commands.|
+| S22\_GetHierarchy |       This scenario is designed to test the GetHierarchy command.|
 
 ### MS-ASCNTC
 
@@ -381,25 +332,25 @@ Three scenarios are designed to verify the server-side, testable
 requirements in MS-ASCNTC test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario              Description
-  --------------------- --------------------------------------------------------------------------------------------------------------------
-  S01\_Sync             This scenario is designed to use the Sync command to synchronize the Contact class data between client and server.
-  S02\_ItemOperations   This scenario is designed to use ItemOperations command to retrieve Contact class data from the server.
-  S03\_Search           This scenario is designed to use Search command to search Contact class data on the server.
+| Scenario | Description |
+| :--- | :--- |
+|S01\_Sync |            This scenario is designed to use the Sync command to synchronize the Contact class data between client and server.|
+|S02\_ItemOperations |  This scenario is designed to use ItemOperations command to retrieve Contact class data from the server.|
+|S03\_Search         |  This scenario is designed to use Search command to search Contact class data on the server.|
 
-### <span id="_S1_MessageMethods_Validation" class="anchor"><span id="_Toc435694114" class="anchor"></span></span>MS-ASCON
+### MS-ASCON
 
 Five scenarios are designed to verify the server-side, testable
 requirements in MS-ASCON test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario               Description
-  ---------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  S01\_Sync              This scenario is designed to mark a conversation as Read or Unread, flag a conversation for follow-up, apply a conversation-based filter, delete a conversation and request a Message part using Sync command.
-  S02\_GetItemEstimate   This scenario is designed to apply a conversation-based filter using GetItemEstimate command.
-  S03\_ItemOperations    This scenario is designed to ignore a conversation, set up a conversation to be moved always and request a Message part using ItemOperations command.
-  S04\_MoveItems         This scenario is designed to move a conversation from the current folder using MoveItems command.
-  S05\_Search            This scenario is designed to find a conversation using Search command.
+| Scenario | Description |
+| :--- | :--- |
+|  S01\_Sync|              This scenario is designed to mark a conversation as Read or Unread, flag a conversation for follow-up, apply a conversation-based filter, delete a conversation and request a Message part using Sync command.|
+|  S02\_GetItemEstimate |  This scenario is designed to apply a conversation-based filter using GetItemEstimate command.|
+|  S03\_ItemOperations  |  This scenario is designed to ignore a conversation, set up a conversation to be moved always and request a Message part using ItemOperations command.|
+|  S04\_MoveItems       |  This scenario is designed to move a conversation from the current folder using MoveItems command.|
+|  S05\_Search          |  This scenario is designed to find a conversation using Search command.|
 
 ### MS-ASDOC
 
@@ -407,10 +358,10 @@ Two scenarios are designed to verify the server-side, testable
 requirements in MS-ASDOC test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario                     Description
-  ---------------------------- --------------------------------------------------------------------------------------------------------------------
-  S01\_SearchCommand           Retrieve Document class items that match the criteria specified by the client through the Search command messages.
-  S02\_ItemOperationsCommand   Retrieve data from the server for one or more individual documents through ItemOperations command messages.
+| Scenario | Description |
+| :--- | :--- |
+|  S01\_SearchCommand |          Retrieve Document class items that match the criteria specified by the client through the Search command messages.|
+|  S02\_ItemOperationsCommand |  Retrieve data from the server for one or more individual documents through ItemOperations command messages.|
 
 ### MS-ASEMAIL
 
@@ -418,12 +369,12 @@ Four scenarios are designed to verify the server-side, testable
 requirements in MS-ASEMAIL test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario                    Description
-  --------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  S01\_Email                  Test normal e-mail events, including sending an e-mail to server, synchronizing e-mails with server, retrieving e-mail items that match the criteria specified by the client from server, retrieving data from the server for one or more specific e-mail items.
-  S02\_EmailVoiceAttachment   Test voice attachment e-mail events, including sending an e-mail with voice attachment to server, synchronizing the e-mail with voice attachment with server.
-  S03\_EmailFlag              Test flag events, include setting a flag on email or task, updating a flag on email or task, marking a flag on email or task as complete, clearing a flag from email or task.
-  S04\_MeetingRequest         Test meeting request events, including sending a meeting request to server, synchronizing the meeting request with server.
+| Scenario | Description |
+| :--- | :--- |
+|  S01\_Email |                 Test normal e-mail events, including sending an e-mail to server, synchronizing e-mails with server, retrieving e-mail items that match the criteria specified by the client from server, retrieving data from the server for one or more specific e-mail items.|
+|  S02\_EmailVoiceAttachment|   Test voice attachment e-mail events, including sending an e-mail with voice attachment to server, synchronizing the e-mail with voice attachment with server.|
+|  S03\_EmailFlag              Test flag events, include setting a flag on email or task, updating a flag on email or task, marking a flag on email or task as complete, clearing a flag from email or task.|
+|  S04\_MeetingRequest|         Test meeting request events, including sending a meeting request to server, synchronizing the meeting request with server.|
 
 ### MS-ASHTTP
 
@@ -431,36 +382,36 @@ Four scenarios are designed to verify the server-side, testable
 requirements in MS-ASHTTP test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario                      Description
-  ----------------------------- ----------------------------------------------------------
-  S01\_HTTPPOSTPositive         Test the positive behaviors issued by HTTP POST command.
-  S02\_HTTPPOSTNegative         Test the negative behaviors issued by HTTP POST command.
-  S03\_HTTPPOSTOptionalHeader   Test optional request header of HTTP POST command.
-  S04\_HTTPOPTIONSMessage       Test HTTP OPTIONS command.
+| Scenario | Description |
+| :--- | :--- |
+| S01\_HTTPPOSTPositive|         Test the positive behaviors issued by HTTP POST command.|
+| S02\_HTTPPOSTNegative |        Test the negative behaviors issued by HTTP POST command.|
+| S03\_HTTPPOSTOptionalHeader |  Test optional request header of HTTP POST command.|
+| S04\_HTTPOPTIONSMessage  |     Test HTTP OPTIONS command.|
 
-### <span id="S1" class="anchor"><span id="_Toc435694118" class="anchor"></span></span>MS-ASNOTE
+### MS-ASNOTE
 
 Three scenarios are designed to verify the server-side, testable
 requirements in MS-ASNOTE test suite. The following table lists the
 scenarios designed in this test suite
 
-  Scenario                     Description
-  ---------------------------- --------------------------------------------------------------------------------------------------
-  S01\_SyncCommand             Synchronize Notes class items for a specified user with the existing notes stored on the server.
-  S02\_SearchCommand           Retrieve Notes class items that match the criteria specified by the client.
-  S03\_ItemOperationsCommand   Retrieve data from the server for one or more notes items.
+| Scenario | Description |
+| :--- | :--- |
+|S01\_SyncCommand   |   Synchronize Notes class items for a specified user with the existing notes stored on the server.|
+|S02\_SearchCommand |   Retrieve Notes class items that match the criteria specified by the client.|
+|S03\_ItemOperationsCommand |  Retrieve data from the server for one or more notes items.|
 
-### <span id="scenario1" class="anchor"><span id="_Toc435694119" class="anchor"></span></span>MS-ASPROV
+### MS-ASPROV
 
 Three scenarios are designed to verify the server-side, testable
 requirements in MS-ASPROV test suite. The following table lists the
 scenarios designed in this test suite.
 
-  <span id="_Ref236557899" class="anchor"></span>Scenario   Description
-  --------------------------------------------------------- ----------------------------------------------
-  S01\_AcknowledgePolicySettings                            Test the acknowledgement phase of Provision.
-  S02\_RemoteWipe                                           Test the remote wipe directive.
-  S03\_ProvisionNegative                                    Test negative status of Provision command.
+| Scenario | Description |
+| :--- | :--- |
+|  S01\_AcknowledgePolicySettings                            |Test the acknowledgement phase of Provision.|
+|  S02\_RemoteWipe                                           |Test the remote wipe directive.|
+|  S03\_ProvisionNegative                                    |Test negative status of Provision command.|
 
 ### MS-ASRM
 
@@ -468,13 +419,13 @@ Five scenarios are designed to verify the server-side and testable
 requirements in MS-ASRM test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario                        Description
-  ------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------
-  S01\_Settings\_SendMail\_Sync   This scenario is designed to get templateIDs, send email messages and synchronize data from the server by using Settings, SendMail and Sync commands.
-  S02\_ItemOperations             This scenario is designed to fetch a rights-managed e-mail message with or without RemoveRightsManagementProtection element by using ItemOperations command.
-  S03\_Search                     This scenario is designed to find rights-managed e-mail messages by using Search command.
-  S04\_SmartForward               This scenario is designed to forward messages by using SmartForward command.
-  S05\_SmartReply                 This scenario is designed to reply messages by using SmartReply command.
+| Scenario | Description |
+| :--- | :--- |
+|  S01\_Settings\_SendMail\_Sync |  This scenario is designed to get templateIDs, send email messages and synchronize data from the server by using Settings, SendMail and Sync commands.|
+|  S02\_ItemOperations|             This scenario is designed to fetch a rights-managed e-mail message with or without RemoveRightsManagementProtection element by using ItemOperations command.|
+|  S03\_Search       |              This scenario is designed to find rights-managed e-mail messages by using Search command.|
+|  S04\_SmartForward|               This scenario is designed to forward messages by using SmartForward command.|
+|  S05\_SmartReply|                 This scenario is designed to reply messages by using SmartReply command.|
 
 ### MS-ASTASK
 
@@ -482,8 +433,8 @@ Three scenarios are designed to verify the server-side, testable
 requirements in MS-ASTASK test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario                     Description
-  ---------------------------- --------------------------------------------------------------------------------------------
-  S01\_SyncCommand             This scenario is to test Task class element on the server by using Sync command.
-  S02\_ItemOperationsCommand   This scenario is to test Task class element on the server by using ItemOperations command.
-  S03\_SearchCommand           This scenario is to test Task class element on the server by using Search command.
+ | Scenario | Description |
+| :--- | :--- |
+ | S01\_SyncCommand|             This scenario is to test Task class element on the server by using Sync command.|
+ | S02\_ItemOperationsCommand|   This scenario is to test Task class element on the server by using ItemOperations command.|
+ | S03\_SearchCommand |          This scenario is to test Task class element on the server by using Search command.|
