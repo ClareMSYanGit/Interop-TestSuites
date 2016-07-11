@@ -177,11 +177,11 @@ ExchangeMAPIProtocolTestSuites.zip file contents
 |  **- Source** | A folder with Microsoft Visual Studio solutions that contain source code for the test suites.|
 |  **- Common** | A folder with Microsoft Visual Studio projects that contains source code that are common to the test suites.|
 |  **- Common** | A folder that contains common methods or properties used by the test suites.|
-|  **- ExchangeCommonConfiguration.deployment.ptfconfig |  The common configuration file.|
+|  **- ExchangeCommonConfiguration.deployment.ptfconfig** |  The common configuration file.|
 |  **+ OXCRPCStub** | RPC transport with unmanaged code.|
-|  **- ExchangeMAPIProtocolTestSuites.sln |  A Microsoft Visual Studio solution that contains projects of the test suites source code.|
-|  **- ExchangeMAPIProtocolTestSuites.runsettings | A configuration file used for unit test.|
-|  **- ExchangeMAPIProtocolTestSuites.testsettings| A configuration file used for running test cases.|
+|  **- ExchangeMAPIProtocolTestSuites.sln** |  A Microsoft Visual Studio solution that contains projects of the test suites source code.|
+|  **- ExchangeMAPIProtocolTestSuites.runsettings** | A configuration file used for unit test.|
+|  **- ExchangeMAPIProtocolTestSuites.testsettings**| A configuration file used for running test cases.|
 |  **- MS-XXXX** | MS-XXXX test suite code directory.|
 |  **- MS-XXXX.sln** | A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.|
 |  **- MS-XXXX.runsettings** | A configuration file used for MS-XXXX unit test.|
@@ -243,7 +243,6 @@ ExchangeTestSuite.config is required.
 
 | Test suite     | Resource type | Resource name | Note | 
 | :--- | :--- |:--- |:--- |
-
 |  All | Public Folder Database | PublicFolderDatabase | A public folder database is required on Microsoft Exchange Server 2007 SP3 and Microsoft Exchange Server 2010 SP3.|
 || Redirect Server Public Folder Database | PublicFolderDatabase2 | A redirect server is optional.|
 || Public Folder Mailbox | PublicFolderMailbox\_&lt;Server1Name&gt; |   A public folder mailbox is required on Microsoft Exchange Server 2013 SP1.|
