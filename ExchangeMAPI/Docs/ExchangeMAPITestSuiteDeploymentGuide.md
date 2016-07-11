@@ -126,11 +126,11 @@ PowerShell scripts.
 
   --------------------------------------------------------
   1.  Right-click xxxx.ps1 and select **Properties**.   
-      ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_RequiredSUTroles.png)                                                 
+      ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_Deploy1.png)                                                 
                                                         
   ----------------------------------------------------- --
   1.  Click **Unblock** and then click **OK**.          
-      ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_Deploy1.png)                                                  
+      ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_Deploy2.png)                                                  
                                                         
   --------------------------------------------------------
 
