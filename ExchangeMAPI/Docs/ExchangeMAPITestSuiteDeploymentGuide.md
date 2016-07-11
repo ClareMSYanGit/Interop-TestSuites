@@ -634,7 +634,7 @@ folder. You can run a single or multiple test cases in Visual Studio.
   ---------------------------------------------------------------------------------------------------------------------------------------- --                                                                                                                                          
 
   1.  Open **Test Explorer**. Select **TEST** and click **Windows**, then select **Test Explorer**.                                        
-     ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_ExMAPI_Running3.png)                                                                                                                                      
+      ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_Running3.png)                                                                                                                                      
   ---------------------------------------------------------------------------------------------------------------------------------------- --                                                                                                                                          
 
   1.  Select the test case to run, right-click and then select **Run Selected Tests**.                                                     
