@@ -209,7 +209,7 @@ Configuring the SUT
 -----------------------------------------------------------------------------------------------------------------
 
 You can configure the SUT using automated scripts, as described in
-sections [Configuring SUT1 using the setup configuration script](#configuring-sut1-using-the-setup-configuratio-script) and
+sections [Configuring SUT1 using the setup configuration script](#configuring-sut1-using-the-setup-configuration-script) and
 [Configuring SUT2 using the setup configuration script](#configuring-sut2-using-the-setup-configuration-script); or configure the SUT manually, as
 described in sections [Configuring SUT1 manually](#configuring-sut1-manually) and
 [Configuring SUT2 manually](#configuring-sut2-manually).
