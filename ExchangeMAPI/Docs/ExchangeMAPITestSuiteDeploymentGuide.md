@@ -331,21 +331,21 @@ to run the test suites.
 
 		a.  For MSOXNSPI\_TestUser01, set the following values:
 
-		-   AssistantName: "assistant"
+			-   AssistantName: "assistant"
 
-		-   PhoneticDisplayName: "phoneticdisplayname"
+			-   PhoneticDisplayName: "phoneticdisplayname"
 
 		a.  For MSOXNSPI\_TestUser02, set the following values:
 
-		-   AssistantName: "assistant"
+			-   AssistantName: "assistant"
 
-		-   PhoneticDisplayName: "phoneticdisplayname"
+			-   PhoneticDisplayName: "phoneticdisplayname"
 
-		-   Office: "Test"
+			-   Office: "Test"
 
-		-   Department: "Test"
+			-   Department: "Test"
 
-		-   OtherHomePhone: "BusinessOne"
+			-   OtherHomePhone: "BusinessOne"
 
 1.  Export the HTTPS certificate of the web site which contains the
     application that implements the MAPI protocols, and add the
@@ -410,16 +410,15 @@ MSOXNSPI\_PublicFolderMailEnabled
 		Registry Key:
 		HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\ExchangeTestSuite
 
-> Value type: String
+	Value type: String
 
-Value data: the absolute folder path where the DisableMailbox.ps1 and
-EnableMailbox.ps1 reside.
+	Value data: the absolute folder path where the DisableMailbox.ps1 and
+	EnableMailbox.ps1 reside.
 
 ### Configuring SUT2 using the setup configuration script
 
-The setup
-configuration script is only used for configuring Microsoft Exchange
-Server on Windows.
+*The setup configuration script is only used for configuring Microsoft Exchange
+Server on Windows.*
 
 To configure SUT2 using the setup configuration script, navigate to the
 SUT folder, right-click on the **ExchangeSecondSUTConfiguration.cmd**
@@ -470,6 +469,9 @@ The common configuration file contains configurable properties common to
 all Exchange MAPI Protocol test suites. This file must be modified to
 match the characteristics of the environment where the test suites are
 installed.
+
+First Header | Second Header
+------------ | -------------
 
   **Configuration file**                             **Description**
   -------------------------------------------------- ----------------------------------------------------------------------------------------------------------
