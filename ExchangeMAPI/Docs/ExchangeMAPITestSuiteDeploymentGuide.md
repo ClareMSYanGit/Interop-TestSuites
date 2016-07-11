@@ -84,6 +84,7 @@ The following diagram is an example of what a typical Exchange test suite
 environment may look like. This example uses an IPv4, but IPv6 is also
 supported by the test suites.
 
+
 ### Test suite client
 
 This section describes the prerequisite software for installing the
