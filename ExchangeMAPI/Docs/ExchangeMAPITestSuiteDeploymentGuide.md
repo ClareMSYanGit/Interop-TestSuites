@@ -95,9 +95,7 @@ table outlines the software dependencies for the test suite client.
 
 Operating systems | Software
 :------------ | :-------------
- Windows 7 x64 Service Pack 1 and above
- 
- Windows 8 x64 and above |Microsoft Visual Studio 2013 Professional
+ Windows 7 x64 Service Pack 1 and above <!-- -->Windows 8 x64 and above |Microsoft Visual Studio 2013 Professional
  Windows 8 x64 and above | Microsoft Protocol Test Framework 1.0.2220.0 and above
  Windows 2008 R2 x64 Service Pack 1 and above |  Microsoft Spec Explorer 3.6.14230.01 and above
 
