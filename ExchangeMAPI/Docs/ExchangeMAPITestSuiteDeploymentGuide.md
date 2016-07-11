@@ -76,9 +76,9 @@ servers.
 
 Role  | Description
 :------------ | :-------------
-**Active Directory Domain Controller (DC)**   |    Active Directory Domain Controller (AD DC) is required for Exchange. Key Distribution Center (KDC) is a service that runs on the AD DC and is required when Kerberos is used as the authentication method in the test suite.
-**Exchange Server \#1 (SUT1)**              |   The first Exchange server in the topology.
-**Exchange Server \#2 (SUT2, Redirect Server)** |  Installation of this server is optional. If this server is not present, then the dependent test cases will not be run. The presence of SUT2 will enable certain multi-server scenarios and other test cases that pertain to a second SUT.
+**Active Directory Domain Controller (DC)** | Active Directory Domain Controller (AD DC) is required for Exchange. Key Distribution Center (KDC) is a service that runs on the AD DC and is required when Kerberos is used as the authentication method in the test suite.
+**Exchange Server \#1 (SUT1)**  |  The first Exchange server in the topology.
+**Exchange Server \#2 (SUT2, Redirect Server)** | Installation of this server is optional. If this server is not present, then the dependent test cases will not be run. The presence of SUT2 will enable certain multi-server scenarios and other test cases that pertain to a second SUT.
 
 The following diagram is an example of what a typical Exchange test suite
 environment may look like. This example uses an IPv4, but IPv6 is also
@@ -209,10 +209,10 @@ Configuring the SUT
 -----------------------------------------------------------------------------------------------------------------
 
 You can configure the SUT using automated scripts, as described in
-sections [5.1.2](#configuring_the_sut1_2) and
-[5.1.4](#_Configuring_the_SUT2_1); or configure the SUT manually, as
-described in sections [5.1.3](#_Configuring_the_SUT1) and
-[5.1.5](#_Configuring_test_suite).
+sections [Configuring SUT1 using the setup configuration script](#Configuring-SUT1-using-the-setup-configuration-script) and
+[Configuring SUT2 using the setup configuration script](#Configuring-SUT2-using-the-setup-configuration-script); or configure the SUT manually, as
+described in sections [Configuring SUT1 manually](#Configuring-SUT1-manually) and
+[Configuring SUT2 manually](#Configuring-SUT2-manually).
 
 **Note**   The scripts should be run by a user who has domain
 administrator rights with a mailbox on the Exchange Server.
@@ -224,8 +224,8 @@ package may require a varying level of resources on Exchange Server. The
 following table outlines these resources for each test suite. The SUT
 configuration scripts will automatically create all the required
 resources for the Microsoft server implementation. To configure the SUT
-manually, see sections [5.1.3](#_Configuring_the_SUT1) and
-[5.1.5](#_Configuring_test_suite).
+manually, see sections [Configuring the SUT1](#Configuring-the-SUT1) and
+[Configuring test suite](#Configuring-test-suite).
 
 The client configuration script follows the naming convention shown in
 the following table. If a change to the resource name is required, the
@@ -377,7 +377,7 @@ to run the test suites.
 7.  By default, the test suites use Exchange Web Service and Windows
     PowerShell script in the SUT control adapter. If you chose
     interactive mode for the SUT control adapter as described in section
-    [5.2.2.1](#set-the-test-suite-to-interactive-mode), skip the
+    [Set the test suite to interactive-mode](#set-the-test-suite-to-interactive-mode), skip the
     following steps.
 
 	a.  The test suites use Exchange Web Service in SUT control adapter to
@@ -601,7 +601,7 @@ below to update configuration files and configure the test suite client.
 4.  By default, the test suites use Windows PowerShell script in the SUT
     control adapter to configure the SUT. If you chose interactive mode
     for the SUT control adapter as described in section
-    [5.2.2.1](#set-the-test-suite-to-interactive-mode), skip this step.
+    [Set-the-test-suite-to-interactive-mode](#set-the-test-suite-to-interactive-mode), skip this step.
 
 	a.  Set the execution policy to RemoteSigned.
 
