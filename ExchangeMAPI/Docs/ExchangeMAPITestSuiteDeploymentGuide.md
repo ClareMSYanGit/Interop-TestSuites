@@ -147,7 +147,7 @@ Test suite directories
 In this section you will find a list of the folder structures that are
 contained within the **ExchangeMAPIProtocolTestSuites.zip** file.
 
-ExchangeMAPIProtocolTestSuites.zip file contents
+**ExchangeMAPIProtocolTestSuites.zip** file contents
 
 | Directory/file   | Description |
 | :--- | :--- |
@@ -246,45 +246,45 @@ ExchangeTestSuite.config is required.
 |  All | Public Folder Database | PublicFolderDatabase | A public folder database is required on Microsoft Exchange Server 2007 SP3 and Microsoft Exchange Server 2010 SP3.|
 || Redirect Server Public Folder Database | PublicFolderDatabase2 | A redirect server is optional.|
 || Public Folder Mailbox | PublicFolderMailbox\_&lt;Server1Name&gt; |   A public folder mailbox is required on Microsoft Exchange Server 2013 SP1.|
-|| Redirect Server\* Public Folder Mailbox  | PublicFolderMailbox\_&lt;Server2Name&gt;|
-|  MS-OXCFOLD  |      Mailbox | MSOXCFOLD\_TestUser01 |The mailbox name should be below 20 characters.|
-||              |      Mailbox |MSOXCFOLD\_TestUser02  |
-||Public Folder       |                      MSOXCFOLD\_PublicFolderMailEnabled|         All public folders are created directly in the root directory.|
-                   Redirect Server Public Folder             MSOXCFOLD\_PublicFolderGhosted  |           
- |  MS-OXCFXICS      Public Folder                             MSOXCFXICS\_GhostedPublicFolder |           
-||                  Public Folder                             MSOXCFXICS\_PublicFolder01       |          
-||                   Mailbox                                   MSOXCFXICS\_TestUser  |          The mailbox name should be below 20 characters.|
-                   Redirect Server Mailbox                   MSOXCFXICS\_TestUser2   |       
-|   MS-OXCMAPIHTTP   Mailbox                                   MSOXCMAPIHTTP\_User01 |        MS-OXCMAPIHTTP is supported from Microsoft Exchange 2013 SP1. The mailbox name should be below 20 characters. |
-||                   Mailbox  |                                  MSOXCMAPIHTTP\_User02  |                    The mailbox name should be below 20 characters.|
-||                   Distribution Group                        MSOXCMAPIHTTP\_ATDG01  |                    
-|   MS-OXCMSG |       Mailbox   |                                 MSOXCMSG\_TestUser01 |                       The mailbox name should be below 20 characters.|
-||                   Mailbox    |                              MSOXCMSG\_TestUser02    |                   The mailbox name should be below 20 characters.|
-|   MS-OXCNOTIF |     Mailbox   |                             MSOXCNOTIF\_TestUser     |                  The mailbox name should be below 20 characters.|
-|   MS-OXCPERM  |     Mailbox   |                           MSOXCPERM\_TestUser01      |                The mailbox name should be below 20 characters.|
-||                   Mailbox    |                           MSOXCPERM\_TestUser        |                The mailbox name should be below 20 characters.|
-|   MS-OXCPRPT  |     Mailbox   |                           MSOXCPRPT\_TestUser        |                The mailbox name should be below 20 characters.|
-||                   Public Folder |                         MSOXCPRPT\_PublicFolder01 |                 
-|   MS-OXCROPS  |     Mailbox     |                         MSOXCROPS\_TestUser01      |                The mailbox name should be below 20 characters.|
-||                   Mailbox      |                       MSOXCROPS\_TestUser          |             The mailbox name should be below 20 characters.|
-||                    Redirect Server Public Folder   |           MSOXCROPS\_PublicFolderGhosted  |
-|   MS-OXCRPC   |     Mailbox     |                               MSOXCRPC\_TestUser01  |                     The mailbox name should be below 20 characters.|
-||                   Mailbox       |                             MSOXCRPC\_TestUser   |                      The mailbox name should be below 20 characters.|
-|   MS-OXCSTOR  |     Mailbox                                   MSOXCSTOR\_TestUser01 |                     The mailbox name should be below 20 characters.|
-||                   Redirect Server Mailbox |         MSOXCSTOR\_TestUser02                      
-||                   Mailbox       | MSOXCSTOR\_TestUser03                      The mailbox name should be below 20 characters.|
-||                   Mailbox       |                             MSOXCSTOR\_TestUser   |                     The mailbox name should be below 20 characters.|
-|   MS-OXCTABL  |     Mailbox      |                             MSOXCTABL\_TestUser01 |                     The mailbox name should be below 20 characters.|
-||                    Mailbox      |                              MSOXCTABL\_TestUser02|                      The mailbox name should be below 20 characters.|
-|   MS-OXNSPI    |     Mailbox        |                            MSOXNSPI\_TestUser01|                       MS-OXNSPI is not supported in Microsoft Exchange Server 2007 SP3. The mailbox name should be below 20 characters.|
-||                   Mailbox               |                    MSOXNSPI\_TestUser02    |                   The mailbox name should be below 20 characters.|
-||                   Mailbox               |                    MSOXNSPI\_TestUser      |                   The mailbox name should be below 20 characters.|
-||                   Public Folder          |                   MSOXNSPI\_PublicFolderMailEnabled  |
-||                   Dynamic Distribution Group|                MSOXNSPI\_ADDG01        |
-||                   Distribution Group        |                MSOXNSPI\_ATDG01                          | 
-||                   Mail Contact              |                MSOXNSPI\_MailContact01                   | 
-|   MS-OXORULE       Mailbox                   |                MSOXORULE\_TestUser01                     | The mailbox name should be below 20 characters.|
-||                   Mailbox                   |                MSOXORULE\_TestUser02                     | The mailbox name should be below 20 characters.|
+|| Redirect Server\* Public Folder Mailbox  | PublicFolderMailbox\_&lt;Server2Name&gt;||
+| **MS-OXCFOLD**  | Mailbox | MSOXCFOLD\_TestUser01 |The mailbox name should be below 20 characters.|
+|| Mailbox |MSOXCFOLD\_TestUser02  ||
+||Public Folder       |   MSOXCFOLD\_PublicFolderMailEnabled|         All public folders are created directly in the root directory.|
+||Redirect Server Public Folder  |  MSOXCFOLD\_PublicFolderGhosted  |           
+|  **MS-OXCFXICS**  | Public Folder |  MSOXCFXICS\_GhostedPublicFolder |           
+|| Public Folder| MSOXCFXICS\_PublicFolder01 |          
+|| Mailbox | MSOXCFXICS\_TestUser  | The mailbox name should be below 20 characters.|
+|| Redirect Server Mailbox |  MSOXCFXICS\_TestUser2 |       
+| **MS-OXCMAPIHTTP** | Mailbox |  MSOXCMAPIHTTP\_User01 | MS-OXCMAPIHTTP is supported from Microsoft Exchange 2013 SP1. The mailbox name should be below 20 characters. |
+|| Mailbox  | MSOXCMAPIHTTP\_User02  | The mailbox name should be below 20 characters.|
+|| Distribution Group  |  MSOXCMAPIHTTP\_ATDG01  |                    
+| **MS-OXCMSG** | Mailbox   | MSOXCMSG\_TestUser01 |  The mailbox name should be below 20 characters.|
+|| Mailbox    | MSOXCMSG\_TestUser02| The mailbox name should be below 20 characters.|
+| **MS-OXCNOTIF** | Mailbox   | MSOXCNOTIF\_TestUser| The mailbox name should be below 20 characters.|
+| **MS-OXCPERM**  | Mailbox   | MSOXCPERM\_TestUser01| The mailbox name should be below 20 characters.|
+||  Mailbox    | MSOXCPERM\_TestUser | The mailbox name should be below 20 characters.|
+|**MS-OXCPRPT**  |     Mailbox   | MSOXCPRPT\_TestUser | The mailbox name should be below 20 characters.|
+||Public Folder | MSOXCPRPT\_PublicFolder01 ||                 
+| MS-OXCROPS|     Mailbox     | MSOXCROPS\_TestUser01 | The mailbox name should be below 20 characters.|
+||Mailbox | MSOXCROPS\_TestUser |  The mailbox name should be below 20 characters.|
+||Redirect Server Public Folder |  MSOXCROPS\_PublicFolderGhosted  |
+| **MS-OXCRPC**   |     Mailbox     |  MSOXCRPC\_TestUser01 | The mailbox name should be below 20 characters.|
+|| Mailbox    |  MSOXCRPC\_TestUser   | The mailbox name should be below 20 characters.|
+| **MS-OXCSTOR**  |     Mailbox     |  MSOXCSTOR\_TestUser01| The mailbox name should be below 20 characters.|
+||Redirect Server Mailbox | MSOXCSTOR\_TestUser02 ||           
+||Mailbox       | MSOXCSTOR\_TestUser03 |  The mailbox name should be below 20 characters.|
+||Mailbox       |  MSOXCSTOR\_TestUser  | The mailbox name should be below 20 characters.|
+| **MS-OXCTABL**  |     Mailbox      |  MSOXCTABL\_TestUser01 | The mailbox name should be below 20 characters.|
+||Mailbox |  MSOXCTABL\_TestUser02|  The mailbox name should be below 20 characters.|
+| **MS-OXNSPI**    |     Mailbox        |  MSOXNSPI\_TestUser01|MS-OXNSPI is not supported in Microsoft Exchange Server 2007 SP3. The mailbox name should be below 20 characters.|
+||Mailbox | MSOXNSPI\_TestUser02  |  The mailbox name should be below 20 characters.|
+||Mailbox  |  MSOXNSPI\_TestUser      | The mailbox name should be below 20 characters.|
+||Public Folder | MSOXNSPI\_PublicFolderMailEnabled  |
+||Dynamic Distribution Group| MSOXNSPI\_ADDG01 |
+||Distribution Group | MSOXNSPI\_ATDG01 | 
+||Mail Contact | MSOXNSPI\_MailContact01| 
+|**MS-OXORULE**|  Mailbox | MSOXORULE\_TestUser01| The mailbox name should be below 20 characters.|
+||Mailbox | MSOXORULE\_TestUser02| The mailbox name should be below 20 characters.|
 
 ### Configuring SUT1 using the setup configuration script
 
