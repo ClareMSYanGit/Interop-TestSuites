@@ -481,10 +481,11 @@ has the following two configuration files for test suite-specific
 modification.
 
 Test-suite specific configuration files
+
 |**Configuration file** |  **Description**
 |:-- | :--
- |**MS-XXXX\_TestSuite.deployment.ptfconfig**  | The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows test suite-specific customization.|
- |**MS-XXXX\_TestSuite.ptfconfig**       |       The test suite configuration file contains details that specify the behavior of the test suite operation.|
+| **MS-XXXX\_TestSuite.deployment.ptfconfig** | The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows test suite-specific customization. |
+| **MS-XXXX\_TestSuite.ptfconfig**    |  The test suite configuration file contains details that specify the behavior of the test suite operation. |
 
 Both files are present in the TestSuite folder inside each test suite
 directory.
