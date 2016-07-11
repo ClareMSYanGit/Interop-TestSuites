@@ -516,8 +516,7 @@ for a specific test suite, do the following:
 
 Property name | Default value\* |Optional value|Description|
 :-- | :--  | :--  | :--  
-Adapter |  managed or powershell  | interactive\*\* |  **managed**:
-||||The SUT control adapter is implemented in C\# managed code.
+Adapter |  managed or powershell  | interactive\*\* |  **managed**: The SUT control adapter is implemented in C\# managed code.
 ||||**powershell**:The SUT control adapter is implemented through Windows PowerShell.
 ||||**interactive**: Interactive adapters are used when manually configuring a server. Interactive adapter uses a dialog box to perform a manual test each time one of its methods is called. The dialog box contains the method name, parameter names, and values\*\*\*                                     
    
@@ -580,11 +579,11 @@ Server which is the closest match to the SUT implementation.
 
 SHOULD/MAY configuration files
 
-  Configuration file                                            Description
-  ------------------------------------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------
-  MS-XXXX\_ExchangeServer2007\_SHOULDMAY.deployment.ptfconfig   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2007 Service Pack 3 (SP3).
-  MS-XXXX\_ExchangeServer2010\_SHOULDMAY.deployment.ptfconfig   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2010 Service Pack 3 (SP3).
-  MS-XXXX\_ExchangeServer2013\_SHOULDMAY.deployment.ptfconfig   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2013 Service Pack 1 (SP1).
+Configuration file |  Description
+:------------ | :-------------
+| MS-XXXX\_ExchangeServer2007\_SHOULDMAY.deployment.ptfconfig |  Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2007 Service Pack 3 (SP3).
+| MS-XXXX\_ExchangeServer2010\_SHOULDMAY.deployment.ptfconfig |  Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2010 Service Pack 3 (SP3).
+| MS-XXXX\_ExchangeServer2013\_SHOULDMAY.deployment.ptfconfig |  Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2013 Service Pack 1 (SP1).
 
 ### Configuring the test suite client using setup configuration script
 
