@@ -470,9 +470,9 @@ all Exchange MAPI Protocol test suites. This file must be modified to
 match the characteristics of the environment where the test suites are
 installed.
 
-**Configuration file** |  **Description**
-:------------ | :-------------
-ExchangeCommonConfiguration.deployment.ptfconfig | The deployment configuration file provides the environmental details that are common to the test suites.
+|**Configuration file** |  **Description**
+|:------------ | :-------------
+|**ExchangeCommonConfiguration.deployment.ptfconfig** | The deployment configuration file provides the environmental details that are common to the test suites.
 
 ### Test-suite specific configuration files
 
