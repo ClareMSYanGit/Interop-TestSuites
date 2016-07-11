@@ -80,8 +80,7 @@ Role  | Description
 **Exchange Server \#1 (SUT1)**              |   The first Exchange server in the topology.
 **Exchange Server \#2 (SUT2, Redirect Server)** |  Installation of this server is optional. If this server is not present, then the dependent test cases will not be run. The presence of SUT2 will enable certain multi-server scenarios and other test cases that pertain to a second SUT.
 
-The
-following diagram is an example of what a typical Exchange test suite
+The following diagram is an example of what a typical Exchange test suite
 environment may look like. This example uses an IPv4, but IPv6 is also
 supported by the test suites.
 
@@ -91,21 +90,14 @@ This section describes the prerequisite software for installing the
 Exchange MAPI Protocol test suites on the test suite client. The following
 table outlines the software dependencies for the test suite client.
 
-Test suite client software dependencies
+**Test suite client software dependencies**
 
-  --------------------------------------------------------------------------------
-  **Operating systems**   Windows 7 x64 Service Pack 1 and above
-                          
-                          Windows 8 x64 and above
-                          
-                          Windows 2008 R2 x64 Service Pack 1 and above
-  ----------------------- --------------------------------------------------------
-  **Software**            Microsoft Visual Studio 2013 Professional
-                          
-                          Microsoft Protocol Test Framework 1.0.2220.0 and above
-                          
-                          Microsoft Spec Explorer 3.6.14230.01 and above
-  --------------------------------------------------------------------------------
+Operating systems | Software
+:------------ | :-------------
+ Windows 7 x64 Service Pack 1 and above|Microsoft Visual Studio 2013 Professional
+ Windows 8 x64 and above | Microsoft Protocol Test Framework 1.0.2220.0 and above
+ Windows 2008 R2 x64 Service Pack 1 and above |  Microsoft Spec Explorer 3.6.14230.01 and above
+
 
 Deploying the test suites
 =======================================================================================================================
@@ -312,7 +304,6 @@ to run the test suites.
 		"Windows Authentication", disable the rest of options. Set the
 		anonymous user identity as “IUSR” with empty password.
 
-
 1.  Create the following mailbox users:
 
     MSOXCFOLD\_TestUser01, MSOXCFOLD\_TestUser02, MSOXCFXICS\_TestUser,
@@ -329,23 +320,23 @@ to run the test suites.
     MSOXNSPI\_TestUser01 and MSOXNSPI\_TestUser02:
 
 
-		a.  For MSOXNSPI\_TestUser01, set the following values:
+	a.  For MSOXNSPI\_TestUser01, set the following values:
 
-			-   AssistantName: "assistant"
+		-   AssistantName: "assistant"
 
-			-   PhoneticDisplayName: "phoneticdisplayname"
+		-   PhoneticDisplayName: "phoneticdisplayname"
 
-		a.  For MSOXNSPI\_TestUser02, set the following values:
+	a.  For MSOXNSPI\_TestUser02, set the following values:
 
-			-   AssistantName: "assistant"
+		-   AssistantName: "assistant"
 
-			-   PhoneticDisplayName: "phoneticdisplayname"
+		-   PhoneticDisplayName: "phoneticdisplayname"
 
-			-   Office: "Test"
+		-   Office: "Test"
 
-			-   Department: "Test"
+		-   Department: "Test"
 
-			-   OtherHomePhone: "BusinessOne"
+		-   OtherHomePhone: "BusinessOne"
 
 1.  Export the HTTPS certificate of the web site which contains the
     application that implements the MAPI protocols, and add the
@@ -368,9 +359,9 @@ to run the test suites.
 
 7.  Create the following public folders:
 
-MSOXCFOLD\_PublicFolderMailEnabled, MSOXCFXICS\_PublicFolderGhosted,
-MSOXCFXICS\_PublicFolder01, MSOXCPRPT\_PublicFolder01,
-MSOXNSPI\_PublicFolderMailEnabled
+	MSOXCFOLD\_PublicFolderMailEnabled, MSOXCFXICS\_PublicFolderGhosted,
+	MSOXCFXICS\_PublicFolder01, MSOXCPRPT\_PublicFolder01,
+	MSOXNSPI\_PublicFolderMailEnabled
 
 1.  Grant the mailbox users MSOXCFXICS\_TestUser, MSOXCROPS\_TestUser,
     MSOXCFOLD\_TestUser02, MSOXCPRPT\_TestUser, MSOXCMSG\_TestUser02 and
@@ -410,10 +401,10 @@ MSOXNSPI\_PublicFolderMailEnabled
 		Registry Key:
 		HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\ExchangeTestSuite
 
-	Value type: String
+		Value type: String
 
-	Value data: the absolute folder path where the DisableMailbox.ps1 and
-	EnableMailbox.ps1 reside.
+		Value data: the absolute folder path where the DisableMailbox.ps1 and
+		EnableMailbox.ps1 reside.
 
 ### Configuring SUT2 using the setup configuration script
 
@@ -432,15 +423,15 @@ explain what needs to be created or configured on the SUT in order to
 run the test suites.
 
 1.  Configure the web site which contains the application that
-    implements the MAPI protocols.
+	implements the MAPI protocols.
 
 2.  Create the following mailbox users:
 
-MSOXCFXICS\_TestUser2, MSOXCSTOR\_TestUser02
+	MSOXCFXICS\_TestUser2, MSOXCSTOR\_TestUser02
 
 1.  Create the following public folders:
 
-MSOXCFOLD\_PublicFolderGhosted, MSOXCROPS\_PublicFolderGhosted
+	MSOXCFOLD\_PublicFolderGhosted, MSOXCROPS\_PublicFolderGhosted
 
 1.  Replicate the MSOXCFXICS\_PublicFolderGhosted public folder on the
     first SUT to the public folder database on the second SUT, assuming
@@ -520,7 +511,6 @@ Adapter |  managed or powershell  | interactive\*\* |  **managed**: The SUT cont
 ||||**powershell**:The SUT control adapter is implemented through Windows PowerShell.
 ||||**interactive**: Interactive adapters are used when manually configuring a server. Interactive adapter uses a dialog box to perform a manual test each time one of its methods is called. The dialog box contains the method name, parameter names, and values\*\*\*                                     
    
-
 \**The Adapter property value is set to either managed or powershell
 depending on whether the SUT control adapter was implemented in managed
 C\# code or through Windows PowerShell.*
