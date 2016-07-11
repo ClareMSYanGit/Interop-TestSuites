@@ -516,11 +516,10 @@ for a specific test suite, do the following:
 
 **Property name** |  **Default value\* ** |**Optional value**|** Description**|
 :-- | :--  | :--  | :--  
-  
- Adapter |  managed or powershell  | interactive\*\* |  **managed**:
- ||||The SUT control adapter is implemented in C\# managed code.
- ||||**powershell**:The SUT control adapter is implemented through Windows PowerShell.
- ||||**interactive**: Interactive adapters are used when manually configuring a server. Interactive adapter uses a dialog box to perform a manual test each time one of its methods is called. The dialog box contains the method name, parameter names, and values\*\*\*                                     
+Adapter |  managed or powershell  | interactive\*\* |  **managed**:
+||||The SUT control adapter is implemented in C\# managed code.
+||||**powershell**:The SUT control adapter is implemented through Windows PowerShell.
+||||**interactive**: Interactive adapters are used when manually configuring a server. Interactive adapter uses a dialog box to perform a manual test each time one of its methods is called. The dialog box contains the method name, parameter names, and values\*\*\*                                     
    
 
 \**The Adapter property value is set to either managed or powershell
