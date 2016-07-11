@@ -319,23 +319,15 @@ to run the test suites.
 2.  Set the appropriate values for the mailbox users
     MSOXNSPI\_TestUser01 and MSOXNSPI\_TestUser02:
 
-
 	a.  For MSOXNSPI\_TestUser01, set the following values:
-
-		-   AssistantName: "assistant"
-
-		-   PhoneticDisplayName: "phoneticdisplayname"
+		-  AssistantName: "assistant"
+		-  PhoneticDisplayName: "phoneticdisplayname"
 
 	a.  For MSOXNSPI\_TestUser02, set the following values:
-
-		-   AssistantName: "assistant"
-
-		-   PhoneticDisplayName: "phoneticdisplayname"
-
+		-  AssistantName: "assistant"
+		-  PhoneticDisplayName: "phoneticdisplayname"
 		-   Office: "Test"
-
 		-   Department: "Test"
-
 		-   OtherHomePhone: "BusinessOne"
 
 1.  Export the HTTPS certificate of the web site which contains the
