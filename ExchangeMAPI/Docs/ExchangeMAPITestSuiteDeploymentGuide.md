@@ -465,7 +465,7 @@ In addition to the common configuration file, each individual test suite
 has the following two configuration files for test suite-specific
 modification.
 
-Test-suite specific configuration files
+**Test-suite specific configuration files**
 
 |**Configuration file** |  **Description**
 |:-- | :--|
@@ -565,9 +565,9 @@ SHOULD/MAY configuration files
 
 Configuration file |  Description
 :------------ | :-------------
-| MS-XXXX\_ExchangeServer2007\_SHOULDMAY.deployment.ptfconfig |  Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2007 Service Pack 3 (SP3).
-| MS-XXXX\_ExchangeServer2010\_SHOULDMAY.deployment.ptfconfig |  Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2010 Service Pack 3 (SP3).
-| MS-XXXX\_ExchangeServer2013\_SHOULDMAY.deployment.ptfconfig |  Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2013 Service Pack 1 (SP1).
+| **MS-XXXX\_ExchangeServer2007\_SHOULDMAY.deployment.ptfconfig** |  Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2007 Service Pack 3 (SP3).
+| **MS-XXXX\_ExchangeServer2010\_SHOULDMAY.deployment.ptfconfig** |  Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2010 Service Pack 3 (SP3).
+| **MS-XXXX\_ExchangeServer2013\_SHOULDMAY.deployment.ptfconfig** |  Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2013 Service Pack 1 (SP1).
 
 ### Configuring the test suite client using setup configuration script
 
@@ -630,11 +630,11 @@ folder. You can run a single or multiple test cases in Visual Studio.
   ---------------------------------------------------------------------------------------------------------------------------------------- --
   1.  In the **Solution Explorer** pane, right-click **Solution ‘ExchangeMAPIProtocolTestSuites’**, and then click **Rebuild Solution**.   
                                                                                                                                            
-                                                                                                                                           
+  ---------------------------------------------------------------------------------------------------------------------------------------- --                                                                                                                                          
 
   1.  Open **Test Explorer**. Select **TEST** and click **Windows**, then select **Test Explorer**.                                        
                                                                                                                                            
-                                                                                                                                           
+  ---------------------------------------------------------------------------------------------------------------------------------------- --                                                                                                                                          
 
   1.  Select the test case to run, right-click and then select **Run Selected Tests**.                                                     
                                                                                                                                            
@@ -644,15 +644,21 @@ folder. You can run a single or multiple test cases in Visual Studio.
 A Microsoft Visual Studio solution file
 **MS-XXXX.sln** is provided in each test suite folder.
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
   1.  Select the test suite you would like to run. Let’s take MS-OXCROPS as an example here, so browse to the **Source\\MS-OXCROPS** directory.
 
   ----------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------
   1.  Open **MS-OXCROPS.sln** in Microsoft Visual Studio.
+  
+   ---------------------------------------------------------------------------------------------------------------------------------------- --
 
   1.  In the **Solution Explorer** pane, right-click **Solution ‘MS-OXCROPS’**, and then click **Rebuild Solution**.
+  
+   ---------------------------------------------------------------------------------------------------------------------------------------- --
 
   1.  Open **Test Explorer**. Select **TEST** and click **Windows**, then select **Test Explorer**..
+  
+   ---------------------------------------------------------------------------------------------------------------------------------------- --
 
   1.  Select the test case to run, right-click and then select **Run Selected Tests**.
 
