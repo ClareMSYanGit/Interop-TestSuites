@@ -687,11 +687,16 @@ be found in the **\\Source\\Scripts** directory.
 **Note**   These scripts depend on having the compiled binaries in the
 bin folder.
 
-  **Batch script**                  **Script description**
-  --------------------------------- ----------------------------------------------------------------------
-  RunAllExchangeMAPITestCases.cmd   Runs all the test cases within the Server MAPI Protocol test suites.
-  RunAllMSXXXXTestCases.cmd         Runs all MS-XXXX test cases.
-  RunMSXXXX\_SYY\_TCZZ\_Name.cmd    Runs a specific test case within the test suite.
+
+First Header | Second Header
+------------ | -------------
+
+
+Batch script  |  Script description
+:------------ | :------------- 
+RunAllExchangeMAPITestCases.cmd | Runs all the test cases within the Server MAPI Protocol test suites.
+RunAllMSXXXXTestCases.cmd       |  Runs all MS-XXXX test cases.
+RunMSXXXX\_SYY\_TCZZ\_Name.cmd  |  Runs a specific test case within the test suite.
 
 Test suite results, logs, and reporting
 =====================================================================================================================================
