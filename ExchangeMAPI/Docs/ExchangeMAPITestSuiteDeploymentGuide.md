@@ -1,4 +1,5 @@
 Exchange MAPI Test Suite Deployment Guide
+======================================================================================================
 
 Overview
 ======================================================================================================
@@ -153,45 +154,45 @@ ExchangeMAPIProtocolTestSuites.zip file contents
 |  **EULA.rtf** | The End-User License Agreement|
 |  **ReadMe.txt** | A file that contains information about the deployment guide and prerequisite software.|
 |  **Exchange MAPI Protocol Test Suites** |  |
-|  **  - Docs** | A directory that contains documents of all protocol test suites.|
-|  **  - ExchangeMAPITestSuiteDeploymentGuide.docx** | A file relevant to the protocol test suite deployment guidance.|
-|  ** - ExchangeMAPITestSuiteSpecification.docx** |  A file that contains test suites design, test suites architecture, adapter and test suites details.|
-|  **  + MS-XXXX** | MS-XXXX Help documentation|
-|  **  - \[MS-XXXX\].pdf** |  The technical specification for the protocol.|
-|  **  - MS-XXXX \_SUTControlAdapter.chm** | Contains information about the SUT control adapter class library such as declaration syntaxes and their description.|
-|  **  - MS-XXXX \_RequirementSpecification.xlsx** |  A spreadsheet that outlines all requirements associated with the technical specification.|
-|  **  - Setup** |A directory that contains configuration scripts.|
-|  **  - Test Suite Client** |  A directory that contains the configuration script to configure the test suite client.|
-|  **  - ExchangeClientConfiguration.cmd** | A command file that runs the ExchangeClientConfiguration.ps1 file to configure the properties for the protocol test suites.|
-|  **  - ExchangeClientConfiguration.ps1** | A configuration script that will be triggered by the ExchangeClientConfiguration.cmd.|
-|  **  - SUT** | A folder that contains the configuration script to configure the Exchange Server.|
-|  **  - ExchangeSUTConfiguration.cmd** | A command file that runs the ExchangeSUTConfiguration.ps1 file to create resources and configure settings on the first SUT.|
-|  **  - ExchangeSecondSUTConfiguration.cmd** | A command file that runs the ExchangeSecondSUTConfiguration.ps1 file to create resources and configure settings on the second SUT.|
-|  **  - ExchangeSUTConfiguration.ps1** |  A configuration script that will be triggered by ExchangeSUTConfiguration.cmd.|
-|  **  - ExchangeSecondSUTConfiguration.ps1** | A configuration script that will be triggered by ExchangeSecondSUTConfiguration.cmd.|
-|  **  - Common** | A folder that contains common configuration scripts and resources.|
-|  **  - CommonConfiguration.ps1** | A library that contains common functions for configuring the Microsoft server SUT and test suite client.|
-|  **  - ExchangeCommonConfiguration.ps1** | A library that contains common functions for configuring Exchange Server.|
-|  **  - ExchangeTestSuite.config** | The configuration file to store all configuration resources.|
-|  **  - Source** | A folder with Microsoft Visual Studio solutions that contain source code for the test suites.|
-|  **  - Common** | A folder with Microsoft Visual Studio projects that contains source code that are common to the test suites.|
-|  **  - Common** | A folder that contains common methods or properties used by the test suites.|
-|  **  - ExchangeCommonConfiguration.deployment.ptfconfig |  The common configuration file.|
-|  **  + OXCRPCStub** | RPC transport with unmanaged code.|
-|  **  - ExchangeMAPIProtocolTestSuites.sln |  A Microsoft Visual Studio solution that contains projects of the test suites source code.|
-|  **  - ExchangeMAPIProtocolTestSuites.runsettings | A configuration file used for unit test.|
-|  **  - ExchangeMAPIProtocolTestSuites.testsettings| A configuration file used for running test cases.|
-|  **  - MS-XXXX  ** | MS-XXXX test suite code directory.|
-|  **  - MS-XXXX.sln ** | A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.|
-|  **  - MS-XXXX.runsettings ** | A configuration file used for MS-XXXX unit test.|
-|  **  - MS-XXXX.testsettings ** | A configuration file used for MS-XXXX running test cases.|
-|  **  + Adapter ** | Adapter test suite code.|
-|  **  + TestSuite ** |  Test suite code.|
-|  **  - Scripts ** | Exchange MAPI test suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.|
-|  **  - RunAllExchangeMAPITestCases.cmd  ** |  A script that can be used to run all test cases in the whole package.|
-|  **  - MS-XXXX ** | A folder containing scripts that belong to the MS-XXXX test suite.|
-|  **  - RunAllMSXXXXTestCases.cmd ** | A script that can be used to run all test cases of MS-XXXX.|
-|  **  - RunMSXXXX\_SXX\_TCXX\_TestCaseName.cmd** | A script that can be used to run a single test case of MS-XXXX.|
+|  **- Docs** | A directory that contains documents of all protocol test suites.|
+|  **- ExchangeMAPITestSuiteDeploymentGuide.docx** | A file relevant to the protocol test suite deployment guidance.|
+|  **- ExchangeMAPITestSuiteSpecification.docx** |  A file that contains test suites design, test suites architecture, adapter and test suites details.|
+|  **+ MS-XXXX** | MS-XXXX Help documentation|
+|  **- \[MS-XXXX\].pdf** |  The technical specification for the protocol.|
+|  **- MS-XXXX \_SUTControlAdapter.chm** | Contains information about the SUT control adapter class library such as declaration syntaxes and their description.|
+|  **- MS-XXXX \_RequirementSpecification.xlsx** |  A spreadsheet that outlines all requirements associated with the technical specification.|
+|  **- Setup** |A directory that contains configuration scripts.|
+|  **- Test Suite Client** |  A directory that contains the configuration script to configure the test suite client.|
+|  **- ExchangeClientConfiguration.cmd** | A command file that runs the ExchangeClientConfiguration.ps1 file to configure the properties for the protocol test suites.|
+|  **- ExchangeClientConfiguration.ps1** | A configuration script that will be triggered by the ExchangeClientConfiguration.cmd.|
+|  **- SUT** | A folder that contains the configuration script to configure the Exchange Server.|
+|  **- ExchangeSUTConfiguration.cmd** | A command file that runs the ExchangeSUTConfiguration.ps1 file to create resources and configure settings on the first SUT.|
+|  **- ExchangeSecondSUTConfiguration.cmd** | A command file that runs the ExchangeSecondSUTConfiguration.ps1 file to create resources and configure settings on the second SUT.|
+|  **- ExchangeSUTConfiguration.ps1** |  A configuration script that will be triggered by ExchangeSUTConfiguration.cmd.|
+|  **- ExchangeSecondSUTConfiguration.ps1** | A configuration script that will be triggered by ExchangeSecondSUTConfiguration.cmd.|
+|  **- Common** | A folder that contains common configuration scripts and resources.|
+|  **- CommonConfiguration.ps1** | A library that contains common functions for configuring the Microsoft server SUT and test suite client.|
+|  **- ExchangeCommonConfiguration.ps1** | A library that contains common functions for configuring Exchange Server.|
+|  **- ExchangeTestSuite.config** | The configuration file to store all configuration resources.|
+|  **- Source** | A folder with Microsoft Visual Studio solutions that contain source code for the test suites.|
+|  **- Common** | A folder with Microsoft Visual Studio projects that contains source code that are common to the test suites.|
+|  **- Common** | A folder that contains common methods or properties used by the test suites.|
+|  **- ExchangeCommonConfiguration.deployment.ptfconfig |  The common configuration file.|
+|  **+ OXCRPCStub** | RPC transport with unmanaged code.|
+|  **- ExchangeMAPIProtocolTestSuites.sln |  A Microsoft Visual Studio solution that contains projects of the test suites source code.|
+|  **- ExchangeMAPIProtocolTestSuites.runsettings | A configuration file used for unit test.|
+|  **- ExchangeMAPIProtocolTestSuites.testsettings| A configuration file used for running test cases.|
+|  **- MS-XXXX** | MS-XXXX test suite code directory.|
+|  **- MS-XXXX.sln** | A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.|
+|  **- MS-XXXX.runsettings** | A configuration file used for MS-XXXX unit test.|
+|  **- MS-XXXX.testsettings** | A configuration file used for MS-XXXX running test cases.|
+|  **+ Adapter** | Adapter test suite code.|
+|  **+ TestSuite** |  Test suite code.|
+|  **- Scripts** | Exchange MAPI test suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.|
+|  **- RunAllExchangeMAPITestCases.cmd** |  A script that can be used to run all test cases in the whole package.|
+|  **- MS-XXXX** | A folder containing scripts that belong to the MS-XXXX test suite.|
+|  **- RunAllMSXXXXTestCases.cmd** | A script that can be used to run all test cases of MS-XXXX.|
+|  **- RunMSXXXX\_SXX\_TCXX\_TestCaseName.cmd** | A script that can be used to run a single test case of MS-XXXX.|
 
 Configuring the test suites
 ===========================
@@ -244,47 +245,47 @@ ExchangeTestSuite.config is required.
 | :--- | :--- |:--- |:--- |
 
 |  All | Public Folder Database | PublicFolderDatabase | A public folder database is required on Microsoft Exchange Server 2007 SP3 and Microsoft Exchange Server 2010 SP3.|
-|| Redirect Server Public Folder Database    PublicFolderDatabase2                      A redirect server is optional.
-||                   Public Folder Mailbox                     PublicFolderMailbox\_&lt;Server1Name&gt;   A public folder mailbox is required on Microsoft Exchange Server 2013 SP1.
-                   Redirect Server\* Public Folder Mailbox   PublicFolderMailbox\_&lt;Server2Name&gt;   
-  MS-OXCFOLD       Mailbox                                   MSOXCFOLD\_TestUser01                      The mailbox name should be below 20 characters.
-                   Mailbox                                   MSOXCFOLD\_TestUser02                      
-                   Public Folder                             MSOXCFOLD\_PublicFolderMailEnabled         All public folders are created directly in the root directory.
-                   Redirect Server Public Folder             MSOXCFOLD\_PublicFolderGhosted             
-  MS-OXCFXICS      Public Folder                             MSOXCFXICS\_GhostedPublicFolder            
-                   Public Folder                             MSOXCFXICS\_PublicFolder01                 
-                   Mailbox                                   MSOXCFXICS\_TestUser                       The mailbox name should be below 20 characters.
-                   Redirect Server Mailbox                   MSOXCFXICS\_TestUser2                      
-  MS-OXCMAPIHTTP   Mailbox                                   MSOXCMAPIHTTP\_User01                      MS-OXCMAPIHTTP is supported from Microsoft Exchange 2013 SP1. The mailbox name should be below 20 characters.
-                   Mailbox                                   MSOXCMAPIHTTP\_User02                      The mailbox name should be below 20 characters.
-                   Distribution Group                        MSOXCMAPIHTTP\_ATDG01                      
-  MS-OXCMSG        Mailbox                                   MSOXCMSG\_TestUser01                       The mailbox name should be below 20 characters.
-                   Mailbox                                   MSOXCMSG\_TestUser02                       The mailbox name should be below 20 characters.
-  MS-OXCNOTIF      Mailbox                                   MSOXCNOTIF\_TestUser                       The mailbox name should be below 20 characters.
-  MS-OXCPERM       Mailbox                                   MSOXCPERM\_TestUser01                      The mailbox name should be below 20 characters.
-                   Mailbox                                   MSOXCPERM\_TestUser                        The mailbox name should be below 20 characters.
-  MS-OXCPRPT       Mailbox                                   MSOXCPRPT\_TestUser                        The mailbox name should be below 20 characters.
-                   Public Folder                             MSOXCPRPT\_PublicFolder01                  
-  MS-OXCROPS       Mailbox                                   MSOXCROPS\_TestUser01                      The mailbox name should be below 20 characters.
-                   Mailbox                                   MSOXCROPS\_TestUser                        The mailbox name should be below 20 characters.
-                   Redirect Server Public Folder             MSOXCROPS\_PublicFolderGhosted             
-  MS-OXCRPC        Mailbox                                   MSOXCRPC\_TestUser01                       The mailbox name should be below 20 characters.
-                   Mailbox                                   MSOXCRPC\_TestUser                         The mailbox name should be below 20 characters.
-  MS-OXCSTOR       Mailbox                                   MSOXCSTOR\_TestUser01                      The mailbox name should be below 20 characters.
-                   Redirect Server Mailbox                   MSOXCSTOR\_TestUser02                      
-                   Mailbox                                   MSOXCSTOR\_TestUser03                      The mailbox name should be below 20 characters.
-                   Mailbox                                   MSOXCSTOR\_TestUser                        The mailbox name should be below 20 characters.
-  MS-OXCTABL       Mailbox                                   MSOXCTABL\_TestUser01                      The mailbox name should be below 20 characters.
-                   Mailbox                                   MSOXCTABL\_TestUser02                      The mailbox name should be below 20 characters.
-  MS-OXNSPI        Mailbox                                   MSOXNSPI\_TestUser01                       MS-OXNSPI is not supported in Microsoft Exchange Server 2007 SP3. The mailbox name should be below 20 characters.
-                   Mailbox                                   MSOXNSPI\_TestUser02                       The mailbox name should be below 20 characters.
-                   Mailbox                                   MSOXNSPI\_TestUser                         The mailbox name should be below 20 characters.
-                   Public Folder                             MSOXNSPI\_PublicFolderMailEnabled          
-                   Dynamic Distribution Group                MSOXNSPI\_ADDG01                           
-                   Distribution Group                        MSOXNSPI\_ATDG01                           
-                   Mail Contact                              MSOXNSPI\_MailContact01                    
-  MS-OXORULE       Mailbox                                   MSOXORULE\_TestUser01                      The mailbox name should be below 20 characters.
-                   Mailbox                                   MSOXORULE\_TestUser02                      The mailbox name should be below 20 characters.
+|| Redirect Server Public Folder Database | PublicFolderDatabase2 | A redirect server is optional.|
+|| Public Folder Mailbox | PublicFolderMailbox\_&lt;Server1Name&gt; |   A public folder mailbox is required on Microsoft Exchange Server 2013 SP1.|
+|| Redirect Server\* Public Folder Mailbox  | PublicFolderMailbox\_&lt;Server2Name&gt;|
+|  MS-OXCFOLD  |      Mailbox | MSOXCFOLD\_TestUser01 |The mailbox name should be below 20 characters.|
+||              |      Mailbox |MSOXCFOLD\_TestUser02  |
+||Public Folder       |                      MSOXCFOLD\_PublicFolderMailEnabled|         All public folders are created directly in the root directory.|
+                   Redirect Server Public Folder             MSOXCFOLD\_PublicFolderGhosted  |           
+ |  MS-OXCFXICS      Public Folder                             MSOXCFXICS\_GhostedPublicFolder |           
+||                  Public Folder                             MSOXCFXICS\_PublicFolder01       |          
+||                   Mailbox                                   MSOXCFXICS\_TestUser  |          The mailbox name should be below 20 characters.|
+                   Redirect Server Mailbox                   MSOXCFXICS\_TestUser2   |       
+|   MS-OXCMAPIHTTP   Mailbox                                   MSOXCMAPIHTTP\_User01 |        MS-OXCMAPIHTTP is supported from Microsoft Exchange 2013 SP1. The mailbox name should be below 20 characters. |
+||                   Mailbox  |                                  MSOXCMAPIHTTP\_User02  |                    The mailbox name should be below 20 characters.|
+||                   Distribution Group                        MSOXCMAPIHTTP\_ATDG01  |                    
+|   MS-OXCMSG |       Mailbox   |                                 MSOXCMSG\_TestUser01 |                       The mailbox name should be below 20 characters.|
+||                   Mailbox    |                              MSOXCMSG\_TestUser02    |                   The mailbox name should be below 20 characters.|
+|   MS-OXCNOTIF |     Mailbox   |                             MSOXCNOTIF\_TestUser     |                  The mailbox name should be below 20 characters.|
+|   MS-OXCPERM  |     Mailbox   |                           MSOXCPERM\_TestUser01      |                The mailbox name should be below 20 characters.|
+||                   Mailbox    |                           MSOXCPERM\_TestUser        |                The mailbox name should be below 20 characters.|
+|   MS-OXCPRPT  |     Mailbox   |                           MSOXCPRPT\_TestUser        |                The mailbox name should be below 20 characters.|
+||                   Public Folder |                         MSOXCPRPT\_PublicFolder01 |                 
+|   MS-OXCROPS  |     Mailbox     |                         MSOXCROPS\_TestUser01      |                The mailbox name should be below 20 characters.|
+||                   Mailbox      |                       MSOXCROPS\_TestUser          |             The mailbox name should be below 20 characters.|
+||                    Redirect Server Public Folder   |           MSOXCROPS\_PublicFolderGhosted  |
+|   MS-OXCRPC   |     Mailbox     |                               MSOXCRPC\_TestUser01  |                     The mailbox name should be below 20 characters.|
+||                   Mailbox       |                             MSOXCRPC\_TestUser   |                      The mailbox name should be below 20 characters.|
+|   MS-OXCSTOR  |     Mailbox                                   MSOXCSTOR\_TestUser01 |                     The mailbox name should be below 20 characters.|
+||                   Redirect Server Mailbox |         MSOXCSTOR\_TestUser02                      
+||                   Mailbox       | MSOXCSTOR\_TestUser03                      The mailbox name should be below 20 characters.|
+||                   Mailbox       |                             MSOXCSTOR\_TestUser   |                     The mailbox name should be below 20 characters.|
+|   MS-OXCTABL  |     Mailbox      |                             MSOXCTABL\_TestUser01 |                     The mailbox name should be below 20 characters.|
+||                    Mailbox      |                              MSOXCTABL\_TestUser02|                      The mailbox name should be below 20 characters.|
+|   MS-OXNSPI    |     Mailbox        |                            MSOXNSPI\_TestUser01|                       MS-OXNSPI is not supported in Microsoft Exchange Server 2007 SP3. The mailbox name should be below 20 characters.|
+||                   Mailbox               |                    MSOXNSPI\_TestUser02    |                   The mailbox name should be below 20 characters.|
+||                   Mailbox               |                    MSOXNSPI\_TestUser      |                   The mailbox name should be below 20 characters.|
+||                   Public Folder          |                   MSOXNSPI\_PublicFolderMailEnabled  |
+||                   Dynamic Distribution Group|                MSOXNSPI\_ADDG01        |
+||                   Distribution Group        |                MSOXNSPI\_ATDG01                          | 
+||                   Mail Contact              |                MSOXNSPI\_MailContact01                   | 
+|   MS-OXORULE       Mailbox                   |                MSOXORULE\_TestUser01                     | The mailbox name should be below 20 characters.|
+||                   Mailbox                   |                MSOXORULE\_TestUser02                     | The mailbox name should be below 20 characters.|
 
 ### Configuring SUT1 using the setup configuration script
 
