@@ -483,7 +483,7 @@ modification.
 Test-suite specific configuration files
 
 |**Configuration file** |  **Description**
-|:-- | :--
+|:-- | :--|
 | **MS-XXXX\_TestSuite.deployment.ptfconfig** | The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows test suite-specific customization. |
 | **MS-XXXX\_TestSuite.ptfconfig**    |  The test suite configuration file contains details that specify the behavior of the test suite operation. |
 
@@ -512,23 +512,16 @@ for a specific test suite, do the following:
 2.  Set the type value of Adapter property to **interactive** for the
     SUT control adapter\*\*.
 
-Interactive mode values
+**Interactive mode values**
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Property name   Default value\*         Optional value    Description
-  --------------- ----------------------- ----------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Adapter         managed or powershell   interactive\*\*   **managed**:
-                                                            
-                                                            The SUT control adapter is implemented in C\# managed code.
-                                                            
-                                                            **powershell**:
-                                                            
-                                                            The SUT control adapter is implemented through Windows PowerShell.
-                                                            
-                                                            **interactive**:
-                                                            
-                                                            Interactive adapters are used when manually configuring a server. Interactive adapter uses a dialog box to perform a manual test each time one of its methods is called. The dialog box contains the method name, parameter names, and values\*\*\*
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**Property name** |  **Default value\* ** |**Optional value**|** Description**|
+:-- | :--  | :--  | :--  
+  
+ Adapter |  managed or powershell  | interactive\*\* |  **managed**:
+ ||||The SUT control adapter is implemented in C\# managed code.
+ ||||**powershell**:The SUT control adapter is implemented through Windows PowerShell.
+ ||||**interactive**: Interactive adapters are used when manually configuring a server. Interactive adapter uses a dialog box to perform a manual test each time one of its methods is called. The dialog box contains the method name, parameter names, and values\*\*\*                                     
+   
 
 \**The Adapter property value is set to either managed or powershell
 depending on whether the SUT control adapter was implemented in managed
