@@ -279,7 +279,7 @@ ExchangeTestSuite.config is required.
 |**MS-OXORULE**|  Mailbox | MSOXORULE\_TestUser01| The mailbox name should be below 20 characters.|
 ||Mailbox | MSOXORULE\_TestUser02| The mailbox name should be below 20 characters.|
 
-### Configuring SUT1 using the setup configuration script <a name="configuring-SUT1-using-the-setup-configuration-script"></a>
+### Configuring SUT1 using the setup configuration script <a name="configuring-sut1-using-the-setup-configuration-script"></a>
 
 The setup configuration script is only used for configuring Microsoft
 Exchange Server on the Windows platform.
