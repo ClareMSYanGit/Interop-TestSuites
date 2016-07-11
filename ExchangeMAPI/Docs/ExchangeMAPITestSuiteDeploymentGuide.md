@@ -209,10 +209,10 @@ Configuring the SUT
 -----------------------------------------------------------------------------------------------------------------
 
 You can configure the SUT using automated scripts, as described in
-sections [Configuring SUT1 using the setup configuration script](#Configuring-SUT1-using-the-setup-configuration-script) and
-[Configuring SUT2 using the setup configuration script](#Configuring-SUT2-using-the-setup-configuration-script); or configure the SUT manually, as
-described in sections [Configuring SUT1 manually](#Configuring-SUT1-manually) and
-[Configuring SUT2 manually](#Configuring-SUT2-manually).
+sections [Configuring SUT1 using the setup configuration script](#configuring-sut1-using-the-setup-configuration-script) and
+[Configuring SUT2 using the setup configuration script](#configuring-sut2-using-the-setup-configuration-script); or configure the SUT manually, as
+described in sections [Configuring SUT1 manually](#configuring-sut1-manually) and
+[Configuring SUT2 manually](#configuring-sut2-manually).
 
 **Note**   The scripts should be run by a user who has domain
 administrator rights with a mailbox on the Exchange Server.
@@ -224,8 +224,8 @@ package may require a varying level of resources on Exchange Server. The
 following table outlines these resources for each test suite. The SUT
 configuration scripts will automatically create all the required
 resources for the Microsoft server implementation. To configure the SUT
-manually, see sections [Configuring the SUT1](#Configuring-the-SUT1) and
-[Configuring test suite](#Configuring-test-suite).
+manually, see sections [Configuring the SUT1](#configuring-the-sut1) and
+[Configuring test suite](#configuring-test-suite).
 
 The client configuration script follows the naming convention shown in
 the following table. If a change to the resource name is required, the
@@ -483,7 +483,7 @@ of the properties. The specific configuration file will take precedence
 over the common configuration file when the same property exists in both
 places.
 
-#### Set the test suite to interactive mode <a name="set-the-test-suite-to-interactive-mode"> </a>
+#### Set the test suite to interactive mode <a name="set-the-test-suite-to-interactive-mode"></a>
 
 If the SUT is a non-Microsoft implementation of Exchange Server, it is
 recommended that you further configure the test suite by setting the
