@@ -758,7 +758,8 @@ XML format and an HTML report.
 =========
 
 For more information, see the following:
- References  |  Description
+
+References  |  Description
 :------------ | :-------------
  <dochelp@microsoft.com>  |  Alias for Interoperability documentation help. Provides support for the Open Specifications and protocol test suites.
   [Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125) |  Microsoft Customer Support Services forums. Actively monitored forums provide support for the Open Specifications and protocol test suites.|
