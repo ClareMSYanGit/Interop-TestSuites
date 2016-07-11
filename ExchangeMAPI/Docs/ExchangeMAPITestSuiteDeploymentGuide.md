@@ -95,7 +95,7 @@ table outlines the software dependencies for the test suite client.
 
 |Operating systems |
 |:------------ 
-| - Windows 7 x64 Service Pack 1 and above |
+| Windows 7 x64 Service Pack 1 and above |
 | Windows 8 x64 and above |
 | Windows 2008 R2 x64 Service Pack 1 and above |
  
