@@ -321,16 +321,16 @@ to run the test suites.
 
 	a.  For MSOXNSPI\_TestUser01, set the following values:
 	
-		-  AssistantName: "assistant"
-		-  PhoneticDisplayName: "phoneticdisplayname"
+	-  AssistantName: "assistant"
+	-  PhoneticDisplayName: "phoneticdisplayname"
 
 	a.  For MSOXNSPI\_TestUser02, set the following values:
 	
-		-  AssistantName: "assistant"
-		-  PhoneticDisplayName: "phoneticdisplayname"
-		-   Office: "Test"
-		-   Department: "Test"
-		-   OtherHomePhone: "BusinessOne"
+	-  AssistantName: "assistant"
+	-  PhoneticDisplayName: "phoneticdisplayname"
+	-   Office: "Test"
+	-   Department: "Test"
+	-   OtherHomePhone: "BusinessOne"
 
 1.  Export the HTTPS certificate of the web site which contains the
     application that implements the MAPI protocols, and add the
