@@ -243,7 +243,7 @@ ExchangeTestSuite.config is required.
 
 | Test suite     | Resource type | Resource name | Note | 
 | :--- | :--- |:--- |:--- |
-|  All | Public Folder Database | PublicFolderDatabase | A public folder database is required on Microsoft Exchange Server 2007 SP3 and Microsoft Exchange Server 2010 SP3.|
+| **All** | Public Folder Database | PublicFolderDatabase | A public folder database is required on Microsoft Exchange Server 2007 SP3 and Microsoft Exchange Server 2010 SP3.|
 || Redirect Server Public Folder Database | PublicFolderDatabase2 | A redirect server is optional.|
 || Public Folder Mailbox | PublicFolderMailbox\_&lt;Server1Name&gt; |   A public folder mailbox is required on Microsoft Exchange Server 2013 SP1.|
 || Redirect Server\* Public Folder Mailbox  | PublicFolderMailbox\_&lt;Server2Name&gt;||
@@ -265,7 +265,7 @@ ExchangeTestSuite.config is required.
 ||  Mailbox    | MSOXCPERM\_TestUser | The mailbox name should be below 20 characters.|
 |**MS-OXCPRPT**  |     Mailbox   | MSOXCPRPT\_TestUser | The mailbox name should be below 20 characters.|
 ||Public Folder | MSOXCPRPT\_PublicFolder01 ||                 
-| MS-OXCROPS|     Mailbox     | MSOXCROPS\_TestUser01 | The mailbox name should be below 20 characters.|
+| **MS-OXCROPS**|     Mailbox     | MSOXCROPS\_TestUser01 | The mailbox name should be below 20 characters.|
 ||Mailbox | MSOXCROPS\_TestUser |  The mailbox name should be below 20 characters.|
 ||Redirect Server Public Folder |  MSOXCROPS\_PublicFolderGhosted  |
 | **MS-OXCRPC**   |     Mailbox     |  MSOXCRPC\_TestUser01 | The mailbox name should be below 20 characters.|
