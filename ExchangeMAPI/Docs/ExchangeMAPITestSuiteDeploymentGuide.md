@@ -83,7 +83,7 @@ Role  | Description
 The following diagram is an example of what a typical Exchange test suite
 environment may look like. This example uses an IPv4, but IPv6 is also
 supported by the test suites.
-
+![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_RequiredSUTroles.png)
 
 ### Test suite client
 
