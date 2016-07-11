@@ -212,7 +212,7 @@ You can configure the SUT using automated scripts, as described in
 sections [Configuring SUT1 using the setup configuration script](#configuring-sut1-using-the-setup-configuration-script) and
 [Configuring SUT2 using the setup configuration script](#configuring-sut2-using-the-setup-configuration-script); or configure the SUT manually, as
 described in sections [Configuring SUT1 manually](#configuring-sut1-manually) and
-[Configuring SUT2 manually](#configuring-sut2-manually).
+[Configuring SUT2 manually](#configuring-sut2-manually). 
 
 **Note**   The scripts should be run by a user who has domain
 administrator rights with a mailbox on the Exchange Server.
