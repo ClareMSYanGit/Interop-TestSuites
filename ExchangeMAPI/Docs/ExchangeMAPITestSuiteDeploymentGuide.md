@@ -279,7 +279,7 @@ ExchangeTestSuite.config is required.
 |**MS-OXORULE**|  Mailbox | MSOXORULE\_TestUser01| The mailbox name should be below 20 characters.|
 ||Mailbox | MSOXORULE\_TestUser02| The mailbox name should be below 20 characters.|
 
-### Configuring SUT1 using the setup configuration script
+### Configuring SUT1 using the setup configuration script <a name="configuring-SUT1-using-the-setup-configuration-script></a>
 
 The setup configuration script is only used for configuring Microsoft
 Exchange Server on the Windows platform.
@@ -288,7 +288,7 @@ To configure SUT1 using the setup configuration script, navigate to the
 **SUT** folder, right-click **ExchangeSUTConfiguration.cmd** and select
 **Run as administrator**.
 
-### Configuring SUT1 manually
+### Configuring SUT1 manually <a name="configuring-sut1-manually"></a>
 
 If the SUT is a non-Microsoft implementation of Exchange Server, you
 will not be able to run the setup configuration script. The following
@@ -401,7 +401,7 @@ to run the test suites.
 		Value data: the absolute folder path where the DisableMailbox.ps1 and
 		EnableMailbox.ps1 reside.
 
-### Configuring SUT2 using the setup configuration script
+### Configuring SUT2 using the setup configuration script <a> name="configuring-sut2-using-the-setup-configuration-script"</a>
 
 *The setup configuration script is only used for configuring Microsoft Exchange
 Server on Windows.*
@@ -410,7 +410,7 @@ To configure SUT2 using the setup configuration script, navigate to the
 SUT folder, right-click on the **ExchangeSecondSUTConfiguration.cmd**
 and select **Run as administrator.**
 
-### Configuring SUT2 manually
+### Configuring SUT2 manually <a> name="configuring-sut2-manually"</a>
 
 If the SUT is a non-Microsoft implementation of Exchange Server, you are
 not able to run the setup configuration script. The following steps
@@ -471,7 +471,7 @@ modification.
 |**Configuration file** |  **Description**
 |:-- | :--|
 | **MS-XXXX\_TestSuite.deployment.ptfconfig** | The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows test suite-specific customization. |
-| **MS-XXXX\_TestSuite.ptfconfig**    |  The test suite configuration file contains details that specify the behavior of the test suite operation. |
+| **MS-XXXX\_TestSuite.ptfconfig** |  The test suite configuration file contains details that specify the behavior of the test suite operation. |
 
 Both files are present in the TestSuite folder inside each test suite
 directory.
@@ -483,7 +483,7 @@ of the properties. The specific configuration file will take precedence
 over the common configuration file when the same property exists in both
 places.
 
-#### Set the test suite to interactive mode
+#### Set the test suite to interactive mode <a name="set-the-test-suite-to-interactive-mode"> </a>
 
 If the SUT is a non-Microsoft implementation of Exchange Server, it is
 recommended that you further configure the test suite by setting the
