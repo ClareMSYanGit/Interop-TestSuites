@@ -320,10 +320,12 @@ to run the test suites.
     MSOXNSPI\_TestUser01 and MSOXNSPI\_TestUser02:
 
 	a.  For MSOXNSPI\_TestUser01, set the following values:
+	
 		-  AssistantName: "assistant"
 		-  PhoneticDisplayName: "phoneticdisplayname"
 
 	a.  For MSOXNSPI\_TestUser02, set the following values:
+	
 		-  AssistantName: "assistant"
 		-  PhoneticDisplayName: "phoneticdisplayname"
 		-   Office: "Test"
