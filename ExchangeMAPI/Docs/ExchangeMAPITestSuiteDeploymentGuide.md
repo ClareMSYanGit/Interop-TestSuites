@@ -126,11 +126,11 @@ PowerShell scripts.
 
   --------------------------------------------------------
   1.  Right-click xxxx.ps1 and select **Properties**.   
-                                                        
+      ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_RequiredSUTroles.png)                                                 
                                                         
   ----------------------------------------------------- --
   1.  Click **Unblock** and then click **OK**.          
-                                                        
+      ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_Deploy1.png)                                                  
                                                         
   --------------------------------------------------------
 
@@ -609,7 +609,7 @@ below to update configuration files and configure the test suite client.
 		Management (WinRM) client can process remote calls against the SUT
 		when the test suite client is not joined to the domain.
 
-Running test suites
+Running the test suites
 =================================================================================================================
 
 Once the required software has been installed and both the SUT and test suite client have
@@ -626,43 +626,42 @@ folder. You can run a single or multiple test cases in Visual Studio.
 
   -------------------------------------------------------------------------------------------------------------------------------------------
   1.  Open **ExchangeMAPIProtocolTestSuites.sln** in Microsoft Visual Studio.                                                              
-                                                                                                                                           
+      ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_Running1.png)                                                                                                                                     
                                                                                                                                            
   ---------------------------------------------------------------------------------------------------------------------------------------- --
   1.  In the **Solution Explorer** pane, right-click **Solution ‘ExchangeMAPIProtocolTestSuites’**, and then click **Rebuild Solution**.   
-                                                                                                                                           
+      ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_Running2.png)                                                                                                                                     
   ---------------------------------------------------------------------------------------------------------------------------------------- --                                                                                                                                          
 
   1.  Open **Test Explorer**. Select **TEST** and click **Windows**, then select **Test Explorer**.                                        
-                                                                                                                                           
+     ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_ExMAPI_Running3.png)                                                                                                                                      
   ---------------------------------------------------------------------------------------------------------------------------------------- --                                                                                                                                          
 
   1.  Select the test case to run, right-click and then select **Run Selected Tests**.                                                     
-                                                                                                                                           
+      ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_Running4.png)                                                                                                                                     
                                                                                                                                            
   -------------------------------------------------------------------------------------------------------------------------------------------
 
 A Microsoft Visual Studio solution file
 **MS-XXXX.sln** is provided in each test suite folder.
 
- 
   1.  Select the test suite you would like to run. Let’s take MS-OXCROPS as an example here, so browse to the **Source\\MS-OXCROPS** directory.
 
   ----------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------
   1.  Open **MS-OXCROPS.sln** in Microsoft Visual Studio.
-  
+	  ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_Running5.png)
    ---------------------------------------------------------------------------------------------------------------------------------------- --
 
   1.  In the **Solution Explorer** pane, right-click **Solution ‘MS-OXCROPS’**, and then click **Rebuild Solution**.
-  
+      ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_Running6.png)
    ---------------------------------------------------------------------------------------------------------------------------------------- --
 
   1.  Open **Test Explorer**. Select **TEST** and click **Windows**, then select **Test Explorer**..
-  
+      ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_Running7.png)
    ---------------------------------------------------------------------------------------------------------------------------------------- --
 
   1.  Select the test case to run, right-click and then select **Run Selected Tests**.
-
+      ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_Running8.png)
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Batch scripts 
