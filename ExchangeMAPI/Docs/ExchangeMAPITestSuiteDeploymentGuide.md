@@ -42,13 +42,13 @@ The test suite client is the client side of the test suite environment.
 The following table shows the minimum resource requirements for the test
 suite client.
 
-Test suite client resource requirements
+**Test suite client resource requirements**
 
-  Component   Test suite client minimum requirement
-  ----------- ---------------------------------------
-  RAM         2GB
-  Hard Disk   500M of free space
-  Processor   &gt;= 1GHz
+Component | Test suite client minimum requirement
+:------------ | :-------------
+RAM       |    2GB
+Hard Disk |   500M of free space
+Processor | >= 1GHz
 
 Software requirements
 -------------------------------------------------------------------------------------------------------------------
@@ -72,13 +72,13 @@ Server installed on a domain controller (DC) is not recommended. For the
 MS-OXNSPI test suite, the DC and SUT should be installed on two separate
 servers.
 
-Required SUT roles
+**Required SUT roles**
 
-  Role                                          Description
-  --------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Active Directory Domain Controller (DC)       Active Directory Domain Controller (AD DC) is required for Exchange. Key Distribution Center (KDC) is a service that runs on the AD DC and is required when Kerberos is used as the authentication method in the test suite.
-  Exchange Server \#1 (SUT1)                    The first Exchange server in the topology.
-  Exchange Server \#2 (SUT2, Redirect Server)   Installation of this server is optional. If this server is not present, then the dependent test cases will not be run. The presence of SUT2 will enable certain multi-server scenarios and other test cases that pertain to a second SUT.
+Role  | Description
+:------------ | :-------------
+**Active Directory Domain Controller (DC)**   |    Active Directory Domain Controller (AD DC) is required for Exchange. Key Distribution Center (KDC) is a service that runs on the AD DC and is required when Kerberos is used as the authentication method in the test suite.
+**Exchange Server \#1 (SUT1)**              |   The first Exchange server in the topology.
+**Exchange Server \#2 (SUT2, Redirect Server)** |  Installation of this server is optional. If this server is not present, then the dependent test cases will not be run. The presence of SUT2 will enable certain multi-server scenarios and other test cases that pertain to a second SUT.
 
 The
 following diagram is an example of what a typical Exchange test suite
