@@ -90,7 +90,7 @@ The following diagram is an example of what a typical Exchange test suite enviro
 
 **Note** *AD DC and SUT are in the same machine, test cases for MS-ASRM
 will be failed*.
-![alt tag](/EAS_RequiredSUTroles.png)
+![a relative link](EAS_RequiredSUTroles.png)
 
 ### Test suite client
 
