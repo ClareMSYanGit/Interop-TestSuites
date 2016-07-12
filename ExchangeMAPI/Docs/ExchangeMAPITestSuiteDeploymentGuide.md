@@ -489,7 +489,7 @@ of the properties. The specific configuration file will take precedence
 over the common configuration file when the same property exists in both
 places.
 
-#### Set the test suite to interactive mode <a name="set-the-test-suite-to-interactive-mode"></a>
+#### Set the test suite to interactive mode <a name="set-the-test-suite-to-interactive-mode"> </a>
 
 If the SUT is a non-Microsoft implementation of Exchange Server, it is
 recommended that you further configure the test suite by setting the
@@ -606,8 +606,7 @@ below to update configuration files and configure the test suite client.
 
 4.  By default, the test suites use Windows PowerShell script in the SUT
     control adapter to configure the SUT. If you chose interactive mode
-    for the SUT control adapter as described in section
-    [Set the test suite to interactive mode](#set-the-test-suite-to-interactive-mode), skip this step.
+    for the SUT control adapter as described in section[Set the test suite to interactive mode](#set-the-test-suite-to-interactive-mode), skip this step.
 
 	a.  Set the execution policy to RemoteSigned.
 
@@ -702,7 +701,7 @@ The configuration logs contain information about whether each
 configuration step succeeds or not, and detail error information if the
 configuration step fails.
 
-### UT configuration logs
+### SUT configuration logs
 
 The SUT configuration scripts create a directory named **SetupLogs**
 under **…\\Setup\\SUT\\** at runtime. The SUT configuration scripts save
