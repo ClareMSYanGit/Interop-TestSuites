@@ -230,7 +230,7 @@ package may require a varying level of resources on Exchange Server. The
 following table outlines these resources for each test suite. The SUT
 configuration scripts will automatically create all the required
 resources for the Microsoft server implementation. To configure the SUT
-manually, see sections [Configuring the SUT1](#configuring-the-sut1) and
+manually, see sections [Configuring SUT1 manually](#configuring-sut1-manually) and
 [Configuring SUT2 manually](#configuring-sut2-manually).
 
 The client configuration script follows the naming convention shown in
