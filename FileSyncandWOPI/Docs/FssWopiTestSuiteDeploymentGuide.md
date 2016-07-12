@@ -160,48 +160,46 @@ file.
 
 **SharePointFileSyncAndWOPIProtocolTestSuites.zip file contents**
 
- |Directory/file   | Description|
+|Directory/file   | Description|
 |:------------ | :-------------|
-EULA.rtf     |                                                The End-User License Agreement
-ReadMe.txt    |                                               A file that contains information about the deployment guide and prerequisite software.
-SharePoint File Sync and WOPI Protocol Test Suites          | | 
-- Docs                                                    |   A directory that contains documents of all protocol test suites.
-- FssWopiTestSuiteDeploymentGuide.docx                   |   A file relevant to the protocol test suite deployment guidance.
-- FssWopiTestSuiteSpecification.docx                     |    A file that contains test suites design, including test suites architecture, adapter and test suites details.
-+ MS-XXXX                                                |    MS-XXXX Help documentation
-- \[MS-XXXX\].pdf                                         |   The technical specification for the protocol
-- MS-XXXX\_SUTControlAdapter.chm                          |   Contains information about the SUT control adapter class library such as declaration syntaxes and their description
-- MS-XXXX\_RequirementSpecification.xlsx                  |   A spreadsheet that outlines all requirements associated with the technical specification.
-- Setup                                                   |   A directory that contains configuration scripts.
-- Test Suite Client                                  |      A directory that contains the configuration script to configure the test suite client.
-- SharePointClientConfiguration.cmd                 |       A command file that runs the
-|  |      SharePointClientConfiguration.ps1 to configure the properties for the protocol test suites.
-- SharePointClientConfiguration.ps1    |                    A configuration script that will be invoked by SharePointClientConfiguration.cmd.
-- SUT                                      |                  A folder that contains the configuration script to configure the SUT.
-- SharePointSUTConfiguration.cmd           |                A command file that runs the
-| |              SharePointSUTConfiguration.ps1 to create resources and configure settings on the SUT.
-- SharePointSUTConfiguration.ps1               |            A configuration script that will be invoked by SharePointSUTConfiguration.cmd.
-- Common                                         |          A folder that contains common configuration scripts and resources.
--CommonConfiguration.ps1                           |        A library that contains common functions for configuring Microsoft products and the test suite client.
--SharePointCommonConfiguration.ps1                |        A library that contains common functions for configuring the SUT.
--SharePointTestSuite.config                   |             The configuration file to store all configuration resources
-- Source                                        |             A folder with Microsoft Visual Studio solution that contains the source code for the test suites.
-- Common                                        |             A folder with Visual Studio projects that contains source code that are common to the test suites
--FssWopiCommonConfiguration.deployment.ptfconfig |          The common configuration file
--SharePointFileSyncAndWOPIProtocolTestSuites.sln   |          A Visual Studio solution that contains projects of the protocol test suites source code
-- SharePointFileSyncAndWOPIProtocolTestSuites.runsettings |   A configuration file used for unit test
--SharePointFileSyncAndWOPIProtocolTestSuites.testsettings |   A configuration file used for running test cases
-- MS-XXXX                                                 |   MS-XXXX test suite source code directory
-+ Adapter                                                 |   Adapter test suite code
-+ TestSuite                                              |    Test suite code
-- MS-XXXX.sln                                           |   A Visual Studio solution that contains projects of the MS-XXXX test suite
-- MS-XXXX.runsettings                                     |   A configuration file used for MS-XXXX unit test
-- MS-XXXX.testsettings                                    |   A configuration file used for MS-XXXX running test cases
--Scripts                                                  |   SharePoint Server Protocol test suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite
--RunAllSharePoint\_FileSyncAndWOPI\_TestCases.cmd       |     A script that can be used to run all test cases in the package
--MS-XXXX                                                 |    A folder containing scripts that belong to the MS-XXXX test suite
-- RunAllMSXXXXTestCases.cmd                           |       A script that can be used to run all test cases of MS-XXXX
-- RunMSXXXX\_SYY\_TCZZ\_Name.cmd                       |      A script that can be used to run a single test case of MS-XXXX
+| EULA.rtf     |    The End-User License Agreement |
+| ReadMe.txt   |   A file that contains information about the deployment guide and prerequisite software. |
+| SharePoint File Sync and WOPI Protocol Test Suites           | | 
+| - Docs  |   A directory that contains documents of all protocol test suites. |
+| - FssWopiTestSuiteDeploymentGuide.docx   |   A file relevant to the protocol test suite deployment guidance. |
+| - FssWopiTestSuiteSpecification.docx     |    A file that contains test suites design, including test suites architecture, adapter and test suites details. |
+| + MS-XXXX                                |    MS-XXXX Help documentation |
+| - \[MS-XXXX\].pdf                        |   The technical specification for the protocol. |
+| - MS-XXXX\_SUTControlAdapter.chm         |   Contains information about the SUT control adapter class library such as declaration syntaxes and their description. |
+| - MS-XXXX\_RequirementSpecification.xlsx |   A spreadsheet that outlines all requirements associated with the technical specification. |
+| - Setup                                  |   A directory that contains configuration scripts. |
+| - Test Suite Client                      |      A directory that contains the configuration script to configure the test suite client. |
+| - SharePointClientConfiguration.cmd      |       A command file that runs the SharePointClientConfiguration.ps1 to configure the properties for the protocol test suites. |
+| - SharePointClientConfiguration.ps1      |                    A configuration script that will be invoked by SharePointClientConfiguration.cmd. |
+| - SUT                                    |                  A folder that contains the configuration script to configure the SUT. |
+| - SharePointSUTConfiguration.cmd         |                A command file that runs the SharePointSUTConfiguration.ps1 to create resources and configure settings on the SUT. |
+| - SharePointSUTConfiguration.ps1         |            A configuration script that will be invoked by SharePointSUTConfiguration.cmd. |
+| - Common                                 |          A folder that contains common configuration scripts and resources. |
+| -CommonConfiguration.ps1                 |        A library that contains common functions for configuring Microsoft products and the test suite client. |
+| -SharePointCommonConfiguration.ps1       |        A library that contains common functions for configuring the SUT. |
+| -SharePointTestSuite.config              |             The configuration file to store all configuration resources |
+| - Source                                 |             A folder with Microsoft Visual Studio solution that contains the source code for the test suites. |
+| - Common                                 |             A folder with Visual Studio projects that contains source code that are common to the test suites |
+| -FssWopiCommonConfiguration.deployment.ptfconfig |          The common configuration file |
+| -SharePointFileSyncAndWOPIProtocolTestSuites.sln |          A Visual Studio solution that contains projects of the protocol test suites source code |
+| - SharePointFileSyncAndWOPIProtocolTestSuites.runsettings |   A configuration file used for unit test |
+| -SharePointFileSyncAndWOPIProtocolTestSuites.testsettings |   A configuration file used for running test cases |
+| - MS-XXXX                                                 |   MS-XXXX test suite source code directory |
+| + Adapter                                                 |   Adapter test suite code |
+| + TestSuite                                               |    Test suite code |
+| - MS-XXXX.sln                                             |   A Visual Studio solution that contains projects of the MS-XXXX test suite |
+| - MS-XXXX.runsettings                                     |   A configuration file used for MS-XXXX unit test |
+| - MS-XXXX.testsettings                                    |   A configuration file used for MS-XXXX running test cases |
+| -Scripts                                                  |   SharePoint Server Protocol test suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite |
+| -RunAllSharePoint\_FileSyncAndWOPI\_TestCases.cmd         |     A script that can be used to run all test cases in the package |
+| -MS-XXXX                                                  |    A folder containing scripts that belong to the MS-XXXX test suite |
+| - RunAllMSXXXXTestCases.cmd                               |       A script that can be used to run all test cases of MS-XXXX |
+| - RunMSXXXX\_SYY\_TCZZ\_Name.cmd                          |      A script that can be used to run a single test case of MS-XXXX |
 
 
 Configuring the test suites
