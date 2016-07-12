@@ -1,76 +1,14 @@
-![alt tag](/Doc-Images/ExLogo.png)
-
 **Exchange MAPI Test Suites Specification**
 
-**Contents**
+[Introduction ](#Introduction)
 
-[1 Introduction 3](#_Toc400796655)
+[Requirement specification ](#requirement-specification)
 
-[2 Requirement specification 4](#_Toc400796656)
+[Design considerations ](#design-considerations)
 
-[3 Design considerations 5](#design-considerations)
+[Package design ](#package-design)
 
-[3.1 Assumptions 5](#assumptions)
-
-[3.2 Dependencies 5](#dependencies)
-
-[4 Package design 6](#package-design)
-
-[4.1 Architecture 6](#architecture)
-
-[4.2 Common library 7](#common-library)
-
-[4.2.1 Transport classes 7](#transport-classes)
-
-[4.2.2 Helper methods 7](#helper-methods)
-
-[4.2.3 Message structures 7](#message-structures)
-
-[4.3 Adapter 7](#adapter)
-
-[4.3.1 Protocol Adapter 7](#protocol-adapter)
-
-[4.3.2 SUT Control Adapter 8](#sut-control-adapter)
-
-[4.4 Model 8](#model)
-
-[4.4.1 Actions 8](#actions)
-
-[4.4.2 States 8](#states)
-
-[4.4.3 Machines 8](#machines)
-
-[4.4.4 Model design patterns 9](#model-design-patterns)
-
-[4.5 Test suite 9](#test-suite)
-
-[4.5.1 MS-OXCFOLD 9](#ms-oxcfold)
-
-[4.5.2 MS-OXCFXICS 9](#ms-oxcfxics)
-
-[4.5.3 MS-OXCMAPIHTTP 10](#_Toc400796677)
-
-[4.5.4 MS-OXCMSG 10](#ms-oxcmsg)
-
-[4.5.5 MS-OXCNOTIF 11](#_Toc400796679)
-
-[4.5.6 MS-OXCPERM 11](#ms-oxcperm)
-
-[4.5.7 MS-OXCPRPT 11](#ms-oxcprpt)
-
-[4.5.8 MS-OXCROPS 12](#ms-oxcrops)
-
-[4.5.9 MS-OXCRPC 12](#_Toc400796683)
-
-[4.5.10 MS-OXCSTOR 12](#_Toc400796684)
-
-[4.5.11 MS-OXCTABL 13](#ms-oxctabl)
-
-[4.5.12 MS-OXNSPI 13](#ms-oxnspi)
-
-[4.5.13 MS-OXORULE 13](#ms-oxorule)
-
-<span id="_Technical_Document_Introduction" class="anchor"><span id="_Test_Method" class="anchor"><span id="_Toc400796655" class="anchor"><span id="_Toc332648623" class="anchor"><span id="_Toc332794509" class="anchor"><span id="_Toc332876776" class="anchor"><span id="_Toc332899509" class="anchor"><span id="_Toc351540483" class="anchor"><span id="_Toc106428318" class="anchor"></span></span></span></span></span></span></span></span></span>Introduction
+Introduction
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 The Exchange MAPI Protocol Test Suites are implemented as synthetic
@@ -99,25 +37,25 @@ The technical specifications listed in the following table are included
 in the Exchange MAPI Protocol Test Suites package. The version of these
 technical specifications is v20140130.
 
-Exchange MAPI Protocol technical specifications
+**Exchange MAPI Protocol technical specifications**
 
-  Technical specification   Protocol name
-  ------------------------- -------------------------------------------------------------------------------------------------------------------------
-  MS-OXCFOLD                [Folder Object Protocol](http://go.microsoft.com/fwlink/?LinkID=267166)
-  MS-OXCFXICS               [Bulk Data Transfer Protocol](http://go.microsoft.com/fwlink/?LinkID=267170)
-  MS-OXCMAPIHTTP            [Messaging Application Programming Interface (MAPI) Extensions for HTTP](http://go.microsoft.com/fwlink/?LinkID=396883)
-  MS-OXCMSG                 [Message and Attachment Object Protocol](http://go.microsoft.com/fwlink/?LinkID=267172)
-  MS-OXCNOTIF               [Core Notifications Protocol](http://go.microsoft.com/fwlink/?LinkID=330226)
-  MS-OXCPERM                [Exchange Access and Operation Permissions Protocol](http://go.microsoft.com/fwlink/?LinkID=267175)
-  MS-OXCPRPT                [Property and Stream Object Protocol](http://go.microsoft.com/fwlink/?LinkID=267174)
-  MS-OXCROPS                [Remote Operations (ROP) List and Encoding Protocol](http://go.microsoft.com/fwlink/?LinkID=267173)
-  MS-OXCRPC                 [Wire Format Protocol](http://go.microsoft.com/fwlink/?LinkID=267171)
-  MS-OXCSTOR                [Store Object Protocol](http://go.microsoft.com/fwlink/?LinkID=267169)
-  MS-OXCTABL                [Table Object Protocol](http://go.microsoft.com/fwlink/?LinkID=267168)
-  MS-OXNSPI                 [Exchange Server Name Service Provider Interface (NSPI) Protocol](http://go.microsoft.com/fwlink/?LinkId=330225)
-  MS-OXORULE                [E-Mail Rules Protocol](http://go.microsoft.com/fwlink/?LinkID=267176)
+Technical specification  | Protocol name
+ :------------- | :------------- 
+  MS-OXCFOLD       |  		  [Folder Object Protocol](http://go.microsoft.com/fwlink/?LinkID=267166)
+  MS-OXCFXICS      |          [Bulk Data Transfer Protocol](http://go.microsoft.com/fwlink/?LinkID=267170)
+  MS-OXCMAPIHTTP   |          [Messaging Application Programming Interface (MAPI) Extensions for HTTP](http://go.microsoft.com/fwlink/?LinkID=396883)
+  MS-OXCMSG        |          [Message and Attachment Object Protocol](http://go.microsoft.com/fwlink/?LinkID=267172)
+  MS-OXCNOTIF      |          [Core Notifications Protocol](http://go.microsoft.com/fwlink/?LinkID=330226)
+  MS-OXCPERM       |          [Exchange Access and Operation Permissions Protocol](http://go.microsoft.com/fwlink/?LinkID=267175)
+  MS-OXCPRPT       |          [Property and Stream Object Protocol](http://go.microsoft.com/fwlink/?LinkID=267174)
+  MS-OXCROPS       |          [Remote Operations (ROP) List and Encoding Protocol](http://go.microsoft.com/fwlink/?LinkID=267173)
+  MS-OXCRPC        |          [Wire Format Protocol](http://go.microsoft.com/fwlink/?LinkID=267171)
+  MS-OXCSTOR       |          [Store Object Protocol](http://go.microsoft.com/fwlink/?LinkID=267169)
+  MS-OXCTABL       |          [Table Object Protocol](http://go.microsoft.com/fwlink/?LinkID=267168)
+  MS-OXNSPI        |          [Exchange Server Name Service Provider Interface (NSPI) Protocol](http://go.microsoft.com/fwlink/?LinkId=330225)
+  MS-OXORULE       |          [E-Mail Rules Protocol](http://go.microsoft.com/fwlink/?LinkID=267176)
 
-<span id="_Document_scope" class="anchor"><span id="_Toc400796656" class="anchor"><span id="_Toc329982556" class="anchor"><span id="_Toc308770200" class="anchor"><span id="_Toc387851220" class="anchor"></span></span></span></span></span>Requirement specification
+Requirement specification
 ======================================================================================================================================================================================================================================================================
 
 A requirement specification contains a list of requirements that are
@@ -425,13 +363,13 @@ scenario relies on the second SUT. It will not be run if the second SUT
 is not available. The following table lists the scenarios designed in
 the test suite.
 
-  Scenario                          Description
-  --------------------------------- -------------------------------------------------------------------------------------------------------------------------
-  S01\_FolderRopOperations          Verifies the ROP operations related to a general folder object.
-  S02\_MessageRopOperations         Verifies the ROP operations related to messages or subfolders in a folder object.
-  S03\_FolderInformation            Verifies the properties contained in a folder object or ROP operations related to a search folder.
-  S04\_OperateOnPublicFolder        Verifies the ROP operations on public folders.
-  S05\_InsufficientRightsOnFolder   Verifies the ROP operations that the client has insufficient rights to operate on the specified private mailbox folder.
+Scenario  |  Description
+:------------ | :-------------
+S01\_FolderRopOperations     |     Verifies the ROP operations related to a general folder object.
+S02\_MessageRopOperations    |     Verifies the ROP operations related to messages or subfolders in a folder object.
+S03\_FolderInformation       |     Verifies the properties contained in a folder object or ROP operations related to a search folder.
+S04\_OperateOnPublicFolder   |     Verifies the ROP operations on public folders.
+S05\_InsufficientRightsOnFolder |  Verifies the ROP operations that the client has insufficient rights to operate on the specified private mailbox folder.
 
 ### MS-OXCFXICS
 
@@ -439,28 +377,29 @@ Nine scenarios are designed to verify the server-side, testable
 requirements in MS-OXCFXICS test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario                              Description
-  ------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  S01\_SyncFastTransferFolder           Tests the ROPs, properties, structures, FastTransfer stream format and the server behavior related to synchronizing content of folders between the client and the server.
-  S02\_SyncFastTransferMessage          Tests the ROPs, properties, structures, FastTransfer stream format and the server behavior related to synchronizing content of messages between the client and the server.
-  S03\_SyncFastTransferAttachment       Tests the ROPs, properties, structures, FastTransfer stream format and the server behavior related to synchronizing content of attachments between the client and the server.
-  S04\_SyncFastTransferBetweenServers   Tests the ROPs and server behavior related to synchronizing data between different servers.
-  S05\_SyncICSHierarchy                 Tests the ROPs, properties, structures, FastTransfer stream format and the server behavior related to hierarchy synchronizations.
-  S06\_SyncICSContents                  Tests the ROPs, properties, structures, FastTransfer stream format and the server behavior related to contents synchronization.
-  S07\_SyncICSState                     Tests the ROPs, properties, structures, FastTransfer stream format and the server behavior related to ICS state synchronizations.
-  S08\_SyncICSFolderConfilict           Tests the ROPs, properties and the server behavior related to ICS folder conflict.
-  S09\_SyncICSMessageConflict           Tests the ROPs, properties and the server behavior related to ICS message conflict.
+Scenario  |  Description
+:------------ | :-------------
+S01\_SyncFastTransferFolder         |  Tests the ROPs, properties, structures, FastTransfer stream format and the server behavior related to synchronizing content of folders between the client and the server.
+S02\_SyncFastTransferMessage        |  Tests the ROPs, properties, structures, FastTransfer stream format and the server behavior related to synchronizing content of messages between the client and the server.
+S03\_SyncFastTransferAttachment     |  Tests the ROPs, properties, structures, FastTransfer stream format and the server behavior related to synchronizing content of attachments between the client and the server.
+S04\_SyncFastTransferBetweenServers |  Tests the ROPs and server behavior related to synchronizing data between different servers.
+S05\_SyncICSHierarchy               |  Tests the ROPs, properties, structures, FastTransfer stream format and the server behavior related to hierarchy synchronizations.
+S06\_SyncICSContents                |  Tests the ROPs, properties, structures, FastTransfer stream format and the server behavior related to contents synchronization.
+S07\_SyncICSState                   |  Tests the ROPs, properties, structures, FastTransfer stream format and the server behavior related to ICS state synchronizations.
+S08\_SyncICSFolderConfilict         |  Tests the ROPs, properties and the server behavior related to ICS folder conflict.
+S09\_SyncICSMessageConflict         |  Tests the ROPs, properties and the server behavior related to ICS message conflict.
 
-### <span id="_MS-OXCRPC_S01_SynchronousCall" class="anchor"><span id="_Toc400796677" class="anchor"></span></span>MS-OXCMAPIHTTP
+### MS-OXCMAPIHTTP
 
 Two scenarios are designed to verify the server-side, testable
 requirements in MS-OXCMAPIHTTP test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario                                        Description
-  ----------------------------------------------- ------------------------------------------------------------------------------------------------------
-  S01\_RequestTypesForMailboxServerEndpoint       Verifies the HTTP header, common response format, and the request types for mailbox server endpoint.
-  S02\_RequestTypesForAddressBookServerEndpoint   Verifies the request types for address book server endpoint.
+
+Scenario  |  Description
+:------------ | :-------------
+S01\_RequestTypesForMailboxServerEndpoint    |   Verifies the HTTP header, common response format, and the request types for mailbox server endpoint.
+S02\_RequestTypesForAddressBookServerEndpoint|   Verifies the request types for address book server endpoint.
 
 ### MS-OXCMSG
 
@@ -468,28 +407,28 @@ Nine scenarios are designed to verify the server-side, testable
 requirements in MS-OXCMSG test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario                       Description
-  ------------------------------ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  S01\_CreateAndSaveMessage      Validates the behaviors when the client calls the Message methods to create and save Message objects on the server. Finally, the client releases the Message object by calling the RopRelease operation.
-  S02\_SetMessageStatus          Validates the behaviors when the client calls the Message methods to set and get the message status. Finally, the client releases the Message object by calling the RopRelease operation.
-  S03\_SetMessageFlags           Validates the behaviors when the client calls the Message methods to set and get read flags of a message. Finally, the client releases the Message object by calling the RopRelease operation.
-  S04\_MessageObjectProperties   Validates the Message object properties on the server. Finally, the client releases the Message object by calling the RopRelease operation.
-  S05\_OpenMessage               Validates the behaviors when the client calls the Message methods to create, save, and open Message objects on the server. Finally, the client releases the Message object by calling the RopRelease operation.
-  S06\_ReloadCachedInformation   Validates the behaviors when the client calls the Message methods to open and reload Message objects on the server. Finally, the client releases the Message object by calling the RopRelease operation.
-  S07\_RopRecipient              Validates the behaviors when the client calls the Recipient methods to read, modify, and remove all recipients on a Message object. Finally, the client releases the Message object by calling the RopRelease operation.
-  S08\_RopAttachment             Validates the behaviors when the client calls the Attachment methods to open, get attachment tables, and delete attachment on a Message object. The client releases the Attachment object and Message object by calling RopRelease operation.
-  S09\_RopEmbeddedMessage        Validates the behaviors when the client calls the Embedded Message methods to create, save, and open an embedded Message object in an Attachment object on the server.
+Scenario  |  Description
+:------------ | :-------------
+  S01\_CreateAndSaveMessage   |    Validates the behaviors when the client calls the Message methods to create and save Message objects on the server. Finally, the client releases the Message object by calling the RopRelease operation.
+  S02\_SetMessageStatus        |   Validates the behaviors when the client calls the Message methods to set and get the message status. Finally, the client releases the Message object by calling the RopRelease operation.
+  S03\_SetMessageFlags         |   Validates the behaviors when the client calls the Message methods to set and get read flags of a message. Finally, the client releases the Message object by calling the RopRelease operation.
+  S04\_MessageObjectProperties  |  Validates the Message object properties on the server. Finally, the client releases the Message object by calling the RopRelease operation.
+  S05\_OpenMessage               | Validates the behaviors when the client calls the Message methods to create, save, and open Message objects on the server. Finally, the client releases the Message object by calling the RopRelease operation.
+  S06\_ReloadCachedInformation   | Validates the behaviors when the client calls the Message methods to open and reload Message objects on the server. Finally, the client releases the Message object by calling the RopRelease operation.
+  S07\_RopRecipient             |  Validates the behaviors when the client calls the Recipient methods to read, modify, and remove all recipients on a Message object. Finally, the client releases the Message object by calling the RopRelease operation.
+  S08\_RopAttachment             | Validates the behaviors when the client calls the Attachment methods to open, get attachment tables, and delete attachment on a Message object. The client releases the Attachment object and Message object by calling RopRelease operation.
+  S09\_RopEmbeddedMessage        | Validates the behaviors when the client calls the Embedded Message methods to create, save, and open an embedded Message object in an Attachment object on the server.
 
-### <span id="_S1_MessageMethods_Validation" class="anchor"><span id="_Toc400796679" class="anchor"></span></span>MS-OXCNOTIF
+### MS-OXCNOTIF
 
 Two scenarios are designed to verify the server-side, testable
 requirements in MS-OXCNOTIF test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario                                Description
-  --------------------------------------- ---------------------------------------------------------------------------------------------------------------------
-  S01\_ReceivePendingNotifications        Verifies the four ways that the server uses to notify the client of pending notifications.
-  S02\_SubscribeAndReceiveNotifications   Verifies the notification details returned from the server after the client subscribes to the events on the server.
+ Scenario  |  Description
+:------------ | :-------------
+  S01\_ReceivePendingNotifications   |     Verifies the four ways that the server uses to notify the client of pending notifications.
+  S02\_SubscribeAndReceiveNotifications  | Verifies the notification details returned from the server after the client subscribes to the events on the server.
 
 ### MS-OXCPERM
 
@@ -497,11 +436,11 @@ Three scenarios are designed to verify the server-side, testable
 requirements in MS-OXCPERM test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario                         Description
-  -------------------------------- ------------------------------------------------------------------------------------
-  S01\_RetrieveFolderPermissions   Verifies the response for retrieving the folder permissions request.
-  S02\_ModifyFolderPermissions     Verifies the response for modifying the folder permissions request.
-  S03\_NegativeOrErrorValidation   Verifies the responses for the wrong message sequences and the negative behaviors.
+   Scenario  |  Description
+:------------ | :-------------
+  S01\_RetrieveFolderPermissions |   Verifies the response for retrieving the folder permissions request.
+  S02\_ModifyFolderPermissions   |  Verifies the response for modifying the folder permissions request.
+  S03\_NegativeOrErrorValidation |  Verifies the responses for the wrong message sequences and the negative behaviors.
 
 ### MS-OXCPRPT
 
@@ -509,14 +448,14 @@ Six scenarios are designed to verify the server-side, testable
 requirements in MS-OXCPRPT test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario                          Description
-  --------------------------------- ----------------------------------------------------------------------
-  S01\_QueryDataFromObject          Validates the operations used for querying data from an object.
-  S02\_SetDataForObject             Validates the operations used for [setting data](#S2) for an object.
-  S03\_QueryDataFromStreamObject    Validates the operations used for querying data of stream object.
-  S04\_SetDataForStreamObject       Validates the operations for setting data for stream object.
-  S05\_AsynchronousScenario         Validates the operations used for asynchronous transition.
-  S06\_TestCommonObjectProperties   Validates the common object properties.
+ Scenario  |  Description
+:------------ | :-------------
+  S01\_QueryDataFromObject        |       Validates the operations used for querying data from an object.
+  S02\_SetDataForObject           |      Validates the operations used for [setting data](#S2) for an object.
+  S03\_QueryDataFromStreamObject  |   Validates the operations used for querying data of stream object.
+  S04\_SetDataForStreamObject     |   Validates the operations for setting data for stream object.
+  S05\_AsynchronousScenario       |  Validates the operations used for asynchronous transition.
+  S06\_TestCommonObjectProperties |  Validates the common object properties.
 
 ### MS-OXCROPS
 
@@ -526,43 +465,44 @@ S01\_LogonROPs relies on the second SUT. Some steps of the test cases
 will not be run if the second SUT is not available. The following table
 lists the scenarios designed in this test suite.
 
-  Scenario                                    Description
-  ------------------------------------------- --------------------------------------------------------------------------------------
-  S01\_LogonROPs                              Verifies the response buffer formats of Logon ROPs.
-  S02\_FolderROPs                             Verifies the response buffer formats of Folder ROPs.
-  S03\_TableROPs                              Verifies the response buffer formats of Table ROPs.
-  S04\_MessageROPs                            Verifies the response buffer formats of Message ROPs.
-  S05\_TransportROPs                          Verifies the response buffer formats of Transport ROPs.
-  S06\_PropertyROPs                           Verifies the response buffer formats of Property ROPs.
-  S07\_StreamROPs                             Verifies the response buffer formats of Stream ROPs.
-  S08\_PermissionROPs                         Verifies the response buffer formats of Permission ROPs.
-  S09\_RuleROPs                               Verifies the response buffer formats of Rule ROPs.
-  S10\_FastTransferROPs                       Verifies the response buffer formats of Fast Transfer ROPs.
-  S11\_IncrementalChangeSynchronizationROPs   Verifies the response buffer formats of Incremental Change Synchronization ROPs.
-  S12\_NotificationROPs                       Verifies the response buffer formats of Notification ROPs and RopBufferTooSmall ROP.
+   Scenario  |  Description
+:------------ | :-------------
+  S01\_LogonROPs    |                          Verifies the response buffer formats of Logon ROPs.
+  S02\_FolderROPs   |                          Verifies the response buffer formats of Folder ROPs.
+  S03\_TableROPs    |                          Verifies the response buffer formats of Table ROPs.
+  S04\_MessageROPs  |                          Verifies the response buffer formats of Message ROPs.
+  S05\_TransportROPs|                          Verifies the response buffer formats of Transport ROPs.
+  S06\_PropertyROPs |                          Verifies the response buffer formats of Property ROPs.
+  S07\_StreamROPs   |                          Verifies the response buffer formats of Stream ROPs.
+  S08\_PermissionROPs |                        Verifies the response buffer formats of Permission ROPs.
+  S09\_RuleROPs       |                        Verifies the response buffer formats of Rule ROPs.
+  S10\_FastTransferROPs |                      Verifies the response buffer formats of Fast Transfer ROPs.
+  S11\_IncrementalChangeSynchronizationROPs |  Verifies the response buffer formats of Incremental Change Synchronization ROPs.
+  S12\_NotificationROPs                     |  Verifies the response buffer formats of Notification ROPs and RopBufferTooSmall ROP.
 
-### <span id="S1" class="anchor"><span id="_Toc400796683" class="anchor"></span></span>MS-OXCRPC
+### MS-OXCRPC
 
 Two scenarios are designed to verify the server-side, testable
 requirements in MS-OXCRPC test suite. The following table lists the
 scenarios designed in this test suite
 
-  Scenario                Description
-  ----------------------- -----------------------------------------------------------------
-  S01\_SynchronousCall    Verifies the requirements related to the EMSMDB interface.
-  S02\_AsynchronousCall   Verifies the requirements related to the AsyncEMSMDB interface.
+ 
+   Scenario  |  Description
+:------------ | :-------------
+  S01\_SynchronousCall   |  Verifies the requirements related to the EMSMDB interface.
+  S02\_AsynchronousCall  |  Verifies the requirements related to the AsyncEMSMDB interface.
 
-### <span id="scenario1" class="anchor"><span id="_Toc400796684" class="anchor"></span></span>MS-OXCSTOR
+### MS-OXCSTOR
 
 Three scenarios are designed to verify the server-side, testable
 requirements in MS-OXCSTOR test suite. The following table lists the
 scenarios designed in this test suite.
 
-  <span id="_Ref236557899" class="anchor"></span>Scenario   Description
-  --------------------------------------------------------- -----------------------------------------------------------------------------
-  S01\_PrivateMailboxLogon                                  Validates the operations performed against a private mailbox logon.
-  S02\_PublicFoldersLogon                                   Validates the operations performed against a public folder logon.
-  S03\_SyncUpReadAndUnreadInformation                       Validates the operations for clients synchronize Per-User Read/Unread data.
+   Scenario  |  Description
+:------------ | :-------------
+  S01\_PrivateMailboxLogon        |                          Validates the operations performed against a private mailbox logon.
+  S02\_PublicFoldersLogon         |                          Validates the operations performed against a public folder logon.
+  S03\_SyncUpReadAndUnreadInformation |                      Validates the operations for clients synchronize Per-User Read/Unread data.
 
 ### MS-OXCTABL
 
@@ -570,15 +510,15 @@ Seven scenarios are designed to verify the server-side and testable
 requirements in MS-OXCTABL test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario                  Description
-  ------------------------- -----------------------------------------------------------------------------
-  S01\_ColumnRops           Tests the ROPs for processing table columns in MS-OXCTABL.
-  S02\_RowRops              Tests the ROPs for processing table rows in MS-OXCTABL.
-  S03\_BookmarkRops         Tests the ROPs on a table bookmark in MS-OXCTABL.
-  S04\_ExpandRowRops        Tests the ROPs for expanding or collapsing a categorized row in MS-OXCTABL.
-  S05\_ResetSortTableRops   Tests the ROPs for resetting or sorting a table in MS-OXCTABL.
-  S06\_RestrictRop          Tests the ROP for restricting a table in MS-OXCTABL.
-  S07\_AsyncRops            Tests the asynchronous ROPs in MS-OXCTABL.
+ Scenario  |  Description
+:------------ | :-------------
+  S01\_ColumnRops  |         Tests the ROPs for processing table columns in MS-OXCTABL.
+  S02\_RowRops     |         Tests the ROPs for processing table rows in MS-OXCTABL.
+  S03\_BookmarkRops|         Tests the ROPs on a table bookmark in MS-OXCTABL.
+  S04\_ExpandRowRops |        Tests the ROPs for expanding or collapsing a categorized row in MS-OXCTABL.
+  S05\_ResetSortTableRops |  Tests the ROPs for resetting or sorting a table in MS-OXCTABL.
+  S06\_RestrictRop        |  Tests the ROP for restricting a table in MS-OXCTABL.
+  S07\_AsyncRops          |  Tests the asynchronous ROPs in MS-OXCTABL.
 
 ### MS-OXNSPI
 
@@ -586,13 +526,13 @@ Five scenarios are designed to verify the server-side, testable
 requirements in MS-OXNSPI test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario                  Description
-  ------------------------- --------------------------------------------------------------------------------------------------------------------
-  S01\_ObtainGeneralInfo    Tests the server behavior for the NSPI calls related to obtaining general information of Address Book object.
-  S02\_ObtainDetailsInfo    Tests the server behavior for the NSPI calls related to obtaining the detailed information of Address Book object.
-  S03\_ANRRelatedBehavior   Tests the server behavior for the NSPI calls related to Ambiguous Name Resolution process.
-  S04\_ModifyProperty       Tests the server behavior for the NSPI calls related to modify property of Address Book object.
-  S05\_NegativeBehavior     Tests the negative server behavior for each NSPI call.
+ Scenario  |  Description
+:------------ | :-------------
+  S01\_ObtainGeneralInfo   | Tests the server behavior for the NSPI calls related to obtaining general information of Address Book object.
+  S02\_ObtainDetailsInfo   | Tests the server behavior for the NSPI calls related to obtaining the detailed information of Address Book object.
+  S03\_ANRRelatedBehavior  | Tests the server behavior for the NSPI calls related to Ambiguous Name Resolution process.
+  S04\_ModifyProperty      | Tests the server behavior for the NSPI calls related to modify property of Address Book object.
+  S05\_NegativeBehavior    | Tests the negative server behavior for each NSPI call.
 
 ### MS-OXORULE
 
@@ -600,22 +540,21 @@ Five scenarios are designed for the MS-OXORULE test suite to verify the
 structure and the server behavior. The following table lists the
 scenarios designed in this test suite.
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Scenario                                  Description
-  ----------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  S01\_AddModifyDeleteRetrieveRules         Validates server behaviors of the following:
+ Scenario  |  Description
+:------------ | :-------------
+  S01\_AddModifyDeleteRetrieveRules   |      Validates server behaviors of the following:
                                             
-                                            -   The operations of RopModifyRules and RopGetRulesTable when adding, modifying, deleting and retrieving standard rules.
+                                      |      -   The operations of RopModifyRules and RopGetRulesTable when adding, modifying, deleting and retrieving standard rules.
                                             
-                                            -   The functions of ROPs referenced from MS-OXCMSG and MS-OXCTABL for adding, modifying, deleting, and retrieving extended rules.
+                                      |     -   The functions of ROPs referenced from MS-OXCMSG and MS-OXCTABL for adding, modifying, deleting, and retrieving extended rules.
                                             
                                             
 
-  S02\_ProcessServerSideRulesOtherthanOOF   Validates server behaviors of processing server-side rules other than the Out-of-Office rule because the action of OP\_OOF\_REPLY is complicated enough to be a separate scenario.
+  S02\_ProcessServerSideRulesOtherthanOOF |  Validates server behaviors of processing server-side rules other than the Out-of-Office rule because the action of OP\_OOF\_REPLY is complicated enough to be a separate scenario.
 
-  S03\_ProcessOutOfOfficeRule               Validates server behaviors of processing the Out-of-Office rule.
+  S03\_ProcessOutOfOfficeRule             |  Validates server behaviors of processing the Out-of-Office rule.
 
-  S04\_ProcessRulesOnPublicFolder           Validates server behaviors of processing server-side rules on the public folder.
+  S04\_ProcessRulesOnPublicFolder        |  Validates server behaviors of processing server-side rules on the public folder.
 
-  S05\_GenerateDAMAndDEM                    Validates server behaviors about DAM and DEM message.
+  S05\_GenerateDAMAndDEM              |      Validates server behaviors about DAM and DEM message.
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
