@@ -461,6 +461,7 @@ has the following two configuration files for test suite-specific
 modification.
 
 **Test-suite specific configuration files**
+
 |Configuration file   | Description|
 |:------------ | :-------------|
 |MS-XXXX\_TestSuite.deployment.ptfconfig |  The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows for the test suite-specific customization.|
