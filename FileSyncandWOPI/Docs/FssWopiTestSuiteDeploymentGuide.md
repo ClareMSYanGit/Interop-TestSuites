@@ -500,21 +500,21 @@ specific test suite, do the following:
 ||| | **interactive**: Interactive adapters are used for manually configuring the server. The interactive adapter displays a dialog box to perform a manual test each time one of its methods is called. The dialog box will show the method name, parameter names, and values\*\*\*| 
  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-\**The Adapter property value is set to either **managed** or
+\*The Adapter property value is set to either **managed** or
 **powershell** depending on whether the SUT control adapter was
-implemented in managed C\# code or through PowerShell. *
+implemented in managed C\# code or through PowerShell.
 
-\*\* *When changing to interactive mode from managed mode, the
+\*\* When changing to interactive mode from managed mode, the
 “adaptertype” attribute must be deleted to avoid a runtime error. When
 changing to interactive mode from powershell mode, an additional step is
-required—delete the “scriptdir” attribute to avoid a runtime error.*
+required—delete the “scriptdir” attribute to avoid a runtime error.
 
-\*\*\**When the manual operation completes successfully, enter the
+\*\*\*When the manual operation completes successfully, enter the
 return value (if any) in **Action Results** and click **Succeed** in the
 dialog box. When manual operation is unable to complete, enter the error
 messages in the **Failure Message** text box and click the **Fail** to
 terminate the test. In this case, the test will be treated as
-“Inconclusive”.*
+“Inconclusive”.
 
 Further customization can be done by creating your own SUT control
 adapter that matches the server implementation. For information about
