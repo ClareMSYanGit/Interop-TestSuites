@@ -668,7 +668,7 @@ A Microsoft Visual Studio solution file
 
   1.  Select the test case to run, right-click and then select **Run Selected Tests**.
       ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_Running8.png)
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  
 
 Batch scripts 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
