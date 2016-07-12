@@ -521,7 +521,7 @@ adapter that matches the server implementation. For information about
 how to create a SUT control adapter, see the Protocol Test Framework
 (PTF) user documentation.
 
-1.  **Configure TSAP broadcast**
+####Configure TSAP broadcast
 
 Test Session Announcement Protocol (TSAP) is used by the PTF to
 broadcast test information when the test suite is running. TSAP
