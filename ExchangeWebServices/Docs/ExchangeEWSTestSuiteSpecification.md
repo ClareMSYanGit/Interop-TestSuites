@@ -1,60 +1,15 @@
-<span id="_Toc63679053"
-class="anchor"></span>![](media/image1.png){width="5.447916666666667in"
-height="1.625in"}
-
 **Exchange EWS Test Suites Specification**
+=====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
-**Contents**
+[Introduction](#introduction)
 
-[*1* *Introduction* 3](#_Toc421794289)
+[Requirement specification](#requirement-specification)
 
-[*2* *Requirement specification* 4](#_Toc421794290)
+[Design considerations](#design-considerations)
 
-[*3* *Design considerations* 5](#design-considerations)
+[Package design](#package-design)
 
-[*3.1* *Assumptions* 5](#assumptions)
-
-[*3.2* *Dependencies* 5](#dependencies)
-
-[*4* *Package design* 6](#package-design)
-
-[*4.1* *Architecture* 6](#architecture)
-
-[*4.2* *Common library* 7](#common-library)
-
-[*4.2.1* *Transport classes* 7](#transport-classes)
-
-[*4.2.2* *Helper methods* 7](#helper-methods)
-
-[*4.2.3* *Message structures* 7](#message-structures)
-
-[*4.3* *Adapter* 7](#adapter)
-
-[*4.3.1* *Protocol Adapter* 7](#protocol-adapter)
-
-[*4.3.2* *SUT Control Adapter* 7](#sut-control-adapter)
-
-[*4.4* *Test suite* 8](#test-suite)
-
-[*4.4.1* *MS-OXWSATT* 8](#ms-oxwsatt)
-
-[*4.4.2* *MS-OXWSBTRF* 8](#ms-oxwsbtrf)
-
-[*4.4.3* *MS-OXWSCONT* 8](#_Toc421794306)
-
-[*4.4.4* *MS-OXWSCORE* 8](#ms-oxwscore)
-
-[*4.4.5* *MS-OXWSFOLD* 9](#_Toc421794308)
-
-[*4.4.6* *MS-OXWSMSG* 9](#ms-oxwsmsg)
-
-[*4.4.7* *MS-OXWSMTGS* 10](#ms-oxwsmtgs)
-
-[*4.4.8* *MS-OXWSSYNC* 10](#ms-oxwssync)
-
-[*4.4.9* *MS-OXWSTASK* 11](#_Toc421794312)
-
-<span id="_Technical_Document_Introduction" class="anchor"><span id="_Test_Method" class="anchor"><span id="_Toc421794289" class="anchor"><span id="_Toc332648623" class="anchor"><span id="_Toc332794509" class="anchor"><span id="_Toc332876776" class="anchor"><span id="_Toc332899509" class="anchor"><span id="_Toc351540483" class="anchor"><span id="_Toc106428318" class="anchor"></span></span></span></span></span></span></span></span></span>Introduction
+Introduction
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 The Exchange EWS Protocol Test Suites are implemented as synthetic
@@ -84,22 +39,22 @@ in the Exchange EWS Protocol Test Suites package. The version of
 technical specification MS-OXWSITEMID is v20150330 and others are
 v20121003.
 
-Exchange EWS Protocol technical specifications
+**Exchange EWS Protocol technical specifications**
 
-  Technical specification   Protocol name
-  ------------------------- ----------------------------------------------------------------------------------------------------------
-  MS-OXWSATT                [*Attachment Handling Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267322)
-  MS-OXWSBTRF               [*Bulk Transfer Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267323)
-  MS-OXWSCONT               [*Contacts Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267324)
-  MS-OXWSCORE               [*Core Items Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267325)
-  MS-OXWSFOLD               [*Folders and Folder Permissions Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267326)
-  MS-OXWSITEMID             [*Web Service Item ID Algorithm*](http://go.microsoft.com/fwlink/?LinkID=616012)
-  MS-OXWSMSG                [*E-Mail Message Types Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267327)
-  MS-OXWSMTGS               [*Calendaring Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267328)
-  MS-OXWSSYNC               [*Mailbox Contents Synchronization Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267329)
-  MS-OXWSTASK               [*Tasks Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267330)
+Technical specification  | Protocol name
+:------------ | :-------------
+  MS-OXWSATT     |           [*Attachment Handling Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267322)
+  MS-OXWSBTRF    |           [*Bulk Transfer Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267323)
+  MS-OXWSCONT    |           [*Contacts Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267324)
+  MS-OXWSCORE    |           [*Core Items Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267325)
+  MS-OXWSFOLD    |           [*Folders and Folder Permissions Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267326)
+  MS-OXWSITEMID  |           [*Web Service Item ID Algorithm*](http://go.microsoft.com/fwlink/?LinkID=616012)
+  MS-OXWSMSG     |           [*E-Mail Message Types Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267327)
+  MS-OXWSMTGS    |           [*Calendaring Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267328)
+  MS-OXWSSYNC    |           [*Mailbox Contents Synchronization Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267329)
+  MS-OXWSTASK    |           [*Tasks Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267330)
 
-<span id="_Document_scope" class="anchor"><span id="_Toc421794290" class="anchor"><span id="_Toc329982556" class="anchor"><span id="_Toc308770200" class="anchor"><span id="_Toc387851220" class="anchor"></span></span></span></span></span>Requirement specification
+Requirement specification
 ======================================================================================================================================================================================================================================================================
 
 A requirement specification contains a list of requirements that are
@@ -300,34 +255,34 @@ One scenario is designed to verify the server-side, testable
 requirements in MS-OXWSATT test suite. The following table lists the
 scenarios designed in the test suite.
 
-  Scenario                    Description
-  --------------------------- -------------------------------------------------------------------------------------------------------------------
-  S01\_AttachmentProcessing   This scenario is designed to test operations related to the creation, retrieving, and deletion of the attachment.
+ Scenario  | Description
+:------------ | :-------------
+  S01\_AttachmentProcessing |   This scenario is designed to test operations related to the creation, retrieving, and deletion of the attachment.
 
 ### MS-OXWSBTRF
 
 One scenario is designed to verify the server-side, testable
 requirements in MS-OXWSBTRF test suite. The following table lists the
 scenarios designed in the test suite.
+ 
+ Scenario  | Description
+:------------ | :-------------
+  S01\_ExportAndUploadItems  |   This scenario is designed to export items from a mailbox server and upload items to a mailbox server.
 
-  Scenario                    Description
-  --------------------------- -------------------------------------------------------------------------------------------------------
-  S01\_ExportAndUploadItems   This scenario is designed to export items from a mailbox server and upload items to a mailbox server.
-
-### <span id="_MS-OXCRPC_S01_SynchronousCall" class="anchor"><span id="_Toc421794306" class="anchor"></span></span>MS-OXWSCONT
+### MS-OXWSCONT
 
 Six scenarios are designed to verify the server-side, testable
 requirements in MS-OXWSCONT test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario                                      Description
-  --------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  S01\_CreateGetDeleteContactItem               This scenario is designed to test operations related to creation, retrieving and deletion of the contact items in the server.
-  S02\_UpdateContactItem                        This scenario is designed to test operation related to updating of the contact items in the server.
-  S03\_CopyContactItem                          This scenario is designed to test operation related to copy of the contact items in the server.
-  S04\_MoveContactItem                          This scenario is designed to test operation related to movement of the contact items in the server.
-  S05\_OperateMultipleContactItems              This scenario is designed to test operations related to creation, updating, movement, retrieving, copy and deletion of the multiple contact items in the server.
-  S06\_OperateContactItemWithOptionalElements   This scenario is designed to test operations related to creation, updating, movement, retrieving and copy of the contact items with optional elements in the server.
+   Scenario  | Description
+:------------ | :-------------
+  S01\_CreateGetDeleteContactItem      |         This scenario is designed to test operations related to creation, retrieving and deletion of the contact items in the server.
+  S02\_UpdateContactItem               |         This scenario is designed to test operation related to updating of the contact items in the server.
+  S03\_CopyContactItem                 |         This scenario is designed to test operation related to copy of the contact items in the server.
+  S04\_MoveContactItem                 |         This scenario is designed to test operation related to movement of the contact items in the server.
+  S05\_OperateMultipleContactItems     |         This scenario is designed to test operations related to creation, updating, movement, retrieving, copy and deletion of the multiple contact items in the server.
+  S06\_OperateContactItemWithOptionalElements |  This scenario is designed to test operations related to creation, updating, movement, retrieving and copy of the contact items with optional elements in the server.
 
 ### MS-OXWSCORE
 
@@ -335,33 +290,34 @@ Eight scenarios are designed to verify the server-side, testable
 requirements in MS-OXWSCORE test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario                            Description
-  ----------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  S01\_ManageBaseItems                This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, deletion and mark of base items on the server.
-  S02\_ManageContactItems             This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, deletion and mark of contact items on the server.
-  S03\_ManageDistributionListsItems   This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, deletion and mark of distribution list items on the server.
-  S04\_ManageEmailItems               This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, sending, deletion and mark of email items on the server.
-  S05\_ManageMeetingItems             This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, deletion and mark of calendar items on the server.
-  S06\_ManagePostItems                This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, deletion and mark of post items on the server.
-  S07\_ManageTaskItems                This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, deletion and mark of task items on the server.
-  S08\_ManageSevenKindsOfItems        This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, and deletion of base, contact, distribution list, email, meeting, post, and task items on the server.
+ 
+   Scenario  | Description
+:------------ | :-------------
+  S01\_ManageBaseItems        |        This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, deletion and mark of base items on the server.
+  S02\_ManageContactItems     |        This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, deletion and mark of contact items on the server.
+  S03\_ManageDistributionListsItems |  This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, deletion and mark of distribution list items on the server.
+  S04\_ManageEmailItems            |   This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, sending, deletion and mark of email items on the server.
+  S05\_ManageMeetingItems          |   This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, deletion and mark of calendar items on the server.
+  S06\_ManagePostItems             |   This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, deletion and mark of post items on the server.
+  S07\_ManageTaskItems             |   This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, deletion and mark of task items on the server.
+  S08\_ManageSevenKindsOfItems     |   This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, and deletion of base, contact, distribution list, email, meeting, post, and task items on the server.
 
-### <span id="_S1_MessageMethods_Validation" class="anchor"><span id="_Toc421794308" class="anchor"></span></span>MS-OXWSFOLD
+### MS-OXWSFOLD
 
 Eight scenarios are designed to verify the server-side, testable
 requirements in MS-OXWSFOLD test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario                  Description
-  ------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------
-  S01\_CreateDeleteFolder   This scenario is designed to test operations related to creation and deletion of folders from a mailbox.
-  S02\_CopyFolder           This scenario is designed to test operations related to the copy of an identified folder.
-  S03\_MoveFolder           This scenario is designed to test operations related to moving folders from a specified parent folder and putting them in another parent folder.
-  S04\_GetFolder            This scenario is designed to test operations related to retrieving folders.
-  S05\_EmptyFolder          This scenario is designed to test operations related to emptying identified folders and deleting subfolders of the specified folder.
-  S06\_UpdateFolder         This scenario is designed to test operations related to the modification properties of an existing folder.
-  S07\_FolderPermission     This scenario is designed to test permission related cases.
-  S08\_OptionalElements     This scenario is designed to test all operations with/without all optional elements.
+Scenario  | Description
+:------------ | :-------------
+  S01\_CreateDeleteFolder |  This scenario is designed to test operations related to creation and deletion of folders from a mailbox.
+  S02\_CopyFolder         |  This scenario is designed to test operations related to the copy of an identified folder.
+  S03\_MoveFolder         |  This scenario is designed to test operations related to moving folders from a specified parent folder and putting them in another parent folder.
+  S04\_GetFolder          |  This scenario is designed to test operations related to retrieving folders.
+  S05\_EmptyFolder        |  This scenario is designed to test operations related to emptying identified folders and deleting subfolders of the specified folder.
+  S06\_UpdateFolder       |  This scenario is designed to test operations related to the modification properties of an existing folder.
+  S07\_FolderPermission   |  This scenario is designed to test permission related cases.
+  S08\_OptionalElements   |  This scenario is designed to test all operations with/without all optional elements.
 
 ### MS-OXWSMSG
 
@@ -369,15 +325,15 @@ Seven scenarios are designed to verify the server-side, testable
 requirements in MS-OXWSMSG test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario                            Description
-  ----------------------------------- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  S01\_CreateGetDeleteEmailMessage    This scenario is designed to test operations related to creation, retrieving, and deletion of an email message from the server.
-  S02\_UpdateEmailMessage             This scenario is designed to test operation related to updating an email message on the server.
-  S03\_CopyEmailMessage               This scenario is designed to test operation related to copy of an email message on the server.
-  S04\_MoveEmailMessage               This scenario is designed to test operation related to movement of an email message on the server.
-  S05\_SendEmailMessage               This scenario is designed to test operation related to sending of an email message on the server.
-  S06\_OperateMultipleEmailMessages   This scenario is designed to test operations related to creation, retrieving, updating, copy, movement, sending and deletion of multiple email messages on the server at the same time.
-  S07\_OptionalElementsValidation     This scenario is designed to test operations related to creation, retrieving and deletion of an email message with/without optional elements.
+  Scenario  | Description
+:------------ | :-------------
+  S01\_CreateGetDeleteEmailMessage  |  This scenario is designed to test operations related to creation, retrieving, and deletion of an email message from the server.
+  S02\_UpdateEmailMessage         |    This scenario is designed to test operation related to updating an email message on the server.
+  S03\_CopyEmailMessage           |    This scenario is designed to test operation related to copy of an email message on the server.
+  S04\_MoveEmailMessage           |    This scenario is designed to test operation related to movement of an email message on the server.
+  S05\_SendEmailMessage           |    This scenario is designed to test operation related to sending of an email message on the server.
+  S06\_OperateMultipleEmailMessages |  This scenario is designed to test operations related to creation, retrieving, updating, copy, movement, sending and deletion of multiple email messages on the server at the same time.
+  S07\_OptionalElementsValidation   |  This scenario is designed to test operations related to creation, retrieving and deletion of an email message with/without optional elements.
 
 ### MS-OXWSMTGS
 
@@ -385,13 +341,13 @@ Five scenarios are designed to verify the server-side, testable
 requirements in MS-OXWSMTGS test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario                                   Description
-  ------------------------------------------ -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  S01\_CreateGetDeleteCalendarRelatedItem    This scenario is designed to test operations related to creation, retrieving and deletion of calendar related items on server.
-  S02\_UpdateCalendarRelatedItem             This scenario is designed to test operation related to updating of calendar related items on server.
-  S03\_CopyCalendarRelatedItem               This scenario is designed to test operation related to copy of calendar related items on server
-  S04\_MoveCalendarRelatedItem               This scenario is designed to test operation related to movement of calendar related items on server.
-  S05\_OperateMultipleCalendarRelatedItems   This scenario is designed to test operations related to creation, retrieving, updating, copy, movement and deletion of multiple calendar related items on server.
+  Scenario  | Description
+:------------ | :-------------
+  S01\_CreateGetDeleteCalendarRelatedItem |   This scenario is designed to test operations related to creation, retrieving and deletion of calendar related items on server.
+  S02\_UpdateCalendarRelatedItem          |   This scenario is designed to test operation related to updating of calendar related items on server.
+  S03\_CopyCalendarRelatedItem            |   This scenario is designed to test operation related to copy of calendar related items on server
+  S04\_MoveCalendarRelatedItem            |   This scenario is designed to test operation related to movement of calendar related items on server.
+  S05\_OperateMultipleCalendarRelatedItems |  This scenario is designed to test operations related to creation, retrieving, updating, copy, movement and deletion of multiple calendar related items on server.
 
 ### MS-OXWSSYNC
 
@@ -399,26 +355,26 @@ Four scenarios are designed to verify the server-side, testable
 requirements in MS-OXWSSYNC test suite. The following table lists the
 scenarios designed in this test suite.
 
-  Scenario                                          Description
-  ------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  S01\_SyncFolderHierarchy                          This scenario is designed to test SyncFolderHierarchy operation on the following folders: inbox, calendar, contacts, tasks and search.
-  S02\_SyncFolderItems                              The scenario is designed to test SyncFolderItems operation on the following items: MessageType item, MeetingRequestMessageType item, MeetingResponseMessageType item, MeetingCancellationMessageType item, TaskType item, ContactItemType item, PostItemType item, CalendarItemType item, DistributionListType item and ItemType item.
-  S03\_OperateSyncFolderHierarchyOptionalElements   This scenario is designed to test SyncFolderHierarchy operation succeeds to get the synchronization information of five types of folders: inbox, calendar, tasks, contacts, and search regardless of setting the optional elements.
-  S04\_OperateSyncFolderItemsOptionalElements       This scenario is designed to test SyncFolderItems operation succeeds to get the synchronization information of multiple items regardless of setting the optional elements.
+  Scenario  | Description
+:------------ | :-------------
+  S01\_SyncFolderHierarchy            |               This scenario is designed to test SyncFolderHierarchy operation on the following folders: inbox, calendar, contacts, tasks and search.
+  S02\_SyncFolderItems                 |              The scenario is designed to test SyncFolderItems operation on the following items: MessageType item, MeetingRequestMessageType item, MeetingResponseMessageType item, MeetingCancellationMessageType item, TaskType item, ContactItemType item, PostItemType item, CalendarItemType item, DistributionListType item and ItemType item.
+  S03\_OperateSyncFolderHierarchyOptionalElements  |  This scenario is designed to test SyncFolderHierarchy operation succeeds to get the synchronization information of five types of folders: inbox, calendar, tasks, contacts, and search regardless of setting the optional elements.
+  S04\_OperateSyncFolderItemsOptionalElements       | This scenario is designed to test SyncFolderItems operation succeeds to get the synchronization information of multiple items regardless of setting the optional elements.
 
-### <span id="S1" class="anchor"><span id="_Toc421794312" class="anchor"></span></span>MS-OXWSTASK
+### MS-OXWSTASK
 
 Six scenarios are designed to verify the server-side, testable
 requirements in MS-OXWSTASK test suite. The following table lists the
 scenarios designed in this test suite
 
-  Scenario                                   Description
-  ------------------------------------------ --------------------------------------------------------------------------------------------------------------------------------
-  S01\_CreateGetDeleteTaskItem               This scenario is designed to test operations related to creation, retrieving, and deletion of a task item from the server.
-  S02\_UpdateTaskItem                        This scenario is designed to test the operation related to updating a task item on the server.
-  S03\_CopyTaskItem                          This scenario is designed to test the operation related to copying a task item on the server.
-  S04\_MoveTaskItem                          This scenario is designed to test the operation related to moving a task item on the server.
-  S05\_OperateMultipleTaskItems              This scenario is designed to test operation related to operating multiple task items on the server at the same time.
+ Scenario  | Description
+:------------ | :-------------
+  S01\_CreateGetDeleteTaskItem        |           This scenario is designed to test operations related to creation, retrieving, and deletion of a task item from the server.
+  S02\_UpdateTaskItem                 |          This scenario is designed to test the operation related to updating a task item on the server.
+  S03\_CopyTaskItem                   |         This scenario is designed to test the operation related to copying a task item on the server.
+  S04\_MoveTaskItem                   |        This scenario is designed to test the operation related to moving a task item on the server.
+  S05\_OperateMultipleTaskItems       |       This scenario is designed to test operation related to operating multiple task items on the server at the same time.
   S06\_OperateTaskItemWithOptionalElements   This scenario is designed to test operations related to operating a task item with or without optional elements on the server.
 
-<span id="scenario1" class="anchor"></span>
+
