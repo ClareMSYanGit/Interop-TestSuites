@@ -443,18 +443,18 @@ configuration files can be modified directly. The common configuration
 file and the test suite-specific configuration files can also be
 modified through a script.
 
-1.  Common configuration file
+###Common configuration file
 
 The common configuration file contains configurable properties common to all
 SharePoint File Sync and WOPI Protocol test suites. This file must be
 modified to match the characteristics of the environment where the test
 suites are installed.
 
-Configuration file | Description
-:------------ | :-------------
+|Configuration file | Description|
+|:------------ | :-------------|
 FssWopiCommonConfiguration.deployment.ptfconfig |The deployment configuration file provides the environmental details that are common to the test suites.
 
-1.  Test-suite specific configuration files
+###Test-suite specific configuration files
 
 In addition to the common configuration file, each individual test suite
 has the following two configuration files for test suite-specific
@@ -476,7 +476,7 @@ of the properties. The specific configuration file will take precedence
 over the common configuration file when the same property exists in both
 places.
 
-1.  **Set the test suite to interactive mode**
+####Set the test suite to interactive mode####
 
 If the SUT is a non-Microsoft implementation of SharePoint Server, it is recommended that you further
 configure the test suite by setting the test
