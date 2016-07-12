@@ -662,7 +662,7 @@ A Microsoft Visual Studio solution file
       ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_Running6.png)
    ---------------------------------------------------------------------------------------------------------------------------------------- --
 
-  1.  Open **Test Explorer**. Select **TEST** and click **Windows**, then select **Test Explorer**..
+  1.  Open **Test Explorer**. Select **TEST** and click **Windows**, then select **Test Explorer**.
       ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_Running7.png)
    ---------------------------------------------------------------------------------------------------------------------------------------- --
 
