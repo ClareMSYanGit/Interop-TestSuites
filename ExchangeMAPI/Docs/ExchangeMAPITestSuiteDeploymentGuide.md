@@ -489,7 +489,7 @@ of the properties. The specific configuration file will take precedence
 over the common configuration file when the same property exists in both
 places.
 
-#### Set the test suite to interactive mode <a name="abcd"> </a>
+#### Set the test suite to interactive mode <a id="abcd"> </a>
 
 If the SUT is a non-Microsoft implementation of Exchange Server, it is
 recommended that you further configure the test suite by setting the
