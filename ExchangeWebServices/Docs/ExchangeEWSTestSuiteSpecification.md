@@ -26,7 +26,7 @@ specification.
 
 The Microsoft Open Specifications were written using the normative
 language defined in
-[*RFC2119*](http://go.microsoft.com/fwlink/?LinkId=117453). The
+[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453). The
 statements of them are extracted as protocol requirements which are
 listed in the requirement specification described in section 2. The test
 suites are developed to test the normative protocol requirements. In a
