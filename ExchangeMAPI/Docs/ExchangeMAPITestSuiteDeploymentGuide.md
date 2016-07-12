@@ -383,7 +383,7 @@ to run the test suites.
 7.  By default, the test suites use Exchange Web Service and Windows
     PowerShell script in the SUT control adapter. If you chose
     interactive mode for the SUT control adapter as described in section
-    [Set the test suite to interactive mode](#abcd), skip the
+    [Set the test suite to interactive mode](#set-the-test-suite-to-interactive-mode), skip the
     following steps.
 
 	a.  The test suites use Exchange Web Service in SUT control adapter to
@@ -489,7 +489,7 @@ of the properties. The specific configuration file will take precedence
 over the common configuration file when the same property exists in both
 places.
 
-#### Set the test suite to interactive mode <a name="abcd"> </a>
+#### Set the test suite to interactive mode <a name="set-the-test-suite-to-interactive-mode"> </a>
 
 If the SUT is a non-Microsoft implementation of Exchange Server, it is
 recommended that you further configure the test suite by setting the
