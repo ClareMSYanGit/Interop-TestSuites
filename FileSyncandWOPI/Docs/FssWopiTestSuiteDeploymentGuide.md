@@ -253,8 +253,8 @@ of SharePoint:*
 
 **SharePoint Server resources**
 
-|Test suite |  Resource type |  Resource name| 
-|:------------ | :-------------|:-------------|
+|Test suite |  Resource type |  Resource name
+|:------------ | :-------------|:-------------
 | All         | Domain User | User1|
 | |          Domain User  |                      User2
 | |          Domain User   |                     User3
