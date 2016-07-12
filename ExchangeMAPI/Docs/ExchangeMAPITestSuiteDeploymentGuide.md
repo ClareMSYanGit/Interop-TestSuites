@@ -568,7 +568,7 @@ If the SUT is a non-Microsoft implementation of Exchange Server,
 configure the properties in the configuration file for the Exchange
 Server which is the closest match to the SUT implementation.
 
-SHOULD/MAY configuration files
+**SHOULD/MAY configuration files**
 
 Configuration file |  Description
 :------------ | :-------------
@@ -607,7 +607,7 @@ below to update configuration files and configure the test suite client.
 4.  By default, the test suites use Windows PowerShell script in the SUT
     control adapter to configure the SUT. If you chose interactive mode
     for the SUT control adapter as described in section
-    [Set-the-test-suite-to-interactive-mode](#set-the-test-suite-to-interactive-mode), skip this step.
+    [Set the test suite to interactive-mode](#set-the-test-suite-to-interactive-mode), skip this step.
 
 	a.  Set the execution policy to RemoteSigned.
 
