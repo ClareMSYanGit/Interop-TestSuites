@@ -1,46 +1,18 @@
-<span id="_Toc63679053"
-class="anchor"></span>![](media/image1.png){width="4.480314960629921in"
-height="1.4239206036745407in"}
-
 **SharePoint File Sync and WOPI Protocol Test Suites Specification**
+=====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+[Introduction](#introduction)
 
-**Contents**
+[Requirement specification](#requirement-specification)
 
-[1 Introduction 3](#_Toc403737985)
+[Design considerations](#design-considerations)
 
-[2 Requirement specification 4](#_Toc403737986)
+[Assumptions](#assumptions)
 
-[3 Design considerations 5](#design-considerations)
+[Dependencies](#dependencies)
 
-[3.1 Assumptions 5](#assumptions)
+[Package design](#package-design)
 
-[3.2 Dependencies 5](#dependencies)
-
-[4 Package design 6](#package-design)
-
-[4.1 Architecture 6](#architecture)
-
-[4.2 Common library 7](#common-library)
-
-[4.2.1 Helper methods 7](#helper-methods)
-
-[4.2.2 Message structures 7](#message-structures)
-
-[4.3 Adapter 7](#adapter)
-
-[4.3.1 Protocol Adapter 7](#protocol-adapter)
-
-[4.3.2 SUT Control Adapter 7](#sut-control-adapter)
-
-[4.4 Test suite 8](#test-suites)
-
-[4.4.1 Shared Test Suite 8](#shared-test-suite)
-
-[4.4.2 MS-FSSHTTP-FSSHTTPB 8](#ms-fsshttp-fsshttpb)
-
-[4.4.3 MS-WOPI 9](#_Toc403738001)
-
-<span id="_Technical_Document_Introduction" class="anchor"><span id="_Test_Method" class="anchor"><span id="_Toc403737985" class="anchor"><span id="_Toc332648623" class="anchor"><span id="_Toc332794509" class="anchor"><span id="_Toc332876776" class="anchor"><span id="_Toc332899509" class="anchor"><span id="_Toc351540483" class="anchor"><span id="_Toc106428318" class="anchor"></span></span></span></span></span></span></span></span></span>Introduction
+Introduction
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 The SharePoint File Sync and WOPI Protocol Test Suites are implemented
@@ -58,7 +30,7 @@ the technical specification.
 
 The Microsoft Open Specifications were written using the normative
 language defined in
-[*RFC2119*](http://go.microsoft.com/fwlink/?LinkId=117453). The
+[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453). The
 statements of them are extracted as protocol requirements which are
 listed in the requirement specification described in section 2. The test
 suites are developed to test the normative protocol requirements. In a
@@ -70,16 +42,16 @@ The technical specifications listed in the following table are included
 in the SharePoint File Sync and WOPI Protocol Suites package. The
 version of these technical specifications is v20130726.
 
-SharePoint File Sync and WOPI protocol technical specifications
+**SharePoint File Sync and WOPI protocol technical specifications**
 
-  Technical specification   Protocol name
-  ------------------------- -------------------------------------------------------------------------------------------------------------
-  MS-WOPI                   [Web Application Open Platform Interface Protocol](http://go.microsoft.com/fwlink/?LinkId=389443)
-  MS-FSSHTTP                [File Synchronization via SOAP over HTTP Protocol](http://go.microsoft.com/fwlink/?LinkId=389444)
-  MS-FSSHTTPB               [Binary Requests for File Synchronization via SOAP Protocol](http://go.microsoft.com/fwlink/?LinkId=389445)
-  MS-FSSHTTPD               [Binary Data Format for File Synchronization via SOAP](http://go.microsoft.com/fwlink/?LinkId=389446)
+Technical specification| Protocol name
+:------------ | :-------------
+  MS-WOPI     |              [Web Application Open Platform Interface Protocol](http://go.microsoft.com/fwlink/?LinkId=389443)
+  MS-FSSHTTP  |              [File Synchronization via SOAP over HTTP Protocol](http://go.microsoft.com/fwlink/?LinkId=389444)
+  MS-FSSHTTPB |              [Binary Requests for File Synchronization via SOAP Protocol](http://go.microsoft.com/fwlink/?LinkId=389445)
+  MS-FSSHTTPD |              [Binary Data Format for File Synchronization via SOAP](http://go.microsoft.com/fwlink/?LinkId=389446)
 
-<span id="_Document_scope" class="anchor"><span id="_Toc403737986" class="anchor"><span id="_Toc329982556" class="anchor"><span id="_Toc308770200" class="anchor"><span id="_Toc387851220" class="anchor"></span></span></span></span></span>Requirement specification
+Requirement specification
 ======================================================================================================================================================================================================================================================================
 
 A requirement specification contains a list of requirements that are
@@ -293,23 +265,23 @@ MS-FSSHTTP behaviors in both MS-WOPI and MS-FSSHTTP-FSSHTTPB test
 suites. The following table lists the scenarios designed in the shared
 test suite:
 
-  Scenario                                                        Description
-  --------------------------------------------------------------- -------------------------------------------------------------------------
-  S01\_Cell                                                       Verifies the cell sub-request operation.
-  <span id="S02" class="anchor"></span>S02\_Coauth                Verifies the co-authoring sub-request operation.
-  <span id="S03" class="anchor"></span>S03\_SchemaLock            Verifies the schema lock sub-request operation.
-  <span id="S04" class="anchor"></span>S04\_ExclusiveLock         Verifies the exclusive lock sub-request operation.
-  <span id="S05" class="anchor"></span>S05\_WhoAmI                Verifies the WhoAmI sub-request operation.
-  <span id="S06" class="anchor"></span>S06\_ServerTime            Verifies the ServerTime sub-request operation.
-  <span id="S07" class="anchor"></span>S07\_EditorsTable          Verifies the EditorsTable sub-request operation.
-  <span id="S08" class="anchor"></span>S08\_GetDocMetaInfo        Verifies the GetDocMetaInfo sub-request operations.
-  <span id="S09" class="anchor"></span>S09\_GetVersions           Verifies the GetVersions sub-request operations.
-  <span id="S10" class="anchor"></span>S10\_MultipleSubRequests   Verifies at least two sub-requests with various dependency types.
-  <span id="S11" class="anchor"></span>S11\_QueryAccess           Verifies the QueryAccess sub-request operation.
-  <span id="S12" class="anchor"></span>S12\_QueryChanges          Verifies the QueryChanges sub-request operation.
-  S13\_PutChanges                                                 Verifies the PutChanges sub-request operation.
-  S14\_AllocateExtendedGuidRange                                  Verifies the allocate extended GUID range sub-request operations.
-  S15\_CreateFile                                                 Verifies the PutChanges sub-request to create a new file on the server.
+ Scenario| Description
+:------------ | :-------------
+  S01\_Cell                                              |          Verifies the cell sub-request operation.
+  <span id="S02" class="anchor"></span>S02\_Coauth       |          Verifies the co-authoring sub-request operation.
+  <span id="S03" class="anchor"></span>S03\_SchemaLock   |          Verifies the schema lock sub-request operation.
+  <span id="S04" class="anchor"></span>S04\_ExclusiveLock|          Verifies the exclusive lock sub-request operation.
+  <span id="S05" class="anchor"></span>S05\_WhoAmI       |          Verifies the WhoAmI sub-request operation.
+  <span id="S06" class="anchor"></span>S06\_ServerTime   |          Verifies the ServerTime sub-request operation.
+  <span id="S07" class="anchor"></span>S07\_EditorsTable |          Verifies the EditorsTable sub-request operation.
+  <span id="S08" class="anchor"></span>S08\_GetDocMetaInfo |        Verifies the GetDocMetaInfo sub-request operations.
+  <span id="S09" class="anchor"></span>S09\_GetVersions    |        Verifies the GetVersions sub-request operations.
+  <span id="S10" class="anchor"></span>S10\_MultipleSubRequests |   Verifies at least two sub-requests with various dependency types.
+  <span id="S11" class="anchor"></span>S11\_QueryAccess         |   Verifies the QueryAccess sub-request operation.
+  <span id="S12" class="anchor"></span>S12\_QueryChanges        |   Verifies the QueryChanges sub-request operation.
+  S13\_PutChanges                                               |   Verifies the PutChanges sub-request operation.
+  S14\_AllocateExtendedGuidRange                                |   Verifies the allocate extended GUID range sub-request operations.
+  S15\_CreateFile                                               |   Verifies the PutChanges sub-request to create a new file on the server.
 
 ### MS-FSSHTTP-FSSHTTPB
 
@@ -317,25 +289,25 @@ test suite:
 MS-FSSHTTP-FSSHTTPB test suite. The following table lists the scenarios
 designed in the MS-FSSHTTP-FSSHTTPB test suite:
 
-  Scenario                                                Description
-  ------------------------------------------------------- -------------------------------------------------------------------------
-  MS\_FSSHTTP\_FSSHTTPB\_S01\_Cell                        Verifies the cell sub-request operation.
-  MS\_FSSHTTP\_FSSHTTPB\_S02\_Coauth                      Verifies the co-authoring sub-request operation.
-  MS\_FSSHTTP\_FSSHTTPB\_S03\_SchemaLock                  Verifies the schema lock sub-request operation.
-  MS\_FSSHTTP\_FSSHTTPB\_S04\_ExclusiveLock               Verifies the exclusive lock sub-request operation.
-  MS\_FSSHTTP\_FSSHTTPB\_S05\_WhoAmI                      Verifies the WhoAmI sub-request operation.
-  MS\_FSSHTTP\_FSSHTTPB\_S06\_ServerTime                  Verifies the ServerTime sub-request operation.
-  MS\_FSSHTTP\_FSSHTTPB\_S07\_EditorsTable                Verifies the EditorsTable sub-request operation.
-  MS\_FSSHTTP\_FSSHTTPB\_S08\_GetDocMetaInfo              Verifies the GetDocMetaInfo sub-request operations.
-  MS\_FSSHTTP\_FSSHTTPB\_S09\_GetVersions                 Verifies the GetVersions sub-request operations.
-  MS\_FSSHTTP\_FSSHTTPB\_S10\_MultipleSubRequests         Verifies at least two sub-requests with various dependency types.
-  MS\_FSSHTTP\_FSSHTTPB\_S11\_QueryAccess                 Verifies the QueryAccess sub-request operation.
-  MS\_FSSHTTP\_FSSHTTPB\_S12\_QueryChanges                Verifies the QueryChanges sub-request operation.
-  MS\_FSSHTTP\_FSSHTTPB\_S13\_PutChanges                  Verifies the PutChanges sub-request operation.
-  MS\_FSSHTTP\_FSSHTTPB\_S14\_AllocateExtendedGuidRange   Verifies the allocate extended GUID range sub-request operations.
-  MS\_FSSHTTP\_FSSHTTPB\_S15\_CreateFile                  Verifies the PutChanges sub-request to create a new file on the server.
+  Scenario| Description
+:------------ | :-------------
+  MS\_FSSHTTP\_FSSHTTPB\_S01\_Cell        |                Verifies the cell sub-request operation.
+  MS\_FSSHTTP\_FSSHTTPB\_S02\_Coauth      |                Verifies the co-authoring sub-request operation.
+  MS\_FSSHTTP\_FSSHTTPB\_S03\_SchemaLock  |                Verifies the schema lock sub-request operation.
+  MS\_FSSHTTP\_FSSHTTPB\_S04\_ExclusiveLock|               Verifies the exclusive lock sub-request operation.
+  MS\_FSSHTTP\_FSSHTTPB\_S05\_WhoAmI       |               Verifies the WhoAmI sub-request operation.
+  MS\_FSSHTTP\_FSSHTTPB\_S06\_ServerTime   |               Verifies the ServerTime sub-request operation.
+  MS\_FSSHTTP\_FSSHTTPB\_S07\_EditorsTable |               Verifies the EditorsTable sub-request operation.
+  MS\_FSSHTTP\_FSSHTTPB\_S08\_GetDocMetaInfo|              Verifies the GetDocMetaInfo sub-request operations.
+  MS\_FSSHTTP\_FSSHTTPB\_S09\_GetVersions   |              Verifies the GetVersions sub-request operations.
+  MS\_FSSHTTP\_FSSHTTPB\_S10\_MultipleSubRequests |        Verifies at least two sub-requests with various dependency types.
+  MS\_FSSHTTP\_FSSHTTPB\_S11\_QueryAccess         |        Verifies the QueryAccess sub-request operation.
+  MS\_FSSHTTP\_FSSHTTPB\_S12\_QueryChanges        |        Verifies the QueryChanges sub-request operation.
+  MS\_FSSHTTP\_FSSHTTPB\_S13\_PutChanges          |        Verifies the PutChanges sub-request operation.
+  MS\_FSSHTTP\_FSSHTTPB\_S14\_AllocateExtendedGuidRange |  Verifies the allocate extended GUID range sub-request operations.
+  MS\_FSSHTTP\_FSSHTTPB\_S15\_CreateFile                |  Verifies the PutChanges sub-request to create a new file on the server.
 
-### <span id="_MS-OXCRPC_S01_SynchronousCall" class="anchor"><span id="_Toc403738001" class="anchor"></span></span>MS-WOPI
+### MS-WOPI
 
 In the MS-WOPI test suite, there are a total of 20 scenarios that are
 designed to cover the server-side, testable requirements.
@@ -350,28 +322,27 @@ operations fully defined in the MS-WOPI Open Specification.
 The following table lists the scenarios designed in the MS-WOPI test
 suite:
 
-  Scenario                                                                                       Description
-  ---------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  MS\_WOPI\_S01\_Cell                                                                            Verifies the cell sub-request operation.
-  MS\_WOPI\_S02\_Coauth                                                                          Verifies the co-authoring sub-request operation.
-  MS\_WOPI\_S03\_SchemaLock                                                                      Verifies the schema lock sub-request operation.
-  MS\_WOPI\_S04\_ExclusiveLock                                                                   Verifies the exclusive lock sub-request operation.
-  MS\_WOPI\_S05\_WhoAmI                                                                          Verifies the WhoAmI sub-request operation.
-  MS\_WOPI\_S06\_ServerTime                                                                      Verifies the ServerTime sub-request operation.
-  MS\_WOPI\_S07\_EditorsTable                                                                    Verifies the EditorsTable sub-request operation.
-  MS\_WOPI\_S08\_GetDocMetaInfo                                                                  Verifies the GetDocMetaInfo sub-request operations.
-  MS\_WOPI\_S09\_GetVersions                                                                     Verifies the GetVersions sub-request operations.
-  MS\_WOPI\_S10\_MultipleSubRequests                                                             Verifies at least two sub-requests with various dependency types.
-  MS\_WOPI\_S11\_QueryAccess                                                                     Verifies the QueryAccess sub-request operation.
-  MS\_WOPI\_S12\_QueryChanges                                                                    Verifies the QueryChanges sub-request operation.
-  MS\_WOPI\_S13\_PutChanges                                                                      Verifies the PutChanges sub-request operation.
-  MS\_WOPI\_S14\_AllocateExtendedGuidRange                                                       Verifies the allocate extended GUID range sub-request operations.
-  MS\_WOPI\_S15\_CreateFile                                                                      Verifies the PutChanges sub-request to create a new file on the server.
-  MS\_WOPI\_S16\_CellWithRelative                                                                Verifies the cell sub-request operation by sending the data with “X-WOPI-RelativeTarget” header which is specified in section 3.3.5.1.8 in MS-WOPI.
-  <span id="_S1_MessageMethods_Validation" class="anchor"></span>MS\_WOPI\_S17\_FileLevelItems   Verify CheckFileInfo, PutRelativeFile, Lock, Unlock, RefreshLock, UnlockAndRelock, ExecuteCellStorageRequest, ExecuteCellStorageRelativeRequest, DeleteFile operation.
-  MS\_WOPI\_S18\_FolderLevelItems                                                                Verify CheckFolderInfo operation.
-  MS\_WOPI\_S19\_FileContentLevelItems                                                           Verify GetFile, PutFile operation.
-  MS\_WOPI\_S20\_FolderChildrenLevelItems                                                        Verify EnumerateChildren operation.
+Scenario| Description
+:------------ | :-------------
+  MS\_WOPI\_S01\_Cell          |           Verifies the cell sub-request operation.
+  MS\_WOPI\_S02\_Coauth        |           Verifies the co-authoring sub-request operation.
+  MS\_WOPI\_S03\_SchemaLock    |           Verifies the schema lock sub-request operation.
+  MS\_WOPI\_S04\_ExclusiveLock |           Verifies the exclusive lock sub-request operation.
+  MS\_WOPI\_S05\_WhoAmI        |           Verifies the WhoAmI sub-request operation.
+  MS\_WOPI\_S06\_ServerTime    |           Verifies the ServerTime sub-request operation.
+  MS\_WOPI\_S07\_EditorsTable  |           Verifies the EditorsTable sub-request operation.
+  MS\_WOPI\_S08\_GetDocMetaInfo|           Verifies the GetDocMetaInfo sub-request operations.
+  MS\_WOPI\_S09\_GetVersions   |           Verifies the GetVersions sub-request operations.
+  MS\_WOPI\_S10\_MultipleSubRequests |     Verifies at least two sub-requests with various dependency types.
+  MS\_WOPI\_S11\_QueryAccess         |     Verifies the QueryAccess sub-request operation.
+  MS\_WOPI\_S12\_QueryChanges        |     Verifies the QueryChanges sub-request operation.
+  MS\_WOPI\_S13\_PutChanges          |     Verifies the PutChanges sub-request operation.
+  MS\_WOPI\_S14\_AllocateExtendedGuidRange |  Verifies the allocate extended GUID range sub-request operations.
+  MS\_WOPI\_S15\_CreateFile                |  Verifies the PutChanges sub-request to create a new file on the server.
+  MS\_WOPI\_S16\_CellWithRelative          |  Verifies the cell sub-request operation by sending the data with “X-WOPI-RelativeTarget” header which is specified in section 3.3.5.1.8 in MS-WOPI.
+  MS\_WOPI\_S17\_FileLevelItems |  Verify CheckFileInfo, PutRelativeFile, Lock, Unlock, RefreshLock, UnlockAndRelock, ExecuteCellStorageRequest, ExecuteCellStorageRelativeRequest, DeleteFile operation.
+  MS\_WOPI\_S18\_FolderLevelItems               |  Verify CheckFolderInfo operation.
+  MS\_WOPI\_S19\_FileContentLevelItems          |   Verify GetFile, PutFile operation.
+  MS\_WOPI\_S20\_FolderChildrenLevelItems       |   Verify EnumerateChildren operation.
 
-<span id="S1" class="anchor"><span id="scenario1"
-class="anchor"></span></span>
+
