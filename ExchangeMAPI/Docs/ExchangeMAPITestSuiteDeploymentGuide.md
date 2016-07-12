@@ -630,7 +630,6 @@ A Microsoft Visual Studio solution file
 **ExchangeMAPIProtocolTestSuites.sln** is provided in the **Source**
 folder. You can run a single or multiple test cases in Visual Studio.
 
-  -------------------------------------------------------------------------------------------------------------------------------------------
   1.  Open **ExchangeMAPIProtocolTestSuites.sln** in Microsoft Visual Studio.                                                              
       ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_Running1.png)                                                                                                                                     
                                                                                                                                            
