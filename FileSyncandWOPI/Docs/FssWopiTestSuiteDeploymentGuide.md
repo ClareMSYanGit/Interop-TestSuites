@@ -1,5 +1,13 @@
 SharePoint File Sync and WOPI Protocol Test Suite Deployment Guide
 =====================================================================================================================================================
+- [Overview](#overview)
+- [Prerequisites](#prerequisites)
+- [Deploying the test suites](#deploying-the-test-suites)
+- [Test suite directories](#test-suite-directories)
+- [Configuring the test suites](#configuring-the-test-suites)
+- [Running the test suites](#running-the-test-suites)
+- [Test suite results, logs, and reporting](#test-suite-results-logs-and-reporting)
+- [Appendix](#appendix)
 
 Overview
 =====================================================================================================================================================
@@ -42,13 +50,13 @@ The test suite client is the client side of the test suite environment.
 The following table shows the minimum resource requirements for the test
 suite client.
 
-Test suite client resource requirements
+**Test suite client resource requirements**
 
-  Component   Test suite client minimum requirement
-  ----------- ---------------------------------------
-  RAM         2GB
-  Hard Disk   3GB of free space
-  Processor   &gt;= 1GHz
+ Component  |Test suite client minimum requirement
+:------------ | :-------------
+  RAM       |  2GB
+  Hard Disk |  3GB of free space
+  Processor |  >= 1GHz
 
 Software requirements
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -69,12 +77,11 @@ following versions of SharePoint Server:
 The following table describes the necessary server roles required for a
 test suite deployment with a Microsoft implementation.
 
-Required SUT roles
-
-  Role                                         Description
-  -------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Active Directory Domain Controller (AD DC)   Active Directory Domain Controller provides secure data for users and computers. An AD DC can coexist with a SharePoint server. A typical test configuration has an AD DC and SharePoint Server installed on separate machines.
-  SharePoint Server (SUT)                      The SharePoint server in the topology.
+**Required SUT roles**
+Role | Description
+:------------ | :-------------
+  Active Directory Domain Controller (AD DC)   |Active Directory Domain Controller provides secure data for users and computers. An AD DC can coexist with a SharePoint server. A typical test configuration has an AD DC and SharePoint Server installed on separate machines.
+  SharePoint Server (SUT)                    |  The SharePoint server in the topology.
 
 The following diagram is an example of what a typical SharePoint File
 Sync and WOPI Protocol Test Suite environment may look like. This
