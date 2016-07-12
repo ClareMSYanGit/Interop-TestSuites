@@ -253,35 +253,35 @@ of SharePoint:*
 
 **SharePoint Server resources**
 
- Test suite |  Resource type |  Resource name
-:------------ | :-------------
-  All         |          Domain User |                       User1
-              |          Domain User  |                      User2
-              |          Domain User   |                     User3
-              |          Domain User   |                     ReadOnlyUser
-              |          Domain User   |                     NoUseRemoteUser
-              |          Text document  |                    FileSyncWOPIBigTest.txt
-  MS-FSSHTTP-FSSHTTPB |  Site collection |                   MSFSSHTTPFSSHTTPB\_SiteCollection
-                  |      Document library |                  MSFSSHTTPFSSHTTPB\_DocumentLibrary
-                  |      Zip file         |                  FileSyncWOPI\_ZipTestData.zip
-                  |      Text document    |                  FileSyncWOPI\_TestData.txt
-                  |      Note file        |                  FileSyncWOPI\_OneNoteWithODB.one
-                  |      Permission level |                  NoUseRemoteInterfacePermissionLevel
-  |MS-WOPI              || Site collection  |                  MSWOPI\_SiteCollection
-  | | Document library |    MSWOPI\_SharedDocumentLibrary
-  | | Document library |    MSWOPI\_DocumentLibrary
-  | | Folder           |    MSWOPI\_TestFolder
-  | | Zip file         |    FileSyncWOPI\_ZipTestData.zip
-  | | Text document    |    FileSyncWOPI\_TestData.txt
-  | | Note file        |    FileSyncWOPI\_OneNoteWithODB.one
-  | | Text document    |    MSWOPI\_TestData1.txt
-  | | Text document    |                  MSWOPI\_TestData2.txt
-  | | Secure Store Service Application |  MSWOPI\_TargetAppWithNotGroupAndWindows
-  | | Secure Store Service Application |  MSWOPI\_TargetAppWithGroupAndNoWindows
-  | | Domain User                      |  MSWOPIUser
-  | | Domain User                      |  FileSyncWOPIUser
-  | | Folder                           |  MSWOPI\_TestFolderCreatedByUser1
-  | | Permission level                 |  NoUseRemoteInterfacePermissionLevel
+|Test suite |  Resource type |  Resource name| 
+|:------------ | :-------------|:-------------|
+| All         | Domain User | User1|
+| |          Domain User  |                      User2
+| |          Domain User   |                     User3
+| |          Domain User   |                     ReadOnlyUser
+| |          Domain User   |                     NoUseRemoteUser
+| |          Text document  |                    FileSyncWOPIBigTest.txt
+|MS-FSSHTTP-FSSHTTPB |  Site collection |                   MSFSSHTTPFSSHTTPB\_SiteCollection
+|Document library |                  MSFSSHTTPFSSHTTPB\_DocumentLibrary
+|Zip file         |                  FileSyncWOPI\_ZipTestData.zip
+|Text document    |                  FileSyncWOPI\_TestData.txt
+|Note file        |                  FileSyncWOPI\_OneNoteWithODB.one
+|Permission level |   NoUseRemoteInterfacePermissionLevel
+|MS-WOPI              |Site collection  |   MSWOPI\_SiteCollection
+| | Document library |    MSWOPI\_SharedDocumentLibrary
+| | Document library |    MSWOPI\_DocumentLibrary
+| | Folder           |    MSWOPI\_TestFolder
+| | Zip file         |    FileSyncWOPI\_ZipTestData.zip
+| | Text document    |    FileSyncWOPI\_TestData.txt
+| | Note file        |    FileSyncWOPI\_OneNoteWithODB.one
+| | Text document    |    MSWOPI\_TestData1.txt
+| | Text document    |                  MSWOPI\_TestData2.txt
+| | Secure Store Service Application |  MSWOPI\_TargetAppWithNotGroupAndWindows
+| | Secure Store Service Application |  MSWOPI\_TargetAppWithGroupAndNoWindows
+| | Domain User                      |  MSWOPIUser
+| | Domain User                      |  FileSyncWOPIUser
+| | Folder                           |  MSWOPI\_TestFolderCreatedByUser1
+| | Permission level                 |  NoUseRemoteInterfacePermissionLevel
 
 ### Configuring the SUT using the setup configuration script
 
