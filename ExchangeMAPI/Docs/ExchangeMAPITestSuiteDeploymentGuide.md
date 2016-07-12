@@ -655,6 +655,7 @@ A Microsoft Visual Studio solution file
 
   ----------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------
   1.  Open **MS-OXCROPS.sln** in Microsoft Visual Studio.
+  
 	  ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_Running5.png)
    ---------------------------------------------------------------------------------------------------------------------------------------- --
 
