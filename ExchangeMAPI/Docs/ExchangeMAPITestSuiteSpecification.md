@@ -541,11 +541,11 @@ Five scenarios are designed for the MS-OXORULE test suite to verify the
 structure and the server behavior. The following table lists the
 scenarios designed in this test suite.
 
- |Scenario  |  Description|
+|Scenario  |  Description|
 |:------------ | :-------------|
-  |S01\_AddModifyDeleteRetrieveRules   |      Validates server behaviors of the following:                                            
- ||   The operations of RopModifyRules and RopGetRulesTable when adding, modifying, deleting and retrieving standard rules.    |      
- ||   The functions of ROPs referenced from MS-OXCMSG and MS-OXCTABL for adding, modifying, deleting, and retrieving extended rules. |                                       
+|S01\_AddModifyDeleteRetrieveRules   |      Validates server behaviors of the following:                                            
+||   The operations of RopModifyRules and RopGetRulesTable when adding, modifying, deleting and retrieving standard rules.    |      
+||   The functions of ROPs referenced from MS-OXCMSG and MS-OXCTABL for adding, modifying, deleting, and retrieving extended rules. |                                        
 |  S02\_ProcessServerSideRulesOtherthanOOF |  Validates server behaviors of processing server-side rules other than the Out-of-Office rule because the action of OP\_OOF\_REPLY is complicated enough to be a separate scenario.|
 |  S03\_ProcessOutOfOfficeRule             |  Validates server behaviors of processing the Out-of-Office rule.|
 |  S04\_ProcessRulesOnPublicFolder        |  Validates server behaviors of processing server-side rules on the public folder.|
