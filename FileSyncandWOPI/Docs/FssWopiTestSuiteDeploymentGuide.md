@@ -262,11 +262,11 @@ of SharePoint:*
 | |          Domain User   |                     NoUseRemoteUser
 | |          Text document  |                    FileSyncWOPIBigTest.txt
 |MS-FSSHTTP-FSSHTTPB |  Site collection |                   MSFSSHTTPFSSHTTPB\_SiteCollection
-|Document library |                  MSFSSHTTPFSSHTTPB\_DocumentLibrary
-|Zip file         |                  FileSyncWOPI\_ZipTestData.zip
-|Text document    |                  FileSyncWOPI\_TestData.txt
-|Note file        |                  FileSyncWOPI\_OneNoteWithODB.one
-|Permission level |   NoUseRemoteInterfacePermissionLevel
+| |Document library |                  MSFSSHTTPFSSHTTPB\_DocumentLibrary
+| |Zip file         |                  FileSyncWOPI\_ZipTestData.zip
+| |Text document    |                  FileSyncWOPI\_TestData.txt
+| |Note file        |                  FileSyncWOPI\_OneNoteWithODB.one
+| |Permission level |   NoUseRemoteInterfacePermissionLevel
 |MS-WOPI              |Site collection  |   MSWOPI\_SiteCollection
 | | Document library |    MSWOPI\_SharedDocumentLibrary
 | | Document library |    MSWOPI\_DocumentLibrary
