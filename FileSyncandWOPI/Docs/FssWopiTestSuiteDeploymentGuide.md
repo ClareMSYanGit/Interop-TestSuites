@@ -541,10 +541,9 @@ To change TSAP packet broadcast, do the following:
 1.  Add a property “BeaconLogTargetServer” along with the value of the
     specified machine name.
 
-> For example: &lt;Property name="BeaconLogTargetServer" value="SUT01"
-> /&gt;
+For example: &lt;Property name="BeaconLogTargetServer" value="SUT01"/&gt;
 
-1.  SHOULD/MAY configuration files
+### SHOULD/MAY configuration files
 
 The test suite has the following four SHOULD/MAY configuration files
 that are specific to all supported versions of the SUT. Each SHOULD/MAY
