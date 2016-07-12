@@ -255,19 +255,19 @@ of SharePoint:*
 
 |Test suite |  Resource type |  Resource name
 |:------------ | :-------------|:-------------
-| All         | Domain User | User1|
-| |          Domain User  |                      User2
-| |          Domain User   |                     User3
-| |          Domain User   |                     ReadOnlyUser
-| |          Domain User   |                     NoUseRemoteUser
-| |          Text document  |                    FileSyncWOPIBigTest.txt
-|MS-FSSHTTP-FSSHTTPB |  Site collection |                   MSFSSHTTPFSSHTTPB\_SiteCollection
-| |Document library |                  MSFSSHTTPFSSHTTPB\_DocumentLibrary
-| |Zip file         |                  FileSyncWOPI\_ZipTestData.zip
-| |Text document    |                  FileSyncWOPI\_TestData.txt
-| |Note file        |                  FileSyncWOPI\_OneNoteWithODB.one
+| All         | Domain User | User1
+| |  Domain User   |  User2
+| |  Domain User   |  User3
+| |  Domain User   |  ReadOnlyUser
+| |  Domain User   |  NoUseRemoteUser
+| |  Text document |  FileSyncWOPIBigTest.txt
+|MS-FSSHTTP-FSSHTTPB|  Site collection |  MSFSSHTTPFSSHTTPB\_SiteCollection
+| |Document library |   MSFSSHTTPFSSHTTPB\_DocumentLibrary
+| |Zip file         |   FileSyncWOPI\_ZipTestData.zip
+| |Text document    |   FileSyncWOPI\_TestData.txt
+| |Note file        |   FileSyncWOPI\_OneNoteWithODB.one
 | |Permission level |   NoUseRemoteInterfacePermissionLevel
-|MS-WOPI              |Site collection  |   MSWOPI\_SiteCollection
+|MS-WOPI            |Site collection  |   MSWOPI\_SiteCollection
 | | Document library |    MSWOPI\_SharedDocumentLibrary
 | | Document library |    MSWOPI\_DocumentLibrary
 | | Folder           |    MSWOPI\_TestFolder
@@ -285,8 +285,7 @@ of SharePoint:*
 
 ### Configuring the SUT using the setup configuration script
 
-> *The setup configuration script is only used for configuring the SUT
-> on the Windows platform.*
+*The setup configuration script is only used for configuring the SUT on the Windows platform.*
 
 To configure SUT using the setup configuration script, navigate to the
 **SUT** folder, right-click the **SharePointSUTConfiguration.cmd** and
@@ -381,7 +380,6 @@ For the MS-WOPI test suite, the SUT configuration steps are as follows:
 
 1.  Create a site collection named MSWOPI\_SiteCollection*.*
 
-<!-- -->
 
 1.  Create a document library named MSWOPI\_SharedDocumentLibrary
     in MSWOPI\_SiteCollection.
