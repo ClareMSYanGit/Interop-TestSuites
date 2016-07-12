@@ -43,16 +43,16 @@ v20121003.
 
 Technical specification  | Protocol name
 :------------ | :-------------
-  MS-OXWSATT     |           [*Attachment Handling Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267322)
-  MS-OXWSBTRF    |           [*Bulk Transfer Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267323)
-  MS-OXWSCONT    |           [*Contacts Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267324)
-  MS-OXWSCORE    |           [*Core Items Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267325)
-  MS-OXWSFOLD    |           [*Folders and Folder Permissions Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267326)
-  MS-OXWSITEMID  |           [*Web Service Item ID Algorithm*](http://go.microsoft.com/fwlink/?LinkID=616012)
-  MS-OXWSMSG     |           [*E-Mail Message Types Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267327)
-  MS-OXWSMTGS    |           [*Calendaring Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267328)
-  MS-OXWSSYNC    |           [*Mailbox Contents Synchronization Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267329)
-  MS-OXWSTASK    |           [*Tasks Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267330)
+  MS-OXWSATT     |           [Attachment Handling Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267322)
+  MS-OXWSBTRF    |           [Bulk Transfer Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267323)
+  MS-OXWSCONT    |           [Contacts Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267324)
+  MS-OXWSCORE    |           [Core Items Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267325)
+  MS-OXWSFOLD    |           [Folders and Folder Permissions Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267326)
+  MS-OXWSITEMID  |           [Web Service Item ID Algorithm*](http://go.microsoft.com/fwlink/?LinkID=616012)
+  MS-OXWSMSG     |           [E-Mail Message Types Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267327)
+  MS-OXWSMTGS    |           [Calendaring Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267328)
+  MS-OXWSSYNC    |           [Mailbox Contents Synchronization Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267329)
+  MS-OXWSTASK    |           [Tasks Web Service Protocol*](http://go.microsoft.com/fwlink/?LinkID=267330)
 
 Requirement specification
 ======================================================================================================================================================================================================================================================================
