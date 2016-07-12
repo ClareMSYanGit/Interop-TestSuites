@@ -375,6 +375,6 @@ scenarios designed in this test suite
   S03\_CopyTaskItem                   |         This scenario is designed to test the operation related to copying a task item on the server.
   S04\_MoveTaskItem                   |        This scenario is designed to test the operation related to moving a task item on the server.
   S05\_OperateMultipleTaskItems       |       This scenario is designed to test operation related to operating multiple task items on the server at the same time.
-  S06\_OperateTaskItemWithOptionalElements   This scenario is designed to test operations related to operating a task item with or without optional elements on the server.
+  S06\_OperateTaskItemWithOptionalElements  | This scenario is designed to test operations related to operating a task item with or without optional elements on the server.
 
 
