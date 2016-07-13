@@ -1021,11 +1021,11 @@ for a specific test suite, do the following:
     SUT control adapter\*\*.
 
 **Interactive mode values**
-Property name | Default value\* |Optional value |Description
-:------------ | :------------- | :------------- | :-------------
-  Adapter     |    managed or powershell |  interactive\*\* |  **managed**: The SUT control adapter is implemented in C\# managed code.                                                          
-||| **powershell**: The SUT control adapter is implemented through PowerShell.                                                           
-|||**interactive**: Interactive adapter is used for manually configuring the server. Interactive adapter displays a dialog box to perform manual test each time one of its methods is called. The dialog box will show the method name, parameter names and values\*\*\*.
+|Property name | Default value\* |Optional value |Description |
+|:------------ | :------------- | :------------- | :-------------
+|  Adapter     |    managed or powershell |  interactive\*\* |  **managed**: The SUT control adapter is implemented in C\# managed code. |                                                         
+||| **powershell**: The SUT control adapter is implemented through PowerShell.|                                                           
+|||**interactive**: Interactive adapter is used for manually configuring the server. Interactive adapter displays a dialog box to perform manual test each time one of its methods is called. The dialog box will show the method name, parameter names and values\*\*\*.|
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *\*The Adapter property value is set to either **managed** or
