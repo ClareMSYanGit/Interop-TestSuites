@@ -405,8 +405,7 @@ To change the TSAP packet broadcast, do the following:
 2.  Add a property “BeaconLogTargetServer” along with the value of the
     specified machine name.
 
-For example: &lt;Property name="BeaconLogTargetServer" value="dc01"
-/&gt;
+For example: &lt;Property name="BeaconLogTargetServer" value="dc01"/&gt;
 
 ### SHOULD/MAY configuration files
 
@@ -574,9 +573,8 @@ is created in the TestResults folder, along with an associated directory
 named **user\_MACHINENAME DateTimeStamp** that contains a log file in
 XML format and an HTML report.
 
- Appendix
-=========
-
+Appendix
+======================================================================================================
 For more information, see the following:
 
 References | Description
