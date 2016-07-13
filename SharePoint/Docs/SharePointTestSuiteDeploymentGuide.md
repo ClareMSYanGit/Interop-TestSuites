@@ -90,16 +90,15 @@ clean and virus-free.
 1.  Install Microsoft Forefront Protection 2010 for SharePoint in the
     following versions of SharePoint
 
--   Windows SharePoint Services 3.0 Service Pack 3 (SP3),
--   Microsoft SharePoint Foundation 2010 Service Pack 2 (SP2)
--   Microsoft Office SharePoint Server 2007 Service Pack 3 (SP3)
--   Microsoft SharePoint Server 2010 Service Pack 2 (SP2)
-
+	-   Windows SharePoint Services 3.0 Service Pack 3 (SP3),
+	-   Microsoft SharePoint Foundation 2010 Service Pack 2 (SP2)
+	-   Microsoft Office SharePoint Server 2007 Service Pack 3 (SP3)
+	-   Microsoft SharePoint Server 2010 Service Pack 2 (SP2)
 1.  Install any anti-virus software on the following versions of
     SharePoint:
 
--   Microsoft SharePoint Foundation 2013 Service Pack (SP1)
--   Microsoft SharePoint Server 2013 Service Pack (SP1)
+	-   Microsoft SharePoint Foundation 2013 Service Pack (SP1)
+	-   Microsoft SharePoint Server 2013 Service Pack (SP1)
 
 **Note**   The anti-virus software should implement [Virus Scan Engine
 API](http://go.microsoft.com/fwlink/?LinkId=518352). A number of ISVs
