@@ -1,4 +1,13 @@
 SharePoint Test Suite Deployment Guide
+=====================================================================================================================================================
+- [Overview](#overview)
+- [Prerequisites](#prerequisites)
+- [Deploying the test suites](#deploying-the-test-suites)
+- [Test suite directories](#test-suite-directories)
+- [Configuring the test suites](#configuring-the-test-suites)
+- [Running the test suites](#running-the-test-suites)
+- [Test suite results, logs, and reporting](#test-suite-results-logs-and-reporting)
+- [Appendix](#appendix)
 
 Overview
 =====================================================================================================================================================
@@ -43,13 +52,13 @@ The test suite client is the client side of the test suite environment.
 The following table shows the minimum resource requirements for the test
 suite client.
 
-Test suite client resource requirements
+**Test suite client resource requirements**
 
-  Component   Test suite client minimum requirement
-  ----------- ---------------------------------------
-  RAM         2GB
-  Hard Disk   3GB of free space
-  Processor   &gt;= 1GHz
+Component  | Test suite client minimum requirement
+:------------ | :-------------
+RAM       |   2GB
+Hard Disk |  3GB of free space
+Processor |  >= 1GHz
 
 Software requirements
 ------------------------------------------------------------------------------------------------------------------------------
@@ -90,7 +99,6 @@ clean and virus-free.
     SharePoint:
 
 -   Microsoft SharePoint Foundation 2013 Service Pack (SP1)
-
 -   Microsoft SharePoint Server 2013 Service Pack (SP1)
 
 **Note**   The anti-virus software should implement [Virus Scan Engine
