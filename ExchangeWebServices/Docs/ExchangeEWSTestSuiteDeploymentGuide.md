@@ -447,7 +447,7 @@ below to update configuration files and configure the test suite client.
     test suite-specific configuration files according to the comment of
     the property.
 
-Running test suites
+Running the test suites
 ========================================================================================================================================================================================================
 
 Once the required software has been installed and both the SUT and test suite client have
