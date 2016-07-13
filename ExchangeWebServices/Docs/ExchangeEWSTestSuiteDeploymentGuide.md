@@ -27,7 +27,7 @@ Server. The guide also introduces how to deploy, configure and run the
 test suites, and view test suite reports.
 
 Prerequisites
-=========================================================================================================================================================================================================
+========================================================================================================================================================================================================
 
 This section describes the hardware and software requirements for the
 test suites. In an Exchange server environment, the test suite
@@ -52,13 +52,13 @@ The test suite client is the client side of the test suite environment.
 The following table shows the minimum resource requirements for the test
 suite client.
 
-Test suite client resource requirements
+**Test suite client resource requirements**
 
-  Component   Test suite client minimum requirement
-  ----------- ---------------------------------------
-  RAM         2GB
-  Hard Disk   3G of free space
-  Processor   &gt;= 1GHz
+Component| Test suite client minimum requirement
+:------------ | :-------------
+RAM       |  2GB
+Hard Disk |  3G of free space
+Processor |  >= 1GHz
 
 Software requirements
 -------------------------------------------------------------------------------------------------------------------
@@ -220,29 +220,29 @@ Exchange server resources
 
 Test suite | Resource type |  Resource name |  Note
 :------------ | :------------- | :------------- | :-------------
-  All         |   --           |          --    |     --                         
-  MS-OXWSATT  |  Mailbox |  MSOXWSATT\_User01   | Mailbox type user
-  MS-OXWSBTRF |  Mailbox |  MSOXWSBTRF\_User01  | Mailbox type user
-  MS-OXWSCONT |  Mailbox |  MSOXWSCONT\_User01  | Mailbox type user
-  MS-OXWSCORE |  Mailbox |  MSOXWSCORE\_User01  | Mailbox type user
+**All         |   --           |          --    |     --                         
+**MS-OXWSATT  |  Mailbox |  MSOXWSATT\_User01   | Mailbox type user
+**MS-OXWSBTRF |  Mailbox |  MSOXWSBTRF\_User01  | Mailbox type user
+**MS-OXWSCONT |  Mailbox |  MSOXWSCONT\_User01  | Mailbox type user
+**MS-OXWSCORE |  Mailbox |  MSOXWSCORE\_User01  | Mailbox type user
               |  Mailbox |  MSOXWSCORE\_User02  | Mailbox type user
-              |Public Folder Mailbox |  MSOXWSCORE\_PublicFolderMailbox  | Public Folder Mailbox created for the public folder of the organization configuration of Exchange 2013.
-              |  Public Folder       |  MSOXWSCORE\_PublicFolder          
-  MS-OXWSFOLD |  Mailbox             |  MSOXWSFOLD\_User01   | Mailbox type user
-              |  Mailbox             |  MSOXWSFOLD\_User02   | Mailbox type user
-              |  ManagedFolder       |  MSOXWSFOLD\_ManagedFolder1  | Managed folder created directly in the root path of Outlook
-              |  ManagedFolder       |  MSOXWSFOLD\_ManagedFolder2  | Managed folder created directly in the root path of Outlook
+              |  Public Folder Mailbox |  MSOXWSCORE\_PublicFolderMailbox  | Public Folder Mailbox created for the public folder of the organization configuration of Exchange 2013.
+              |  Public Folder |  MSOXWSCORE\_PublicFolder          
+**MS-OXWSFOLD** |  Mailbox     |  MSOXWSFOLD\_User01   | Mailbox type user
+              |  Mailbox       |  MSOXWSFOLD\_User02   | Mailbox type user
+              |  ManagedFolder |  MSOXWSFOLD\_ManagedFolder1  | Managed folder created directly in the root path of Outlook
+              |  ManagedFolder |  MSOXWSFOLD\_ManagedFolder2  | Managed folder created directly in the root path of Outlook
               |  Public Folder Database  | PublicFolderDatabase     | Public Folder Database created for the mailbox of the organization configuration of Exchange 2010 and for the server configuration of Exchange 2007.
-  MS-OXWSMSG  |  Mailbox  |  MSOXWSMSG\_User01    |  Mailbox type user
-              |  Mailbox  |  MSOXWSMSG\_User02    |  Mailbox type user
-              |  Mailbox  |  MSOXWSMSG\_User03    |  Mailbox type user
-              |  Mailbox  |  MSOXWSMSG\_Room01    |  Mailbox type room
-  MS-OXWSMTGS |  Mailbox  |  MSOXWSMTGS\_User01   |  Mailbox type user
-              |  Mailbox  |  MSOXWSMTGS\_User02   |  Mailbox type user
-              |  Mailbox  |  MSOXWSMTGS\_Room01   |  Mailbox type room
-  MS-OXWSSYNC |  Mailbox  |  MSOXWSSYNC\_User01   |  Mailbox type user
-              |  Mailbox  |  MSOXWSSYNC\_User02   |  Mailbox type user
-  MS-OXWSTASK |  Mailbox  |  MSOXWSTASK\_User01   |  Mailbox type user
+**MS-OXWSMSG**|  Mailbox  |  MSOXWSMSG\_User01  |  Mailbox type user
+              |  Mailbox  |  MSOXWSMSG\_User02  |  Mailbox type user
+              |  Mailbox  |  MSOXWSMSG\_User03  |  Mailbox type user
+              |  Mailbox  |  MSOXWSMSG\_Room01  |  Mailbox type room
+**MS-OXWSMTGS** |  Mailbox|  MSOXWSMTGS\_User01 |  Mailbox type user
+              |  Mailbox  |  MSOXWSMTGS\_User02 |  Mailbox type user
+              |  Mailbox  |  MSOXWSMTGS\_Room01 |  Mailbox type room
+**MS-OXWSSYNC** |  Mailbox|  MSOXWSSYNC\_User01 |  Mailbox type user
+              |  Mailbox  |  MSOXWSSYNC\_User02 |  Mailbox type user
+**MS-OXWSTASK** |  Mailbox|  MSOXWSTASK\_User01 |  Mailbox type user
 
 ### Configuring SUT using the setup configuration script
 
