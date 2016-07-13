@@ -1021,6 +1021,7 @@ for a specific test suite, do the following:
     SUT control adapter\*\*.
 
 **Interactive mode values**
+
 |Property name | Default value\* |Optional value |Description |
 |:------------ | :------------- | :------------- | :-------------|
 |  Adapter     |    managed or powershell |  interactive\*\* |  **managed**: The SUT control adapter is implemented in C\# managed code. |                                                         
