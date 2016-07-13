@@ -76,12 +76,12 @@ The following table describes the necessary server roles required for a
 test suite deployment with a Microsoft implementation. Installing
 Exchange Server on a domain controller (DC) is not recommended.
 
-Required SUT roles
+**Required SUT roles**
 
-  Role                                             Description
-  ------------------------------------------------ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Active Directory Domain Controller (AD DC)**   Active Directory Domain Controller provides secure data for users and computers. An AD DC can coexist with an Exchange server. A typical test configuration has an AD DC and Exchange Server installed on separate machines.
-  **Exchange Server (SUT)**                        The Exchange server in the topology.
+Role | Description
+:------------ | :-------------
+**Active Directory Domain Controller (AD DC)** |  Active Directory Domain Controller provides secure data for users and computers. An AD DC can coexist with an Exchange server. A typical test configuration has an AD DC and Exchange Server installed on separate machines.
+**Exchange Server (SUT)**  |  The Exchange server in the topology.
 
 The following diagram is an example of what a typical Exchange test suite
 environment may look like. This example uses an IPv4, but IPv6 is also
@@ -95,17 +95,16 @@ table outlines the software dependencies for the test suite client.
 
 Test suite client software dependencies
 
-  --------------------------------------------------------------------------------
-  **Operating systems**   Windows 7 x64 Service Pack 1 and above
-                          
-                          Windows 8 x64 and above
-                          
-                          Windows 2008 R2 x64 Service Pack 1 and above
-  ----------------------- --------------------------------------------------------
-  **Software**            Microsoft Visual Studio 2013 Professional
-                          
-                          Microsoft Protocol Test Framework 1.0.2220.0 and above
-  --------------------------------------------------------------------------------
+| Operating systems |
+| :------------|
+| Windows 7 x64 Service Pack 1 and above |
+|Windows 8 x64 and above|
+|Windows 2008 R2 x64 Service Pack 1 and above|
+
+| Software |
+| :------------|
+| Microsoft Visual Studio 2013 Professional |
+| Microsoft Protocol Test Framework 1.0.2220.0 and above|
 
 Deploying the test suites
 =======================================================================================================================
@@ -132,89 +131,48 @@ Test suite directories
 In this section you will find a list of the folder structures that are
 contained within the **ExchangeServerEWSProtocolTestSuites.zip** file.
 
-ExchangeServerEWSProtocolTestSuites.zip file contents
+**ExchangeServerEWSProtocolTestSuites.zip file contents**
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Directory/file                                       Description
----------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-EULA.rtf                                             The End-User License Agreement
-
-ReadMe.txt                                           A file that contains information about the deployment guide and prerequisite software.
-
-Exchange Server EWS Protocol Test Suites             
-
-- Docs                                               A directory that contains documents of all protocol test suites.
-
-- ExchangeEWSTestSuiteDeploymentGuide.docx           A file relevant to the protocol test suite deployment guidance
-
--                                                    Contains test suite-specific configuration details, architecture, and test case details.
-												   
-ExchangeEWSTestSuiteSpecification.docx               
-
-+ MS-XXXX                                            MS-XXXX Help documentation
-
-- \[MS-XXXX\].pdf                                    The technical specification for the protocol.
-
-- MS-XXXX \_SUTControlAdapter.chm                    Contains information about the SUT control adapter class library such as declaration syntaxes and their description.
-
-- MS-XXXX \_RequirementSpecification.xlsx            A spreadsheet that outlines all requirements associated with the technical specification.
-
-- Setup                                              A directory that contains configuration scripts.
-
-- Test Suite Client                                  A directory that contains the configuration script to configure the test suite client.
-
-- ExchangeClientConfiguration.cmd                    A command file that runs the ExchangeClientConfiguration.ps1 file to configure the properties for the protocol test suites.
-
-- ExchangeClientConfiguration.ps1                    A configuration script that will be triggered by the ExchangeClientConfiguration.cmd.
-
-- SUT                                                A folder that contains the configuration script to configure the Exchange Server
-
-- ExchangeSUTConfiguration.cmd                       A command file that runs the ExchangeSUTConfiguration.ps1 file to create resources and configure settings on the SUT.
-
-- ExchangeSUTConfiguration.ps1                       A configuration script that will be triggered by ExchangeSUTConfiguration.cmd.
-
-- Common                                             A directory that contains common configuration scripts.
-
-- CommonConfiguration.ps1                            A configuration script to configure the common information of the server and the test suite client.
-
-- ExchangeCommonConfiguration.ps1                    A configuration script to configure the common information of Exchange server.
-
-- ExchangeTestSuite.config                           A configuration file that contains primary SUT configuration resources of all protocol test suites.
-
-- Source                                             A folder with Microsoft Visual Studio solutions that contain source code for the test suites.
-
-- Common                                             A folder with Microsoft Visual Studio projects that contains source code that are common to the test suites.
-
-- ExchangeCommonConfiguration.deployment.ptfconfig   The common configuration file.
-
-- ExchangeEWSProtocolTestSuites.sln                  A Visual Studio solution that contains projects of the protocol test suites source code.
-
-- ExchangeServerEWSProtocolTestSuites.runsettings    A configuration file used for unit test.
-
-- ExchangeServerEWSProtocolTestSuites.testsettings   A configuration file used for running test cases.
-
-- MS-XXXX                                            MS-XXXX test suite code directory.
-
-- MS-XXXX.sln                                        A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.
-
-- MS-XXXX.runsettings                                A configuration file used for MS-XXXX unit test.
-
-- MS-XXXX.testsettings                               A configuration file used for running MS-XXXX test cases.
-
-+ Adapter                                            Adapter test suite code.
-
-+ TestSuite                                          Test suite code.
-
-- Scripts                                            Exchange Server EWS test suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite, or the entire test suite.
-
-- RunAllExchangeEWSTestCases.cmd                     A script that can be used to run all test cases in the package.
-
-- MS-XXXX                                            A folder containing scripts that belong to the MS-XXXX test suite.
-
-- RunAllMSXXXXTestCases.cmd                          A script that can be used to run all test cases of MS-XXXX.
-
-- RunMSXXXX\_SXX\_TCXX\_Name.cmd                     A script that can be used to run a single test case of MS-XXXX.
-
+Directory/file  | Description
+:------------ | :-------------
+**EULA.rtf**    | The End-User License Agreement
+**ReadMe.txt**  | A file that contains information about the deployment guide and prerequisite software.
+**Exchange Server EWS Protocol Test Suites**  |
+**- Docs**      |A directory that contains documents of all protocol test suites.
+**- ExchangeEWSTestSuiteDeploymentGuide.docx**  |  A file relevant to the protocol test suite deployment guidance
+**-ExchangeEWSTestSuiteSpecification.docx**     |  Contains test suite-specific configuration details, architecture, and test case details.												   
+**+ MS-XXXX**                                   |  MS-XXXX Help documentation
+**- \[MS-XXXX\].pdf**                           |  The technical specification for the protocol.
+**- MS-XXXX \_SUTControlAdapter.chm**           |  Contains information about the SUT control adapter class library such as declaration syntaxes and their description.
+**- MS-XXXX \_RequirementSpecification.xlsx**   |  A spreadsheet that outlines all requirements associated with the technical specification.
+**- Setup**                                     |  A directory that contains configuration scripts.
+**- Test Suite Client**                         |  A directory that contains the configuration script to configure the test suite client.
+**- ExchangeClientConfiguration.cmd**           |  A command file that runs the ExchangeClientConfiguration.ps1 file to configure the properties for the protocol test suites.
+**- ExchangeClientConfiguration.ps1**           |  A configuration script that will be triggered by the ExchangeClientConfiguration.cmd.
+**- SUT**                                       |  A folder that contains the configuration script to configure the Exchange Server
+**- ExchangeSUTConfiguration.cmd**              |  A command file that runs the ExchangeSUTConfiguration.ps1 file to create resources and configure settings on the SUT.
+**- ExchangeSUTConfiguration.ps1**              |  A configuration script that will be triggered by ExchangeSUTConfiguration.cmd.
+**- Common**                                    |  A directory that contains common configuration scripts.
+**- CommonConfiguration.ps1**                   |  A configuration script to configure the common information of the server and the test suite client.
+**- ExchangeCommonConfiguration.ps1**           |  A configuration script to configure the common information of Exchange server.
+**- ExchangeTestSuite.config**                  |  A configuration file that contains primary SUT configuration resources of all protocol test suites.
+**- Source**                                    |  A folder with Microsoft Visual Studio solutions that contain source code for the test suites.
+**- Common**                                    |  A folder with Microsoft Visual Studio projects that contains source code that are common to the test suites.
+**- ExchangeCommonConfiguration.deployment.ptfconfig** |  The common configuration file.
+**- ExchangeEWSProtocolTestSuites.sln**                |  A Visual Studio solution that contains projects of the protocol test suites source code.
+**- ExchangeServerEWSProtocolTestSuites.runsettings**  |  A configuration file used for unit test.
+**- ExchangeServerEWSProtocolTestSuites.testsettings** |  A configuration file used for running test cases.
+**- MS-XXXX**                                          |  MS-XXXX test suite code directory.
+**- MS-XXXX.sln**                                      |  A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.
+**- MS-XXXX.runsettings**                              |  A configuration file used for MS-XXXX unit test.
+**- MS-XXXX.testsettings**                             |  A configuration file used for running MS-XXXX test cases.
+**+ Adapter**                                          |  Adapter test suite code.
+**+ TestSuite**                                        |  Test suite code.
+**- Scripts**                                          |  Exchange Server EWS test suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite, or the entire test suite.
+**- RunAllExchangeEWSTestCases.cmd**                   |  A script that can be used to run all test cases in the package.
+**- MS-XXXX**                                          |  A folder containing scripts that belong to the MS-XXXX test suite.
+**- RunAllMSXXXXTestCases.cmd**                        |  A script that can be used to run all test cases of MS-XXXX.
+**- RunMSXXXX\_SXX\_TCXX\_Name.cmd**                   |  A script that can be used to run a single test case of MS-XXXX.
 
 Configuring the test suites
 ================================================================================================================================================================================================================================================================================================================================================================================================================
@@ -238,8 +196,8 @@ Configuring the SUT
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 You can configure the SUT using automated scripts, as described in
-sections [5.1.2](#_Configuring_the_SUT1_2); or configure the SUT
-manually, as described in section [5.1.3](#_Configuring_the_SUT1).
+sections [Configuring SUT using the setup configuration script](#configuring-sut-using-the-setup-configuration-script); or configure the SUT
+manually, as described in section [Configuring SUT manually](#configuring-sut-manually).
 
 **Note**   The scripts should be run by a user who has domain
 administrator rights with a mailbox on the SUT.
@@ -251,7 +209,7 @@ suites package may require/ varying levels of resources on the SUT. The
 following table outlines these resources for each test suite. The SUT
 configuration scripts will automatically create all the required
 resources for the Microsoft server implementation. To configure the SUT
-manually, see section [5.1.3](#_Configuring_the_SUT1).
+manually, see section [Configuring SUT manually](#Configuring SUTmanually).
 
 The client configuration script follows the naming convention shown in
 the following table. If a change to the resource name is required, the
@@ -260,31 +218,31 @@ configuration script will be required.
 
 Exchange server resources
 
-  Test suite    Resource type            Resource name                     Note
-  ------------- ------------------------ --------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------
-  All           --                       --                                
-  MS-OXWSATT    Mailbox                  MSOXWSATT\_User01                 Mailbox type user
-  MS-OXWSBTRF   Mailbox                  MSOXWSBTRF\_User01                Mailbox type user
-  MS-OXWSCONT   Mailbox                  MSOXWSCONT\_User01                Mailbox type user
-  MS-OXWSCORE   Mailbox                  MSOXWSCORE\_User01                Mailbox type user
-                Mailbox                  MSOXWSCORE\_User02                Mailbox type user
-                Public Folder Mailbox    MSOXWSCORE\_PublicFolderMailbox   Public Folder Mailbox created for the public folder of the organization configuration of Exchange 2013.
-                Public Folder            MSOXWSCORE\_PublicFolder          
-  MS-OXWSFOLD   Mailbox                  MSOXWSFOLD\_User01                Mailbox type user
-                Mailbox                  MSOXWSFOLD\_User02                Mailbox type user
-                ManagedFolder            MSOXWSFOLD\_ManagedFolder1        Managed folder created directly in the root path of Outlook
-                ManagedFolder            MSOXWSFOLD\_ManagedFolder2        Managed folder created directly in the root path of Outlook
-                Public Folder Database   PublicFolderDatabase              Public Folder Database created for the mailbox of the organization configuration of Exchange 2010 and for the server configuration of Exchange 2007.
-  MS-OXWSMSG    Mailbox                  MSOXWSMSG\_User01                 Mailbox type user
-                Mailbox                  MSOXWSMSG\_User02                 Mailbox type user
-                Mailbox                  MSOXWSMSG\_User03                 Mailbox type user
-                Mailbox                  MSOXWSMSG\_Room01                 Mailbox type room
-  MS-OXWSMTGS   Mailbox                  MSOXWSMTGS\_User01                Mailbox type user
-                Mailbox                  MSOXWSMTGS\_User02                Mailbox type user
-                Mailbox                  MSOXWSMTGS\_Room01                Mailbox type room
-  MS-OXWSSYNC   Mailbox                  MSOXWSSYNC\_User01                Mailbox type user
-                Mailbox                  MSOXWSSYNC\_User02                Mailbox type user
-  MS-OXWSTASK   Mailbox                  MSOXWSTASK\_User01                Mailbox type user
+Test suite | Resource type |  Resource name |  Note
+:------------ | :------------- | :------------- | :-------------
+  All         |   --           |          --    |                            
+  MS-OXWSATT  |  Mailbox |  MSOXWSATT\_User01   | Mailbox type user
+  MS-OXWSBTRF |  Mailbox |  MSOXWSBTRF\_User01  | Mailbox type user
+  MS-OXWSCONT |  Mailbox |  MSOXWSCONT\_User01  | Mailbox type user
+  MS-OXWSCORE |  Mailbox |  MSOXWSCORE\_User01  | Mailbox type user
+              |  Mailbox |  MSOXWSCORE\_User02  | Mailbox type user
+              |Public Folder Mailbox |  MSOXWSCORE\_PublicFolderMailbox   Public Folder Mailbox created for the public folder of the organization configuration of Exchange 2013.
+              |  Public Folder       |  MSOXWSCORE\_PublicFolder          
+  MS-OXWSFOLD |  Mailbox             |  MSOXWSFOLD\_User01                Mailbox type user
+              |  Mailbox             |  MSOXWSFOLD\_User02                Mailbox type user
+              |  ManagedFolder       |  MSOXWSFOLD\_ManagedFolder1        Managed folder created directly in the root path of Outlook
+              |  ManagedFolder       |  MSOXWSFOLD\_ManagedFolder2        Managed folder created directly in the root path of Outlook
+              |  Public Folder Database  | PublicFolderDatabase              Public Folder Database created for the mailbox of the organization configuration of Exchange 2010 and for the server configuration of Exchange 2007.
+  MS-OXWSMSG  |  Mailbox        |  MSOXWSMSG\_User01    |  Mailbox type user
+              |  Mailbox        |  MSOXWSMSG\_User02    |  Mailbox type user
+              |  Mailbox        |  MSOXWSMSG\_User03    |  Mailbox type user
+              |  Mailbox        |  MSOXWSMSG\_Room01    |  Mailbox type room
+  MS-OXWSMTGS |  Mailbox        |  MSOXWSMTGS\_User01   |  Mailbox type user
+              |  Mailbox        |  MSOXWSMTGS\_User02   |  Mailbox type user
+              |  Mailbox        |  MSOXWSMTGS\_Room01   |  Mailbox type room
+  MS-OXWSSYNC |  Mailbox        |  MSOXWSSYNC\_User01   |  Mailbox type user
+              |  Mailbox        |  MSOXWSSYNC\_User02   |  Mailbox type user
+  MS-OXWSTASK |  Mailbox        |  MSOXWSTASK\_User01   |  Mailbox type user
 
 ### Configuring SUT using the setup configuration script
 
@@ -295,7 +253,7 @@ To configure SUT using the setup configuration script, navigate to the
 **SUT** folder, right-click **ExchangeSUTConfiguration.cmd** and select
 **Run as administrator**.
 
-### <span id="_Configuring_the_SUT1" class="anchor"><span id="_Toc397328563" class="anchor"><span id="_Toc404089105" class="anchor"></span></span></span>Configuring SUT manually
+### Configuring SUT manually
 
 If the SUT is a non-Microsoft implementation of Exchange Server, you
 will not be able to run the setup configuration script. The following
@@ -318,8 +276,8 @@ MSOXWSSYNC\_User02, MSOXWSTASK\_User01
 2.  Assign the **ApplicationImpersonation** role to the following
     mailbox users.
 
-> **Note** This role enables applications to impersonate users in an
-> organization in order to perform a task on behalf of them.
+**Note** This role enables applications to impersonate users in an
+organization in order to perform a task on behalf of them.
 
 MS-OXWSATT\_User01, MS-OXWSBTRF\_User01, MSOXWSCORE\_User01,
 MSOXWSFOLD\_User01, and MSOXWSSYNC\_User01
@@ -355,9 +313,9 @@ all Exchange Server EWS Protocol test suites. This file must be modified
 to match the characteristics of the environment where the test suites
 are installed.
 
-  **Configuration file**                             **Description**
-  -------------------------------------------------- ----------------------------------------------------------------------------------------------------------
-  ExchangeCommonConfiguration.deployment.ptfconfig   The deployment configuration file provides the environmental details that are common to the test suites.
+Configuration file|   Description
+:------------ | :-------------
+ExchangeCommonConfiguration.deployment.ptfconfig |   The deployment configuration file provides the environmental details that are common to the test suites.
 
 ### Test-suite specific configuration files
 
@@ -365,12 +323,12 @@ In addition to the common configuration file, each individual test suite
 has the following two configuration files for test suite-specific
 modification.
 
-Test-suite specific configuration files
+**Test-suite specific configuration files**
 
-  Configuration file                        Description
-  ----------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  MS-XXXX\_TestSuite.deployment.ptfconfig   The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows for the test suite-specific customization.
-  MS-XXXX\_TestSuite.ptfconfig              The test suite configuration file contains details that specify the behavior of the test suite operation.
+Configuration file  | Description
+:------------ | :-------------
+MS-XXXX\_TestSuite.deployment.ptfconfig |   The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows for the test suite-specific customization.
+MS-XXXX\_TestSuite.ptfconfig            |   The test suite configuration file contains details that specify the behavior of the test suite operation.
 
 Both files are present in the TestSuite folder inside each test suite
 directory.
@@ -401,9 +359,7 @@ for a specific test suite, do the following:
 
 Property name | Default value\*|Optional value  |  Description|
 :------------ | :------------- | :------------- | :-------------
-
- 
-  Adapter    |     managed or powershell|   interactive\*\* |  **managed**:
+Adapter    |     managed or powershell|   interactive\*\* |  **managed**:
  ||| The SUT control adapter is implemented in C\# managed code.
  ||| **powershell**: The SUT control adapter is implemented through Windows PowerShell.
  ||| **interactive**: Interactive adapters are used for manually configuring the server. Interactive adapter displays a dialog box to perform a manual test each time one of its methods is called. The dialog box will show the method name, parameter names, and values\*\*\*
