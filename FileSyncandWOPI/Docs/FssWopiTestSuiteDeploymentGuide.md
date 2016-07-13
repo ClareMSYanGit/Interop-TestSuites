@@ -635,7 +635,7 @@ A Visual Studio solution file
 
   1.  Open **Test Explorer**. On the ribbon, click **TEST,** then click **Windows**, and finally click **Test Explorer**.                                   
       
-	  ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_RunningTS3.png)                                                                                                                                                        
+   ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_RunningTS3.png)                                                                                                                                                        
                                                                                                                                                             
 
   1.  Select the test case to run, right-click the test case and then select **Run Selected Tests**.                                                        !
