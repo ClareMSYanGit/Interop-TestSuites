@@ -970,20 +970,20 @@ configuration files can be modified directly; the common configuration
 file and the test suite-specific configuration files can also be
 modified through a script.
 
-1.  Common configuration file
+### Common configuration file
 
 The common configuration file contains configurable properties common to all
 SharePoint Server Protocol test suites. This file must be modified to
 match the characteristics of the environment where the test suites are
 installed.
 
-SharePoint common configuration file
+**SharePoint common configuration file**
 
-  **Configuration file**                               **Description**
-  ---------------------------------------------------- -------------------------------------------------------------------------------------------------------------------
-  SharePointCommonConfiguration.deployment.ptfconfig   The deployment configuration file provides the environmental details that are common to the protocol test suites.
+Configuration file | Description
+:------------ | :-------------
+**SharePointCommonConfiguration.deployment.ptfconfig** | The deployment configuration file provides the environmental details that are common to the protocol test suites.
 
-1.  Test-suite specific configuration files
+### Test-suite specific configuration files
 
 In addition to the common configuration file, each individual test suite
 has the following two configuration files for test suite-specific
