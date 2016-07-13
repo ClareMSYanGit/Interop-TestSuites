@@ -61,15 +61,10 @@ following versions of SharePoint Server. Some test suites (MS-COPYS)
 support two SUTs depending on the protocol requirements:
 
 -   Windows SharePoint Services 3.0 Service Pack 3 (SP3)
-
 -   Microsoft SharePoint Foundation 2010 Service Pack 2 (SP2)
-
 -   Microsoft SharePoint Foundation 2013 Service Pack (SP1)
-
 -   Microsoft Office SharePoint Server 2007 Service Pack 3 (SP3)
-
 -   Microsoft SharePoint Server 2010 Service Pack 2 (SP2)
-
 -   Microsoft SharePoint Server 2013 Service Pack (SP1)
 
 For the MS-WDVMODUU test suite, you have to install a virus scanner software in order to test the
@@ -87,11 +82,8 @@ clean and virus-free.
     following versions of SharePoint
 
 -   Windows SharePoint Services 3.0 Service Pack 3 (SP3),
-
 -   Microsoft SharePoint Foundation 2010 Service Pack 2 (SP2)
-
 -   Microsoft Office SharePoint Server 2007 Service Pack 3 (SP3)
-
 -   Microsoft SharePoint Server 2010 Service Pack 2 (SP2)
 
 1.  Install any anti-virus software on the following versions of
@@ -110,13 +102,13 @@ SharePoint does.
 The following table describes the necessary server roles required for a
 test suite deployment with a Microsoft implementation.
 
-Required SUT roles
+**Required SUT roles**
 
-  Role                                                                                                                       Description
-  -------------------------------------------------------------------------------------------------------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Active Directory Domain Controller (AD DC)                                                                                 Active Directory Domain Controller provides secure data for users and computers. An AD DC can coexist with a SharePoint server. A typical test configuration has an AD DC and SharePoint Server installed on separate machines.
-  SharePoint Server \#1 (SUT1 must be a SharePoint application server if server installation type is Complete (farm mode))   The first SharePoint server in the topology.
-  SharePoint Server \#2 (SUT2)                                                                                               Only the MS-COPYS test suite requires the second SharePoint server in the topology.
+Role | Description
+:------------ | :-------------
+Active Directory Domain Controller (AD DC) |  Active Directory Domain Controller provides secure data for users and computers. An AD DC can coexist with a SharePoint server. A typical test configuration has an AD DC and SharePoint Server installed on separate machines.
+SharePoint Server \#1 (SUT1 must be a SharePoint application server if server installation type is Complete (farm mode))| The first SharePoint server in the topology.
+SharePoint Server \#2 (SUT2)| Only the MS-COPYS test suite requires the second SharePoint server in the topology.
 
 The following diagram is an example of what a typical SharePoint test
 suite environment may look like. This example uses an IPv4, but IPv6 is
@@ -129,19 +121,19 @@ SharePoint Server Protocol test suites on the test suite client. The
 following table outlines the software dependencies for the test suite
 client.
 
-Test suite client software dependencies
+**Test suite client software dependencies**
 
-  ----------------------------------------------------------------------------
-  Operating systems   Windows 7 x64 Service Pack 1 and above
-                      
-                      Windows 8 x64 and above
-                      
-                      Windows 2008 R2 x64 Service Pack 1 and above
-  ------------------- --------------------------------------------------------
-  Software            Microsoft Visual Studio 2013 Professional
-                      
-                      Microsoft Protocol Test Framework 1.0.2220.0 and above
-  ----------------------------------------------------------------------------
+|Operating systems |
+|:------------ |
+|Windows 7 x64 Service Pack 1 and above|
+|Windows 8 x64 and above|
+|Windows 2008 R2 x64 Service Pack 1 and above|
+
+| Software |
+|:------------ |
+|Microsoft Visual Studio 2013 Professional|
+|Microsoft Protocol Test Framework 1.0.2220.0 and above|
+
 
 Deploying the test suites
 ================================================================================================================================================================================================================================================================================================================================================================================================================
@@ -183,107 +175,58 @@ Test suite directories
 In this section you will find a list of the folder structures that are
 contained within the **SharePointServerProtocolTestSuites.zip** file.
 
-SharePointServerProtocolTestSuites.zip file contents
+**SharePointServerProtocolTestSuites.zip file contents**
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Directory/file                                            Description
-  --------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  EULA.rtf                                                  The End-User License Agreement
-
-  ReadMe.txt                                                A file that contains information about the deployment guide and prerequisite software
-
-  SharePoint Server Protocol Test Suites                    
-
-  - Docs                                                    A directory that contains documents of all protocol test suites
-
-  - SharePointTestSuiteDeploymentGuide.docx                 A file relevant to the protocol test suite deployment guidance
-
-  - MS-XXXX                                                 MS-XXXX Help documentation
-
-  - \[MS-XXXX\].pdf                                         The technical specification for the protocol
-
-  - MS-XXXX\_TestSuiteSpecification.docx                    Contains test suite-specific configuration details, architecture, and test case details.
-
-  - MS-XXXX\_SUTControlAdapter.chm                          Contains information about the SUT control adapter class library such as declaration syntaxes and their description.
-
-  - MS-XXXX\_RequirementSpecification.xlsx                  A spreadsheet that outlines all requirements associated with the technical specification.
-
-  - Setup                                                   A directory that contains configuration scripts
-
-  > - Test Suite Client                                     A directory that contains the configuration script to configure the test suite client.
-
-  > - SharePointClientConfiguration.cmd                     A command file that runs the
-                                                            
-                                                            SharePointClientConfiguration.ps1 to configure the properties for the protocol test suites.
-
-  > - SharePointClientConfiguration.ps1                     A configuration script that will be invoked by SharePointClientConfiguration.cmd
-
-  - SUT                                                     A folder that contains the configuration script to configure the SUT.
-
-  > - SharePointSUTConfiguration.cmd                        A command file that runs the
-                                                            
-                                                            SharePointSUTConfiguration.ps1 to create resources and configure settings on the first SUT.
-
-  > - SharePointSUTConfiguration.ps1                        A configuration script that will be invoked by SharePointSUTConfiguration.cmd.
-
-  > -SharePointSecondSUTConfiguration.cmd                   A command file that runs the SharePointSecondSUTConfiguration.ps1 to create resources and configure settings on the second SUT.
-
-  > - SharePointSecondSUTConfiguration.ps1                  A configuration script that will be invoked by SharePointSecondSUTConfiguration.cmd.
-
-  > - MSCOPYS\_SourceFile.txt                               A source file used to be copied from a source location to a destination location.
-
-  > - MSDWSS\_TestData.txt                                  A test file used by the MS-DWSS test suite.
-
-  > - MSSHDACCWS\_CoStatusTestData.txt                      A test file that will be uploaded to MSSHDACCWS\_DocumentLibrary. This file allows multiple users to edit it.
-
-  > - MSSHDACCWS\_LockedTestData.txt                        A test file that will be uploaded to the MSSHDACCWS\_DocumentLibrary. An exclusive lock is applied to this file.
-
-  > - MSSHDACCWS\_TestData.txt                              A test file that will be uploaded to MSSHDACCWS\_DocumentLibrary without any locks or Co-Authoring status.
-
-  > - MSSITESS\_CustomPage.aspx                             A custom page used by the MS-SITESS test suite.
-
-  > - MSWDVMODUU\_TestData1.txt                             The first text test file used by the MS-WDVMODUU test suite.
-
-  > - MSWDVMODUU\_TestData2.txt                             The second text test file used by the MS-WDVMODUU test suite.
-
-  > - MSWDVMODUU\_TestData3.txt                             The third text test file used by the MS-WDVMODUU test suite.
-
-  > - MSWEBSS\_TestData.docx                                A test file used by the MS-WEBSS test suite.
-
-  > - Common                                                A folder that contains common configuration scripts and resources.
-
-  > -CommonConfiguration.ps1                                A library that contains common functions for configuring Microsoft products and the test suite client.
-
-  > -SharePointCommonConfiguration.ps1                      A library that contains common functions for configuring the SUT.
-
-  > -SharePointTestSuite.config                             The configuration file to store all configuration resources
-
-  - Source                                                  A folder with Microsoft Visual Studio solution that contains the source code for the test suites.
-
-  - Common                                                  A folder with Visual Studio projects that contains source code that are common to the test suites.
-
-  > - SharePointCommonConfiguration. deployment.ptfconfig   The common configuration file.
-
-  -SharePointServerProtocolTestSuites.sln                   A Visual Studio solution that contains projects of the protocol test suites source code.
-
-  - MS-XXXX                                                 MS-XXXX test suite source code directory
-
-  + Adapter                                                 Adapter test suite code
-
-  + TestSuite                                               Test suite code
-
-  > - MS-XXXX.sln                                           A Visual Studio solution that contains projects of the MS-XXXX test suite
-
-  -Scripts                                                  SharePoint Server Protocol test suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.
-
-  - RunAllSharePointTestCases.cmd                           A script that can be used to run all test cases in the whole package.
-
-  -MS-XXXX                                                  A folder containing scripts that belong to the MS-XXXX test suite.
-
-  - RunAllMSXXXXTestCases.cmd                               A script that can be used to run all test cases of MS-XXXX.
-
-  - RunMSXXXX\_SYY\_TCZZ\_TestCaseName.cmd                  A script that can be used to run a single test case of MS-XXXX.
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Directory/file | Description
+:------------ | :-------------
+EULA.rtf      | The End-User License Agreement
+ReadMe.txt    | A file that contains information about the deployment guide and prerequisite software
+SharePoint Server Protocol Test Suites    |                 
+- Docs                                    |  A directory that contains documents of all protocol test suites
+- SharePointTestSuiteDeploymentGuide.docx | A file relevant to the protocol test suite deployment guidance
+- MS-XXXX                                 | MS-XXXX Help documentation
+- \[MS-XXXX\].pdf                         | The technical specification for the protocol
+- MS-XXXX\_TestSuiteSpecification.docx    | Contains test suite-specific configuration details, architecture, and test case details.
+- MS-XXXX\_SUTControlAdapter.chm          | Contains information about the SUT control adapter class library such as declaration syntaxes and their description.
+- MS-XXXX\_RequirementSpecification.xlsx  | A spreadsheet that outlines all requirements associated with the technical specification.
+- Setup                                   | A directory that contains configuration scripts
+- Test Suite Client                       | A directory that contains the configuration script to configure the test suite client.
+- SharePointClientConfiguration.cmd       | A command file that runs the                                                     
+                                          | SharePointClientConfiguration.ps1 to configure the properties for the protocol test suites.
+- SharePointClientConfiguration.ps1     | A configuration script that will be invoked by SharePointClientConfiguration.cmd
+- SUT                                   | A folder that contains the configuration script to configure the SUT.
+- SharePointSUTConfiguration.cmd        | A command file that runs the SharePointSUTConfiguration.ps1 to create resources and configure settings on the first SUT.
+- SharePointSUTConfiguration.ps1        | A configuration script that will be invoked by SharePointSUTConfiguration.cmd.
+-SharePointSecondSUTConfiguration.cmd   | A command file that runs the SharePointSecondSUTConfiguration.ps1 to create resources and configure settings on the second SUT.
+- SharePointSecondSUTConfiguration.ps1  | A configuration script that will be invoked by SharePointSecondSUTConfiguration.cmd.
+- MSCOPYS\_SourceFile.txt               |  A source file used to be copied from a source location to a destination location.
+- MSDWSS\_TestData.txt                  |  A test file used by the MS-DWSS test suite.
+- MSSHDACCWS\_CoStatusTestData.txt      |  A test file that will be uploaded to MSSHDACCWS\_DocumentLibrary. This file allows multiple users to edit it.
+- MSSHDACCWS\_LockedTestData.txt        |  A test file that will be uploaded to the MSSHDACCWS\_DocumentLibrary. An exclusive lock is applied to this file.
+- MSSHDACCWS\_TestData.txt              |  A test file that will be uploaded to MSSHDACCWS\_DocumentLibrary without any locks or Co-Authoring status.
+- MSSITESS\_CustomPage.aspx             |  A custom page used by the MS-SITESS test suite.
+- MSWDVMODUU\_TestData1.txt             |  The first text test file used by the MS-WDVMODUU test suite.
+- MSWDVMODUU\_TestData2.txt             |  The second text test file used by the MS-WDVMODUU test suite.
+- MSWDVMODUU\_TestData3.txt             |  The third text test file used by the MS-WDVMODUU test suite.
+- MSWEBSS\_TestData.docx                |  A test file used by the MS-WEBSS test suite.
+- Common                                |  A folder that contains common configuration scripts and resources.
+-CommonConfiguration.ps1                |  A library that contains common functions for configuring Microsoft products and the test suite client.
+-SharePointCommonConfiguration.ps1      |  A library that contains common functions for configuring the SUT.
+-SharePointTestSuite.config             |  The configuration file to store all configuration resources
+- Source                                |  A folder with Microsoft Visual Studio solution that contains the source code for the test suites.
+- Common                                |  A folder with Visual Studio projects that contains source code that are common to the test suites.
+- SharePointCommonConfiguration. deployment.ptfconfig | The common configuration file.
+-SharePointServerProtocolTestSuites.sln               |    A Visual Studio solution that contains projects of the protocol test suites source code.
+- MS-XXXX                                             |    MS-XXXX test suite source code directory
++ Adapter                                             |    Adapter test suite code
++ TestSuite                                           |    Test suite code
+- MS-XXXX.sln                                         |    A Visual Studio solution that contains projects of the MS-XXXX test suite
+-Scripts                                              |    SharePoint Server Protocol test suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.
+- RunAllSharePointTestCases.cmd                       |    A script that can be used to run all test cases in the whole package.
+-MS-XXXX                                              |    A folder containing scripts that belong to the MS-XXXX test suite.
+- RunAllMSXXXXTestCases.cmd                           |    A script that can be used to run all test cases of MS-XXXX.
+- RunMSXXXX\_SYY\_TCZZ\_TestCaseName.cmd              |    A script that can be used to run a single test case of MS-XXXX.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Configuring the test suites
 ================================================================================================================================================================================================================================================================================================================================================================================================================
@@ -330,110 +273,110 @@ the following table. If a change to the resource name is required, then
 the corresponding change to the resource name defined in the
 SharePointTestSuite.config is required.
 
-SharePoint server resources
+**SharePoint server resources**
 
-  **Test suite**    **Resource type**        **Resource name**
-  ----------------- ------------------------ ----------------------------------------------------------------
-  All               --                       --
-  MS-LISTSWS        Site collection          MSLISTSWS\_SiteCollection
-                    Document library         MSLISTSWS\_DocumentLibrary
-  MS-VERSS          Site collection          MSVERSS\_SiteCollection
-  MS-SITESS         Site collection          MSSITESS\_SiteCollection
-                    Site                     MSSITESS\_Site
-                    Site                     MSSITESS\_NormalSubSite
-                    Site                     MSSITESS\_SpecialSubSite
-                    Document library         MSSITESS\_DocumentLibrary
-                    Document library         MSSITESS\_SubSite\_DocumentLibrary
-                    Text document            MSSITESS\_TestData.txt
-                    ASPX file                MSSITESS\_CustomPage.aspx
-  MS-DWSS           Site collection          MSDWSS\_SiteCollection
-                    Site collection          MSDWSS\_SiteCollection\_DocumentWorkspace
-                    Site                     MSDWSS\_Site
-                    Site                     MSDWSS\_InheritPermissionSite
-                    Document library         MSDWSS\_DocumentLibrary
-                    Folder                   MSDWSS\_TestFolder
-                    Text document            MSDWSS\_TestData.txt
-                    User                     MSDWSS\_NoneRole
-                    User                     MSDWSS\_ReaderRole
-                    User                     MSDWSS\_GroupOwner
-                    Group                    MSDWSS\_CustomGroup
-  MS-MEETS          Site collection          MSMEETS\_SiteCollection
-                    User                     MSMEETS\_User
-  MSWEBSS           Site collection          MSWEBSS\_SiteCollection
-                    Document library         MSWEBSS\_DocumentLibrary
-                    Word document            MSWEBSS\_TestData.docx
-                    Site                     MSWEBSS\_Site
-  MS-WDVMODUU       Site collection          MSWDVMODUU\_SiteCollection
-                    Document library         MSWDVMODUU\_DocumentLibrary1
-                    Document library         MSWDVMODUU\_DocumentLibrary2
-                    Text document            MSWDVMODUU\_TestData1.txt
-                    Text document            MSWDVMODUU\_TestData2.txt
-                    Text document            MSWDVMODUU\_TestData3.txt
-                    Fake virus file          FakeVirusInfectedFile\_Get.txt
-  MS-WWSP           Site collection          MSWWSP\_SiteCollection
-                    Work Flow                MSWWSP\_Workflow
-                    Work Flow Task List      Tasks
-                    Work flow History List   MSWWSP\_WorkflowHistoryList
-                    Document library         MSWWSP\_DocumentLibrary
-                    Group                    MSWWSP\_UserGroup
-                    User                     MSWWSP\_User
-  MS-OUTSPS         Site collection          MSOUTSPS\_SiteCollection
-  MS-AUTHWS         Web Application          MSAUTHWS\_FormsWebAPP
-                    Web Application          MSAUTHWS\_NoneWebAPP
-                    Web Application          MSAUTHWS\_PassportWebAPP
-                    Web Application          MSAUTHWS\_WindowsAPP
-  MS-SHDACCWS       Site collection          MSSHDACCWS\_SiteCollection
-                    Document library         MSSHDACCWS\_DocumentLibrary
-                    Text document            MSSHDACCWS\_LockedTestData.txt
-                    Text document            MSSHDACCWS\_CoStatusTestData.txt
-                    Text document            MSSHDACCWS\_TestData.txt
-  MS-CPSWS          User                     MSCPSWS\_User
-  MS-WSSREST        Site collection          MSWSSREST\_SiteCollection
-                    Document library         MSWSSREST\_DocumentLibrary
-                    Calendar                 MSWSSREST\_Calendar
-                    DiscussionBoard          MSWSSREST\_DiscussionBoard
-                    GenericList              MSWSSREST\_GenericList
-                    Survey                   MSWSSREST\_Survey
-                    WorkflowHistoryList      MSWSSREST\_WorkflowHistoryList
-                    Tasks                    MSWSSREST\_Tasks
-                    Work Flow                MSWSSREST\_Workflow
-                    ChoiceField              MSWSSREST\_ChoiceField
-                    MultiChoiceField         MSWSSREST\_MultiChoiceField
-                    ChoiceFieldValue         MSWSSREST\_SingleChoiceOption1, MSWSSREST\_SingleChoiceOption2
-                    MultiChoiceFieldValue    MSWSSREST\_MultiChoiceOption1, MSWSSREST\_MultiChoiceOption2
-                    LookupField              MSWSSREST\_LookupField
-  MS-OFFICIALFILE   Site collection          MSOFFICIALFILE\_SiteCollection
-                    Site                     MSOFFICIALFILE\_RoutingRepository
-                    Site                     MSOFFICIALFILE\_NoRoutingRepository
-                    Site                     MSOFFICIALFILE\_EnabledParsingRepository
-                    Document library         Drop Off Library
-                    Document library         MSOFFICIALFILE\_DocumentRuleLocationLibrary
-                    Document library         MSOFFICIALFILE\_NoEnforceLibrary
-                    Document library         MSOFFICIALFILE\_DocumentSetLocationLibrary
-                    DocumentSet              MSOFFICIALFILE\_DocumentSetName
-                    User                     MSOFFICIALFILE\_User
-  MS-COPYS          Site collection          MSCOPYS\_SiteCollection
-                    Site                     MSCOPYS\_SubSiteMeetingWorkspace
-                    User                     MSCOPYS\_EditUser
-                    User                     MSCOPYS\_limitUser
-                    Text document            MSCOPYS\_SourceFile.txt
-                    Document library         MSCOPYS\_SubSiteDocumentLibrary
-                    Document library         MSCOPYS\_SourceDocumentLibrary
-                    Document library         MSCOPYS\_DestinationDocumentLibrary
-                    Column                   MSCOPYS\_TestReadOnlyField
-                    Column                   MSCOPYS\_WorkFlowEventField
-                    Column field value       MSCOPYS\_Source
-                    Column field value       MSCOPYS\_Destination
-  MS-VIEWSS         Site collection          MSVIEWSS\_SiteCollection
-                    GenericList              MSVIEWSS\_ViewList
-                    ListItem                 MSVIEWSS\_ListItem1
-                    ListItem                 MSVIEWSS\_ListItem2
-                    ListItem                 MSVIEWSS\_ListItem3
-                    ListItem                 MSVIEWSS\_ListItem4
-                    ListItem                 MSVIEWSS\_ListItem5
-                    ListItem                 MSVIEWSS\_ListItem6
-                    ListItem                 MSVIEWSS\_ListItem7
-                    ListItem                 MSVIEWSS\_ListItem7
+ Test suite |  Resource type |  Resource name
+:------------ | :------------- | :-------------
+  All         |      --       |                --
+  MS-LISTSWS  |      Site collection    |      MSLISTSWS\_SiteCollection
+              |      Document library    |     MSLISTSWS\_DocumentLibrary
+  MS-VERSS    |      Site collection     |     MSVERSS\_SiteCollection
+  MS-SITESS   |      Site collection     |     MSSITESS\_SiteCollection
+              |      Site                |     MSSITESS\_Site
+              |      Site                |     MSSITESS\_NormalSubSite
+              |      Site                |     MSSITESS\_SpecialSubSite
+              |      Document library    |     MSSITESS\_DocumentLibrary
+              |      Document library    |     MSSITESS\_SubSite\_DocumentLibrary
+              |      Text document       |     MSSITESS\_TestData.txt
+              |      ASPX file           |     MSSITESS\_CustomPage.aspx
+  MS-DWSS     |      Site collection     |     MSDWSS\_SiteCollection
+              |      Site collection     |     MSDWSS\_SiteCollection\_DocumentWorkspace
+              |      Site                |     MSDWSS\_Site
+              |      Site                |     MSDWSS\_InheritPermissionSite
+              |      Document library    |     MSDWSS\_DocumentLibrary
+              |      Folder              |     MSDWSS\_TestFolder
+              |      Text document       |     MSDWSS\_TestData.txt
+              |      User                |     MSDWSS\_NoneRole
+              |      User                |     MSDWSS\_ReaderRole
+              |      User                |     MSDWSS\_GroupOwner
+              |      Group               |     MSDWSS\_CustomGroup
+  MS-MEETS    |      Site collection     |     MSMEETS\_SiteCollection
+              |      User                |     MSMEETS\_User
+  MSWEBSS     |      Site collection     |     MSWEBSS\_SiteCollection
+              |      Document library    |     MSWEBSS\_DocumentLibrary
+              |      Word document       |     MSWEBSS\_TestData.docx
+              |      Site                |     MSWEBSS\_Site
+  MS-WDVMODUU |      Site collection     |     MSWDVMODUU\_SiteCollection
+              |      Document library    |     MSWDVMODUU\_DocumentLibrary1
+              |      Document library    |     MSWDVMODUU\_DocumentLibrary2
+              |      Text document       |     MSWDVMODUU\_TestData1.txt
+              |      Text document       |     MSWDVMODUU\_TestData2.txt
+              |      Text document       |     MSWDVMODUU\_TestData3.txt
+              |      Fake virus file     |     FakeVirusInfectedFile\_Get.txt
+  MS-WWSP     |      Site collection     |     MSWWSP\_SiteCollection
+              |      Work Flow           |     MSWWSP\_Workflow
+              |      Work Flow Task List |     Tasks
+              |      Work flow History List |  MSWWSP\_WorkflowHistoryList
+              |      Document library       |  MSWWSP\_DocumentLibrary
+              |       Group                  |  MSWWSP\_UserGroup
+              |      User                   |  MSWWSP\_User
+  MS-OUTSPS   |      Site collection        |  MSOUTSPS\_SiteCollection
+  MS-AUTHWS   |      Web Application        |  MSAUTHWS\_FormsWebAPP
+              |      Web Application        |  MSAUTHWS\_NoneWebAPP
+              |      Web Application        |  MSAUTHWS\_PassportWebAPP
+              |      Web Application        |  MSAUTHWS\_WindowsAPP
+  MS-SHDACCWS |      Site collection        |  MSSHDACCWS\_SiteCollection
+              |      Document library       |  MSSHDACCWS\_DocumentLibrary
+              |      Text document          |  MSSHDACCWS\_LockedTestData.txt
+              |      Text document          |  MSSHDACCWS\_CoStatusTestData.txt
+              |      Text document          |  MSSHDACCWS\_TestData.txt
+  MS-CPSWS    |      User                   |  MSCPSWS\_User
+  MS-WSSREST  |      Site collection        |  MSWSSREST\_SiteCollection
+              |      Document library       |  MSWSSREST\_DocumentLibrary
+              |      Calendar               |  MSWSSREST\_Calendar
+              |      DiscussionBoard        |  MSWSSREST\_DiscussionBoard
+              |      GenericList            |  MSWSSREST\_GenericList
+              |      Survey                 |  MSWSSREST\_Survey
+              |      WorkflowHistoryList    |  MSWSSREST\_WorkflowHistoryList
+              |      Tasks                  |  MSWSSREST\_Tasks
+              |      Work Flow              |  MSWSSREST\_Workflow
+              |      ChoiceField            |  MSWSSREST\_ChoiceField
+              |      MultiChoiceField       |  MSWSSREST\_MultiChoiceField
+              |      ChoiceFieldValue       |  MSWSSREST\_SingleChoiceOption1, MSWSSREST\_SingleChoiceOption2
+              |      MultiChoiceFieldValue  |  MSWSSREST\_MultiChoiceOption1, MSWSSREST\_MultiChoiceOption2
+              |      LookupField            |  MSWSSREST\_LookupField
+  MS-OFFICIALFILE |  Site collection        |  MSOFFICIALFILE\_SiteCollection
+                  |  Site                   |  MSOFFICIALFILE\_RoutingRepository
+                  |  Site                   |  MSOFFICIALFILE\_NoRoutingRepository
+                  |  Site                   |  MSOFFICIALFILE\_EnabledParsingRepository
+                  |  Document library       |  Drop Off Library
+                  |  Document library       |  MSOFFICIALFILE\_DocumentRuleLocationLibrary
+                  |  Document library       |  MSOFFICIALFILE\_NoEnforceLibrary
+                  |  Document library       |  MSOFFICIALFILE\_DocumentSetLocationLibrary
+                  |  DocumentSet            |  MSOFFICIALFILE\_DocumentSetName
+                  |  User                   |  MSOFFICIALFILE\_User
+  MS-COPYS        |  Site collection        |  MSCOPYS\_SiteCollection
+                  |  Site                   |  MSCOPYS\_SubSiteMeetingWorkspace
+                  |  User                   |  MSCOPYS\_EditUser
+                  |  User                   |  MSCOPYS\_limitUser
+                  |  Text document          |  MSCOPYS\_SourceFile.txt
+                  |  Document library       |  MSCOPYS\_SubSiteDocumentLibrary
+                  |  Document library       |  MSCOPYS\_SourceDocumentLibrary
+                  |  Document library       |  MSCOPYS\_DestinationDocumentLibrary
+                  |  Column                 |  MSCOPYS\_TestReadOnlyField
+                  |  Column                 |  MSCOPYS\_WorkFlowEventField
+                  |  Column field value     |  MSCOPYS\_Source
+                  |  Column field value     |  MSCOPYS\_Destination
+  MS-VIEWSS       |  Site collection        |  MSVIEWSS\_SiteCollection
+                  |  GenericList            |  MSVIEWSS\_ViewList
+                  |  ListItem               |  MSVIEWSS\_ListItem1
+                  |  ListItem               |  MSVIEWSS\_ListItem2
+                  |  ListItem               |  MSVIEWSS\_ListItem3
+                  |  ListItem               |  MSVIEWSS\_ListItem4
+                  |  ListItem               |  MSVIEWSS\_ListItem5
+                  |  ListItem               |  MSVIEWSS\_ListItem6
+                  |  ListItem               |  MSVIEWSS\_ListItem7
+                  |  ListItem               |  MSVIEWSS\_ListItem7
 
 ### Configuring SUT1 using the setup configuration script
 
@@ -481,23 +424,18 @@ to run the test suites.
 
 #### MS-SITESS 
 
-1.  Create a site collection named <span id="_Hlk342051414"
-    class="anchor"></span>**MSSITESS\_SiteCollection**.
+1.  Create a site collection named **MSSITESS\_SiteCollection**.
 
 2.  Verify if the Workflows feature is activated.
 
-3.  Create a subsite named <span id="_Hlk342050342"
-    class="anchor"></span>**MSSITESS\_Site** in
+3.  Create a subsite named **MSSITESS\_Site** in
     **MSSITESS\_SiteCollection** using the *Document Workspace*
     site template.
 
-4.  Create two subsites named **MSSITESS\_NormalSubSite** and <span
-    id="_Hlk342051746"
-    class="anchor"></span>**MSSITESS\_SpecialSubSite** in MSSITESS\_Site
+4.  Create two subsites named **MSSITESS\_NormalSubSite** and **MSSITESS\_SpecialSubSite** in MSSITESS\_Site
     using the *Team Site* template.
 
-5.  <span id="OLE_LINK34" class="anchor"></span>Create a document
-    library named **MSSITESS\_DocumentLibrary**
+5.  Create a document library named **MSSITESS\_DocumentLibrary**
     in MSSITESS\_SiteCollection.
 
 6.  Create a document library named<span id="_Hlk342051894"
@@ -524,9 +462,7 @@ to run the test suites.
 
 2.  Create a site collection named **MSDWSS\_SiteCollection**.
 
-3.  <span id="OLE_LINK44" class="anchor"><span id="OLE_LINK45"
-    class="anchor"></span></span>Add an email address for the
-    administrator on MSDWSS\_SiteCollection.
+3.  Add an email address for the administrator on MSDWSS\_SiteCollection.
 
 4.  Create a site collection named <span id="_Hlk342058515"
     class="anchor"></span>**MSDWSS\_SiteCollection\_DocumentWorkspace**
@@ -845,7 +781,7 @@ versions of SharePoint:*
     MSOFFICIALFILE\_RoutingRepository, and create a content organizer
     rule where the content type is *document*.
 
-> **Note** The name and title cannot be empty in the rule.
+**Note** The name and title cannot be empty in the rule.
 
 1.  Create a document library named **Drop Off Library** under
     MSOFFICIALFILE\_RoutingRepository, and create a content organizer
@@ -1152,7 +1088,7 @@ If the SUT is a non-Microsoft implementation of SharePoint Server,
 configure the properties in the configuration file for the SUT which is
 the closest match to the SUT implementation.
 
- SHOULD/MAY configuration files
+**SHOULD/MAY configuration files**
 
 Configuration file  | Description
 :------------ | :-------------
