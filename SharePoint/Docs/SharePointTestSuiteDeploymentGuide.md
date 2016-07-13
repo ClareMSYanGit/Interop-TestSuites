@@ -226,7 +226,7 @@ SharePoint Server Protocol Test Suites    |
 -MS-XXXX                                              |    A folder containing scripts that belong to the MS-XXXX test suite.
 - RunAllMSXXXXTestCases.cmd                           |    A script that can be used to run all test cases of MS-XXXX.
 - RunMSXXXX\_SYY\_TCZZ\_TestCaseName.cmd              |    A script that can be used to run a single test case of MS-XXXX.
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Configuring the test suites
 ================================================================================================================================================================================================================================================================================================================================================================================================================
@@ -453,8 +453,7 @@ to run the test suites.
 
 #### MS-DWSS 
 
-1.  <span id="OLE_LINK75" class="anchor"></span>Create the following new
-    users (as specified in section [5.1.1](#SharePointServerresources))
+1.  Create the following new users (as specified in section [5.1.1](#SharePointServerresources))
     and set their password to never expire on the domain controller.
 
     **MSDWSS\_NoneRole**, **MSDWSS\_ReaderRole**, and
@@ -464,8 +463,7 @@ to run the test suites.
 
 3.  Add an email address for the administrator on MSDWSS\_SiteCollection.
 
-4.  Create a site collection named <span id="_Hlk342058515"
-    class="anchor"></span>**MSDWSS\_SiteCollection\_DocumentWorkspace**
+4.  Create a site collection named **MSDWSS\_SiteCollection\_DocumentWorkspace**
     using the *Document Workspace* template.
 
 5.  Create a subsite named **MSDWSS\_Site** and
@@ -474,12 +472,10 @@ to run the test suites.
 
 6.  In MSDWSS\_Site, break inheritance to the top-level site.
 
-7.  Create a document library <span id="_Hlk342058724"
-    class="anchor"></span>named **MSDWSS\_DocumentLibrary**
+7.  Create a document library named **MSDWSS\_DocumentLibrary**
     in MSDWSS\_Site.
 
-8.  Create a folder named <span id="_Hlk342058831"
-    class="anchor"></span>**MSDWSS\_TestFolder** on
+8.  Create a folder named **MSDWSS\_TestFolder** on
     MSDWSS\_DocumentLibrary, and then upload an arbitrary text file
     named MSDWSS\_TestData.txt into this folder.
 
@@ -513,8 +509,7 @@ of SharePoint:*
 
 -   *Microsoft SharePoint Server 2013 *
 
-1.  Create a group with the name <span id="_Hlk342467861"
-    class="anchor"></span>**MSWWSP\_UserGroup** on the
+1.  Create a group with the name **MSWWSP\_UserGroup** on the
     domain controller.
 
 2.  Add a default administrator to **MSWWSP\_UserGroup**.
@@ -787,7 +782,7 @@ versions of SharePoint:*
     MSOFFICIALFILE\_RoutingRepository, and create a content organizer
     rule where the content type is default type.
 
-> **Note** The name and title cannot be empty in the rule.
+**Note** The name and title cannot be empty in the rule.
 
 1.  Create a hold **MSOFFICIALFILE\_Holds**
     under MSOFFICIALFILE\_RoutingRepository.
@@ -1026,11 +1021,11 @@ for a specific test suite, do the following:
     SUT control adapter\*\*.
 
 **Interactive mode values**
-Property name | Default value\* |Optional value |Description|
+Property name | Default value\* |Optional value |Description
 :------------ | :------------- | :------------- | :-------------
   Adapter     |    managed or powershell |  interactive\*\* |  **managed**: The SUT control adapter is implemented in C\# managed code.                                                          
- |||                                                           **powershell**: The SUT control adapter is implemented through PowerShell.                                                           
- |||                                                           **interactive**: Interactive adapter is used for manually configuring the server. Interactive adapter displays a dialog box to perform manual test each time one of its methods is called. The dialog box will show the method name, parameter names and values\*\*\*.
+||| **powershell**: The SUT control adapter is implemented through PowerShell.                                                           
+|||**interactive**: Interactive adapter is used for manually configuring the server. Interactive adapter displays a dialog box to perform manual test each time one of its methods is called. The dialog box will show the method name, parameter names and values\*\*\*.
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *\*The Adapter property value is set to either **managed** or
