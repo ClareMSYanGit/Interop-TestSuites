@@ -640,7 +640,7 @@ A Visual Studio solution file
 
   1.  Select the test case to run, right-click the test case and then select **Run Selected Tests**.                                                        !
                                                                                                                                                             
-          ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_RunningTS4.png)                                                                                                                                                  
+      ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_RunningTS4.png)                                                                                                                                                  
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 A Visual Studio solution file
