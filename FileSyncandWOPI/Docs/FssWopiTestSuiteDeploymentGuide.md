@@ -67,11 +67,8 @@ This section is only relevant when running the test suites against
 following versions of SharePoint Server:
 
 -   Microsoft SharePoint Foundation 2010 Service Pack 2 (SP2)
-
 -   Microsoft SharePoint Foundation 2013 Service Pack 1 (SP1)
-
 -   Microsoft SharePoint Server 2010 Service Pack 2 (SP2)
-
 -   Microsoft SharePoint Server 2013 Service Pack 1 (SP1)
 
 The following table describes the necessary server roles required for a
@@ -87,6 +84,8 @@ test suite deployment with a Microsoft implementation.
 The following diagram is an example of what a typical SharePoint File
 Sync and WOPI Protocol Test Suite environment may look like. This
 example uses an IPv4, but IPv6 is also supported by the test suites.
+
+[alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopiRequiredSUTRoles.png)
 
 ### Test suite client
 
@@ -143,11 +142,13 @@ order to be able to successfully configure the test suites.
 
   ----------------------------------------------------------------------------------------------------------------------------------------
   1.  Right click xxx.ps1 and select **Properties**.   
-                                                       
+      
+	![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_Deploy1.png)                                                
                                                        
   ---------------------------------------------------- -----------------------------------------------------------------------------------
   1.  Click **Unblock** and then click **OK**.         
-                                                       
+      
+	![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_Deploy2.png)	  
                                                        
   ----------------------------------------------------------------------------------------------------------------------------------------
 
@@ -604,7 +605,7 @@ below to update configuration files and configure the test suite client.
 
 1.  Add a firewall rule to allow the TCP protocol for port 80.
 
-Running test suites
+Running the test suites
 ========================================================================================================================================================================================================
 
 Once the required software has been installed and both the SUT and test
@@ -626,18 +627,20 @@ A Visual Studio solution file
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   1.  Open **SharePointFileSyncAndWOPIProtocolTestSuites.sln** in Visual Studio.                                                                            
                                                                                                                                                             
-                                                                                                                                                            
+       ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_RunningTS1.png)                                                                                                                                                   
   --------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------
   1.  In the **Solution Explorer** pane, right-click **Solution** ‘**SharePointFileSyncAndWOPIProtocolTestSuites**’, and then click **Rebuild Solution**.                                                                                                                           
-                                                                                                                                                            
+         
+  ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_RunningTS2.png)		 
 
   1.  Open **Test Explorer**. On the ribbon, click **TEST,** then click **Windows**, and finally click **Test Explorer**.                                   
-                                                                                                                                                            
+      
+	  ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_RunningTS3.png)                                                                                                                                                        
                                                                                                                                                             
 
   1.  Select the test case to run, right-click the test case and then select **Run Selected Tests**.                                                        !
                                                                                                                                                             
-                                                                                                                                                            
+          ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_RunningTS4.png)                                                                                                                                                  
   ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 A Visual Studio solution file
@@ -648,14 +651,21 @@ A Visual Studio solution file
 
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------
   1.  Open **MS-FSSHTTP-FSSHTTPB.sln** in Visual Studio.
+  
+    ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_RunningTS5.png)
 
   1.  In the **Solution Explorer** pane, right-click **Solution** ‘**MS-FSSHTTP-FSSHTTPB**’, and then click **Rebuild Solution**.
+  
+    ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_RunningTS6.png)
 
   1.  Open **Test Explorer**. On the ribbon, click **TEST**, then click **Windows**, and finally click **Test Explorer**.
+  
+    ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_RunningTS7.png)
 
   1.  Select the test case to run. Right-click the test case and then select **Run Selected Tests**.
+  
+    ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_RunningTS8.png)
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Batch scripts
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
