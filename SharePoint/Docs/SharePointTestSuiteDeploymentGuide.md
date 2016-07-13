@@ -283,11 +283,11 @@ SharePointTestSuite.config is required.
 
  Test suite |  Resource type |  Resource name
 :------------ | :------------- | :-------------
-  All         |      --        |                --
-  MS-LISTSWS  |      Site collection     |      MSLISTSWS\_SiteCollection
+**All**       |      --        |                --
+**MS-LISTSWS**|      Site collection     |      MSLISTSWS\_SiteCollection
               |      Document library    |     MSLISTSWS\_DocumentLibrary
-  MS-VERSS    |      Site collection     |     MSVERSS\_SiteCollection
-  MS-SITESS   |      Site collection     |     MSSITESS\_SiteCollection
+**MS-VERSS**  |      Site collection     |     MSVERSS\_SiteCollection
+**MS-SITESS** |      Site collection     |     MSSITESS\_SiteCollection
               |      Site                |     MSSITESS\_Site
               |      Site                |     MSSITESS\_NormalSubSite
               |      Site                |     MSSITESS\_SpecialSubSite
@@ -295,7 +295,7 @@ SharePointTestSuite.config is required.
               |      Document library    |     MSSITESS\_SubSite\_DocumentLibrary
               |      Text document       |     MSSITESS\_TestData.txt
               |      ASPX file           |     MSSITESS\_CustomPage.aspx
-  MS-DWSS     |      Site collection     |     MSDWSS\_SiteCollection
+**MS-DWSS**   |      Site collection     |     MSDWSS\_SiteCollection
               |      Site collection     |     MSDWSS\_SiteCollection\_DocumentWorkspace
               |      Site                |     MSDWSS\_Site
               |      Site                |     MSDWSS\_InheritPermissionSite
@@ -306,38 +306,38 @@ SharePointTestSuite.config is required.
               |      User                |     MSDWSS\_ReaderRole
               |      User                |     MSDWSS\_GroupOwner
               |      Group               |     MSDWSS\_CustomGroup
-  MS-MEETS    |      Site collection     |     MSMEETS\_SiteCollection
+**MS-MEETS**  |      Site collection     |     MSMEETS\_SiteCollection
               |      User                |     MSMEETS\_User
-  MSWEBSS     |      Site collection     |     MSWEBSS\_SiteCollection
+**MSWEBSS**   |      Site collection     |     MSWEBSS\_SiteCollection
               |      Document library    |     MSWEBSS\_DocumentLibrary
               |      Word document       |     MSWEBSS\_TestData.docx
               |      Site                |     MSWEBSS\_Site
-  MS-WDVMODUU |      Site collection     |     MSWDVMODUU\_SiteCollection
+**MS-WDVMODUU** |      Site collection   |     MSWDVMODUU\_SiteCollection
               |      Document library    |     MSWDVMODUU\_DocumentLibrary1
               |      Document library    |     MSWDVMODUU\_DocumentLibrary2
               |      Text document       |     MSWDVMODUU\_TestData1.txt
               |      Text document       |     MSWDVMODUU\_TestData2.txt
               |      Text document       |     MSWDVMODUU\_TestData3.txt
               |      Fake virus file     |     FakeVirusInfectedFile\_Get.txt
-  MS-WWSP     |      Site collection     |     MSWWSP\_SiteCollection
+**MS-WWSP**   |      Site collection     |     MSWWSP\_SiteCollection
               |      Work Flow           |     MSWWSP\_Workflow
               |      Work Flow Task List |     Tasks
               |      Work flow History List |  MSWWSP\_WorkflowHistoryList
               |      Document library       |  MSWWSP\_DocumentLibrary
-              |       Group                  |  MSWWSP\_UserGroup
+              |       Group                 |  MSWWSP\_UserGroup
               |      User                   |  MSWWSP\_User
-  MS-OUTSPS   |      Site collection        |  MSOUTSPS\_SiteCollection
-  MS-AUTHWS   |      Web Application        |  MSAUTHWS\_FormsWebAPP
+**MS-OUTSPS** |      Site collection        |  MSOUTSPS\_SiteCollection
+**MS-AUTHWS** |      Web Application        |  MSAUTHWS\_FormsWebAPP
               |      Web Application        |  MSAUTHWS\_NoneWebAPP
               |      Web Application        |  MSAUTHWS\_PassportWebAPP
               |      Web Application        |  MSAUTHWS\_WindowsAPP
-  MS-SHDACCWS |      Site collection        |  MSSHDACCWS\_SiteCollection
+**MS-SHDACCWS** |      Site collection      |  MSSHDACCWS\_SiteCollection
               |      Document library       |  MSSHDACCWS\_DocumentLibrary
               |      Text document          |  MSSHDACCWS\_LockedTestData.txt
               |      Text document          |  MSSHDACCWS\_CoStatusTestData.txt
               |      Text document          |  MSSHDACCWS\_TestData.txt
-  MS-CPSWS    |      User                   |  MSCPSWS\_User
-  MS-WSSREST  |      Site collection        |  MSWSSREST\_SiteCollection
+**MS-CPSWS**  |      User                   |  MSCPSWS\_User
+**MS-WSSREST**|      Site collection        |  MSWSSREST\_SiteCollection
               |      Document library       |  MSWSSREST\_DocumentLibrary
               |      Calendar               |  MSWSSREST\_Calendar
               |      DiscussionBoard        |  MSWSSREST\_DiscussionBoard
@@ -351,7 +351,7 @@ SharePointTestSuite.config is required.
               |      ChoiceFieldValue       |  MSWSSREST\_SingleChoiceOption1, MSWSSREST\_SingleChoiceOption2
               |      MultiChoiceFieldValue  |  MSWSSREST\_MultiChoiceOption1, MSWSSREST\_MultiChoiceOption2
               |      LookupField            |  MSWSSREST\_LookupField
-  MS-OFFICIALFILE |  Site collection        |  MSOFFICIALFILE\_SiteCollection
+**MS-OFFICIALFILE** |  Site collection      |  MSOFFICIALFILE\_SiteCollection
                   |  Site                   |  MSOFFICIALFILE\_RoutingRepository
                   |  Site                   |  MSOFFICIALFILE\_NoRoutingRepository
                   |  Site                   |  MSOFFICIALFILE\_EnabledParsingRepository
@@ -361,7 +361,7 @@ SharePointTestSuite.config is required.
                   |  Document library       |  MSOFFICIALFILE\_DocumentSetLocationLibrary
                   |  DocumentSet            |  MSOFFICIALFILE\_DocumentSetName
                   |  User                   |  MSOFFICIALFILE\_User
-  MS-COPYS        |  Site collection        |  MSCOPYS\_SiteCollection
+**MS-COPYS**      |  Site collection        |  MSCOPYS\_SiteCollection
                   |  Site                   |  MSCOPYS\_SubSiteMeetingWorkspace
                   |  User                   |  MSCOPYS\_EditUser
                   |  User                   |  MSCOPYS\_limitUser
@@ -373,7 +373,7 @@ SharePointTestSuite.config is required.
                   |  Column                 |  MSCOPYS\_WorkFlowEventField
                   |  Column field value     |  MSCOPYS\_Source
                   |  Column field value     |  MSCOPYS\_Destination
-  MS-VIEWSS       |  Site collection        |  MSVIEWSS\_SiteCollection
+**MS-VIEWSS**     |  Site collection        |  MSVIEWSS\_SiteCollection
                   |  GenericList            |  MSVIEWSS\_ViewList
                   |  ListItem               |  MSVIEWSS\_ListItem1
                   |  ListItem               |  MSVIEWSS\_ListItem2
@@ -444,13 +444,11 @@ to run the test suites.
 5.  Create a document library named **MSSITESS\_DocumentLibrary**
     in MSSITESS\_SiteCollection.
 
-6.  Create a document library named<span id="_Hlk342051894"
-    class="anchor"></span> **MSSITESS\_SubSite\_DocumentLibrary**
+6.  Create a document library named **MSSITESS\_SubSite\_DocumentLibrary**
     in MSSITESS\_SpecialSubSite.
 
 7.  Upload a file **MSSITESS\_TestData.txt** with the file size 24MB to
-    MSSITESS\_SubSite\_DocumentLibrary <span id="_Hlk342051982"
-    class="anchor"></span>in MSSITESS\_SpecialSubSite.
+    MSSITESS\_SubSite\_DocumentLibrary in MSSITESS\_SpecialSubSite.
 
 8.  Upload a custom page named **MSSITESS\_CustomPage.aspx** to
     MSSITESS\_SubSite\_DocumentLibrary in MSSITESS\_SpecialSubSite.
@@ -459,7 +457,7 @@ to run the test suites.
 
 #### MS-DWSS 
 
-1.  Create the following new users (as specified in section [5.1.1](#SharePointServerresources))
+1.  Create the following new users (as specified in section [SUT resource requirements ](sut-resource-requirements)
     and set their password to never expire on the domain controller.
 
     **MSDWSS\_NoneRole**, **MSDWSS\_ReaderRole**, and
@@ -510,9 +508,7 @@ to run the test suites.
 of SharePoint:*
 
 -   *Microsoft Office SharePoint Server 2007*
-
 -   *Microsoft SharePoint Server 2010*
-
 -   *Microsoft SharePoint Server 2013 *
 
 1.  Create a group with the name **MSWWSP\_UserGroup** on the
@@ -620,7 +616,7 @@ of SharePoint:*
     MSWDVMODUU\_DocumentLibrary1, and upload an arbitrary text file
     named MSWDVMODUU \_TestData3.txt into this folder.
 
-5.  Upload a fake virus file (mentioned in section [2.2.1](#VirusFile))
+5.  Upload a fake virus file (mentioned in section [System under test ](#system-under-test)
     into MSWDVMODUU\_DocumentLibrary2.
 
 #### MS-AUTHWS 
@@ -653,11 +649,8 @@ Windows.
 versions of SharePoint:*
 
 -   *Microsoft SharePoint Foundation 2010*
-
 -   *Microsoft SharePoint Server 2010 *
-
 -   *Microsoft SharePoint Foundation 2013 *
-
 -   *Microsoft SharePoint Server 2013*
 
 1.  Create a site collection named **MSSHDACCWS\_SiteCollection**.
@@ -674,13 +667,10 @@ versions of SharePoint:*
 ***Note**    The MS-* *CPSWS test suite supports only the following
 versions of SharePoint:*
 
--   *Microsoft SharePoint Foundation 2010*
-
--   *Microsoft SharePoint Server 2010 *
-
--   *Microsoft SharePoint Foundation 2013 *
-
--   *Microsoft SharePoint Server 2013 *
+-   Microsoft SharePoint Foundation 2010
+-   Microsoft SharePoint Server 2010 
+-   Microsoft SharePoint Foundation 2013 
+-   Microsoft SharePoint Server 2013 
 
 1.  Create a user with the name **MSCPSWS\_User** and set the password
     to never expire on the domain controller.
@@ -697,15 +687,12 @@ versions of SharePoint:*
 #### MS-WSSREST 
 
 ***Note**    The MS-WSSREST test suite supports only the following
-versions of SharePoint:*
+versions of SharePoint:
 
--   *Microsoft SharePoint Foundation 2010*
-
--   *Microsoft SharePoint Server 2010 *
-
--   *Microsoft SharePoint Foundation 2013 *
-
--   *Microsoft SharePoint Server 2013 *
+-   Microsoft SharePoint Foundation 2010
+-   Microsoft SharePoint Server 2010 
+-   Microsoft SharePoint Foundation 2013 
+-   Microsoft SharePoint Server 2013 
 
 1.  Create a site collection named **MSWSSREST\_SiteCollection**.
 
@@ -756,11 +743,9 @@ versions of SharePoint:*
 ***Note**    The MS-OFFICIALFILE test suite supports only the following
 versions of SharePoint:*
 
--   *Microsoft Office SharePoint Server 2007*
-
--   *Microsoft SharePoint Server 2010*
-
--   *Microsoft SharePoint Server 2013 *
+	-   Microsoft Office SharePoint Server 2007
+	-   Microsoft SharePoint Server 2010
+	-   Microsoft SharePoint Server 2013 
 
     For *Microsoft Office SharePoint Server 2007*, you will only need to
     configure the steps from 1 to 7.
@@ -908,7 +893,7 @@ MSVIEWSS\_ListItem7, MSVIEWSS\_ListItem7*
 ### Configuring SUT2 using the setup configuration script
 
 ***Note** The setup configuration script is only used for configuring
-the SUT on Windows. *
+the SUT on Windows. 
 
 To configure SUT2 using the setup configuration script, navigate to the
 SUT folder, right-click **SharePointSecondSUTConfiguration.cmd** and
@@ -1096,10 +1081,10 @@ Configuration file  | Description
 :------------ | :-------------
   MS-XXXX\_WindowsSharePointServices3\_SHOULDMAY.deployment.ptfconfig  | Provides the configuration properties for SHOULD and MAY requirements supported by Windows SharePoint Services 3.0 Service Pack 3 (SP3).
   MS-XXXX\_SharePointFoundation2010\_SHOULDMAY.deployment.ptfconfig    | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Foundation 2010 Service Pack 2 (SP2).
-  MS-XXXX\_SharePointFoundation2013\_SHOULDMAY.deployment.ptfconfig  |   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Foundation 2013 Service Pack 1 (SP1).
-  MS-XXXX\_SharePointServer2007\_SHOULDMAY.deployment.ptfconfig      |   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Office SharePoint Server 2007 Service Pack 3 (SP3).
-  MS-XXXX\_SharePointServer2010\_SHOULDMAY.deployment.ptfconfig      |   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Server 2010 Service Pack 2 (SP2).
-  MS-XXXX\_SharePointServer2013\_SHOULDMAY.deployment.ptfconfig     |    Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Server 2013 Service Pack 1 (SP1).
+  MS-XXXX\_SharePointFoundation2013\_SHOULDMAY.deployment.ptfconfig    |   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Foundation 2013 Service Pack 1 (SP1).
+  MS-XXXX\_SharePointServer2007\_SHOULDMAY.deployment.ptfconfig        |   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Office SharePoint Server 2007 Service Pack 3 (SP3).
+  MS-XXXX\_SharePointServer2010\_SHOULDMAY.deployment.ptfconfig        |   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Server 2010 Service Pack 2 (SP2).
+  MS-XXXX\_SharePointServer2013\_SHOULDMAY.deployment.ptfconfig        |    Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Server 2013 Service Pack 1 (SP1).
 
 ### Configuring the test suite client using setup configuration script
 
@@ -1120,7 +1105,7 @@ below to update configuration files and configure the test suite client.
 1.  Update the property value in the common configuration file and the test suite-specific configuration files according to the comment of the property.
 
 2.  By default, the test suites use PowerShell script in the SUT control adapter to configure the SUT. If you chose interactive mode for the SUT control adapter as described in section
-    [5.2.2.1](#Configure_Interactive_Mode), skip this step.
+    [Set the test suite to interactive mode](#set-the-test-suite-to-interactive-mode), skip this step.
 
     a.  Set the execution policy to RemoteSigned.
 
@@ -1138,7 +1123,7 @@ to run. The test suite can run only on the test suite client and can be
 initiated in one of the following two ways: Visual Studio or batch
 scripts.
 
-If you need to run the test suite MS-WDVMODUU, copy the fake virus file that mentioned in section [2.2.1](#VirusFile) to the folder **\\Source\\MS-WDVMODUU\\TestSuite\\** **Resources**.
+If you need to run the test suite MS-WDVMODUU, copy the fake virus file that mentioned in section [System under test](#system-under-test) to the folder **\\Source\\MS-WDVMODUU\\TestSuite\\** **Resources**.
 
 Microsoft Visual Studio
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
