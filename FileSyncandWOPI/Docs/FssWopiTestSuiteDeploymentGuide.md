@@ -85,7 +85,7 @@ The following diagram is an example of what a typical SharePoint File
 Sync and WOPI Protocol Test Suite environment may look like. This
 example uses an IPv4, but IPv6 is also supported by the test suites.
 
-![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopiRequiredSUTRoles.png)
+![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_RequiredSUTRoles.png)
 
 ### Test suite client
 
