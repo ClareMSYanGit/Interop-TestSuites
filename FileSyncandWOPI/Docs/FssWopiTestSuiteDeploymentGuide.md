@@ -225,8 +225,8 @@ Configuring the SUT
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 You can configure the SUT using automation scripts, as described in
-section [5.1.2](#_Configuring_the_SUT_1); or configure the SUT manually,
-as described in section [5.1.3](#_Configuring_the_SUT).
+section [Configuring the SUT using the setup configuration script](#configuring-the-sut-using-the-setup-configuration-script); or configure the SUT manually,
+as described in section [configuring the SUT manually](#configuring-the-sut-manually).
 
 ***Note**   The scripts should be run by a user who has domain
 administrator rights on the SUT.*
@@ -238,7 +238,7 @@ Protocol test suites package may require varying levels of resources on
 the SUT. The following table outlines these resources for each test
 suite. The SUT configuration scripts will automatically create all the
 required resources for the Microsoft server implementation. To configure
-the SUT manually, refer to section [5.1.3](#_Configuring_test_suite).
+the SUT manually, refer to section [Configuring the SUT manually](#configuring the SUT manually).
 
 The client configuration script follows the naming convention shown in
 the following table. If a change to the resource name is required, the
@@ -249,7 +249,6 @@ configuration script will be required.
 of SharePoint:*
 
 -   *Microsoft SharePoint Server 2013 Service Pack 1 (SP1)*
-
 -   *Microsoft SharePoint Foundation 2013 Service Pack 1 (SP1)*
 
 **SharePoint Server resources**
@@ -333,8 +332,7 @@ as follows:
 1.  Create a site collection named MSFSSHTTPFSSHTTPB\_SiteCollection.
 
 2.  Create a document library named MSFSSHTTPFSSHTTPB\_DocumentLibrary
-    <span id="OLE_LINK52"
-    class="anchor"></span>in MSFSSHTTPFSSHTTPB\_SiteCollection.
+    in MSFSSHTTPFSSHTTPB\_SiteCollection.
 
 3.  Upload a file FileSyncWOPIBigTest.txt with size of more than 1MB to
     MSFSSHTTPFSSHTTPB\_DocumentLibrary
@@ -435,7 +433,7 @@ For the MS-WOPI test suite, the SUT configuration steps are as follows:
     the test suite.
 	
 Configuring the test suite client
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 The test suite client is managed through a common configuration file,
 two test suite-specific configuration files and four SHOULD/MAY
@@ -589,7 +587,7 @@ below to update configuration files and configure the test suite client.
 2.  By default, the test suites use PowerShell script in the SUT control
     adapter to configure the SUT. If you chose interactive mode for the
     SUT control adapter as described in section
-    [5.2.2.1](#Configure_Interactive_Mode), skip this step.
+    [Set the test suite to interactive mode](#set-the-test-suite-to-interactive-mode), skip this step.
 
     a.  Set the execution policy to RemoteSigned.
 
@@ -749,13 +747,13 @@ Appendix
 ================================================================================================================================================================================================================================================================================================================================================================================================================
  References   | Description
 :------------ | :-------------
-  <dochelp@microsoft.com>       |                                                                                          Alias for Interoperability documentation help. Provides support for the Open Specifications and protocol test suites.| 
-  [Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)      |                                        Microsoft Customer Support Services forums. Actively monitored forums that provide support for the Open Specifications and Protocol test suites.| 
-  [Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)  |                                 Open Specifications home page on MSDN.
-  [Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)                    |                                Open Specifications documentation on MSDN.
-  [SharePoint Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=202122) |                        SharePoint Open Specifications documentation on MSDN.
-  [RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)      |                                                          Normative language reference.
-  [Microsoft SharePoint Foundation 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517503)  |                      Microsoft SharePoint Foundation 2010 deployment on TechNet.
-  [Microsoft SharePoint Foundation 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504) |   Microsoft SharePoint Foundation 2013 installation and configuration on TechNet.
-  [Microsoft SharePoint Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517505)   |                         Microsoft SharePoint Server 2010 deployment on TechNet.
-  [Microsoft SharePoint Server 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504)    |    Microsoft SharePoint Server 2013 installation and configuration on TechNet.
+  <dochelp@microsoft.com>   |  Alias for Interoperability documentation help. Provides support for the Open Specifications and protocol test suites.| 
+  [Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125) | Microsoft Customer Support Services forums. Actively monitored forums that provide support for the Open Specifications and Protocol test suites. 
+  [Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)  | Open Specifications home page on MSDN.
+  [Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)                   | Open Specifications documentation on MSDN.
+  [SharePoint Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=202122) | SharePoint Open Specifications documentation on MSDN.
+  [RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)      |  Normative language reference.
+  [Microsoft SharePoint Foundation 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517503)  |  Microsoft SharePoint Foundation 2010 deployment on TechNet.
+  [Microsoft SharePoint Foundation 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504) | Microsoft SharePoint Foundation 2013 installation and configuration on TechNet.
+  [Microsoft SharePoint Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517505)   |  Microsoft SharePoint Server 2010 deployment on TechNet.
+  [Microsoft SharePoint Server 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504) | Microsoft SharePoint Server 2013 installation and configuration on TechNet.
