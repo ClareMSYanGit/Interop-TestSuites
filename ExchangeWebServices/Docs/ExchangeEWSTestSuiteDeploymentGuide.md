@@ -316,7 +316,7 @@ are installed.
 
 Configuration file| Description
 :------------ | :-------------
-ExchangeCommonConfiguration.deployment.ptfconfig |   The deployment configuration file provides the environmental details that are common to the test suites.
+**ExchangeCommonConfiguration.deployment.ptfconfig** |   The deployment configuration file provides the environmental details that are common to the test suites.
 
 ### Test-suite specific configuration files
 
@@ -366,21 +366,19 @@ Adapter    |     managed or powershell|   interactive\*\* |  **managed**: The SU
  
 \**The Adapter property value is set to either managed or powershell
 depending on whether the SUT control adapter was implemented in managed
-C\# code or through PowerShell.\
-*
+C\# code or through PowerShell.
 
-\*\* *When changing to interactive mode from managed mode, the
+\*\**When changing to interactive mode from managed mode, the
 “adaptertype” attribute must be deleted to avoid a runtime error. When
 changing to interactive mode from powershell mode, an additional step is
-required—delete the “scriptdir” attribute to avoid a runtime error.\
-*
+required—delete the “scriptdir” attribute to avoid a runtime error.
 
 \*\*\**When the manual operation completes successfully, enter the
 return values (if any) in **Action Results** and click **Succeed** in
 the dialog box. When the manual operation is unable to complete, enter
 the error messages in the **Failure Message** text box and click
 **Fail** to terminate the test. In this case, the test will be treated
-as “Inconclusive”.*
+as “Inconclusive”.
 
 Further customization can be done by creating your own SUT control
 adapter that matches the server implementation. For more information
