@@ -206,7 +206,7 @@ administrator rights with a mailbox on the SUT.
 ### SUT resource requirements 
 
 Each test suite contained within the Exchange Server EWS Protocol test
-suites package may require/ varying levels of resources on the SUT. The
+suites package may require varying levels of resources on the SUT. The
 following table outlines these resources for each test suite. The SUT
 configuration scripts will automatically create all the required
 resources for the Microsoft server implementation. To configure the SUT
@@ -221,11 +221,11 @@ Exchange server resources
 
 Test suite | Resource type |  Resource name |  Note
 :------------ | :------------- | :------------- | :-------------
-**All         |   --           |          --    |     --                         
-**MS-OXWSATT  |  Mailbox |  MSOXWSATT\_User01   | Mailbox type user
-**MS-OXWSBTRF |  Mailbox |  MSOXWSBTRF\_User01  | Mailbox type user
-**MS-OXWSCONT |  Mailbox |  MSOXWSCONT\_User01  | Mailbox type user
-**MS-OXWSCORE |  Mailbox |  MSOXWSCORE\_User01  | Mailbox type user
+**All**         |   --           |          --    |     --                         
+**MS-OXWSATT**  |  Mailbox |  MSOXWSATT\_User01   | Mailbox type user
+**MS-OXWSBTRF** |  Mailbox |  MSOXWSBTRF\_User01  | Mailbox type user
+**MS-OXWSCONT** |  Mailbox |  MSOXWSCONT\_User01  | Mailbox type user
+**MS-OXWSCORE** |  Mailbox |  MSOXWSCORE\_User01  | Mailbox type user
               |  Mailbox |  MSOXWSCORE\_User02  | Mailbox type user
               |  Public Folder Mailbox |  MSOXWSCORE\_PublicFolderMailbox  | Public Folder Mailbox created for the public folder of the organization configuration of Exchange 2013.
               |  Public Folder |  MSOXWSCORE\_PublicFolder          
