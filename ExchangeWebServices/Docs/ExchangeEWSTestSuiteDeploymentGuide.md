@@ -419,13 +419,13 @@ If the SUT is a non-Microsoft implementation of Exchange Server,
 configure the properties in the configuration file for the Exchange
 Server which is the closest match to the SUT implementation.
 
-SHOULD/MAY configuration files
+**SHOULD/MAY configuration files**
 
 Configuration file | Description
 :------------ | :------------- 
-MS-XXXX\_ExchangeServer2007\_SHOULDMAY.deployment.ptfconfig | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2007 Service Pack 3 (SP3).
-MS-XXXX\_ExchangeServer2010\_SHOULDMAY.deployment.ptfconfig | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2010 Service Pack 3 (SP3).
-MS-XXXX\_ExchangeServer2013\_SHOULDMAY.deployment.ptfconfig | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2013 Service Pack 1 (SP1).
+**MS-XXXX\_ExchangeServer2007\_SHOULDMAY.deployment.ptfconfig** | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2007 Service Pack 3 (SP3).
+**MS-XXXX\_ExchangeServer2010\_SHOULDMAY.deployment.ptfconfig** | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2010 Service Pack 3 (SP3).
+**MS-XXXX\_ExchangeServer2013\_SHOULDMAY.deployment.ptfconfig** | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2013 Service Pack 1 (SP1).
 
 ### Configuring the test suite client using setup configuration script
 
