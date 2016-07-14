@@ -143,12 +143,12 @@ order to be able to successfully configure the test suites.
   
 1.  Right click xxx.ps1 and select **Properties**.   
   
-![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_Deploy1.png)                                                
+	![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_Deploy1.png)                                                
 												   
 ---------------------------------------------------- -----------------------------------------------------------------------------------
 1.  Click **Unblock** and then click **OK**.         
   
-![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_Deploy2.png)	  
+	![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_Deploy2.png)	  
 												   
 ----------------------------------------------------------------------------------------------------------------------------------------
 
