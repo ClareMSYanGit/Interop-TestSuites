@@ -404,7 +404,7 @@ To change the TSAP packet broadcast, do the following:
 2.  Add a property “BeaconLogTargetServer” along with the value of the
     specified machine name.
 
-For example: &lt;Property name="BeaconLogTargetServer" value="dc01"/&gt;
+	For example: &lt;Property name="BeaconLogTargetServer" value="dc01"/&gt;
 
 ### SHOULD/MAY configuration files
 
