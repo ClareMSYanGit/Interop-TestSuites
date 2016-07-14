@@ -143,6 +143,8 @@ Architecture
 The following figure illustrates the SharePoint File Sync and WOPI
 Protocol Test Suites architecture.
 
+![alt tag] (https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_Spec_Architecture.png)
+
 **Figure 1: Architecture**
 
 The following outlines the details of the test suites architecture:
@@ -157,8 +159,6 @@ suites run against.
 
 -   The following products have been tested with the test suite on the
     Windows platform.
-
-<!-- -->
 
 -   Microsoft SharePoint Foundation 2010 Service Pack 2 (SP2)
 
@@ -267,21 +267,21 @@ test suite:
 
  Scenario| Description
 :------------ | :-------------
-  S01\_Cell                                              |          Verifies the cell sub-request operation.
-  <span id="S02" class="anchor"></span>S02\_Coauth       |          Verifies the co-authoring sub-request operation.
-  <span id="S03" class="anchor"></span>S03\_SchemaLock   |          Verifies the schema lock sub-request operation.
-  <span id="S04" class="anchor"></span>S04\_ExclusiveLock|          Verifies the exclusive lock sub-request operation.
-  <span id="S05" class="anchor"></span>S05\_WhoAmI       |          Verifies the WhoAmI sub-request operation.
-  <span id="S06" class="anchor"></span>S06\_ServerTime   |          Verifies the ServerTime sub-request operation.
-  <span id="S07" class="anchor"></span>S07\_EditorsTable |          Verifies the EditorsTable sub-request operation.
-  <span id="S08" class="anchor"></span>S08\_GetDocMetaInfo |        Verifies the GetDocMetaInfo sub-request operations.
-  <span id="S09" class="anchor"></span>S09\_GetVersions    |        Verifies the GetVersions sub-request operations.
-  <span id="S10" class="anchor"></span>S10\_MultipleSubRequests |   Verifies at least two sub-requests with various dependency types.
-  <span id="S11" class="anchor"></span>S11\_QueryAccess         |   Verifies the QueryAccess sub-request operation.
-  <span id="S12" class="anchor"></span>S12\_QueryChanges        |   Verifies the QueryChanges sub-request operation.
-  S13\_PutChanges                                               |   Verifies the PutChanges sub-request operation.
-  S14\_AllocateExtendedGuidRange                                |   Verifies the allocate extended GUID range sub-request operations.
-  S15\_CreateFile                                               |   Verifies the PutChanges sub-request to create a new file on the server.
+S01\_Cell         |          Verifies the cell sub-request operation.
+S02\_Coauth       |          Verifies the co-authoring sub-request operation.
+S03\_SchemaLock   |          Verifies the schema lock sub-request operation.
+S04\_ExclusiveLock|          Verifies the exclusive lock sub-request operation.
+S05\_WhoAmI       |          Verifies the WhoAmI sub-request operation.
+S06\_ServerTime   |          Verifies the ServerTime sub-request operation.
+S07\_EditorsTable |          Verifies the EditorsTable sub-request operation.
+S08\_GetDocMetaInfo |        Verifies the GetDocMetaInfo sub-request operations.
+S09\_GetVersions    |        Verifies the GetVersions sub-request operations.
+S10\_MultipleSubRequests |   Verifies at least two sub-requests with various dependency types.
+S11\_QueryAccess         |   Verifies the QueryAccess sub-request operation.
+S12\_QueryChanges        |   Verifies the QueryChanges sub-request operation.
+S13\_PutChanges          |   Verifies the PutChanges sub-request operation.
+S14\_AllocateExtendedGuidRange  |   Verifies the allocate extended GUID range sub-request operations.
+S15\_CreateFile |   Verifies the PutChanges sub-request to create a new file on the server.
 
 ### MS-FSSHTTP-FSSHTTPB
 

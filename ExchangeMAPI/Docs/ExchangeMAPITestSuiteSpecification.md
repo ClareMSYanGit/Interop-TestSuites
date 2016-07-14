@@ -127,6 +127,8 @@ Architecture
 The following figure illustrates the Exchange MAPI Protocol Test Suites
 architecture.
 
+![alt tag] (https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_Spec_Architecture.png)
+
 **Figure 1: Architecture**
 
 The following outlines the details of the test suites architecture:

@@ -121,6 +121,8 @@ Architecture
 The following figure illustrates the Exchange EWS Protocol Test Suites
 architecture.
 
+![alt tag] (https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeWebServices/Docs/Doc-Images/EWS_Spec_Architecture.png)
+
 **Figure 1: Architecture**
 
 The following outlines the details of the test suites architecture:
@@ -136,12 +138,8 @@ suites run against.
 -   The following products have been tested with the test suites on the
     Windows platform.
 
-<!-- -->
-
 -   Microsoft Exchange Server 2007 Service Pack 3 (SP3)
-
 -   Microsoft Exchange Server 2010 Service Pack 3 (SP3)
-
 -   Microsoft Exchange Server 2013 Service Pack 1 (SP1)
 
 **Test Suite Client**
