@@ -94,7 +94,7 @@ This section describes the prerequisite software for installing the
 Exchange Server EWS Protocol test suites on the test suite client. The following
 table outlines the software dependencies for the test suite client.
 
-Test suite client software dependencies
+**Test suite client software dependencies**
 
 | Operating systems |
 | :------------|
