@@ -1081,12 +1081,12 @@ the closest match to the SUT implementation.
 
 Configuration file  | Description
 :------------ | :-------------
-  MS-XXXX\_WindowsSharePointServices3\_SHOULDMAY.deployment.ptfconfig  | Provides the configuration properties for SHOULD and MAY requirements supported by Windows SharePoint Services 3.0 Service Pack 3 (SP3).
-  MS-XXXX\_SharePointFoundation2010\_SHOULDMAY.deployment.ptfconfig    | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Foundation 2010 Service Pack 2 (SP2).
-  MS-XXXX\_SharePointFoundation2013\_SHOULDMAY.deployment.ptfconfig    |   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Foundation 2013 Service Pack 1 (SP1).
-  MS-XXXX\_SharePointServer2007\_SHOULDMAY.deployment.ptfconfig        |   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Office SharePoint Server 2007 Service Pack 3 (SP3).
-  MS-XXXX\_SharePointServer2010\_SHOULDMAY.deployment.ptfconfig        |   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Server 2010 Service Pack 2 (SP2).
-  MS-XXXX\_SharePointServer2013\_SHOULDMAY.deployment.ptfconfig        |    Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Server 2013 Service Pack 1 (SP1).
+**MS-XXXX\_WindowsSharePointServices3\_SHOULDMAY.deployment.ptfconfig**  | Provides the configuration properties for SHOULD and MAY requirements supported by Windows SharePoint Services 3.0 Service Pack 3 (SP3).
+**MS-XXXX\_SharePointFoundation2010\_SHOULDMAY.deployment.ptfconfig**    | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Foundation 2010 Service Pack 2 (SP2).
+**MS-XXXX\_SharePointFoundation2013\_SHOULDMAY.deployment.ptfconfig**    |   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Foundation 2013 Service Pack 1 (SP1).
+**MS-XXXX\_SharePointServer2007\_SHOULDMAY.deployment.ptfconfig**        |   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Office SharePoint Server 2007 Service Pack 3 (SP3).
+**MS-XXXX\_SharePointServer2010\_SHOULDMAY.deployment.ptfconfig**        |   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Server 2010 Service Pack 2 (SP2).
+**MS-XXXX\_SharePointServer2013\_SHOULDMAY.deployment.ptfconfig**        |    Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Server 2013 Service Pack 1 (SP1).
 
 ### Configuring the test suite client using setup configuration script
 
