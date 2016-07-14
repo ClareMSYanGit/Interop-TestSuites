@@ -224,8 +224,7 @@ You can configure the SUT using automation scripts, as described in
 section [Configuring the SUT using the setup configuration script](#configuring-the-sut-using-the-setup-configuration-script); or configure the SUT manually,
 as described in section [Configuring the SUT manually](#configuring-the-sut-manually).
 
-***Note**   The scripts should be run by a user who has domain
-administrator rights on the SUT.*
+**Note** The scripts should be run by a user who has domain administrator rights on the SUT.
 
 ### SUT resource requirements
 
@@ -241,11 +240,10 @@ the following table. If a change to the resource name is required, the
 corresponding change to the resource name defined in the client
 configuration script will be required.
 
-***Note**   The MS-WOPI test suite only supports the following versions
-of SharePoint:*
+**Note**   The MS-WOPI test suite only supports the following versions of SharePoint:
 
--   *Microsoft SharePoint Server 2013 Service Pack 1 (SP1)*
--   *Microsoft SharePoint Foundation 2013 Service Pack 1 (SP1)*
+-  Microsoft SharePoint Server 2013 Service Pack 1 (SP1)
+-  Microsoft SharePoint Foundation 2013 Service Pack 1 (SP1)
 
 **SharePoint Server resources**
 
@@ -317,8 +315,7 @@ to run the test suites.
     administrator permissions to User1, User2, User3, ReadOnlyUser
     and FileSyncWOPIUser.
 
-***Note**   The following steps should be performed by
-the SUT administrator.
+	**Note**   The following steps should be performed by the SUT administrator.
 
 #### MS-FSSHTTP-FSSHTTPB
 
@@ -447,7 +444,7 @@ suites are installed.
 
 |Configuration file | Description|
 |:------------ | :-------------|
-FssWopiCommonConfiguration.deployment.ptfconfig |The deployment configuration file provides the environmental details that are common to the test suites.
+**FssWopiCommonConfiguration.deployment.ptfconfig** |The deployment configuration file provides the environmental details that are common to the test suites.
 
 ###Test-suite specific configuration files
 
@@ -459,8 +456,8 @@ modification.
 
 |Configuration file   | Description|
 |:------------ | :-------------|
-|MS-XXXX\_TestSuite.deployment.ptfconfig |  The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows for the test suite-specific customization.|
-|MS-XXXX\_TestSuite.ptfconfig            |  The test suite configuration file contains details that specify the behavior of the test suite operation.|
+|**MS-XXXX\_TestSuite.deployment.ptfconfig**|  The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows for the test suite-specific customization.|
+|**MS-XXXX\_TestSuite.ptfconfig**|  The test suite configuration file contains details that specify the behavior of the test suite operation.|
 
 Both files are present in TestSuite folder of each test suite directory.
 
