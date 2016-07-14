@@ -279,7 +279,7 @@ configuration script will be required.
 
 ### Configuring the SUT using the setup configuration script <a name="configuring-the-sut-using-the-setup-configuration-script"></a>
 
-*The setup configuration script is only used for configuring the SUT on the Windows platform.*
+The setup configuration script is only used for configuring the SUT on the Windows platform.
 
 To configure SUT using the setup configuration script, navigate to the
 **SUT** folder, right-click the **SharePointSUTConfiguration.cmd** and
