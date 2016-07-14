@@ -175,7 +175,7 @@ PowerShell scripts.
   ---------------------------------------------------- -----------------------------------------------------------------------------------
   1.  Click **Unblock** and click **OK**.             
                                                        
-      ![alt tag]https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/SharePoint/Docs/Doc-Images/SP_Deploy2.png)                                         
+      ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/SharePoint/Docs/Doc-Images/SP_Deploy2.png)                                         
   ----------------------------------------------------------------------------------------------------------------------------------------
 
 Test suite directories
