@@ -219,7 +219,7 @@ configuration script will be required.
 
 Exchange server resources
 
-Test suite | Resource type |  Resource name |  Note
+Test suite | Resource type |  Resource name |  Notes
 :------------ | :------------- | :------------- | :-------------
 **All**         |   --           |          --    |     --                         
 **MS-OXWSATT**  |  Mailbox |  MSOXWSATT\_User01   | Mailbox type user
@@ -277,11 +277,11 @@ to run the test suites.
 2.  Assign the **ApplicationImpersonation** role to the following
     mailbox users.
 
-**Note** This role enables applications to impersonate users in an
-organization in order to perform a task on behalf of them.
+	**Note** This role enables applications to impersonate users in an
+	organization in order to perform a task on behalf of them.
 
-MS-OXWSATT\_User01, MS-OXWSBTRF\_User01, MSOXWSCORE\_User01,
-MSOXWSFOLD\_User01, and MSOXWSSYNC\_User01
+	MS-OXWSATT\_User01, MS-OXWSBTRF\_User01, MSOXWSCORE\_User01,
+	MSOXWSFOLD\_User01, and MSOXWSSYNC\_User01
 
 1.  Create the following managed folders in Active Directory:
 
