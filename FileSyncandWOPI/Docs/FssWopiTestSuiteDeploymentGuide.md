@@ -130,15 +130,15 @@ order to be able to successfully configure the test suites.
     configuration process and are contained within the
     **SharePointFileSyncandWOPIProtocolTestSuites.zip** file.
 
-**Notes**   
+	**Note**   
 
--   If you configure the SUT using the setup configuration scripts,
-    remember that the path of the setup script should contain at most
-    256 characters.
+	-   If you configure the SUT using the setup configuration scripts,
+	remember that the path of the setup script should contain at most
+	256 characters.
 
--   If your computer blocks scripts downloaded from the Internet for
-    security reasons, you will need to follow these steps to unblock
-    PowerShell scripts.
+	-   If your computer blocks scripts downloaded from the Internet for
+	security reasons, you will need to follow these steps to unblock
+	PowerShell scripts.
 
   ----------------------------------------------------------------------------------------------------------------------------------------
   1.  Right click xxx.ps1 and select **Properties**.   
