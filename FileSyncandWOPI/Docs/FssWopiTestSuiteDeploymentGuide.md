@@ -552,15 +552,15 @@ SHOULD/MAY configuration files
 
 |Configuration file | Description
 |:------------ | :-------------
-|  MS-XXXX\_SharePointFoundation2010\_SHOULDMAY.deployment.ptfconfig | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Foundation 2010 Service Pack 2 (SP2).
-|  MS-XXXX\_SharePointFoundation2013\_SHOULDMAY.deployment.ptfconfig | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Foundation 2013 Service Pack 1 (SP1).
-|  MS-XXXX\_SharePointServer2010\_SHOULDMAY.deployment.ptfconfig     |  Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Server 2010 Service Pack 2 (SP2).
-|  MS-XXXX\_SharePointServer2013\_SHOULDMAY.deployment.ptfconfig     |  Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Server 2013 Service Pack 1 (SP1).
+|  **MS-XXXX\_SharePointFoundation2010\_SHOULDMAY.deployment.ptfconfig** | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Foundation 2010 Service Pack 2 (SP2).
+|  **MS-XXXX\_SharePointFoundation2013\_SHOULDMAY.deployment.ptfconfig** | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Foundation 2013 Service Pack 1 (SP1).
+|  **MS-XXXX\_SharePointServer2010\_SHOULDMAY.deployment.ptfconfig**     |  Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Server 2010 Service Pack 2 (SP2).
+|  **MS-XXXX\_SharePointServer2013\_SHOULDMAY.deployment.ptfconfig**     |  Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Server 2013 Service Pack 1 (SP1).
 
 ### Configuring the test suite client using setup configuration script
 
-***Note** The setup configuration script is only implemented for
-configuring the test suite client on the Windows platform. *
+**Note** The setup configuration script is only implemented for
+configuring the test suite client on the Windows platform. 
 
 To configure the test suite using the setup configuration script,
 navigate to the **Setup\\Test Suite Client**\\ folder, right-click
@@ -605,7 +605,7 @@ to run. The test suite can only run on the test suite client and can be
 initiated in one of the following two ways: Visual Studio or batch
 scripts.
 
-***Note***   Do not run MS-WOPI and MS-FSSHTTP-FSSHTTPB test suites
+**Note**   Do not run MS-WOPI and MS-FSSHTTP-FSSHTTPB test suites
 simultaneously. 
 
 Microsoft Visual Studio
@@ -645,14 +645,20 @@ A Visual Studio solution file
   1.  Open **MS-FSSHTTP-FSSHTTPB.sln** in Visual Studio.
   
     ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_RunningTS5.png)
+	
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------
 
   1.  In the **Solution Explorer** pane, right-click **Solution** ‘**MS-FSSHTTP-FSSHTTPB**’, and then click **Rebuild Solution**.
   
     ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_RunningTS6.png)
+	
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------
 
   1.  Open **Test Explorer**. On the ribbon, click **TEST**, then click **Windows**, and finally click **Test Explorer**.
   
     ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_RunningTS7.png)
+	
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------
 
   1.  Select the test case to run. Right-click the test case and then select **Run Selected Tests**.
   
