@@ -364,11 +364,11 @@ Adapter    |     managed or powershell|   interactive\*\* |  **managed**: The SU
  ||| **powershell**: The SUT control adapter is implemented through Windows PowerShell.
  ||| **interactive**: Interactive adapters are used for manually configuring the server. Interactive adapter displays a dialog box to perform a manual test each time one of its methods is called. The dialog box will show the method name, parameter names, and values\*\*\*
  
-\**The Adapter property value is set to either managed or powershell
+\*The Adapter property value is set to either managed or powershell
 depending on whether the SUT control adapter was implemented in managed
 C\# code or through PowerShell.
 
-\*\**When changing to interactive mode from managed mode, the
+\*\*When changing to interactive mode from managed mode, the
 “adaptertype” attribute must be deleted to avoid a runtime error. When
 changing to interactive mode from powershell mode, an additional step is
 required—delete the “scriptdir” attribute to avoid a runtime error.
