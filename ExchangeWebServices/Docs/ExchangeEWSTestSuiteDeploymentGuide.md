@@ -462,7 +462,7 @@ A Microsoft Visual Studio solution file
 **Source** folder. You can run a single or multiple test cases in Visual
 Studio.
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------
+  
   1.  Open **ExchangeServerEWSProtocolTestSuites.sln** in Visual Studio.                                                                       
       ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeWebServices/Docs/Doc-Images/EWS_RunningTS1.png)                                                                                                                                         
                                                                                                                                                
