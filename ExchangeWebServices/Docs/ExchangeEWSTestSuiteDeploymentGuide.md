@@ -455,6 +455,7 @@ suite can run only on the test suite client and can be initiated in one
 of the following two ways: Visual Studio or batch scripts.
 
 Microsoft Visual Studio
+---------------------------------------------------------------------------------------------------------------------
 
 A Microsoft Visual Studio solution file
 **ExchangeServerEWSProtocolTestSuites.sln** is provided in the
