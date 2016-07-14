@@ -630,7 +630,7 @@ A Visual Studio solution file
    ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_RunningTS3.png)                                                                                                                                                        
     --------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------                                                                                                                                                        
 
-  1.  Select the test case to run, right-click the test case and then select **Run Selected Tests**.                                                        !
+  1.  Select the test case to run, right-click the test case and then select **Run Selected Tests**.                                                        
                                                                                                                                                             
       ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_RunningTS4.png)                                                                                                                                                  
     ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
