@@ -618,7 +618,6 @@ A Visual Studio solution file
 **SharePointFileSyncAndWOPIProtocolTestSuites.sln** is provided in the
 **Source** folder.
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   1.  Open **SharePointFileSyncAndWOPIProtocolTestSuites.sln** in Visual Studio.                                                                            
                                                                                                                                                             
        ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_RunningTS1.png)                                                                                                                                                   
