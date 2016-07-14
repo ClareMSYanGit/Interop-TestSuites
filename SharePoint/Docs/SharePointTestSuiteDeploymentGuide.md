@@ -743,13 +743,13 @@ versions of SharePoint:
 #### MS-OFFICIALFILE 
 
 ***Note**    The MS-OFFICIALFILE test suite supports only the following
-versions of SharePoint:*
+versions of SharePoint:
 
 	-   Microsoft Office SharePoint Server 2007
 	-   Microsoft SharePoint Server 2010
 	-   Microsoft SharePoint Server 2013 
 
-    For *Microsoft Office SharePoint Server 2007*, you will only need to
+    For Microsoft Office SharePoint Server 2007, you will only need to
     configure the steps from 1 to 7.
 
 1.  Create a site collection named **MSOFFICIALFILE\_SiteCollection**.
