@@ -210,7 +210,7 @@ suites package may require/ varying levels of resources on the SUT. The
 following table outlines these resources for each test suite. The SUT
 configuration scripts will automatically create all the required
 resources for the Microsoft server implementation. To configure the SUT
-manually, see section [Configuring SUT manually](#Configuring SUTmanually).
+manually, see section [Configuring SUT manually](#configuring-sut-manually).
 
 The client configuration script follows the naming convention shown in
 the following table. If a change to the resource name is required, the
@@ -245,7 +245,7 @@ Test suite | Resource type |  Resource name |  Note
               |  Mailbox  |  MSOXWSSYNC\_User02 |  Mailbox type user
 **MS-OXWSTASK** |  Mailbox|  MSOXWSTASK\_User01 |  Mailbox type user
 
-### Configuring SUT using the setup configuration script
+### Configuring SUT using the setup configuration script <a name="configuring-sut-using-the-setup-configuration-script"></a>
 
 The setup configuration script is only used for configuring the SUT on
 the Windows platform.
@@ -254,7 +254,7 @@ To configure SUT using the setup configuration script, navigate to the
 **SUT** folder, right-click **ExchangeSUTConfiguration.cmd** and select
 **Run as administrator**.
 
-### Configuring SUT manually
+### Configuring SUT manually <a name="configuring-sut-manually"></a>
 
 If the SUT is a non-Microsoft implementation of Exchange Server, you
 will not be able to run the setup configuration script. The following
@@ -328,8 +328,8 @@ modification.
 
 Configuration file  | Description
 :------------ | :-------------
-**MS-XXXX\_TestSuite.deployment.ptfconfig** |   The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows for the test suite-specific customization.
-**MS-XXXX\_TestSuite.ptfconfig**            |   The test suite configuration file contains details that specify the behavior of the test suite operation.
+**MS-XXXX\_TestSuite.deployment.ptfconfig** |The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows for the test suite-specific customization.
+**MS-XXXX\_TestSuite.ptfconfig**            |The test suite configuration file contains details that specify the behavior of the test suite operation.
 
 Both files are present in the TestSuite folder inside each test suite
 directory.
@@ -341,7 +341,7 @@ of the properties. The specific configuration file will take precedence
 over the common configuration file when the same property exists in both
 places.
 
-#### Set the test suite to interactive mode
+#### Set the test suite to interactive mode <a name="set-the-test-suite-to-interactive mode"></a>
 
 If the SUT is a non-Microsoft implementation of Exchange Server, it is
 recommended that you further configure the test suite by setting the
@@ -425,7 +425,7 @@ SHOULD/MAY configuration files
 
 Configuration file | Description
 :------------ | :------------- 
-MS-XXXX\_ExchangeServer2007\_SHOULDMAY.deployment.ptfconfig |  Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2007 Service Pack 3 (SP3).
+MS-XXXX\_ExchangeServer2007\_SHOULDMAY.deployment.ptfconfig | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2007 Service Pack 3 (SP3).
 MS-XXXX\_ExchangeServer2010\_SHOULDMAY.deployment.ptfconfig | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2010 Service Pack 3 (SP3).
 MS-XXXX\_ExchangeServer2013\_SHOULDMAY.deployment.ptfconfig | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2013 Service Pack 1 (SP1).
 
@@ -521,8 +521,7 @@ of scripts that enable a user to run individual test cases
 Protocol test suites at once (RunAllExchangeEWSTestCases.cmd). These
 scripts can be found in the **\\Source\\Scripts** directory.
 
-**Note**   These scripts depend on having the compiled binaries in the
-bin folder.
+**Note**   These scripts depend on having the compiled binaries in the bin folder.
 
 Batch script | Script description
 :------------ | :-------------

@@ -226,7 +226,7 @@ Configuring the SUT
 
 You can configure the SUT using automation scripts, as described in
 section [Configuring the SUT using the setup configuration script](#configuring-the-sut-using-the-setup-configuration-script); or configure the SUT manually,
-as described in section [configuring the SUT manually](#configuring-the-sut-manually).
+as described in section [Configuring the SUT manually](#configuring-the-sut-manually).
 
 ***Note**   The scripts should be run by a user who has domain
 administrator rights on the SUT.*
@@ -283,7 +283,7 @@ of SharePoint:*
 | | Folder                           |  MSWOPI\_TestFolderCreatedByUser1
 | | Permission level                 |  NoUseRemoteInterfacePermissionLevel
 
-### Configuring the SUT using the setup configuration script
+### Configuring the SUT using the setup configuration script <a name="configuring-the-sut-using-the-setup-configuration-script"></a>
 
 *The setup configuration script is only used for configuring the SUT on the Windows platform.*
 
@@ -291,7 +291,7 @@ To configure SUT using the setup configuration script, navigate to the
 **SUT** folder, right-click the **SharePointSUTConfiguration.cmd** and
 select **Run as administrator**.
 
-### Configuring the SUT manually
+### Configuring the SUT manually <a name="configuring-the-sut-manually"></a>
 
 If the SUT is a non-Microsoft implementation of SharePoint Server, you
 will not be able to run the setup configuration script. The following
@@ -321,8 +321,8 @@ to run the test suites.
     administrator permissions to User1, User2, User3, ReadOnlyUser
     and FileSyncWOPIUser.
 
-***Note**   *The following steps should be performed by
-the SUT administrator.*
+***Note**   The following steps should be performed by
+the SUT administrator.
 
 #### MS-FSSHTTP-FSSHTTPB
 
@@ -475,7 +475,7 @@ of the properties. The specific configuration file will take precedence
 over the common configuration file when the same property exists in both
 places.
 
-####Set the test suite to interactive mode####
+####Set the test suite to interactive mode#### <a name="set-the-test-suite-to-interactive mode"> </a>
 
 If the SUT is a non-Microsoft implementation of SharePoint Server, it is recommended that you further
 configure the test suite by setting the test
@@ -612,8 +612,8 @@ to run. The test suite can only run on the test suite client and can be
 initiated in one of the following two ways: Visual Studio or batch
 scripts.
 
-***Note***   *Do not run MS-WOPI and MS-FSSHTTP-FSSHTTPB test suites
-simultaneously. *
+***Note***   Do not run MS-WOPI and MS-FSSHTTP-FSSHTTPB test suites
+simultaneously. 
 
 Microsoft Visual Studio
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
