@@ -758,8 +758,8 @@ is created in the TestResults folder, along with an associated directory
 named **user\_MACHINENAME DateTimeStamp** that contains a log file in
 XML format and an HTML report.
 
- Appendix
-=========
+Appendix
+============================================================================================================
 
 For more information, see the following:
 
