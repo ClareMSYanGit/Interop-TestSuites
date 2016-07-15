@@ -69,9 +69,7 @@ This section is only relevant when running the test suites against the
 following versions of Exchange Server:
 
 -   Microsoft Exchange Server 2007 Service Pack 3 (SP3)
-
 -   Microsoft Exchange Server 2010 Service Pack 3 (SP3)
-
 -   Microsoft Exchange Server 2013 Service Pack 1 (SP1)
 
 The following table describes the necessary server roles required for a
