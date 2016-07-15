@@ -883,25 +883,25 @@ configure the steps from 1 to 7.
 
 1.  Create a site collection named “*MSVIEWSS\_SiteCollection*”.
 
-2.  Create a generic list *MSVIEWSS\_ViewList*
+2.  Create a generic list MSVIEWSS\_ViewList
     in MSVIEWSS\_SiteCollection.
 
-3.  Create the following items in list *MSVIEWSS\_ViewList.\
-    \
-    **Note*** Two of the eight items should have the same title.
+3.  Create the following items in list MSVIEWSS\_ViewList.
+    
+    **Note** Two of the eight items should have the same title.
 
-*MSVIEWSS\_ListItem1, MSVIEWSS\_ListItem2, MSVIEWSS\_ListItem3,
-MSVIEWSS\_ListItem4, MSVIEWSS\_ListItem5, MSVIEWSS\_ListItem6,
-MSVIEWSS\_ListItem7, MSVIEWSS\_ListItem7*
+	MSVIEWSS\_ListItem1, MSVIEWSS\_ListItem2, MSVIEWSS\_ListItem3,
+	MSVIEWSS\_ListItem4, MSVIEWSS\_ListItem5, MSVIEWSS\_ListItem6,
+	MSVIEWSS\_ListItem7, MSVIEWSS\_ListItem7
 
 ### Configuring SUT2 using the setup configuration script
-
-**Note** The setup configuration script is only used for configuring
-the SUT on Windows. 
 
 To configure SUT2 using the setup configuration script, navigate to the
 SUT folder, right-click **SharePointSecondSUTConfiguration.cmd** and
 select **Run as administrator.**
+
+**Note** The setup configuration script is only used for configuring
+the SUT on Windows.
 
 ### Configuring SUT2 manually
 
