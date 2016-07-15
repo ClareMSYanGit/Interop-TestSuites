@@ -193,7 +193,7 @@ Directory/file | Description
 **EULA.rtf**      | The End-User License Agreement
 **ReadMe.txt**    | A file that contains information about the deployment guide and prerequisite software
 **SharePoint Server Protocol Test Suites**    |  --               
-**- Docs**                                    |  A directory that contains documents of all protocol test suites
+**- Docs**                                    | A directory that contains documents of all protocol test suites
 **- SharePointTestSuiteDeploymentGuide.docx** | A file relevant to the protocol test suite deployment guidance
 **- MS-XXXX**                                 | MS-XXXX Help documentation
 **- \[MS-XXXX\].pdf**                         | The technical specification for the protocol
@@ -202,8 +202,7 @@ Directory/file | Description
 **- MS-XXXX\_RequirementSpecification.xlsx**  | A spreadsheet that outlines all requirements associated with the technical specification.
 **- Setup**                                   | A directory that contains configuration scripts
 **- Test Suite Client**                       | A directory that contains the configuration script to configure the test suite client.
-**- SharePointClientConfiguration.cmd**       | A command file that runs the                                                     
-                                              | SharePointClientConfiguration.ps1 to configure the properties for the protocol test suites.
+**- SharePointClientConfiguration.cmd**       | A command file that runs the                                                    SharePointClientConfiguration.ps1 to configure the properties for the protocol test suites.
 **- SharePointClientConfiguration.ps1**     | A configuration script that will be invoked by SharePointClientConfiguration.cmd
 **- SUT**                                   | A folder that contains the configuration script to configure the SUT.
 **- SharePointSUTConfiguration.cmd**        | A command file that runs the SharePointSUTConfiguration.ps1 to create resources and configure settings on the first SUT.
