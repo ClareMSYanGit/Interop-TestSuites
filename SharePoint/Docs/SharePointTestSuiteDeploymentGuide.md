@@ -169,15 +169,15 @@ steps in order to be able to successfully configure the test suites.
 	for security reasons, you will need to follow these steps to unblock
 	PowerShell scripts.
 
-  ----------------------------------------------------------------------------------------------------------------------------------------
-  1.  Right-click xxx.ps1 and select **Properties**.   
-      ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/SharePoint/Docs/Doc-Images/SP_Deploy1.png)                                              
-                                                       
-  ---------------------------------------------------- -----------------------------------------------------------------------------------
-  1.  Click **Unblock** and click **OK**.             
-                                                       
-      ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/SharePoint/Docs/Doc-Images/SP_Deploy2.png)                                         
-  ----------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
+1.  Right-click xxx.ps1 and select **Properties**.   
+  ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/SharePoint/Docs/Doc-Images/SP_Deploy1.png)                                              
+												   
+---------------------------------------------------- -----------------------------------------------------------------------------------
+1.  Click **Unblock** and click **OK**.             
+												   
+  ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/SharePoint/Docs/Doc-Images/SP_Deploy2.png)                                         
+----------------------------------------------------------------------------------------------------------------------------------------
 
 Test suite directories
 ========================================================================================================================================================================================================
