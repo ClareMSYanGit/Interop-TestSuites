@@ -468,7 +468,7 @@ of the properties. The specific configuration file will take precedence
 over the common configuration file when the same property exists in both
 places.
 
-####Set the test suite to interactive mode <a name="set-the-test-suite-to-interactive mode"> </a>
+####Set the test suite to interactive mode <a name="set-the-test-suite-to-interactive-mode"> </a>
 
 If the SUT is a non-Microsoft implementation of SharePoint Server, it is recommended that you further
 configure the test suite by setting the test
@@ -548,7 +548,7 @@ If the SUT is a non-Microsoft implementation of SharePoint Server,
 configure the properties in the configuration file for the SharePoint
 Server which is the closest match to the SUT implementation.
 
-SHOULD/MAY configuration files
+**SHOULD/MAY configuration files**
 
 |Configuration file | Description
 |:------------ | :-------------
