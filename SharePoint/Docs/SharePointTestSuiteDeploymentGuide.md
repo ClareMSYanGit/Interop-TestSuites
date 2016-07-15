@@ -420,16 +420,16 @@ to run the test suites.
 5.  If the WebDAV Publishing role service is installed on the SUT,
     remove it.
 
-***Notes**   *
+**Notes**   
 
--   *The steps in the subsequent sections
-    should be performed by the SUT administrator.*
+-   The steps in the subsequent sections
+    should be performed by the SUT administrator.
 
--   *All site templates mentioned in the subsequent sections apply to
-    Microsoft implementations only*.
+-   All site templates mentioned in the subsequent sections apply to
+    Microsoft implementations only.
 
--   *Any site collection created on the SharePoint site should follow the **Team
-    Site** template.*
+-   Any site collection created on the SharePoint site should follow the **Team
+    Site** template.
 
 #### MS-SITESS 
 
@@ -507,12 +507,12 @@ to run the test suites.
 
 #### MS-WWSP 
 
-***Note**    The MS-WWSP test suite supports only the following versions
-of SharePoint:*
+**Note**    The MS-WWSP test suite supports only the following versions
+of SharePoint:
 
--   *Microsoft Office SharePoint Server 2007*
--   *Microsoft SharePoint Server 2010*
--   *Microsoft SharePoint Server 2013 *
+-   Microsoft Office SharePoint Server 2007
+-   Microsoft SharePoint Server 2010
+-   Microsoft SharePoint Server 2013
 
 1.  Create a group with the name **MSWWSP\_UserGroup** on the
     domain controller.
@@ -648,13 +648,13 @@ Windows.
 
 #### MS-SHDACCWS 
 
-***Note**    The MS-SHDACCWS test suite supports only the following
-versions of SharePoint:*
+**Note**    The MS-SHDACCWS test suite supports only the following
+versions of SharePoint:
 
--   *Microsoft SharePoint Foundation 2010*
--   *Microsoft SharePoint Server 2010 *
--   *Microsoft SharePoint Foundation 2013 *
--   *Microsoft SharePoint Server 2013*
+-   Microsoft SharePoint Foundation 2010
+-   Microsoft SharePoint Server 2010 
+-   Microsoft SharePoint Foundation 2013 
+-   Microsoft SharePoint Server 2013
 
 1.  Create a site collection named **MSSHDACCWS\_SiteCollection**.
 
@@ -667,8 +667,8 @@ versions of SharePoint:*
 
 #### MS- CPSWS 
 
-***Note**    The MS-* *CPSWS test suite supports only the following
-versions of SharePoint:*
+**Note**    The MS-CPSWS test suite supports only the following
+versions of SharePoint:
 
 -   Microsoft SharePoint Foundation 2010
 -   Microsoft SharePoint Server 2010 
@@ -689,7 +689,7 @@ versions of SharePoint:*
 
 #### MS-WSSREST 
 
-***Note**    The MS-WSSREST test suite supports only the following
+**Note**    The MS-WSSREST test suite supports only the following
 versions of SharePoint:
 
 -   Microsoft SharePoint Foundation 2010
@@ -743,7 +743,7 @@ versions of SharePoint:
 
 #### MS-OFFICIALFILE 
 
-***Note**    The MS-OFFICIALFILE test suite supports only the following
+**Note**    The MS-OFFICIALFILE test suite supports only the following
 versions of SharePoint:
 
 -  Microsoft Office SharePoint Server 2007
@@ -770,13 +770,13 @@ configure the steps from 1 to 7.
     MSOFFICIALFILE\_RoutingRepository, and create a content organizer
     rule where the content type is *document*.
 
-**Note** The name and title cannot be empty in the rule.
+	**Note** The name and title cannot be empty in the rule.
 
 1.  Create a document library named **Drop Off Library** under
     MSOFFICIALFILE\_RoutingRepository, and create a content organizer
     rule where the content type is default type.
 
-**Note** The name and title cannot be empty in the rule.
+	**Note** The name and title cannot be empty in the rule.
 
 1.  Create a hold **MSOFFICIALFILE\_Holds**
     under MSOFFICIALFILE\_RoutingRepository.
@@ -895,7 +895,7 @@ MSVIEWSS\_ListItem7, MSVIEWSS\_ListItem7*
 
 ### Configuring SUT2 using the setup configuration script
 
-***Note** The setup configuration script is only used for configuring
+**Note** The setup configuration script is only used for configuring
 the SUT on Windows. 
 
 To configure SUT2 using the setup configuration script, navigate to the
@@ -923,13 +923,13 @@ to run the test suites.
     you will need to add the username without the claim in the
     user policy.
 
-***Notes**   *
+**Notes**   
 
--   *The steps in the subsequent sections should be performed by the
-    SUT administrator.*
+-   The steps in the subsequent sections should be performed by the
+    SUT administrator.
 
--   *Any site collection created on the SharePoint site should follow
-    the **Team Site** template. *
+-   Any site collection created on the SharePoint site should follow
+    the **Team Site** template. 
 
 #### MS-COPYS
 
@@ -999,7 +999,7 @@ of the properties. The specific configuration file will take precedence
 over the common configuration file when the same property exists in both
 places.
 
-#### Set the test suite to interactive mode
+#### Set the test suite to interactive mode <a name="set-the-test-suite-to-interactive-mode"></a>
 
 If the SUT is a non-Microsoft implementation of SharePoint Server, it is
 recommended that you further configure the test suite by setting the
@@ -1023,21 +1023,21 @@ for a specific test suite, do the following:
 ||||**interactive**: Interactive adapter is used for manually configuring the server. Interactive adapter displays a dialog box to perform manual test each time one of its methods is called. The dialog box will show the method name, parameter names and values\*\*\*.|
   
 
-\**The Adapter property value is set to either **managed** or
+\*The Adapter property value is set to either **managed** or
 **powershell** depending on whether the SUT control adapter is
-implemented in managed C\# code or through Powershell. *
+implemented in managed C\# code or through Powershell. 
 
-\*\**When changing to interactive mode from managed mode, the
+\*\*When changing to interactive mode from managed mode, the
 “adaptertype” attribute must be deleted to avoid a runtime error.* *When
 changing to interactive mode from powershell mode, an additional step is
-required—delete the “scriptdir” attribute to avoid a runtime error.*
+required—delete the “scriptdir” attribute to avoid a runtime error.
 
-\*\*\**When the manual operation completes successfully, enter the
+\*\*\*When the manual operation completes successfully, enter the
 return value (if any) in “**Action Results**” and click **Succeed** in
 the dialog box. When the manual operation is unable to complete, enter
 the error messages in the **Failure Message** text box and click
 **Fail** to terminate the test. In this case, the test will be treated
-as “Inconclusive”.*
+as “Inconclusive”.
 
 Further customization can be done by creating your own SUT control
 adapter that matches the server implementation. For information about
@@ -1091,8 +1091,8 @@ Configuration file  | Description
 
 ### Configuring the test suite client using setup configuration script
 
-***Note** The setup configuration script is only implemented for
-configuring the test suite client on the Windows platform. *
+**Note** The setup configuration script is only implemented for
+configuring the test suite client on the Windows platform. 
 
 To configure the test suite using the setup configuration script,
 navigate to the **Setup\\Test Suite Client**\\ folder, right-click
@@ -1107,8 +1107,7 @@ below to update configuration files and configure the test suite client.
 
 1.  Update the property value in the common configuration file and the test suite-specific configuration files according to the comment of the property.
 
-2.  By default, the test suites use PowerShell script in the SUT control adapter to configure the SUT. If you chose interactive mode for the SUT control adapter as described in section
-    [Set the test suite to interactive mode](#set-the-test-suite-to-interactive-mode), skip this step.
+2.  By default, the test suites use PowerShell script in the SUT control adapter to configure the SUT. If you chose interactive mode for the SUT control adapter as described in section[Set the test suite to interactive mode](#set-the-test-suite-to-interactive-mode), skip this step.
 
     a.  Set the execution policy to RemoteSigned.
 
@@ -1271,16 +1270,16 @@ Appendix
 ==============================================================================================================================================================================================================================================================================================================================================================================================================
   References |  Description
 :------------ | :-------------
-  <dochelp@microsoft.com> | Alias for Interoperability documentation help. Provides support for the Open Specifications and protocol test suites. 
-  [Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)    |  Microsoft Customer Support Services forums. Actively monitored forums that provide support for the Open Specifications and protocol test suites.
-  [Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)    |   Open Specifications home page on MSDN.
-  [Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)    |   Open Specifications documentation on MSDN.
-  [SharePoint Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=202122)   |     SharePoint Open Specifications documentation on MSDN.
-  [RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)          |      Normative language reference.
-  [Windows SharePoint Services 3.0 deployment](http://go.microsoft.com/fwlink/?LinkId=517502)    |  Windows SharePoint Services 3.0 deployment on TechNet
-  [Microsoft SharePoint Foundation 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517503) |Microsoft SharePoint Foundation 2010 deployment on TechNet
-  [Microsoft SharePoint Foundation 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504) |  Microsoft SharePoint Foundation 2013 installation and configuration on TechNet
-  [Microsoft Office SharePoint Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkId=517506) | Microsoft Office SharePoint Server 2007 deployment on TechNet
-  [Microsoft SharePoint Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517505)  | Microsoft SharePoint Server 2010 deployment on TechNet
-  [Microsoft SharePoint Server 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504) | Microsoft SharePoint Server 2013 installation and configuration on TechNet
-  [Microsoft Forefront Protection 2010 for SharePoint deployment](http://go.microsoft.com/fwlink/?LinkId=517510) | Microsoft Forefront Protection 2010 for SharePoint deployment on TechNet
+<dochelp@microsoft.com> | Alias for Interoperability documentation help. Provides support for the Open Specifications and protocol test suites. 
+[Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)    |  Microsoft Customer Support Services forums. Actively monitored forums that provide support for the Open Specifications and protocol test suites.
+[Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)    |   Open Specifications home page on MSDN.
+[Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)    |   Open Specifications documentation on MSDN.
+[SharePoint Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=202122)   |     SharePoint Open Specifications documentation on MSDN.
+[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)          |      Normative language reference.
+[Windows SharePoint Services 3.0 deployment](http://go.microsoft.com/fwlink/?LinkId=517502)    |  Windows SharePoint Services 3.0 deployment on TechNet
+[Microsoft SharePoint Foundation 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517503) |Microsoft SharePoint Foundation 2010 deployment on TechNet
+[Microsoft SharePoint Foundation 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504) |  Microsoft SharePoint Foundation 2013 installation and configuration on TechNet
+[Microsoft Office SharePoint Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkId=517506) | Microsoft Office SharePoint Server 2007 deployment on TechNet
+[Microsoft SharePoint Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517505)  | Microsoft SharePoint Server 2010 deployment on TechNet
+[Microsoft SharePoint Server 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504) | Microsoft SharePoint Server 2013 installation and configuration on TechNet
+[Microsoft Forefront Protection 2010 for SharePoint deployment](http://go.microsoft.com/fwlink/?LinkId=517510) | Microsoft Forefront Protection 2010 for SharePoint deployment on TechNet
