@@ -1063,7 +1063,7 @@ To change the TSAP packet broadcast, do the following:
 2.  Add a property “BeaconLogTargetServer” along with the value of the
     specified machine name.
 
-For example: &lt;Property name="BeaconLogTargetServer" value="SUT01"/&gt;
+	For example: &lt;Property name="BeaconLogTargetServer" value="SUT01"/&gt;
 
 ###  SHOULD/MAY configuration files
 
@@ -1091,7 +1091,7 @@ Configuration file  | Description
 
 ### Configuring the test suite client using setup configuration script
 
-**Note** The setup configuration script is only implemented for
+The setup configuration script is only implemented for
 configuring the test suite client on the Windows platform. 
 
 To configure the test suite using the setup configuration script,
