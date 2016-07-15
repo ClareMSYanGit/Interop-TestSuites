@@ -262,7 +262,7 @@ Configuring the SUT
 You can configure the SUT using automated scripts, as described in
 sections [Configuring SUT1 using the setup configuration script](#configuring-sut1-using-the-setup-configuration-script) and [Configuring SUT2 using the setup configuration script](#configuring-sut2-using-the-setup-configuration-script); or
 configure the SUT manually, as described in sections
-[configuring SUT1 manually](#configuring-the-SUT1-manually) and [Configuring SUT2 manually](#configuring-the-SUT2-manually).
+[Configuring SUT1 manually](#configuring-the-SUT1-manually) and [Configuring SUT2 manually](#configuring-the-SUT2-manually).
 
 **Note**   The scripts should be run by a user who has domain
 administrator rights on the SUT.
@@ -395,7 +395,7 @@ To configure SUT1 using the setup configuration script, navigate to the
 **SUT** folder, right-click **SharePointSUTConfiguration.cmd** and
 select **Run as administrator**.
 
-### Configuring SUT1 manually
+### Configuring SUT1 manually <a name="configuring-sut1-manually"></a>
 
 If the SUT is a non-Microsoft implementation of SharePoint Server, you
 will not be able to run the setup configuration script. The following
@@ -902,7 +902,7 @@ select **Run as administrator.**
 **Note** The setup configuration script is only used for configuring
 the SUT on Windows.
 
-### Configuring SUT2 manually
+### Configuring SUT2 manually <a name="configuring-sut2-manually"></a>
 
 If the SUT is a non-Microsoft implementation of SharePoint Server, you
 will not be able to run the setup configuration script. The following
