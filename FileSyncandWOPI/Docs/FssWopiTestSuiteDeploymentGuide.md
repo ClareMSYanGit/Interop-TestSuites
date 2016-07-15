@@ -496,7 +496,7 @@ specific test suite, do the following:
 **powershell** depending on whether the SUT control adapter was
 implemented in managed C\# code or through PowerShell.
 
-\*\* When changing to interactive mode from managed mode, the
+\*\*When changing to interactive mode from managed mode, the
 “adaptertype” attribute must be deleted to avoid a runtime error. When
 changing to interactive mode from powershell mode, an additional step is
 required—delete the “scriptdir” attribute to avoid a runtime error.
