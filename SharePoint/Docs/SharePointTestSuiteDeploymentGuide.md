@@ -171,9 +171,10 @@ steps in order to be able to successfully configure the test suites.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 1.  Right-click xxx.ps1 and select **Properties**.   
+  
   ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/SharePoint/Docs/Doc-Images/SP_Deploy1.png)                                              
-												   
 ---------------------------------------------------- -----------------------------------------------------------------------------------
+
 2.  Click **Unblock** and click **OK**.             
 												   
   ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/SharePoint/Docs/Doc-Images/SP_Deploy2.png)                                         
