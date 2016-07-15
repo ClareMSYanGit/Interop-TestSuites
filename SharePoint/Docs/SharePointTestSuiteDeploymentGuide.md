@@ -174,6 +174,7 @@ steps in order to be able to successfully configure the test suites.
   ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/SharePoint/Docs/Doc-Images/SP_Deploy1.png)                                              
 												   
 ---------------------------------------------------- -----------------------------------------------------------------------------------
+
 1.  Click **Unblock** and click **OK**.             
 												   
   ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/SharePoint/Docs/Doc-Images/SP_Deploy2.png)                                         
