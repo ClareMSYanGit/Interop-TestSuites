@@ -924,13 +924,12 @@ to run the test suites.
     you will need to add the username without the claim in the
     user policy.
 
-**Notes**   
+	**Note**   
+	-   The steps in the subsequent sections should be performed by the
+	SUT administrator.
 
--   The steps in the subsequent sections should be performed by the
-    SUT administrator.
-
--   Any site collection created on the SharePoint site should follow
-    the **Team Site** template. 
+	-   Any site collection created on the SharePoint site should follow
+	the **Team Site** template. 
 
 #### MS-COPYS
 
