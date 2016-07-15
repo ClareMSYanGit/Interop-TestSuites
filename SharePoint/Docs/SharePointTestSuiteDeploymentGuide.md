@@ -262,7 +262,7 @@ Configuring the SUT
 You can configure the SUT using automated scripts, as described in
 sections [Configuring SUT1 using the setup configuration script](#configuring-sut1-using-the-setup-configuration-script) and [Configuring SUT2 using the setup configuration script](#configuring-sut2-using-the-setup-configuration-script); or
 configure the SUT manually, as described in sections
-[Configuring SUT1 manually](#configuring-the-SUT1-manually) and [Configuring SUT2 manually](#configuring-the-SUT2-manually).
+[Configuring SUT1 manually](#configuring-the-sut1-manually) and [Configuring SUT2 manually](#configuring-the-sut2-manually).
 
 **Note**   The scripts should be run by a user who has domain
 administrator rights on the SUT.
@@ -275,7 +275,7 @@ following table outlines these resources for each test suite. The SUT
 configuration scripts will automatically create all the required
 resources for the Microsoft server implementation. To configure the SUT
 manually, refer to sections [Configuring SUT1 manually](#configuring-sut1-manually) and
-[Configuring SUT2 manually](#Configuring-sut2-manually).
+[Configuring SUT2 manually](#configuring-sut2-manually).
 
 The client configuration script follows the naming convention shown in
 the following table. If a change to the resource name is required, then
