@@ -192,7 +192,7 @@ Directory/file | Description
 :------------ | :-------------
 **EULA.rtf**      | The End-User License Agreement
 **ReadMe.txt**    | A file that contains information about the deployment guide and prerequisite software
-**SharePoint Server Protocol Test Suites**    |                 
+**SharePoint Server Protocol Test Suites**    |  --               
 **- Docs**                                    |  A directory that contains documents of all protocol test suites
 **- SharePointTestSuiteDeploymentGuide.docx** | A file relevant to the protocol test suite deployment guidance
 **- MS-XXXX**                                 | MS-XXXX Help documentation
