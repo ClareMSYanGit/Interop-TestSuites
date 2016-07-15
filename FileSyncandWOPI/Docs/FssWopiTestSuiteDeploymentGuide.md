@@ -582,14 +582,14 @@ below to update configuration files and configure the test suite client.
     SUT control adapter as described in section
     [Set the test suite to interactive mode](#set-the-test-suite-to-interactive-mode), skip this step.
 
-    a.  Set the execution policy to RemoteSigned.
+    a.  Set the execution policy to **RemoteSigned**.
 
     b.  Add the SUT to the TrustedHosts to ensure that the Windows
         Remote Management (WinRM) client can process remote calls
         against the SUT if the test suite client is not joined to
         the domain.
 
-1.  If client don’t join the domain and you plan to use PowerShell mode
+1.  If the client doesn’t join the domain and you plan to use PowerShell mode
     of SUT control adapter, add SUT machine to the TrustedHosts
     configuration setting to ensure WinRM client can process remote
     calls against SUT machine.
