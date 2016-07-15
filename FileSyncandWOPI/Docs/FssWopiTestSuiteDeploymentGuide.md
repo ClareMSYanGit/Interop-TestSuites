@@ -161,7 +161,7 @@ file.
 |:------------ | :-------------|
 | **EULA.rtf**     |    The End-User License Agreement |
 | **ReadMe.txt**   |   A file that contains information about the deployment guide and prerequisite software. |
-| **SharePoint File Sync and WOPI Protocol Test Suites**          | | 
+| **SharePoint File Sync and WOPI Protocol Test Suites**          |-- | 
 | **- Docs**  |   A directory that contains documents of all protocol test suites. |
 | **- FssWopiTestSuiteDeploymentGuide.docx**   |   A file relevant to the protocol test suite deployment guidance. |
 | **- FssWopiTestSuiteSpecification.docx**     |   A file that contains test suites design, including test suites architecture, adapter and test suites details. |
@@ -249,19 +249,19 @@ configuration script will be required.
 
 |Test suite |  Resource type |  Resource name
 |:------------ | :-------------|:-------------
-| All         | Domain User | User1
+| **All**         | Domain User | User1
 | |  Domain User   |  User2
 | |  Domain User   |  User3
 | |  Domain User   |  ReadOnlyUser
 | |  Domain User   |  NoUseRemoteUser
 | |  Text document |  FileSyncWOPIBigTest.txt
-|MS-FSSHTTP-FSSHTTPB|  Site collection |  MSFSSHTTPFSSHTTPB\_SiteCollection
+|**MS-FSSHTTP-FSSHTTPB**|  Site collection |  MSFSSHTTPFSSHTTPB\_SiteCollection
 | |Document library |   MSFSSHTTPFSSHTTPB\_DocumentLibrary
 | |Zip file         |   FileSyncWOPI\_ZipTestData.zip
 | |Text document    |   FileSyncWOPI\_TestData.txt
 | |Note file        |   FileSyncWOPI\_OneNoteWithODB.one
 | |Permission level |   NoUseRemoteInterfacePermissionLevel
-|MS-WOPI            |Site collection  |   MSWOPI\_SiteCollection
+|**MS-WOPI**            |Site collection  |   MSWOPI\_SiteCollection
 | | Document library |    MSWOPI\_SharedDocumentLibrary
 | | Document library |    MSWOPI\_DocumentLibrary
 | | Folder           |    MSWOPI\_TestFolder
