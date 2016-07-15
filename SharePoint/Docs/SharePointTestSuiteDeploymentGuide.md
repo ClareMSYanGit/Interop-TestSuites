@@ -56,9 +56,9 @@ suite client.
 
 Component  | Test suite client minimum requirement
 :------------ | :-------------
-RAM       |   2GB
-Hard Disk |  3GB of free space
-Processor |  >= 1GHz
+**RAM**       |   2GB
+**Hard Disk** |  3GB of free space
+**Processor** |  >= 1GHz
 
 Software requirements
 ------------------------------------------------------------------------------------------------------------------------------
@@ -94,6 +94,7 @@ clean and virus-free.
 	-   Microsoft SharePoint Foundation 2010 Service Pack 2 (SP2)
 	-   Microsoft Office SharePoint Server 2007 Service Pack 3 (SP3)
 	-   Microsoft SharePoint Server 2010 Service Pack 2 (SP2)
+	
 1.  Install any anti-virus software on the following versions of
     SharePoint:
 
@@ -113,9 +114,9 @@ test suite deployment with a Microsoft implementation.
 
 Role | Description
 :------------ | :-------------
-Active Directory Domain Controller (AD DC) |  Active Directory Domain Controller provides secure data for users and computers. An AD DC can coexist with a SharePoint server. A typical test configuration has an AD DC and SharePoint Server installed on separate machines.
-SharePoint Server \#1 (SUT1 must be a SharePoint application server if server installation type is Complete (farm mode))| The first SharePoint server in the topology.
-SharePoint Server \#2 (SUT2)| Only the MS-COPYS test suite requires the second SharePoint server in the topology.
+**Active Directory Domain Controller (AD DC)** |  Active Directory Domain Controller provides secure data for users and computers. An AD DC can coexist with a SharePoint server. A typical test configuration has an AD DC and SharePoint Server installed on separate machines.
+**SharePoint Server \#1 (SUT1 must be a SharePoint application server if server installation type is Complete (farm mode))**| The first SharePoint server in the topology.
+**SharePoint Server \#2 (SUT2)**| Only the MS-COPYS test suite requires the second SharePoint server in the topology.
 
 The following diagram is an example of what a typical SharePoint test
 suite environment may look like. This example uses an IPv4, but IPv6 is
@@ -164,9 +165,9 @@ steps in order to be able to successfully configure the test suites.
     are contained within the
     **SharePointServerProtocolTestSuites.zip** file.
 
-**Note**   If your computer blocks scripts downloaded from the Internet
-for security reasons, you will need to follow these steps to unblock
-PowerShell scripts.
+	**Note**   If your computer blocks scripts downloaded from the Internet
+	for security reasons, you will need to follow these steps to unblock
+	PowerShell scripts.
 
   ----------------------------------------------------------------------------------------------------------------------------------------
   1.  Right-click xxx.ps1 and select **Properties**.   
@@ -259,12 +260,12 @@ Configuring the SUT
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 You can configure the SUT using automated scripts, as described in
-sections [Configuring SUT1 using the setup configuration script](#configuring-sut1-using-the-setup-configuration-script) and [Configuring SUT2 using the setup configuration script(#configuring-sut2-using-the-setup-configuration-script); or
+sections [Configuring SUT1 using the setup configuration script](#configuring-sut1-using-the-setup-configuration-script) and [Configuring SUT2 using the setup configuration script](#configuring-sut2-using-the-setup-configuration-script); or
 configure the SUT manually, as described in sections
 [configuring SUT1 manually](#configuring-the-SUT1-manually)and [Configuring SUT2 manually](#configuring-the-SUT2-manually).
 
-***Note**   The scripts should be run by a user who has domain
-administrator rights on the SUT.*
+**Note**   The scripts should be run by a user who has domain
+administrator rights on the SUT.
 
 ###SUT resource requirements
 
