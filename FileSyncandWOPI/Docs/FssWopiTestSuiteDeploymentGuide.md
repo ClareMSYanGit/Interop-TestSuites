@@ -233,7 +233,7 @@ Protocol test suites package may require varying levels of resources on
 the SUT. The following table outlines these resources for each test
 suite. The SUT configuration scripts will automatically create all the
 required resources for the Microsoft server implementation. To configure
-the SUT manually, refer to section [Configuring the SUT manually](#configuring the SUT manually).
+the SUT manually, refer to section [Configuring the SUT manually](#configuring-the-sut-manually).
 
 The client configuration script follows the naming convention shown in
 the following table. If a change to the resource name is required, the
