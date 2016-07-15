@@ -268,7 +268,7 @@ configure the SUT manually, as described in sections
 **Note**   The scripts should be run by a user who has domain
 administrator rights on the SUT.
 
-###SUT resource requirements
+### SUT resource requirements <a name="sut-resource-requirements"></a>
 
 Each test suite contained within the SharePoint Server Protocol test
 suites package may require varying level of resources on the SUT. The
@@ -390,7 +390,7 @@ SharePointTestSuite.config is required.
 
 ### Configuring SUT1 using the setup configuration script
 
-*The setup configuration script is only used for configuring the SUT on the Windows platform.*
+The setup configuration script is only used for configuring the SUT on the Windows platform.
 
 To configure SUT1 using the setup configuration script, navigate to the
 **SUT** folder, right-click **SharePointSUTConfiguration.cmd** and
@@ -461,7 +461,7 @@ to run the test suites.
 
 #### MS-DWSS 
 
-1.  Create the following new users (as specified in section [SUT resource requirements ](sut-resource-requirements)
+1.  Create the following new users as specified in section [SUT resource requirements](#sut-resource-requirements)
     and set their password to never expire on the domain controller.
 
     **MSDWSS\_NoneRole**, **MSDWSS\_ReaderRole**, and
