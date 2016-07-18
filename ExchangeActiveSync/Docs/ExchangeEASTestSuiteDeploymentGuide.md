@@ -171,7 +171,7 @@ This section shows the folder structure in the **ExchangeServerEASProtocolTestSu
 | **Exchange Server EAS Protocol Test Suites** |--|            
 |**- Docs**| A directory that contains documents of all protocol test suites.|
 |**- ExchangeEASTestSuiteDeploymentGuide.docx** |A file with info on the protocol test suite deployment. |
-|**+ MS-XXXX** | MS-XXXX help documentation | 
+|**+ MS-XXXX** | A MS-XXXX help documentation | 
 | **- \[MS-XXXX\].pdf**   | The technical specification for the protocol.| 
 | **- MS-XXXX \_SUTControlAdapter.chm**  | A help doc with info on the SUT control adapter class library such as declaration syntaxes and their description.| 
 |**- MS-XXXX \_RequirementSpecification.xlsx**|A spreadsheet that outlines all requirements that are associated with the technical specification.| 
