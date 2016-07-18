@@ -141,16 +141,14 @@ PowerShell scripts and the MS\_OXWSDLGM\_ServerAdapter.dll file.
                                                              
   ---------------------------------------------------------- --
  1.  Click **Unblock,** and then click **OK**.              
- ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeActiveSync/Docs/Doc-Images/EAS_Deploy2.png)                                                              
-                                                             
-  -------------------------------------------------------------
+ ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeActiveSync/Docs/Doc-Images/EAS_Deploy2.png)                                                                                                                         
 
 To unblock MS\_OXWSDLGM\_ServerAdapter.dll, do the following:
 
 1.  Browse to **MS\_OXWSDLGM\_ServerAdapter.dll** in **\\Setup\\SUT**.
 
   ------------------------------------------------------------------------------------------
-1.  Right click “**MS\_OXWSDLGM\_ServerAdapter.dll”,** and then click **Properties**.   
+1.  Right click **MS\_OXWSDLGM\_ServerAdapter.dll,** and then click **Properties**.   
    
    ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeActiveSync/Docs/Doc-Images/EAS_Deploy3.png)                                                                                        
                                                                                           
