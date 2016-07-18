@@ -4,10 +4,10 @@ Exchange EAS Test Suite deployment guide
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Deploying the test suites](#deploying-the-test-suites)
-- [Test suite directories](#test-suite-directories)
+- [Using the test suite directories](#test-suite-directories)
 - [Configuring the test suites](#configuring-the-test-suites)
 - [Running the test suites](#running-the-test-suites)
-- [Test suite results, logs, and reporting](#test-suite-results-logs-and-reporting)
+- [Viewing the test suite results, logs, and reports](#test-suite-results-logs-and-reporting)
 - [Appendix](#appendix)
 
 Overview
@@ -179,7 +179,7 @@ This section shows the folder structure in the **ExchangeServerEASProtocolTestSu
 | **- Test Suite Client**| A directory that contains the configuration script to configure the test suite client.| 
 | **- ExchangeClientConfiguration.cmd** | A command file that runs the ExchangeClientConfiguration.ps1 file to configure the properties for the protocol test suites.| 
 | **- ExchangeClientConfiguration.ps1**|A configuration script that will be triggered by the ExchangeClientConfiguration.cmd.| 
-| **- SUT** | A folder that contains the configuration script to configure the Exchange Server| 
+| **- SUT** | A folder that contains the configuration script to configure the Exchange Server.| 
 |**- ExchangeSUTConfiguration.cmd**| A command file that runs the ExchangeSUTConfiguration.ps1 file to create resources and configure settings on the SUT.| 
 |**- ExchangeSUTConfiguration.ps1**| A configuration script that will be triggered by ExchangeSUTConfiguration.cmd.| 
 |**- Source** | A folder with Microsoft Visual Studio solutions that contain source code for the test suites.| 
@@ -203,8 +203,8 @@ This section shows the folder structure in the **ExchangeServerEASProtocolTestSu
 Configuring the test suites
 ==============================================================================================================================
 
-This section provides the necessary guidance to configure the Exchange
-Server EAS Protocol test suites on the SUT and the test suite client.
+This section provides the guidance on configuring Exchange
+Server EAS Protocol Test Suites on the SUT and the test suite client.
 The configuration should be done in this order: configure the SUT, and
 then configure the test suite client.
 
@@ -222,8 +222,8 @@ You can configure the SUT using automated scripts, as described in
 section [Configuring SUT using the setup configuration script](#configuring-sut-using-the-setup-configuration-script); or configure the SUT
 manually, as described in section [Configuring SUT manually](#configuring-sut-manually).
 
-**Note**   *The scripts should be run by a user who has domain
-administrator rights with a mailbox on Exchange Server.*
+**Note** The scripts should be run by a user who has domain
+administrator rights with a mailbox on Exchange Server.
 
 ### SUT resource requirements <a id="sut-resource-requirements"></a>
 
@@ -248,13 +248,13 @@ configuration script is required.
 |             |User Mailbox | MSASAIRS\_User02| --| 
 | **MS-ASCAL**  |User Mailbox  | MSASCAL\_User01  | --| 
 |             |User Mailbox |   MSASCAL\_User02 | --| 
-| **MS-ASCMD**|User Mailbox | MSASCMD\_UserY  | “Y” represents the numerate value count and the value range of Y is from 01 to 19, since 19 mailbox users will be used.| 
+| **MS-ASCMD**|User Mailbox | MSASCMD\_UserY  | “Y” represents the numerate value count and the value range of Y from 01 to 19, since 19 mailbox users will be used.| 
 | | User Mailbox     | MSASCMD\_SearchUser01 | --| 
 | | User Mailbox     | MSASCMD\_SearchUser02 |--| 
 | | DistributionGroup| MSASCMD\_TestGroup | --| 
 | | DistributionGroup| MSASCMD\_LargeGroup| --| 
 | | Folder| MSASCMD\_SharedFolder| The folder is shared and read permissions are granted to user MSASCMD\_User01 and denied to user MSASCMD\_User02.| 
-| | TextFile| MSASCMD\_Non-emptyDocument.txt|The document should be created under MSASCMD\_SharedFolder be at least 4 bytes in size.| 
+| | TextFile| MSASCMD\_Non-emptyDocument.txt|The document should be created under MSASCMD\_SharedFolder, and be at least 4 bytes in size.| 
 | | TextFile| MSASCMD\_EmptyDocument.txt| The document should be created under MSASCMD\_SharedFolder and be empty.| 
 | | Picture | MSASCMD\_User01Photo| The file size should be bigger than 1KB.| 
 | | Picture | MSASCMD\_User02Photo  | The file size should be smaller than 1KB.| 
@@ -265,7 +265,7 @@ configuration script is required.
 | | User Mailbox| MSASCON\_User02  |--| 
 | | User Mailbox| MSASCON\_User03  |--| 
 |**MS-ASDOC**| User Mailbox| MSASDOC\_User01|--| 
-| | Folder| MSASDOC\_SharedFolder|The folder is shared and full control should be granted to the specified user MSASDOC\_User01.| 
+| | Folder| MSASDOC\_SharedFolder|The folder is shared and the full control should be granted to the specified user MSASDOC\_User01.| 
 | |  Folder| MSASDOC\_VisibleFolder|The folder should be created under MSASDOC\_SharedFolder.| 
 | | Folder| MSASDOC\_HiddenFolder|The folder is hidden and should be created under MSASDOC\_SharedFolder.| 
 | | TextFile|MSASDOC\_VisibleDocument|  The document should be created under MSASDOC\_SharedFolder.| 
@@ -289,7 +289,7 @@ configuration script is required.
 | | User Mailbox| MSASRM\_User02|--| 
 | | User Mailbox| MSASRM\_User03|--| 
 | | User Mailbox| MSASRM\_User04|--|
-| | User|  MSASRM\_ADUser |A domain user and granted AD RMS Enterprise Administrator permission.|
+| | User|  MSASRM\_ADUser |A domain user who is granted AD RMS Enterprise Administrator permission.|
 | | DistributionGroup   | MSASRM\_SuperUserGroup    |   --|
 | | Distributed Right Policy Template |  MSASRM\_AllRights\_AllowedTemplate|Allowed all rights|
 | | Distributed Right Policy Template |  MSASRM\_View\_AllowedTemplate| Denied all rights except View|
@@ -302,16 +302,16 @@ configuration script is required.
 |**MS-ASTASK**|User Mailbox |MSASTASK\_User01 |--|
 |**MS-ASWBXML** |--|--|--|
 
-### Configuring SUT using the setup configuration script <a id="configuring-sut-using-the-setup-configuration-script" ></a>
+### Configuring the SUT using the setup configuration script <a id="configuring-sut-using-the-setup-configuration-script" ></a>
 
-*The setup configuration script is only used for configuring Exchange
-Server on the Windows platform.*
+The setup configuration script is only used for configuring Exchange
+Server on the Windows platform.
 
-To configure SUT using the setup configuration script, navigate to the
+To configure the SUT using the setup configuration script, navigate to the
 **SUT** folder, right-click **ExchangeSUTConfiguration.cmd** and select
 **Run as administrator**.
 
-### Configuring SUT manually <a name="configuring-sut-manually" ></a>
+### Configuring the SUT manually <a name="configuring-sut-manually" ></a>
 
 If the SUT is a non-Microsoft implementation of Exchange Server, you
 will not be able to run the setup configuration script. The following
@@ -333,28 +333,20 @@ to run the test suites.
     requirements table in section [SUT resource requirements](#sut-resource-requirements).
 
 3.  Add a delegate of MSASCMD\_User07 to MSASCMD\_User08, and also add a
-    delegate of MSASEMAIL\_User04 to MSASEMAIL\_User05., The delegated
+    delegate of MSASEMAIL\_User04 to MSASEMAIL\_User05. The delegated
     user will be granted Edit permissions on Calendar, Tasks, Inbox,
     Contacts, Notes and Journal.
 
 4.  Set the following properties for MSASCMD\_User01.
 
-    -   SamAccountName: "MSASCMD\_User01"
-        
+    -   SamAccountName: "MSASCMD\_User01"      
     -   GivenName: "MSASCMD\_FirstName"
-    
     -   Surname: "MSASCMD\_LastName"
-    
     -   Office: "D1042"
-    
     -   Company: “MS”
-    
     -   Title: “Manager”
-    
     -   HomePhone: “22222286”
-    
     -   OfficePhone: “55555501”
-    
     -   MobilePhone: “8612345678910”
 
 5.  Create the following distribution groups:
@@ -364,12 +356,12 @@ to run the test suites.
     MSASPROV\_UserPolicy02
 
 7.  Create a shared folder MSASCMD\_SharedFolder. Also, remove read
-    permissions to MSASCMD\_User02. Under the folder
+    permissions from MSASCMD\_User02. Under the folder
     MSASCMD\_SharedFolder, create a non-empty document named
     MSASCMD\_Non-emptyDocument.txt, and an empty document
     named MSASCMD\_EmptyDocument.txt. 
  
- **Note** *The file size of MSASCMD\_Non-emptyDocument.txt should be at least 4 bytes.*
+ **Note** The file size of MSASCMD\_Non-emptyDocument.txt should be at least 4 bytes.
 
 8.  Create a shared folder named MSASDOC\_SharedFolder. Also, grant full
     control to MSASDOC\_User01. Under the folder MSASDOC\_SharedFolder,
@@ -378,7 +370,7 @@ to run the test suites.
     MSASDOC\_HiddenDocument.txt, and a visible
     document MSASDOC\_VisibleDocument.txt.
 
- **Note** *The document MSASDOC\_HiddenDocument.txt and MSASDOC\_VisibleDocument.txt should not be empty.*
+ **Note** The document MSASDOC\_HiddenDocument.txt and MSASDOC\_VisibleDocument.txt should not be empty.
 
 9.  Grant local administrator permissions to the following mailbox
     users:
@@ -401,25 +393,17 @@ to run the test suites.
     MSASCMD\_SearchUser02 into the group MSASCMD\_LargerGroup.
 
 13. Apply the following policy settings for the Mobile Device mailbox
-    policy MSASPROV\_UserPolicy02. The value of *Allow non-provisionable
-    devices* must be set to false, while the value for other properties
+    policy MSASPROV\_UserPolicy02. The value of **Allow non-provisionable
+    devices** must be set to **false**, while the value for other properties
     listed below are not restricted.
 
     -   Allow non-provisionable devices
-    
     -   Password expiration (days)
-    
     -   Maximum attachment size (KB)
-    
     -   Number of failed attempts allowed
-    
-    -   Time without user input before password must be re-entered
-        (in minutes)
-    
+    -   Time without user input before password must be re-entered (in minutes)
     -   Minimum password length
-    
     -   Blocked applications
-    
     -   Allowed applications
 
 14.  Set the mailbox policy MSASPROV\_UserPolicy01 MSASPROV\_User01 and
@@ -432,13 +416,13 @@ to run the test suites.
 
 17.  Add an SMTP email address to MSASCMD\_User01.
 
-18.  Configure external URL of ActiveSync virtual directory on
+18.  Configure the external URL of ActiveSync virtual directory on
     the server.
 
 19.  Configure the web site which contains the application that
     implements the EAS protocols.
 	
-	a.  Configure Secure Sockets Layer (SSL) as not required and ignore
+	a.  Configure Secure Sockets Layer (SSL) as **not required** and ignore
     client certificates on the following sites: Default Web Site, Server
     ActiveSync website, and Autodiscover website.
 
@@ -450,7 +434,7 @@ to run the test suites.
 
 22.  MSASCMD\_User03 should send an email to MSASCMD\_User09.
     
-  **Note** *The subsequent steps in this procedure are only necessary for Exchange Server 2010 or Exchange Server 2013.*
+  **Note** The subsequent steps in this procedure are only necessary for Exchange Server 2010 or Exchange Server 2013.
 
 23.  Add the photo MSASCMD\_User01Photo.jpg to MSASCMD\_User01 and
     MSASCMD\_User02Photo.jpg to MSASMCD\_User02.
@@ -522,7 +506,7 @@ modified through a script.
 ### Common configuration file
 
 The common configuration file contains configurable properties common to
-all Exchange Server EAS Protocol test suites. This file must be modified
+all Exchange Server EAS Protocol Test Suites. This file must be modified
 to match the characteristics of the environment where the test suites
 are installed.
 
@@ -544,8 +528,7 @@ modification.
 | **MS-XXXX\_TestSuite.deployment.ptfconfig** | The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows for test suite-specific customization.|
 | **MS-XXXX\_TestSuite.ptfconfig**| The test suite configuration file contains details that specify the behavior of the test suite operation.|
 
-Both files are present in the TestSuite folder inside each test suite
-directory.
+Both files are in the TestSuite folder in each test suite directory.
 
 If you need to modify the common configuration values for a specific
 test suite, you must copy the common properties to the
@@ -563,8 +546,7 @@ to function in a manual way, enabling you to perform setup, teardown,
 and other tasks in a step-by-step approach. To enable interactive mode
 for a specific test suite, do the following:
 
-1.  Browse to the **MS-XXXX\_TestSuite.ptfconfig** configuration file
-    within the **\\Source\\MS-XXXX\\TestSuite\\**.
+1.  Browse to the **MS-XXXX\_TestSuite.ptfconfig** configuration file in **\\Source\\MS-XXXX\\TestSuite\\**.
 
 2.  Set the type value of Adapter property to **interactive** for the
     SUT control adapter\*\*.
@@ -579,30 +561,30 @@ for a specific test suite, do the following:
  
 \**The Adapter property value is set to either managed or powershell
 depending on whether the SUT control adapter was implemented in managed
-C\# code or through PowerShell.*
+C\# code or through PowerShell.
 
-\*\* *When changing to interactive mode from managed mode, the
+\*\**When changing from managed mode to interactive mode, the
 “adaptertype” attribute must be deleted to avoid a runtime error. When
-changing to interactive mode from powershell mode, an additional step is
-required—delete the “scriptdir” attribute to avoid a runtime error.*
+changing from powershell mode to interactive mode, an additional step is
+required—delete the “scriptdir” attribute to avoid a runtime error.
 
 \*\*\**When the manual operation completes successfully, enter the
-return values (if any) in* **Action Results** *and* click **Succeed** *in
+return values (if any) in **Action Results** and click **Succeed** in
 the dialog-box. When the manual operation is unable to complete, enter
-the error messages in the* **Failure Message** *text box and click*
-**Fail** *to terminate the test. In this case, the test will be treated
-as “Inconclusive”.*
+the error messages in the **Failure Message** text box and click
+**Fail** to terminate the test. In this case, the test will be treated
+as “Inconclusive”.
 
 Further customization can be done by creating your own SUT control
 adapter that matches the server implementation. For more information
-about how to create a SUT control adapter, see the Protocol Test
-Framework (PTF) user documentation.
+about how to create a SUT control adapter, see the [Protocol Test
+Framework (PTF) user documentation](https://github.com/Microsoft/ProtocolTestFramework) .
 
 #### Configure TSAP broadcast
 
 Test Session Announcement Protocol (TSAP) is used by PTF to broadcast
 test information when the test suite is running. TSAP broadcasts helps
-in mapping test cases to captured frames.
+with mapping test cases to captured frames.
 
 By default, TSAP packets are broadcasted in the network. User can change
 a TSAP broadcast by adding an entry “BeaconLogTargetServer” to
@@ -624,13 +606,13 @@ To change the TSAP packet broadcast, do the following:
 The test suite has three SHOULD/MAY configuration files that are
 specific to all supported versions of the SUT. Each SHOULD/MAY
 requirement have an associated parameter with a value of either “true”
-or “false” corresponding to the server version that is supported. “true”
+or “false” corresponding to the server version that is supported. A value of “true”
 represents that the requirement must be validated, whereas “false” means
 that the requirement must not be validated.
 
 If the SUT is a non-Microsoft implementation of Exchange Server,
 configure the properties in the configuration file for the Exchange
-Server which is the closest match to the SUT implementation.
+Server which to be the closest match to the SUT implementation.
 
 SHOULD/MAY configuration files
 
@@ -640,11 +622,10 @@ SHOULD/MAY configuration files
 |**MS-XXXX\_ExchangeServer2010\_SHOULDMAY.deployment.ptfconfig**| Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2010 Service Pack 3 (SP3).|
 |**MS-XXXX\_ExchangeServer2013\_SHOULDMAY.deployment.ptfconfig**| Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2013 Service Pack 1 (SP1).|
 
-### Configuring the test suite client using setup configuration script
+### Configuring the test suite client using the setup configuration script
 
-**Note** *The
-setup configuration script is only implemented for configuring the test
-suite client on the Windows platform.*
+**Note** The setup configuration script is only implemented for configuring the test
+suite client on the Windows platform.
 
 To configure the test suite using the setup configuration script,
 navigate to the **Setup\\Test Suite Client**\\ folder, right-click
@@ -667,7 +648,7 @@ below to update configuration files and configure the test suite client.
 
     a.  Set the execution policy to **RemoteSigned**.
 
-    b.  Add the SUT to TrustedHosts to ensure that the Windows Remote
+    b.  Add the SUT to **TrustedHosts** to ensure that the Windows Remote
     Management (WinRM) client can process remote calls against the SUT
     when the test suite client is not joined to the domain.
 
@@ -738,8 +719,7 @@ of scripts that enable a user to run individual test cases
 Protocol test suites at once (RunAllExchangeEASTestCases.cmd). These
 scripts can be found in the **\\Source\\Scripts** directory.
 
-**Note**   *These scripts depend on having the compiled binaries in the
-bin folder.*
+**Note**  These scripts depend on having the compiled binaries in the bin folder.
 
 |Batch script| Script Description |
 | :--- | :--- |
@@ -748,19 +728,15 @@ bin folder.*
 | **RunMSXXXX\_SXX\_TCXX\_Name.cmd**  |  Runs a specific test case within the test suite.| 
 
 
-
-Test suite results, logs, and reporting
+Viewing the test suite results, logs, and reports
 =============================================================================================================================
 
-The test suites provide detailed reporting in a variety of formats that
-will enable users to quickly debug failures.
+The test suites provide detailed reporting in a variety of formats that will enable users to quickly debug failures.
 
 Test suite configuration logs
 ---------------------------------------------------------------------------------------------------------------------------
 
-The configuration logs contain information about whether each
-configuration step succeeds or not, and detail error information if the
-configuration step fails.
+The configuration logs contain information about whether or not each configuration step succeeds, and detailed information on errors if the configuration step fails.
 
 ### SUT configuration logs
 
@@ -794,7 +770,7 @@ individual test suite solution has run successfully in Visual Studio.
 
 ### Batch scripts
 
-If the Exchange Server EAS Protocol test suites are run by the
+If Exchange Server EAS Protocol Test Suites are run by the
 RunAllExchangeEASTestCases.cmd batch file, the reporting information is
 saved in **…\\Source\\Scripts\\TestResults**.
 
@@ -803,7 +779,7 @@ RunMSXXXX\_SXX\_TCXX\_Name.cmd, the reporting information is saved in
 **…\\Source\\Scripts\\MS-XXXX\\TestResults.**
 
 By default, a .trx file containing the pass/fail information of the run
-is created in the TestResults folder, along with an associated directory
+is created in the TestResults folder along with an associated directory
 named **user\_MACHINENAME DateTimeStamp** that contains a log file in
 XML format and an HTML report.
 
