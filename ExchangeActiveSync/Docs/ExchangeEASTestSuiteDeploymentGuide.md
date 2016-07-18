@@ -780,7 +780,7 @@ RunMSXXXX\_SXX\_TCXX\_Name.cmd, the reporting information is saved in
 
 By default, a .trx file containing the pass/fail information of the run
 is created in the TestResults folder along with an associated directory
-named **user\_MACHINENAME DateTimeStamp** that contains a log file in
+named **user\_MACHINENAME DateTimeStamp** that contains a log file in an
 XML format and an HTML report.
 
 Appendix
