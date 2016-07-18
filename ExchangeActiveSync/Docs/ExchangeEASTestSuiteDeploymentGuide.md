@@ -788,12 +788,12 @@ For more information, see the following:
 
 | Reference  | Description |
 | :--- | :--- |
-|<dochelp@microsoft.com>|Alias for Interoperability documentation help. |Provides support for Open Specifications and protocol test suites.|
-|[Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)| Microsoft Customer Support Services forums. Actively monitored forums that provide support for Open Specifications and protocol test suites.|
-|[Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)| The Open Specifications home page on MSDN|
-|[Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)| The Open Specifications documentation on MSDN|
-|[Exchange Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=119904) |The Exchange Server Open Specifications documentation on MSDN|
+|<dochelp@microsoft.com>|The alias for Interoperability documentation help that provides support for Open Specifications and protocol test suites.|
+|[Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)| The Microsoft Customer Support Services forums, the actively monitored forums that provide support for Open Specifications and protocol test suites.|
+|[Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)| The Open Specifications home page on MSDN.|
+|[Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)| The Open Specifications documentation on MSDN.|
+|[Exchange Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=119904) |The Exchange Server Open Specifications documentation on MSDN.|
 |[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)|Normative language reference|
-|[Exchange Server 2013 deployment](http://go.microsoft.com/fwlink/?LinkID=266569) |Exchange Server 2013 planning and deployment on TechNet
-|[Exchange Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkID=517397) |Exchange Server 2010 planning and deployment on TechNet
-|[Exchange Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkID=512508)|Exchange Server 2007 deployment on TechNet|
+|[Exchange Server 2013 deployment](http://go.microsoft.com/fwlink/?LinkID=266569) |Exchange Server 2013 planning and deployment on TechNet.
+|[Exchange Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkID=517397) |Exchange Server 2010 planning and deployment on TechNet.
+|[Exchange Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkID=512508)|Exchange Server 2007 deployment on TechNet.|
