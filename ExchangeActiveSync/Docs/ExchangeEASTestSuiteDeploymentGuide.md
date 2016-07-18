@@ -133,7 +133,6 @@ steps to successfully configure the test suites.
 for security reasons, follow these steps to unblock
 PowerShell scripts and the MS\_OXWSDLGM\_ServerAdapter.dll file.
 
-  -------------------------------------------------------------
  1.  Right-click xxxx.ps1, and then click **Properties**. 
  
  ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeActiveSync/Docs/Doc-Images/EAS_Deploy1.png)  
