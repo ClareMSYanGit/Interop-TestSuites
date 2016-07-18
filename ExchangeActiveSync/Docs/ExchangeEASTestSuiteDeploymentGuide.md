@@ -13,18 +13,18 @@ Exchange EAS Test Suite Deployment Guide
 Overview
 ======================================================================================================
 
-The Exchange Server EAS Protocol Test Suites are implemented as
+Exchange Server EAS Protocol Test Suites are implemented as
 synthetic clients running against a server-side implementation of a
 given Exchange protocol. They are designed in a client-to-server
 relationship and were originally developed for the in-house testing of
-the Microsoft Open Specifications. Test Suites have been used
+Microsoft Open Specifications. Test Suites have been used
 extensively in Plugfests and Interoperability Labs to test partner
 implementations.
 
 The Exchange EAS Test Suite Deployment Guide introduces the hardware and
 software requirements of the test suite client, and the requirements of
 the system under test (SUT) if the test suites run against Exchange
-Server. The guide also introduces how to deploy, configure and run the
+Server. The guide also introduces the topic on how to deploy, configure and run the
 test suites, and view test suite reports.
 
 Prerequisites
@@ -33,14 +33,14 @@ Prerequisites
 This section describes the hardware and software requirements for the
 test suites. In an Exchange server environment, the test suite
 deployment takes place on both the client and server side. The following
-information will help test suite users to plan their deployment.
+information helps test suite users to plan their deployment.
 
 Hardware requirements
 ------------------------------------------------------------------------------------------------------------------------------
 
 ### System under test
 
-The SUT is the server side of the test suite environment. Exchange
+The System Under Test (SUT) is the server side of the test suite environment. Exchange
 server(s) and Active Directory have defined system requirements which
 should be taken into account during deployment. The Exchange Server EAS
 Protocol test suites do not have any additional SUT resource
@@ -72,7 +72,7 @@ following versions of Exchange Server:
 -   Microsoft Exchange Server 2010 Service Pack 3 (SP3)
 -   Microsoft Exchange Server 2013 Service Pack 1 (SP1)
 
-The following table describes the necessary server roles required for a
+The following table describes the required server roles for a
 test suite deployment with a Microsoft implementation. Installing
 Exchange Server on a domain controller (DC) is not recommended.
 
@@ -80,20 +80,19 @@ Exchange Server on a domain controller (DC) is not recommended.
 
 |Role  |Description |
 | :--- | :--- |
-| **Active Directory Domain Controller (AD DC)** |Active Directory Domain Controller is used to provide secure data for users and   computers. An AD DC can coexist with an Exchange server. A typical test configuration has an AD DC and Exchange Server installed on separate machines.|
+| **Active Directory Domain Controller (AD DC)** |Active Directory Domain Controller is used to provide secure data for users and   computers. An AD DC can coexist with an Exchange Server. A typical test configuration has an AD DC and Exchange Server installed on separate machines.|
 | Domain Name System Server (DNS)  |Domain Name System (DNS) Server provides a name resolution for TCP/IP networks. A                 DNS Server is easier to manage when it is installed on the server as Active Directory Domain Services.  |
-|  **Exchange Server (SUT)** |The Exchange server in the topology. |
+|  **Exchange Server (SUT)** |The Exchange Server in the topology. |
 
 The following diagram is an example of what a typical Exchange test suite environment may look like. This example uses an IPv4, but IPv6 is also supported by the test suites.
 
-**Note** *AD DC and SUT are in the same machine, test cases for MS-ASRM
-will be failed*.
+**Note** When AD DC and SUT are in the same machine, test cases for MS-ASRM will fail.
 ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeActiveSync/Docs/Doc-Images/EAS_RequiredSUTroles.png)
 
 ### Test suite client
 
 This section describes the prerequisite software for installing the
-Exchange Server EAS Protocol test suites on the test suite client.The following
+Exchange Server EAS Protocol Test Suites on the test suite client.The following
 table outlines the software dependencies for the test suite client.
 
 **Test suite client software dependencies**
@@ -114,14 +113,14 @@ table outlines the software dependencies for the test suite client.
 Deploying the test suites
 =======================================================================================================================
 
-This section describes the deployment of the Exchange Server EAS Protocol
-test suites on the test suite client and the SUT. The Exchange Server
-EAS Protocol test suites are packaged in a .zip file which is available
+This section describes the deployment of Exchange Server EAS Protocol
+Test Suites on the test suite client and the SUT. Exchange Server
+EAS Protocol Test Suites are packaged in a .zip file which is available
 on [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=516921).
-Once you download the test suites, you need to perform the following
-steps in order to be able to successfully configure the test suites.
+Once you've downloaded the test suites, perform the following
+steps to successfully configure the test suites.
 
-1.  Extract the **Exchange Server EAS Protocol Test Suites** folder to a
+1.  Extract the **Exchange Server EAS Protocol Test Suites** folder from the zip file to a
     directory of your choice on the test suite client.
 
 2.  Copy the **SUT** folder under **…\\Exchange Server EAS Protocol Test
@@ -130,9 +129,9 @@ steps in order to be able to successfully configure the test suites.
     scripts facilitate the SUT configuration process and are contained
     within the **ExchangeServerEASProtocolTestSuites.zip** file.
 
-**Note**   *If your computer blocks scripts downloaded from the Internet
-for security reasons, you will need to follow these steps to unblock
-PowerShell scripts and the MS\_OXWSDLGM\_ServerAdapter.dll file.*
+**Note** If your computer blocks scripts that are downloaded from the Internet
+for security reasons, follow these steps to unblock
+PowerShell scripts and the MS\_OXWSDLGM\_ServerAdapter.dll file.
 
   -------------------------------------------------------------
  1.  Right-click xxxx.ps1, and then click **Properties**. 
@@ -148,7 +147,7 @@ PowerShell scripts and the MS\_OXWSDLGM\_ServerAdapter.dll file.*
 
 To unblock MS\_OXWSDLGM\_ServerAdapter.dll, do the following:
 
-1.  Browse to file **MS\_OXWSDLGM\_ServerAdapter.dll** within the **\\Setup\\SUT**.
+1.  Browse to **MS\_OXWSDLGM\_ServerAdapter.dll** in **\\Setup\\SUT**.
 
   ------------------------------------------------------------------------------------------
 1.  Right click “**MS\_OXWSDLGM\_ServerAdapter.dll”,** and then click **Properties**.   
@@ -161,11 +160,10 @@ To unblock MS\_OXWSDLGM\_ServerAdapter.dll, do the following:
                                                                                           
   ------------------------------------------------------------------------------------------
 
-Test suite directories
+Using the test suite directories
 ============================================================================================================
 
-In this section you will find a list of the folder structures that are
-contained within the **ExchangeServerEASProtocolTestSuites.zip** file.
+This section shows the folder structure in the **ExchangeServerEASProtocolTestSuites.zip** file.
 
 **ExchangeServerEASProtocolTestSuites.zip file contents**
 
@@ -173,14 +171,14 @@ contained within the **ExchangeServerEASProtocolTestSuites.zip** file.
 | Directory/file | Description |
 | :--- | :--- |
 |**EULA.rtf** | The End-User License Agreement. |
-|**ReadMe.txt** | A file that contains information about the deployment guide and prerequisite software. |
+|**ReadMe.txt** | A file with info on deployment and prerequisite software. |
 | **Exchange Server EAS Protocol Test Suites** ||            
 |**- Docs**| A directory that contains documents of all protocol test suites.|
-|**- ExchangeEASTestSuiteDeploymentGuide.docx** |A file relevant to the protocol test suite deployment guidance. |
-|**+ MS-XXXX** | MS-XXXX Help documentation | 
+|**- ExchangeEASTestSuiteDeploymentGuide.docx** |A file with info on the protocol test suite deployment. |
+|**+ MS-XXXX** | MS-XXXX help documentation | 
 | **- \[MS-XXXX\].pdf**   | The technical specification for the protocol.| 
-| **- MS-XXXX \_SUTControlAdapter.chm**  |Contains information about the SUT control adapter class library such as declaration syntaxes and their description.| 
-|**- MS-XXXX \_RequirementSpecification.xlsx**|A spreadsheet that outlines all requirements associated with the technical specification.| 
+| **- MS-XXXX \_SUTControlAdapter.chm**  | A help doc with info on the SUT control adapter class library such as declaration syntaxes and their description.| 
+|**- MS-XXXX \_RequirementSpecification.xlsx**|A spreadsheet that outlines all requirements that are associated with the technical specification.| 
 |**- Setup**|A directory that contains configuration scripts.| 
 | **- Test Suite Client**| A directory that contains the configuration script to configure the test suite client.| 
 | **- ExchangeClientConfiguration.cmd** | A command file that runs the ExchangeClientConfiguration.ps1 file to configure the properties for the protocol test suites.| 
@@ -190,11 +188,11 @@ contained within the **ExchangeServerEASProtocolTestSuites.zip** file.
 |**- ExchangeSUTConfiguration.ps1**| A configuration script that will be triggered by ExchangeSUTConfiguration.cmd.| 
 |**- Source** | A folder with Microsoft Visual Studio solutions that contain source code for the test suites.| 
 |**- Common** | A folder with Microsoft Visual Studio projects that contains source code that are common to the test suites.| 
-|**- ExchangeCommonConfiguration.deployment.ptfconfig** | The common configuration file.| 
+|**- ExchangeCommonConfiguration.deployment.ptfconfig** | A common configuration file.| 
 |**- ExchangeServerEASProtocolTestSuites.runsettings** |A configuration file used for unit test.| 
 |**- ExchangeServerEASProtocolTestSuites.sln**| A Visual Studio solution that contains projects of the test suites source code.| 
 |**- ExchangeServerEASProtocolTestSuites.testsettings**  |  A configuration file used for running test cases.| 
-|**- MS-XXXX**                                          |  MS-XXXX test suite code directory.| 
+|**- MS-XXXX**                                          |  A MS-XXXX test suite code directory.| 
 |**- MS-XXXX.sln**|  A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.| 
 |**- MS-XXXX.runsettings** | A configuration file used for MS-XXXX unit test.| 
 |**- MS-XXXX.testsettings**|  A configuration file used for MS-XXXX running test cases.| 
