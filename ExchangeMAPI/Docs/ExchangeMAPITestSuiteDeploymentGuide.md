@@ -243,7 +243,7 @@ ExchangeTestSuite.config is required.
 
 **Exchange server resources**
 
-| Test suite     | Resource type | Resource name | Note | 
+| Test suite     | Resource type | Resource name | Notes | 
 | :--- | :--- |:--- |:--- |
 | **All** | Public Folder Database | PublicFolderDatabase | A public folder database is required on Microsoft Exchange Server 2007 SP3 and Microsoft Exchange Server 2010 SP3.|
 || Redirect Server Public Folder Database | PublicFolderDatabase2 | A redirect server is optional.|
