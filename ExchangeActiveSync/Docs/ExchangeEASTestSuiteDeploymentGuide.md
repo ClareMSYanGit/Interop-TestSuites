@@ -23,15 +23,15 @@ implementations.
 
 The Exchange EAS Test Suite deployment guide introduces the hardware and
 software requirements of the test suite client, and the requirements of
-the system under test (SUT) if the test suites run against Exchange
-Server. The guide also introduces the topic on how to deploy, configure and run the
+the system under test (SUT) if the test suites run against an Exchange
+Server. The guide also introduces the topics on how to deploy, configure and run the
 test suites, and view test suite reports.
 
 Prerequisites
 ======================================================================================================
 
 This section describes the hardware and software requirements for the
-test suites. In an Exchange server environment, the test suite
+test suites. In an Exchange Server environment, the test suite
 deployment takes place on both the client and server side. The following
 information helps test suite users to plan their deployment.
 
@@ -40,7 +40,7 @@ Hardware requirements
 
 ### System under test
 
-The System Under Test (SUT) is the server side of the test suite environment. Exchange
+The system under test (SUT) is the server side of the test suite environment. Exchange
 server(s) and Active Directory have defined system requirements which
 should be taken into account during deployment. The Exchange Server EAS
 Protocol test suites do not have any additional SUT resource
