@@ -23,7 +23,7 @@ implementations.
 
 The Exchange EAS Test Suite deployment guide introduces the hardware and
 software requirements of the test suite client, and the requirements of
-the system under test (SUT) if the test suites run against an Exchange
+the system under test (SUT) if the test suites run against Exchange
 Server. The guide also introduces the topics on how to deploy, configure and run the
 test suites, and view test suite reports.
 
@@ -40,7 +40,7 @@ Hardware requirements
 
 ### System under test
 
-The system under test (SUT) is the server side of the test suite environment. Exchange
+The SUT is the server side of the test suite environment. Exchange
 server(s) and Active Directory have defined system requirements which
 should be taken into account during deployment. Exchange Server EAS
 Protocol Test Suites do not have any additional SUT resource
@@ -80,7 +80,7 @@ Exchange Server on a domain controller (DC) is not recommended.
 
 |Role  |Description |
 | :--- | :--- |
-| **Active Directory Domain Controller (AD DC)** |Active Directory Domain Controller is used to provide secure data for users and   computers. An AD DC can coexist with an Exchange Server. A typical test configuration has an AD DC and Exchange Server installed on separate machines.|
+| **Active Directory Domain Controller (AD DC)** |Active Directory Domain Controller is used to provide secure data for users and   computers. An AD DC can coexist with Exchange Server. A typical test configuration has an AD DC and Exchange Server installed on separate machines.|
 | Domain Name System Server (DNS)  |Domain Name System (DNS) Server provides a name resolution for TCP/IP networks. A                 DNS Server is easier to manage when it is installed on the server as Active Directory Domain Services.  |
 |  **Exchange Server (SUT)** |The Exchange Server in the topology. |
 
@@ -91,7 +91,7 @@ The following diagram is an example of what a typical Exchange test suite enviro
 
 ### Test suite client
 
-This section describes the prerequisite software for installing the
+This section describes the prerequisite software for installing
 Exchange Server EAS Protocol Test Suites on the test suite client.The following
 table outlines the software dependencies for the test suite client.
 
