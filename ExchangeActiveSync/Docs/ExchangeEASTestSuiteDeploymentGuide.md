@@ -1,4 +1,4 @@
-Exchange EAS Test Suite Deployment Guide
+Exchange EAS Test Suite deployment guide
 ======================================================================================================
 
 - [Overview](#overview)
@@ -21,7 +21,7 @@ Microsoft Open Specifications. Test suites have been used
 extensively in Plugfests and Interoperability Labs to test partner
 implementations.
 
-The Exchange EAS Test Suite Deployment Guide introduces the hardware and
+The Exchange EAS Test Suite deployment guide introduces the hardware and
 software requirements of the test suite client, and the requirements of
 the system under test (SUT) if the test suites run against Exchange
 Server. The guide also introduces the topic on how to deploy, configure and run the
