@@ -73,7 +73,7 @@ following versions of Exchange Server:
 -   Microsoft Exchange Server 2013 Service Pack 1 (SP1)
 
 The following table describes the required server roles for a
-test suite deployment with a Microsoft implementation. Installing
+test suite deployment with Microsoft implementation. Installing
 Exchange Server on a domain controller (DC) is not recommended.
 
 **Required SUT roles**
@@ -226,8 +226,8 @@ administrator rights with a mailbox on Exchange Server.
 
 ### SUT resource requirements <a id="sut-resource-requirements"></a>
 
-Each test suite contained within the Exchange Server EAS Protocol test
-suites package may require a varying level of resources on Exchange
+Each test suite contained within the Exchange Server EAS Protocol Test
+Suites package may require a varying level of resources on Exchange
 Server. The following table outlines these resources for each test
 suite. The SUT configuration scripts will automatically create all the
 required resources for the Microsoft server implementation. To configure
@@ -240,7 +240,7 @@ configuration script is required.
 
 **Exchange server resources**
 
-|  Test suite | Resource type |  Resource name | Note |
+|  Test suite | Resource type |  Resource name | Notes |
 | :--- | :--- | :--- |:--- |
 |  **All**       |   --   |   --|   --|
 |  **MS-ASAIRS**  |  User Mailbox | MSASAIRS\_User01  | --|
@@ -312,7 +312,7 @@ To configure the SUT using the setup configuration script, navigate to the
 
 ### Configuring the SUT manually <a name="configuring-sut-manually" ></a>
 
-If the SUT is a non-Microsoft implementation of Exchange Server, you
+If the SUT is non-Microsoft implementation of Exchange Server, you
 will not be able to run the setup configuration script. The following
 steps explain what needs to be created or configured on the SUT in order
 to run the test suites.
@@ -538,7 +538,7 @@ places.
 
 #### Set the test suite to interactive mode <a id="set-the-test-suite-to-interactive-mode"></a>
 
-If the SUT is a non-Microsoft implementation of Exchange Server, it is
+If the SUT is non-Microsoft implementation of Exchange Server, it is
 recommended that you further configure the test suite by setting the
 test suite to interactive mode. Interactive mode enables the test suite
 to function in a manual way, enabling you to perform setup, teardown,
@@ -556,7 +556,7 @@ for a specific test suite, do the following:
 | :--- | :--- |:--- |:--- |
 |  Adapter   | managed or powershell | interactive\*\* | **managed**:The SUT control adapter is implemented in C# managed code.
 ||||**powershell**: The SUT control adapter is implemented through Windows PowerShell.
-||||**interactive**: Interactive adapters are used for manually configuring a server. Interactive adapter displays a dialog box to perform a manual test each time one of its methods is called. The dialog box will show the method name, parameter names, and values\*\*\*|
+||||**interactive**: Interactive adapters are used for manually configuring a server. Interactive adapter displays a dialog box to perform a manual test each time when one of its methods is called. The dialog box will show the method name, parameter names, and values\*\*\*|
  
 \*The Adapter property value is set to either managed or powershell
 depending on whether the SUT control adapter was implemented in managed
@@ -585,7 +585,7 @@ Test Session Announcement Protocol (TSAP) is used by PTF to broadcast
 test information when the test suite is running. TSAP broadcasts helps
 with mapping test cases to captured frames.
 
-By default, TSAP packets are broadcasted in the network. User can change
+By default, TSAP packets are broadcasted in the network. The user can change
 a TSAP broadcast by adding an entry “BeaconLogTargetServer” to
 TestSuite.deployment.ptfconfig to target the TSAP only to the specified
 machine.
@@ -604,12 +604,12 @@ To change the TSAP packet broadcast, do the following:
 
 The test suite has three SHOULD/MAY configuration files that are
 specific to all supported versions of the SUT. Each SHOULD/MAY
-requirement have an associated parameter with a value of either “true”
+requirement has an associated parameter with a value of either “true”
 or “false” corresponding to the server version that is supported. A value of “true”
-represents that the requirement must be validated, whereas “false” means
+means that the requirement must be validated, whereas “false” means
 that the requirement must not be validated.
 
-If the SUT is a non-Microsoft implementation of Exchange Server,
+If the SUT is non-Microsoft implementation of Exchange Server,
 configure the properties in the configuration file for the Exchange
 Server which to be the closest match to the SUT implementation.
 
@@ -788,11 +788,11 @@ For more information, see the following:
 
 | Reference  | Description |
 | :--- | :--- |
-|<dochelp@microsoft.com>|Alias for Interoperability documentation help. |Provides support for the Open Specifications and protocol test suites.|
-|[Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)| Microsoft Customer Support Services forums. Actively monitored forums provide support for the Open Specifications and protocol test suites.|
-|[Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)| Open Specifications home page on MSDN|
-|[Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)| Open Specifications documentation on MSDN|
-|[Exchange Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=119904) |Exchange Server Open Specifications documentation on MSDN|
+|<dochelp@microsoft.com>|Alias for Interoperability documentation help. |Provides support for Open Specifications and protocol test suites.|
+|[Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)| Microsoft Customer Support Services forums. Actively monitored forums that provide support for Open Specifications and protocol test suites.|
+|[Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)| The Open Specifications home page on MSDN|
+|[Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)| The Open Specifications documentation on MSDN|
+|[Exchange Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=119904) |The Exchange Server Open Specifications documentation on MSDN|
 |[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)|Normative language reference|
 |[Exchange Server 2013 deployment](http://go.microsoft.com/fwlink/?LinkID=266569) |Exchange Server 2013 planning and deployment on TechNet
 |[Exchange Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkID=517397) |Exchange Server 2010 planning and deployment on TechNet
