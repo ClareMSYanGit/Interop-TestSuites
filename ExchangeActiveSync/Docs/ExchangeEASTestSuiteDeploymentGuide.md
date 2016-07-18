@@ -794,6 +794,6 @@ For more information, see the following:
 |[Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)| The Open Specifications documentation on MSDN.|
 |[Exchange Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=119904) |The Exchange Server Open Specifications documentation on MSDN.|
 |[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)|Normative language reference|
-|[Exchange Server 2013 deployment](http://go.microsoft.com/fwlink/?LinkID=266569) |Exchange Server 2013 planning and deployment on TechNet.
-|[Exchange Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkID=517397) |Exchange Server 2010 planning and deployment on TechNet.
-|[Exchange Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkID=512508)|Exchange Server 2007 deployment on TechNet.|
+|[Exchange Server 2013 deployment](http://go.microsoft.com/fwlink/?LinkID=266569) |The Exchange Server 2013 planning and deployment on TechNet.
+|[Exchange Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkID=517397) |The Exchange Server 2010 planning and deployment on TechNet.
+|[Exchange Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkID=512508) |The Exchange Server 2007 deployment on TechNet.|
