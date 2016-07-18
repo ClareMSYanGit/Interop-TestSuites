@@ -211,11 +211,8 @@ then configure the test suite client.
 For the configuration script, the exit code definition is as follows:
 
 -   A normal termination will set the exit code to 0.
-
 -   An uncaught THROW will set the exit code to 1.
-
 -   Script execution warning and issues will set the exit code to 2.
-
 -   Exit code is set to the actual error code for other issues.
 
 Configuring the SUT
