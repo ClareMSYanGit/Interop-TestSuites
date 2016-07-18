@@ -42,8 +42,8 @@ Hardware requirements
 
 The system under test (SUT) is the server side of the test suite environment. Exchange
 server(s) and Active Directory have defined system requirements which
-should be taken into account during deployment. The Exchange Server EAS
-Protocol test suites do not have any additional SUT resource
+should be taken into account during deployment. Exchange Server EAS
+Protocol Test Suites do not have any additional SUT resource
 requirements.
 
 ### Test suite client
