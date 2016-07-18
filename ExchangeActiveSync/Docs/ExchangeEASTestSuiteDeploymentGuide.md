@@ -155,7 +155,6 @@ To unblock MS\_OXWSDLGM\_ServerAdapter.dll, do the following:
 1.  Click **Unblock,** and then click **OK**.                                           
       ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeActiveSync/Docs/Doc-Images/EAS_Deploy4.png)                                                                                       
                                                                                           
-  ------------------------------------------------------------------------------------------
 
 Using the test suite directories
 ============================================================================================================
