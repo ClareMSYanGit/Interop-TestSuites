@@ -1,29 +1,29 @@
-Exchange MAPI Test Suite Deployment Guide
+Exchange MAPI Test Suite deployment guide
 ======================================================================================================
 
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Deploying the test suites](#deploying-the-test-suites)
-- [Test suite directories](#test-suite-directories)
+- [Using the test suite directories](#using-the-test-suite-directories)
 - [Configuring the test suites](#configuring-the-test-suites)
 - [Running the test suites](#running-the-test-suites)
-- [Test suite results, logs, and reporting](#test-suite-results-logs-and-reporting)
+- [Viewing the test suite results, logs, and reports](#Viewing-the-test-suite-results-logs-and-reports)
 - [Appendix](#appendix)
 
 Overview
 ======================================================================================================
 
-The Exchange MAPI Protocol Test Suites are implemented as synthetic
+Exchange MAPI Protocol Test Suites are implemented as synthetic
 clients running against a server-side implementation of a given Exchange
 protocol. They are designed in a client-to-server relationship and were
-originally developed for the in-house testing of the Microsoft Open
-Specifications. Test Suites have been used extensively in Plugfests and
+originally developed for the in-house testing of Microsoft Open
+Specifications. Test suites have been used extensively in Plugfests and
 Interoperability Labs to test partner implementations.
 
-The Exchange MAPI Test Suite Deployment Guide introduces the hardware
+The Exchange MAPI Test Suite deployment guide introduces the hardware
 and software requirements of the test suite client, and the requirements
 of the system under test (SUT) if the test suites run against Exchange
-Server. The guide also introduces how to deploy, configure and run the
+Server. The guide also introduces the topics on how to deploy, configure and run the
 test suites, and view test suite reports.
 
 Prerequisites
@@ -41,8 +41,8 @@ Hardware requirements
 
 The SUT is the server side of the test suite environment. Exchange
 Server(s) and Active Directory have defined system requirements which
-should be taken into account during deployment. The Exchange MAPI
-Protocol test suites do not have any additional SUT resource
+should be taken into account during deployment. Exchange MAPI
+Protocol Test Suites do not have any additional SUT resource
 requirements.
 
 ### Test suite client
@@ -70,13 +70,11 @@ MS-OXCFXICS, MS-OXCROPS, and MS-OXCSTOR) support two SUTs depending on
 the protocol requirements:
 
 -   Microsoft Exchange Server 2007 Service Pack 3 (SP3)
-
 -   Microsoft Exchange Server 2010 Service Pack 3 (SP3)
-
 -   Microsoft Exchange Server 2013 Service Pack 1 (SP1)
 
-The following table describes the necessary server roles required for a
-test suite deployment with a Microsoft implementation. An Exchange
+The following table describes the required server roles for a
+test suite deployment with Microsoft implementation. An Exchange
 Server installed on a domain controller (DC) is not recommended. For the
 MS-OXNSPI test suite, the DC and SUT should be installed on two separate
 servers.
@@ -86,7 +84,7 @@ servers.
 Role  | Description
 :------------ | :-------------
 **Active Directory Domain Controller (DC)** | Active Directory Domain Controller (AD DC) is required for Exchange. Key Distribution Center (KDC) is a service that runs on the AD DC and is required when Kerberos is used as the authentication method in the test suite.
-**Exchange Server \#1 (SUT1)**  |  The first Exchange server in the topology.
+**Exchange Server \#1 (SUT1)**  |  The first Exchange Server in the topology.
 **Exchange Server \#2 (SUT2, Redirect Server)** | Installation of this server is optional. If this server is not present, then the dependent test cases will not be run. The presence of SUT2 will enable certain multi-server scenarios and other test cases that pertain to a second SUT.
 
 The following diagram is an example of what a typical Exchange test suite
@@ -96,8 +94,7 @@ supported by the test suites.
 
 ### Test suite client
 
-This section describes the prerequisite software for installing the
-Exchange MAPI Protocol test suites on the test suite client. The following
+This section describes the prerequisite software for installing Exchange MAPI Protocol Test Suites on the test suite client. The following
 table outlines the software dependencies for the test suite client.
 
 **Test suite client software dependencies**
@@ -118,14 +115,13 @@ table outlines the software dependencies for the test suite client.
 Deploying the test suites
 =======================================================================================================================
 
-This section describes the deployment of the Exchange MAPI Protocol test
-suites on the test suite client and the SUT. The Exchange MAPI Protocol
-test suites are packaged in a .zip file which is available on [Microsoft
-Connect](http://go.microsoft.com/fwlink/?LinkId=516921). Once you
-download the test suites, you need to perform the following steps in
-order to be able to successfully configure the test suites.
+This section describes the deployment of Exchange MAPI Protocol Test
+Suites on the test suite client and the SUT. Exchange MAPI Protocol
+Test Suites are packaged in a .zip file which is available on [Microsoft
+Connect](http://go.microsoft.com/fwlink/?LinkId=516921). Once you've
+downloaded the test suites, perform the following steps to successfully configure the test suites.
 
-1.  Extract the **Exchange MAPI Protocol Test Suites** folder to a
+1.  Extract the **Exchange MAPI Protocol Test Suites** folder from the zip file to a
     directory of your choice on the test suite client.
 
 2.  Copy the **SUT** and **Common** folders under **…\\Exchange MAPI
@@ -135,9 +131,8 @@ order to be able to successfully configure the test suites.
     are contained within the
     **ExchangeMAPIProtocolTestSuites.zip** file.
 
-**Note**   If your computer blocks scripts downloaded from the Internet
-for security reasons, you will need to follow these steps to unblock
-PowerShell scripts.
+**Note**   If your computer blocks scripts that are downloaded from the Internet
+for security reasons, follow these steps to unblock PowerShell scripts.
 
   --------------------------------------------------------
   1.  Right-click xxxx.ps1 and select **Properties**.   
@@ -149,26 +144,25 @@ PowerShell scripts.
                                                         
   --------------------------------------------------------
 
-Test suite directories
+Using the test suite directories
 ======================
 
-In this section you will find a list of the folder structures that are
-contained within the **ExchangeMAPIProtocolTestSuites.zip** file.
+This section shows the folder structure in the **ExchangeMAPIProtocolTestSuites.zip** file.
 
 **ExchangeMAPIProtocolTestSuites.zip** file contents
 
 | Directory/file   | Description |
 | :--- | :--- |
-|  **EULA.rtf** | The End-User License Agreement|
-|  **ReadMe.txt** | A file that contains information about the deployment guide and prerequisite software.|
-|  **Exchange MAPI Protocol Test Suites** |  |
+|  **EULA.rtf** | The End-User License Agreement.|
+|  **ReadMe.txt** | A file that contains info on deployment and prerequisite software.|
+|  **Exchange MAPI Protocol Test Suites** | -- |
 |  **- Docs** | A directory that contains documents of all protocol test suites.|
 |  **- ExchangeMAPITestSuiteDeploymentGuide.docx** | A file relevant to the protocol test suite deployment guidance.|
 |  **- ExchangeMAPITestSuiteSpecification.docx** |  A file that contains test suites design, test suites architecture, adapter and test suites details.|
-|  **+ MS-XXXX** | MS-XXXX Help documentation|
-|  **- \[MS-XXXX\].pdf** |  The technical specification for the protocol.|
-|  **- MS-XXXX \_SUTControlAdapter.chm** | Contains information about the SUT control adapter class library such as declaration syntaxes and their description.|
-|  **- MS-XXXX \_RequirementSpecification.xlsx** |  A spreadsheet that outlines all requirements associated with the technical specification.|
+|  **+ MS-XXXX** | The MS-XXXX help documentation|
+|  **- \[MS-XXXX\].pdf** |  The protocol technical specification.|
+|  **- MS-XXXX \_SUTControlAdapter.chm** | A help doc with info on the SUT control adapter class library such as declaration syntaxes and their description.|
+|  **- MS-XXXX \_RequirementSpecification.xlsx** |  A spreadsheet that outlines all requirements that are associated with the technical specification.|
 |  **- Setup** |A directory that contains configuration scripts.|
 |  **- Test Suite Client** |  A directory that contains the configuration script to configure the test suite client.|
 |  **- ExchangeClientConfiguration.cmd** | A command file that runs the ExchangeClientConfiguration.ps1 file to configure the properties for the protocol test suites.|
@@ -186,17 +180,17 @@ contained within the **ExchangeMAPIProtocolTestSuites.zip** file.
 |  **- Common** | A folder with Microsoft Visual Studio projects that contains source code that are common to the test suites.|
 |  **- Common** | A folder that contains common methods or properties used by the test suites.|
 |  **- ExchangeCommonConfiguration.deployment.ptfconfig** |  The common configuration file.|
-|  **+ OXCRPCStub** | RPC transport with unmanaged code.|
+|  **+ OXCRPCStub** | The RPC transport with unmanaged code.|
 |  **- ExchangeMAPIProtocolTestSuites.sln** |  A Microsoft Visual Studio solution that contains projects of the test suites source code.|
 |  **- ExchangeMAPIProtocolTestSuites.runsettings** | A configuration file used for unit test.|
 |  **- ExchangeMAPIProtocolTestSuites.testsettings**| A configuration file used for running test cases.|
-|  **- MS-XXXX** | MS-XXXX test suite code directory.|
+|  **- MS-XXXX** | The MS-XXXX test suite code directory.|
 |  **- MS-XXXX.sln** | A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.|
 |  **- MS-XXXX.runsettings** | A configuration file used for MS-XXXX unit test.|
 |  **- MS-XXXX.testsettings** | A configuration file used for MS-XXXX running test cases.|
 |  **+ Adapter** | Adapter test suite code.|
 |  **+ TestSuite** |  Test suite code.|
-|  **- Scripts** | Exchange MAPI test suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.|
+|  **- Scripts** | Exchange MAPI Test Suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.|
 |  **- RunAllExchangeMAPITestCases.cmd** |  A script that can be used to run all test cases in the whole package.|
 |  **- MS-XXXX** | A folder containing scripts that belong to the MS-XXXX test suite.|
 |  **- RunAllMSXXXXTestCases.cmd** | A script that can be used to run all test cases of MS-XXXX.|
@@ -205,8 +199,8 @@ contained within the **ExchangeMAPIProtocolTestSuites.zip** file.
 Configuring the test suites
 ===========================
 
-This section provides the necessary guidance to configure the Exchange
-MAPI Protocol test suites on the SUT and the test suite client. The
+This section provides the guidance on configuring Exchange
+MAPI Protocol Test Suites on the SUT and the test suite client. The
 configuration should be done in this order: configure the SUT1,
 configure the SUT2 (optional), and then configure the test suite client.
 
@@ -229,12 +223,12 @@ sections [Configuring SUT1 using the setup configuration script](#configuring-su
 described in sections [Configuring SUT1 manually](#configuring-sut1-manually) and
 [Configuring SUT2 manually](#configuring-sut2-manually). 
 
-**Note**   The scripts should be run by a user who has domain
+**Note**  The scripts should be run by a user who has domain
 administrator rights with a mailbox on the Exchange Server.
 
 ### SUT resource requirements 
 
-Each test suite contained within the Exchange MAPI Protocol test suites
+Each test suite in the Exchange MAPI Protocol Test Suites
 package may require a varying level of resources on Exchange Server. The
 following table outlines these resources for each test suite. The SUT
 configuration scripts will automatically create all the required
@@ -697,7 +691,7 @@ Batch script  |  Script description
 **RunAllMSXXXXTestCases.cmd**       |  Runs all MS-XXXX test cases.
 **RunMSXXXX\_SYY\_TCZZ\_Name.cmd**  |  Runs a specific test case within the test suite.
 
-Test suite results, logs, and reporting
+Viewing the test suite results, logs, and reports
 =====================================================================================================================================
 
 The test suites provide detailed reporting in a variety of formats that
