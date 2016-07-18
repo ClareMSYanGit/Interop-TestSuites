@@ -172,7 +172,7 @@ This section shows the folder structure in the **ExchangeServerEASProtocolTestSu
 |**- Docs**| A directory that contains documents of all protocol test suites.|
 |**- ExchangeEASTestSuiteDeploymentGuide.docx** |A file with info on the protocol test suite deployment. |
 |**+ MS-XXXX** | A MS-XXXX help documentation | 
-| **- \[MS-XXXX\].pdf**   | The technical specification for the protocol.| 
+| **- \[MS-XXXX\].pdf**   | The protocol technical specification.| 
 | **- MS-XXXX \_SUTControlAdapter.chm**  | A help doc with info on the SUT control adapter class library such as declaration syntaxes and their description.| 
 |**- MS-XXXX \_RequirementSpecification.xlsx**|A spreadsheet that outlines all requirements that are associated with the technical specification.| 
 |**- Setup**|A directory that contains configuration scripts.| 
@@ -193,8 +193,8 @@ This section shows the folder structure in the **ExchangeServerEASProtocolTestSu
 |**- MS-XXXX.runsettings** | A configuration file used for MS-XXXX unit test.| 
 |**- MS-XXXX.testsettings**|  A configuration file used for MS-XXXX running test cases.| 
 |**+ Adapter**|Adapter test suite code.| 
-|**+ TestSuite**|Test suite code.| 
-|**- Scripts** | Exchange Server EWS test suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.| 
+|**+ TestSuite**|The test suite code.| 
+|**- Scripts** | Exchange Server EAS Test Suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.| 
 |**- RunAllExchangeEASTestCases.cmd**|                      A script that can be used to run all test cases in the whole package.| 
 |**- MS-XXXX**|                                             A folder containing scripts that belong to the MS-XXXX test suite.| 
 |**- RunAllMSXXXXTestCases.cmd**|                           A script that can be used to run all test cases of MS-XXXX.| 
