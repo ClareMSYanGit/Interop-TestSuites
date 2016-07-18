@@ -168,7 +168,7 @@ This section shows the folder structure in the **ExchangeServerEASProtocolTestSu
 | :--- | :--- |
 |**EULA.rtf** | The End-User License Agreement. |
 |**ReadMe.txt** | A file with info on deployment and prerequisite software. |
-| **Exchange Server EAS Protocol Test Suites** ||            
+| **Exchange Server EAS Protocol Test Suites** |--|            
 |**- Docs**| A directory that contains documents of all protocol test suites.|
 |**- ExchangeEASTestSuiteDeploymentGuide.docx** |A file with info on the protocol test suite deployment. |
 |**+ MS-XXXX** | MS-XXXX help documentation | 
