@@ -381,10 +381,9 @@ Framework (PTF) user documentation](https://github.com/Microsoft/ProtocolTestFra
 #### Configure TSAP broadcast
 
 Test Session Announcement Protocol (TSAP) is used by PTF to broadcast
-test information when the test suite is running. TSAP broadcasts helps
-in mapping test cases to captured frames.
+test information when the test suite is running. TSAP broadcasts helps with mapping test cases to captured frames.
 
-By default, TSAP packets are broadcasted in the network. Users can
+By default, TSAP packets are broadcasted in the network. The user can
 change a TSAP broadcast by adding an entry “BeaconLogTargetServer” to
 TestSuite.deployment.ptfconfig to target the TSAP only to the specified
 machine.
@@ -404,13 +403,13 @@ To change the TSAP packet broadcast, do the following:
 The test suite has three SHOULD/MAY configuration files that are
 specific to all supported versions of the SUT. Each SHOULD/MAY
 requirement have an associated parameter with a value of either “true”
-or “false” corresponding to the server version that is supported. “true”
-represents that the requirement must be validated, whereas “false” means
+or “false” corresponding to the server version that is supported. The value of “true”
+means that the requirement must be validated, whereas “false” means
 that the requirement must not be validated.
 
 If the SUT is non-Microsoft implementation of Exchange Server,
 configure the properties in the configuration file for the Exchange
-Server which is the closest match to the SUT implementation.
+Server to be the closest match to the SUT implementation.
 
 **SHOULD/MAY configuration files**
 
@@ -420,7 +419,7 @@ Configuration file | Description
 **MS-XXXX\_ExchangeServer2010\_SHOULDMAY.deployment.ptfconfig** | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2010 Service Pack 3 (SP3).
 **MS-XXXX\_ExchangeServer2013\_SHOULDMAY.deployment.ptfconfig** | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Exchange Server 2013 Service Pack 1 (SP1).
 
-### Configuring the test suite client using setup configuration script
+### Configuring the test suite client using the setup configuration script
 
 **Note** The setup configuration script is only implemented for configuring the test
 suite client on the Windows platform.
@@ -505,48 +504,45 @@ A Visual Studio solution file
 Batch scripts 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Exchange Server EWS Protocol test suites are installed with a collection
+Exchange Server EWS Protocol Test Suites are installed with a collection
 of scripts that enable a user to run individual test cases
 (RunMSXXXX\_SXX\_TCXX\_Name.cmd) or all test cases in a test suite
 (RunAllMSXXXXTestCases.cmd), or all test cases of Exchange Server EWS
-Protocol test suites at once (RunAllExchangeEWSTestCases.cmd). These
+Protocol Test Suites at once (RunAllExchangeEWSTestCases.cmd). These
 scripts can be found in the **\\Source\\Scripts** directory.
 
-**Note**   These scripts depend on having the compiled binaries in the bin folder.
+**Note**  These scripts depend on having the compiled binaries in the bin folder.
 
 Batch script | Script description
 :------------ | :-------------
-**RunAllExchangeEWSTestCases.cmd**  |    Runs all the test cases within the Exchange Server EWS Protocol test suites.
+**RunAllExchangeEWSTestCases.cmd**  |  Runs all the test cases in Exchange Server EWS Protocol Test Suites.
 **RunAllMSXXXXTestCases.cmd**       |  Runs all MS-XXXX test cases.
-**RunMSXXXX\_SXX\_TCXX\_Name.cmd**  |  Runs a specific test case within the test suite.
+**RunMSXXXX\_SXX\_TCXX\_Name.cmd**  |  Runs a specific test case in the test suite.
 
 Viewing the test suite results, logs, and reporting
 =====================================================================================================================================
 
 The test suites provide detailed reporting in a variety of formats that
-will enable users to quickly debug failures.
+enable users to quickly debug failures.
 
 Test suite configuration logs
 ---------------------------------------------------------------------------------------------------------------------------
 
-The configuration logs contain information about whether each
-configuration step succeeds or not, and detail error information if the
+The configuration logs contain information about whether or not each
+configuration step succeeds, and detailed information on errors if the
 configuration step fails.
 
 ### SUT configuration logs
 
 The SUT configuration scripts create a directory named **SetupLogs**
 under **…\\Setup\\SUT\\** at runtime. The SUT configuration scripts save
-the logs as “ExchangeSUTConfiguration.ps1.debug.log” and
-“ExchangeSUTConfiguration.ps1.log”.
+the logs as “ExchangeSUTConfiguration.ps1.debug.log” and “ExchangeSUTConfiguration.ps1.log”.
 
 ### Test suite client configuration logs
 
 The configuration scripts create a directory named **SetupLogs** under
 **…\\Setup\\Test Suite Client\\** at runtime. The test suite client
-configuration scripts save the logs as
-“ExchangeClientConfiguration.ps1.debug.log” and
-“ExchangeClientConfiguration.ps1.log”.
+configuration scripts save the logs as “ExchangeClientConfiguration.ps1.debug.log” and “ExchangeClientConfiguration.ps1.log”.
 
 Test suite reports
 ------------------
@@ -588,8 +584,8 @@ References | Description
 [Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)  |   The Microsoft Customer Support Services forums, the actively monitored forums that provides support for Open Specifications and protocol test suites. |
 [Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)   |  The Open Specifications home page on MSDN.
 [Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)                    |   The Open Specifications documentation on MSDN.
-[Exchange Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=119904)    | The Exchange Server Open Specifications documentation on MSDN.
-[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)                                         | The normative language reference.
-[Exchange Server 2013 deployment](http://go.microsoft.com/fwlink/?LinkID=266569)                 |Exchange Server 2013 planning and deployment on TechNet.
-[Exchange Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkID=517397)                 |Exchange Server 2010 planning and deployment on TechNet.
-[Exchange Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkID=512508)                 |Exchange Server 2007 deployment on TechNet.
+[Exchange Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=119904)    |The Exchange Server Open Specifications documentation on MSDN.
+[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)                                         |The normative language reference.
+[Exchange Server 2013 deployment](http://go.microsoft.com/fwlink/?LinkID=266569)                 |The Exchange Server 2013 planning and deployment on TechNet.
+[Exchange Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkID=517397)                 |The Exchange Server 2010 planning and deployment on TechNet.
+[Exchange Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkID=512508)                 |The Exchange Server 2007 deployment on TechNet.

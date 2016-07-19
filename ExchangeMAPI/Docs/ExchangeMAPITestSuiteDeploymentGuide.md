@@ -685,16 +685,16 @@ bin folder.
 
 Batch script  |  Script description
 :------------ | :------------- 
-**RunAllExchangeMAPITestCases.cmd** |  Runs all the test cases within the Server MAPI Protocol test suites.
+**RunAllExchangeMAPITestCases.cmd** |  Runs all the test cases in Exchange Server MAPI Protocol Test Suites.
 **RunAllMSXXXXTestCases.cmd**       |  Runs all MS-XXXX test cases.
-**RunMSXXXX\_SYY\_TCZZ\_Name.cmd**  |  Runs a specific test case within the test suite.
+**RunMSXXXX\_SYY\_TCZZ\_Name.cmd**  |  Runs a specific test case in the test suite.
 
 
 Viewing the test suite results, logs, and reports
 =====================================================================================================================================
 
 The test suites provide detailed reporting in a variety of formats that
-will enable users to quickly debug failures.
+enable users to quickly debug failures.
 
 Test suite configuration logs
 ---------------------------------------------------------------------------------------------------------------------------

@@ -722,15 +722,15 @@ scripts can be found in the **\\Source\\Scripts** directory.
 
 |Batch script| Script Description |
 | :--- | :--- |
-| **RunAllExchangeEASTestCases.cmd**  |  Runs all the test cases within the Exchange Server EAS Protocol test suites.| 
+| **RunAllExchangeEASTestCases.cmd**  |  Runs all the test cases in Exchange Server EAS Protocol Test Suites.| 
 | **RunAllMSXXXXTestCases.cmd**       |  Runs all MS-XXXX test cases.| 
-| **RunMSXXXX\_SXX\_TCXX\_Name.cmd**  |  Runs a specific test case within the test suite.| 
+| **RunMSXXXX\_SXX\_TCXX\_Name.cmd**  |  Runs a specific test case in the test suite.| 
 
 
 Viewing the test suite results, logs, and reports
 =============================================================================================================================
 
-The test suites provide detailed reporting in a variety of formats that will enable users to quickly debug failures.
+The test suites provide detailed reporting in a variety of formats that enable users to quickly debug failures.
 
 Test suite configuration logs
 ---------------------------------------------------------------------------------------------------------------------------
