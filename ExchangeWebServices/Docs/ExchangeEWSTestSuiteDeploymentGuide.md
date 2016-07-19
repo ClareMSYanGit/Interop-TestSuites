@@ -55,9 +55,9 @@ suite client.
 
 Component| Test suite client minimum requirement
 :------------ | :-------------
-RAM       |  2GB
-Hard Disk |  3G of free space
-Processor |  >= 1GHz
+**RAM**       |  2GB
+**Hard Disk** |  3G of free space
+**Processor** |  >= 1GHz
 
 Software requirements
 -------------------------------------------------------------------------------------------------------------------
@@ -213,7 +213,7 @@ the following table. If a change to the resource name is required, the
 corresponding change to the resource name defined in the client
 configuration script will be required.
 
-Exchange server resources
+**Exchange server resources**
 
 Test suite | Resource type |  Resource name |  Notes
 :------------ | :------------- | :------------- | :-------------
@@ -241,7 +241,7 @@ Test suite | Resource type |  Resource name |  Notes
               |  Mailbox  |  MSOXWSSYNC\_User02 |  Mailbox type user
 **MS-OXWSTASK** |  Mailbox|  MSOXWSTASK\_User01 |  Mailbox type user
 
-### Configuring SUT using the setup configuration script <a name="configuring-sut-using-the-setup-configuration-script"></a>
+### Configuring the SUT using the setup the configuration script <a name="configuring-sut-using-the-setup-configuration-script"></a>
 
 The setup configuration script is only used for configuring the SUT on
 the Windows platform.
@@ -250,12 +250,11 @@ To configure SUT using the setup configuration script, navigate to the
 **SUT** folder, right-click **ExchangeSUTConfiguration.cmd** and select
 **Run as administrator**.
 
-### Configuring SUT manually <a name="configuring-sut-manually"></a>
+### Configuring the SUT manually <a name="configuring-sut-manually"></a>
 
 If the SUT is non-Microsoft implementation of Exchange Server, you
 will not be able to run the setup configuration script. The following
-steps explain what needs to be created or configured on the SUT in order
-to run the test suites.
+steps explain what needs to be created or configured on the SUT to run the test suites.
 
 1.  Create the following mailbox users:
 
@@ -266,7 +265,7 @@ to run the test suites.
 	MSOXWSMTGS\_User02, MSOXWSMTGS\_Room01, MSOXWSSYNC\_User01,
 	MSOXWSSYNC\_User02, MSOXWSTASK\_User01
 
-1.  Configure Secure Sockets Layer (SSL) as not required and set to
+1.  Configure Secure Sockets Layer (SSL) as **not required** and set to
     ignore client certificates on the website which contains the
     application that implements the EWS protocols.
 
@@ -306,7 +305,7 @@ modified through a script.
 ### Common configuration file
 
 The common configuration file contains configurable properties common to
-all Exchange Server EWS Protocol test suites. This file must be modified
+all Exchange Server EWS Protocol Test Suites. This file must be modified
 to match the characteristics of the environment where the test suites
 are installed.
 
@@ -327,8 +326,7 @@ Configuration file  | Description
 **MS-XXXX\_TestSuite.deployment.ptfconfig** |The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows for the test suite-specific customization.
 **MS-XXXX\_TestSuite.ptfconfig**            |The test suite configuration file contains details that specify the behavior of the test suite operation.
 
-Both files are present in the TestSuite folder inside each test suite
-directory.
+Both files are in the TestSuite folder in each test suite directory.
 
 If you need to modify the common configuration values for a specific
 test suite, you must copy the common properties to the
@@ -346,8 +344,7 @@ to function in a manual way, enabling you to perform setup, teardown,
 and other tasks in a step-by-step approach. To enable interactive mode
 for a specific test suite, do the following:
 
-1.  Browse to the **MS-XXXX\_TestSuite.ptfconfig** configuration file
-    within the **\\Source\\MS-XXXX\\TestSuite\\**.
+1.  Browse to the **MS-XXXX\_TestSuite.ptfconfig** configuration file in **\\Source\\MS-XXXX\\TestSuite\\**.
 
 1.  Set the type value of Adapter property to **interactive** for the
     SUT control adapter\*\*.
@@ -358,15 +355,15 @@ Property name | Default value\*|Optional value  |  Description|
 :------------ | :------------- | :------------- | :-------------
 Adapter    |     managed or powershell|   interactive\*\* |  **managed**: The SUT control adapter is implemented in C\# managed code.
  ||| **powershell**: The SUT control adapter is implemented through Windows PowerShell.
- ||| **interactive**: Interactive adapters are used for manually configuring the server. Interactive adapter displays a dialog box to perform a manual test each time one of its methods is called. The dialog box will show the method name, parameter names, and values\*\*\*
+ ||| **interactive**: Interactive adapters are used for manually configuring the server. Interactive adapter displays a dialog box to perform a manual test each time when one of its methods is called. The dialog box will show the method name, parameter names, and values\*\*\*
  
 \*The Adapter property value is set to either managed or powershell
 depending on whether the SUT control adapter was implemented in managed
 C\# code or through PowerShell.
 
-\*\*When changing to interactive mode from managed mode, the
+\*\*When changing from managed mode to interactive mode, the
 “adaptertype” attribute must be deleted to avoid a runtime error. When
-changing to interactive mode from powershell mode, an additional step is
+changing from powershell mode to interactive mode, an additional step is
 required—delete the “scriptdir” attribute to avoid a runtime error.
 
 \*\*\*When the manual operation completes successfully, enter the
@@ -378,8 +375,8 @@ as “Inconclusive”.
 
 Further customization can be done by creating your own SUT control
 adapter that matches the server implementation. For more information
-about how to create a SUT control adapter, see the Protocol Test
-Framework (PTF) user documentation.
+about how to create a SUT control adapter, see the [Protocol Test
+Framework (PTF) user documentation](https://github.com/Microsoft/ProtocolTestFramework).
 
 #### Configure TSAP broadcast
 
