@@ -250,10 +250,10 @@ ExchangeTestSuite.config is required.
 || Public Folder Mailbox | PublicFolderMailbox\_&lt;Server1Name&gt; |   A public folder mailbox is required on Microsoft Exchange Server 2013 SP1.|
 || Redirect Server\* Public Folder Mailbox  | PublicFolderMailbox\_&lt;Server2Name&gt;|--|
 | **MS-OXCFOLD**  | Mailbox | MSOXCFOLD\_TestUser01 |The mailbox name should be below 20 characters.|
-|| Mailbox |MSOXCFOLD\_TestUser02  ||
+|| Mailbox |MSOXCFOLD\_TestUser02  |--|
 ||Public Folder       |   MSOXCFOLD\_PublicFolderMailEnabled|         All public folders are created directly in the root directory.|
-||Redirect Server Public Folder  |  MSOXCFOLD\_PublicFolderGhosted  |           
-|  **MS-OXCFXICS**  | Public Folder |  MSOXCFXICS\_GhostedPublicFolder |--|           
+||Redirect Server Public Folder  |  MSOXCFOLD\_PublicFolderGhosted  |--|           
+||  **MS-OXCFXICS**  | Public Folder |  MSOXCFXICS\_GhostedPublicFolder |--|           
 || Public Folder| MSOXCFXICS\_PublicFolder01 |          
 || Mailbox | MSOXCFXICS\_TestUser  | The mailbox name should be below 20 characters.|
 || Redirect Server Mailbox |  MSOXCFXICS\_TestUser2 |       
