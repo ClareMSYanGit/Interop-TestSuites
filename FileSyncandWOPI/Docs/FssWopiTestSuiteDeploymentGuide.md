@@ -511,11 +511,11 @@ how to create a SUT control adapter, see the [Protocol Test Framework
 
 Test Session Announcement Protocol (TSAP) is used by the PTF to
 broadcast test information when the test suite is running. TSAP
-broadcast helps in mapping test cases to captured frames.
+broadcast helps with mapping test cases to captured frames.
 
-By default, TSAP packets are broadcasted in the network. Users can
+By default, TSAP packets are broadcasted in the network. The user can
 disable TSAP broadcast by adding an entry “BeaconLogTargetServer” to
-TestSuite.deployment.ptfconfig to target the TSAP only to the specified
+TestSuite.deployment.ptfconfig to target TSAP for the specified
 machine.
 
 To change TSAP packet broadcast, do the following:

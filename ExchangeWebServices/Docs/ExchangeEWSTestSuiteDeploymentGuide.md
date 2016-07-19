@@ -159,7 +159,7 @@ Directory/file  | Description
 **- ExchangeEWSProtocolTestSuites.sln**                |  A Visual Studio solution that contains projects of the protocol test suites source code.
 **- ExchangeServerEWSProtocolTestSuites.runsettings**  |  A configuration file used for unit test.
 **- ExchangeServerEWSProtocolTestSuites.testsettings** |  A configuration file used for running test cases.
-**- MS-XXXX**                                          |  A directory for the MS-XXXX test suite code.
+**- MS-XXXX**                                          |  A directory for the MS-XXXX test suite source code.
 **- MS-XXXX.sln**                                      |  A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.
 **- MS-XXXX.runsettings**                              |  A configuration file used for MS-XXXX unit test.
 **- MS-XXXX.testsettings**                             |  A configuration file used for running MS-XXXX test cases.
@@ -385,7 +385,7 @@ test information when the test suite is running. TSAP broadcasts helps with mapp
 
 By default, TSAP packets are broadcasted in the network. The user can
 change a TSAP broadcast by adding an entry “BeaconLogTargetServer” to
-TestSuite.deployment.ptfconfig to target the TSAP only to the specified
+TestSuite.deployment.ptfconfig to target TSAP for the specified
 machine.
 
 To change the TSAP packet broadcast, do the following:
