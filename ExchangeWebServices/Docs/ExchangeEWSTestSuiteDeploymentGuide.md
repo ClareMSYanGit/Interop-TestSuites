@@ -402,7 +402,7 @@ To change the TSAP packet broadcast, do the following:
 
 The test suite has three SHOULD/MAY configuration files that are
 specific to all supported versions of the SUT. Each SHOULD/MAY
-requirement have an associated parameter with a value of either “true”
+requirement has an associated parameter with a value of either “true”
 or “false” corresponding to the server version that is supported. The value of “true”
 means that the requirement must be validated, whereas “false” means
 that the requirement must not be validated.

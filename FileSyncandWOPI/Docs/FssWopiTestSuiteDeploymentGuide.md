@@ -533,14 +533,14 @@ For example: &lt;Property name="BeaconLogTargetServer" value="SUT01"/&gt;
 
 The test suite has the following four SHOULD/MAY configuration files
 that are specific to all supported versions of the SUT. Each SHOULD/MAY
-requirement have an associated parameter with a value of either “true”
-or “false” corresponding to the server version that they support. “true”
-represents that the requirement must be validated, whereas “false” means
+requirement has an associated parameter with a value of either “true”
+or “false”, corresponding to the server version that they support. The value of “true”
+means that the requirement must be validated, whereas “false” means
 that the requirement must not be validated.
 
 If the SUT is non-Microsoft implementation of SharePoint Server,
 configure the properties in the configuration file for the SharePoint
-Server which is the closest match to the SUT implementation.
+Server to be the closest match to the SUT implementation.
 
 **SHOULD/MAY configuration files**
 
@@ -578,7 +578,7 @@ below to update configuration files and configure the test suite client.
 
     a.  Set the execution policy to **RemoteSigned**.
 
-    b.  Add the SUT to the TrustedHosts to ensure that the Windows
+    b.  Add the SUT to the **TrustedHosts** to ensure that the Windows
         Remote Management (WinRM) client can process remote calls
         against the SUT if the test suite client is not joined to
         the domain.
@@ -675,9 +675,9 @@ bin folder.
 
 Batch script | Script description
 :------------ | :-------------
-**RunAllSharePoint\_FileSyncAndWOPI\_TestCases.cmd**  | Runs all the test cases within the SharePoint File Sync and WOPI Protocol Test Suites.
+**RunAllSharePoint\_FileSyncAndWOPI\_TestCases.cmd**  | Runs all the test cases in the SharePoint File Sync and WOPI Protocol Test Suites.
 **RunAllMSXXXXTestCases.cmd**                         | Runs all MS-XXXX test cases.
-**RunMSXXXX\_SYY\_TCZZ\_Name.cmd**                    | Runs a specific test case within the test suite.
+**RunMSXXXX\_SYY\_TCZZ\_Name.cmd**                    | Runs a specific test case in the test suite.
 
 Viewing the test suite results, logs, and reporting
 =====================================================================================================================================
