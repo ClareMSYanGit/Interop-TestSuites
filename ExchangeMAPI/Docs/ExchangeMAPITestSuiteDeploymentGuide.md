@@ -7,7 +7,7 @@ Exchange MAPI Test Suite deployment guide
 - [Using the test suite directories](#using-the-test-suite-directories)
 - [Configuring the test suites](#configuring-the-test-suites)
 - [Running the test suites](#running-the-test-suites)
-- [Viewing the test suite results, logs, and reports](#Viewing-the-test-suite-results-logs-and-reports)
+- [Viewing the test suite results, logs, and reports](#viewing-the-test-suite-results-logs-and-reports)
 - [Appendix](#appendix)
 
 Overview
