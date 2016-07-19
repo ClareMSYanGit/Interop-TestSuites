@@ -158,7 +158,7 @@ To unblock MS\_OXWSDLGM\_ServerAdapter.dll, do the following:
 Using the test suite directories
 ============================================================================================================
 
-This section shows the folder structure in the **ExchangeServerEASProtocolTestSuites.zip** file.
+This section shows the folder structures in the **ExchangeServerEASProtocolTestSuites.zip** file.
 
 **ExchangeServerEASProtocolTestSuites.zip file contents**
 
@@ -166,10 +166,10 @@ This section shows the folder structure in the **ExchangeServerEASProtocolTestSu
 | Directory/file | Description |
 | :--- | :--- |
 |**EULA.rtf** | The End-User License Agreement. |
-|**ReadMe.txt** | A file with info on deployment and prerequisite software. |
+|**ReadMe.txt** | A doc with info on deployment and prerequisite software. |
 | **Exchange Server EAS Protocol Test Suites** |--|            
 |**- Docs**| A directory that contains documents of all protocol test suites.|
-|**- ExchangeEASTestSuiteDeploymentGuide.docx** |A file with info on the protocol test suite deployment. |
+|**- ExchangeEASTestSuiteDeploymentGuide.docx** |A doc with info on the protocol test suite deployment. |
 |**+ MS-XXXX** | A MS-XXXX help documentation | 
 | **- \[MS-XXXX\].pdf**   | The protocol technical specification.| 
 | **- MS-XXXX \_SUTControlAdapter.chm**  | A help doc with info on the SUT control adapter class library such as declaration syntaxes and their description.| 
@@ -191,7 +191,7 @@ This section shows the folder structure in the **ExchangeServerEASProtocolTestSu
 |**- MS-XXXX.sln**|  A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.| 
 |**- MS-XXXX.runsettings** | A configuration file used for MS-XXXX unit test.| 
 |**- MS-XXXX.testsettings**|  A configuration file used for MS-XXXX running test cases.| 
-|**+ Adapter**|Adapter test suite code.| 
+|**+ Adapter**|The Adapter test suite code.| 
 |**+ TestSuite**|The test suite code.| 
 |**- Scripts** | Exchange Server EAS Test Suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.| 
 |**- RunAllExchangeEASTestCases.cmd**|                      A script that can be used to run all test cases in the whole package.| 
