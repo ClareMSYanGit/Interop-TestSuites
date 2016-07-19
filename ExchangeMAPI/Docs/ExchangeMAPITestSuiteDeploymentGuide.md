@@ -55,9 +55,9 @@ suite client.
 
 Component | Test suite client minimum requirement
 :------------ | :-------------
-RAM       |    2GB
-Hard Disk |   500M of free space
-Processor | >= 1GHz
+**RAM**       |    2GB
+**Hard Disk** |   500M of free space
+**Processor** | >= 1GHz
 
 Software requirements
 -------------------------------------------------------------------------------------------------------------------
