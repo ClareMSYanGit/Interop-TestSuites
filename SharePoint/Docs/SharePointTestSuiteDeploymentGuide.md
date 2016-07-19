@@ -1,9 +1,9 @@
-SharePoint Test Suite Deployment Guide
+SharePoint Test Suite deployment guide
 =====================================================================================================================================================
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Deploying the test suites](#deploying-the-test-suites)
-- [Test suite directories](#test-suite-directories)
+- [Using the test suite directories](#using-the-test-suite-directories)
 - [Configuring the test suites](#configuring-the-test-suites)
 - [Running the test suites](#running-the-test-suites)
 - [Test suite results, logs, and reporting](#test-suite-results-logs-and-reporting)
@@ -12,19 +12,19 @@ SharePoint Test Suite Deployment Guide
 Overview
 =====================================================================================================================================================
 
-The SharePoint Server Protocol Test Suites are implemented as synthetic
+SharePoint Server Protocol Test Suites are implemented as synthetic
 clients running against a server-side implementation of a given
 SharePoint protocol. They are designed in a client-to-server
 relationship and were originally developed for the in-house testing of
-the Microsoft Open Specifications. Test Suites have been used
+Microsoft Open Specifications. Test Suites have been used
 extensively in Plugfests and Interoperability Labs to test partner
 implementations.
 
-The SharePoint Test Suite Deployment Guide introduces the hardware and
+The SharePoint Test Suite deployment guide introduces the hardware and
 software requirements of the test suite client, and the requirements of
 the system under test (SUT) if the test suites run against SharePoint
-Server. The guide also introduces how to deploy, configure and run the
-test suites, and view test suite reports.
+Server. The guide also introduces topics on how to deploy, configure and run the
+test suites, and view the test suite reports.
 
 Prerequisites
 ================================================================================================================================================================================================================================================================================================================================================================================================================
@@ -398,7 +398,7 @@ select **Run as administrator**.
 
 ### Configuring SUT1 manually <a name="configuring-sut1-manually"></a>
 
-If the SUT is a non-Microsoft implementation of SharePoint Server, you
+If the SUT is non-Microsoft implementation of SharePoint Server, you
 will not be able to run the setup configuration script. The following
 steps explain what needs to be created or configured on the SUT in order
 to run the test suites.
@@ -905,7 +905,7 @@ the SUT on Windows.
 
 ### Configuring SUT2 manually <a name="configuring-sut2-manually"></a>
 
-If the SUT is a non-Microsoft implementation of SharePoint Server, you
+If the SUT is non-Microsoft implementation of SharePoint Server, you
 will not be able to run the setup configuration script. The following
 steps explain what needs to be created or configured on the SUT in order
 to run the test suites.
@@ -1001,7 +1001,7 @@ places.
 
 #### Set the test suite to interactive mode <a name="set-the-test-suite-to-interactive-mode"></a>
 
-If the SUT is a non-Microsoft implementation of SharePoint Server, it is
+If the SUT is non-Microsoft implementation of SharePoint Server, it is
 recommended that you further configure the test suite by setting the
 test suite to interactive mode. Interactive mode enables the test suite
 to function in a manual way, enabling you to perform setup, teardown,
@@ -1070,12 +1070,12 @@ To change the TSAP packet broadcast, do the following:
 The test suite has six SHOULD/MAY configuration files that are specific
 to all supported versions of the SUT. Each SHOULD/MAY requirement have
 an associated parameter with a value of either “true” or “false”
-corresponding to the server version that is supported. “true” represents
+corresponding to the server version that is supported. The value of “true” means
 that the requirement must be validated, whereas “false” means that the
 requirement must not be validated.
 
-If the SUT is a non-Microsoft implementation of SharePoint Server,
-configure the properties in the configuration file for the SUT which is
+If the SUT is non-Microsoft implementation of SharePoint Server,
+configure the properties in the configuration file for the SUT to be
 the closest match to the SUT implementation.
 
 **SHOULD/MAY configuration files**
