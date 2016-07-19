@@ -3,10 +3,10 @@ Exchange EWS Test Suite Deployment Guide
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Deploying the test suites](#deploying-the-test-suites)
-- [Test suite directories](#test-suite-directories)
+- [Using the test suite directories](#using-the-test-suite-directories)
 - [Configuring the test suites](#configuring-the-test-suites)
 - [Running the test suites](#running-the-test-suites)
-- [Test suite results, logs, and reporting](#test-suite-results-logs-and-reporting)
+- [Viewing the test suite results, logs, and reporting](#viewing-the-test-suite-results-logs-and-reporting)
 - [Appendix](#appendix)
 
 Overview
@@ -123,7 +123,7 @@ steps to successfully configure the test suites.
     configuration scripts are the only requirement for the SUT. The
     scripts facilitate the SUT configuration process in the **ExchangeServerEWSProtocolTestSuites.zip** file.
 
-Test suite directories
+Using the test suite directories
 ================================================================================================================================================================================================================================================================================================================================================================================================================
 
 This section shows the folder structures in the **ExchangeServerEWSProtocolTestSuites.zip** file.
@@ -174,8 +174,8 @@ Directory/file  | Description
 Configuring the test suites
 ================================================================================================================================================================================================================================================================================================================================================================================================================
 
-This section provides the necessary guidance to configure the Exchange
-Server EWS Protocol test suites on the SUT and the test suite client.
+This section provides the guidance on configuring Exchange
+Server EWS Protocol Test Suites on the SUT and the test suite client.
 The configuration should be done in this order: configure the SUT, and
 then configure the test suite client.
 
@@ -201,8 +201,8 @@ administrator rights with a mailbox on the SUT.
 
 ### SUT resource requirements 
 
-Each test suite contained within the Exchange Server EWS Protocol test
-suites package may require varying levels of resources on the SUT. The
+Each test suite contained within Exchange Server EWS Protocol Test
+Suites package may require varying levels of resources on the SUT. The
 following table outlines these resources for each test suite. The SUT
 configuration scripts will automatically create all the required
 resources for the Microsoft server implementation. To configure the SUT
@@ -252,7 +252,7 @@ To configure SUT using the setup configuration script, navigate to the
 
 ### Configuring SUT manually <a name="configuring-sut-manually"></a>
 
-If the SUT is a non-Microsoft implementation of Exchange Server, you
+If the SUT is non-Microsoft implementation of Exchange Server, you
 will not be able to run the setup configuration script. The following
 steps explain what needs to be created or configured on the SUT in order
 to run the test suites.
@@ -339,7 +339,7 @@ places.
 
 #### Set the test suite to interactive mode <a name="set-the-test-suite-to-interactive mode"></a>
 
-If the SUT is a non-Microsoft implementation of Exchange Server, it is
+If the SUT is non-Microsoft implementation of Exchange Server, it is
 recommended that you further configure the test suite by setting the
 test suite to interactive mode. Interactive mode enables the test suite
 to function in a manual way, enabling you to perform setup, teardown,
@@ -411,7 +411,7 @@ or “false” corresponding to the server version that is supported. “true”
 represents that the requirement must be validated, whereas “false” means
 that the requirement must not be validated.
 
-If the SUT is a non-Microsoft implementation of Exchange Server,
+If the SUT is non-Microsoft implementation of Exchange Server,
 configure the properties in the configuration file for the Exchange
 Server which is the closest match to the SUT implementation.
 
@@ -523,7 +523,7 @@ Batch script | Script description
 **RunAllMSXXXXTestCases.cmd**       |  Runs all MS-XXXX test cases.
 **RunMSXXXX\_SXX\_TCXX\_Name.cmd**  |  Runs a specific test case within the test suite.
 
-Test suite results, logs, and reporting
+Viewing the test suite results, logs, and reporting
 =====================================================================================================================================
 
 The test suites provide detailed reporting in a variety of formats that
@@ -568,7 +568,7 @@ individual test suite solution has run successfully in Visual Studio.
 
 ### Batch scripts
 
-If the Exchange Server EWS Protocol test suites are run by the
+If Exchange Server EWS Protocol Test Suites are run by the
 RunAllExchangeEWSTestCases.cmd batch file, the reporting information is
 saved in **…\\Source\\Scripts\\TestResults**.
 
@@ -577,8 +577,8 @@ RunMSXXXX\_SXX\_TCXX\_Name.cmd, the reporting information is saved in
 **…\\Source\\Scripts\\MS-XXXX\\TestResults.**
 
 By default, a .trx file containing the pass/fail information of the run
-is created in the TestResults folder, along with an associated directory
-named **user\_MACHINENAME DateTimeStamp** that contains a log file in
+is created in the TestResults folder along with an associated directory
+named **user\_MACHINENAME DateTimeStamp** that contains a log file in an
 XML format and an HTML report.
 
 Appendix
@@ -587,12 +587,12 @@ For more information, see the following:
 
 References | Description
 :------------ | :-------------
-<dochelp@microsoft.com>   |  Alias for Interoperability documentation help. Provides support for the Open Specifications and protocol test suites.
-[Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)  |   Microsoft Customer Support Services forums. Actively monitored forums provide support for the Open Specifications and protocol test suites. |
-[Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)   |  Open Specifications home page on MSDN
-[Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)                    |   Open Specifications documentation on MSDN
-[Exchange Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=119904)    | Exchange Server Open Specifications documentation on MSDN
-[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)                                         |Normative language reference
-[Exchange Server 2013 deployment](http://go.microsoft.com/fwlink/?LinkID=266569)                 |Exchange Server 2013 planning and deployment on TechNet
-[Exchange Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkID=517397)                 |Exchange Server 2010 planning and deployment on TechNet
-[Exchange Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkID=512508)                 |Exchange Server 2007 deployment on TechNet
+<dochelp@microsoft.com>   |  The alias for Interoperability documentation help, which provides support for Open Specifications and protocol test suites.
+[Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)  |   The Microsoft Customer Support Services forums, the actively monitored forums that provides support for Open Specifications and protocol test suites. |
+[Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)   |  The Open Specifications home page on MSDN.
+[Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)                    |   The Open Specifications documentation on MSDN.
+[Exchange Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=119904)    | The Exchange Server Open Specifications documentation on MSDN.
+[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)                                         | The normative language reference.
+[Exchange Server 2013 deployment](http://go.microsoft.com/fwlink/?LinkID=266569)                 |Exchange Server 2013 planning and deployment on TechNet.
+[Exchange Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkID=517397)                 |Exchange Server 2010 planning and deployment on TechNet.
+[Exchange Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkID=512508)                 |Exchange Server 2007 deployment on TechNet.
