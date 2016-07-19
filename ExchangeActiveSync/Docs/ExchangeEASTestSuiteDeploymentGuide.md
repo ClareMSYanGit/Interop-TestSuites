@@ -25,7 +25,7 @@ The Exchange EAS Test Suite deployment guide introduces the hardware and
 software requirements of the test suite client, and the requirements of
 the system under test (SUT) if the test suites run against Exchange
 Server. The guide also introduces topics on how to deploy, configure and run the
-test suites, and view test suite reports.
+test suites, and view the test suite reports.
 
 Prerequisites
 ======================================================================================================
