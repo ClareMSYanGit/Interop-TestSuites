@@ -577,7 +577,7 @@ as “Inconclusive”.
 Further customization can be done by creating your own SUT control
 adapter that matches the server implementation. For more information
 about how to create a SUT control adapter, see the [Protocol Test
-Framework (PTF) user documentation](https://github.com/Microsoft/ProtocolTestFramework) .
+Framework (PTF) user documentation](https://github.com/Microsoft/ProtocolTestFramework).
 
 #### Configure TSAP broadcast
 
