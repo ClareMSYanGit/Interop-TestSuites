@@ -197,8 +197,8 @@ This section shows the folder structures in the **SharePointFileSyncAndWOPIProto
 Configuring the test suites
 ========================================================================================================================================================================================================
 
-This section provides the necessary guidance to configure the SharePoint
-File Sync and WOPI Protocol test suites on the SUT and the test suite
+This section provides the guidance on configuring SharePoint
+File Sync and WOPI Protocol Test Suites on the SUT and the test suite
 client. The configuration should be done in this order: configure the
 SUT, and then configure the test suite client.
 
@@ -223,8 +223,8 @@ as described in section [Configuring the SUT manually](#configuring-the-sut-manu
 
 ### SUT resource requirements
 
-Each test suite contained within the SharePoint File Sync and WOPI
-Protocol test suites package may require varying levels of resources on
+Each test suite in SharePoint File Sync and WOPI
+Protocol Test Suites package may require varying levels of resources on
 the SUT. The following table outlines these resources for each test
 suite. The SUT configuration scripts will automatically create all the
 required resources for the Microsoft server implementation. To configure
@@ -282,10 +282,9 @@ select **Run as administrator**.
 
 ### Configuring the SUT manually <a name="configuring-the-sut-manually"></a>
 
-If the SUT is a non-Microsoft implementation of SharePoint Server, you
+If the SUT is non-Microsoft implementation of SharePoint Server, you
 will not be able to run the setup configuration script. The following
-steps explain what needs to be created or configured on the SUT in order
-to run the test suites.
+steps explain what needs to be created or configured on the SUT to run the test suites.
 
 1.  In Windows Powershell, set the execution policy to **RemoteSigned**,
     enable remoting, and increase the memory allocated per shell for
@@ -413,7 +412,7 @@ For the MS-WOPI test suite, the SUT configuration steps are as follows:
 
 15. Create a target application item in Secure Store
     named MSWOPI\_TargetAppWithNotGroupAndWindows. The target
-    application item type is *Individual*.
+    application item type is **Individual**.
 
 16. Configure the Security Token Service to use HTTP.
 
@@ -454,7 +453,7 @@ modification.
 |**MS-XXXX\_TestSuite.deployment.ptfconfig**|  The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows for the test suite-specific customization.|
 |**MS-XXXX\_TestSuite.ptfconfig**|  The test suite configuration file contains details that specify the behavior of the test suite operation.|
 
-Both files are present in TestSuite folder of each test suite directory.
+Both files are in the TestSuite folder of each test suite directory.
 
 If you need to modify the common configuration values for a specific
 test suite, you must copy the common properties to the
@@ -473,7 +472,7 @@ other tasks in a step-by-step approach. To enable interactive mode for a
 specific test suite, do the following:
 
 1.  Browse to the **MS-XXXX\_TestSuite.ptfconfig** configuration file
-    within the **\\Source\\MS-XXXX\\TestSuite\\**.
+    in the **\\Source\\MS-XXXX\\TestSuite\\**.
 
 1.  Set the type value of Adapter property to **interactive** for SUT
     control adapter\*\*.
@@ -484,16 +483,16 @@ specific test suite, do the following:
 |:------------ | :------------- | :-------------| :-------------
 |Adapter     |    managed or powershell |  interactive\*\*  | **managed**: The SUT control adapter is implemented in C\# managed code.|                                                      
 ||| | **powershell**: The SUT control adapter is implemented through PowerShell.|                                                       
-||| | **interactive**: Interactive adapters are used for manually configuring the server. The interactive adapter displays a dialog box to perform a manual test each time one of its methods is called. The dialog box will show the method name, parameter names, and values\*\*\*| 
+||| | **interactive**: Interactive adapters are used for manually configuring the server. The interactive adapter displays a dialog box to perform a manual test each time when one of its methods is called. The dialog box will show the method name, parameter names, and values\*\*\*| 
  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 \*The Adapter property value is set to either **managed** or
 **powershell** depending on whether the SUT control adapter was
 implemented in managed C\# code or through PowerShell.
 
-\*\*When changing to interactive mode from managed mode, the
+\*\*When changing from managed mode to interactive mode, the
 “adaptertype” attribute must be deleted to avoid a runtime error. When
-changing to interactive mode from powershell mode, an additional step is
+changing from powershell mode to interactive mode, an additional step is
 required—delete the “scriptdir” attribute to avoid a runtime error.
 
 \*\*\*When the manual operation completes successfully, enter the
@@ -505,8 +504,8 @@ terminate the test. In this case, the test will be treated as
 
 Further customization can be done by creating your own SUT control
 adapter that matches the server implementation. For information about
-how to create a SUT control adapter, see the Protocol Test Framework
-(PTF) user documentation.
+how to create a SUT control adapter, see the [Protocol Test Framework
+(PTF) user documentation](https://github.com/Microsoft/ProtocolTestFramework).
 
 ####Configure TSAP broadcast
 
