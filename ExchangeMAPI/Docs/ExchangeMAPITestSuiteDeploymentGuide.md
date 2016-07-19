@@ -257,7 +257,7 @@ ExchangeTestSuite.config is required.
 || Public Folder| MSOXCFXICS\_PublicFolder01 |--|          
 || Mailbox | MSOXCFXICS\_TestUser  | The mailbox name should be below 20 characters.|
 || Redirect Server Mailbox |  MSOXCFXICS\_TestUser2 |--|      
-| **MS-OXCMAPIHTTP** | Mailbox |  MSOXCMAPIHTTP\_User01 | MS-OXCMAPIHTTP is supported from Microsoft Exchange 2013 SP1. The mailbox name should be below 20 characters. |
+| **MS-OXCMAPIHTTP** | Mailbox |  MSOXCMAPIHTTP\_User01 | MS-OXCMAPIHTTP is supported in Microsoft Exchange 2013 SP1. The mailbox name should be below 20 characters. |
 || Mailbox  | MSOXCMAPIHTTP\_User02  | The mailbox name should be below 20 characters.|
 || Distribution Group  |  MSOXCMAPIHTTP\_ATDG01  |--|                    
 | **MS-OXCMSG** | Mailbox   | MSOXCMSG\_TestUser01 |  The mailbox name should be below 20 characters.|
@@ -301,13 +301,12 @@ To configure SUT1 using the setup configuration script, navigate to the
 
 If the SUT is a non-Microsoft implementation of Exchange Server, you
 will not be able to run the setup configuration script. The following
-steps explain what needs to be created or configured on the SUT in order
-to run the test suites.
+steps explain what needs to be created or configured on the SUT to run the test suites.
 
 1.  Configure the web site which contains the application that
     implements the MAPI protocols.
 
-	a.  Configure Secure Sockets Layer (SSL) as not required and ignore
+	a.  Configure Secure Sockets Layer (SSL) as **not required** and ignore
 		client certificates.
 
 	b.  Enable "Anonymous Authentication", "Basic Authentication" and
@@ -378,7 +377,7 @@ to run the test suites.
 
 4.  If the SUT supports MAPI over HTTP, enable the feature.
 
-5.  Ensure that auxiliary buffers on EcDoConnectEx and EcDoRpcExt2
+5.  Ensure that auxiliary buffers on **EcDoConnectEx** and **EcDoRpcExt2**
     methods can be returned from the SUT to the test suite client.
 
 6.  Set the Max Extended Rule Size to 96KB.
@@ -412,8 +411,8 @@ to run the test suites.
 
 ### Configuring SUT2 using the setup configuration script <a name="configuring-sut2-using-the-setup-configuration-script"></a>
 
-*The setup configuration script is only used for configuring Microsoft Exchange
-Server on Windows.*
+The setup configuration script is only used for configuring Microsoft Exchange
+Server on Windows.
 
 To configure SUT2 using the setup configuration script, navigate to the
 SUT folder, right-click on the **ExchangeSecondSUTConfiguration.cmd**
@@ -423,8 +422,7 @@ and select **Run as administrator.**
 
 If the SUT is a non-Microsoft implementation of Exchange Server, you are
 not able to run the setup configuration script. The following steps
-explain what needs to be created or configured on the SUT in order to
-run the test suites.
+explain what needs to be created or configured on the SUT to run the test suites.
 
 1.  Configure the web site which contains the application that
 	implements the MAPI protocols.
@@ -461,7 +459,7 @@ modified through a script.
 ### Common configuration file
 
 The common configuration file contains configurable properties common to
-all Exchange MAPI Protocol test suites. This file must be modified to
+all Exchange MAPI Protocol Test Suites. This file must be modified to
 match the characteristics of the environment where the test suites are
 installed.
 
@@ -482,7 +480,7 @@ modification.
 | **MS-XXXX\_TestSuite.deployment.ptfconfig** | The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows test suite-specific customization. |
 | **MS-XXXX\_TestSuite.ptfconfig** |  The test suite configuration file contains details that specify the behavior of the test suite operation. |
 
-Both files are present in the TestSuite folder inside each test suite
+Both files are in the TestSuite folder in each test suite
 directory.
 
 If you need to modify the common configuration values for a specific
@@ -494,7 +492,7 @@ places.
 
 #### Set the test suite to interactive mode <a name="set-the-test-suite-to-interactive-mode"> </a>
 
-If the SUT is a non-Microsoft implementation of Exchange Server, it is
+If the SUT is non-Microsoft implementation of Exchange Server, it is
 recommended that you further configure the test suite by setting the
 test suite to interactive mode. Interactive mode enables the test suite
 to function in a manual way, enabling you to perform setup, teardown,
@@ -502,7 +500,7 @@ and other tasks in a step-by-step approach. To enable interactive mode
 for a specific test suite, do the following:
 
 1.  Browse to the **MS-XXXX\_TestSuite.ptfconfig** configuration file
-    within the **\\Source\\MS-XXXX\\TestSuite\\**.
+    in **\\Source\\MS-XXXX\\TestSuite\\**.
 
 2.  Set the type value of Adapter property to **interactive** for the
     SUT control adapter\*\*.
@@ -515,26 +513,26 @@ Adapter |  managed or powershell  | interactive\*\* |  **managed**: The SUT cont
 ||||**powershell**:The SUT control adapter is implemented through Windows PowerShell.
 ||||**interactive**: Interactive adapters are used when manually configuring a server. Interactive adapter uses a dialog box to perform a manual test each time one of its methods is called. The dialog box contains the method name, parameter names, and values\*\*\*                                     
    
-\**The Adapter property value is set to either managed or powershell
+\*The Adapter property value is set to either managed or powershell
 depending on whether the SUT control adapter was implemented in managed
-C\# code or through Windows PowerShell.*
+C\# code or through Windows PowerShell.
 
-\*\**When changing to interactive mode from managed mode, the
-“adaptertype” attribute must be deleted to avoid a runtime error.* *When
-changing to interactive mode from powershell mode, an additional step is
-required—delete the “scriptdir” attribute to avoid a runtime error.*
+\*\*When changing from managed mode to interactive mode, the
+“adaptertype” attribute must be deleted to avoid a runtime error. When
+changing from powershell mode to interactive mode , an additional step is
+required—delete the “scriptdir” attribute to avoid a runtime error.
 
-\*\*\**When the manual operation completes successfully, enter the
+\*\*\*When the manual operation completes successfully, enter the
 return values in **Action Results** (if any) and click **Succeed**
 button in the dialog-box. When the manual operation is unable to
 complete, enter the error messages in the **Failure Message** text box
 and click **Fail** to terminate the test. In this case, the test will be
-treated as “Inconclusive”.*
+treated as “Inconclusive”.
 
 Further customization can be done by creating your own SUT control
 adapter that matches the server implementation. For more information
-about how to create a SUT control adapter, see the Protocol Test
-Framework (PTF) user documentation.
+about how to create a SUT control adapter, see the [Protocol Test
+Framework (PTF) user documentation](https://github.com/Microsoft/ProtocolTestFramework).
 
 #### Configure TSAP broadcast
 
@@ -542,7 +540,7 @@ Test Session Announcement Protocol (TSAP) is used by PTF to broadcast
 test information when the test suite is running. TSAP broadcasts helps
 in mapping test cases to captured frames.
 
-By default, TSAP packets are broadcasted in the network. User can change
+By default, TSAP packets are broadcasted in the network. The user can change
 a TSAP broadcast by adding an entry “BeaconLogTargetServer” to
 TestSuite.deployment.ptfconfig to target the TSAP only to the specified
 machine.
@@ -562,14 +560,14 @@ For example: &lt;Property name="BeaconLogTargetServer" value="dc01"
 
 The test suite has three SHOULD/MAY configuration files that are
 specific to all supported versions of the SUT. Each SHOULD/MAY
-requirement have an associated parameter with a value of either “true”
-or “false” corresponding to the server version that is supported. “true”
-represents that the requirement must be validated, whereas “false” means
+requirement has an associated parameter with a value of either “true”
+or “false” corresponding to the server version that is supported. The value of “true”
+means that the requirement must be validated, whereas “false” means
 that the requirement must not be validated.
 
-If the SUT is a non-Microsoft implementation of Exchange Server,
+If the SUT is non-Microsoft implementation of Exchange Server,
 configure the properties in the configuration file for the Exchange
-Server which is the closest match to the SUT implementation.
+Server to be the closest match to the SUT implementation.
 
 **SHOULD/MAY configuration files**
 
@@ -611,9 +609,9 @@ below to update configuration files and configure the test suite client.
     control adapter to configure the SUT. If you chose interactive mode
     for the SUT control adapter as described in section *Set the test suite to interactive mode*, skip this step.
 
-	a.  Set the execution policy to RemoteSigned.
+	a.  Set the execution policy to **RemoteSigned**.
 
-	b.  Add the SUT to the TrustedHosts to ensure that the Windows Remote
+	b.  Add the SUT to the **TrustedHosts** to ensure that the Windows Remote
 		Management (WinRM) client can process remote calls against the SUT
 		when the test suite client is not joined to the domain.
 
@@ -675,11 +673,11 @@ A Microsoft Visual Studio solution file
 Batch scripts 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Exchange MAPI Protocol test suites are installed with a collection of
+Exchange MAPI Protocol Test Suites are installed with a collection of
 scripts that enable a user to run individual test cases
 (RunMSXXXX\_SYY\_TCZZ\_Name.cmd) or all test cases in a test suite
 (RunAllMSXXXXTestCases.cmd), or all test cases of Exchange MAPI Protocol
-test suites at once (RunAllExchangeMAPITestCases.cmd). These scripts can
+Test Suites at once (RunAllExchangeMAPITestCases.cmd). These scripts can
 be found in the **\\Source\\Scripts** directory.
 
 **Note**   These scripts depend on having the compiled binaries in the
@@ -687,7 +685,7 @@ bin folder.
 
 Batch script  |  Script description
 :------------ | :------------- 
-**RunAllExchangeMAPITestCases.cmd** | Runs all the test cases within the Server MAPI Protocol test suites.
+**RunAllExchangeMAPITestCases.cmd** |  Runs all the test cases within the Server MAPI Protocol test suites.
 **RunAllMSXXXXTestCases.cmd**       |  Runs all MS-XXXX test cases.
 **RunMSXXXX\_SYY\_TCZZ\_Name.cmd**  |  Runs a specific test case within the test suite.
 
@@ -701,8 +699,8 @@ will enable users to quickly debug failures.
 Test suite configuration logs
 ---------------------------------------------------------------------------------------------------------------------------
 
-The configuration logs contain information about whether each
-configuration step succeeds or not, and detail error information if the
+The configuration logs contain information about whether or not each
+configuration step succeeds, and detailed information on errors if the
 configuration step fails.
 
 ### SUT configuration logs
@@ -740,7 +738,7 @@ individual test suite solution has run successfully in Visual Studio.
 
 ### Batch scripts
 
-If the Exchange MAPI Protocol test suites are run by the
+If Exchange MAPI Protocol Test Suites are run by the
 RunAllExchangeMAPITestCases.cmd batch file, the reporting information is
 saved in **…\\Source\\Scripts\\TestResults**.
 
@@ -760,12 +758,12 @@ For more information, see the following:
 
 References  |  Description
 :------------ | :-------------
- <dochelp@microsoft.com>  |  Alias for Interoperability documentation help. Provides support for the Open Specifications and protocol test suites.
-  [Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125) |  Microsoft Customer Support Services forums. Actively monitored forums provide support for the Open Specifications and protocol test suites.|
-  [Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)     | Open Specifications home page on MSDN
-  [Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743) | Open Specifications documentation on MSDN
-  [Exchange Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=119904) | Exchange Server Open Specifications documentation on MSDN
-  [RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)                                      |  Normative language reference
-  [Exchange Server 2013 deployment](http://go.microsoft.com/fwlink/?LinkID=266569)              | Exchange Server 2013 planning and deployment on TechNet
-  [Exchange Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkID=517397)              | Exchange Server 2010 planning and deployment on TechNet
-  [Exchange Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkID=512508)              | Exchange Server 2007 deployment on TechNet
+<dochelp@microsoft.com>  |  The alias for Interoperability documentation help, which provides support for Open Specifications and protocol test suites.
+[Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125) |  The Microsoft Customer Support Services forums, the actively monitored forums that provide support for Open Specifications and protocol test suites.|
+[Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)     | The Open Specifications home page on MSDN.
+[Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743) | The Open Specifications documentation on MSDN.
+[Exchange Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=119904) | The Exchange Server Open Specifications documentation on MSDN.
+[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)                                      | The normative language reference.
+[Exchange Server 2013 deployment](http://go.microsoft.com/fwlink/?LinkID=266569)              | The Exchange Server 2013 planning and deployment on TechNet.
+[Exchange Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkID=517397)              | The Exchange Server 2010 planning and deployment on TechNet.
+[Exchange Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkID=512508)              | The Exchange Server 2007 deployment on TechNet.
