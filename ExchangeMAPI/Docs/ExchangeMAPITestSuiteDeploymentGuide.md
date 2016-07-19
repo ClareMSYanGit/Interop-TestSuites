@@ -184,7 +184,7 @@ This section shows the folder structures in the **ExchangeMAPIProtocolTestSuites
 |  **- ExchangeMAPIProtocolTestSuites.sln** |  A Microsoft Visual Studio solution that contains projects of the test suites source code.|
 |  **- ExchangeMAPIProtocolTestSuites.runsettings** | A configuration file used for unit test.|
 |  **- ExchangeMAPIProtocolTestSuites.testsettings**| A configuration file used for running test cases.|
-|  **- MS-XXXX** | The MS-XXXX test suite code directory.|
+|  **- MS-XXXX** | A directory for the MS-XXXX test suite code.|
 |  **- MS-XXXX.sln** | A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.|
 |  **- MS-XXXX.runsettings** | A configuration file used for MS-XXXX unit test.|
 |  **- MS-XXXX.testsettings** | A configuration file used for MS-XXXX running test cases.|

@@ -1,30 +1,30 @@
-SharePoint File Sync and WOPI Protocol Test Suite Deployment Guide
+SharePoint File Sync and WOPI Protocol Test Suite deployment guide
 =====================================================================================================================================================
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Deploying the test suites](#deploying-the-test-suites)
-- [Test suite directories](#test-suite-directories)
+- [Using the test suite directories](#using-the-test-suite-directories)
 - [Configuring the test suites](#configuring-the-test-suites)
 - [Running the test suites](#running-the-test-suites)
-- [Test suite results, logs, and reporting](#test-suite-results-logs-and-reporting)
+- [Viewing the test suite results, logs, and reporting](#viewing-the-test-suite-results-logs-and-reporting)
 - [Appendix](#appendix)
 
 Overview
 =====================================================================================================================================================
 
-The SharePoint File Sync and WOPI Protocol Test Suites are implemented
+SharePoint File Sync and WOPI Protocol Test Suites are implemented
 as synthetic clients running against a server-side implementation of a
 given SharePoint protocol. They are designed in a client-to-server
 relationship and were originally developed for the in-house testing of
-the Microsoft Open Specifications. Test Suites have been used
+Microsoft Open Specifications. Test Suites have been used
 extensively in Plugfests and Interoperability Labs to test partner
 implementations.
 
-The SharePoint File Sync and WOPI Protocol Test Suite Deployment Guide
+The SharePoint File Sync and WOPI Protocol Test Suite deployment guide
 introduces the hardware and software requirements of the test suite
 client and the requirements of the system under test (SUT) if the test
-suites run against SharePoint Server. The guide also introduces how to
-deploy, configure and run the test suites, and view test suite reports.
+suites run against SharePoint Server. The guide also introduces topics on how to
+deploy, configure and run the test suites, and view the test suite reports.
 
 Prerequisites
 ======================================================================================================================================
@@ -39,9 +39,9 @@ Hardware requirements
 ###  System under test
 
 The SUT is the server side of the test suite environment. SharePoint
-server(s) and Active Directory have defined system requirements which
-should be taken into account during deployment. The SharePoint File Sync
-and WOPI Protocol test suites do not have any additional SUT resource
+Server(s) and Active Directory have defined system requirements which
+should be taken into account during deployment. SharePoint File Sync
+and WOPI Protocol Test Suites do not have any additional SUT resource
 requirements.
 
 ### Test suite client
@@ -54,16 +54,16 @@ suite client.
 
  Component  |Test suite client minimum requirement
 :------------ | :-------------
-  RAM       |  2GB
-  Hard Disk |  3GB of free space
-  Processor |  >= 1GHz
+  **RAM**       |  2GB
+  **Hard Disk** |  3GB of free space
+  **Processor** |  >= 1GHz
 
 Software requirements
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ###  System under test
 
-This section is only relevant when running the test suites against
+This section is only relevant when running the test suites against the 
 following versions of SharePoint Server:
 
 -   Microsoft SharePoint Foundation 2010 Service Pack 2 (SP2)
@@ -71,15 +71,15 @@ following versions of SharePoint Server:
 -   Microsoft SharePoint Server 2010 Service Pack 2 (SP2)
 -   Microsoft SharePoint Server 2013 Service Pack 1 (SP1)
 
-The following table describes the necessary server roles required for a
-test suite deployment with a Microsoft implementation.
+The following table describes the required server roles for a
+test suite deployment with Microsoft implementation.
 
 **Required SUT roles**
 
 |Role | Description|
 |:------------ | :-------------|
-|  Active Directory Domain Controller (AD DC)   |Active Directory Domain Controller provides secure data for users and computers. An AD DC can coexist with a SharePoint server. A typical test configuration has an AD DC and SharePoint Server installed on separate machines.|
-|  SharePoint Server (SUT) |  The SharePoint server in the topology.|
+|  **Active Directory Domain Controller (AD DC)**   |Active Directory Domain Controller provides secure data for users and computers. An AD DC can coexist with SharePoint Server. A typical test configuration has an AD DC and SharePoint Server installed on separate machines.|
+|  **SharePoint Server (SUT)** |  The SharePoint Server in the topology.|
 
 The following diagram is an example of what a typical SharePoint File
 Sync and WOPI Protocol Test Suite environment may look like. This
@@ -89,8 +89,7 @@ example uses an IPv4, but IPv6 is also supported by the test suites.
 
 ### Test suite client
 
-This section describes the prerequisite software for installing the
-SharePoint File Sync and WOPI Protocol test suites on the test suite
+This section describes the prerequisite software for installing SharePoint File Sync and WOPI Protocol Test Suites on the test suite
 client. The following table outlines the software dependencies for the
 test suite client.
 
@@ -111,23 +110,21 @@ test suite client.
 Deploying the test suites
 ================================================================================================================================================================================================================================================================================================================================================================================================================
 
-This section describes the deployment of the SharePoint File Sync and
-WOPI Protocol test suites on the test suite client and the SUT. The
-SharePoint Server Protocol test suites are packaged in a .zip file which
+This section describes the deployment of SharePoint File Sync and
+WOPI Protocol Test Suites on the test suite client and the SUT. The
+SharePoint Server Protocol test suites are packaged in a .zip file, which
 is available on [**Microsoft
 Connect**](http://go.microsoft.com/fwlink/?LinkId=516921). Once you
-download the test suites, you need to perform the following steps in
-order to be able to successfully configure the test suites.
+download the test suites, perform the following steps to successfully configure the test suites.
 
-1.  Extract the
-    **SharePoint File Sync and WOPI Protocol Test Suites** folder to a
+1.  Extract the **SharePoint File Sync and WOPI Protocol Test Suites** folder from the zip file to a
     directory of your choice on the test suite client.
 
 2.  Copy the **SUT** and **Common** folders under **…\\ SharePoint File
     Sync and WOPI Protocol Test Suites \\Setup\\** to a directory of
     your choice on the SUT. The SUT configuration scripts are the only
     requirement for the SUT. The scripts facilitate the SUT
-    configuration process and are contained within the
+    configuration process and are in the
     **SharePointFileSyncandWOPIProtocolTestSuites.zip** file.
 
 	**Note**   
@@ -136,8 +133,8 @@ order to be able to successfully configure the test suites.
 	remember that the path of the setup script should contain at most
 	256 characters.
 
-	-   If your computer blocks scripts downloaded from the Internet for
-	security reasons, you will need to follow these steps to unblock
+	-   If your computer blocks scripts that are downloaded from the Internet for
+	security reasons, follow these steps to unblock
 	PowerShell scripts.
   
 1.  Right click xxx.ps1 and select **Properties**.   
@@ -148,27 +145,25 @@ order to be able to successfully configure the test suites.
   
 	![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_Deploy2.png)	  
 												   
-Test suite directories
+Using the test suite directories
 ============================================================================================================================================================================================================================
 
-In this section you will find a list of the folder structures that are
-contained within the **SharePointFileSyncAndWOPIProtocolTestSuites.zip**
-file.
+This section shows the folder structures in the **SharePointFileSyncAndWOPIProtocolTestSuites.zip** file.
 
 **SharePointFileSyncAndWOPIProtocolTestSuites.zip file contents**
 
 |Directory/file| Description|
 |:------------ | :-------------|
-| **EULA.rtf**     |    The End-User License Agreement |
-| **ReadMe.txt**   |   A file that contains information about the deployment guide and prerequisite software. |
+| **EULA.rtf**     |    The End-User License Agreement. |
+| **ReadMe.txt**   |   A doc on deployment and prerequisite software. |
 | **SharePoint File Sync and WOPI Protocol Test Suites**          |-- | 
 | **- Docs**  |   A directory that contains documents of all protocol test suites. |
-| **- FssWopiTestSuiteDeploymentGuide.docx**   |   A file relevant to the protocol test suite deployment guidance. |
-| **- FssWopiTestSuiteSpecification.docx**     |   A file that contains test suites design, including test suites architecture, adapter and test suites details. |
-| **+ MS-XXXX**                                |   MS-XXXX Help documentation |
-| **- \[MS-XXXX\].pdf**                        |   The technical specification for the protocol. |
-| **- MS-XXXX\_SUTControlAdapter.chm**         |   Contains information about the SUT control adapter class library such as declaration syntaxes and their description. |
-| **- MS-XXXX\_RequirementSpecification.xlsx** |   A spreadsheet that outlines all requirements associated with the technical specification. |
+| **- FssWopiTestSuiteDeploymentGuide.docx**   |   A doc on the protocol test suite deployment. |
+| **- FssWopiTestSuiteSpecification.docx**     |   A doc that contains test suites design, including test suites architecture, adapter and test suites details. |
+| **+ MS-XXXX**                                |   The MS-XXXX help documentation |
+| **- \[MS-XXXX\].pdf**                        |   The protocol technical specification. |
+| **- MS-XXXX\_SUTControlAdapter.chm**         |   A help doc on the SUT control adapter class library such as declaration syntaxes and their description. |
+| **- MS-XXXX\_RequirementSpecification.xlsx** |   A spreadsheet that outlines all requirements that are associated with the technical specification. |
 | **- Setup**                                  |   A directory that contains configuration scripts. |
 | **- Test Suite Client**                      |   A directory that contains the configuration script to configure the test suite client. |
 | **- SharePointClientConfiguration.cmd**      |   A command file that runs the SharePointClientConfiguration.ps1 to configure the properties for the protocol test suites. |
@@ -179,24 +174,24 @@ file.
 | **- Common**                                 |   A folder that contains common configuration scripts and resources. |
 | **-CommonConfiguration.ps1**                 |   A library that contains common functions for configuring Microsoft products and the test suite client. |
 | **-SharePointCommonConfiguration.ps1**       |   A library that contains common functions for configuring the SUT. |
-| **-SharePointTestSuite.config**              |   The configuration file to store all configuration resources |
+| **-SharePointTestSuite.config**              |   The configuration file to store all configuration resources. |
 | **- Source**                                 |   A folder with Microsoft Visual Studio solution that contains the source code for the test suites. |
-| **- Common**                                 |   A folder with Visual Studio projects that contains source code that are common to the test suites |
-| **-FssWopiCommonConfiguration.deployment.ptfconfig** |          The common configuration file |
-| **-SharePointFileSyncAndWOPIProtocolTestSuites.sln** |          A Visual Studio solution that contains projects of the protocol test suites source code |
-| **- SharePointFileSyncAndWOPIProtocolTestSuites.runsettings** |   A configuration file used for unit test |
-| **-SharePointFileSyncAndWOPIProtocolTestSuites.testsettings** |   A configuration file used for running test cases |
-| **- MS-XXXX**                                                 |   MS-XXXX test suite source code directory |
-| **+ Adapter**                                                 |   Adapter test suite code |
-| **+ TestSuite**                                               |   Test suite code |
-| **- MS-XXXX.sln**                                             |   A Visual Studio solution that contains projects of the MS-XXXX test suite |
-| **- MS-XXXX.runsettings**                                     |   A configuration file used for MS-XXXX unit test |
-| **- MS-XXXX.testsettings**                                    |   A configuration file used for MS-XXXX running test cases |
-| **-Scripts**                                                  |   SharePoint Server Protocol test suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite |
-| **-RunAllSharePoint\_FileSyncAndWOPI\_TestCases.cmd**         |   A script that can be used to run all test cases in the package |
-| **-MS-XXXX**                                                  |   A folder containing scripts that belong to the MS-XXXX test suite |
-| **- RunAllMSXXXXTestCases.cmd**                               |   A script that can be used to run all test cases of MS-XXXX |
-| **- RunMSXXXX\_SYY\_TCZZ\_Name.cmd**                          |   A script that can be used to run a single test case of MS-XXXX |
+| **- Common**                                 |   A folder with Visual Studio projects that contains source code that are common to the test suites. |
+| **-FssWopiCommonConfiguration.deployment.ptfconfig** |          The common configuration file. |
+| **-SharePointFileSyncAndWOPIProtocolTestSuites.sln** |          A Visual Studio solution that contains projects of the protocol test suites source code. |
+| **- SharePointFileSyncAndWOPIProtocolTestSuites.runsettings** |   A configuration file used for unit test. |
+| **-SharePointFileSyncAndWOPIProtocolTestSuites.testsettings** |   A configuration file used for running test cases. |
+| **- MS-XXXX**                                                 |   A directory for the MS-XXXX test suite source code. |
+| **+ Adapter**                                                 |   The Adapter test suite code. |
+| **+ TestSuite**                                               |   The test suite code. |
+| **- MS-XXXX.sln**                                             |   A Visual Studio solution that contains projects of the MS-XXXX test suite. |
+| **- MS-XXXX.runsettings**                                     |   A configuration file used for MS-XXXX unit test. |
+| **- MS-XXXX.testsettings**                                    |   A configuration file used for MS-XXXX running test cases. |
+| **-Scripts**                                                  |   SharePoint Server Protocol Test Suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite. |
+| **-RunAllSharePoint\_FileSyncAndWOPI\_TestCases.cmd**         |   A script that can be used to run all test cases in the package. |
+| **-MS-XXXX**                                                  |   A folder containing scripts that belong to the MS-XXXX test suite. |
+| **- RunAllMSXXXXTestCases.cmd**                               |   A script that can be used to run all test cases of MS-XXXX. |
+| **- RunMSXXXX\_SYY\_TCZZ\_Name.cmd**                          |   A script that can be used to run a single test case of MS-XXXX. |
 
 
 Configuring the test suites
@@ -470,7 +465,7 @@ places.
 
 #### Set the test suite to interactive mode <a id="set-the-test-suite-to-interactive-mode"></a>
 
-If the SUT is a non-Microsoft implementation of SharePoint Server, it is recommended that you further
+If the SUT is non-Microsoft implementation of SharePoint Server, it is recommended that you further
 configure the test suite by setting the test
 suite to interactive mode. Interactive mode enables the test suite to
 function in a manual way, enabling you to perform setup, teardown, and
@@ -544,7 +539,7 @@ or “false” corresponding to the server version that they support. “true”
 represents that the requirement must be validated, whereas “false” means
 that the requirement must not be validated.
 
-If the SUT is a non-Microsoft implementation of SharePoint Server,
+If the SUT is non-Microsoft implementation of SharePoint Server,
 configure the properties in the configuration file for the SharePoint
 Server which is the closest match to the SUT implementation.
 
@@ -685,11 +680,10 @@ Batch script | Script description
 **RunAllMSXXXXTestCases.cmd**                         | Runs all MS-XXXX test cases.
 **RunMSXXXX\_SYY\_TCZZ\_Name.cmd**                    | Runs a specific test case within the test suite.
 
-Test suite results, logs, and reporting
+Viewing the test suite results, logs, and reporting
 =====================================================================================================================================
 
-The test suites provide detailed reporting in a variety of formats that
-will enable users to quickly debug failures.
+The test suites provide detailed reporting in a variety of formats that enable users to quickly debug failures.
 
 Test suite configuration logs
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -740,20 +734,20 @@ RunMSXXXX\_SYY\_TCZZ\_Name.cmd, the reporting information is saved in
 
 By default, a .trx file containing the pass/fail information of the run
 is created in the TestResults folder, along with an associated directory
-named **user\_MACHINENAME DateTimeStamp** that contains a log file in
+named **user\_MACHINENAME DateTimeStamp** that contains a log file in an
 XML format and an HTML report.
 
 Appendix
 ================================================================================================================================================================================================================================================================================================================================================================================================================
  References   | Description
 :------------ | :-------------
-  <dochelp@microsoft.com>   |  Alias for Interoperability documentation help. Provides support for the Open Specifications and protocol test suites.| 
-  [Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125) | Microsoft Customer Support Services forums. Actively monitored forums that provide support for the Open Specifications and Protocol test suites. 
-  [Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)  | Open Specifications home page on MSDN.
-  [Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)                   | Open Specifications documentation on MSDN.
-  [SharePoint Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=202122) | SharePoint Open Specifications documentation on MSDN.
-  [RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)      |  Normative language reference.
-  [Microsoft SharePoint Foundation 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517503)  |  Microsoft SharePoint Foundation 2010 deployment on TechNet.
-  [Microsoft SharePoint Foundation 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504) | Microsoft SharePoint Foundation 2013 installation and configuration on TechNet.
-  [Microsoft SharePoint Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517505)   |  Microsoft SharePoint Server 2010 deployment on TechNet.
-  [Microsoft SharePoint Server 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504) | Microsoft SharePoint Server 2013 installation and configuration on TechNet.
+  <dochelp@microsoft.com>   |  The alias for Interoperability documentation help, which provides support for Open Specifications and protocol test suites.| 
+  [Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125) | The Microsoft Customer Support Services forums, the actively monitored forums that provide support for the Open Specifications and protocol test suites. 
+  [Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)  | The Open Specifications home page on MSDN.
+  [Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)                   | The Open Specifications documentation on MSDN.
+  [SharePoint Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=202122) | The SharePoint Open Specifications documentation on MSDN.
+  [RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)      | The normative language reference.
+  [Microsoft SharePoint Foundation 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517503)  | The Microsoft SharePoint Foundation 2010 deployment on TechNet.
+  [Microsoft SharePoint Foundation 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504) | The Microsoft SharePoint Foundation 2013 installation and configuration on TechNet.
+  [Microsoft SharePoint Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517505)   |  The Microsoft SharePoint Server 2010 deployment on TechNet.
+  [Microsoft SharePoint Server 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504) | The Microsoft SharePoint Server 2013 installation and configuration on TechNet.

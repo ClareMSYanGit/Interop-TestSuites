@@ -1,4 +1,4 @@
-Exchange EWS Test Suite Deployment Guide
+Exchange EWS Test Suite deployment guide
 ======================================================================================================
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
@@ -159,12 +159,12 @@ Directory/file  | Description
 **- ExchangeEWSProtocolTestSuites.sln**                |  A Visual Studio solution that contains projects of the protocol test suites source code.
 **- ExchangeServerEWSProtocolTestSuites.runsettings**  |  A configuration file used for unit test.
 **- ExchangeServerEWSProtocolTestSuites.testsettings** |  A configuration file used for running test cases.
-**- MS-XXXX**                                          |  The MS-XXXX test suite code directory.
+**- MS-XXXX**                                          |  A directory for the MS-XXXX test suite code.
 **- MS-XXXX.sln**                                      |  A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.
 **- MS-XXXX.runsettings**                              |  A configuration file used for MS-XXXX unit test.
 **- MS-XXXX.testsettings**                             |  A configuration file used for running MS-XXXX test cases.
 **+ Adapter**                                          |  The Adapter test suite code.
-**+ TestSuite**                                        |  The Test suite code.
+**+ TestSuite**                                        |  The test suite code.
 **- Scripts**                                          |  Exchange Server EWS Test Suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite, or the entire test suite.
 **- RunAllExchangeEWSTestCases.cmd**                   |  A script that can be used to run all test cases in the package.
 **- MS-XXXX**                                          |  A folder containing scripts that belong to the MS-XXXX test suite.
