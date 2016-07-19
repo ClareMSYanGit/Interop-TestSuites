@@ -254,9 +254,9 @@ ExchangeTestSuite.config is required.
 ||Public Folder       |   MSOXCFOLD\_PublicFolderMailEnabled|         All public folders are created directly in the root directory.|
 ||Redirect Server Public Folder  |  MSOXCFOLD\_PublicFolderGhosted  |--|           
   **MS-OXCFXICS**  | Public Folder |  MSOXCFXICS\_GhostedPublicFolder |--|           
-|| Public Folder| MSOXCFXICS\_PublicFolder01 |          
+|| Public Folder| MSOXCFXICS\_PublicFolder01 |--|          
 || Mailbox | MSOXCFXICS\_TestUser  | The mailbox name should be below 20 characters.|
-|| Redirect Server Mailbox |  MSOXCFXICS\_TestUser2 |       
+|| Redirect Server Mailbox |  MSOXCFXICS\_TestUser2 |--|      
 | **MS-OXCMAPIHTTP** | Mailbox |  MSOXCMAPIHTTP\_User01 | MS-OXCMAPIHTTP is supported from Microsoft Exchange 2013 SP1. The mailbox name should be below 20 characters. |
 || Mailbox  | MSOXCMAPIHTTP\_User02  | The mailbox name should be below 20 characters.|
 || Distribution Group  |  MSOXCMAPIHTTP\_ATDG01  |--|                    
