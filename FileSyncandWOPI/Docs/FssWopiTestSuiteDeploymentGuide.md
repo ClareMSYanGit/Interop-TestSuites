@@ -509,7 +509,7 @@ how to create a SUT control adapter, see the [Protocol Test Framework
 
 ####Configure TSAP broadcast
 
-Test Session Announcement Protocol (TSAP) is used by the PTF to
+Test Session Announcement Protocol (TSAP) is used by PTF to
 broadcast test information when the test suite is running. TSAP
 broadcast helps with mapping test cases to captured frames.
 
@@ -687,8 +687,8 @@ The test suites provide detailed reporting in a variety of formats that enable u
 Test suite configuration logs
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-The configuration logs contain information about whether each
-configuration step succeeds or not, and detail error information if the
+The configuration logs contain information about whether or not each
+configuration step succeeds, and detailed information on errors if the
 configuration step fails.
 
 ### SUT configuration logs
