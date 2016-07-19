@@ -534,7 +534,7 @@ For example: &lt;Property name="BeaconLogTargetServer" value="SUT01"/&gt;
 The test suite has the following four SHOULD/MAY configuration files
 that are specific to all supported versions of the SUT. Each SHOULD/MAY
 requirement has an associated parameter with a value of either “true”
-or “false”, corresponding to the server version that they support. The value of “true”
+or “false”, corresponding to the server version that is supported. The value of “true”
 means that the requirement must be validated, whereas “false” means
 that the requirement must not be validated.
 
@@ -675,7 +675,7 @@ bin folder.
 
 Batch script | Script description
 :------------ | :-------------
-**RunAllSharePoint\_FileSyncAndWOPI\_TestCases.cmd**  | Runs all the test cases in the SharePoint File Sync and WOPI Protocol Test Suites.
+**RunAllSharePoint\_FileSyncAndWOPI\_TestCases.cmd**  | Runs all the test cases in SharePoint File Sync and WOPI Protocol Test Suites.
 **RunAllMSXXXXTestCases.cmd**                         | Runs all MS-XXXX test cases.
 **RunMSXXXX\_SYY\_TCZZ\_Name.cmd**                    | Runs a specific test case in the test suite.
 
@@ -732,7 +732,7 @@ RunMSXXXX\_SYY\_TCZZ\_Name.cmd, the reporting information is saved in
 **…\\Source\\Scripts\\MS-XXXX\\TestResults.**
 
 By default, a .trx file containing the pass/fail information of the run
-is created in the TestResults folder, along with an associated directory
+is created in the TestResults folder along with an associated directory
 named **user\_MACHINENAME DateTimeStamp** that contains a log file in an
 XML format and an HTML report.
 
