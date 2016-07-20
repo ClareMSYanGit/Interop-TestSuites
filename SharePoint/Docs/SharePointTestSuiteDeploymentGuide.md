@@ -103,31 +103,30 @@ clean and virus-free.
 
 **Note**   The anti-virus software should implement [Virus Scan Engine
 API](http://go.microsoft.com/fwlink/?LinkId=518352). A number of ISVs
-ship AV scanners (Symantec, Norton, etc.) which integrate with
-SharePoint the same way Microsoft Forefront Protection 2010 for
-SharePoint does.
+ship AV scanners (Symantec, Norton, etc.) integrate with
+SharePoint in the same way as Microsoft Forefront Protection 2010 for SharePoint.
 
-The following table describes the necessary server roles required for a
-test suite deployment with a Microsoft implementation.
+The following table describes the required server roles for a
+test suite deployment with Microsoft implementation.
 
 **Required SUT roles**
 
 Role | Description
 :------------ | :-------------
-**Active Directory Domain Controller (AD DC)** |  Active Directory Domain Controller provides secure data for users and computers. An AD DC can coexist with a SharePoint server. A typical test configuration has an AD DC and SharePoint Server installed on separate machines.
-**SharePoint Server \#1 (SUT1 must be a SharePoint application server if server installation type is Complete (farm mode))**| The first SharePoint server in the topology.
-**SharePoint Server \#2 (SUT2)**| Only the MS-COPYS test suite requires the second SharePoint server in the topology.
+**Active Directory Domain Controller (AD DC)** |  Active Directory Domain Controller provides secure data for users and computers. An AD DC can coexist with SharePoint Server. A typical test configuration has an AD DC and SharePoint Server installed on separate machines.
+**SharePoint Server \#1 (SUT1 must be a SharePoint application server if server installation type is Complete (farm mode))**| The first SharePoint Server in the topology.
+**SharePoint Server \#2 (SUT2)**| Only the MS-COPYS test suite requires the second SharePoint Server in the topology.
 
 The following diagram is an example of what a typical SharePoint test
 suite environment may look like. This example uses an IPv4, but IPv6 is
-also supported within a test suite environment.
+also supported in a test suite environment.
 
 ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/SharePoint/Docs/Doc-Images/SP_RequiredSUTRoles.png)
 
 ###  Test suite client
 
-This section describes the prerequisite software for installing the
-SharePoint Server Protocol test suites on the test suite client. The
+This section describes the prerequisite software for installing
+SharePoint Server Protocol Test Suites on the test suite client. The
 following table outlines the software dependencies for the test suite
 client.
 
@@ -148,25 +147,24 @@ client.
 Deploying the test suites
 ================================================================================================================================================================================================================================================================================================================================================================================================================
 
-This section describes the deployment of the SharePoint Server Protocol
-test suites on the test suite client and the SUT. The SharePoint Server
-Protocol test suites are packed in a .zip file which is available on
+This section describes the deployment of SharePoint Server Protocol
+Test Suites on the test suite client and the SUT. SharePoint Server
+Protocol Test Suites are packed in a .zip file, which is available on
 [**Microsoft Connect**](http://go.microsoft.com/fwlink/?LinkId=516921).
-Once you download the test suites, you need to perform the following
-steps in order to be able to successfully configure the test suites.
+Once you've downloaded the test suites, you need to perform the following
+steps to successfully configure the test suites.
 
-1.  Extract the **SharePoint Server Protocol Test Suites** folder to a
+1.  Extract the **SharePoint Server Protocol Test Suites** folder from the zip file to a
     directory of your choice on the test suite client.
 
 2.  Copy the **SUT** and **Common** folders under **…\\SharePoint Server
     Protocol Test Suites\\Setup\\** to a directory of your choice on
     the SUT. The SUT configuration scripts are the only requirement for
     the SUT. The scripts facilitate the SUT configuration process and
-    are contained within the
-    **SharePointServerProtocolTestSuites.zip** file.
+    are in the **SharePointServerProtocolTestSuites.zip** file.
 
-	**Note**   If your computer blocks scripts downloaded from the Internet
-	for security reasons, you will need to follow these steps to unblock
+	**Note**   If your computer blocks scripts that are downloaded from the Internet
+	for security reasons, follow these steps to unblock
 	PowerShell scripts.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -180,21 +178,20 @@ steps in order to be able to successfully configure the test suites.
   ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/SharePoint/Docs/Doc-Images/SP_Deploy2.png)                                         
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-Test suite directories
+Usin the test suite directories
 ========================================================================================================================================================================================================
 
-In this section you will find a list of the folder structures that are
-contained within the **SharePointServerProtocolTestSuites.zip** file.
+This section shows the folder structures in the **SharePointServerProtocolTestSuites.zip** file.
 
 **SharePointServerProtocolTestSuites.zip file contents**
 
-Directory/file | Description
+Folders/file | Description
 :------------ | :-------------
 **EULA.rtf**      | The End-User License Agreement.
-**ReadMe.txt**    | A doc with info on deployment and prerequisite software.
+**ReadMe.txt**    | A doc on deployment and prerequisite software.
 **SharePoint Server Protocol Test Suites**    |  --               
 **- Docs**                                    | A folder with documents of all protocol test suites.
-**- SharePointTestSuiteDeploymentGuide.docx** | A doc on the protocol test suite deployment guidance.
+**- SharePointTestSuiteDeploymentGuide.docx** | A doc on the protocol test suite deployment.
 **- MS-XXXX**                                 | The MS-XXXX help documentation.
 **- \[MS-XXXX\].pdf**                         | The protocol technical specification.
 **- MS-XXXX\_TestSuiteSpecification.docx**    | A doc on the test suite-specific configuration details, architecture, and test case details.
@@ -222,16 +219,16 @@ Directory/file | Description
 **- Common**                                |  A folder that contains common configuration scripts and resources.
 **-CommonConfiguration.ps1**                |  A library that contains common functions for configuring Microsoft products and the test suite client.
 **-SharePointCommonConfiguration.ps1**      |  A library that contains common functions for configuring the SUT.
-**-SharePointTestSuite.config**             |  The configuration file to store all configuration resources
+**-SharePointTestSuite.config**             |  The configuration file to store all configuration resources.
 **- Source**                                |  A folder with Microsoft Visual Studio solution that contains the source code for the test suites.
-**- Common**                                |  A folder with Visual Studio projects that contains source code that are common to the test suites.
+**- Common**                                |  A folder with Visual Studio projects that contains the source code that are common to the test suites.
 **- SharePointCommonConfiguration. deployment.ptfconfig** | The common configuration file.
 **-SharePointServerProtocolTestSuites.sln**               |    A Visual Studio solution that contains projects of the protocol test suites source code.
 **- MS-XXXX**                                             |    A folder with the MS-XXXX test suite source code.
 **+ Adapter**                                             |    The Adapter test suite code.
 **+ TestSuite**                                           |    The test suite code.
 **- MS-XXXX.sln**                                         |    A Visual Studio solution that contains projects of the MS-XXXX test suite.
-**-Scripts**                                              |    SharePoint Server Protocol test suites can be run using Visual Studio or through batch scripts. The Scripts folder contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.
+**-Scripts**                                              |    SharePoint Server Protocol Test Suites can be run using Visual Studio or through batch scripts. The Scripts folder contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.
 **- RunAllSharePointTestCases.cmd**                       |    A script that can be used to run all test cases in the whole package.
 **-MS-XXXX**                                              |    A folder with scripts that belong to the MS-XXXX test suite.
 **- RunAllMSXXXXTestCases.cmd**                           |    A script that can be used to run all test cases of MS-XXXX.
@@ -241,8 +238,8 @@ Directory/file | Description
 Configuring the test suites
 ================================================================================================================================================================================================================================================================================================================================================================================================================
 
-This section provides the necessary guidance to configure the SharePoint
-Server Protocol test suites on the SUT and the test suite client. The
+This section provides the guidance on configuring SharePoint
+Server Protocol Test Suites on the SUT and the test suite client. The
 configuration should be done in this order: configure the SUT1,
 configure the SUT2 (optional), and then configure the test suite client.
 
@@ -270,8 +267,8 @@ administrator rights on the SUT.
 
 ### SUT resource requirements <a name="sut-resource-requirements"></a>
 
-Each test suite contained within the SharePoint Server Protocol test
-suites package may require varying level of resources on the SUT. The
+Each test suite in the SharePoint Server Protocol Test
+Suites package may require varying level of resources on the SUT. The
 following table outlines these resources for each test suite. The SUT
 configuration scripts will automatically create all the required
 resources for the Microsoft server implementation. To configure the SUT
@@ -421,7 +418,7 @@ to run the test suites.
 5.  If the WebDAV Publishing role service is installed on the SUT,
     remove it.
 
-**Notes**   
+**Note**   
 
 -   The steps in the subsequent sections
     should be performed by the SUT administrator.
@@ -429,8 +426,8 @@ to run the test suites.
 -   All site templates mentioned in the subsequent sections apply to
     Microsoft implementations only.
 
--   Any site collection created on the SharePoint site should follow the **Team
-    Site** template.
+-   Any site collection created on the SharePoint site should follow the *Team
+    Site* template.
 
 #### MS-SITESS 
 
@@ -457,7 +454,7 @@ to run the test suites.
 8.  Upload a custom page named **MSSITESS\_CustomPage.aspx** to
     MSSITESS\_SubSite\_DocumentLibrary in MSSITESS\_SpecialSubSite.
 
-9.  Update the Web.config file to enable the custom pages on the server.
+9.  Update the **Web.config** file to enable the custom pages on the server.
 
 #### MS-DWSS 
 
@@ -508,8 +505,7 @@ to run the test suites.
 
 #### MS-WWSP 
 
-**Note**    The MS-WWSP test suite supports only the following versions
-of SharePoint:
+The MS-WWSP test suite supports only the following versions of SharePoint:
 
 -   Microsoft Office SharePoint Server 2007
 -   Microsoft SharePoint Server 2010
@@ -535,7 +531,7 @@ of SharePoint:
 
 8.  Activate the **Workflows** feature on the site features page.
 
-**Note** This step applies to Microsoft SharePoint Server 2010 and Microsoft SharePoint Server 2013 only.
+	**Note** This step applies only to Microsoft SharePoint Server 2010 and Microsoft SharePoint Server 2013.
 
 1.  Create a workflow association named **MSWWSP\_Workflow**
     in MSWWSP\_DocumentLibrary.
@@ -546,27 +542,29 @@ of SharePoint:
 3.  Create a workflow history list named **MSWWSP\_WorkflowHistoryList**
     in MSWWSP\_SiteCollection.
 
-**Note**    The workflow association template name and task name will be used in the MS-XXX\_TestSuite.deployment.ptfconfig file in the test suite. The workflow association template name must be **Approval** for Microsoft SharePoint Server 2007, and **Approval - SharePoint 2010** for Microsoft SharePoint Server 2010 and Microsoft SharePoint Server 2013.
+	**Note** The workflow association template name and task name will be used in the MS-XXX\_TestSuite.deployment.ptfconfig file in the test suite. 
+	
+	The workflow association template name must be **Approval** for Microsoft SharePoint Server 2007, and **Approval - SharePoint 2010** for Microsoft SharePoint Server 2010 and Microsoft SharePoint Server 2013.
 
 #### MS-MEETS 
 
 1.  Create a new user named **MSMEETS\_User** and set the password to
     never expire on the domain controller.
 
-2.  Create a site collection named **MSMEETS\_SiteCollection***.*
+2.  Create a site collection named **MSMEETS\_SiteCollection**.
 
 3.  Make sure the Meeting Workspace template is enabled.
 
-**Notes**
+	**Note**
 
--   All Meeting Workspace site templates are hidden from the user
-    interface, but a server administrator can remove the hidden flag by
-    editing the WEBTEMP.XML file.
+	-   All Meeting Workspace site templates are hidden from the user
+		interface, but a server administrator can remove the hidden flag by
+		editing the WEBTEMP.XML file.
 
--   In Microsoft SharePoint Server 2013 in the Windows platform, the
-    following templates are hidden:
+	-   In Microsoft SharePoint Server 2013 in the Windows platform, the
+		following templates are hidden:
 
-**Basic Meeting Workspace**, **Blank Meeting Workspace**, **Decision Meeting Workspace**, **Social Meeting Workspace**, and **Multipage Meeting Workspace**.
+	Basic Meeting Workspace, Blank Meeting Workspace, Decision Meeting Workspace, Social Meeting Workspace, and Multipage Meeting Workspace.
 
 1.  Restart Internet Information
     Services (IIS).
@@ -616,7 +614,7 @@ of SharePoint:
     MSWDVMODUU \_TestData1.txt and MSWDVMODUU \_TestData2.txt
     into MSWDVMODUU\_DocumentLibrary1.
 
-4.  Create a folder named MSWDVMODUU \_TestFolder on
+4.  Create a folder named **MSWDVMODUU \_TestFolder** on
     MSWDVMODUU\_DocumentLibrary1, and upload an arbitrary text file
     named MSWDVMODUU \_TestData3.txt into this folder.
 
@@ -1204,11 +1202,10 @@ Batch script  | Script description
 **RunAllMSXXXXTestCases.cmd**       |  Runs all MS-XXXX test cases.
 **RunMSXXXX\_S01\_TC01\_TestCaseDescription.cmd** |  Runs a specific test case within the test suite.
 
-Test suite results, logs, and reporting
+Viewing the test suite results, logs, and reporting
 ==============================================================================================================================================================================================================================================================================================================================================================================================================
 
-The test suites provide detailed reporting in a variety of formats that
-will enable users to quickly debug failures.
+The test suites provide detailed reporting in a variety of formats that enables users to quickly debug failures.
 
 Test suite configuration logs
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------

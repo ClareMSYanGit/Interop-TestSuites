@@ -730,7 +730,7 @@ scripts can be found in the **\\Source\\Scripts** directory.
 Viewing the test suite results, logs, and reports
 =============================================================================================================================
 
-The test suites provide detailed reporting in a variety of formats that enable users to quickly debug failures.
+The test suites provide detailed reporting in a variety of formats that enables users to quickly debug failures.
 
 Test suite configuration logs
 ---------------------------------------------------------------------------------------------------------------------------
