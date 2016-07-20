@@ -618,7 +618,7 @@ The MS-WWSP test suite supports only the following versions of SharePoint:
     MSWDVMODUU\_DocumentLibrary1, and upload an arbitrary text file
     named MSWDVMODUU \_TestData3.txt into this folder.
 
-5.  Upload a fake virus file (mentioned in section [System under test ](#system-under-test)
+5.  Upload a fake virus file mentioned in section [System under test](#system-under-test)
     into MSWDVMODUU\_DocumentLibrary2.
 
 #### MS-AUTHWS 
@@ -628,10 +628,10 @@ The MS-WWSP test suite supports only the following versions of SharePoint:
     **MSAUTHWS\_PassportWebAPP** with authentication mode set to Forms,
     None, and Passport respectively.
 
-**Note** If you are using Microsoft SharePoint Foundation 2013 or
-Microsoft SharePoint Server 2013, you will need to create a fourth web
-application named MSAUTHWS\_WindowsAPP with authentication mode set to
-Windows.
+	**Note** If you are using Microsoft SharePoint Foundation 2013 or
+	Microsoft SharePoint Server 2013, you will need to create a fourth web
+	application named MSAUTHWS\_WindowsAPP with authentication mode set to
+	Windows.
 
 1.  Configure MSAUTHWS\_FormsWebAPP,
     MSAUTHWS\_NoneWebAPP and MSAUTHWS\_PassportWebAPP,
@@ -647,7 +647,7 @@ Windows.
 
 #### MS-SHDACCWS 
 
-**Note**    The MS-SHDACCWS test suite supports only the following
+The MS-SHDACCWS test suite supports only the following
 versions of SharePoint:
 
 -   Microsoft SharePoint Foundation 2010
@@ -666,7 +666,7 @@ versions of SharePoint:
 
 #### MS- CPSWS 
 
-**Note**    The MS-CPSWS test suite supports only the following
+The MS-CPSWS test suite supports only the following
 versions of SharePoint:
 
 -   Microsoft SharePoint Foundation 2010
@@ -688,7 +688,7 @@ versions of SharePoint:
 
 #### MS-WSSREST 
 
-**Note**    The MS-WSSREST test suite supports only the following
+The MS-WSSREST test suite supports only the following
 versions of SharePoint:
 
 -   Microsoft SharePoint Foundation 2010
@@ -742,7 +742,7 @@ versions of SharePoint:
 
 #### MS-OFFICIALFILE 
 
-**Note**    The MS-OFFICIALFILE test suite supports only the following
+The MS-OFFICIALFILE test suite supports only the following
 versions of SharePoint:
 
 -  Microsoft Office SharePoint Server 2007
@@ -830,21 +830,20 @@ configure the steps from 1 to 7.
     on MSOFFICIALFILE\_DocumentRuleLocationLibrary.
 
 15. In MSOFFICIALFILE\_RoutingRepository, create a document set
-    **MSOFFICIALFILE\_DocumentSetName**
-    on MSOFFICIALFILE\_DocumentRuleLocationLibrary.
+    **MSOFFICIALFILE\_DocumentSetName** on MSOFFICIALFILE\_DocumentRuleLocationLibrary.
 
 #### MS-COPYS 
 
-1.  Create two users with name of MSCOPYS\_limitUser and
-    MSCOPYS\_EditUser, and set their password never expire on the
+1.  Create two users with name of **MSCOPYS\_limitUser** and
+    **MSCOPYS\_EditUser**, and set their password never expire on the
     domain controller.
 
-2.  Create a site collection named MSCOPYS\_SiteCollection.
+2.  Create a site collection named **MSCOPYS\_SiteCollection**.
 
 3.  Grant the user MSCOPYS\_EditUser with Edit permission level
     on MSCOPYS\_SiteCollection.
 
-4.  Create subsites named MSCOPYS\_SubSite MeetingWorkspace in
+4.  Create subsites named **MSCOPYS\_SubSite MeetingWorkspace** in
     MSCOPYS\_SiteCollection using the **Basic Meeting Workspace**
     site template.
 
@@ -867,7 +866,7 @@ configure the steps from 1 to 7.
 10. Create a column named **MSCOPYS\_TestReadOnlyField** in
     **MSCOPYS\_DestinationDocumentLibrary** with Text type, set the
     default value to *MSCOPYS\_Source* and the read-only properties to
-    true*.*
+    true*.
 
 11. Create a column named **MSCOPYS\_WorkFlowEventField** in
     MSCOPYS\_DestinationDocumentLibrary with WorkFlowEvent type.
@@ -879,10 +878,9 @@ configure the steps from 1 to 7.
 
 #### MS-VIEWSS 
 
-1.  Create a site collection named “*MSVIEWSS\_SiteCollection*”.
+1.  Create a site collection named **MSVIEWSS\_SiteCollection**.
 
-2.  Create a generic list MSVIEWSS\_ViewList
-    in MSVIEWSS\_SiteCollection.
+2.  Create a generic list **MSVIEWSS\_ViewList** in MSVIEWSS\_SiteCollection.
 
 3.  Create the following items in list MSVIEWSS\_ViewList.
     
@@ -905,7 +903,7 @@ the SUT on Windows.
 
 If the SUT is non-Microsoft implementation of SharePoint Server, you
 will not be able to run the setup configuration script. The following
-steps explain what needs to be created or configured on the SUT in order
+steps explain what needs to be created or configured on the SUT
 to run the test suites.
 
 1.  In Powershell, set the execution policy to **RemoteSigned**, enable
@@ -922,34 +920,34 @@ to run the test suites.
     you will need to add the username without the claim in the
     user policy.
 
-**Note**   
--   The steps in the subsequent sections should be performed by the
-SUT administrator.
+	**Note**   
+	-   The steps in the subsequent sections should be performed by the
+	SUT administrator.
 
--   Any site collection created on the SharePoint site should follow
-the **Team Site** template. 
+	-   Any site collection created on the SharePoint site should follow
+	the **Team Site** template. 
 
 #### MS-COPYS
 
-1.  Create a site collection named MSCOPYS\_SiteCollection.
+1.  Create a site collection named **MSCOPYS\_SiteCollection**.
 
 2.  Create a document library *MSCOPYS\_SourceDocumentLibrary*
     on MSCOPYS\_SiteCollection.
 
-3.  Create subsites named MSCOPYS\_SubSiteMeetingWorkspace
+3.  Create subsites named **MSCOPYS\_SubSiteMeetingWorkspace**
     in MSCOPYS\_SiteCollection.
 
 For Microsoft SharePoint Server, use the *Basic Meeting Workspace* site template.
 
-1.  Create column named *MSCOPYS\_TestReadOnlyField* in list
+1.  Create column named **MSCOPYS\_TestReadOnlyField** in list
     MSCOPYS\_SourceDocumentLibrary with “Text” type, set the default
-    value to *MSCOPYS\_Source*.
+    value to **MSCOPYS\_Source**.
 
-2.  Create a column named *MSCOPYS\_WorkFlowEventField* in list
+2.  Create a column named **MSCOPYS\_WorkFlowEventField** in list
     MSCOPYS\_SourceDocumentLibrary with “WorkFlowEvent” type.
 
-3.  Upload a file *MSCOPYS\_SourceFil*e.txt use a form of ANSI with
-    content “MSCOPYS\_SourceFile” to MSCOPYS\_SourceDocumentLibrary
+3.  Upload a file MSCOPYS\_SourceFile.txt use a form of ANSI with the
+    content **MSCOPYS\_SourceFile** to MSCOPYS\_SourceDocumentLibrary
     under MSCOPYS\_SiteCollection.
 
 Configuring the test suite client
@@ -965,7 +963,7 @@ modified through a script.
 ### Common configuration file
 
 The common configuration file contains configurable properties common to all
-SharePoint Server Protocol test suites. This file must be modified to
+SharePoint Server Protocol Test Suites. This file must be modified to
 match the characteristics of the environment where the test suites are
 installed.
 
@@ -973,7 +971,7 @@ installed.
 
 Configuration file | Description
 :------------ | :-------------
-**SharePointCommonConfiguration.deployment.ptfconfig** | The deployment configuration file provides the environmental details that are common to the protocol test suites.
+**SharePointCommonConfiguration.deployment.ptfconfig** | The deployment configuration file provides the common environmental details to the protocol test suites.
 
 ### Test-suite specific configuration files
 
@@ -988,7 +986,7 @@ Configuration file | Description
 **MS-XXXX\_TestSuite.deployment.ptfconfig**  | The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows for test suite-specific customization.
 **MS-XXXX\_TestSuite.ptfconfig**  |  The test suite configuration file contains details that specify the behavior of the test suite operation.
 
-Both files are present in TestSuite folder of each test suite directory.
+Both files are in the TestSuite folder of each test suite directory.
 
 If you need to modify the common configuration values for a specific
 test suite, you must copy the common properties to the
@@ -1006,10 +1004,9 @@ to function in a manual way, enabling you to perform setup, teardown,
 and other tasks in a step-by-step approach. To enable interactive mode
 for a specific test suite, do the following:
 
-1.  Browse to the **MS-XXXX\_TestSuite.ptfconfig** configuration file
-    within the **\\Source\\MS-XXXX\\TestSuite\\**.
+1.  Browse to the **MS-XXXX\_TestSuite.ptfconfig** configuration file in the **\\Source\\MS-XXXX\\TestSuite\\**.
 
-1.  Set the type value of Adapter property to **Interactive** for the
+1.  Set the type value of the Adapter property to **Interactive** for the
     SUT control adapter\*\*.
 
 **Interactive mode values**
@@ -1017,21 +1014,20 @@ for a specific test suite, do the following:
 |Property name | Default value\* |Optional value |Description |
 |:------------ | :------------- | :------------- | :-------------|
 |  Adapter     |    managed or powershell |  interactive\*\* |  **managed**: The SUT control adapter is implemented in C\# managed code. |                                                         
-|||| **powershell**: The SUT control adapter is implemented through PowerShell.|                                                           
-||||**interactive**: Interactive adapter is used for manually configuring the server. Interactive adapter displays a dialog box to perform manual test each time one of its methods is called. The dialog box will show the method name, parameter names and values\*\*\*.|
+||||**powershell**: The SUT control adapter is implemented through PowerShell.|                                                           
+||||**interactive**: Interactive adapter is used for manually configuring the server. Interactive adapter displays a dialog box to perform manual test each time when one of its methods is called. The dialog box will show the method name, parameter names and values\*\*\*.|
   
-
 \*The Adapter property value is set to either **managed** or
 **powershell** depending on whether the SUT control adapter is
 implemented in managed C\# code or through Powershell. 
 
-\*\*When changing to interactive mode from managed mode, the
-“adaptertype” attribute must be deleted to avoid a runtime error.* *When
-changing to interactive mode from powershell mode, an additional step is
+\*\*When changing from managed mode to interactive mode, the
+“adaptertype” attribute must be deleted to avoid a runtime error. When
+changing from powershell mode to interactive mode, an additional step is
 required—delete the “scriptdir” attribute to avoid a runtime error.
 
 \*\*\*When the manual operation completes successfully, enter the
-return value (if any) in “**Action Results**” and click **Succeed** in
+return value (if any) in **Action Results** and click **Succeed** in
 the dialog box. When the manual operation is unable to complete, enter
 the error messages in the **Failure Message** text box and click
 **Fail** to terminate the test. In this case, the test will be treated
@@ -1039,18 +1035,18 @@ as “Inconclusive”.
 
 Further customization can be done by creating your own SUT control
 adapter that matches the server implementation. For information about
-how to create a SUT control adapter, see the Protocol Test Framework
-(PTF) user documentation.
+how to create a SUT control adapter, see the [Protocol Test Framework
+(PTF) user documentation](https://github.com/Microsoft/ProtocolTestFramework).
 
 #### Configure TSAP broadcast
 
 Test Session Announcement Protocol (TSAP) is used by PTF to broadcast
-test information when the test suite is running. TSAP broadcast helps in
+test information when the test suite is running. TSAP broadcast helps with
 mapping test cases to captured frames.
 
 By default, TSAP packets are broadcasted in the network. Users can
 disable TSAP broadcast by adding an entry “BeaconLogTargetServer” to
-TestSuite.deployment. config to target the TSAP only to specified
+TestSuite.deployment. config to target TSAP for the specified
 machine.
 
 To change the TSAP packet broadcast, do the following:
@@ -1087,7 +1083,7 @@ Configuration file  | Description
 **MS-XXXX\_SharePointServer2010\_SHOULDMAY.deployment.ptfconfig**        | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Server 2010 Service Pack 2 (SP2).
 **MS-XXXX\_SharePointServer2013\_SHOULDMAY.deployment.ptfconfig**        | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Server 2013 Service Pack 1 (SP1).
 
-### Configuring the test suite client using setup configuration script
+### Configuring the test suite client using the setup configuration script
 
 The setup configuration script is only implemented for
 configuring the test suite client on the Windows platform. 
@@ -1107,9 +1103,9 @@ below to update configuration files and configure the test suite client.
 
 2.  By default, the test suites use PowerShell script in the SUT control adapter to configure the SUT. If you chose interactive mode for the SUT control adapter as described in section[Set the test suite to interactive mode](#set-the-test-suite-to-interactive-mode), skip this step.
 
-    a.  Set the execution policy to RemoteSigned.
+    a.  Set the execution policy to *8RemoteSigned**.
 
-    b.  Add the SUT to the TrustedHosts to ensure that the Windows
+    b.  Add the SUT to the **TrustedHosts** to ensure that the Windows
         Remote Management (WinRM) client can process remote calls
         against the SUT if the test suite client is not joined to
         the domain.
@@ -1198,9 +1194,9 @@ bin folder.
 
 Batch script  | Script description
 :------------ | :-------------
-**RunAllSharePointTestCases.cmd**   |  Runs all the test cases within the SharePoint Server Protocol test suites.
+**RunAllSharePointTestCases.cmd**   |  Runs all the test cases in the SharePoint Server Protocol test suites.
 **RunAllMSXXXXTestCases.cmd**       |  Runs all MS-XXXX test cases.
-**RunMSXXXX\_S01\_TC01\_TestCaseDescription.cmd** |  Runs a specific test case within the test suite.
+**RunMSXXXX\_S01\_TC01\_TestCaseDescription.cmd** |  Runs a specific test case in the test suite.
 
 Viewing the test suite results, logs, and reporting
 ==============================================================================================================================================================================================================================================================================================================================================================================================================
@@ -1210,8 +1206,8 @@ The test suites provide detailed reporting in a variety of formats that enables 
 Test suite configuration logs
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-The configuration logs contain information about whether each
-configuration step succeeds or not, and detail error information if the
+The configuration logs contain information about whether or not each
+configuration step succeeds, and detail information on errors if the
 configuration step fails.
 
 ### SUT configuration logs
@@ -1250,7 +1246,7 @@ individual test suite solution has run successfully in Visual Studio.
 
 ### Batch scripts
 
-If the SharePoint Server Protocol test suites are run by the
+If the SharePoint Server Protocol Test Suites are run by the
 RunAllSharePointTestCases.cmd batch file, the reporting information is
 saved in **…\\Source\\Scripts\\TestResults**.
 
@@ -1260,19 +1256,19 @@ RunMSXXXX\_SYY\_TCZZ\_Name.cmd, the reporting information is saved in
 
 By default, a .trx file containing the pass/fail information of the run
 is created in the TestResults folder along with an associated directory
-named **user\_MACHINENAME DateTimeStamp** that contains a log file and
+named **user\_MACHINENAME DateTimeStamp** that has a log file and
 an HTML report.
 
 Appendix
 ==============================================================================================================================================================================================================================================================================================================================================================================================================
   References |  Description
 :------------ | :-------------
-<dochelp@microsoft.com> | Alias for Interoperability documentation help. Provides support for the Open Specifications and protocol test suites. 
-[Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)    |  Microsoft Customer Support Services forums. Actively monitored forums that provide support for the Open Specifications and protocol test suites.
-[Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)    |   Open Specifications home page on MSDN.
-[Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)    |   Open Specifications documentation on MSDN.
-[SharePoint Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=202122)   |     SharePoint Open Specifications documentation on MSDN.
-[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)          |      Normative language reference.
+<dochelp@microsoft.com> | The alias for Interoperability documentation help, which provides support for the Open Specifications and protocol test suites. 
+[Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125)    |  The Microsoft Customer Support Services forums, the actively monitored forums that provide support for Open Specifications and the protocol test suites.
+[Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)    |   The Open Specifications home page on MSDN.
+[Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)    |   The Open Specifications documentation on MSDN.
+[SharePoint Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=202122)   |     The SharePoint Open Specifications documentation on MSDN.
+[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)          |   The normative language reference.
 [Windows SharePoint Services 3.0 deployment](http://go.microsoft.com/fwlink/?LinkId=517502)    |  Windows SharePoint Services 3.0 deployment on TechNet
 [Microsoft SharePoint Foundation 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517503) |Microsoft SharePoint Foundation 2010 deployment on TechNet
 [Microsoft SharePoint Foundation 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504) |  Microsoft SharePoint Foundation 2013 installation and configuration on TechNet
