@@ -151,20 +151,20 @@ This section shows the folder structures in the **ExchangeMAPIProtocolTestSuites
 
 **ExchangeMAPIProtocolTestSuites.zip** file contents
 
-| Directory/file   | Description |
+| Folder/file   | Description |
 | :--- | :--- |
 |  **EULA.rtf** | The End-User License Agreement.|
 |  **ReadMe.txt** | A doc that contains info on deployment and prerequisite software.|
 |  **Exchange MAPI Protocol Test Suites** | -- |
-|  **- Docs** | A directory that contains documents of all protocol test suites.|
+|  **- Docs** | A folder that contains documents of all protocol test suites.|
 |  **- ExchangeMAPITestSuiteDeploymentGuide.docx** | A doc on the protocol test suite deployment.|
 |  **- ExchangeMAPITestSuiteSpecification.docx** |  A doc that contains test suites design, test suites architecture, adapter and test suites details.|
 |  **+ MS-XXXX** | The MS-XXXX help documentation|
 |  **- \[MS-XXXX\].pdf** |  The protocol technical specification.|
 |  **- MS-XXXX \_SUTControlAdapter.chm** | A help doc with info on the SUT control adapter class library such as declaration syntaxes and their description.|
 |  **- MS-XXXX \_RequirementSpecification.xlsx** |  A spreadsheet that outlines all requirements that are associated with the technical specification.|
-|  **- Setup** |A directory that contains configuration scripts.|
-|  **- Test Suite Client** |  A directory that contains the configuration script to configure the test suite client.|
+|  **- Setup** |A folder that contains configuration scripts.|
+|  **- Test Suite Client** |  A folder that contains the configuration script to configure the test suite client.|
 |  **- ExchangeClientConfiguration.cmd** | A command file that runs the ExchangeClientConfiguration.ps1 file to configure the properties for the protocol test suites.|
 |  **- ExchangeClientConfiguration.ps1** | A configuration script that will be triggered by the ExchangeClientConfiguration.cmd.|
 |  **- SUT** | A folder that contains the configuration script to configure the Exchange Server.|
@@ -184,13 +184,13 @@ This section shows the folder structures in the **ExchangeMAPIProtocolTestSuites
 |  **- ExchangeMAPIProtocolTestSuites.sln** |  A Microsoft Visual Studio solution that contains projects of the test suites source code.|
 |  **- ExchangeMAPIProtocolTestSuites.runsettings** | A configuration file used for unit test.|
 |  **- ExchangeMAPIProtocolTestSuites.testsettings**| A configuration file used for running test cases.|
-|  **- MS-XXXX** | A directory for the MS-XXXX test suite source code.|
+|  **- MS-XXXX** | A folder for the MS-XXXX test suite source code.|
 |  **- MS-XXXX.sln** | A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.|
 |  **- MS-XXXX.runsettings** | A configuration file used for MS-XXXX unit test.|
 |  **- MS-XXXX.testsettings** | A configuration file used for MS-XXXX running test cases.|
 |  **+ Adapter** | The Adapter test suite code.|
 |  **+ TestSuite** |  The test suite code.|
-|  **- Scripts** | Exchange MAPI Test Suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.|
+|  **- Scripts** | Exchange MAPI Test Suites can be run using Visual Studio or through batch scripts. The Scripts folder contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.|
 |  **- RunAllExchangeMAPITestCases.cmd** |  A script that can be used to run all test cases in the whole package.|
 |  **- MS-XXXX** | A folder that contains scripts which belong to the MS-XXXX test suite.|
 |  **- RunAllMSXXXXTestCases.cmd** | A script that can be used to run all test cases of MS-XXXX.|

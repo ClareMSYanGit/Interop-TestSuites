@@ -163,19 +163,19 @@ This section shows the folder structures in the **ExchangeServerEASProtocolTestS
 **ExchangeServerEASProtocolTestSuites.zip file contents**
 
 
-| Directory/file | Description |
+| Folder/file | Description |
 | :--- | :--- |
 |**EULA.rtf** | The End-User License Agreement. |
 |**ReadMe.txt** | A doc with info on deployment and prerequisite software. |
 | **Exchange Server EAS Protocol Test Suites** |--|            
-|**- Docs**| A directory that contains documents of all protocol test suites.|
+|**- Docs**| A folder that contains documents of all protocol test suites.|
 |**- ExchangeEASTestSuiteDeploymentGuide.docx** |A doc with info on the protocol test suite deployment. |
 |**+ MS-XXXX** | A MS-XXXX help documentation | 
 | **- \[MS-XXXX\].pdf**   | The protocol technical specification.| 
 | **- MS-XXXX \_SUTControlAdapter.chm**  | A help doc with info on the SUT control adapter class library such as declaration syntaxes and their description.| 
 |**- MS-XXXX \_RequirementSpecification.xlsx**|A spreadsheet that outlines all requirements that are associated with the technical specification.| 
-|**- Setup**|A directory that contains configuration scripts.| 
-| **- Test Suite Client**| A directory that contains the configuration script to configure the test suite client.| 
+|**- Setup**|A folder that contains configuration scripts.| 
+| **- Test Suite Client**| A folder that contains the configuration script to configure the test suite client.| 
 | **- ExchangeClientConfiguration.cmd** | A command file that runs the ExchangeClientConfiguration.ps1 file to configure the properties for the protocol test suites.| 
 | **- ExchangeClientConfiguration.ps1**|A configuration script that will be triggered by the ExchangeClientConfiguration.cmd.| 
 | **- SUT** | A folder that contains the configuration script to configure the Exchange Server.| 
@@ -187,7 +187,7 @@ This section shows the folder structures in the **ExchangeServerEASProtocolTestS
 |**- ExchangeServerEASProtocolTestSuites.runsettings** |A configuration file used for unit test.| 
 |**- ExchangeServerEASProtocolTestSuites.sln**| A Visual Studio solution that contains projects of the test suites source code.| 
 |**- ExchangeServerEASProtocolTestSuites.testsettings**  |  A configuration file used for running test cases.| 
-|**- MS-XXXX**                                          |  A directory for the MS-XXXX test suite  source code.| 
+|**- MS-XXXX**                                          |  A folder for the MS-XXXX test suite source code.| 
 |**- MS-XXXX.sln**|  A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.| 
 |**- MS-XXXX.runsettings** | A configuration file used for MS-XXXX unit test.| 
 |**- MS-XXXX.testsettings**|  A configuration file used for MS-XXXX running test cases.| 

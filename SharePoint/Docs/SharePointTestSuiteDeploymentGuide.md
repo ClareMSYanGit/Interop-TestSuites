@@ -190,18 +190,18 @@ contained within the **SharePointServerProtocolTestSuites.zip** file.
 
 Directory/file | Description
 :------------ | :-------------
-**EULA.rtf**      | The End-User License Agreement
-**ReadMe.txt**    | A file that contains information about the deployment guide and prerequisite software
+**EULA.rtf**      | The End-User License Agreement.
+**ReadMe.txt**    | A doc with info on deployment and prerequisite software.
 **SharePoint Server Protocol Test Suites**    |  --               
-**- Docs**                                    | A directory that contains documents of all protocol test suites
-**- SharePointTestSuiteDeploymentGuide.docx** | A file relevant to the protocol test suite deployment guidance
-**- MS-XXXX**                                 | MS-XXXX Help documentation
-**- \[MS-XXXX\].pdf**                         | The technical specification for the protocol
-**- MS-XXXX\_TestSuiteSpecification.docx**    | Contains test suite-specific configuration details, architecture, and test case details.
-**- MS-XXXX\_SUTControlAdapter.chm**          | Contains information about the SUT control adapter class library such as declaration syntaxes and their description.
-**- MS-XXXX\_RequirementSpecification.xlsx**  | A spreadsheet that outlines all requirements associated with the technical specification.
-**- Setup**                                   | A directory that contains configuration scripts
-**- Test Suite Client**                       | A directory that contains the configuration script to configure the test suite client.
+**- Docs**                                    | A folder with documents of all protocol test suites.
+**- SharePointTestSuiteDeploymentGuide.docx** | A doc on the protocol test suite deployment guidance.
+**- MS-XXXX**                                 | The MS-XXXX help documentation.
+**- \[MS-XXXX\].pdf**                         | The protocol technical specification.
+**- MS-XXXX\_TestSuiteSpecification.docx**    | A doc on the test suite-specific configuration details, architecture, and test case details.
+**- MS-XXXX\_SUTControlAdapter.chm**          | A help doc with info on the SUT control adapter class library such as declaration syntaxes and their description.
+**- MS-XXXX\_RequirementSpecification.xlsx**  | A spreadsheet that outlines all requirements that are associated with the technical specification.
+**- Setup**                                   | A folder that contains configuration scripts.
+**- Test Suite Client**                       | A folder that contains the configuration script to configure the test suite client.
 **- SharePointClientConfiguration.cmd**       | A command file that runs the                                                    SharePointClientConfiguration.ps1 to configure the properties for the protocol test suites.
 **- SharePointClientConfiguration.ps1**     | A configuration script that will be invoked by SharePointClientConfiguration.cmd
 **- SUT**                                   | A folder that contains the configuration script to configure the SUT.
@@ -209,7 +209,7 @@ Directory/file | Description
 **- SharePointSUTConfiguration.ps1**        | A configuration script that will be invoked by SharePointSUTConfiguration.cmd.
 **-SharePointSecondSUTConfiguration.cmd**   | A command file that runs the SharePointSecondSUTConfiguration.ps1 to create resources and configure settings on the second SUT.
 **- SharePointSecondSUTConfiguration.ps1**  | A configuration script that will be invoked by SharePointSecondSUTConfiguration.cmd.
-**- MSCOPYS\_SourceFile.txt**               |  A source file used to be copied from a source location to a destination location.
+**- MSCOPYS\_SourceFile.txt**               |  A source file, used to be copied from a source location to a destination location.
 **- MSDWSS\_TestData.txt**                  |  A test file used by the MS-DWSS test suite.
 **- MSSHDACCWS\_CoStatusTestData.txt**      |  A test file that will be uploaded to MSSHDACCWS\_DocumentLibrary. This file allows multiple users to edit it.
 **- MSSHDACCWS\_LockedTestData.txt**        |  A test file that will be uploaded to the MSSHDACCWS\_DocumentLibrary. An exclusive lock is applied to this file.
@@ -227,13 +227,13 @@ Directory/file | Description
 **- Common**                                |  A folder with Visual Studio projects that contains source code that are common to the test suites.
 **- SharePointCommonConfiguration. deployment.ptfconfig** | The common configuration file.
 **-SharePointServerProtocolTestSuites.sln**               |    A Visual Studio solution that contains projects of the protocol test suites source code.
-**- MS-XXXX**                                             |    MS-XXXX test suite source code directory
-**+ Adapter**                                             |    Adapter test suite code
-**+ TestSuite**                                           |    Test suite code
+**- MS-XXXX**                                             |    A folder with the MS-XXXX test suite source code.
+**+ Adapter**                                             |    The Adapter test suite code.
+**+ TestSuite**                                           |    The test suite code
 **- MS-XXXX.sln**                                         |    A Visual Studio solution that contains projects of the MS-XXXX test suite
-**-Scripts**                                              |    SharePoint Server Protocol test suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.
+**-Scripts**                                              |    SharePoint Server Protocol test suites can be run using Visual Studio or through batch scripts. The Scripts folder contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.
 **- RunAllSharePointTestCases.cmd**                       |    A script that can be used to run all test cases in the whole package.
-**-MS-XXXX**                                              |    A folder containing scripts that belong to the MS-XXXX test suite.
+**-MS-XXXX**                                              |    A folder with scripts that belong to the MS-XXXX test suite.
 **- RunAllMSXXXXTestCases.cmd**                           |    A script that can be used to run all test cases of MS-XXXX.
 **- RunMSXXXX\_SYY\_TCZZ\_TestCaseName.cmd**              |    A script that can be used to run a single test case of MS-XXXX.
 
@@ -1084,10 +1084,10 @@ Configuration file  | Description
 :------------ | :-------------
 **MS-XXXX\_WindowsSharePointServices3\_SHOULDMAY.deployment.ptfconfig**  | Provides the configuration properties for SHOULD and MAY requirements supported by Windows SharePoint Services 3.0 Service Pack 3 (SP3).
 **MS-XXXX\_SharePointFoundation2010\_SHOULDMAY.deployment.ptfconfig**    | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Foundation 2010 Service Pack 2 (SP2).
-**MS-XXXX\_SharePointFoundation2013\_SHOULDMAY.deployment.ptfconfig**    |   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Foundation 2013 Service Pack 1 (SP1).
-**MS-XXXX\_SharePointServer2007\_SHOULDMAY.deployment.ptfconfig**        |   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Office SharePoint Server 2007 Service Pack 3 (SP3).
-**MS-XXXX\_SharePointServer2010\_SHOULDMAY.deployment.ptfconfig**        |   Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Server 2010 Service Pack 2 (SP2).
-**MS-XXXX\_SharePointServer2013\_SHOULDMAY.deployment.ptfconfig**        |    Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Server 2013 Service Pack 1 (SP1).
+**MS-XXXX\_SharePointFoundation2013\_SHOULDMAY.deployment.ptfconfig**    | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Foundation 2013 Service Pack 1 (SP1).
+**MS-XXXX\_SharePointServer2007\_SHOULDMAY.deployment.ptfconfig**        | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft Office SharePoint Server 2007 Service Pack 3 (SP3).
+**MS-XXXX\_SharePointServer2010\_SHOULDMAY.deployment.ptfconfig**        | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Server 2010 Service Pack 2 (SP2).
+**MS-XXXX\_SharePointServer2013\_SHOULDMAY.deployment.ptfconfig**        | Provides the configuration properties for SHOULD and MAY requirements supported by Microsoft SharePoint Server 2013 Service Pack 1 (SP1).
 
 ### Configuring the test suite client using setup configuration script
 

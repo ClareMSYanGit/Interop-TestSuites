@@ -130,26 +130,26 @@ This section shows the folder structures in the **ExchangeServerEWSProtocolTestS
 
 **ExchangeServerEWSProtocolTestSuites.zip file contents**
 
-Directory/file  | Description
+Folder/file  | Description
 :------------   | :-------------
 **EULA.rtf**    | The End-User License Agreement.
 **ReadMe.txt**  | A doc with info on deployment and prerequisite software.
 **Exchange Server EWS Protocol Test Suites**  |--
-**- Docs**      |A directory that contains documents of all protocol test suites.
+**- Docs**      |A folder that contains documents of all protocol test suites.
 **- ExchangeEWSTestSuiteDeploymentGuide.docx**  |  A doc on the protocol test suite deployment.
 **-ExchangeEWSTestSuiteSpecification.docx**     |  A doc that contains test suite-specific configuration details, architecture, and test case details.												   
 **+ MS-XXXX**                                   |  The MS-XXXX help documentation.
 **- \[MS-XXXX\].pdf**                           |  The protocol technical specification.
 **- MS-XXXX \_SUTControlAdapter.chm**           |  A help doc on the SUT control adapter class library such as declaration syntaxes and their description.
 **- MS-XXXX \_RequirementSpecification.xlsx**   |  A spreadsheet that outlines all requirements that are associated with the technical specification.
-**- Setup**                                     |  A directory that contains configuration scripts.
-**- Test Suite Client**                         |  A directory that contains the configuration script to configure the test suite client.
+**- Setup**                                     |  A folder that contains configuration scripts.
+**- Test Suite Client**                         |  A folder that contains the configuration script to configure the test suite client.
 **- ExchangeClientConfiguration.cmd**           |  A command file that runs the ExchangeClientConfiguration.ps1 file to configure the properties for the protocol test suites.
 **- ExchangeClientConfiguration.ps1**           |  A configuration script that will be triggered by ExchangeClientConfiguration.cmd.
 **- SUT**                                       |  A folder that contains the configuration script to configure Exchange Server.
 **- ExchangeSUTConfiguration.cmd**              |  A command file that runs the ExchangeSUTConfiguration.ps1 file to create resources and configure settings on the SUT.
 **- ExchangeSUTConfiguration.ps1**              |  A configuration script that will be triggered by ExchangeSUTConfiguration.cmd.
-**- Common**                                    |  A directory that contains common configuration scripts.
+**- Common**                                    |  A folder that contains common configuration scripts.
 **- CommonConfiguration.ps1**                   |  A configuration script to configure the common information of the server and the test suite client.
 **- ExchangeCommonConfiguration.ps1**           |  A configuration script to configure the common information of Exchange Server.
 **- ExchangeTestSuite.config**                  |  A configuration file that contains primary SUT configuration resources of all protocol test suites.
@@ -159,13 +159,13 @@ Directory/file  | Description
 **- ExchangeEWSProtocolTestSuites.sln**                |  A Visual Studio solution that contains projects of the protocol test suites source code.
 **- ExchangeServerEWSProtocolTestSuites.runsettings**  |  A configuration file used for unit test.
 **- ExchangeServerEWSProtocolTestSuites.testsettings** |  A configuration file used for running test cases.
-**- MS-XXXX**                                          |  A directory for the MS-XXXX test suite source code.
+**- MS-XXXX**                                          |  A folder for the MS-XXXX test suite source code.
 **- MS-XXXX.sln**                                      |  A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.
 **- MS-XXXX.runsettings**                              |  A configuration file used for MS-XXXX unit test.
 **- MS-XXXX.testsettings**                             |  A configuration file used for running MS-XXXX test cases.
 **+ Adapter**                                          |  The Adapter test suite code.
 **+ TestSuite**                                        |  The test suite code.
-**- Scripts**                                          |  Exchange Server EWS Test Suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite, or the entire test suite.
+**- Scripts**                                          |  Exchange Server EWS Test Suites can be run using Visual Studio or through batch scripts. The Scripts folder contains a collection of command files that allows users to run specific test cases in the test suite, or the entire test suite.
 **- RunAllExchangeEWSTestCases.cmd**                   |  A script that can be used to run all test cases in the package.
 **- MS-XXXX**                                          |  A folder containing scripts that belong to the MS-XXXX test suite.
 **- RunAllMSXXXXTestCases.cmd**                        |  A script that can be used to run all test cases of MS-XXXX.
