@@ -740,13 +740,13 @@ Appendix
 ================================================================================================================================================================================================================================================================================================================================================================================================================
  References   | Description
 :------------ | :-------------
-  <dochelp@microsoft.com>   |  The alias for Interoperability documentation help, which provides support for Open Specifications and protocol test suites.| 
-  [Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125) | The Microsoft Customer Support Services forums, the actively monitored forums that provide support for the Open Specifications and protocol test suites. 
-  [Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)  | The Open Specifications home page on MSDN.
-  [Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)                   | The Open Specifications documentation on MSDN.
-  [SharePoint Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=202122) | The SharePoint Open Specifications documentation on MSDN.
-  [RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)      | The normative language reference.
-  [Microsoft SharePoint Foundation 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517503)  | The Microsoft SharePoint Foundation 2010 deployment on TechNet.
-  [Microsoft SharePoint Foundation 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504) | The Microsoft SharePoint Foundation 2013 installation and configuration on TechNet.
-  [Microsoft SharePoint Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517505)   |  The Microsoft SharePoint Server 2010 deployment on TechNet.
-  [Microsoft SharePoint Server 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504) | The Microsoft SharePoint Server 2013 installation and configuration on TechNet.
+<dochelp@microsoft.com>   |  The alias for Interoperability documentation help, which provides support for Open Specifications and protocol test suites.| 
+[Open Specifications Forums](http://go.microsoft.com/fwlink/?LinkId=111125) | The Microsoft Customer Support Services forums, the actively monitored forums that provide support for the Open Specifications and protocol test suites. 
+[Open Specifications Developer Center](http://go.microsoft.com/fwlink/?LinkId=254469)  | The Open Specifications home page on MSDN.
+[Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)                   | The Open Specifications documentation on MSDN.
+[SharePoint Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=202122) | The SharePoint Open Specifications documentation on MSDN.
+[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)      | The normative language reference.
+[Microsoft SharePoint Foundation 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517503)  | The Microsoft SharePoint Foundation 2010 deployment on TechNet.
+[Microsoft SharePoint Foundation 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504) | The Microsoft SharePoint Foundation 2013 installation and configuration on TechNet.
+[Microsoft SharePoint Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517505)   |  The Microsoft SharePoint Server 2010 deployment on TechNet.
+[Microsoft SharePoint Server 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504) | The Microsoft SharePoint Server 2013 installation and configuration on TechNet.
