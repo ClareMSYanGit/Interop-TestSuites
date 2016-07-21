@@ -32,7 +32,7 @@ Prerequisites
 This section describes the hardware and software requirements for the
 test suites. In a SharePoint server environment, the test suite
 deployment takes place on both the client and server side. The following
-information will help test suite users to plan their deployment.
+information helps test suite users to plan their deployment.
 
 Hardware requirements
 ----------------------------------------------------------------------------------------
@@ -90,8 +90,7 @@ example uses an IPv4, but IPv6 is also supported by the test suites.
 ### Test suite client
 
 This section describes the prerequisite software for installing SharePoint File Sync and WOPI Protocol Test Suites on the test suite
-client. The following table outlines the software dependencies for the
-test suite client.
+client. The following table outlines the software dependencies for the test suite client.
 
 **Test suite client software dependencies**
 
@@ -114,8 +113,8 @@ This section describes the deployment of SharePoint File Sync and
 WOPI Protocol Test Suites on the test suite client and the SUT. The
 SharePoint Server Protocol test suites are packaged in a .zip file, which
 is available on [**Microsoft
-Connect**](http://go.microsoft.com/fwlink/?LinkId=516921). Once you
-download the test suites, perform the following steps to successfully configure the test suites.
+Connect**](http://go.microsoft.com/fwlink/?LinkId=516921). Once you've
+downloaded the test suites, perform the following steps to successfully configure the test suites.
 
 1.  Extract the **SharePoint File Sync and WOPI Protocol Test Suites** folder from the zip file to a
     directory of your choice on the test suite client.
@@ -432,13 +431,13 @@ modified through a script.
 ###Common configuration file
 
 The common configuration file contains configurable properties common to all
-SharePoint File Sync and WOPI Protocol test suites. This file must be
+SharePoint File Sync and WOPI Protocol Test Suites. This file must be
 modified to match the characteristics of the environment where the test
 suites are installed.
 
 |Configuration file | Description|
 |:------------ | :-------------|
-**FssWopiCommonConfiguration.deployment.ptfconfig** |The deployment configuration file provides the environmental details that are common to the test suites.
+**FssWopiCommonConfiguration.deployment.ptfconfig** |The deployment configuration file provides the common environmental details for the test suites.
 
 ###Test-suite specific configuration files
 

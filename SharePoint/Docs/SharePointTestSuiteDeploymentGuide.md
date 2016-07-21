@@ -971,7 +971,7 @@ installed.
 
 Configuration file | Description
 :------------ | :-------------
-**SharePointCommonConfiguration.deployment.ptfconfig** | The deployment configuration file provides the common environmental details to the protocol test suites.
+**SharePointCommonConfiguration.deployment.ptfconfig** | The deployment configuration file provides the common environmental details for the protocol test suites.
 
 ### Test-suite specific configuration files
 

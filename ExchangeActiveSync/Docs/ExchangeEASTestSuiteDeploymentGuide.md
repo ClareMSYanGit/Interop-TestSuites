@@ -511,7 +511,7 @@ are installed.
 
 | Configuration file | Description |
 | :--- | :--- |
-| **ExchangeCommonConfiguration.deployment.ptfconfig**|The deployment configuration file provides the environmental details that are common to the test suites. |
+| **ExchangeCommonConfiguration.deployment.ptfconfig**|The deployment configuration file provides the common environmental details for the test suites. |
 
 
 ### Test-suite specific configuration files
