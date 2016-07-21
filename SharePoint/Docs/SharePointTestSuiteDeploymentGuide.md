@@ -1113,8 +1113,8 @@ below to update configuration files and configure the test suite client.
 Running the test suites
 ==============================================================================================================================================================================================================================================================================================================================================================================================================
 
-Once the required software has been installed and both the SUT and test
-suite client have been configured appropriately, the test suite is ready
+Once the required software is installed and both the SUT and test
+suite client are configured appropriately, the test suite is ready
 to run. The test suite can run only on the test suite client and can be
 initiated in one of the following two ways: Visual Studio or batch
 scripts.
