@@ -257,7 +257,7 @@ SUT control adapter is designed to work with Microsoft
 implementation of the SUT. However, it is configurable to allow the test
 suites to run against non-Microsoft implementations of the SUT.
 
-There are six protocols that have a SUT control adapter in the Exchange
+There are six protocols that have a SUT control adapter in Exchange
 MAPI Protocol Test Suites package: MS-OXCMAPIHTTP, MS-OXCPERM,
 MS-OXCSTOR, MS-OXCRPC, MS-OXNSPI, and MS-OXORULE.
 
@@ -370,8 +370,8 @@ S05\_InsufficientRightsOnFolder |  Verifies the ROP operations that the client h
 
 ### MS-OXCFXICS
 
-Nine scenarios are designed to verify the server-side, testable
-requirements in MS-OXCFXICS test suite. The following table lists the
+The nine scenarios are designed to verify the server-side, testable
+requirements in the MS-OXCFXICS test suite. The following table lists the
 scenarios designed in this test suite.
 
 Scenario  |  Description
@@ -388,19 +388,19 @@ S09\_SyncICSMessageConflict         |  Tests the ROPs, properties and the server
 
 ### MS-OXCMAPIHTTP
 
-Two scenarios are designed to verify the server-side, testable
-requirements in MS-OXCMAPIHTTP test suite. The following table lists the
+The two scenarios are designed to verify the server-side, testable
+requirements in the MS-OXCMAPIHTTP test suite. The following table lists the
 scenarios designed in this test suite.
 
 
 Scenario  |  Description
 :------------ | :-------------
-S01\_RequestTypesForMailboxServerEndpoint    |   Verifies the HTTP header, common response format, and the request types for mailbox server endpoint.
-S02\_RequestTypesForAddressBookServerEndpoint|   Verifies the request types for address book server endpoint.
+S01\_RequestTypesForMailboxServerEndpoint    |   Verifies the HTTP header, common response format, and the request types for a mailbox server endpoint.
+S02\_RequestTypesForAddressBookServerEndpoint|   Verifies the request types for an address book server endpoint.
 
 ### MS-OXCMSG
 
-Nine scenarios are designed to verify the server-side, testable
+The nine scenarios are designed to verify the server-side, testable
 requirements in MS-OXCMSG test suite. The following table lists the
 scenarios designed in this test suite.
 
@@ -418,8 +418,8 @@ Scenario  |  Description
 
 ### MS-OXCNOTIF
 
-Two scenarios are designed to verify the server-side, testable
-requirements in MS-OXCNOTIF test suite. The following table lists the
+The two scenarios are designed to verify the server-side, testable
+requirements in the MS-OXCNOTIF test suite. The following table lists the
 scenarios designed in this test suite.
 
  Scenario  |  Description
@@ -429,8 +429,8 @@ scenarios designed in this test suite.
 
 ### MS-OXCPERM
 
-Three scenarios are designed to verify the server-side, testable
-requirements in MS-OXCPERM test suite. The following table lists the
+The three scenarios are designed to verify the server-side, testable
+requirements in the MS-OXCPERM test suite. The following table lists the
 scenarios designed in this test suite.
 
    Scenario  |  Description
@@ -441,23 +441,23 @@ scenarios designed in this test suite.
 
 ### MS-OXCPRPT
 
-Six scenarios are designed to verify the server-side, testable
-requirements in MS-OXCPRPT test suite. The following table lists the
+The six scenarios are designed to verify the server-side, testable
+requirements in the MS-OXCPRPT test suite. The following table lists the
 scenarios designed in this test suite.
 
  Scenario  |  Description
 :------------ | :-------------
   S01\_QueryDataFromObject        |       Validates the operations used for querying data from an object.
   S02\_SetDataForObject           |      Validates the operations used for [setting data](#S2) for an object.
-  S03\_QueryDataFromStreamObject  |   Validates the operations used for querying data of stream object.
-  S04\_SetDataForStreamObject     |   Validates the operations for setting data for stream object.
-  S05\_AsynchronousScenario       |  Validates the operations used for asynchronous transition.
+  S03\_QueryDataFromStreamObject  |   Validates the operations used for querying data of a stream object.
+  S04\_SetDataForStreamObject     |   Validates the operations for setting data for a stream object.
+  S05\_AsynchronousScenario       |  Validates the operations used for an asynchronous transition.
   S06\_TestCommonObjectProperties |  Validates the common object properties.
 
 ### MS-OXCROPS
 
-12 scenarios are designed for this test suite to verify the server-side,
-testable requirements in MS-OXCROPS test suite. The scenario
+The twelve scenarios are designed for this test suite to verify the server-side,
+testable requirements in the MS-OXCROPS test suite. The scenario
 S01\_LogonROPs relies on the second SUT. Some steps of the test cases
 will not be run if the second SUT is not available. The following table
 lists the scenarios designed in this test suite.
@@ -479,8 +479,8 @@ lists the scenarios designed in this test suite.
 
 ### MS-OXCRPC
 
-Two scenarios are designed to verify the server-side, testable
-requirements in MS-OXCRPC test suite. The following table lists the
+The two scenarios are designed to verify the server-side, testable
+requirements in the MS-OXCRPC test suite. The following table lists the
 scenarios designed in this test suite
 
  
@@ -491,8 +491,8 @@ scenarios designed in this test suite
 
 ### MS-OXCSTOR
 
-Three scenarios are designed to verify the server-side, testable
-requirements in MS-OXCSTOR test suite. The following table lists the
+The three scenarios are designed to verify the server-side, testable
+requirements in the MS-OXCSTOR test suite. The following table lists the
 scenarios designed in this test suite.
 
    Scenario  |  Description
@@ -503,8 +503,8 @@ scenarios designed in this test suite.
 
 ### MS-OXCTABL
 
-Seven scenarios are designed to verify the server-side and testable
-requirements in MS-OXCTABL test suite. The following table lists the
+The seven scenarios are designed to verify the server-side and testable
+requirements in the MS-OXCTABL test suite. The following table lists the
 scenarios designed in this test suite.
 
  Scenario  |  Description
@@ -519,21 +519,21 @@ scenarios designed in this test suite.
 
 ### MS-OXNSPI
 
-Five scenarios are designed to verify the server-side, testable
-requirements in MS-OXNSPI test suite. The following table lists the
+The five scenarios are designed to verify the server-side, testable
+requirements in the MS-OXNSPI test suite. The following table lists the
 scenarios designed in this test suite.
 
  Scenario  |  Description
 :------------ | :-------------
-  S01\_ObtainGeneralInfo   | Tests the server behavior for the NSPI calls related to obtaining general information of Address Book object.
-  S02\_ObtainDetailsInfo   | Tests the server behavior for the NSPI calls related to obtaining the detailed information of Address Book object.
+  S01\_ObtainGeneralInfo   | Tests the server behavior for the NSPI calls related to obtaining general information of an Address Book object.
+  S02\_ObtainDetailsInfo   | Tests the server behavior for the NSPI calls related to obtaining the detailed information of an Address Book object.
   S03\_ANRRelatedBehavior  | Tests the server behavior for the NSPI calls related to Ambiguous Name Resolution process.
   S04\_ModifyProperty      | Tests the server behavior for the NSPI calls related to modify property of Address Book object.
   S05\_NegativeBehavior    | Tests the negative server behavior for each NSPI call.
 
 ### MS-OXORULE
 
-Five scenarios are designed for the MS-OXORULE test suite to verify the
+The five scenarios are designed for the MS-OXORULE test suite to verify the
 structure and the server behavior. The following table lists the
 scenarios designed in this test suite.
 
@@ -545,5 +545,5 @@ scenarios designed in this test suite.
 |  S02\_ProcessServerSideRulesOtherthanOOF |  Validates server behaviors of processing server-side rules other than the Out-of-Office rule because the action of OP\_OOF\_REPLY is complicated enough to be a separate scenario.|
 |  S03\_ProcessOutOfOfficeRule             |  Validates server behaviors of processing the Out-of-Office rule.|
 |  S04\_ProcessRulesOnPublicFolder        |  Validates server behaviors of processing server-side rules on the public folder.|
-|  S05\_GenerateDAMAndDEM              |      Validates server behaviors about DAM and DEM message.|
+|  S05\_GenerateDAMAndDEM              |      Validates server behaviors about DAM and the DEM message.|
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
