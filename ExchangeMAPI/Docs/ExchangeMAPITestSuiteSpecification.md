@@ -145,9 +145,7 @@ protocol, which test suites run against.
     Windows platform:
 
 	-   Microsoft Exchange Server 2007 Service Pack 3 (SP3)
-
 	-   Microsoft Exchange Server 2010 Service Pack 3 (SP3)
-
 	-   Microsoft Exchange Server 2013 Service Pack 1 (SP1)
 
 The presence of a second SUT will enable certain multi-server scenarios
@@ -157,22 +155,22 @@ not present, then some steps of the test cases will not be run.
 **Test Suite Client**
 
 The test suites act as synthetic clients to communicate with the SUT and
-validate the requirements gathered from technical specifications. The
-Exchange MAPI Protocol Test Suites include one common library, 13
-adapters, 13 test suites, and three models.
+validate the requirements gathered from technical specifications.
+Exchange MAPI Protocol Test Suites include one common library, thirteen
+adapters, thirteen test suites, and three models.
 
--   The test suites communicate with SUT via a protocol adapter and SUT
-    control adapter to verify if the SUT behaves in the way that is
-    compliant with normative protocol requirements.
+-   The test suites communicate with the SUT via a protocol adapter and SUT
+    control adapter to verify if the SUT's behavior is in
+    compliance with normative protocol requirements.
 
 -   The MS-OXNSPI, MS-OXCRPC and MS-OXCMAPIHTTP protocol adapters
     communicate directly with the SUT. All other protocol adapters
-    communicate with SUT through the common library.
+    communicate with the SUT through the common library.
 
 Common library
 --------------
 
-The common library provides implementation of the transport layer,
+The common library provides implementation of transport layer,
 common messages, structures, and helper methods.
 
 ### Transport classes
@@ -201,7 +199,7 @@ OxcropsClient to connect, disconnect, and run ROP commands. The
 Oxcropsclient passes the protocol adapter requests to the
 MapiHttpAdapter/RpcAdapter, and the MapiHttpAdapter/RpcAdapter sends the
 protocol adapter request to the SUT. The MapiHttpAdapter/RpcAdapter
-receives the response from the SUT and passes the response to
+receives the response from the SUT and passes the response to the
 OxcropsClient, and the OxcropsClient sends the response back to the
 protocol adapter.
 
@@ -211,9 +209,7 @@ The common library defines a series of helper methods. The helper
 methods can be classified into following categories.
 
 -   Access the properties in the configuration file.
-
 -   Generate resource name.
-
 -   Other methods which are used by multiple test suites.
 
 ### Message structures
@@ -229,10 +225,10 @@ Adapter
 Adapters are interfaces between the test suites and the SUT. There are
 two types of adapter: protocol adapter and SUT control adapter. In most
 cases, modifications to the protocol adapter will not be required for
-non-Microsoft SUT implementations. However, the SUT control adapter
-should be appropriately configured to connect to a non-Microsoft SUT
+non-Microsoft SUT implementation. However, the SUT control adapter
+should be appropriately configured to connect to non-Microsoft SUT
 implementation. All test suites in the package contain a protocol
-adapter, six of them contain a SUT control adapter.
+adapter, six of which contain a SUT control adapter.
 
 ### Protocol Adapter
 
@@ -257,12 +253,12 @@ The SUT control adapter manages all the control functions of the test
 suites that are not associated with the protocol. For example, the setup
 and tear down are managed through the SUT control adapter (that is,
 enabling or disabling the asynchronous RPC notification on the SUT). The
-SUT control adapter is designed to work with the Microsoft
+SUT control adapter is designed to work with Microsoft
 implementation of the SUT. However, it is configurable to allow the test
 suites to run against non-Microsoft implementations of the SUT.
 
 There are six protocols that have a SUT control adapter in the Exchange
-MAPI Protocol test suites package: MS-OXCMAPIHTTP, MS-OXCPERM,
+MAPI Protocol Test Suites package: MS-OXCMAPIHTTP, MS-OXCPERM,
 MS-OXCSTOR, MS-OXCRPC, MS-OXNSPI, and MS-OXORULE.
 
 Model
@@ -279,9 +275,9 @@ suite source code through Spec Explorer.
 The actions are abstracted from the protocol operations specified in the
 technical specification. All the protocol operations have corresponding
 actions. Besides the protocol operations, the models in the Exchange
-MAPI Protocol Test Suites package also define the actions which check
+MAPI Protocol Test Suites package also define the actions that check
 whether the requirement is enabled for a given Exchange Server version,
-and the actions which check whether the MS-OXCMAPIHTTP transport is
+and the actions that check whether the MS-OXCMAPIHTTP transport is
 supported for a given Exchange Server version.
 
 The actions are defined as a series of rule methods with action
@@ -295,7 +291,7 @@ real request.
 The models in the Exchange MAPI Protocol Test Suites package define a
 serial of states to simulate the state change of the SUT. The states are
 defined as static variables in the model class. Each action checks the
-current state to decide its appropriate operation, and it also will
+current state to decide its appropriate operation, and it will also
 update the state if the SUT state is changed.
 
 ### Machines
@@ -305,10 +301,10 @@ serial of machines to simulate the protocol operation sequences defined
 in the technical specification, and the SUT state transition after the
 SUT receives the request from the test suite client.
 
-There are three kinds of machines are defined in the Cord file of the
+There are three kinds of machines that are defined in the Cord file of the
 model project: scenario machines, sliced machines, and test suite
 machines. Scenario machines are designed to model the scenario defined
-in section 4.5. Sliced machines are designed to slice the scenario
+in [Test suite](#test-suite). Sliced machines are designed to slice the scenario
 machines to be testable machines by limiting the parameters for each
 operation in the scenario machines. Test suite machines are defined for
 test cases generation. They construct the test cases by applying
@@ -316,7 +312,7 @@ test cases generation. They construct the test cases by applying
 
 ### Model design patterns
 
-Five patterns are used in the models of the Exchange MAPI Protocol Test
+The five patterns are used in the models of the Exchange MAPI Protocol Test
 Suites package including SynchronousProtocols, AbstractIdentifiers,
 Server Initialization Pattern, Check Return Value, and Helper File
 Pattern.
@@ -352,13 +348,13 @@ The test suites verify the server-side and testable requirements listed
 in the requirement specification. The test suites call the protocol
 adapter to send and receive message between the protocol adapter and the
 SUT, and call the SUT control adapter to change the SUT state. The test
-suites consists of a series test cases which are categorized to several
+suites consists of a series of test cases which are categorized into several
 scenarios. Some test cases rely on a second SUT. If the second SUT is
 not present, then some steps of these test cases will not be run.
 
 ### MS-OXCFOLD
 
-Five scenarios are designed to verify the server-side, testable
+The five scenarios are designed to verify the server-side, testable
 requirements in MS-OXCFOLD test suite. The S04\_OperateOnPublicFolder
 scenario relies on the second SUT. It will not be run if the second SUT
 is not available. The following table lists the scenarios designed in
