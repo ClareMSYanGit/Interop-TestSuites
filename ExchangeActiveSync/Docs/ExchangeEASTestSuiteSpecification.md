@@ -17,7 +17,7 @@ Specifications. Test suites have been used extensively in Plugfests and
 Interoperability Labs to test partner implementations.
 
 Microsoft Open Specifications were written using the normative
-language defined in[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453), from which the
+language defined in [RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453), and from which the
 statements are extracted as protocol requirements to be
 listed in the requirement specification in [Requirement specification](#requirement-specification). 
 
