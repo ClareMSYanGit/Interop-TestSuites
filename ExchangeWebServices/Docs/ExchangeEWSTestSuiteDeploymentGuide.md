@@ -17,7 +17,7 @@ given Exchange protocol. They are designed in a client-to-server
 relationship and were originally developed for the in-house testing of
 Microsoft Open Specifications. Test Suites have been used
 extensively in Plugfests and Interoperability Labs to test partner
-implementations.
+implementation.
 
 Exchange EWS Test Suite deployment guide introduces the hardware and
 software requirements of the test suite client, and the requirements of
