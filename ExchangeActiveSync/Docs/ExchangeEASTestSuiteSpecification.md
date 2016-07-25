@@ -22,7 +22,7 @@ statements are extracted as protocol requirements to be
 listed in the requirement specification of [Requirement specification](#requirement-specification). 
 
 This document describes how Exchange EAS Protocol Test Suites are
-designed to verify that the server behavior is in compliant
+designed to verify that the server behavior is in compliance
 with normative protocol requirements as described in the technical
 specification.
 
