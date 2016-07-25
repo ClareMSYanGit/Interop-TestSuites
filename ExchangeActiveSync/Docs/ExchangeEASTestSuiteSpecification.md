@@ -14,7 +14,7 @@ clients running against a server-side implementation of a given Exchange
 protocol. They are designed in a client-to-server relationship and were
 originally developed for the in-house testing of Microsoft Open
 Specifications. Test suites have been used extensively in Plugfests and
-Interoperability Labs to test partner implementations.
+Interoperability Labs to test partner implementation.
 
 Microsoft Open Specifications were written using the normative
 language defined in [RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453), and from which the
@@ -66,7 +66,7 @@ with the technical specification.
 The requirements are categorized as normative or informative. If the
 statement of the requirement is required for interoperability, the
 requirement is normative. If the statement of the requirement is for
-a high-level introduction or clarification, and the removal of the content
+a high-level introduction or clarification, and removal of the content
 does not affect interoperability, the requirement is informative.
 
 Each requirement applies to a specific scope: server, client, or both.
@@ -74,7 +74,7 @@ If the requirement describes a behavior performed by the responder, the
 scope of the requirement is the server. If the requirement describes a
 behavior performed by the initiator, the scope of the requirement is
 the client. If the requirement describes a behavior performed by both
-initiator and responder, the scope of the requirement applies to both the server and client.
+initiator and responder, the scope of the requirement is for the client and server.
 
 The test suites cover normative requirements which describes a behavior
 performed by the responder. For a detailed requirements list and
@@ -87,7 +87,7 @@ Assumptions
 -----------
 
 -   Exchange EAS Protocol Test Suites are not designed to run
-    multi-protocol user scenarios, but rather provide a way to exercise
+    multi-protocol user scenarios, but rather to provide a way to exercise
     certain operations documented in a technical specification.
 
 -   The test suites are functional tests that verify the compatibility
