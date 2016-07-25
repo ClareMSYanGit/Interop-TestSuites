@@ -31,8 +31,8 @@ test case, and test cases on the same command or operation are
 grouped into one scenario.
 
 The technical specifications in the following table are included
-in the Exchange EAS Protocol Test Suites package. The version of these
-technical specifications is v20150630.
+in the Exchange EAS Protocol Test Suites package. The
+technical specifications version is v20150630.
 
 **Exchange EAS Protocol technical specifications**
 
