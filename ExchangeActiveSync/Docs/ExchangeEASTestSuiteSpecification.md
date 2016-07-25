@@ -56,7 +56,7 @@ technical specifications version is v20150630.
 Requirement specification <a name="requirement-specification"></a>
 ======================================================================================================================================================================================================================================================================
 
-A requirement specification contains a list of requirements that are
+A requirement specification contains a list of requirements that is
 extracted from statements in the technical specification. Each technical
 specification has one corresponding requirement specification named as
 MS-XXXX\_RequirementSpecification.xlsx, which can be found in the
@@ -67,7 +67,7 @@ The requirements are categorized as normative or informative. If the
 statement of the requirement is required for interoperability, the
 requirement is normative. If the statement of the requirement is for
 a high-level introduction or clarification, and the removal of the content
-does not affect interoperability, then the requirement is informative.
+does not affect interoperability, the requirement is informative.
 
 Each requirement applies to a specific scope: server, client, or both.
 If the requirement describes a behavior performed by the responder, the
@@ -206,7 +206,7 @@ the response back to the protocol adapter.
 ### Helper methods
 
 The common library defines a series of helper methods. The helper
-methods can be classified into following categories:
+methods can be classified into the following categories:
 
 -   Access the properties in the configuration file.
 
@@ -238,7 +238,7 @@ used by the test cases to construct protocol request messages that will
 be sent to the SUT. The protocol adapter also acts as an intermediary
 between the test cases and the transport classes, receiving messages,
 sending messages, parsing responses from the transport classes, and
-validating the SUT response according to the normative requirement in
+validating the SUT response according to normative requirements in
 the technical specification.
 
 All protocol adapters use ActiveSyncClient transport classes defined in
@@ -254,7 +254,7 @@ the SUT. However, it is configurable to allow the test suites to run
 against non-Microsoft implementation of the SUT.
 
 There are four protocols that have a SUT control adapter in the Exchange
-EAS Protocol test suites package: MS-ASCMD, MS-ASHTTP, MS-ASPROV and
+EAS Protocol Test Suites package: MS-ASCMD, MS-ASHTTP, MS-ASPROV and
 MS-ASRM.
 
 Test suite
@@ -296,7 +296,7 @@ scenarios designed in this test suite.
 ### MS-ASCMD
 
 These twenty-two scenarios are designed to verify the server-side, testable
-requirements in MS-ASCMD test suite. The following table lists the
+requirements in the MS-ASCMD test suite. The following table lists the
 scenarios designed in this test suite.
 
 | Scenario | Description |
@@ -332,7 +332,7 @@ scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-|S01\_Sync |            Use the Sync command to synchronize the Contact class data between client and server.|
+|S01\_Sync |            Use the Sync command to synchronize the Contact class data between the client and server.|
 |S02\_ItemOperations |  Use ItemOperations command to retrieve Contact class data from the server.|
 |S03\_Search         |  Use Search command to search Contact class data on the server.|
 
@@ -369,10 +369,10 @@ scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-|  S01\_Email | Test normal e-mail events, including sending an e-mail to server, synchronizing e-mails with server, retrieving e-mail items that match the criteria specified by the client from server, retrieving data from the server for one or more specific e-mail items.|
-|  S02\_EmailVoiceAttachment| Test voice attachment e-mail events, including sending an e-mail with voice attachment to server, synchronizing the e-mail with voice attachment with server.|
+|  S01\_Email | Test normal e-mail events, including sending an e-mail to a server, synchronizing e-mails with a server, retrieving e-mail items that match the criteria specified by the client from a server, retrieving data from a server for one or more specific e-mail items.|
+|  S02\_EmailVoiceAttachment| Test voice attachment e-mail events, including sending an e-mail with voice attachment to a server, synchronizing the e-mail with voice attachment with a server.|
 |  S03\_EmailFlag | Test flag events, including setting a flag on email or task, updating a flag on email or task, marking a flag on email or task as complete, clearing a flag from email or task.|
-|  S04\_MeetingRequest| Test meeting request events, including sending a meeting request to server, synchronizing the meeting request with server.|
+|  S04\_MeetingRequest| Test meeting request events, including sending a meeting request to server, synchronizing the meeting request with a server.|
 
 ### MS-ASHTTP
 
