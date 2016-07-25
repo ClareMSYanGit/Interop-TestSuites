@@ -18,7 +18,7 @@ clients running against a server-side implementation of a given Exchange
 protocol. They are designed in a client-to-server relationship and were
 originally developed for the in-house testing of Microsoft Open
 Specifications. Test suites have been used extensively in Plugfests and
-Interoperability Labs to test partner implementations.
+Interoperability Labs to test partner implementation.
 
 The Exchange MAPI Test Suite deployment guide introduces the hardware
 and software requirements of the test suite client, and the requirements
