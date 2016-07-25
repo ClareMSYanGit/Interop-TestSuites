@@ -9,29 +9,28 @@ Exchange EAS Test Suites Specification
 Introduction
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
-The Exchange EAS Protocol Test Suites are implemented as synthetic
+Exchange EAS Protocol Test Suites are implemented as synthetic
 clients running against a server-side implementation of a given Exchange
 protocol. They are designed in a client-to-server relationship and were
-originally developed for the in-house testing of the Microsoft Open
+originally developed for the in-house testing of Microsoft Open
 Specifications. Test suites have been used extensively in Plugfests and
 Interoperability Labs to test partner implementations.
 
-This document describes how the Exchange EAS Protocol Test Suites are
-designed to verify that the server behaves in the way that is compliant
+Microsoft Open Specifications were written using the normative
+language defined in[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453), from which the
+statements are extracted as protocol requirements to be
+listed in the requirement specification in [Requirement specification](#requirement-specification). 
+
+This document describes how Exchange EAS Protocol Test Suites are
+designed to verify that the server behavior is in compliant
 with normative protocol requirements as described in the technical
 specification.
 
-The Microsoft Open Specifications were written using the normative
-language defined in
-[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453). The
-statements of them are extracted as protocol requirements which are
-listed in the requirement specification described in [Requirement specification](#requirement-specification). The test
-suites are developed to test the normative protocol requirements. In a
-single test suite, similar or related requirements are grouped into one
-test case, and the test cases about same command or operation are
+In a single test suite, similar or related requirements are grouped into one
+test case, and test cases on the same command or operation are
 grouped into one scenario.
 
-The technical specifications listed in the following table are included
+The technical specifications in the following table are included
 in the Exchange EAS Protocol Test Suites package. The version of these
 technical specifications is v20150630.
 
@@ -62,24 +61,24 @@ extracted from statements in the technical specification. Each technical
 specification has one corresponding requirement specification named as
 MS-XXXX\_RequirementSpecification.xlsx, which can be found in the
 Docs\\MS-XXXX folder in the Exchange EAS Protocol Test Suites package
-together with the technical specification.
+with the technical specification.
 
 The requirements are categorized as normative or informative. If the
 statement of the requirement is required for interoperability, the
-requirement is normative. If the statement of the requirement is
-clarifying information or high-level introduction, and removal of it
-does not affect interoperability, the requirement is informative.
+requirement is normative. If the statement of the requirement is for
+a high-level introduction or clarification, and the removal of the content
+does not affect interoperability, then the requirement is informative.
 
 Each requirement applies to a specific scope: server, client, or both.
 If the requirement describes a behavior performed by the responder, the
-scope of the requirement is server. If the requirement describes a
+scope of the requirement is the server. If the requirement describes a
 behavior performed by the initiator, the scope of the requirement is
-client. If the requirement describes a behavior performed by both
-initiator and responder, the scope of the requirement is both.
+the client. If the requirement describes a behavior performed by both
+initiator and responder, the scope of the requirement applies to both the server and client.
 
 The test suites cover normative requirements which describes a behavior
 performed by the responder. For a detailed requirements list and
-classification, see the MS-XXXX\_RequirementSpecification.xlsx.
+classification, see MS-XXXX\_RequirementSpecification.xlsx.
 
 Design considerations
 =====================
@@ -87,55 +86,55 @@ Design considerations
 Assumptions
 -----------
 
--   The Exchange EAS Protocol Test Suites are not designed to run
+-   Exchange EAS Protocol Test Suites are not designed to run
     multi-protocol user scenarios, but rather provide a way to exercise
     certain operations documented in a technical specification.
 
 -   The test suites are functional tests that verify the compatibility
-    of the system under test (SUT) with a protocol implementation.
+    of the system under test (SUT) with protocol implementation.
 
 -   The test suites do not cover every protocol requirement and in no
-    way certify an implementation, even if all tests pass.
+    way certify implementation, even if all tests pass.
 
 -   The test suites verify the server-side testable requirements; they
     do not verify the requirements related to client behaviors and
     server internal behaviors.
 
--   The test suites assumes that there is a shared folder on the server.
+-   The test suites assume that there is a shared folder on the server.
 
--   The test suites assumes that there is a hidden folder and a visible
+-   The test suites assume that there is a hidden folder and a visible
     folder under the shared folder.
 
--   The test suites assumes that there is a hidden document and a
+-   The test suites assume that there is a hidden document and a
     visible document under the shared folder.
 
--   The test suites assumes that authentication has been performed by
+-   The test suites assume that authentication has been performed by
     the underlying protocols.
 
 Dependencies
 ------------
 
--   All Exchange EAS Protocol Test Suites depend on the Protocol Test
+-   All Exchange EAS Protocol Test Suites depend on Protocol Test
     Framework (PTF) to derive managed adapters.
 
--   All Exchange EAS Protocol Test Suites depends on the HTTP protocol
+-   All Exchange EAS Protocol Test Suites depend on the HTTP protocol
     or HTTPS protocol to transmit the messages.
 
--   All Exchange EAS Protocol Test Suites depends on MS-ASWBXML to
+-   All Exchange EAS Protocol Test Suites depend on MS-ASWBXML to
     encode XML requests bodies into WBXML for transmission to an
     ActiveSync server.
 
--   All Exchange EAS Protocol Test Suites depends on MS-ASHTTP to
+-   All Exchange EAS Protocol Test Suites depend on MS-ASHTTP to
     synchronize the data which is stored on the server.
 
--   All Exchange EAS Protocol Test Suites depends on the xsd.exe tool in
+-   All Exchange EAS Protocol Test Suites depend on the xsd.exe tool in
     the .NET Framework SDK to generate structures used in the MS-ASCAL
     request and response.
 
 Package design
 ==============
 
-The Exchange EAS Protocol Test Suites are implemented as synthetic
+Exchange EAS Protocol Test Suites are implemented as synthetic
 clients running against a server-side implementation of a given Exchange
 protocol. The test suites verify the server-side and testable
 requirements.
@@ -174,15 +173,15 @@ protocol, which test suites run against.
 **Test Suite Client**
 
 The test suites act as synthetic clients to communicate with the SUT and
-validate the requirements gathered from technical specifications. The
-Exchange EAS Protocol Test Suites include one common library, 13
-adapters and 12 test suites.
+validate the requirements gathered from technical specifications.
+Exchange EAS Protocol Test Suites include one common library, thirteen
+adapters and twelve test suites.
 
 -   The test suites communicate with SUT via a protocol adapter and SUT
-    control adapter to verify if the SUT behaves in the way that is
-    compliant with normative protocol requirements.
+    control adapter to verify if the SUT is behaving in 
+    compliance with normative protocol requirements.
 
--   All protocol adapters uses ActiveSyncClient to send command request
+-   All protocol adapters use ActiveSyncClient to send command request
     and retrieve command response.
 
 -   ActiveSyncClient encodes and decodes commands defined in
@@ -207,7 +206,7 @@ the response back to the protocol adapter.
 ### Helper methods
 
 The common library defines a series of helper methods. The helper
-methods can be classified into following categories.
+methods can be classified into following categories:
 
 -   Access the properties in the configuration file.
 
@@ -217,7 +216,7 @@ methods can be classified into following categories.
 
 ### Message structures
 
-Becuase the C\# proxy class is used by the multiple test suites. So the
+Becuase the C\# proxy class is used by the multiple test suites. So
 the C\# proxy class is defined in the common library.
 
 Adapter
@@ -226,15 +225,15 @@ Adapter
 Adapters are interfaces between the test suites and the SUT. There are
 two types of adapter: protocol adapter and SUT control adapter. In most
 cases, modifications to the protocol adapter will not be required for
-non-Microsoft SUT implementations. However, the SUT control adapter
-should be appropriately configured to connect to a non-Microsoft SUT
+non-Microsoft SUT implementation. However, the SUT control adapter
+should be appropriately configured to connect to non-Microsoft SUT
 implementation. All test suites in the package contain a protocol
 adapter, six of them contain a SUT control adapter.
 
 ### Protocol Adapter
 
 The protocol adapter is a managed adapter, which is derived from the
-ManagedAdapterBase class in the PTF. It provides an interface that is
+ManagedAdapterBase class in PTF. It provides an interface that is
 used by the test cases to construct protocol request messages that will
 be sent to the SUT. The protocol adapter also acts as an intermediary
 between the test cases and the transport classes, receiving messages,
@@ -250,9 +249,9 @@ the common library to send and receive messages.
 The SUT control adapter manages all the control functions of the test
 suites that are not associated with the protocol. For example, the setup
 and tear down are managed through the SUT control adapter. The SUT
-control adapter is designed to work with the Microsoft implementation of
+control adapter is designed to work with Microsoft implementation of
 the SUT. However, it is configurable to allow the test suites to run
-against non-Microsoft implementations of the SUT.
+against non-Microsoft implementation of the SUT.
 
 There are four protocols that have a SUT control adapter in the Exchange
 EAS Protocol test suites package: MS-ASCMD, MS-ASHTTP, MS-ASPROV and
@@ -265,38 +264,38 @@ The test suites verify the server-side and testable requirements listed
 in the requirement specification. The test suites call the protocol
 adapter to send and receive message between the protocol adapter and the
 SUT, and call the SUT control adapter to change the SUT state. The test
-suites consists of a series test cases which are categorized to several
+suites consist of a series of test cases which are categorized into several
 scenarios.
 
 ### MS-ASAIRS
 
-Six scenarios are designed to verify the server-side, testable
+The six scenarios are designed to verify the server-side, testable
 requirements in MS-ASAIRS test suite. The following table lists the
 scenarios designed in the test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-|  S01\_BodyPartPreference  |     Test the BodyPartPreference element and BodyPart element in the AirSyncBase namespace, which is used by the Sync command, Search command and ItemOperations command to identify the data sent by and returned to client.|
-|  S02\_BodyPreference      |     Test the BodyPreference element and Body element in the AirSyncBase namespace, which is used by the Sync command, Search command and ItemOperations command to identify the data sent by and returned to client.|
-|  S03\_Attachment          |     Test the Attachments element and its subelements in the AirSyncBase namespace, which is used by the Sync command, Search command and ItemOperations command to identify the data sent by and returned to client.|
+|  S01\_BodyPartPreference  |     Test the BodyPartPreference element and BodyPart element in the AirSyncBase namespace, which is used by the Sync command, Search command and ItemOperations command to identify the data sent by and returned to the client.|
+|  S02\_BodyPreference      |     Test the BodyPreference element and Body element in the AirSyncBase namespace, which is used by the Sync command, Search command and ItemOperations command to identify the data sent by and returned to the client.|
+|  S03\_Attachment          |     Test the Attachments element and its subelements in the AirSyncBase namespace, which is used by the Sync command, Search command and ItemOperations command to identify the data sent by and returned to the client.|
 |  S04\_StatusError         |     Test the status error which is returned by the Sync command, Search command and ItemOperations command when the XML elements in AirSyncBase namespace don't comply with the requirements regarding data type, number of instance, order and placement in the XML hierarchy.|
-|  S05\_Location            |     This scenario is designed to test the Location element and its sub elements, which is used by the Sync command, Search command and ItemOperations command.|
-|  S06\_MeetingResponseCommand |  This scenario is designed to test the MeetingResponse command.|
+|  S05\_Location            |     Test the Location element and its sub elements, which is used by the Sync command, Search command and ItemOperations command.|
+|  S06\_MeetingResponseCommand |  Test the MeetingResponse command.|
 
 ### MS-ASCAL
 
-Two scenarios are designed to verify the server-side, testable
+The two scenarios are designed to verify the server-side, testable
 requirements in MS-ASCAL test suite. The following table lists the
 scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-|   S01\_CalendarElement |   This scenario is to test Calendar class elements, which are not attached in a Meeting request, including synchronizing the calendar on the server, fetching information of the calendar or searching a specific calendar.| 
-|   S02\_MeetingElement  |   This scenario is to test Calendar class elements, which are attached in a Meeting request, when meeting is either accepted, tentative accepted, cancelled or declined.| 
+|   S01\_CalendarElement |   Test the Calendar class elements, which are not attached in a Meeting request, including synchronizing the calendar on the server, fetching information of the calendar or searching a specific calendar.| 
+|   S02\_MeetingElement  |   Test the Calendar class elements, which are attached in a Meeting request, when meeting is either accepted, tentative accepted, cancelled or declined.| 
 
 ### MS-ASCMD
 
-22 scenarios are designed to verify the server-side, testable
+These twenty-two scenarios are designed to verify the server-side, testable
 requirements in MS-ASCMD test suite. The following table lists the
 scenarios designed in this test suite.
 
@@ -307,8 +306,8 @@ scenarios designed in this test suite.
 | S03\_FolderDelete    |   Delete the folders by using the FolderDelete command.|
 | S04\_FolderSync      |   Synchronize the folders by using the FolderSync command.|
 | S05\_FolderUpdate    |  Update the folders by using the FolderUpdate command.|
-| S06\_GetAttachment   | Retrieve an email attachment from the server by using GetAttachment command.|
-| S07\_GetItemEstimate | Get an estimate of the number of items in a collection or folder on the server that have to be synchronized by using GetItemEstimate command.|
+| S06\_GetAttachment   | Retrieve an email attachment from the server by using the GetAttachment command.|
+| S07\_GetItemEstimate | Get an estimate for the number of items in a collection or folder on the server that have to be synchronized by using GetItemEstimate command.|
 | S08\_ItemOperations  | Provide the batched online handling of Fetch, empty the folder contents and move the operations against the server by using the ItemOperations command.|
 | S09\_MeetingResponse |   Accept, tentatively accept, or decline a meeting request in the user's Inbox folder or Calendar folder by using the MeetingResponse command.|
 | S10\_MoveItems        |   Move an item or items from one folder on the server to another by using the MoveItems command.|
@@ -323,94 +322,94 @@ scenarios designed in this test suite.
 | S19\_Sync             |   Synchronize the data by using the Sync command.|
 | S20\_ValidateCert     |  Validate a certificate that has been received via an S/MIME mail by using ValidateCert command.|
 | S21\_CommonStatusCode |   Test the common negative status for the commands.|
-| S22\_GetHierarchy |       This scenario is designed to test the GetHierarchy command.|
+| S22\_GetHierarchy |       Test the GetHierarchy command.|
 
 ### MS-ASCNTC
 
-Three scenarios are designed to verify the server-side, testable
-requirements in MS-ASCNTC test suite. The following table lists the
+The three scenarios are designed to verify the server-side, testable
+requirements in the MS-ASCNTC test suite. The following table lists the
 scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-|S01\_Sync |            This scenario is designed to use the Sync command to synchronize the Contact class data between client and server.|
-|S02\_ItemOperations |  This scenario is designed to use ItemOperations command to retrieve Contact class data from the server.|
-|S03\_Search         |  This scenario is designed to use Search command to search Contact class data on the server.|
+|S01\_Sync |            Use the Sync command to synchronize the Contact class data between client and server.|
+|S02\_ItemOperations |  Use ItemOperations command to retrieve Contact class data from the server.|
+|S03\_Search         |  Use Search command to search Contact class data on the server.|
 
 ### MS-ASCON
 
-Five scenarios are designed to verify the server-side, testable
-requirements in MS-ASCON test suite. The following table lists the
+The five scenarios are designed to verify the server-side, testable
+requirements in the MS-ASCON test suite. The following table lists the
 scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-|  S01\_Sync|              This scenario is designed to mark a conversation as Read or Unread, flag a conversation for follow-up, apply a conversation-based filter, delete a conversation and request a Message part using Sync command.|
-|  S02\_GetItemEstimate |  This scenario is designed to apply a conversation-based filter using GetItemEstimate command.|
-|  S03\_ItemOperations  |  This scenario is designed to ignore a conversation, set up a conversation to be moved always and request a Message part using ItemOperations command.|
-|  S04\_MoveItems       |  This scenario is designed to move a conversation from the current folder using MoveItems command.|
-|  S05\_Search          |  This scenario is designed to find a conversation using Search command.|
+|  S01\_Sync| Mark a conversation as Read or Unread, flag a conversation for follow-up, apply a conversation-based filter, delete a conversation and request a Message part using the Sync command.|
+|  S02\_GetItemEstimate |  Apply a conversation-based filter using the GetItemEstimate command.|
+|  S03\_ItemOperations  |  Ignore a conversation, set up a conversation to be moved always and request a Message part using the ItemOperations command.|
+|  S04\_MoveItems       |  Move a conversation from the current folder using the MoveItems command.|
+|  S05\_Search          |  Find a conversation using the Search command.|
 
 ### MS-ASDOC
 
-Two scenarios are designed to verify the server-side, testable
-requirements in MS-ASDOC test suite. The following table lists the
+The two scenarios are designed to verify the server-side, testable
+requirements in the MS-ASDOC test suite. The following table lists the
 scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-|  S01\_SearchCommand |          Retrieve Document class items that match the criteria specified by the client through the Search command messages.|
-|  S02\_ItemOperationsCommand |  Retrieve data from the server for one or more individual documents through ItemOperations command messages.|
+|  S01\_SearchCommand |          Retrieve the Document class items that match the criteria specified by the client through the Search command messages.|
+|  S02\_ItemOperationsCommand |  Retrieve the data from the server for one or more individual documents through the ItemOperations command messages.|
 
 ### MS-ASEMAIL
 
-Four scenarios are designed to verify the server-side, testable
-requirements in MS-ASEMAIL test suite. The following table lists the
+The four scenarios are designed to verify the server-side, testable
+requirements in the MS-ASEMAIL test suite. The following table lists the
 scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
 |  S01\_Email | Test normal e-mail events, including sending an e-mail to server, synchronizing e-mails with server, retrieving e-mail items that match the criteria specified by the client from server, retrieving data from the server for one or more specific e-mail items.|
 |  S02\_EmailVoiceAttachment| Test voice attachment e-mail events, including sending an e-mail with voice attachment to server, synchronizing the e-mail with voice attachment with server.|
-|  S03\_EmailFlag | Test flag events, include setting a flag on email or task, updating a flag on email or task, marking a flag on email or task as complete, clearing a flag from email or task.|
+|  S03\_EmailFlag | Test flag events, including setting a flag on email or task, updating a flag on email or task, marking a flag on email or task as complete, clearing a flag from email or task.|
 |  S04\_MeetingRequest| Test meeting request events, including sending a meeting request to server, synchronizing the meeting request with server.|
 
 ### MS-ASHTTP
 
-Four scenarios are designed to verify the server-side, testable
+The four scenarios are designed to verify the server-side, testable
 requirements in MS-ASHTTP test suite. The following table lists the
 scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-| S01\_HTTPPOSTPositive| Test the positive behaviors issued by HTTP POST command.|
-| S02\_HTTPPOSTNegative | Test the negative behaviors issued by HTTP POST command.|
-| S03\_HTTPPOSTOptionalHeader | Test optional request header of HTTP POST command.|
+| S01\_HTTPPOSTPositive| Test the positive behaviors issued by the HTTP POST command.|
+| S02\_HTTPPOSTNegative | Test the negative behaviors issued by the HTTP POST command.|
+| S03\_HTTPPOSTOptionalHeader | Test optional request header of the HTTP POST command.|
 | S04\_HTTPOPTIONSMessage  | Test HTTP OPTIONS command.|
 
 ### MS-ASNOTE
 
-Three scenarios are designed to verify the server-side, testable
-requirements in MS-ASNOTE test suite. The following table lists the
-scenarios designed in this test suite
+The three scenarios are designed to verify the server-side, testable
+requirements in the MS-ASNOTE test suite. The following table lists the
+scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-|S01\_SyncCommand   |   Synchronize Notes class items for a specified user with the existing notes stored on the server.|
-|S02\_SearchCommand |   Retrieve Notes class items that match the criteria specified by the client.|
-|S03\_ItemOperationsCommand |  Retrieve data from the server for one or more notes items.|
+|S01\_SyncCommand   |   Synchronize the Notes class items for a specified user with the existing notes stored on the server.|
+|S02\_SearchCommand |   Retrieve the Notes class items that match the criteria specified by the client.|
+|S03\_ItemOperationsCommand |  Retrieve the data from the server for one or more notes items.|
 
 ### MS-ASPROV
 
-Three scenarios are designed to verify the server-side, testable
-requirements in MS-ASPROV test suite. The following table lists the
+The three scenarios are designed to verify the server-side, testable
+requirements in the MS-ASPROV test suite. The following table lists the
 scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
 |  S01\_AcknowledgePolicySettings                            |Test the acknowledgement phase of Provision.|
 |  S02\_RemoteWipe                                           |Test the remote wipe directive.|
-|  S03\_ProvisionNegative                                    |Test negative status of Provision command.|
+|  S03\_ProvisionNegative                                    |Test the negative status of Provision command.|
 
 ### MS-ASRM
 
@@ -420,20 +419,20 @@ scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-|  S01\_Settings\_SendMail\_Sync |  This scenario is designed to get templateIDs, send email messages and synchronize data from the server by using Settings, SendMail and Sync commands.|
-|  S02\_ItemOperations|             This scenario is designed to fetch a rights-managed e-mail message with or without RemoveRightsManagementProtection element by using ItemOperations command.|
-|  S03\_Search       |              This scenario is designed to find rights-managed e-mail messages by using Search command.|
-|  S04\_SmartForward|               This scenario is designed to forward messages by using SmartForward command.|
-|  S05\_SmartReply|                 This scenario is designed to reply messages by using SmartReply command.|
+|  S01\_Settings\_SendMail\_Sync |  Get templateIDs, send email messages and synchronize data from the server by using Settings, SendMail and Sync commands.|
+|  S02\_ItemOperations|             Fetch a rights-managed e-mail message with or without RemoveRightsManagementProtection element by using the ItemOperations command.|
+|  S03\_Search       |              Find rights-managed e-mail messages by using the Search command.|
+|  S04\_SmartForward|               Forward messages by using the SmartForward command.|
+|  S05\_SmartReply|                 Reply messages by using the SmartReply command.|
 
 ### MS-ASTASK
 
-Three scenarios are designed to verify the server-side, testable
+The three scenarios are designed to verify the server-side, testable
 requirements in MS-ASTASK test suite. The following table lists the
 scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-| S01\_SyncCommand|             This scenario is to test Task class element on the server by using Sync command.|
-| S02\_ItemOperationsCommand|   This scenario is to test Task class element on the server by using ItemOperations command.|
-| S03\_SearchCommand |          This scenario is to test Task class element on the server by using Search command.|
+| S01\_SyncCommand|             Test the Task class element on the server by using Sync command.|
+| S02\_ItemOperationsCommand|   Test the Task class element on the server by using ItemOperations command.|
+| S03\_SearchCommand |          Test the Task class element on the server by using Search command.|
