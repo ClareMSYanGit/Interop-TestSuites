@@ -17,7 +17,7 @@ Specifications.
 
 Microsoft Open Specifications were written using the normative
 language defined in
-[*RFC2119*](http://go.microsoft.com/fwlink/?LinkId=117453), and from which
+[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453), and from which
 statements are extracted as protocol requirements to be
 listed in the requirement specification of [Requirement specification](#requirement-specification). 
 
