@@ -48,7 +48,7 @@ Technical specification  | Protocol name
   MS-OXWSSYNC    |           [Mailbox Contents Synchronization Web Service Protocol](http://go.microsoft.com/fwlink/?LinkID=267329)
   MS-OXWSTASK    |           [Tasks Web Service Protocol](http://go.microsoft.com/fwlink/?LinkID=267330)
 
-Requirement specification
+Requirement specification <a name="requirement-specification"></a>
 ======================================================================================================================================================================================================================================================================
 
 A requirement specification contains a list of requirements that are
@@ -89,7 +89,7 @@ Assumptions
     of the system under test (SUT) with protocol implementation.
 
 -   The test suites do not cover every protocol requirement and in no
-    way certify implementation, even if all tests pass.
+    way certify implementation even if all tests pass.
 
 -   The test suites verify the server-side testable requirements. but
     do not verify the requirements related to client behaviors and
@@ -98,7 +98,7 @@ Assumptions
 Dependencies
 ------------
 
--   All Exchange EWS Protocol Test Suites depend on the Protocol Test
+-   All Exchange EWS Protocol Test Suites depend on Protocol Test
     Framework (PTF) to derive managed adapters.
 
 Package design

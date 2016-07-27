@@ -52,7 +52,7 @@ Technical specification  | Protocol name
   MS-OXNSPI        |          [Exchange Server Name Service Provider Interface (NSPI) Protocol](http://go.microsoft.com/fwlink/?LinkId=330225)
   MS-OXORULE       |          [E-Mail Rules Protocol](http://go.microsoft.com/fwlink/?LinkID=267176)
 
-Requirement specification
+Requirement specification <a name="requirement-specification"></a>
 ======================================================================================================================================================================================================================================================================
 
 A requirement specification contains a list of requirements that is
@@ -77,7 +77,7 @@ initiator and responder, the scope of the requirement is for both the client and
 
 The test suites cover normative requirements which describes a behavior
 performed by the responder. For a detailed requirements list and
-classification, see the MS-XXXX\_RequirementSpecification.xlsx.
+classification, see MS-XXXX\_RequirementSpecification.xlsx.
 
 Design considerations
 =====================
@@ -93,7 +93,7 @@ Assumptions
     of the system under test (SUT) with protocol implementation.
 
 -   The test suites do not cover every protocol requirement and in no
-    way certify implementation, even if all tests pass.
+    way certify implementation even if all tests pass.
 
 -   The test suites verify the server-side testable requirements, but
     do not verify the requirements related to client behaviors and
