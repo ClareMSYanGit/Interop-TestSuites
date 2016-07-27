@@ -91,7 +91,7 @@ Assumptions
 -   The test suites do not cover every protocol requirement and in no
     way certify implementation, even if all tests pass.
 
--   The test suites verify the server-side testable requirements. They
+-   The test suites verify the server-side testable requirements. but
     do not verify the requirements related to client behaviors and
     server internal behaviors.
 
@@ -126,34 +126,33 @@ The following outlines the details of the test suites architecture:
 The SUT hosts the server-side implementation of the protocol, which test
 suites run against.
 
--   From a third-party’s point of view, the SUT is a
+-   From a third-party’s point of view, the SUT is
     server implementation.
 
 -   The following products have been tested with the test suites on the
     Windows platform.
-
--   Microsoft Exchange Server 2007 Service Pack 3 (SP3)
--   Microsoft Exchange Server 2010 Service Pack 3 (SP3)
--   Microsoft Exchange Server 2013 Service Pack 1 (SP1)
+	-   Microsoft Exchange Server 2007 Service Pack 3 (SP3)
+	-   Microsoft Exchange Server 2010 Service Pack 3 (SP3)
+	-   Microsoft Exchange Server 2013 Service Pack 1 (SP1)
 
 **Test Suite Client**
 
 The test suites act as synthetic clients to communicate with the SUT and
-validate the requirements gathered from technical specifications. The
-Exchange EWS Protocol Test Suites include one common library, 10
+validate the requirements gathered from technical specifications. 
+Exchange EWS Protocol Test Suites include one common library, ten
 adapters and nine test suites.
 
--   The test suites communicate with SUT via a protocol adapter and SUT
-    control adapter to verify if the SUT behaves in the way that is
-    compliant with normative protocol requirements.
+-   The test suites communicate with the SUT via a protocol adapter and an SUT
+    control adapter to verify if the SUT is behaving in
+    compliance with normative protocol requirements.
 
--   Expect MS-OXWSITEMID adapter, all other protocol adapters
-    communicate with SUT through the common library.
+-   Expect the MS-OXWSITEMID adapter, all other protocol adapters to
+    communicate with the SUT through the common library.
 
--   MS-OXWSITEMID protocol adapter implements the Web Service
+-   The MS-OXWSITEMID protocol adapter implements Web Service
     Item Algorithm. All other test suites use the MS-OXWSITEMID protocol
-    adapter to parse and process the Id of an ItemId object in SOAP
-    request and SOAP response.
+    adapter to parse and process the Id of an ItemId object in a SOAP
+    request and a SOAP response.
 
 Common library
 --------------
@@ -172,7 +171,7 @@ SOAP over HTTPS communications between test suites and SUTs.
 ### Helper methods
 
 The common library defines a series of helper methods. The helper
-methods can be classified into following categories.
+methods can be classified into following categories:
 
 -   Access the properties in the configuration file.
 
@@ -184,7 +183,7 @@ methods can be classified into following categories.
 
 ### Message structures
 
-Except MS-OXWSITEMID, all protocols are SOAP protocols. Therefore the
+Except for MS-OXWSITEMID, all protocols are SOAP protocols. Therefore the
 message structures are used by multiple test suites. These message
 structures are defined in the common library.
 
@@ -192,44 +191,44 @@ Adapter
 -------
 
 Adapters are interfaces between the test suites and the SUT. There are
-two types of adapter: protocol adapter and SUT control adapter. In most
+two types of adapter: a protocol adapter and an SUT control adapter. In most
 cases, modifications to the protocol adapter will not be required for
-non-Microsoft SUT implementations. However, the SUT control adapter
-should be appropriately configured to connect to a non-Microsoft SUT
+non-Microsoft SUT implementation. However, the SUT control adapter
+should be appropriately configured to connect to non-Microsoft SUT
 implementation. All test suites in the package contain a protocol
-adapter, three of them contain a SUT control adapter.
+adapter, three of which contain an SUT control adapter.
 
 ### Protocol Adapter
 
 The protocol adapter is a managed adapter, which is derived from the
-ManagedAdapterBase class in the PTF. It provides an interface that is
+ManagedAdapterBase class in PTF. It provides an interface that is
 used by the test cases to construct protocol request messages that will
 be sent to the SUT. The protocol adapter also acts as an intermediary
 between the test cases and the transport classes, receiving messages,
 sending messages, parsing responses from the transport classes, and
-validating the SUT response according to the normative requirement in
+validating the SUT response according to normative requirements in
 the technical specification.
 
-Except MS-OXWSITEMID, all other protocol adapters use
+Except for MS-OXWSITEMID, all other protocol adapters use
 ExchangeServiceBinding transport class defined in the common library to
-send and receive messages. MS-OXWSITEMID protocol adapter implements the
+send and receive messages. The MS-OXWSITEMID protocol adapter implements the
 Web Service Item Algorithm which describes the format of the Id and how
-to process it. All other test suites use the MS-OXWSITEMID protocol
-adapter to parse and process the Id of an ItemId object in SOAP request
-and SOAP response.
+to process the Id. All other test suites use the MS-OXWSITEMID protocol
+adapter to parse and process the Id of an ItemId object in a SOAP request
+and a SOAP response.
 
 ### SUT Control Adapter 
 
 The SUT control adapter manages all the control functions of the test
 suites that are not associated with the protocol. For example, the setup
 and tear down are managed through the SUT control adapter. The SUT
-control adapter is designed to work with the Microsoft implementation of
+control adapter is designed to work with Microsoft implementation of
 the SUT. However, it is configurable to allow the test suites to run
-against non-Microsoft implementations of the SUT.
+against non-Microsoft implementation of the SUT.
 
 There are three protocols that have a SUT control adapter in the
-Exchange EWS Protocol test suites package: MS-OXWSBTRF, MS-OXWSSYNC and
-MS-OXWSMSG..
+Exchange EWS Protocol Test Suites package: MS-OXWSBTRF, MS-OXWSSYNC and
+MS-OXWSMSG.
 
 Test suite
 ----------
@@ -238,135 +237,135 @@ The test suites verify the server-side and testable requirements listed
 in the requirement specification. The test suites call the protocol
 adapter to send and receive message between the protocol adapter and the
 SUT, and call the SUT control adapter to change the SUT state. The test
-suites consists of a series test cases which are categorized to several
+suites consist of a series of test cases which are categorized into several
 scenarios.
 
 ### MS-OXWSATT
 
-One scenario is designed to verify the server-side, testable
-requirements in MS-OXWSATT test suite. The following table lists the
+This scenario is designed to verify the server-side, testable
+requirements in the MS-OXWSATT test suite. The following table lists the
 scenarios designed in the test suite.
 
  Scenario  | Description
 :------------ | :-------------
-  S01\_AttachmentProcessing |   This scenario is designed to test operations related to the creation, retrieving, and deletion of the attachment.
+  S01\_AttachmentProcessing |   Test the operations on creating, retrieving, and deleting an attachment.
 
 ### MS-OXWSBTRF
 
-One scenario is designed to verify the server-side, testable
-requirements in MS-OXWSBTRF test suite. The following table lists the
+This scenario is designed to verify the server-side, testable
+requirements in the MS-OXWSBTRF test suite. The following table lists the
 scenarios designed in the test suite.
  
  Scenario  | Description
 :------------ | :-------------
-  S01\_ExportAndUploadItems  |   This scenario is designed to export items from a mailbox server and upload items to a mailbox server.
+S01\_ExportAndUploadItems  |   Test the operation on exporting items from a mailbox server and upload items to a mailbox server.
 
 ### MS-OXWSCONT
 
-Six scenarios are designed to verify the server-side, testable
-requirements in MS-OXWSCONT test suite. The following table lists the
+The six scenarios are designed to verify the server-side, testable
+requirements in the MS-OXWSCONT test suite. The following table lists the
 scenarios designed in this test suite.
 
    Scenario  | Description
 :------------ | :-------------
-  S01\_CreateGetDeleteContactItem      |         This scenario is designed to test operations related to creation, retrieving and deletion of the contact items in the server.
-  S02\_UpdateContactItem               |         This scenario is designed to test operation related to updating of the contact items in the server.
-  S03\_CopyContactItem                 |         This scenario is designed to test operation related to copy of the contact items in the server.
-  S04\_MoveContactItem                 |         This scenario is designed to test operation related to movement of the contact items in the server.
-  S05\_OperateMultipleContactItems     |         This scenario is designed to test operations related to creation, updating, movement, retrieving, copy and deletion of the multiple contact items in the server.
-  S06\_OperateContactItemWithOptionalElements |  This scenario is designed to test operations related to creation, updating, movement, retrieving and copy of the contact items with optional elements in the server.
+  S01\_CreateGetDeleteContactItem      |         Test the operations on creating, retrieving and deleting contact items on the server.
+  S02\_UpdateContactItem               |         Test the operation on updating contact items on the server.
+  S03\_CopyContactItem                 |         Test the operation on copying contact items on the server.
+  S04\_MoveContactItem                 |         Test the operation on moving contact items on the server.
+  S05\_OperateMultipleContactItems     |         Test the operations on creating, updating, moving, retrieving, copying and deleting multiple contact items on the server.
+  S06\_OperateContactItemWithOptionalElements |  Test the operations on creating, updating, moving, retrieving, and copying contact items with optional elements on the server.
 
 ### MS-OXWSCORE
 
-Eight scenarios are designed to verify the server-side, testable
-requirements in MS-OXWSCORE test suite. The following table lists the
+The eight scenarios are designed to verify the server-side, testable
+requirements in the MS-OXWSCORE test suite. The following table lists the
 scenarios designed in this test suite.
 
  
    Scenario  | Description
 :------------ | :-------------
-  S01\_ManageBaseItems        |        This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, deletion and mark of base items on the server.
-  S02\_ManageContactItems     |        This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, deletion and mark of contact items on the server.
-  S03\_ManageDistributionListsItems |  This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, deletion and mark of distribution list items on the server.
-  S04\_ManageEmailItems            |   This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, sending, deletion and mark of email items on the server.
-  S05\_ManageMeetingItems          |   This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, deletion and mark of calendar items on the server.
-  S06\_ManagePostItems             |   This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, deletion and mark of post items on the server.
-  S07\_ManageTaskItems             |   This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, deletion and mark of task items on the server.
-  S08\_ManageSevenKindsOfItems     |   This scenario is designed to test operations related to creation, retrieving, updating, movement, copy, and deletion of base, contact, distribution list, email, meeting, post, and task items on the server.
+  S01\_ManageBaseItems        |        Test the operations on creating, retrieving, updating, moving, copying, deleting and marking of base items on the server.
+  S02\_ManageContactItems     |        Test the operations on creating, retrieving, updating, moving, copying, deleting and marking of contact items on the server.
+  S03\_ManageDistributionListsItems |  Test the operations on creating, retrieving, updating, moving, copying, deleting and marking of distribution list items on the server.
+  S04\_ManageEmailItems            |   Test the operations on creating, retrieving, updating, moving, copying, sending, deleting and marking of email items on the server.
+  S05\_ManageMeetingItems          |   Test the operations on creating, retrieving, updating, moving, copying, deleting and marking of calendar items on the server.
+  S06\_ManagePostItems             |   Test the operations on creating, retrieving, updating, moving, copying, deleting and marking of post items on the server.
+  S07\_ManageTaskItems             |   Test the operations on creating, retrieving, updating, moving, copying, deleting and marking of task items on the server.
+  S08\_ManageSevenKindsOfItems     |   Test the operations on creating, retrieving, updating, moving, copying, and deleting items such as base, contact, distribution list, email, meeting, post, and task on the server.
 
 ### MS-OXWSFOLD
 
-Eight scenarios are designed to verify the server-side, testable
-requirements in MS-OXWSFOLD test suite. The following table lists the
+The eight scenarios are designed to verify the server-side, testable
+requirements in the MS-OXWSFOLD test suite. The following table lists the
 scenarios designed in this test suite.
 
 Scenario  | Description
 :------------ | :-------------
-  S01\_CreateDeleteFolder |  This scenario is designed to test operations related to creation and deletion of folders from a mailbox.
-  S02\_CopyFolder         |  This scenario is designed to test operations related to the copy of an identified folder.
-  S03\_MoveFolder         |  This scenario is designed to test operations related to moving folders from a specified parent folder and putting them in another parent folder.
-  S04\_GetFolder          |  This scenario is designed to test operations related to retrieving folders.
-  S05\_EmptyFolder        |  This scenario is designed to test operations related to emptying identified folders and deleting subfolders of the specified folder.
-  S06\_UpdateFolder       |  This scenario is designed to test operations related to the modification properties of an existing folder.
-  S07\_FolderPermission   |  This scenario is designed to test permission related cases.
-  S08\_OptionalElements   |  This scenario is designed to test all operations with/without all optional elements.
+  S01\_CreateDeleteFolder |  Test the operations on creating and deleting folders from a mailbox.
+  S02\_CopyFolder         |  Test the operations on copying an identified folder.
+  S03\_MoveFolder         |  Test the operations on moving folders from a specified parent folder and putting them in another parent folder.
+  S04\_GetFolder          |  Test the operations on retrieving folders.
+  S05\_EmptyFolder        |  Test the operations on emptying identified folders and deleting subfolders of the specified folder.
+  S06\_UpdateFolder       |  Test the operations on modifying properties of an existing folder.
+  S07\_FolderPermission   |  Test the permission-related cases.
+  S08\_OptionalElements   |  Test all operations with/without all optional elements.
 
 ### MS-OXWSMSG
 
-Seven scenarios are designed to verify the server-side, testable
-requirements in MS-OXWSMSG test suite. The following table lists the
+The seven scenarios are designed to verify the server-side, testable
+requirements in the MS-OXWSMSG test suite. The following table lists the
 scenarios designed in this test suite.
 
   Scenario  | Description
 :------------ | :-------------
-  S01\_CreateGetDeleteEmailMessage  |  This scenario is designed to test operations related to creation, retrieving, and deletion of an email message from the server.
-  S02\_UpdateEmailMessage         |    This scenario is designed to test operation related to updating an email message on the server.
-  S03\_CopyEmailMessage           |    This scenario is designed to test operation related to copy of an email message on the server.
-  S04\_MoveEmailMessage           |    This scenario is designed to test operation related to movement of an email message on the server.
-  S05\_SendEmailMessage           |    This scenario is designed to test operation related to sending of an email message on the server.
-  S06\_OperateMultipleEmailMessages |  This scenario is designed to test operations related to creation, retrieving, updating, copy, movement, sending and deletion of multiple email messages on the server at the same time.
-  S07\_OptionalElementsValidation   |  This scenario is designed to test operations related to creation, retrieving and deletion of an email message with/without optional elements.
+  S01\_CreateGetDeleteEmailMessage  |  Test the operations on creating, retrieving, and deleting an email message from the server.
+  S02\_UpdateEmailMessage         |    Test the operation on updating an email message on the server.
+  S03\_CopyEmailMessage           |    Test the operation copying an email message on the server.
+  S04\_MoveEmailMessage           |    Test the operation on moving an email message on the server.
+  S05\_SendEmailMessage           |    Test the operation on sending an email message on the server.
+  S06\_OperateMultipleEmailMessages |  Test the operations on creating, retrieving, updating, copy, moving, sending and deleting multiple email messages on the server at the same time.
+  S07\_OptionalElementsValidation   |  Test the operations on creating, retrieving and deleting an email message with/without optional elements.
 
 ### MS-OXWSMTGS
 
-Five scenarios are designed to verify the server-side, testable
-requirements in MS-OXWSMTGS test suite. The following table lists the
+The five scenarios are designed to verify the server-side, testable
+requirements in the MS-OXWSMTGS test suite. The following table lists the
 scenarios designed in this test suite.
 
   Scenario  | Description
 :------------ | :-------------
-  S01\_CreateGetDeleteCalendarRelatedItem |   This scenario is designed to test operations related to creation, retrieving and deletion of calendar related items on server.
-  S02\_UpdateCalendarRelatedItem          |   This scenario is designed to test operation related to updating of calendar related items on server.
-  S03\_CopyCalendarRelatedItem            |   This scenario is designed to test operation related to copy of calendar related items on server
-  S04\_MoveCalendarRelatedItem            |   This scenario is designed to test operation related to movement of calendar related items on server.
-  S05\_OperateMultipleCalendarRelatedItems |  This scenario is designed to test operations related to creation, retrieving, updating, copy, movement and deletion of multiple calendar related items on server.
+  S01\_CreateGetDeleteCalendarRelatedItem |   Test the operations on creating, retrieving and deleting calendar related items on the server.
+  S02\_UpdateCalendarRelatedItem          |   Test the operation on updating calendar-related items on the server.
+  S03\_CopyCalendarRelatedItem            |   Test the operation on copying calendar-related items on the server
+  S04\_MoveCalendarRelatedItem            |   Test the operation on moving calendar-related items on the server.
+  S05\_OperateMultipleCalendarRelatedItems |  Test the operations on creating, retrieving, updating, copying, moving and deleting multiple calendar-related items on the server.
 
 ### MS-OXWSSYNC
 
-Four scenarios are designed to verify the server-side, testable
-requirements in MS-OXWSSYNC test suite. The following table lists the
+The four scenarios are designed to verify the server-side, testable
+requirements in the MS-OXWSSYNC test suite. The following table lists the
 scenarios designed in this test suite.
 
   Scenario  | Description
 :------------ | :-------------
-  S01\_SyncFolderHierarchy            |               This scenario is designed to test SyncFolderHierarchy operation on the following folders: inbox, calendar, contacts, tasks and search.
-  S02\_SyncFolderItems                 |              The scenario is designed to test SyncFolderItems operation on the following items: MessageType item, MeetingRequestMessageType item, MeetingResponseMessageType item, MeetingCancellationMessageType item, TaskType item, ContactItemType item, PostItemType item, CalendarItemType item, DistributionListType item and ItemType item.
-  S03\_OperateSyncFolderHierarchyOptionalElements  |  This scenario is designed to test SyncFolderHierarchy operation succeeds to get the synchronization information of five types of folders: inbox, calendar, tasks, contacts, and search regardless of setting the optional elements.
-  S04\_OperateSyncFolderItemsOptionalElements       | This scenario is designed to test SyncFolderItems operation succeeds to get the synchronization information of multiple items regardless of setting the optional elements.
+  S01\_SyncFolderHierarchy            | Test the SyncFolderHierarchy operation on the following folders: inbox, calendar, contacts, tasks and search.
+  S02\_SyncFolderItems                | Test the SyncFolderItems operation on the following items: MessageType, MeetingRequestMessageType, MeetingResponseMessageType, MeetingCancellationMessageType, TaskType, ContactItemType, PostItemType, CalendarItemType, DistributionListType and ItemType.
+  S03\_OperateSyncFolderHierarchyOptionalElements  |  Test if the SyncFolderHierarchy operation succeeds in getting the synchronization information of five types of folders: inbox, calendar, tasks, contacts, and search regardless of setting the optional elements.
+  S04\_OperateSyncFolderItemsOptionalElements | Test if the SyncFolderItems operation succeeds in getting the synchronization information of multiple items regardless of setting the optional elements.
 
 ### MS-OXWSTASK
 
-Six scenarios are designed to verify the server-side, testable
-requirements in MS-OXWSTASK test suite. The following table lists the
-scenarios designed in this test suite
+The six scenarios are designed to verify the server-side, testable
+requirements in the MS-OXWSTASK test suite. The following table lists the
+scenarios designed in this test suite.
 
  Scenario  | Description
 :------------ | :-------------
-  S01\_CreateGetDeleteTaskItem        |           This scenario is designed to test operations related to creation, retrieving, and deletion of a task item from the server.
-  S02\_UpdateTaskItem                 |          This scenario is designed to test the operation related to updating a task item on the server.
-  S03\_CopyTaskItem                   |         This scenario is designed to test the operation related to copying a task item on the server.
-  S04\_MoveTaskItem                   |        This scenario is designed to test the operation related to moving a task item on the server.
-  S05\_OperateMultipleTaskItems       |       This scenario is designed to test operation related to operating multiple task items on the server at the same time.
-  S06\_OperateTaskItemWithOptionalElements  | This scenario is designed to test operations related to operating a task item with or without optional elements on the server.
+S01\_CreateGetDeleteTaskItem        | Test the operations on creating, retrieving, and deleting a task item from the server.
+S02\_UpdateTaskItem                 | Test the operation on updating a task item on the server.
+S03\_CopyTaskItem                   | Test the operation on copying a task item on the server.
+S04\_MoveTaskItem                   | Test the operation on moving a task item on the server.
+S05\_OperateMultipleTaskItems       | Test the operation on operating multiple task items on the server at the same time.
+S06\_OperateTaskItemWithOptionalElements  | Test the operations on operating a task item with or without optional elements on the server.
 
 
