@@ -51,7 +51,7 @@ Technical specification  | Protocol name
 Requirement specification <a name="requirement-specification"></a>
 ======================================================================================================================================================================================================================================================================
 
-A requirement specification contains a list of requirements that are
+A requirement specification contains a list of requirements that is
 extracted from statements in the technical specification. Each technical
 specification has one corresponding requirement specification named as
 MS-XXXX\_RequirementSpecification.xlsx, which can be found in the
