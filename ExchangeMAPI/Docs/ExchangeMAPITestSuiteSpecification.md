@@ -15,7 +15,7 @@ protocol. They are designed in a client-to-server relationship and were
 originally developed for the in-house testing of Microsoft Open
 Specifications. 
 
-Microsoft Open Specifications were written using the normative
+Microsoft Open Specifications are written using the normative
 language defined in
 [RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453), and from which
 statements are extracted as protocol requirements to be
