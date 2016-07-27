@@ -2,41 +2,35 @@ Exchange EWS Test Suites Specification
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 [Introduction](#introduction)
-
 [Requirement specification](#requirement-specification)
-
 [Design considerations](#design-considerations)
-
 [Package design](#package-design)
 
 Introduction
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
-
-The Exchange EWS Protocol Test Suites are implemented as synthetic
+Exchange EWS Protocol Test Suites are implemented as synthetic
 clients running against a server-side implementation of a given Exchange
 protocol. They are designed in a client-to-server relationship and were
-originally developed for the in-house testing of the Microsoft Open
-Specifications. Test suites have been used extensively in Plugfests and
-Interoperability Labs to test partner implementations.
+originally developed for the in-house testing of Microsoft Open
+Specifications. 
 
-This document describes how the Exchange EWS Protocol Test Suites are
-designed to verify that the server behaves in the way that is compliant
-with normative protocol requirements as described in the technical
+Microsoft Open Specifications were written using the normative
+language defined in [RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453), from which the
+statements are extracted as protocol requirements to be
+listed in the requirement specification in [Requirement specification](#requirement-specification). 
+
+This document describes how Exchange EWS Protocol Test Suites are
+designed to verify that the server behavior is in compliance
+with normative protocol requirements in the technical
 specification.
 
-The Microsoft Open Specifications were written using the normative
-language defined in
-[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453). The
-statements of them are extracted as protocol requirements which are
-listed in the requirement specification described in section 2. The test
-suites are developed to test the normative protocol requirements. In a
-single test suite, similar or related requirements are grouped into one
-test case, and the test cases about same command or operation are
+In a single test suite, similar or related requirements are grouped into one
+test case, and the test cases on the same command or operation are
 grouped into one scenario.
 
 The technical specifications listed in the following table are included
 in the Exchange EWS Protocol Test Suites package. The version of
-technical specification MS-OXWSITEMID is v20150330 and others are
+technical specification MS-OXWSITEMID is v20150330 and the others are
 v20121003.
 
 **Exchange EWS Protocol technical specifications**
@@ -62,24 +56,24 @@ extracted from statements in the technical specification. Each technical
 specification has one corresponding requirement specification named as
 MS-XXXX\_RequirementSpecification.xlsx, which can be found in the
 Docs\\MS-XXXX folder in the Exchange EWS Protocol Test Suites package
-together with the technical specification.
+with the technical specification.
 
 The requirements are categorized as normative or informative. If the
 statement of the requirement is required for interoperability, the
-requirement is normative. If the statement of the requirement is
-clarifying information or high-level introduction, and removal of it
+requirement is normative. If the statement of the requirement is for
+a high-level introduction or clarification, and removal of the content
 does not affect interoperability, the requirement is informative.
 
 Each requirement applies to a specific scope: server, client, or both.
 If the requirement describes a behavior performed by the responder, the
-scope of the requirement is server. If the requirement describes a
+scope of the requirement is the server. If the requirement describes a
 behavior performed by the initiator, the scope of the requirement is
-client. If the requirement describes a behavior performed by both
-initiator and responder, the scope of the requirement is both.
+the client. If the requirement describes a behavior performed by both the
+initiator and responder, the scope of the requirement is for both the client and server.
 
 The test suites cover normative requirements which describes a behavior
 performed by the responder. For a detailed requirements list and
-classification, see the MS-XXXX\_RequirementSpecification.xlsx.
+classification, see MS-XXXX\_RequirementSpecification.xlsx.
 
 Design considerations
 =====================
@@ -87,17 +81,17 @@ Design considerations
 Assumptions
 -----------
 
--   The Exchange EWS Protocol Test Suites are not designed to run
-    multi-protocol user scenarios, but rather provide a way to exercise
+-   Exchange EWS Protocol Test Suites are not designed to run
+    multi-protocol user scenarios, but rather to provide a way to exercise
     certain operations documented in a technical specification.
 
 -   The test suites are functional tests that verify the compatibility
-    of the system under test (SUT) with a protocol implementation.
+    of the system under test (SUT) with protocol implementation.
 
 -   The test suites do not cover every protocol requirement and in no
-    way certify an implementation, even if all tests pass.
+    way certify implementation, even if all tests pass.
 
--   The test suites verify the server-side testable requirements; they
+-   The test suites verify the server-side testable requirements. They
     do not verify the requirements related to client behaviors and
     server internal behaviors.
 
@@ -110,8 +104,8 @@ Dependencies
 Package design
 ==============
 
-The Exchange EWS Protocol Test Suites are implemented as synthetic
-clients running against a server-side implementation of a given Exchange
+Exchange EWS Protocol Test Suites are implemented as synthetic
+clients running against server-side implementation of a given Exchange
 protocol. The test suites verify the server-side and testable
 requirements.
 

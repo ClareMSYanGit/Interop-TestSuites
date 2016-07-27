@@ -16,8 +16,7 @@ Exchange MAPI Protocol Test Suites are implemented as synthetic
 clients running against a server-side implementation of a given Exchange
 protocol. They are designed in a client-to-server relationship and were
 originally developed for the in-house testing of Microsoft Open
-Specifications. Test suites have been used extensively in Plugfests and
-Interoperability Labs to test partner implementation.
+Specifications. 
 
 Microsoft Open Specifications were written using the normative
 language defined in
@@ -76,8 +75,8 @@ Each requirement applies to a specific scope: server, client, or both.
 If the requirement describes a behavior performed by the responder, the
 scope of the requirement is the server. If the requirement describes a
 behavior performed by the initiator, the scope of the requirement is
-the client. If the requirement describes a behavior performed by both
-initiator and responder, the scope of the requirement is for the client and server.
+the client. If the requirement describes a behavior performed by the 
+initiator and responder, the scope of the requirement is for both the client and server.
 
 The test suites cover normative requirements which describes a behavior
 performed by the responder. For a detailed requirements list and
@@ -99,7 +98,7 @@ Assumptions
 -   The test suites do not cover every protocol requirement and in no
     way certify implementation, even if all tests pass.
 
--   The test suites verify the server-side testable requirements; they
+-   The test suites verify the server-side testable requirements, but
     do not verify the requirements related to client behaviors and
     server internal behaviors.
 
