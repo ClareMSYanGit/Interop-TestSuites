@@ -284,13 +284,13 @@ scenarios designed in this test suite.
  
    Scenario  | Description
 :------------ | :-------------
-  S01\_ManageBaseItems        |        Test the operations on creating, retrieving, updating, moving, copying, deleting and marking of base items on the server.
-  S02\_ManageContactItems     |        Test the operations on creating, retrieving, updating, moving, copying, deleting and marking of contact items on the server.
-  S03\_ManageDistributionListsItems |  Test the operations on creating, retrieving, updating, moving, copying, deleting and marking of distribution list items on the server.
-  S04\_ManageEmailItems            |   Test the operations on creating, retrieving, updating, moving, copying, sending, deleting and marking of email items on the server.
-  S05\_ManageMeetingItems          |   Test the operations on creating, retrieving, updating, moving, copying, deleting and marking of calendar items on the server.
-  S06\_ManagePostItems             |   Test the operations on creating, retrieving, updating, moving, copying, deleting and marking of post items on the server.
-  S07\_ManageTaskItems             |   Test the operations on creating, retrieving, updating, moving, copying, deleting and marking of task items on the server.
+  S01\_ManageBaseItems        |        Test the operations on creating, retrieving, updating, moving, copying, deleting and marking base items on the server.
+  S02\_ManageContactItems     |        Test the operations on creating, retrieving, updating, moving, copying, deleting and marking contact items on the server.
+  S03\_ManageDistributionListsItems |  Test the operations on creating, retrieving, updating, moving, copying, deleting and marking distribution list items on the server.
+  S04\_ManageEmailItems            |   Test the operations on creating, retrieving, updating, moving, copying, sending, deleting and marking email items on the server.
+  S05\_ManageMeetingItems          |   Test the operations on creating, retrieving, updating, moving, copying, deleting and marking calendar items on the server.
+  S06\_ManagePostItems             |   Test the operations on creating, retrieving, updating, moving, copying, deleting and marking post items on the server.
+  S07\_ManageTaskItems             |   Test the operations on creating, retrieving, updating, moving, copying, deleting and marking task items on the server.
   S08\_ManageSevenKindsOfItems     |   Test the operations on creating, retrieving, updating, moving, copying, and deleting items such as base, contact, distribution list, email, meeting, post, and task on the server.
 
 ### MS-OXWSFOLD
