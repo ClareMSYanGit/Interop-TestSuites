@@ -19,7 +19,6 @@ Microsoft Open Specifications are written using the normative
 language defined in [RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453), and from which the
 statements are extracted as protocol requirements to be
 listed in the requirement specification. See [Requirement specification](#requirement-specification). 
-
 This document describes how Exchange EAS Protocol Test Suites are
 designed to verify that the server behavior is in compliance
 with normative protocol requirements in the technical
