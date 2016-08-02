@@ -226,7 +226,7 @@ cases, modifications to the protocol adapter will not be required for
 non-Microsoft SUT implementation. However, the SUT control adapter
 should be appropriately configured to connect to non-Microsoft SUT
 implementation. All test suites in the package contain a protocol
-adapter, six of them contain a SUT control adapter.
+adapter, six of which contain a SUT control adapter.
 
 ### Protocol Adapter
 

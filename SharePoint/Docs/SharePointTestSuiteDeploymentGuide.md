@@ -1103,7 +1103,7 @@ below to update configuration files and configure the test suite client.
 
 2.  By default, the test suites use PowerShell script in the SUT control adapter to configure the SUT. If you chose interactive mode for the SUT control adapter as described in section[Set the test suite to interactive mode](#set-the-test-suite-to-interactive-mode), skip this step.
 
-    a.  Set the execution policy to *8RemoteSigned**.
+    a.  Set the execution policy to **RemoteSigned**.
 
     b.  Add the SUT to the **TrustedHosts** to ensure that the Windows
         Remote Management (WinRM) client can process remote calls
