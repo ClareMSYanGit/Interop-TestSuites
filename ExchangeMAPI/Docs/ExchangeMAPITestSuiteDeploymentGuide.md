@@ -152,7 +152,7 @@ This section shows the folder structures in the **ExchangeMAPIProtocolTestSuites
 
 | Folder/file   | Description |
 | :--- | :--- |
-|  **EULA.rtf** | The End-User License Agreement.|
+|  **EULA.rtf** | End-User License Agreement.|
 |  **ReadMe.txt** | A doc that contains info on deployment and prerequisite software.|
 |  **Exchange MAPI Protocol Test Suites** | -- |
 |  **- Docs** | A folder that contains documents of all protocol test suites.|
@@ -160,7 +160,7 @@ This section shows the folder structures in the **ExchangeMAPIProtocolTestSuites
 |  **- ExchangeMAPITestSuiteSpecification.docx** |  A doc that contains test suites design, test suites architecture, adapter and test suites details.|
 |  **+ MS-XXXX** | The MS-XXXX help documentation|
 |  **- \[MS-XXXX\].pdf** |  The protocol technical specification.|
-|  **- MS-XXXX \_SUTControlAdapter.chm** | A help doc with info on the SUT control adapter class library such as declaration syntaxes and their description.|
+|  **- MS-XXXX \_SUTControlAdapter.chm** | A help doc with info on the SUT control adapter class library such as declaration syntax and their description.|
 |  **- MS-XXXX \_RequirementSpecification.xlsx** |  A spreadsheet that outlines all requirements that are associated with the technical specification.|
 |  **- Setup** |A folder that contains configuration scripts.|
 |  **- Test Suite Client** |  A folder that contains the configuration script to configure the test suite client.|
@@ -175,13 +175,13 @@ This section shows the folder structures in the **ExchangeMAPIProtocolTestSuites
 |  **- CommonConfiguration.ps1** | A library that contains common functions for configuring the Microsoft server SUT and test suite client.|
 |  **- ExchangeCommonConfiguration.ps1** | A library that contains common functions for configuring Exchange Server.|
 |  **- ExchangeTestSuite.config** | The configuration file to store all configuration resources.|
-|  **- Source** | A folder with Microsoft Visual Studio solutions that contain source code for the test suites.|
-|  **- Common** | A folder with Microsoft Visual Studio projects that contains source code that are common to the test suites.|
+|  **- Source** | A folder with Microsoft Visual Studio solutions that contain the source code for the test suites.|
+|  **- Common** | A folder with Microsoft Visual Studio projects that contains the common source code for the test suites.|
 |  **- Common** | A folder that contains common methods or properties used by the test suites.|
 |  **- ExchangeCommonConfiguration.deployment.ptfconfig** |  The common configuration file.|
 |  **+ OXCRPCStub** | The RPC transport with unmanaged code.|
 |  **- ExchangeMAPIProtocolTestSuites.sln** |  A Microsoft Visual Studio solution that contains projects of the test suites source code.|
-|  **- ExchangeMAPIProtocolTestSuites.runsettings** | A configuration file used for unit test.|
+|  **- ExchangeMAPIProtocolTestSuites.runsettings** | A configuration file used for the unit test.|
 |  **- ExchangeMAPIProtocolTestSuites.testsettings**| A configuration file used for running test cases.|
 |  **- MS-XXXX** | A folder for the MS-XXXX test suite source code.|
 |  **- MS-XXXX.sln** | A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.|
@@ -250,7 +250,7 @@ ExchangeTestSuite.config is required.
 || Redirect Server\* Public Folder Mailbox  | PublicFolderMailbox\_&lt;Server2Name&gt;|--|
 | **MS-OXCFOLD**  | Mailbox | MSOXCFOLD\_TestUser01 |The mailbox name should be below 20 characters.|
 || Mailbox |MSOXCFOLD\_TestUser02  |--|
-||Public Folder       |   MSOXCFOLD\_PublicFolderMailEnabled|         All public folders are created directly in the root directory.|
+||Public Folder       |   MSOXCFOLD\_PublicFolderMailEnabled | All public folders are created directly in the root directory.|
 ||Redirect Server Public Folder  |  MSOXCFOLD\_PublicFolderGhosted  |--|           
   **MS-OXCFXICS**  | Public Folder |  MSOXCFXICS\_GhostedPublicFolder |--|           
 || Public Folder| MSOXCFXICS\_PublicFolder01 |--|          
