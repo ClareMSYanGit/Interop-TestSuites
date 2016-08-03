@@ -248,7 +248,7 @@ To configure SUT using the setup configuration script, navigate to the
 **SUT** folder, right-click **ExchangeSUTConfiguration.cmd** and select
 **Run as administrator**.
 
-### Configuring the SUT manually <a name="configuring-the-sut-manually"></a>
+### Configuring the SUT manually <a name="configuring-the-sut-manually" ></a>
 
 If the SUT is non-Microsoft implementation of Exchange Server, you
 will not be able to run the setup configuration script. The following
