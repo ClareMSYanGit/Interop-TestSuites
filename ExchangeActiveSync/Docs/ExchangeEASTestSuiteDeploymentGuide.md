@@ -224,7 +224,7 @@ manually, as described in [Configuring the SUT manually](#configuring-the-sut-ma
 **Note** The scripts should be run by a user who has domain
 administrator rights with a mailbox on Exchange Server.
 
-### SUT resource requirements <a id="sut-resource-requirements"></a>
+### SUT resource requirements <a name="sut-resource-requirements"></a>
 
 Each test suite in the Exchange Server EAS Protocol Test
 Suites package may require a varying level of resources on Exchange
@@ -329,7 +329,7 @@ to run the test suites.
     and MSASTASK\_User01
 
 2.  Create the mailbox user MSASCMD\_UserY specified in the SUT resource
-    requirements table in section [SUT resource requirements](#sut-resource-requirements).
+    requirements table in [SUT resource requirements](#sut-resource-requirements).
 
 3.  Add a delegate of MSASCMD\_User07 to MSASCMD\_User08, and also add a
     delegate of MSASEMAIL\_User04 to MSASEMAIL\_User05. The delegated
