@@ -240,7 +240,7 @@ Test suite | Resource type |  Resource name |  Notes
               |  Mailbox  |  MSOXWSSYNC\_User02 |  Mailbox type user
 **MS-OXWSTASK** |  Mailbox|  MSOXWSTASK\_User01 |  Mailbox type user
 
-### Configuring the SUT using the setup the configuration script <a name="configuring-the-sut-using-the-setup-configuration-script"></a>
+### Configuring the SUT using the setup configuration script <a name="configuring-the-sut-using-the-setup-configuration-script"></a>
 
 The setup configuration script is only used for configuring the SUT on
 the Windows platform.
@@ -249,7 +249,7 @@ To configure SUT using the setup configuration script, navigate to the
 **SUT** folder, right-click **ExchangeSUTConfiguration.cmd** and select
 **Run as administrator**.
 
-### Configuring the SUT manually <a name="configuring-sut-manually"></a>
+### Configuring the SUT manually <a name="configuring-the-sut-manually"></a>
 
 If the SUT is non-Microsoft implementation of Exchange Server, you
 will not be able to run the setup configuration script. The following
