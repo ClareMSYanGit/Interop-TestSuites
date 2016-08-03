@@ -218,7 +218,7 @@ Configuring the SUT
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 You can configure the SUT using automated scripts, as described in
-[Configuring the SUT using the setup configuration script](#configuring-the -sut-using-the-setup-configuration-script); or configure the SUT
+[Configuring the SUT using the setup configuration script](#configuring-the-sut-using-the-setup-configuration-script); or configure the SUT
 manually, as described in [Configuring the SUT manually](#configuring-the-sut-manually).
 
 **Note** The scripts should be run by a user who has domain
