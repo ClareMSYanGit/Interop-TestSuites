@@ -301,7 +301,7 @@ configuration script is required.
 |**MS-ASTASK**|User Mailbox |MSASTASK\_User01 |--|
 |**MS-ASWBXML** |--|--|--|
 
-### Configuring the SUT using the setup configuration script <a id="configuring-the-sut-using-the-setup-configuration-script" ></a>
+### Configuring the SUT using the setup configuration script <a name="configuring-the-sut-using-the-setup-configuration-script" ></a>
 
 The setup configuration script is only used for configuring Exchange
 Server on the Windows platform.
