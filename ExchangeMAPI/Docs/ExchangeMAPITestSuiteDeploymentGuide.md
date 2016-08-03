@@ -217,9 +217,9 @@ Configuring the SUT
 -----------------------------------------------------------------------------------------------------------------
 
 You can configure the SUT using automated scripts, as described in
-sections [Configuring SUT1 using the setup configuration script](#configuring-sut1-using-the-setup-configuration-script) and
+[Configuring SUT1 using the setup configuration script](#configuring-sut1-using-the-setup-configuration-script) and
 [Configuring SUT2 using the setup configuration script](#configuring-sut2-using-the-setup-configuration-script); or configure the SUT manually, as
-described in sections [Configuring SUT1 manually](#configuring-sut1-manually) and
+described in [Configuring SUT1 manually](#configuring-sut1-manually) and
 [Configuring SUT2 manually](#configuring-sut2-manually). 
 
 **Note**  The scripts should be run by a user who has domain
@@ -232,7 +232,7 @@ package may require a varying level of resources on Exchange Server. The
 following table outlines these resources for each test suite. The SUT
 configuration scripts will automatically create all the required
 resources for the Microsoft server implementation. To configure the SUT
-manually, see sections [Configuring SUT1 manually](#configuring-sut1-manually) and
+manually, see [Configuring SUT1 manually](#configuring-sut1-manually) and
 [Configuring SUT2 manually](#configuring-sut2-manually).
 
 The client configuration script follows the naming convention shown in
@@ -383,7 +383,7 @@ steps explain what needs to be created or configured on the SUT to run the test 
 
 7.  By default, the test suites use Exchange Web Service and Windows
     PowerShell script in the SUT control adapter. If you chose
-    interactive mode for the SUT control adapter as described in section
+    interactive mode for the SUT control adapter as described in
     [Set the test suite to interactive mode](#set-the-test-suite-to-interactive-mode), skip the
     following steps.
 

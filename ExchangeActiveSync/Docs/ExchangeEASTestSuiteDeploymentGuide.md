@@ -218,8 +218,8 @@ Configuring the SUT
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 You can configure the SUT using automated scripts, as described in
-section [Configuring SUT using the setup configuration script](#configuring-sut-using-the-setup-configuration-script); or configure the SUT
-manually, as described in section [Configuring SUT manually](#configuring-sut-manually).
+[Configuring SUT using the setup configuration script](#configuring-sut-using-the-setup-configuration-script); or configure the SUT
+manually, as described in [Configuring SUT manually](#configuring-sut-manually).
 
 **Note** The scripts should be run by a user who has domain
 administrator rights with a mailbox on Exchange Server.
@@ -231,7 +231,7 @@ Suites package may require a varying level of resources on Exchange
 Server. The following table outlines these resources for each test
 suite. The SUT configuration scripts will automatically create all the
 required resources for the Microsoft server implementation. To configure
-the SUT manually, see section [Configuring SUT manually](#configuring-sut-manually).
+the SUT manually, see [Configuring SUT manually](#configuring-sut-manually).
 
 The client configuration script follows the naming convention shown in
 the following table. If a change to the resource name is required, the

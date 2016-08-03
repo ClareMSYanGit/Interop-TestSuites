@@ -192,8 +192,7 @@ For the configuration script, the exit code definition is as follows:
 Configuring the SUT
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-You can configure the SUT using automated scripts, as described in
-sections [Configuring SUT using the setup configuration script](#configuring-sut-using-the-setup-configuration-script); or configure the SUT
+You can configure the SUT using automated scripts, as described in [Configuring SUT using the setup configuration script](#configuring-sut-using-the-setup-configuration-script); or configure the SUT
 manually, as described in [Configuring SUT manually](#configuring-sut-manually).
 
 **Note**   The scripts should be run by a user who has domain

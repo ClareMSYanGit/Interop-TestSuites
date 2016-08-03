@@ -257,7 +257,7 @@ Configuring the SUT
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 You can configure the SUT using automated scripts, as described in [Configuring SUT1 using the setup configuration script](#configuring-sut1-using-the-setup-configuration-script) and [Configuring SUT2 using the setup configuration script](#configuring-sut2-using-the-setup-configuration-script); or
-configure the SUT manually, as described in sections
+configure the SUT manually, as described in 
 [Configuring SUT1 manually](#configuring-sut1-manually) and
 [Configuring SUT2 manually](#configuring-sut2-manually).
 
@@ -271,7 +271,7 @@ Suites package may require varying level of resources on the SUT. The
 following table outlines these resources for each test suite. The SUT
 configuration scripts will automatically create all the required
 resources for the Microsoft server implementation. To configure the SUT
-manually, refer to sections [Configuring SUT1 manually](#configuring-sut1-manually) and
+manually, refer to [Configuring SUT1 manually](#configuring-sut1-manually) and
 [Configuring SUT2 manually](#configuring-sut2-manually).
 
 The client configuration script follows the naming convention shown in
@@ -617,7 +617,7 @@ The MS-WWSP test suite supports only the following versions of SharePoint:
     MSWDVMODUU\_DocumentLibrary1, and upload an arbitrary text file
     named MSWDVMODUU \_TestData3.txt into this folder.
 
-5.  Upload a fake virus file mentioned in section [System under test](#system-under-test)
+5.  Upload a fake virus file mentioned in [System under test](#system-under-test)
     into MSWDVMODUU\_DocumentLibrary2.
 
 #### MS-AUTHWS 
