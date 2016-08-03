@@ -141,7 +141,7 @@ for security reasons, follow these steps to unblock PowerShell scripts.
   1.  Click **Unblock** and then click **OK**.          
       ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeMAPI/Docs/Doc-Images/ExMAPI_Deploy2.png)                                                  
                                                         
-  --------------------------------------------------------
+  
 
 Using the test suite directories
 ======================
