@@ -178,7 +178,7 @@ steps to successfully configure the test suites.
   ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/SharePoint/Docs/Doc-Images/SP_Deploy2.png)                                         
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-Usin the test suite directories
+Using the test suite directories
 ========================================================================================================================================================================================================
 
 This section shows the folder structures in the **SharePointServerProtocolTestSuites.zip** file.
@@ -1118,7 +1118,7 @@ to run. The test suite can run only on the test suite client and can be
 initiated in one of the following two ways: Visual Studio or batch
 scripts.
 
-If you need to run the test suite MS-WDVMODUU, copy the fake virus file that mentioned in section [System under test](#system-under-test) to the folder **\\Source\\MS-WDVMODUU\\TestSuite\\** **Resources**.
+If you need to run the test suite MS-WDVMODUU, copy the fake virus file that mentioned in [System under test](#system-under-test) to the folder **\\Source\\MS-WDVMODUU\\TestSuite\\** **Resources**.
 
 Microsoft Visual Studio
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
