@@ -111,8 +111,8 @@ Deploying the test suites
 
 This section describes the deployment of SharePoint File Sync and
 WOPI Protocol Test Suites on the test suite client and the SUT. The
-SharePoint Server Protocol test suites are packaged in a .zip file, available at [**Microsoft
-Connect**](http://go.microsoft.com/fwlink/?LinkId=516921). Once you've
+SharePoint Server Protocol test suites are packaged in a .zip file, available at [Microsoft
+Connect](http://go.microsoft.com/fwlink/?LinkId=516921). Once you've
 downloaded the test suites, perform the following steps to successfully configure the test suites:
 
 1.  Extract the **SharePoint File Sync and WOPI Protocol Test Suites** folder from the zip file to a
@@ -122,8 +122,7 @@ downloaded the test suites, perform the following steps to successfully configur
     Sync and WOPI Protocol Test Suites \\Setup\\** to a directory of
     your choice on the SUT. The SUT configuration scripts are the only
     requirement for the SUT. The scripts facilitate the SUT
-    configuration process and are in the
-    **SharePointFileSyncandWOPIProtocolTestSuites.zip** file.
+    configuration process and are in the **SharePointFileSyncandWOPIProtocolTestSuites.zip** file.
 
 	**Note**   
 
