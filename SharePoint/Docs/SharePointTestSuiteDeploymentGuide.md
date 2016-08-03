@@ -83,12 +83,12 @@ virus scanner. When you download, install, or run the test suite, your
 security software may intercept your action or even remove the file
 directly. If the file is removed or quarantined by the security
 software, some test cases of the test suite may fail. To ensure that the
-test suites run successfully, you should suspend the security software
+test suites run successfully, suspend the security software
 in your environment. Microsoft guarantees the content of the package is
 clean and virus-free.
 
 1.  Install Microsoft Forefront Protection 2010 for SharePoint in the
-    following versions of SharePoint
+    following versions of SharePoint:
 
 	-   Windows SharePoint Services 3.0 Service Pack 3 (SP3),
 	-   Microsoft SharePoint Foundation 2010 Service Pack 2 (SP2)
@@ -149,7 +149,7 @@ Deploying the test suites
 
 This section describes the deployment of SharePoint Server Protocol
 Test Suites on the test suite client and the SUT. SharePoint Server
-Protocol Test Suites are packed in a .zip file, which is available on
+Protocol Test Suites are packed in a .zip file, which is available at
 [**Microsoft Connect**](http://go.microsoft.com/fwlink/?LinkId=516921).
 Once you've downloaded the test suites, you need to perform the following
 steps to successfully configure the test suites.
@@ -195,11 +195,11 @@ Folders/file | Description
 **- MS-XXXX**                                 | The MS-XXXX help documentation.
 **- \[MS-XXXX\].pdf**                         | The protocol technical specification.
 **- MS-XXXX\_TestSuiteSpecification.docx**    | A doc on the test suite-specific configuration details, architecture, and test case details.
-**- MS-XXXX\_SUTControlAdapter.chm**          | A help doc with info on the SUT control adapter class library such as declaration syntaxes and their description.
+**- MS-XXXX\_SUTControlAdapter.chm**          | A help doc with info on the SUT control adapter class library such as declaration syntax and their description.
 **- MS-XXXX\_RequirementSpecification.xlsx**  | A spreadsheet that outlines all requirements that are associated with the technical specification.
 **- Setup**                                   | A folder that contains configuration scripts.
 **- Test Suite Client**                       | A folder that contains the configuration script to configure the test suite client.
-**- SharePointClientConfiguration.cmd**       | A command file that runs the                                                    SharePointClientConfiguration.ps1 to configure the properties for the protocol test suites.
+**- SharePointClientConfiguration.cmd**       | A command file that runs SharePointClientConfiguration.ps1 to configure the properties for the protocol test suites.
 **- SharePointClientConfiguration.ps1**     | A configuration script that will be invoked by SharePointClientConfiguration.cmd
 **- SUT**                                   | A folder that contains the configuration script to configure the SUT.
 **- SharePointSUTConfiguration.cmd**        | A command file that runs the SharePointSUTConfiguration.ps1 to create resources and configure settings on the first SUT.
@@ -221,7 +221,7 @@ Folders/file | Description
 **-SharePointCommonConfiguration.ps1**      |  A library that contains common functions for configuring the SUT.
 **-SharePointTestSuite.config**             |  The configuration file to store all configuration resources.
 **- Source**                                |  A folder with Microsoft Visual Studio solution that contains the source code for the test suites.
-**- Common**                                |  A folder with Visual Studio projects that contains the source code that are common to the test suites.
+**- Common**                                |  A folder with Visual Studio projects that contains the common source code for the test suites.
 **- SharePointCommonConfiguration. deployment.ptfconfig** | The common configuration file.
 **-SharePointServerProtocolTestSuites.sln**               |    A Visual Studio solution that contains projects of the protocol test suites source code.
 **- MS-XXXX**                                             |    A folder with the MS-XXXX test suite source code.
@@ -256,8 +256,7 @@ For configuration script, the exit code definition is as follows:
 Configuring the SUT
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-You can configure the SUT using automated scripts, as described in
-sections [Configuring SUT1 using the setup configuration script](#configuring-sut1-using-the-setup-configuration-script) and [Configuring SUT2 using the setup configuration script](#configuring-sut2-using-the-setup-configuration-script); or
+You can configure the SUT using automated scripts, as described in [Configuring SUT1 using the setup configuration script](#configuring-sut1-using-the-setup-configuration-script) and [Configuring SUT2 using the setup configuration script](#configuring-sut2-using-the-setup-configuration-script); or
 configure the SUT manually, as described in sections
 [Configuring SUT1 manually](#configuring-sut1-manually) and
 [Configuring SUT2 manually](#configuring-sut2-manually).
@@ -424,7 +423,7 @@ to run the test suites.
     should be performed by the SUT administrator.
 
 -   All site templates mentioned in the subsequent sections apply to
-    Microsoft implementations only.
+    Microsoft implementation only.
 
 -   Any site collection created on the SharePoint site should follow the *Team
     Site* template.
@@ -458,11 +457,11 @@ to run the test suites.
 
 #### MS-DWSS 
 
-1.  Create the following new users as specified in section [SUT resource requirements](#sut-resource-requirements)
+1.  Create the following new users as specified in [SUT resource requirements](#sut-resource-requirements)
     and set their password to never expire on the domain controller.
 
     **MSDWSS\_NoneRole**, **MSDWSS\_ReaderRole**, and
-    **MSDWSS\_GroupOwner***. *
+    **MSDWSS\_GroupOwner**. 
 
 2.  Create a site collection named **MSDWSS\_SiteCollection**.
 
@@ -866,7 +865,7 @@ configure the steps from 1 to 7.
 10. Create a column named **MSCOPYS\_TestReadOnlyField** in
     **MSCOPYS\_DestinationDocumentLibrary** with Text type, set the
     default value to *MSCOPYS\_Source* and the read-only properties to
-    true*.
+    true.
 
 11. Create a column named **MSCOPYS\_WorkFlowEventField** in
     MSCOPYS\_DestinationDocumentLibrary with WorkFlowEvent type.
@@ -1004,7 +1003,7 @@ to function in a manual way, enabling you to perform setup, teardown,
 and other tasks in a step-by-step approach. To enable interactive mode
 for a specific test suite, do the following:
 
-1.  Browse to the **MS-XXXX\_TestSuite.ptfconfig** configuration file in the **\\Source\\MS-XXXX\\TestSuite\\**.
+1.  Browse to the **MS-XXXX\_TestSuite.ptfconfig** configuration file in **\\Source\\MS-XXXX\\TestSuite\\**.
 
 1.  Set the type value of the Adapter property to **Interactive** for the
     SUT control adapter\*\*.
@@ -1062,7 +1061,7 @@ To change the TSAP packet broadcast, do the following:
 ###  SHOULD/MAY configuration files
 
 The test suite has six SHOULD/MAY configuration files that are specific
-to all supported versions of the SUT. Each SHOULD/MAY requirement have
+to all supported versions of the SUT. Each SHOULD/MAY requirement has
 an associated parameter with a value of either “true” or “false”
 corresponding to the server version that is supported. The value of “true” means
 that the requirement must be validated, whereas “false” means that the
@@ -1101,7 +1100,7 @@ below to update configuration files and configure the test suite client.
 
 1.  Update the property value in the common configuration file and the test suite-specific configuration files according to the comment of the property.
 
-2.  By default, the test suites use PowerShell script in the SUT control adapter to configure the SUT. If you chose interactive mode for the SUT control adapter as described in section[Set the test suite to interactive mode](#set-the-test-suite-to-interactive-mode), skip this step.
+2.  By default, the test suites use PowerShell script in the SUT control adapter to configure the SUT. If you chose interactive mode for the SUT control adapter as described in [Set the test suite to interactive mode](#set-the-test-suite-to-interactive-mode), skip this step.
 
     a.  Set the execution policy to **RemoteSigned**.
 
@@ -1183,7 +1182,7 @@ A Visual Studio solution file
 Batch scripts
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 SharePoint Server Protocol Test Suites are installed with a collection
-of scripts that enable a user to run individual test cases
+of scripts that enables a user to run individual test cases
 (RunMSXXXX\_SYY\_TCZZ \_TestCaseDescription.cmd) or all test cases in a
 test suite (RunAllMSXXXXTestCases.cmd), or all test cases of SharePoint
 Server Protocol test suites at once (RunAllSharePointTestCases.cmd).
@@ -1269,10 +1268,10 @@ Appendix
 [Open Specifications](http://go.microsoft.com/fwlink/?LinkId=179743)    |   The Open Specifications documentation on MSDN.
 [SharePoint Products and Technologies Protocols](http://go.microsoft.com/fwlink/?LinkId=202122)   |     The SharePoint Open Specifications documentation on MSDN.
 [RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453)          |   The normative language reference.
-[Windows SharePoint Services 3.0 deployment](http://go.microsoft.com/fwlink/?LinkId=517502)    |  Windows SharePoint Services 3.0 deployment on TechNet
-[Microsoft SharePoint Foundation 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517503) |Microsoft SharePoint Foundation 2010 deployment on TechNet
-[Microsoft SharePoint Foundation 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504) |  Microsoft SharePoint Foundation 2013 installation and configuration on TechNet
-[Microsoft Office SharePoint Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkId=517506) | Microsoft Office SharePoint Server 2007 deployment on TechNet
-[Microsoft SharePoint Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517505)  | Microsoft SharePoint Server 2010 deployment on TechNet
-[Microsoft SharePoint Server 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504) | Microsoft SharePoint Server 2013 installation and configuration on TechNet
-[Microsoft Forefront Protection 2010 for SharePoint deployment](http://go.microsoft.com/fwlink/?LinkId=517510) | Microsoft Forefront Protection 2010 for SharePoint deployment on TechNet
+[Windows SharePoint Services 3.0 deployment](http://go.microsoft.com/fwlink/?LinkId=517502)    |  Windows SharePoint Services 3.0 deployment on TechNet.
+[Microsoft SharePoint Foundation 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517503) |Microsoft SharePoint Foundation 2010 deployment on TechNet.
+[Microsoft SharePoint Foundation 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504) |  Microsoft SharePoint Foundation 2013 installation and configuration on TechNet.
+[Microsoft Office SharePoint Server 2007 deployment](http://go.microsoft.com/fwlink/?LinkId=517506) | Microsoft Office SharePoint Server 2007 deployment on TechNet.
+[Microsoft SharePoint Server 2010 deployment](http://go.microsoft.com/fwlink/?LinkId=517505)  | Microsoft SharePoint Server 2010 deployment on TechNet.
+[Microsoft SharePoint Server 2013 installation and configuration](http://go.microsoft.com/fwlink/?LinkId=517504) | Microsoft SharePoint Server 2013 installation and configuration on TechNet.
+[Microsoft Forefront Protection 2010 for SharePoint deployment](http://go.microsoft.com/fwlink/?LinkId=517510) | Microsoft Forefront Protection 2010 for SharePoint deployment on TechNet.

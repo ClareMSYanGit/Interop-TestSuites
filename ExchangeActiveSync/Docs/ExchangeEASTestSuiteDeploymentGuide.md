@@ -115,7 +115,7 @@ Deploying the test suites
 This section describes the deployment of Exchange Server EAS Protocol
 Test Suites on the test suite client and the SUT. Exchange Server
 EAS Protocol Test Suites are packaged in a .zip file which is available
-on [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=516921).
+at [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=516921).
 Once you've downloaded the test suites, perform the following
 steps to successfully configure the test suites.
 
@@ -125,8 +125,8 @@ steps to successfully configure the test suites.
 2.  Copy the **SUT** folder under **…\\Exchange Server EAS Protocol Test
     Suites\\Setup** to a directory of your choice on the SUT. The SUT
     configuration scripts are the only requirement for the SUT. The
-    scripts facilitate the SUT configuration process and are contained
-    within the **ExchangeServerEASProtocolTestSuites.zip** file.
+    scripts facilitate the SUT configuration process and are
+    in the **ExchangeServerEASProtocolTestSuites.zip** file.
 
 **Note** If your computer blocks scripts that are downloaded from the Internet
 for security reasons, follow these steps to unblock
@@ -172,7 +172,7 @@ This section shows the folder structures in the **ExchangeServerEASProtocolTestS
 |**- ExchangeEASTestSuiteDeploymentGuide.docx** |A doc with info on the protocol test suite deployment. |
 |**+ MS-XXXX** | A MS-XXXX help documentation | 
 | **- \[MS-XXXX\].pdf**   | The protocol technical specification.| 
-| **- MS-XXXX \_SUTControlAdapter.chm**  | A help doc with info on the SUT control adapter class library such as declaration syntaxes and their description.| 
+| **- MS-XXXX \_SUTControlAdapter.chm**  | A help doc with info on the SUT control adapter class library such as declaration syntax and their description.| 
 |**- MS-XXXX \_RequirementSpecification.xlsx**|A spreadsheet that outlines all requirements that are associated with the technical specification.| 
 |**- Setup**|A folder that contains configuration scripts.| 
 | **- Test Suite Client**| A folder that contains the configuration script to configure the test suite client.| 
@@ -184,20 +184,20 @@ This section shows the folder structures in the **ExchangeServerEASProtocolTestS
 |**- Source** | A folder with Microsoft Visual Studio solutions that contain source code for the test suites.| 
 |**- Common** | A folder with Microsoft Visual Studio projects that contains source code that are common to the test suites.| 
 |**- ExchangeCommonConfiguration.deployment.ptfconfig** | A common configuration file.| 
-|**- ExchangeServerEASProtocolTestSuites.runsettings** |A configuration file used for unit test.| 
+|**- ExchangeServerEASProtocolTestSuites.runsettings**  |A configuration file used for unit test.| 
 |**- ExchangeServerEASProtocolTestSuites.sln**| A Visual Studio solution that contains projects of the test suites source code.| 
-|**- ExchangeServerEASProtocolTestSuites.testsettings**  |  A configuration file used for running test cases.| 
-|**- MS-XXXX**                                          |  A folder for the MS-XXXX test suite source code.| 
+|**- ExchangeServerEASProtocolTestSuites.testsettings** |  A configuration file used for running test cases.| 
+|**- MS-XXXX**    |  A folder for the MS-XXXX test suite source code.| 
 |**- MS-XXXX.sln**|  A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.| 
 |**- MS-XXXX.runsettings** | A configuration file used for MS-XXXX unit test.| 
-|**- MS-XXXX.testsettings**|  A configuration file used for MS-XXXX running test cases.| 
+|**- MS-XXXX.testsettings**| A configuration file used for MS-XXXX running test cases.| 
 |**+ Adapter**|The Adapter test suite code.| 
 |**+ TestSuite**|The test suite code.| 
 |**- Scripts** | Exchange Server EAS Test Suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.| 
-|**- RunAllExchangeEASTestCases.cmd**|                      A script that can be used to run all test cases in the whole package.| 
-|**- MS-XXXX**|                                             A folder containing scripts that belong to the MS-XXXX test suite.| 
-|**- RunAllMSXXXXTestCases.cmd**|                           A script that can be used to run all test cases of MS-XXXX.| 
-|**- RunMSXXXX\_SXX\_TCXX\_Name.cmd**|                      A script that can be used to run a single test case of MS-XXXX.| 
+|**- RunAllExchangeEASTestCases.cmd**| A script that can be used to run all test cases in the whole package.| 
+|**- MS-XXXX**| A folder containing scripts that belong to the MS-XXXX test suite.| 
+|**- RunAllMSXXXXTestCases.cmd**|  A script that can be used to run all test cases of MS-XXXX.| 
+|**- RunMSXXXX\_SXX\_TCXX\_Name.cmd**| A script that can be used to run a single test case of MS-XXXX.| 
 
 Configuring the test suites
 ==============================================================================================================================
@@ -226,7 +226,7 @@ administrator rights with a mailbox on Exchange Server.
 
 ### SUT resource requirements <a id="sut-resource-requirements"></a>
 
-Each test suite contained within the Exchange Server EAS Protocol Test
+Each test suite in the Exchange Server EAS Protocol Test
 Suites package may require a varying level of resources on Exchange
 Server. The following table outlines these resources for each test
 suite. The SUT configuration scripts will automatically create all the
