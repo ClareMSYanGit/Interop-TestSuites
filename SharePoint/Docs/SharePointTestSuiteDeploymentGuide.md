@@ -150,7 +150,7 @@ Deploying the test suites
 This section describes the deployment of SharePoint Server Protocol
 Test Suites on the test suite client and the SUT. SharePoint Server
 Protocol Test Suites are packed in a .zip file, available at
-[**Microsoft Connect**](http://go.microsoft.com/fwlink/?LinkId=516921).
+[Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=516921).
 Once you've downloaded the test suites, you need to perform the following
 steps to successfully configure the test suites.
 
