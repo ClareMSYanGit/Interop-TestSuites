@@ -63,7 +63,7 @@ Component  | Test suite client minimum requirement
 Software requirements
 ------------------------------------------------------------------------------------------------------------------------------
 
-###   System under test <a name="system-under-test"></a>
+###   System under test <a name="system-under-test" ></a>
 
 This section is only relevant when running the test suites against the
 following versions of SharePoint Server. Some test suites (MS-COPYS)
