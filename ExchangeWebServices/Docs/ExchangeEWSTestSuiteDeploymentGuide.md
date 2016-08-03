@@ -193,7 +193,7 @@ Configuring the SUT
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 You can configure the SUT using automated scripts, as described in [Configuring SUT using the setup configuration script](#configuring-sut-using-the-setup-configuration-script); or configure the SUT
-manually, as described in [Configuring SUT manually](#configuring-sut-manually).
+manually, as described in [Configuring the SUT manually](#configuring-the-sut-manually).
 
 **Note**   The scripts should be run by a user who has domain
 administrator rights with a mailbox on the SUT.
@@ -205,7 +205,7 @@ Suites package may require varying levels of resources on the SUT. The
 following table outlines these resources for each test suite. The SUT
 configuration scripts will automatically create all the required
 resources for the Microsoft server implementation. To configure the SUT
-manually, see [Configuring SUT manually](#configuring-sut-manually).
+manually, see [Configuring the SUT manually](#configuring-the-sut-manually).
 
 The client configuration script follows the naming convention shown in
 the following table. If a change to the resource name is required, the
@@ -240,7 +240,7 @@ Test suite | Resource type |  Resource name |  Notes
               |  Mailbox  |  MSOXWSSYNC\_User02 |  Mailbox type user
 **MS-OXWSTASK** |  Mailbox|  MSOXWSTASK\_User01 |  Mailbox type user
 
-### Configuring the SUT using the setup the configuration script <a name="configuring-sut-using-the-setup-configuration-script"></a>
+### Configuring the SUT using the setup the configuration script <a name="configuring-the-sut-using-the-setup-configuration-script"></a>
 
 The setup configuration script is only used for configuring the SUT on
 the Windows platform.
