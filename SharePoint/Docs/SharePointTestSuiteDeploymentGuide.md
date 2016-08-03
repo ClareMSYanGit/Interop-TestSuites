@@ -63,7 +63,7 @@ Component  | Test suite client minimum requirement
 Software requirements
 ------------------------------------------------------------------------------------------------------------------------------
 
-###   System under test
+###   System under test <a name="system-under-test"></a>
 
 This section is only relevant when running the test suites against the
 following versions of SharePoint Server. Some test suites (MS-COPYS)
@@ -1118,7 +1118,7 @@ to run. The test suite can run only on the test suite client and can be
 initiated in one of the following two ways: Visual Studio or batch
 scripts.
 
-If you need to run the test suite MS-WDVMODUU, copy the fake virus file that mentioned in [System under test](#system-under-test) to the folder **\\Source\\MS-WDVMODUU\\TestSuite\\** **Resources**.
+If you need to run the test suite MS-WDVMODUU, copy the fake virus file that was mentioned in [System under test](#system-under-test) to the folder **\\Source\\MS-WDVMODUU\\TestSuite\\** **Resources**.
 
 Microsoft Visual Studio
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
