@@ -110,8 +110,8 @@ Deploying the test suites
 
 This section describes the deployment of Exchange Server EWS Protocol
 Test Suites on the test suite client and the SUT. Exchange Server
-EWS Protocol Test Suites are packaged in a .zip file, which is available
-on [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=516921).
+EWS Protocol Test Suites are packaged in a .zip file, available
+at [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=516921).
 Once you've downloaded the test suites, perform the following
 steps to successfully configure the test suites.
 
@@ -132,7 +132,7 @@ This section shows the folder structures in the **ExchangeServerEWSProtocolTestS
 
 Folder/file  | Description
 :------------   | :-------------
-**EULA.rtf**    | The End-User License Agreement.
+**EULA.rtf**    | End-User License Agreement.
 **ReadMe.txt**  | A doc with info on deployment and prerequisite software.
 **Exchange Server EWS Protocol Test Suites**  |--
 **- Docs**      |A folder that contains documents of all protocol test suites.
@@ -140,7 +140,7 @@ Folder/file  | Description
 **-ExchangeEWSTestSuiteSpecification.docx**     |  A doc that contains test suite-specific configuration details, architecture, and test case details.												   
 **+ MS-XXXX**                                   |  The MS-XXXX help documentation.
 **- \[MS-XXXX\].pdf**                           |  The protocol technical specification.
-**- MS-XXXX \_SUTControlAdapter.chm**           |  A help doc on the SUT control adapter class library such as declaration syntaxes and their description.
+**- MS-XXXX \_SUTControlAdapter.chm**           |  A help doc on the SUT control adapter class library such as declaration syntax and their description.
 **- MS-XXXX \_RequirementSpecification.xlsx**   |  A spreadsheet that outlines all requirements that are associated with the technical specification.
 **- Setup**                                     |  A folder that contains configuration scripts.
 **- Test Suite Client**                         |  A folder that contains the configuration script to configure the test suite client.
@@ -153,19 +153,19 @@ Folder/file  | Description
 **- CommonConfiguration.ps1**                   |  A configuration script to configure the common information of the server and the test suite client.
 **- ExchangeCommonConfiguration.ps1**           |  A configuration script to configure the common information of Exchange Server.
 **- ExchangeTestSuite.config**                  |  A configuration file that contains primary SUT configuration resources of all protocol test suites.
-**- Source**                                    |  A folder with Microsoft Visual Studio solutions that contain source code for the test suites.
-**- Common**                                    |  A folder with Microsoft Visual Studio projects that contains source code that are common to the test suites.
+**- Source**                                    |  A folder with Microsoft Visual Studio solutions that contain the source code for the test suites.
+**- Common**                                    |  A folder with Microsoft Visual Studio projects that contains the common source code for the test suites.
 **- ExchangeCommonConfiguration.deployment.ptfconfig** |  The common configuration file.
 **- ExchangeEWSProtocolTestSuites.sln**                |  A Visual Studio solution that contains projects of the protocol test suites source code.
-**- ExchangeServerEWSProtocolTestSuites.runsettings**  |  A configuration file used for unit test.
+**- ExchangeServerEWSProtocolTestSuites.runsettings**  |  A configuration file used for the unit test.
 **- ExchangeServerEWSProtocolTestSuites.testsettings** |  A configuration file used for running test cases.
 **- MS-XXXX**                                          |  A folder for the MS-XXXX test suite source code.
 **- MS-XXXX.sln**                                      |  A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.
-**- MS-XXXX.runsettings**                              |  A configuration file used for MS-XXXX unit test.
+**- MS-XXXX.runsettings**                              |  A configuration file used for the MS-XXXX unit test.
 **- MS-XXXX.testsettings**                             |  A configuration file used for running MS-XXXX test cases.
 **+ Adapter**                                          |  The Adapter test suite code.
 **+ TestSuite**                                        |  The test suite code.
-**- Scripts**                                          |  Exchange Server EWS Test Suites can be run using Visual Studio or through batch scripts. The Scripts folder contains a collection of command files that allows users to run specific test cases in the test suite, or the entire test suite.
+**- Scripts**                                          |  Exchange Server EWS Test Suites can be run using Visual Studio or batch scripts. The Scripts folder contains a collection of command files that allows users to run specific test cases in the test suite, or the entire test suite.
 **- RunAllExchangeEWSTestCases.cmd**                   |  A script that can be used to run all test cases in the package.
 **- MS-XXXX**                                          |  A folder containing scripts that belong to the MS-XXXX test suite.
 **- RunAllMSXXXXTestCases.cmd**                        |  A script that can be used to run all test cases of MS-XXXX.
@@ -194,19 +194,19 @@ Configuring the SUT
 
 You can configure the SUT using automated scripts, as described in
 sections [Configuring SUT using the setup configuration script](#configuring-sut-using-the-setup-configuration-script); or configure the SUT
-manually, as described in section [Configuring SUT manually](#configuring-sut-manually).
+manually, as described in [Configuring SUT manually](#configuring-sut-manually).
 
 **Note**   The scripts should be run by a user who has domain
 administrator rights with a mailbox on the SUT.
 
 ### SUT resource requirements 
 
-Each test suite contained within Exchange Server EWS Protocol Test
+Each test suite in the Exchange Server EWS Protocol Test
 Suites package may require varying levels of resources on the SUT. The
 following table outlines these resources for each test suite. The SUT
 configuration scripts will automatically create all the required
 resources for the Microsoft server implementation. To configure the SUT
-manually, see section [Configuring SUT manually](#configuring-sut-manually).
+manually, see[Configuring SUT manually](#configuring-sut-manually).
 
 The client configuration script follows the naming convention shown in
 the following table. If a change to the resource name is required, the
@@ -381,7 +381,7 @@ Framework (PTF) user documentation](https://github.com/Microsoft/ProtocolTestFra
 #### Configure TSAP broadcast
 
 Test Session Announcement Protocol (TSAP) is used by PTF to broadcast
-test information when the test suite is running. TSAP broadcasts helps with mapping test cases to captured frames.
+test information when the test suite is running. TSAP broadcast helps with mapping test cases to captured frames.
 
 By default, TSAP packets are broadcasted in the network. The user can
 change a TSAP broadcast by adding an entry “BeaconLogTargetServer” to
@@ -527,8 +527,8 @@ enable users to quickly debug failures.
 Test suite configuration logs
 ---------------------------------------------------------------------------------------------------------------------------
 
-The configuration logs contain information about whether or not each
-configuration step succeeds, and detailed information on errors if the
+The configuration logs show whether or not each
+configuration step succeeds and detailed information on errors if the
 configuration step fails.
 
 ### SUT configuration logs

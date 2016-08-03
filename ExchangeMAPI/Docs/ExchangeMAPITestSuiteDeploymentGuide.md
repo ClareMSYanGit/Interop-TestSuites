@@ -117,7 +117,7 @@ Deploying the test suites
 
 This section describes the deployment of Exchange MAPI Protocol Test
 Suites on the test suite client and the SUT. Exchange MAPI Protocol
-Test Suites are packaged in a .zip file which is available on [Microsoft
+Test Suites are packaged in a .zip file, available at [Microsoft
 Connect](http://go.microsoft.com/fwlink/?LinkId=516921). Once you've
 downloaded the test suites, perform the following steps to successfully configure the test suites.
 
@@ -128,10 +128,9 @@ downloaded the test suites, perform the following steps to successfully configur
     Protocol Test Suites\\Setup** to a directory of your choice on
     the SUT. The SUT configuration scripts are the only requirement for
     the SUT. The scripts facilitate the SUT configuration process and
-    are contained within the
-    **ExchangeMAPIProtocolTestSuites.zip** file.
+    are in the **ExchangeMAPIProtocolTestSuites.zip** file.
 
-**Note**   If your computer blocks scripts that are downloaded from the Internet
+**Note** If your computer blocks scripts that are downloaded from the Internet
 for security reasons, follow these steps to unblock PowerShell scripts.
 
   --------------------------------------------------------
@@ -299,7 +298,7 @@ To configure SUT1 using the setup configuration script, navigate to the
 
 ### Configuring SUT1 manually <a name="configuring-sut1-manually"></a>
 
-If the SUT is a non-Microsoft implementation of Exchange Server, you
+If the SUT is non-Microsoft implementation of Exchange Server, you
 will not be able to run the setup configuration script. The following
 steps explain what needs to be created or configured on the SUT to run the test suites.
 
@@ -415,12 +414,12 @@ The setup configuration script is only used for configuring Microsoft Exchange
 Server on Windows.
 
 To configure SUT2 using the setup configuration script, navigate to the
-SUT folder, right-click on the **ExchangeSecondSUTConfiguration.cmd**
+SUT folder, right-click on **ExchangeSecondSUTConfiguration.cmd**
 and select **Run as administrator.**
 
 ### Configuring SUT2 manually <a name="configuring-sut2-manually"> </a>
 
-If the SUT is a non-Microsoft implementation of Exchange Server, you are
+If the SUT is non-Microsoft implementation of Exchange Server, you are
 not able to run the setup configuration script. The following steps
 explain what needs to be created or configured on the SUT to run the test suites.
 
@@ -537,8 +536,8 @@ Framework (PTF) user documentation](https://github.com/Microsoft/ProtocolTestFra
 #### Configure TSAP broadcast
 
 Test Session Announcement Protocol (TSAP) is used by PTF to broadcast
-test information when the test suite is running. TSAP broadcasts helps
-in mapping test cases to captured frames.
+test information when the test suite is running. TSAP broadcast helps
+with mapping test cases to captured frames.
 
 By default, TSAP packets are broadcasted in the network. The user can change
 a TSAP broadcast by adding an entry “BeaconLogTargetServer” to

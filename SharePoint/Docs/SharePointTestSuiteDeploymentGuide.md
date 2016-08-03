@@ -149,7 +149,7 @@ Deploying the test suites
 
 This section describes the deployment of SharePoint Server Protocol
 Test Suites on the test suite client and the SUT. SharePoint Server
-Protocol Test Suites are packed in a .zip file, which is available at
+Protocol Test Suites are packed in a .zip file, available at
 [**Microsoft Connect**](http://go.microsoft.com/fwlink/?LinkId=516921).
 Once you've downloaded the test suites, you need to perform the following
 steps to successfully configure the test suites.
@@ -187,7 +187,7 @@ This section shows the folder structures in the **SharePointServerProtocolTestSu
 
 Folders/file | Description
 :------------ | :-------------
-**EULA.rtf**      | The End-User License Agreement.
+**EULA.rtf**      | End-User License Agreement.
 **ReadMe.txt**    | A doc on deployment and prerequisite software.
 **SharePoint Server Protocol Test Suites**    |  --               
 **- Docs**                                    | A folder with documents of all protocol test suites.
@@ -1205,8 +1205,8 @@ The test suites provide detailed reporting in a variety of formats that enables 
 Test suite configuration logs
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-The configuration logs contain information about whether or not each
-configuration step succeeds, and detail information on errors if the
+The configuration logs show whether or not each
+configuration step succeeds and detailed information on errors if the
 configuration step fails.
 
 ### SUT configuration logs

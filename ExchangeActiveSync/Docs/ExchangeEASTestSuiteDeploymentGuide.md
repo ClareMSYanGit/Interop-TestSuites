@@ -114,10 +114,10 @@ Deploying the test suites
 
 This section describes the deployment of Exchange Server EAS Protocol
 Test Suites on the test suite client and the SUT. Exchange Server
-EAS Protocol Test Suites are packaged in a .zip file which is available
+EAS Protocol Test Suites are packaged in a .zip file, available
 at [Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=516921).
 Once you've downloaded the test suites, perform the following
-steps to successfully configure the test suites.
+steps to successfully configure the test suites:
 
 1.  Extract the **Exchange Server EAS Protocol Test Suites** folder from the zip file to a
     directory of your choice on the test suite client.
@@ -165,12 +165,12 @@ This section shows the folder structures in the **ExchangeServerEASProtocolTestS
 
 | Folder/file | Description |
 | :--- | :--- |
-|**EULA.rtf** | The End-User License Agreement. |
+|**EULA.rtf** | End-User License Agreement. |
 |**ReadMe.txt** | A doc with info on deployment and prerequisite software. |
 | **Exchange Server EAS Protocol Test Suites** |--|            
 |**- Docs**| A folder that contains documents of all protocol test suites.|
 |**- ExchangeEASTestSuiteDeploymentGuide.docx** |A doc with info on the protocol test suite deployment. |
-|**+ MS-XXXX** | A MS-XXXX help documentation | 
+|**+ MS-XXXX** | The MS-XXXX help documentation | 
 | **- \[MS-XXXX\].pdf**   | The protocol technical specification.| 
 | **- MS-XXXX \_SUTControlAdapter.chm**  | A help doc with info on the SUT control adapter class library such as declaration syntax and their description.| 
 |**- MS-XXXX \_RequirementSpecification.xlsx**|A spreadsheet that outlines all requirements that are associated with the technical specification.| 
@@ -182,18 +182,18 @@ This section shows the folder structures in the **ExchangeServerEASProtocolTestS
 |**- ExchangeSUTConfiguration.cmd**| A command file that runs the ExchangeSUTConfiguration.ps1 file to create resources and configure settings on the SUT.| 
 |**- ExchangeSUTConfiguration.ps1**| A configuration script that will be triggered by ExchangeSUTConfiguration.cmd.| 
 |**- Source** | A folder with Microsoft Visual Studio solutions that contain source code for the test suites.| 
-|**- Common** | A folder with Microsoft Visual Studio projects that contains source code that are common to the test suites.| 
+|**- Common** | A folder with Microsoft Visual Studio projects that contains common source code for the test suites.| 
 |**- ExchangeCommonConfiguration.deployment.ptfconfig** | A common configuration file.| 
 |**- ExchangeServerEASProtocolTestSuites.runsettings**  |A configuration file used for unit test.| 
 |**- ExchangeServerEASProtocolTestSuites.sln**| A Visual Studio solution that contains projects of the test suites source code.| 
 |**- ExchangeServerEASProtocolTestSuites.testsettings** |  A configuration file used for running test cases.| 
 |**- MS-XXXX**    |  A folder for the MS-XXXX test suite source code.| 
 |**- MS-XXXX.sln**|  A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.| 
-|**- MS-XXXX.runsettings** | A configuration file used for MS-XXXX unit test.| 
+|**- MS-XXXX.runsettings** | A configuration file used for the MS-XXXX unit test.| 
 |**- MS-XXXX.testsettings**| A configuration file used for MS-XXXX running test cases.| 
 |**+ Adapter**|The Adapter test suite code.| 
 |**+ TestSuite**|The test suite code.| 
-|**- Scripts** | Exchange Server EAS Test Suites can be run using Visual Studio or through batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.| 
+|**- Scripts** | Exchange Server EAS Test Suites can be run using Visual Studio or batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.| 
 |**- RunAllExchangeEASTestCases.cmd**| A script that can be used to run all test cases in the whole package.| 
 |**- MS-XXXX**| A folder containing scripts that belong to the MS-XXXX test suite.| 
 |**- RunAllMSXXXXTestCases.cmd**|  A script that can be used to run all test cases of MS-XXXX.| 
@@ -336,7 +336,7 @@ to run the test suites.
     user will be granted Edit permissions on Calendar, Tasks, Inbox,
     Contacts, Notes and Journal.
 
-4.  Set the following properties for MSASCMD\_User01.
+4.  Set the following properties for MSASCMD\_User01:
 
     -   SamAccountName: "MSASCMD\_User01"      
     -   GivenName: "MSASCMD\_FirstName"
@@ -582,7 +582,7 @@ Framework (PTF) user documentation](https://github.com/Microsoft/ProtocolTestFra
 #### Configure TSAP broadcast
 
 Test Session Announcement Protocol (TSAP) is used by PTF to broadcast
-test information when the test suite is running. TSAP broadcasts helps
+test information when the test suite is running. TSAP broadcast helps
 with mapping test cases to captured frames.
 
 By default, TSAP packets are broadcasted in the network. The user can change
@@ -610,8 +610,8 @@ means that the requirement must be validated, whereas “false” means
 that the requirement must not be validated.
 
 If the SUT is non-Microsoft implementation of Exchange Server,
-configure the properties in the configuration file for the Exchange
-Server which to be the closest match to the SUT implementation.
+configure the properties in the configuration file for Exchange
+Server to be the closest match to the SUT implementation.
 
 SHOULD/MAY configuration files
 
@@ -735,7 +735,7 @@ The test suites provide detailed reporting in a variety of formats that enables 
 Test suite configuration logs
 ---------------------------------------------------------------------------------------------------------------------------
 
-The configuration logs contain information about whether or not each configuration step succeeds, and detailed information on errors if the configuration step fails.
+The configuration logs show whether or not each configuration step succeeds and detailed information on errors if the configuration step fails.
 
 ### SUT configuration logs
 

@@ -111,10 +111,9 @@ Deploying the test suites
 
 This section describes the deployment of SharePoint File Sync and
 WOPI Protocol Test Suites on the test suite client and the SUT. The
-SharePoint Server Protocol test suites are packaged in a .zip file, which
-is available on [**Microsoft
+SharePoint Server Protocol test suites are packaged in a .zip file, available at [**Microsoft
 Connect**](http://go.microsoft.com/fwlink/?LinkId=516921). Once you've
-downloaded the test suites, perform the following steps to successfully configure the test suites.
+downloaded the test suites, perform the following steps to successfully configure the test suites:
 
 1.  Extract the **SharePoint File Sync and WOPI Protocol Test Suites** folder from the zip file to a
     directory of your choice on the test suite client.
@@ -129,7 +128,7 @@ downloaded the test suites, perform the following steps to successfully configur
 	**Note**   
 
 	-   If you configure the SUT using the setup configuration scripts,
-	remember that the path of the setup script should contain at most
+	remember that the path of the setup script should contain at the most
 	256 characters.
 
 	-   If your computer blocks scripts that are downloaded from the Internet for
@@ -153,7 +152,7 @@ This section shows the folder structures in the **SharePointFileSyncAndWOPIProto
 
 |Folder/file| Description|
 |:------------ | :-------------|
-| **EULA.rtf**     |    The End-User License Agreement. |
+| **EULA.rtf**     |   End-User License Agreement. |
 | **ReadMe.txt**   |   A doc on deployment and prerequisite software. |
 | **SharePoint File Sync and WOPI Protocol Test Suites**          |-- | 
 | **- Docs**  |   A folder that contains documents of all protocol test suites. |
@@ -161,7 +160,7 @@ This section shows the folder structures in the **SharePointFileSyncAndWOPIProto
 | **- FssWopiTestSuiteSpecification.docx**     |   A doc that contains test suites design, including test suites architecture, adapter and test suites details. |
 | **+ MS-XXXX**                                |   The MS-XXXX help documentation |
 | **- \[MS-XXXX\].pdf**                        |   The protocol technical specification. |
-| **- MS-XXXX\_SUTControlAdapter.chm**         |   A help doc on the SUT control adapter class library such as declaration syntaxes and their description. |
+| **- MS-XXXX\_SUTControlAdapter.chm**         |   A help doc on the SUT control adapter class library such as declaration syntax and their description. |
 | **- MS-XXXX\_RequirementSpecification.xlsx** |   A spreadsheet that outlines all requirements that are associated with the technical specification. |
 | **- Setup**                                  |   A folder that contains configuration scripts. |
 | **- Test Suite Client**                      |   A folder that contains the configuration script to configure the test suite client. |
@@ -175,18 +174,18 @@ This section shows the folder structures in the **SharePointFileSyncAndWOPIProto
 | **-SharePointCommonConfiguration.ps1**       |   A library that contains common functions for configuring the SUT. |
 | **-SharePointTestSuite.config**              |   The configuration file to store all configuration resources. |
 | **- Source**                                 |   A folder with Microsoft Visual Studio solution that contains the source code for the test suites. |
-| **- Common**                                 |   A folder with Visual Studio projects that contains source code that are common to the test suites. |
+| **- Common**                                 |   A folder with Visual Studio projects that contains the common source code for the test suites. |
 | **-FssWopiCommonConfiguration.deployment.ptfconfig** |          The common configuration file. |
 | **-SharePointFileSyncAndWOPIProtocolTestSuites.sln** |          A Visual Studio solution that contains projects of the protocol test suites source code. |
-| **- SharePointFileSyncAndWOPIProtocolTestSuites.runsettings** |   A configuration file used for unit test. |
+| **- SharePointFileSyncAndWOPIProtocolTestSuites.runsettings** |   A configuration file used for the unit test. |
 | **-SharePointFileSyncAndWOPIProtocolTestSuites.testsettings** |   A configuration file used for running test cases. |
 | **- MS-XXXX**                                                 |   A folder for the MS-XXXX test suite source code. |
 | **+ Adapter**                                                 |   The Adapter test suite code. |
 | **+ TestSuite**                                               |   The test suite code. |
 | **- MS-XXXX.sln**                                             |   A Visual Studio solution that contains projects of the MS-XXXX test suite. |
-| **- MS-XXXX.runsettings**                                     |   A configuration file used for MS-XXXX unit test. |
+| **- MS-XXXX.runsettings**                                     |   A configuration file used for the MS-XXXX unit test. |
 | **- MS-XXXX.testsettings**                                    |   A configuration file used for MS-XXXX running test cases. |
-| **-Scripts**                                                  |   SharePoint Server Protocol Test Suites can be run using Visual Studio or through batch scripts. The Scripts folder has a collection of command files that allows users to run specific test cases in the test suite or the entire test suite. |
+| **-Scripts**                                                  |   SharePoint Server Protocol Test Suites can be run using Visual Studio or batch scripts. The Scripts folder has a collection of command files that allows users to run specific test cases in the test suite or the entire test suite. |
 | **-RunAllSharePoint\_FileSyncAndWOPI\_TestCases.cmd**         |   A script that can be used to run all test cases in the package. |
 | **-MS-XXXX**                                                  |   A folder with scripts that belong to the MS-XXXX test suite. |
 | **- RunAllMSXXXXTestCases.cmd**                               |   A script that can be used to run all test cases of MS-XXXX. |
@@ -214,9 +213,7 @@ For configuration script, the exit code definition is as follows:
 Configuring the SUT
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-You can configure the SUT using automation scripts, as described in
-section [Configuring the SUT using the setup configuration script](#configuring-the-sut-using-the-setup-configuration-script); or configure the SUT manually,
-as described in section [Configuring the SUT manually](#configuring-the-sut-manually).
+You can configure the SUT using automation scripts, as described in [Configuring the SUT using the setup configuration script](#configuring-the-sut-using-the-setup-configuration-script); or configure the SUT manually, as described in [Configuring the SUT manually](#configuring-the-sut-manually).
 
 **Note** The scripts should be run by a user who has domain administrator rights on the SUT.
 
@@ -471,7 +468,7 @@ other tasks in a step-by-step approach. To enable interactive mode for a
 specific test suite, do the following:
 
 1.  Browse to the **MS-XXXX\_TestSuite.ptfconfig** configuration file
-    in the **\\Source\\MS-XXXX\\TestSuite\\**.
+    in **\\Source\\MS-XXXX\\TestSuite\\**.
 
 1.  Set the type value of Adapter property to **interactive** for SUT
     control adapter\*\*.
@@ -520,8 +517,7 @@ machine.
 To change TSAP packet broadcast, do the following:
 
 1.  Browse to the **MS-XXXX\_TestSuite.deployment.ptfconfig**
-    configuration file within the
-    **\\Source\\MS-XXXX\\TestSuite\\** folder.
+    configuration file in the **\\Source\\MS-XXXX\\TestSuite\\** folder.
 
 1.  Add a property “BeaconLogTargetServer” along with the value of the
     specified machine name.
@@ -572,8 +568,7 @@ below to update configuration files and configure the test suite client.
 
 2.  By default, the test suites use PowerShell script in the SUT control
     adapter to configure the SUT. If you chose interactive mode for the
-    SUT control adapter as described in section
-    [Set the test suite to interactive mode](#set-the-test-suite-to-interactive-mode), skip this step.
+    SUT control adapter as described in [Set the test suite to interactive mode](#set-the-test-suite-to-interactive-mode), skip this step.
 
     a.  Set the execution policy to **RemoteSigned**.
 
@@ -584,7 +579,7 @@ below to update configuration files and configure the test suite client.
 
 1.  If the client doesn’t join the domain and you plan to use PowerShell mode
     of SUT control adapter, add SUT machine to the TrustedHosts
-    configuration setting to ensure WinRM client can process remote
+    configuration setting to ensure the WinRM client can process remote
     calls against SUT machine.
 
 1.  Add a firewall rule to allow the TCP protocol for port 80.
@@ -662,7 +657,7 @@ Batch scripts
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 SharePoint File Sync and WOPI Protocol Test Suites are installed with a
-collection of scripts that enable a user to run individual test cases
+collection of scripts that enables a user to run individual test cases
 (RunMSXXXX\_SYY\_TCZZ\_Name.cmd) or all test cases of one test suite
 (RunAllMSXXXXTestCases.cmd), or all test cases of SharePoint File Sync
 and WOPI Protocol Test Suites at once
@@ -686,8 +681,8 @@ The test suites provide detailed reporting in a variety of formats that enables 
 Test suite configuration logs
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-The configuration logs contain information about whether or not each
-configuration step succeeds, and detailed information on errors if the
+The configuration logs show whether or not each
+configuration step succeeds and detailed information on errors if the
 configuration step fails.
 
 ### SUT configuration logs
