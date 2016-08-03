@@ -218,8 +218,8 @@ Configuring the SUT
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 You can configure the SUT using automated scripts, as described in
-[Configuring SUT using the setup configuration script](#configuring-sut-using-the-setup-configuration-script); or configure the SUT
-manually, as described in [Configuring SUT manually](#configuring-sut-manually).
+[Configuring the SUT using the setup configuration script](#configuring-the -sut-using-the-setup-configuration-script); or configure the SUT
+manually, as described in [Configuring the SUT manually](#configuring-the-sut-manually).
 
 **Note** The scripts should be run by a user who has domain
 administrator rights with a mailbox on Exchange Server.
@@ -301,7 +301,7 @@ configuration script is required.
 |**MS-ASTASK**|User Mailbox |MSASTASK\_User01 |--|
 |**MS-ASWBXML** |--|--|--|
 
-### Configuring the SUT using the setup configuration script <a id="configuring-sut-using-the-setup-configuration-script" ></a>
+### Configuring the SUT using the setup configuration script <a id="configuring-the-sut-using-the-setup-configuration-script" ></a>
 
 The setup configuration script is only used for configuring Exchange
 Server on the Windows platform.
@@ -310,7 +310,7 @@ To configure the SUT using the setup configuration script, navigate to the
 **SUT** folder, right-click **ExchangeSUTConfiguration.cmd** and select
 **Run as administrator**.
 
-### Configuring the SUT manually <a name="configuring-sut-manually" ></a>
+### Configuring the SUT manually <a name="configuring-the-sut-manually" ></a>
 
 If the SUT is non-Microsoft implementation of Exchange Server, you
 will not be able to run the setup configuration script. The following
