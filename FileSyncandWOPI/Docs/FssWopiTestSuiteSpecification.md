@@ -171,7 +171,7 @@ structures and helper methods.
 ### Helper methods
 
 The common library defines a series of helper methods. The helper
-methods can be classified into following categories.
+methods can be classified into following categories:
 
 -   Access the properties in the configuration file.
 -   Generate resource name.
@@ -181,7 +181,7 @@ methods can be classified into following categories.
 ### Message structures
 
 Becuase the C\# proxy class is used by the MS-FSSHTTP-FSSHTTPB test
-suite and MS-WOPI test suite. So the C\# proxy class is defined in
+suite and the MS-WOPI test suite. So the C\# proxy class is defined in
 the common library.
 
 Adapter
@@ -207,7 +207,7 @@ validating the SUT response according to the normative requirement in
 the technical specification.
 
 All protocols in SharePoint File Sync and WOPI Protocol Test Suites
-package use HTTP transport communicate with the SUT.
+package use HTTP transport to communicate with the SUT.
 
 ### SUT Control Adapter 
 
@@ -229,7 +229,7 @@ The test suites verify the server-side and testable requirements listed
 in the requirement specification. The test suites call the protocol
 adapter to send and receive messages between the protocol adapter and
 the SUT, and call the SUT control adapter to change the SUT state. The
-test suites consists of a series of test cases which are categorized to
+test suites consist of a series of test cases which are categorized into
 several scenarios.
 
 ### Shared test suite
