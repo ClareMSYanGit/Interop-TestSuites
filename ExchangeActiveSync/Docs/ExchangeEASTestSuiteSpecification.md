@@ -116,7 +116,7 @@ Dependencies
     Framework (PTF) to derive managed adapters.
 
 -   All Exchange EAS Protocol Test Suites depend on the HTTP protocol
-    or HTTPS protocol to transmit the messages.
+    or the HTTPS protocol to transmit the messages.
 
 -   All Exchange EAS Protocol Test Suites depend on MS-ASWBXML to
     encode XML requests bodies into WBXML for transmission to an
@@ -204,9 +204,7 @@ The common library defines a series of helper methods. The helper
 methods can be classified into the following categories:
 
 -   Access the properties in the configuration file.
-
 -   Generate resource name.
-
 -   Other methods which are used by multiple test suites.
 
 ### Message structures
