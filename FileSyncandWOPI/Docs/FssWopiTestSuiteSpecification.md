@@ -90,20 +90,19 @@ Assumptions
 -   Here are the prerequisities of the system under test (SUT) in the
     MS-WOPI test suite:
 
-<!-- -->
 
 -   The SUT can store files of the following three file types in a
     document library:
 
-<!-- -->
 
--   \*.txt
 
--   \*.zip
+	-   \*.txt
 
--   \*.one
+	-   \*.zip
 
-<!-- -->
+	-   \*.one
+
+
 
 -   The SUT enables a user to upload files of the above three file types
     into the specified document library.
