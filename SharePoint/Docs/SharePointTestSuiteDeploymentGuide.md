@@ -6,7 +6,7 @@ SharePoint Test Suite deployment guide
 - [Using the test suite directories](#using-the-test-suite-directories)
 - [Configuring the test suites](#configuring-the-test-suites)
 - [Running the test suites](#running-the-test-suites)
-- [Test suite results, logs, and reporting](#test-suite-results-logs-and-reporting)
+- [Viewing the test suite results, logs, and reporting](#viewing-the-test-suite-results-logs-and-reporting)
 - [Appendix](#appendix)
 
 Overview
