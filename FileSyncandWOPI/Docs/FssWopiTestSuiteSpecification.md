@@ -86,12 +86,8 @@ Assumptions
 	-   The SUT can store files of the following three file types in a
 		document library:
 
-
-
 		-   \*.txt
-
 		-   \*.zip
-
 		-   \*.one
 
 	-   The SUT enables a user to upload files of the above three file types
@@ -160,8 +156,8 @@ adapters and three test suites.
     an SUT control adapter to verify if the SUT is behaving in
     compliance with normative protocol requirements.
 
--   Shared test suite implements MS-FSSHTTP and is shared with MS-WOPI to
-    verify whether the MS-FSSHTTP can be sent as HTTP body by using the
+-   The shared test suite implements MS-FSSHTTP and is shared with MS-WOPI to
+    verify whether or not the MS-FSSHTTP can be sent as HTTP body by using the
     MS-WOPI transport format.
 
 -   All protocol adapters communicate directly with the SUT.
@@ -178,17 +174,14 @@ The common library defines a series of helper methods. The helper
 methods can be classified into following categories.
 
 -   Access the properties in the configuration file.
-
 -   Generate resource name.
-
 -   Verify the remote Secure Sockets Layer (SSL) certificate.
-
 -   Other methods which are used by multiple test suites.
 
 ### Message structures
 
 Becuase the C\# proxy class is used by the MS-FSSHTTP-FSSHTTPB test
-suite and MS-WOPI test suite. So the the C\# proxy class is defined in
+suite and MS-WOPI test suite. So the C\# proxy class is defined in
 the common library.
 
 Adapter
@@ -197,19 +190,19 @@ Adapter
 Adapters are interfaces between the test suites and the SUT. There are
 two types of adapter: protocol adapter and SUT control adapter. In most
 cases, modifications to the protocol adapter will not be required for
-non-Microsoft SUT implementations. However, the SUT control adapter
-should be appropriately configured to connect to a non-Microsoft SUT
+non-Microsoft SUT implementation. However, the SUT control adapter
+should be appropriately configured to connect to non-Microsoft SUT
 implementation. All test suites in the package contain a protocol
 adapter and an SUT control adapter.
 
 ### Protocol Adapter
 
 The protocol adapter is a managed adapter, which is derived from the
-ManagedAdapterBase class in the PTF. It provides an interface that is
-used by the test cases to construct protocol request messages that will
+ManagedAdapterBase class in PTF. It provides an interface that is
+used by test cases to construct protocol request messages that will
 be sent to the SUT. The protocol adapter also acts as an intermediary
-between the test cases and the transport classes, receiving messages,
-sending messages, parsing responses from the transport classes, and
+between test cases and transport classes, receiving messages,
+sending messages, parsing responses from transport classes, and
 validating the SUT response according to the normative requirement in
 the technical specification.
 
