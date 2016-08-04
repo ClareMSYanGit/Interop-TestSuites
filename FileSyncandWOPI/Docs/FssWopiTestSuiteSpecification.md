@@ -285,10 +285,10 @@ In the MS-WOPI test suite, there are a total of twenty scenarios that are
 designed to cover the server-side, testable requirements.
 
 The sixteen scenarios (from MSWOPI\_S01 to MSWOPI\_S16) are designed to verify
-the MS-FSSHTTP request embedded in the HTTP body depending on whether
-MS-FSSHTTP is implemented or not.
+the MS-FSSHTTP request embedded in the HTTP body depending on whether or not
+MS-FSSHTTP is implemented.
 
-The four scenarios(from MSWOPI\_S17 to MSWOPI\_S20) are designed to verify the
+The four scenarios (from MSWOPI\_S17 to MSWOPI\_S20) are designed to verify the
 operations fully defined in the MS-WOPI Open Specification.
 
 The following table lists the scenarios designed in the MS-WOPI test
