@@ -72,7 +72,7 @@ If the requirement describes the behavior of the responder, the
 scope of the requirement is the server. If the requirement describes the
 behavior of the initiator, the scope of the requirement is
 the client. If the requirement describes the behavior of the 
-initiator and responder, the scope of the requirement is for both the client and server.
+initiator and responder, the scope of the requirement is both the client and server.
 
 The test suites cover normative requirements which describes the behavior
 of the responder. For a detailed requirement list and
