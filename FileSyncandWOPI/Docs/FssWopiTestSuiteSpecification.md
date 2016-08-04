@@ -3,8 +3,6 @@ SharePoint File Sync and WOPI Protocol Test Suites Specification
 - [Introduction](#introduction)
 - [Requirement specification](#requirement-specification)
 - [Design considerations](#design-considerations)
-- [Assumptions](#assumptions)
-- [Dependencies](#dependencies)
 - [Package design](#package-design)
 
 Introduction
