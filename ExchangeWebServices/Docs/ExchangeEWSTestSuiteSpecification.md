@@ -91,8 +91,8 @@ Assumptions
     way certify implementation even if all tests pass.
 
 -   The test suites verify the server-side testable requirements. but
-    do not verify the requirements related to client behaviors and
-    server internal behaviors.
+    do not verify the requirements related to client behavior and
+    server internal behavior.
 
 Dependencies
 ------------
