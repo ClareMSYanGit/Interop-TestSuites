@@ -236,8 +236,7 @@ several scenarios.
 
 The fifteen shared test scenarios are designed to cover testable requirements for
 MS-FSSHTTP behaviors in both MS-WOPI and MS-FSSHTTP-FSSHTTPB test
-suites. The following table lists the scenarios designed in the shared
-test suite:
+suites. The following table lists the scenarios designed in the shared test suite:
 
  Scenario| Description
 :------------ | :-------------
@@ -259,9 +258,8 @@ S15\_CreateFile |   Verifies the PutChanges sub-request to create a new file on 
 
 ### MS-FSSHTTP-FSSHTTPB
 
-15 test scenarios are designed to cover testable requirements in the
-MS-FSSHTTP-FSSHTTPB test suite. The following table lists the scenarios
-designed in the MS-FSSHTTP-FSSHTTPB test suite:
+The fifteen test scenarios are designed to cover testable requirements in the
+MS-FSSHTTP-FSSHTTPB test suite. The following table lists the scenarios designed in the MS-FSSHTTP-FSSHTTPB test suite:
 
   Scenario| Description
 :------------ | :-------------
@@ -283,14 +281,14 @@ designed in the MS-FSSHTTP-FSSHTTPB test suite:
 
 ### MS-WOPI
 
-In the MS-WOPI test suite, there are a total of 20 scenarios that are
+In the MS-WOPI test suite, there are a total of twenty scenarios that are
 designed to cover the server-side, testable requirements.
 
-16 scenarios (from MSWOPI\_S01 to MSWOPI\_S16) are designed to verify
+The sixteen scenarios (from MSWOPI\_S01 to MSWOPI\_S16) are designed to verify
 the MS-FSSHTTP request embedded in the HTTP body depending on whether
 MS-FSSHTTP is implemented or not.
 
-4 scenarios(from MSWOPI\_S17 to MSWOPI\_S20) are designed to verify the
+The four scenarios(from MSWOPI\_S17 to MSWOPI\_S20) are designed to verify the
 operations fully defined in the MS-WOPI Open Specification.
 
 The following table lists the scenarios designed in the MS-WOPI test
@@ -313,7 +311,7 @@ Scenario| Description
   MS\_WOPI\_S13\_PutChanges          |     Verifies the PutChanges sub-request operation.
   MS\_WOPI\_S14\_AllocateExtendedGuidRange |  Verifies the allocate extended GUID range sub-request operations.
   MS\_WOPI\_S15\_CreateFile                |  Verifies the PutChanges sub-request to create a new file on the server.
-  MS\_WOPI\_S16\_CellWithRelative          |  Verifies the cell sub-request operation by sending the data with “X-WOPI-RelativeTarget” header which is specified in section 3.3.5.1.8 in MS-WOPI.
+  MS\_WOPI\_S16\_CellWithRelative          |  Verifies the cell sub-request operation by sending the data with “X-WOPI-RelativeTarget” header, which is specified in section [3.3.5.1.8 of MS-WOPI](https://msdn.microsoft.com/en-us/library/hh642943(v=office.12).aspx).
   MS\_WOPI\_S17\_FileLevelItems |  Verify CheckFileInfo, PutRelativeFile, Lock, Unlock, RefreshLock, UnlockAndRelock, ExecuteCellStorageRequest, ExecuteCellStorageRelativeRequest, DeleteFile operation.
   MS\_WOPI\_S18\_FolderLevelItems               |  Verify CheckFolderInfo operation.
   MS\_WOPI\_S19\_FileContentLevelItems          |   Verify GetFile, PutFile operation.
