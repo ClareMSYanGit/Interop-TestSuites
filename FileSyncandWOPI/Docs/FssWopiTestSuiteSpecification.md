@@ -113,8 +113,8 @@ Assumptions
 
 		**Note** In Microsoft SharePoint Foundation 2013 Service Pack
 		1 (SP1) and Microsoft SharePoint Server 2013 Service Pack 1 (SP1),
-		the command **Get-SPWOPIBinding** can be used to get the binding
-		information, and the command **Remove-SPWOPIBinding** can be used to
+		the **Get-SPWOPIBinding** command can be used to get the binding
+		information, and the **Remove-SPWOPIBinding** command can be used to
 		remove the binding.
 
 Dependencies
