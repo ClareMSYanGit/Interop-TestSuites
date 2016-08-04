@@ -111,7 +111,7 @@ Assumptions
 Dependencies
 ------------
 
-All SharePoint File Sync and WOPI Protocol Test Suites depend on the
+All SharePoint File Sync and WOPI Protocol Test Suites depend on
 Protocol Test Framework (PTF) to derive managed adapters.
 
 Package design
@@ -143,15 +143,11 @@ suites run against.
     server implementation.
 
 -   The following products have been tested with the test suite on the
-    Windows platform.
-
--   Microsoft SharePoint Foundation 2010 Service Pack 2 (SP2)
-
--   Microsoft SharePoint Foundation 2013 Service Pack 1 (SP1)
-
--   Microsoft SharePoint Server 2010 Service Pack 2 (SP2)
-
--   Microsoft SharePoint Server 2013 Service Pack 1 (SP1)
+    Windows platform:
+	-   Microsoft SharePoint Foundation 2010 Service Pack 2 (SP2)
+	-   Microsoft SharePoint Foundation 2013 Service Pack 1 (SP1)
+	-   Microsoft SharePoint Server 2010 Service Pack 2 (SP2)
+	-   Microsoft SharePoint Server 2013 Service Pack 1 (SP1)
 
 **Test Suite Client**
 
