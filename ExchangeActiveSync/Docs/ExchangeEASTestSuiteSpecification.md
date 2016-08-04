@@ -10,7 +10,7 @@ Introduction
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 Exchange EAS Protocol Test Suites are implemented as synthetic
-clients running against a server-side implementation of a given Exchange
+clients running against server-side implementation of a given Exchange
 protocol. They are designed in a client-to-server relationship and were
 originally developed for the in-house testing of Microsoft Open
 Specifications. 
@@ -251,7 +251,7 @@ control adapter is designed to work with Microsoft implementation of
 the SUT. However, it is configurable to allow the test suites to run
 against non-Microsoft implementation of the SUT.
 
-There are four protocols that have a SUT control adapter in the Exchange
+There are four protocols that have an SUT control adapter in the Exchange
 EAS Protocol Test Suites package: MS-ASCMD, MS-ASHTTP, MS-ASPROV and
 MS-ASRM.
 
