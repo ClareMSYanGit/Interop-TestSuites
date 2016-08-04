@@ -1,16 +1,11 @@
 SharePoint File Sync and WOPI Protocol Test Suites Specification
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
-[Introduction](#introduction)
-
-[Requirement specification](#requirement-specification)
-
-[Design considerations](#design-considerations)
-
-[Assumptions](#assumptions)
-
-[Dependencies](#dependencies)
-
-[Package design](#package-design)
+- [Introduction](#introduction)
+- [Requirement specification](#requirement-specification)
+- [Design considerations](#design-considerations)
+- [Assumptions](#assumptions)
+- [Dependencies](#dependencies)
+- [Package design](#package-design)
 
 Introduction
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
@@ -100,8 +95,6 @@ Assumptions
 		-   \*.zip
 
 		-   \*.one
-
-
 
 	-   The SUT enables a user to upload files of the above three file types
 		into the specified document library.
