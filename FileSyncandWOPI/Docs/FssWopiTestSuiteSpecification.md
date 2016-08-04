@@ -157,7 +157,7 @@ adapters and three test suites.
     compliance with normative protocol requirements.
 
 -   The shared test suite implements MS-FSSHTTP and is shared with MS-WOPI to
-    verify whether or not the MS-FSSHTTP can be sent as HTTP body by using the
+    verify whether or not MS-FSSHTTP can be sent as HTTP body by using the
     MS-WOPI transport format.
 
 -   All protocol adapters communicate directly with the SUT.
@@ -165,7 +165,7 @@ adapters and three test suites.
 Common library
 --------------
 
-The common library provides implementation of the common messages
+The common library provides implementation of common messages
 structures and helper methods.
 
 ### Helper methods
