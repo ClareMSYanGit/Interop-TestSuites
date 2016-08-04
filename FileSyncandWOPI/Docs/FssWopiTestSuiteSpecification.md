@@ -90,33 +90,32 @@ Assumptions
 -   Here are the prerequisities of the system under test (SUT) in the
     MS-WOPI test suite:
 
-
--   The SUT can store files of the following three file types in a
-    document library:
-
-
-
-	-   \*.txt
-
-	-   \*.zip
-
-	-   \*.one
+	-   The SUT can store files of the following three file types in a
+		document library:
 
 
 
--   The SUT enables a user to upload files of the above three file types
-    into the specified document library.
+		-   \*.txt
 
--   Make sure the HTTP port 80 can be used by the MS-WOPI test suite.
+		-   \*.zip
 
--   Make sure there is no SharePoint WOPI binding for the client machine
-    in the SUT before running any test cases.
+		-   \*.one
 
-    **Note** In Microsoft SharePoint Foundation 2013 Service Pack
-    1 (SP1) and Microsoft SharePoint Server 2013 Service Pack 1 (SP1),
-    the command **Get-SPWOPIBinding** can be used to get the binding
-    information, and the command **Remove-SPWOPIBinding** can be used to
-    remove the binding.
+
+
+	-   The SUT enables a user to upload files of the above three file types
+		into the specified document library.
+
+	-   Make sure the HTTP port 80 can be used by the MS-WOPI test suite.
+
+	-   Make sure there is no SharePoint WOPI binding for the client machine
+		in the SUT before running any test cases.
+
+		**Note** In Microsoft SharePoint Foundation 2013 Service Pack
+		1 (SP1) and Microsoft SharePoint Server 2013 Service Pack 1 (SP1),
+		the command **Get-SPWOPIBinding** can be used to get the binding
+		information, and the command **Remove-SPWOPIBinding** can be used to
+		remove the binding.
 
 Dependencies
 ------------
