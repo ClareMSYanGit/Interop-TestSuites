@@ -15,68 +15,64 @@ SharePoint File Sync and WOPI Protocol Test Suites Specification
 Introduction
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
-The SharePoint File Sync and WOPI Protocol Test Suites are implemented
+SharePoint File Sync and WOPI Protocol Test Suites are implemented
 as synthetic clients running against a server-side implementation of a
 given SharePoint protocol. They are designed in a client-to-server
 relationship and were originally developed for the in-house testing of
-the Microsoft Open Specifications. Test suites have been used
-extensively in Plugfests and Interoperability Labs to test partner
-implementations.
+Microsoft Open Specifications. 
 
-This document describes how the SharePoint File Sync and WOPI Protocol
-Test Suites are designed to verify that the server behaves in the way
-that is compliant with normative protocol requirements as described in
-the technical specification.
+Microsoft Open Specifications are written using the normative
+language defined in [RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453), from which
+statements are extracted as protocol requirements to be listed in the requirement specification. 
+See [Requirement specification](#requirement-specification).
+This document describes how SharePoint File Sync and WOPI Protocol
+Test Suites are designed to verify that the server behavior is in
+compliance with normative protocol requirements in
+the technical specification.  
 
-The Microsoft Open Specifications were written using the normative
-language defined in
-[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453). The
-statements of them are extracted as protocol requirements which are
-listed in the requirement specification described in section 2. The test
-suites are developed to test the normative protocol requirements. In a
-single test suite, similar or related requirements are grouped into one
-test case, and the test cases about same command or operation are
+In a single test suite, similar or related requirements are grouped into one
+test case, and the test cases on the same command or operation are
 grouped into one scenario.
 
 The technical specifications listed in the following table are included
 in the SharePoint File Sync and WOPI Protocol Suites package. The
-version of these technical specifications is v20130726.
+technical specifications version is v20130726.
 
 **SharePoint File Sync and WOPI protocol technical specifications**
 
 Technical specification| Protocol name
 :------------ | :-------------
-  MS-WOPI     |              [Web Application Open Platform Interface Protocol](http://go.microsoft.com/fwlink/?LinkId=389443)
-  MS-FSSHTTP  |              [File Synchronization via SOAP over HTTP Protocol](http://go.microsoft.com/fwlink/?LinkId=389444)
-  MS-FSSHTTPB |              [Binary Requests for File Synchronization via SOAP Protocol](http://go.microsoft.com/fwlink/?LinkId=389445)
-  MS-FSSHTTPD |              [Binary Data Format for File Synchronization via SOAP](http://go.microsoft.com/fwlink/?LinkId=389446)
+  MS-WOPI     | [Web Application Open Platform Interface Protocol](http://go.microsoft.com/fwlink/?LinkId=389443)
+  MS-FSSHTTP  | [File Synchronization via SOAP over HTTP Protocol](http://go.microsoft.com/fwlink/?LinkId=389444)
+  MS-FSSHTTPB | [Binary Requests for File Synchronization via SOAP Protocol](http://go.microsoft.com/fwlink/?LinkId=389445)
+  MS-FSSHTTPD | [Binary Data Format for File Synchronization via SOAP](http://go.microsoft.com/fwlink/?LinkId=389446)
 
-Requirement specification
+Requirement specification <a name="requirement-specification"></a>
 ======================================================================================================================================================================================================================================================================
 
-A requirement specification contains a list of requirements that are
+A requirement specification contains a list of requirements that is
 extracted from statements in the technical specification. Each technical
 specification has one corresponding requirement specification named as
 MS-XXXX\_RequirementSpecification.xlsx, which can be found in the
 Docs\\MS-XXXX folder in the SharePoint File Sync and WOPI Protocol Test
-Suites package together with the technical specification.
+Suites package with the technical specification.
 
 The requirements are categorized as normative or informative. If the
 statement of the requirement is required for interoperability, the
-requirement is normative. If the statement of the requirement is
-clarifying information or high-level introduction, and removal of it
+requirement is normative. If the statement of the requirement is for a
+high-level introduction or clarification, and removal of the content
 does not affect interoperability, the requirement is informative.
 
 Each requirement applies to a specific scope: server, client, or both.
 If the requirement describes a behavior performed by the responder, the
 scope of the requirement is server. If the requirement describes a
 behavior performed by the initiator, the scope of the requirement is
-client. If the requirement describes a behavior performed by both
-initiator and responder, the scope of the requirement is both.
+client. If the requirement describes a behavior performed by the
+initiator and responder, the scope of the requirement is for both the client and server.
 
 The test suites cover normative requirements which describes a behavior
 performed by the responder. For a detailed requirements list and
-classification, see the MS-XXXX\_RequirementSpecification.xlsx.
+classification, see MS-XXXX\_RequirementSpecification.xlsx.
 
 Design considerations
 =====================
@@ -87,9 +83,9 @@ Assumptions
 -   The MS-FSSHTTP-FSSHTTPB test suite tests one client and
     one connection.
 
-> This is because there is no specification stated in the open
-> specification. By default, it is assumed that the server performs the
-> same behavior to multiple clients or to a single client.
+	This is because there is no specification stated in the open
+	specification. By default, it is assumed that the server behaves the
+	same toward multiple clients as toward a single client.
 
 -   Here are the prerequisities of the system under test (SUT) in the
     MS-WOPI test suite:
@@ -117,11 +113,11 @@ Assumptions
 -   Make sure there is no SharePoint WOPI binding for the client machine
     in the SUT before running any test cases.
 
-    ***Note** In Microsoft SharePoint Foundation 2013 Service Pack
+    **Note** In Microsoft SharePoint Foundation 2013 Service Pack
     1 (SP1) and Microsoft SharePoint Server 2013 Service Pack 1 (SP1),
     the command **Get-SPWOPIBinding** can be used to get the binding
     information, and the command **Remove-SPWOPIBinding** can be used to
-    remove the binding.*
+    remove the binding.
 
 Dependencies
 ------------
@@ -132,7 +128,7 @@ Protocol Test Framework (PTF) to derive managed adapters.
 Package design
 ==============
 
-The SharePoint File Sync and WOPI Protocol Test Suites are implemented
+SharePoint File Sync and WOPI Protocol Test Suites are implemented
 as synthetic clients running against a server-side implementation of a
 given SharePoint protocol. The test suites verify the server-side and
 testable requirements.

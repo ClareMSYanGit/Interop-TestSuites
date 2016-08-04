@@ -67,7 +67,7 @@ Each requirement applies to a specific scope: server, client, or both.
 If the requirement describes a behavior performed by the responder, the
 scope of the requirement is the server. If the requirement describes a
 behavior performed by the initiator, the scope of the requirement is
-the client. If the requirement describes a behavior performed by both the
+the client. If the requirement describes a behavior performed by the
 initiator and responder, the scope of the requirement is for both the client and server.
 
 The test suites cover normative requirements which describes a behavior
