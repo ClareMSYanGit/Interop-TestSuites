@@ -64,18 +64,18 @@ with the technical specification.
 The requirements are categorized as normative or informative. If the
 statement of the requirement is required for interoperability, the
 requirement is normative. If the statement of the requirement is for
-a high-level introduction or clarification, and the removal of content
+a high-level introduction or clarification, and removal of the content
 does not affect interoperability, the requirement is informative.
 
 Each requirement applies to a specific scope: server, client, or both.
-If the requirement describes a behavior performed by the responder, the
-scope of the requirement is the server. If the requirement describes a
-behavior performed by the initiator, the scope of the requirement is
-the client. If the requirement describes a behavior performed by the 
+If the requirement describes the behavior of the responder, the
+scope of the requirement is the server. If the requirement describes the
+behavior of the initiator, the scope of the requirement is
+the client. If the requirement describes the behavior of the 
 initiator and responder, the scope of the requirement is for both the client and server.
 
-The test suites cover normative requirements which describes a behavior
-performed by the responder. For a detailed requirements list and
+The test suites cover normative requirements which describes the behavior
+of the responder. For a detailed requirement list and
 classification, see MS-XXXX\_RequirementSpecification.xlsx.
 
 Design considerations
