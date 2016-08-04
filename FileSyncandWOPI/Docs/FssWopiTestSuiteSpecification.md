@@ -152,16 +152,16 @@ suites run against.
 **Test Suite Client**
 
 The test suites act as clients to communicate with the SUT and validate
-the requirements gathered from technical specifications. The SharePoint
+the requirements gathered from technical specifications. SharePoint
 File Sync and WOPI Protocol Test Suites include one common library, two
 adapters and three test suites.
 
 -   The test suites communicate with the SUT via a protocol adapter and
-    an SUT control adapter to verify if the SUT behaves in the way that
-    is compliant with normative protocol requirements.
+    an SUT control adapter to verify if the SUT is behaving in
+    compliance with normative protocol requirements.
 
--   Shared test suite implements MS-FSSHTTP, and shared for MS-WOPI to
-    verify whether the MS-FSSHTTP can be sent as HTTP body by using
+-   Shared test suite implements MS-FSSHTTP and is shared with MS-WOPI to
+    verify whether the MS-FSSHTTP can be sent as HTTP body by using the
     MS-WOPI transport format.
 
 -   All protocol adapters communicate directly with the SUT.
