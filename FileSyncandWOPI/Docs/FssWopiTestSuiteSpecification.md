@@ -114,7 +114,7 @@ Package design
 ==============
 
 SharePoint File Sync and WOPI Protocol Test Suites are implemented
-as synthetic clients running against a server-side implementation of a
+as synthetic clients running against server-side implementation of a
 given SharePoint protocol. The test suites verify the server-side and
 testable requirements.
 
@@ -232,9 +232,9 @@ the SUT, and call the SUT control adapter to change the SUT state. The
 test suites consists of a series of test cases which are categorized to
 several scenarios.
 
-### Shared Test Suite
+### Shared test suite
 
-15 shared test scenarios are designed to cover testable requirements for
+The fifteen shared test scenarios are designed to cover testable requirements for
 MS-FSSHTTP behaviors in both MS-WOPI and MS-FSSHTTP-FSSHTTPB test
 suites. The following table lists the scenarios designed in the shared
 test suite:
