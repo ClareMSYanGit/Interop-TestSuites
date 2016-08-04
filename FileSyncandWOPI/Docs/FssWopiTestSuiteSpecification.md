@@ -29,7 +29,7 @@ In a single test suite, similar or related requirements are grouped into one
 test case, and the test cases on the same command or operation are
 grouped into one scenario.
 
-The technical specifications listed in the following table are included
+The technical specifications in the following table are included
 in the SharePoint File Sync and WOPI Protocol Suites package. The
 technical specifications version is v20130726.
 
@@ -59,14 +59,14 @@ high-level introduction or clarification, and removal of the content
 does not affect interoperability, the requirement is informative.
 
 Each requirement applies to a specific scope: server, client, or both.
-If the requirement describes a behavior performed by the responder, the
+If the requirement describes the behavior of the responder, the
 scope of the requirement is server. If the requirement describes a
-behavior performed by the initiator, the scope of the requirement is
-client. If the requirement describes a behavior performed by the
+behavior of the initiator, the scope of the requirement is
+client. If the requirement describes the behavior of the
 initiator and responder, the scope of the requirement is for both the client and server.
 
-The test suites cover normative requirements which describes a behavior
-performed by the responder. For a detailed requirements list and
+The test suites cover normative requirements which describes the behavior
+of the responder. For detailed requirements list and
 classification, see MS-XXXX\_RequirementSpecification.xlsx.
 
 Design considerations
