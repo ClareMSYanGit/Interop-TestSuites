@@ -281,7 +281,7 @@ The two scenarios are designed to verify the server-side, testable requirements 
 | Scenario | Description |
 | :--- | :--- |
 |   S01\_CalendarElement | Test the Calendar class elements, which are not attached in a Meeting request, including synchronizing the calendar on the server, fetching information of the calendar or searching a specific calendar.| 
-|   S02\_MeetingElement  | Test the Calendar class elements, which are attached in a Meeting request when meeting is either accepted, tentative accepted, cancelled or declined.| 
+|   S02\_MeetingElement  | Test the Calendar class elements, which are attached in a Meeting request when a meeting is either accepted, tentatively accepted, cancelled or declined.| 
 
 ### MS-ASCMD
 
@@ -299,7 +299,7 @@ scenarios in this test suite.
 | S06\_GetAttachment   | Retrieve an email attachment from the server by using the GetAttachment command.|
 | S07\_GetItemEstimate | Get an estimate for the number of items in a collection or a folder on the server that has to be synchronized by using the GetItemEstimate command.|
 | S08\_ItemOperations  | Provide the batched online handling of Fetch, empty the folder contents and move the operations against the server by using the ItemOperations command.|
-| S09\_MeetingResponse |   Accept, tentatively accept, or decline a meeting request in the user's Inbox folder or Calendar folder by using the MeetingResponse command.|
+| S09\_MeetingResponse |   Accept, tentatively accept, or decline a meeting request in the user's Inbox folder or the Calendar folder by using the MeetingResponse command.|
 | S10\_MoveItems        |   Move an item or items from one folder on the server to another by using the MoveItems command.|
 | S11\_Ping             |   Ping the server for updating the folder by using the Ping command.|
 | S12\_Provision        |  Download and acknowledge policies of Provision by using the Provision command.|
@@ -361,8 +361,8 @@ scenarios in this test suite.
 | :--- | :--- |
 |  S01\_Email | Test normal e-mail events, including sending an e-mail to a server, synchronizing e-mails with a server, retrieving e-mail items that match the criteria specified by the client from a server, retrieving data from a server for one or more specific e-mail items.|
 |  S02\_EmailVoiceAttachment| Test voice attachment e-mail events, including sending an e-mail with voice attachment to a server, synchronizing the e-mail with voice attachment with a server.|
-|  S03\_EmailFlag | Test flag events, including setting a flag on email or task, updating a flag on an email or a task, marking a flag on an email or a task as complete, clearing a flag from an email or a task.|
-|  S04\_MeetingRequest| Test meeting request events, including sending a meeting request to server, synchronizing the meeting request with a server.|
+|  S03\_EmailFlag | Test flag events, including setting a flag on an email or a task, updating a flag on an email or a task, marking a flag on an email or a task as complete, clearing a flag from an email or a task.|
+|  S04\_MeetingRequest| Test meeting request events, including sending a meeting request to a server, synchronizing the meeting request with a server.|
 
 ### MS-ASHTTP
 
