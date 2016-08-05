@@ -255,8 +255,8 @@ Test suites
 Test suites verify the server-side and testable requirements listed
 in the requirement specification. Test suites call a protocol
 adapter to send and receive message between a protocol adapter and an
-SUT, and call an SUT control adapter to change the SUT state. Test
-suites consist of a series of test cases that are categorized into several
+SUT, and call an SUT control adapter to change the SUT state. A test
+suite consists of a series of test cases that are categorized into several
 scenarios.
 
 ### MS-ASAIRS
