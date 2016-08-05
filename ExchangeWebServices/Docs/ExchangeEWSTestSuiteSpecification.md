@@ -220,7 +220,7 @@ and a SOAP response.
 
 The SUT control adapter manages all the control functions of the test
 suites that are not associated with the protocol. For example, the setup
-and tear down are managed through the SUT control adapter. The SUT
+and teardown are managed through the SUT control adapter. The SUT
 control adapter is designed to work with Microsoft implementation of
 the SUT. However, it is configurable to allow the test suites to run
 against non-Microsoft implementation of the SUT.
