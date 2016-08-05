@@ -17,7 +17,7 @@ Specifications.
 
 Microsoft Open Specifications are written using the normative
 language defined in
-[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453), from which
+[RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453); from which
 statements are extracted as protocol requirements to be
 listed in the requirement specification. See [Requirement specification](#requirement-specification). 
 This document describes how Exchange MAPI Protocol Test Suites are
@@ -26,7 +26,7 @@ with normative protocol requirements in the technical
 specification. 
 
 In a single test suite, similar or related requirements are grouped into one
-test case, and the test cases on the same command or operation are
+test case. Test cases on the same command or operation are
 grouped into one scenario.
 
 The technical specifications listed in the following table are included

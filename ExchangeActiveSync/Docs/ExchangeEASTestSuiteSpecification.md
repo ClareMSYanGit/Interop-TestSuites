@@ -25,7 +25,7 @@ with normative protocol requirements in the technical
 specification.
 
 In a single test suite, similar or related requirements are grouped into one
-test case, and test cases on the same command or operation are
+test case. Test cases on the same command or operation are
 grouped into one scenario.
 
 The technical specifications in the following table are included
