@@ -92,7 +92,7 @@ Assumptions
     of the system under test (SUT) with protocol implementation.
 
 -   Test suites do not cover every protocol requirement and in no
-    way certify implementation, even if all tests pass.
+    way certify implementation even if all tests pass.
 
 -   Test suites verify the server-side testable requirements, but
     do not verify the requirements related to client behavior and
@@ -166,20 +166,20 @@ protocol, which test suites run against.
 
 **Test Suite Client**
 
-The test suites act as synthetic clients to communicate with the SUT and
+Test suites act as synthetic clients to communicate with an SUT and
 validate the requirements gathered from technical specifications.
 Exchange EAS Protocol Test Suites include one common library, thirteen
 adapters and twelve test suites.
 
--   The test suites communicate with SUT via a protocol adapter and an SUT
-    control adapter to verify if the SUT is behaving in 
+-   Test suites communicate with an SUT via a protocol adapter and an SUT
+    control adapter to verify if an SUT is behaving in 
     compliance with normative protocol requirements.
 
 -   All protocol adapters use ActiveSyncClient to send command request
     and retrieve command response.
 
 -   ActiveSyncClient encodes and decodes commands defined in
-    \[MS-ASCMD\] by using MS-ASWBXML and communicates with the SUT
+    \[MS-ASCMD\] by using MS-ASWBXML and communicates with an SUT
     via MS-ASHTTP.
 
 Common library

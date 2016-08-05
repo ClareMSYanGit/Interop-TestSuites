@@ -88,13 +88,13 @@ Assumptions
     multi-protocol user scenarios, but rather to provide a way to exercise
     certain operations documented in a technical specification.
 
--   The test suites are functional tests that verify the compatibility
+-   Test suites are functional tests that verify the compatibility
     of the system under test (SUT) with protocol implementation.
 
--   The test suites do not cover every protocol requirement and in no
+-   Test suites do not cover every protocol requirement and in no
     way certify implementation even if all tests pass.
 
--   The test suites verify the server-side testable requirements, but
+-   Test suites verify the server-side testable requirements, but
     do not verify the requirements related to client behavior and
     server internal behavior.
 
@@ -149,18 +149,18 @@ not present, then some steps of the test cases will not be run.
 
 **Test Suite Client**
 
-The test suites act as synthetic clients to communicate with the SUT and
+Test suites act as synthetic clients to communicate with an SUT and
 validate the requirements gathered from technical specifications.
 Exchange MAPI Protocol Test Suites include one common library, thirteen
 adapters, thirteen test suites, and three models.
 
--   The test suites communicate with the SUT via a protocol adapter and SUT
-    control adapter to verify if the SUT's behavior is in
+-   Test suites communicate with an SUT via a protocol adapter and an SUT
+    control adapter to verify if an SUT's behavior is in
     compliance with normative protocol requirements.
 
 -   The MS-OXNSPI, MS-OXCRPC and MS-OXCMAPIHTTP protocol adapters
-    communicate directly with the SUT. All other protocol adapters
-    communicate with the SUT through the common library.
+    communicate directly with an SUT. All other protocol adapters
+    communicate with an SUT through the common library.
 
 Common library
 --------------
