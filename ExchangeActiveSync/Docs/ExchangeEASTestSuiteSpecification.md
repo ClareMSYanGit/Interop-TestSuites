@@ -270,15 +270,13 @@ scenarios designed in the test suite.
 | S01\_BodyPartPreference  | Test the BodyPartPreference element and the BodyPart element in the AirSyncBase namespace, which is used by the Sync command, the Search command and the ItemOperations command to identify the data that the client sent and returned to the client.|
 | S02\_BodyPreference      | Test the BodyPreference element and the Body element in the AirSyncBase namespace, which is used by the Sync command, the Search command and the ItemOperations command to identify the data that the client sent and returned to the client.|
 | S03\_Attachment          | Test the Attachments element and its subelements in the AirSyncBase namespace, which is used by the Sync command, the Search command and the ItemOperations command to identify the data that the client sent and returned to the client.|
-| S04\_StatusError         | Test the status error which is returned by the Sync command, the Search command and the ItemOperations command when XML elements in the AirSyncBase namespace don't comply with requirements regarding the data type, the number of instance, the order and placement in the XML hierarchy.|
+| S04\_StatusError         | Test the status error that is returned by the Sync command, the Search command and the ItemOperations command when XML elements in the AirSyncBase namespace don't comply with requirements regarding the data type, the number of instance, the order and placement in the XML hierarchy.|
 | S05\_Location            | Test the Location element and its sub elements, which is used by the Sync command, the Search command and the ItemOperations command.|
 | S06\_MeetingResponseCommand | Test the MeetingResponse command.|
 
 ### MS-ASCAL
 
-The two scenarios are designed to verify the server-side, testable
-requirements in the MS-ASCAL test suite. The following table lists the
-scenarios designed in this test suite.
+The two scenarios are designed to verify the server-side, testable requirements in the MS-ASCAL test suite. The following table lists the scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
@@ -312,7 +310,7 @@ scenarios designed in this test suite.
 | S17\_SmartForward     |   Forward the email message by using the SmartForward command.|
 | S18\_SmartReply       |   Reply the email message by using the SmartReply command.|
 | S19\_Sync             |   Synchronize the data by using the Sync command.|
-| S20\_ValidateCert     |  Validate a certificate that has been received via an S/MIME mail by using ValidateCert command.|
+| S20\_ValidateCert     |  Validate a certificate that has been received via an S/MIME mail by using the ValidateCert command.|
 | S21\_CommonStatusCode |   Test the common negative status for the commands.|
 | S22\_GetHierarchy |       Test the GetHierarchy command.|
 
@@ -363,7 +361,7 @@ scenarios designed in this test suite.
 | :--- | :--- |
 |  S01\_Email | Test normal e-mail events, including sending an e-mail to a server, synchronizing e-mails with a server, retrieving e-mail items that match the criteria specified by the client from a server, retrieving data from a server for one or more specific e-mail items.|
 |  S02\_EmailVoiceAttachment| Test voice attachment e-mail events, including sending an e-mail with voice attachment to a server, synchronizing the e-mail with voice attachment with a server.|
-|  S03\_EmailFlag | Test flag events, including setting a flag on email or task, updating a flag on email or task, marking a flag on an email or a task as complete, clearing a flag from an email or a task.|
+|  S03\_EmailFlag | Test flag events, including setting a flag on email or task, updating a flag on an email or a task, marking a flag on an email or a task as complete, clearing a flag from an email or a task.|
 |  S04\_MeetingRequest| Test meeting request events, including sending a meeting request to server, synchronizing the meeting request with a server.|
 
 ### MS-ASHTTP
@@ -387,7 +385,7 @@ scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-|S01\_SyncCommand   | Synchronize the Notes class items for a specified user with the existing notes stored on the server.|
+|S01\_SyncCommand   | Synchronize the Notes class items for a specified user with existing notes stored on the server.|
 |S02\_SearchCommand | Retrieve the Notes class items that match the criteria specified by the client.|
 |S03\_ItemOperationsCommand | Retrieve the data from the server for one or more notes items.|
 
@@ -406,7 +404,7 @@ scenarios designed in this test suite.
 ### MS-ASRM
 
 The five scenarios are designed to verify the server-side and testable
-requirements in MS-ASRM test suite. The following table lists the
+requirements in the MS-ASRM test suite. The following table lists the
 scenarios designed in this test suite.
 
 | Scenario | Description |
