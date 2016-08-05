@@ -249,14 +249,14 @@ There are four protocols that have an SUT control adapter in the Exchange
 EAS Protocol Test Suites package: MS-ASCMD, MS-ASHTTP, MS-ASPROV and
 MS-ASRM.
 
-Test suite
+Test suites
 ----------
 
 Test suites verify the server-side and testable requirements listed
-in the requirement specification. Test suites call the protocol
-adapter to send and receive message between the protocol adapter and the
-SUT, and call the SUT control adapter to change the SUT state. Test
-suites consist of a series of test cases which are categorized into several
+in the requirement specification. Test suites call a protocol
+adapter to send and receive message between a protocol adapter and an
+SUT, and call an SUT control adapter to change the SUT state. Test
+suites consist of a series of test cases that are categorized into several
 scenarios.
 
 ### MS-ASAIRS
