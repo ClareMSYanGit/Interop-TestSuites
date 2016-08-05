@@ -215,12 +215,12 @@ Adapter
 -------
 
 Adapters are interfaces between the test suites and the SUT. There are
-two types of adapters: protocol adapter and SUT control adapter. In most
+two types of adapters: the protocol adapter and the SUT control adapter. In most
 cases, modifications to the protocol adapter will not be required for
 non-Microsoft SUT implementation. However, the SUT control adapter
 should be appropriately configured to connect to non-Microsoft SUT
 implementation. All test suites in the package contain a protocol
-adapter, six of which contain a SUT control adapter.
+adapter, six of which contain an SUT control adapter.
 
 ### Protocol Adapter
 
@@ -238,9 +238,9 @@ the common library to send and receive messages.
 
 ### SUT Control Adapter 
 
-The SUT control adapter manages all the control functions of the test
+The SUT control adapter manages all control functions of the test
 suites that are not associated with the protocol. For example, the setup
-and teardown are managed through the SUT control adapter. The SUT
+and the teardown are managed through the SUT control adapter. The SUT
 control adapter is designed to work with Microsoft implementation of
 the SUT. However, it is configurable to allow the test suites to run
 against non-Microsoft implementation of the SUT.
@@ -252,27 +252,27 @@ MS-ASRM.
 Test suite
 ----------
 
-The test suites verify the server-side and testable requirements listed
-in the requirement specification. The test suites call the protocol
+Test suites verify the server-side and testable requirements listed
+in the requirement specification. Test suites call the protocol
 adapter to send and receive message between the protocol adapter and the
-SUT, and call the SUT control adapter to change the SUT state. The test
+SUT, and call the SUT control adapter to change the SUT state. Test
 suites consist of a series of test cases which are categorized into several
 scenarios.
 
 ### MS-ASAIRS
 
 The six scenarios are designed to verify the server-side, testable
-requirements in MS-ASAIRS test suite. The following table lists the
+requirements in the MS-ASAIRS test suite. The following table lists the
 scenarios designed in the test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-|  S01\_BodyPartPreference  | Test the BodyPartPreference element and the BodyPart element in the AirSyncBase namespace, which is used by the Sync command, the Search command and the ItemOperations command to identify the data that the client sent and returned to the client.|
-|  S02\_BodyPreference      | Test the BodyPreference element and the Body element in the AirSyncBase namespace, which is used by the Sync command, the Search command and the ItemOperations command to identify the data that the client sent and returned to the client.|
-|  S03\_Attachment          | Test the Attachments element and its subelements in the AirSyncBase namespace, which is used by the Sync command, the Search command and the ItemOperations command to identify the data that the client sent and returned to the client.|
-|  S04\_StatusError         | Test the status error which is returned by the Sync command, the Search command and the ItemOperations command when XML elements in the AirSyncBase namespace don't comply with requirements regarding the data type, the number of instance, the order and placement in the XML hierarchy.|
-|  S05\_Location            | Test the Location element and its sub elements, which is used by the Sync command, the Search command and the ItemOperations command.|
-|  S06\_MeetingResponseCommand |  Test the MeetingResponse command.|
+| S01\_BodyPartPreference  | Test the BodyPartPreference element and the BodyPart element in the AirSyncBase namespace, which is used by the Sync command, the Search command and the ItemOperations command to identify the data that the client sent and returned to the client.|
+| S02\_BodyPreference      | Test the BodyPreference element and the Body element in the AirSyncBase namespace, which is used by the Sync command, the Search command and the ItemOperations command to identify the data that the client sent and returned to the client.|
+| S03\_Attachment          | Test the Attachments element and its subelements in the AirSyncBase namespace, which is used by the Sync command, the Search command and the ItemOperations command to identify the data that the client sent and returned to the client.|
+| S04\_StatusError         | Test the status error which is returned by the Sync command, the Search command and the ItemOperations command when XML elements in the AirSyncBase namespace don't comply with requirements regarding the data type, the number of instance, the order and placement in the XML hierarchy.|
+| S05\_Location            | Test the Location element and its sub elements, which is used by the Sync command, the Search command and the ItemOperations command.|
+| S06\_MeetingResponseCommand | Test the MeetingResponse command.|
 
 ### MS-ASCAL
 
