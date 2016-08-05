@@ -226,21 +226,21 @@ There are three protocols that have a SUT control adapter in the
 Exchange EWS Protocol Test Suites package: MS-OXWSBTRF, MS-OXWSSYNC and
 MS-OXWSMSG.
 
-Test suite
+Test suites
 ----------
 
-The test suites verify the server-side and testable requirements listed
-in the requirement specification. The test suites call the protocol
-adapter to send and receive message between the protocol adapter and the
-SUT, and call the SUT control adapter to change the SUT state. The test
-suites consist of a series of test cases which are categorized into several
+Test suites verify the server-side and testable requirements listed
+in the requirement specification. Test suites call a protocol
+adapter to send and receive message between a protocol adapter and an
+SUT, and call an SUT control adapter to change the SUT state. A test
+suite consist of a series of test cases that are categorized into several
 scenarios.
 
 ### MS-OXWSATT
 
 This scenario is designed to verify the server-side, testable
 requirements in the MS-OXWSATT test suite. The following table lists the
-scenarios designed in the test suite.
+scenarios in the test suite.
 
  Scenario  | Description
 :------------ | :-------------
@@ -250,7 +250,7 @@ scenarios designed in the test suite.
 
 This scenario is designed to verify the server-side, testable
 requirements in the MS-OXWSBTRF test suite. The following table lists the
-scenarios designed in the test suite.
+scenarios in this test suite.
  
  Scenario  | Description
 :------------ | :-------------
@@ -260,7 +260,7 @@ S01\_ExportAndUploadItems  |   Test the operation on exporting items from a mail
 
 The six scenarios are designed to verify the server-side, testable
 requirements in the MS-OXWSCONT test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
    Scenario  | Description
 :------------ | :-------------
@@ -275,7 +275,7 @@ scenarios designed in this test suite.
 
 The eight scenarios are designed to verify the server-side, testable
 requirements in the MS-OXWSCORE test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
  
    Scenario  | Description
@@ -293,7 +293,7 @@ scenarios designed in this test suite.
 
 The eight scenarios are designed to verify the server-side, testable
 requirements in the MS-OXWSFOLD test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
 Scenario  | Description
 :------------ | :-------------
@@ -310,7 +310,7 @@ Scenario  | Description
 
 The seven scenarios are designed to verify the server-side, testable
 requirements in the MS-OXWSMSG test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
   Scenario  | Description
 :------------ | :-------------
@@ -326,7 +326,7 @@ scenarios designed in this test suite.
 
 The five scenarios are designed to verify the server-side, testable
 requirements in the MS-OXWSMTGS test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
   Scenario  | Description
 :------------ | :-------------
@@ -340,7 +340,7 @@ scenarios designed in this test suite.
 
 The four scenarios are designed to verify the server-side, testable
 requirements in the MS-OXWSSYNC test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
   Scenario  | Description
 :------------ | :-------------
@@ -353,7 +353,7 @@ scenarios designed in this test suite.
 
 The six scenarios are designed to verify the server-side, testable
 requirements in the MS-OXWSTASK test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
  Scenario  | Description
 :------------ | :-------------

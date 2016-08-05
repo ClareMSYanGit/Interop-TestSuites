@@ -336,14 +336,14 @@ Pattern.
     the Model project, and design the capture requirement method in the
     ModelHelper.cs file.
 
-Test suite
+Test suites
 ----------
 
-The test suites verify the server-side and testable requirements listed
-in the requirement specification. The test suites call the protocol
-adapter to send and receive message between the protocol adapter and the
-SUT, and call the SUT control adapter to change the SUT state. The test
-suites consists of a series of test cases which are categorized into several
+Test suites verify the server-side and testable requirements listed
+in the requirement specification. Test suites call a protocol
+adapter to send and receive message between a protocol adapter and an
+SUT, and call an SUT control adapter to change the SUT state. A test
+suite consists of a series of test cases that are categorized into several
 scenarios. Some test cases rely on a second SUT. If the second SUT is
 not present, then some steps of these test cases will not be run.
 
@@ -352,7 +352,7 @@ not present, then some steps of these test cases will not be run.
 The five scenarios are designed to verify the server-side, testable
 requirements in MS-OXCFOLD test suite. The S04\_OperateOnPublicFolder
 scenario relies on the second SUT. It will not be run if the second SUT
-is not available. The following table lists the scenarios designed in
+is not available. The following table lists the scenarios in
 the test suite.
 
 Scenario  |  Description
@@ -367,7 +367,7 @@ S05\_InsufficientRightsOnFolder |  Verifies the ROP operations that the client h
 
 The nine scenarios are designed to verify the server-side, testable
 requirements in the MS-OXCFXICS test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
 Scenario  |  Description
 :------------ | :-------------
@@ -385,7 +385,7 @@ S09\_SyncICSMessageConflict         |  Tests the ROPs, properties and the server
 
 The two scenarios are designed to verify the server-side, testable
 requirements in the MS-OXCMAPIHTTP test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
 
 Scenario  |  Description
@@ -397,7 +397,7 @@ S02\_RequestTypesForAddressBookServerEndpoint|   Verifies the request types for 
 
 The nine scenarios are designed to verify the server-side, testable
 requirements in MS-OXCMSG test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
 Scenario  |  Description
 :------------ | :-------------
@@ -415,7 +415,7 @@ Scenario  |  Description
 
 The two scenarios are designed to verify the server-side, testable
 requirements in the MS-OXCNOTIF test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
  Scenario  |  Description
 :------------ | :-------------
@@ -426,7 +426,7 @@ scenarios designed in this test suite.
 
 The three scenarios are designed to verify the server-side, testable
 requirements in the MS-OXCPERM test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
    Scenario  |  Description
 :------------ | :-------------
@@ -438,7 +438,7 @@ scenarios designed in this test suite.
 
 The six scenarios are designed to verify the server-side, testable
 requirements in the MS-OXCPRPT test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
  Scenario  |  Description
 :------------ | :-------------
@@ -455,7 +455,7 @@ The twelve scenarios are designed for this test suite to verify the server-side,
 testable requirements in the MS-OXCROPS test suite. The scenario
 S01\_LogonROPs relies on the second SUT. Some steps of the test cases
 will not be run if the second SUT is not available. The following table
-lists the scenarios designed in this test suite.
+lists the scenarios in this test suite.
 
    Scenario  |  Description
 :------------ | :-------------
@@ -476,7 +476,7 @@ lists the scenarios designed in this test suite.
 
 The two scenarios are designed to verify the server-side, testable
 requirements in the MS-OXCRPC test suite. The following table lists the
-scenarios designed in this test suite
+scenarios in this test suite
 
  
    Scenario  |  Description
@@ -488,7 +488,7 @@ scenarios designed in this test suite
 
 The three scenarios are designed to verify the server-side, testable
 requirements in the MS-OXCSTOR test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
    Scenario  |  Description
 :------------ | :-------------
@@ -500,7 +500,7 @@ scenarios designed in this test suite.
 
 The seven scenarios are designed to verify the server-side and testable
 requirements in the MS-OXCTABL test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
  Scenario  |  Description
 :------------ | :-------------
@@ -516,7 +516,7 @@ scenarios designed in this test suite.
 
 The five scenarios are designed to verify the server-side, testable
 requirements in the MS-OXNSPI test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
  Scenario  |  Description
 :------------ | :-------------
@@ -530,7 +530,7 @@ scenarios designed in this test suite.
 
 The five scenarios are designed for the MS-OXORULE test suite to verify the
 structure and the server behavior. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
 |Scenario  |  Description|
 |:------------ | :-------------|

@@ -263,7 +263,7 @@ scenarios.
 
 The six scenarios are designed to verify the server-side, testable
 requirements in the MS-ASAIRS test suite. The following table lists the
-scenarios designed in the test suite.
+scenarios in the test suite.
 
 | Scenario | Description |
 | :--- | :--- |
@@ -276,7 +276,7 @@ scenarios designed in the test suite.
 
 ### MS-ASCAL
 
-The two scenarios are designed to verify the server-side, testable requirements in the MS-ASCAL test suite. The following table lists the scenarios designed in this test suite.
+The two scenarios are designed to verify the server-side, testable requirements in the MS-ASCAL test suite. The following table lists the scenarios in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
@@ -287,7 +287,7 @@ The two scenarios are designed to verify the server-side, testable requirements 
 
 The twenty-two scenarios are designed to verify the server-side, testable
 requirements in the MS-ASCMD test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
@@ -318,7 +318,7 @@ scenarios designed in this test suite.
 
 The three scenarios are designed to verify the server-side, testable
 requirements in the MS-ASCNTC test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
@@ -330,7 +330,7 @@ scenarios designed in this test suite.
 
 The five scenarios are designed to verify the server-side, testable
 requirements in the MS-ASCON test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
@@ -344,7 +344,7 @@ scenarios designed in this test suite.
 
 The two scenarios are designed to verify the server-side, testable
 requirements in the MS-ASDOC test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
@@ -355,7 +355,7 @@ scenarios designed in this test suite.
 
 The four scenarios are designed to verify the server-side, testable
 requirements in the MS-ASEMAIL test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
@@ -368,7 +368,7 @@ scenarios designed in this test suite.
 
 The four scenarios are designed to verify the server-side, testable
 requirements in the MS-ASHTTP test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
@@ -381,7 +381,7 @@ scenarios designed in this test suite.
 
 The three scenarios are designed to verify the server-side, testable
 requirements in the MS-ASNOTE test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
@@ -393,7 +393,7 @@ scenarios designed in this test suite.
 
 The three scenarios are designed to verify the server-side, testable
 requirements in the MS-ASPROV test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
@@ -405,7 +405,7 @@ scenarios designed in this test suite.
 
 The five scenarios are designed to verify the server-side and testable
 requirements in the MS-ASRM test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
@@ -419,7 +419,7 @@ scenarios designed in this test suite.
 
 The three scenarios are designed to verify the server-side, testable
 requirements in the MS-ASTASK test suite. The following table lists the
-scenarios designed in this test suite.
+scenarios in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |

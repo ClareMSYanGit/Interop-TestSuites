@@ -225,18 +225,18 @@ package have an SUT control adapter.
 Test suites
 -----------
 
-The test suites verify the server-side and testable requirements listed
-in the requirement specification. The test suites call the protocol
-adapter to send and receive messages between the protocol adapter and
-the SUT, and call the SUT control adapter to change the SUT state. The
-test suites consist of a series of test cases which are categorized into
+Test suites verify the server-side and testable requirements listed
+in the requirement specification. Test suites call the protocol
+adapter to send and receive messages between a protocol adapter and
+an SUT, and call an SUT control adapter to change the SUT state. A
+test suite consists of a series of test cases that are categorized into
 several scenarios.
 
 ### Shared test suite
 
 The fifteen shared test scenarios are designed to cover testable requirements for
 MS-FSSHTTP behaviors in both MS-WOPI and MS-FSSHTTP-FSSHTTPB test
-suites. The following table lists the scenarios designed in the shared test suite:
+suites. The following table lists the scenarios in the shared test suite:
 
  Scenario| Description
 :------------ | :-------------
@@ -259,7 +259,7 @@ S15\_CreateFile |   Verifies the PutChanges sub-request to create a new file on 
 ### MS-FSSHTTP-FSSHTTPB
 
 The fifteen test scenarios are designed to cover testable requirements in the
-MS-FSSHTTP-FSSHTTPB test suite. The following table lists the scenarios designed in the MS-FSSHTTP-FSSHTTPB test suite:
+MS-FSSHTTP-FSSHTTPB test suite. The following table lists the scenarios in the MS-FSSHTTP-FSSHTTPB test suite:
 
   Scenario| Description
 :------------ | :-------------
@@ -289,10 +289,9 @@ the MS-FSSHTTP request embedded in the HTTP body depending on whether or not
 MS-FSSHTTP is implemented.
 
 The four scenarios (from MSWOPI\_S17 to MSWOPI\_S20) are designed to verify the
-operations fully defined in the MS-WOPI Open Specification.
+operations defined in the MS-WOPI Open Specification.
 
-The following table lists the scenarios designed in the MS-WOPI test
-suite:
+The following table lists the scenarios in the MS-WOPI test suite:
 
 Scenario| Description
 :------------ | :-------------
@@ -312,9 +311,9 @@ Scenario| Description
   MS\_WOPI\_S14\_AllocateExtendedGuidRange |  Verifies the allocate extended GUID range sub-request operations.
   MS\_WOPI\_S15\_CreateFile                |  Verifies the PutChanges sub-request to create a new file on the server.
   MS\_WOPI\_S16\_CellWithRelative          |  Verifies the cell sub-request operation by sending the data with “X-WOPI-RelativeTarget” header, which is specified in section [3.3.5.1.8 of MS-WOPI](https://msdn.microsoft.com/en-us/library/hh642943(v=office.12).aspx).
-  MS\_WOPI\_S17\_FileLevelItems |  Verify CheckFileInfo, PutRelativeFile, Lock, Unlock, RefreshLock, UnlockAndRelock, ExecuteCellStorageRequest, ExecuteCellStorageRelativeRequest, DeleteFile operation.
-  MS\_WOPI\_S18\_FolderLevelItems               |  Verify CheckFolderInfo operation.
-  MS\_WOPI\_S19\_FileContentLevelItems          |   Verify GetFile, PutFile operation.
-  MS\_WOPI\_S20\_FolderChildrenLevelItems       |   Verify EnumerateChildren operation.
+  MS\_WOPI\_S17\_FileLevelItems |  Verifies the CheckFileInfo, PutRelativeFile, Lock, Unlock, RefreshLock, UnlockAndRelock, ExecuteCellStorageRequest, ExecuteCellStorageRelativeRequest, DeleteFile operations.
+  MS\_WOPI\_S18\_FolderLevelItems               |  Verifies the CheckFolderInfo operation.
+  MS\_WOPI\_S19\_FileContentLevelItems          |   Verifies the GetFile, PutFile operations.
+  MS\_WOPI\_S20\_FolderChildrenLevelItems       |   Verifies the EnumerateChildren operation.
 
 
