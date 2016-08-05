@@ -176,7 +176,7 @@ methods can be classified into following categories:
 -   Access the properties in the configuration file.
 -   Generate resource name.
 -   Verify the remote Secure Sockets Layer (SSL) certificate.
--   Other methods which are used by multiple test suites.
+-   Used by multiple test suites.
 
 ### Message structures
 
@@ -188,7 +188,7 @@ Adapter
 -------
 
 Adapters are interfaces between the test suites and the SUT. There are
-two types of adapter: protocol adapter and SUT control adapter. In most
+two types of adapters: protocol adapter and SUT control adapter. In most
 cases, modifications to the protocol adapter will not be required for
 non-Microsoft SUT implementation. However, the SUT control adapter
 should be appropriately configured to connect to non-Microsoft SUT

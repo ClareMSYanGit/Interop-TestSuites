@@ -173,12 +173,9 @@ The common library defines a series of helper methods. The helper
 methods can be classified into following categories:
 
 -   Access the properties in the configuration file.
-
 -   Generate resource name.
-
 -   Validate certificate used for authentication.
-
--   Other methods which are used by multiple test suites.
+-   Used by multiple test suites.
 
 ### Message structures
 
@@ -190,7 +187,7 @@ Adapter
 -------
 
 Adapters are interfaces between the test suites and the SUT. There are
-two types of adapter: a protocol adapter and an SUT control adapter. In most
+two types of adapters: a protocol adapter and an SUT control adapter. In most
 cases, modifications to the protocol adapter will not be required for
 non-Microsoft SUT implementation. However, the SUT control adapter
 should be appropriately configured to connect to non-Microsoft SUT

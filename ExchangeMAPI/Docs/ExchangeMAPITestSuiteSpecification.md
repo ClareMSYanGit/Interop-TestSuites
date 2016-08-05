@@ -205,7 +205,7 @@ methods can be classified into following categories.
 
 -   Access the properties in the configuration file.
 -   Generate resource name.
--   Other methods which are used by multiple test suites.
+-   Used by multiple test suites.
 
 ### Message structures
 

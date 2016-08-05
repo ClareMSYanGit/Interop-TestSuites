@@ -171,7 +171,7 @@ validate the requirements gathered from technical specifications.
 Exchange EAS Protocol Test Suites include one common library, thirteen
 adapters and twelve test suites.
 
--   The test suites communicate with SUT via a protocol adapter and SUT
+-   The test suites communicate with SUT via a protocol adapter and an SUT
     control adapter to verify if the SUT is behaving in 
     compliance with normative protocol requirements.
 
@@ -191,7 +191,7 @@ messages, structures, and helper methods.
 ### ActiveSyncClient
 
 ActiveSyncClient works as an intermediary between the protocol
-adapter and SUT. The protocol adapter calls ActiveSyncClient to connect,
+adapter and the SUT. The protocol adapter calls ActiveSyncClient to connect,
 disconnect, and execute commands. ActiveSyncClient passes the
 protocol adapter requests and sends the protocol adapter request to the
 SUT. ActiveSyncClient receives the response from the SUT and sends
@@ -204,7 +204,7 @@ methods can be classified into the following categories:
 
 -   Access the properties in the configuration file.
 -   Generate resource name.
--   Other methods which are used by multiple test suites.
+-   Used by multiple test suites.
 
 ### Message structures
 
