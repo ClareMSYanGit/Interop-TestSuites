@@ -88,25 +88,25 @@ Assumptions
     multi-protocol user scenarios, but rather to provide a way to exercise
     certain operations documented in a technical specification.
 
--   The test suites are functional tests that verify the compatibility
+-   Test suites are functional tests that verify the compatibility
     of the system under test (SUT) with protocol implementation.
 
--   The test suites do not cover every protocol requirement and in no
+-   Test suites do not cover every protocol requirement and in no
     way certify implementation, even if all tests pass.
 
--   The test suites verify the server-side testable requirements, but
+-   Test suites verify the server-side testable requirements, but
     do not verify the requirements related to client behavior and
     server internal behavior.
 
--   The test suites assume that there is a shared folder on the server.
+-   Test suites assume that there is a shared folder on the server.
 
--   The test suites assume that there is a hidden folder and a visible
+-   Test suites assume that there is a hidden folder and a visible
     folder under the shared folder.
 
--   The test suites assume that there is a hidden document and a
+-   Test suites assume that there is a hidden document and a
     visible document under the shared folder.
 
--   The test suites assume that authentication has been performed by
+-   Test suites assume that authentication has been performed by
     the underlying protocols.
 
 Dependencies

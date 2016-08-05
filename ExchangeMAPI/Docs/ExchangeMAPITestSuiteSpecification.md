@@ -29,7 +29,7 @@ In a single test suite, similar or related requirements are grouped into one
 test case. Test cases on the same command or operation are
 grouped into one scenario.
 
-The technical specifications listed in the following table are included
+The technical specifications in the following table are included
 in the Exchange MAPI Protocol Test Suites package. The 
 technical specifications version is v20140130.
 
