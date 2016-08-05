@@ -277,13 +277,13 @@ scenarios designed in the test suite.
 ### MS-ASCAL
 
 The two scenarios are designed to verify the server-side, testable
-requirements in MS-ASCAL test suite. The following table lists the
+requirements in the MS-ASCAL test suite. The following table lists the
 scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-|   S01\_CalendarElement |   Test the Calendar class elements, which are not attached in a Meeting request, including synchronizing the calendar on the server, fetching information of the calendar or searching a specific calendar.| 
-|   S02\_MeetingElement  |   Test the Calendar class elements, which are attached in a Meeting request, when meeting is either accepted, tentative accepted, cancelled or declined.| 
+|   S01\_CalendarElement | Test Calendar class elements, which are not attached in a Meeting request, including synchronizing the calendar on the server, fetching information of the calendar or searching a specific calendar.| 
+|   S02\_MeetingElement  | Test Calendar class elements, which are attached in a Meeting request, when meeting is either accepted, tentative accepted, cancelled or declined.| 
 
 ### MS-ASCMD
 
