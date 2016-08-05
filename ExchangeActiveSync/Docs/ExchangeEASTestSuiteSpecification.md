@@ -282,24 +282,24 @@ scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-|   S01\_CalendarElement | Test Calendar class elements, which are not attached in a Meeting request, including synchronizing the calendar on the server, fetching information of the calendar or searching a specific calendar.| 
-|   S02\_MeetingElement  | Test Calendar class elements, which are attached in a Meeting request, when meeting is either accepted, tentative accepted, cancelled or declined.| 
+|   S01\_CalendarElement | Test the Calendar class elements, which are not attached in a Meeting request, including synchronizing the calendar on the server, fetching information of the calendar or searching a specific calendar.| 
+|   S02\_MeetingElement  | Test the Calendar class elements, which are attached in a Meeting request, when meeting is either accepted, tentative accepted, cancelled or declined.| 
 
 ### MS-ASCMD
 
-These twenty-two scenarios are designed to verify the server-side, testable
+The twenty-two scenarios are designed to verify the server-side, testable
 requirements in the MS-ASCMD test suite. The following table lists the
 scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-| S01\_Autodiscover    |  Discover the account settings by using the Autodiscover command.|
-| S02\_FolderCreate    |   Create the folders by using the FolderCreate command.|
-| S03\_FolderDelete    |   Delete the folders by using the FolderDelete command.|
-| S04\_FolderSync      |   Synchronize the folders by using the FolderSync command.|
-| S05\_FolderUpdate    |  Update the folders by using the FolderUpdate command.|
+| S01\_Autodiscover    | Discover the account settings by using the Autodiscover command.|
+| S02\_FolderCreate    | Create the folders by using the FolderCreate command.|
+| S03\_FolderDelete    | Delete the folders by using the FolderDelete command.|
+| S04\_FolderSync      | Synchronize the folders by using the FolderSync command.|
+| S05\_FolderUpdate    | Update the folders by using the FolderUpdate command.|
 | S06\_GetAttachment   | Retrieve an email attachment from the server by using the GetAttachment command.|
-| S07\_GetItemEstimate | Get an estimate for the number of items in a collection or folder on the server that have to be synchronized by using GetItemEstimate command.|
+| S07\_GetItemEstimate | Get an estimate for the number of items in a collection or a folder on the server that has to be synchronized by using the GetItemEstimate command.|
 | S08\_ItemOperations  | Provide the batched online handling of Fetch, empty the folder contents and move the operations against the server by using the ItemOperations command.|
 | S09\_MeetingResponse |   Accept, tentatively accept, or decline a meeting request in the user's Inbox folder or Calendar folder by using the MeetingResponse command.|
 | S10\_MoveItems        |   Move an item or items from one folder on the server to another by using the MoveItems command.|
@@ -324,9 +324,9 @@ scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-|S01\_Sync |            Use the Sync command to synchronize the Contact class data between the client and server.|
-|S02\_ItemOperations |  Use ItemOperations command to retrieve Contact class data from the server.|
-|S03\_Search         |  Use Search command to search Contact class data on the server.|
+|S01\_Sync | Use the Sync command to synchronize the Contact class data between the client and server.|
+|S02\_ItemOperations |  Use the ItemOperations command to retrieve the Contact class data from the server.|
+|S03\_Search         |  Use the Search command to search the Contact class data on the server.|
 
 ### MS-ASCON
 
@@ -350,7 +350,7 @@ scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-|  S01\_SearchCommand |          Retrieve the Document class items that match the criteria specified by the client through the Search command messages.|
+|  S01\_SearchCommand | Retrieve the Document class items that match the criteria specified by the client through the Search command messages.|
 |  S02\_ItemOperationsCommand |  Retrieve the data from the server for one or more individual documents through the ItemOperations command messages.|
 
 ### MS-ASEMAIL
@@ -363,21 +363,21 @@ scenarios designed in this test suite.
 | :--- | :--- |
 |  S01\_Email | Test normal e-mail events, including sending an e-mail to a server, synchronizing e-mails with a server, retrieving e-mail items that match the criteria specified by the client from a server, retrieving data from a server for one or more specific e-mail items.|
 |  S02\_EmailVoiceAttachment| Test voice attachment e-mail events, including sending an e-mail with voice attachment to a server, synchronizing the e-mail with voice attachment with a server.|
-|  S03\_EmailFlag | Test flag events, including setting a flag on email or task, updating a flag on email or task, marking a flag on email or task as complete, clearing a flag from email or task.|
+|  S03\_EmailFlag | Test flag events, including setting a flag on email or task, updating a flag on email or task, marking a flag on an email or a task as complete, clearing a flag from an email or a task.|
 |  S04\_MeetingRequest| Test meeting request events, including sending a meeting request to server, synchronizing the meeting request with a server.|
 
 ### MS-ASHTTP
 
 The four scenarios are designed to verify the server-side, testable
-requirements in MS-ASHTTP test suite. The following table lists the
+requirements in the MS-ASHTTP test suite. The following table lists the
 scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
 | S01\_HTTPPOSTPositive| Test the positive behaviors issued by the HTTP POST command.|
 | S02\_HTTPPOSTNegative | Test the negative behaviors issued by the HTTP POST command.|
-| S03\_HTTPPOSTOptionalHeader | Test optional request header of the HTTP POST command.|
-| S04\_HTTPOPTIONSMessage  | Test HTTP OPTIONS command.|
+| S03\_HTTPPOSTOptionalHeader | Test the optional request header of the HTTP POST command.|
+| S04\_HTTPOPTIONSMessage  | Test the HTTP OPTIONS command.|
 
 ### MS-ASNOTE
 
@@ -387,9 +387,9 @@ scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-|S01\_SyncCommand   |   Synchronize the Notes class items for a specified user with the existing notes stored on the server.|
-|S02\_SearchCommand |   Retrieve the Notes class items that match the criteria specified by the client.|
-|S03\_ItemOperationsCommand |  Retrieve the data from the server for one or more notes items.|
+|S01\_SyncCommand   | Synchronize the Notes class items for a specified user with the existing notes stored on the server.|
+|S02\_SearchCommand | Retrieve the Notes class items that match the criteria specified by the client.|
+|S03\_ItemOperationsCommand | Retrieve the data from the server for one or more notes items.|
 
 ### MS-ASPROV
 
@@ -399,32 +399,32 @@ scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-|  S01\_AcknowledgePolicySettings                            |Test the acknowledgement phase of Provision.|
-|  S02\_RemoteWipe                                           |Test the remote wipe directive.|
-|  S03\_ProvisionNegative                                    |Test the negative status of Provision command.|
+|  S01\_AcknowledgePolicySettings |Test the acknowledgement phase of Provision.|
+|  S02\_RemoteWipe |Test the remote wipe directive.|
+|  S03\_ProvisionNegative |Test the negative status of the Provision command.|
 
 ### MS-ASRM
 
-Five scenarios are designed to verify the server-side and testable
+The five scenarios are designed to verify the server-side and testable
 requirements in MS-ASRM test suite. The following table lists the
 scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-|  S01\_Settings\_SendMail\_Sync |  Get templateIDs, send email messages and synchronize data from the server by using Settings, SendMail and Sync commands.|
-|  S02\_ItemOperations|             Fetch a rights-managed e-mail message with or without RemoveRightsManagementProtection element by using the ItemOperations command.|
-|  S03\_Search       |              Find rights-managed e-mail messages by using the Search command.|
-|  S04\_SmartForward|               Forward messages by using the SmartForward command.|
-|  S05\_SmartReply|                 Reply messages by using the SmartReply command.|
+|S01\_Settings\_SendMail\_Sync | Get templateIDs, send email messages and synchronize data from the server by using the Settings, SendMail and Sync commands.|
+|S02\_ItemOperations|Fetch a rights-managed e-mail message with or without the RemoveRightsManagementProtection element by using the ItemOperations command.|
+|S03\_Search        |Find rights-managed e-mail messages by using the Search command.|
+|S04\_SmartForward  |Forward messages by using the SmartForward command.|
+|S05\_SmartReply    |Reply messages by using the SmartReply command.|
 
 ### MS-ASTASK
 
 The three scenarios are designed to verify the server-side, testable
-requirements in MS-ASTASK test suite. The following table lists the
+requirements in the MS-ASTASK test suite. The following table lists the
 scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-| S01\_SyncCommand|             Test the Task class element on the server by using Sync command.|
-| S02\_ItemOperationsCommand|   Test the Task class element on the server by using ItemOperations command.|
-| S03\_SearchCommand |          Test the Task class element on the server by using Search command.|
+| S01\_SyncCommand|Test the Task class element on the server by using the Sync command.|
+| S02\_ItemOperationsCommand|Test the Task class element on the server by using the ItemOperations command.|
+| S03\_SearchCommand | Test the Task class element on the server by using the Search command.|
