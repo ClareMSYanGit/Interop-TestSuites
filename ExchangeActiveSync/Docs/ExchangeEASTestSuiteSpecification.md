@@ -42,7 +42,7 @@ technical specifications version is v20150630.
 |  **MS-ASCNTC** |                [Exchange ActiveSync: Contact Class Protocol](http://go.microsoft.com/fwlink/?LinkID=301333) |
 |  **MS-ASCON**  |                [Exchange ActiveSync: Conversations Protocol](http://go.microsoft.com/fwlink/?LinkID=301334) |
 |  **MS-ASDOC**  |                [Exchange ActiveSync: Document Class Protocol](http://go.microsoft.com/fwlink/?LinkID=301335) |
-|  **MS-ASDTYPE**|                [Exchange ActiveSync: Data Types*](http://go.microsoft.com/fwlink/?LinkID=708453) |
+|  **MS-ASDTYPE**|                [Exchange ActiveSync: Data Types](http://go.microsoft.com/fwlink/?LinkID=708453) |
 |  **MS-ASEMAIL**|                [Exchange ActiveSync: Email Class Protocol](http://go.microsoft.com/fwlink/?LinkID=301336) |
 |  **MS-ASHTTP** |                [Exchange ActiveSync: HTTP Protocol](http://go.microsoft.com/fwlink/?LinkID=301337) |
 |  **MS-ASNOTE** |                [Exchange ActiveSync: Notes Class Protocol](http://go.microsoft.com/fwlink/?LinkID=301338) |
@@ -123,7 +123,7 @@ Dependencies
     ActiveSync server.
 
 -   All Exchange EAS Protocol Test Suites depend on MS-ASHTTP to
-    synchronize the data which is stored on the server.
+    synchronize the data stored on the server.
 
 -   All Exchange EAS Protocol Test Suites depend on the xsd.exe tool in
     the .NET Framework SDK to generate structures used in the MS-ASCAL
@@ -374,8 +374,8 @@ scenarios designed in this test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-| S01\_HTTPPOSTPositive| Test the positive behaviors issued by the HTTP POST command.|
-| S02\_HTTPPOSTNegative | Test the negative behaviors issued by the HTTP POST command.|
+| S01\_HTTPPOSTPositive| Test the positive behavior issued by the HTTP POST command.|
+| S02\_HTTPPOSTNegative | Test the negative behavior issued by the HTTP POST command.|
 | S03\_HTTPPOSTOptionalHeader | Test the optional request header of the HTTP POST command.|
 | S04\_HTTPOPTIONSMessage  | Test the HTTP OPTIONS command.|
 
