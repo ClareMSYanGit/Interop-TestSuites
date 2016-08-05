@@ -267,9 +267,9 @@ scenarios designed in the test suite.
 
 | Scenario | Description |
 | :--- | :--- |
-|  S01\_BodyPartPreference  | Test the BodyPartPreference element and the BodyPart element in the AirSyncBase namespace, which is used by the Sync command, the Search command and the ItemOperations command to identify the data sent by and returned to the client.|
-|  S02\_BodyPreference      | Test the BodyPreference element and the Body element in the AirSyncBase namespace, which is used by the Sync command, the Search command and the ItemOperations command to identify the data sent by and returned to the client.|
-|  S03\_Attachment          | Test the Attachments element and its subelements in the AirSyncBase namespace, which is used by the Sync command, the Search command and the ItemOperations command to identify the data sent by and returned to the client.|
+|  S01\_BodyPartPreference  | Test the BodyPartPreference element and the BodyPart element in the AirSyncBase namespace, which is used by the Sync command, the Search command and the ItemOperations command to identify the data that the client sent and returned to the client.|
+|  S02\_BodyPreference      | Test the BodyPreference element and the Body element in the AirSyncBase namespace, which is used by the Sync command, the Search command and the ItemOperations command to identify the data that the client sent and returned to the client.|
+|  S03\_Attachment          | Test the Attachments element and its subelements in the AirSyncBase namespace, which is used by the Sync command, the Search command and the ItemOperations command to identify the data that the client sent and returned to the client.|
 |  S04\_StatusError         | Test the status error which is returned by the Sync command, the Search command and the ItemOperations command when XML elements in the AirSyncBase namespace don't comply with requirements regarding the data type, the number of instance, the order and placement in the XML hierarchy.|
 |  S05\_Location            | Test the Location element and its sub elements, which is used by the Sync command, Search command and ItemOperations command.|
 |  S06\_MeetingResponseCommand |  Test the MeetingResponse command.|
