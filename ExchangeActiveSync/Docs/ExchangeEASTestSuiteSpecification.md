@@ -179,7 +179,7 @@ adapters and twelve test suites.
     and retrieve command response.
 
 -   ActiveSyncClient encodes and decodes commands defined in
-    \[MS-ASCMD\] by using MS-ASWBXML and communicates with an SUT
+    \[MS-ASCMD\](https://msdn.microsoft.com/en-us/library/dd299441(v=exchg.80).aspx) by using MS-ASWBXML and communicates with an SUT
     via MS-ASHTTP.
 
 Common library
