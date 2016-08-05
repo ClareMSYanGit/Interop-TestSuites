@@ -190,11 +190,11 @@ messages, structures, and helper methods.
 
 ### ActiveSyncClient
 
-ActiveSyncClient works as an intermediary between the protocol
-adapter and the SUT. The protocol adapter calls ActiveSyncClient to connect,
-disconnect, and execute commands. ActiveSyncClient passes the
+The ActiveSyncClient works as an intermediary between the protocol
+adapter and the SUT. The protocol adapter calls the ActiveSyncClient to connect,
+disconnect, and execute commands. The ActiveSyncClient passes the
 protocol adapter requests and sends the protocol adapter request to the
-SUT. ActiveSyncClient receives the response from the SUT and sends
+SUT. The ActiveSyncClient receives the response from the SUT and sends
 the response back to the protocol adapter.
 
 ### Helper methods
