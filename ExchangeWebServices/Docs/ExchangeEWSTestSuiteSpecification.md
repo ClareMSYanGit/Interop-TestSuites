@@ -15,7 +15,7 @@ originally developed for the in-house testing of Microsoft Open
 Specifications. 
 
 Microsoft Open Specifications are written using the normative
-language defined in [RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453), from which the
+language defined in [RFC2119](http://go.microsoft.com/fwlink/?LinkId=117453), from which
 statements are extracted as protocol requirements to be
 listed in the requirement specification. See [Requirement specification](#requirement-specification). 
 This document describes how Exchange EWS Protocol Test Suites are
@@ -27,7 +27,7 @@ In a single test suite, similar or related requirements are grouped into one
 test case, and the test cases on the same command or operation are
 grouped into one scenario.
 
-The technical specifications listed in the following table are included
+The technical specifications in the following table are included
 in the Exchange EWS Protocol Test Suites package. The version of
 technical specification MS-OXWSITEMID is v20150330 and the others are
 v20121003.
@@ -70,7 +70,7 @@ behavior of the initiator, the scope of the requirement is
 the client. If the requirement describes the behavior of the
 initiator and responder, the scope of the requirement is both the client and server.
 
-The test suites cover normative requirements which describes the behavior
+Test suites cover normative requirements that describe the behavior
 of the responder. For a detailed requirement list and
 classification, see MS-XXXX\_RequirementSpecification.xlsx.
 
