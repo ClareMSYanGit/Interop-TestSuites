@@ -147,7 +147,7 @@ architecture.
 
 **Figure 1: Architecture**
 
-The following outlines the details of the test suites architecture:
+The following outlines details of the test suites architecture:
 
 **SUT**
 
