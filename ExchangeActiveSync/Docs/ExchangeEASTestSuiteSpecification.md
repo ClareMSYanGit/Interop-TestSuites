@@ -154,8 +154,7 @@ The following outlines the details of the test suites architecture:
 The system under test (SUT) hosts the server-side implementation of the
 protocol, which test suites run against.
 
--   From a third-party’s point of view, the SUT is a
-    server implementation.
+-   From a third-party’s point of view, the SUT is server implementation.
 
 -   The following products have been tested with the test suites on the
     Windows platform.
@@ -186,16 +185,16 @@ adapters and twelve test suites.
 Common library
 --------------
 
-The common library provides implementation of the ActiveSyncClient,
+The common library provides implementation of ActiveSyncClient,
 messages, structures, and helper methods.
 
 ### ActiveSyncClient
 
-The ActiveSyncClient works as an intermediary between the protocol
+ActiveSyncClient works as an intermediary between the protocol
 adapter and SUT. The protocol adapter calls ActiveSyncClient to connect,
-disconnect, and execute commands. The ActiveSyncClient passes the
+disconnect, and execute commands. ActiveSyncClient passes the
 protocol adapter requests and sends the protocol adapter request to the
-SUT. The ActiveSyncClient receives the response from the SUT and sends
+SUT. ActiveSyncClient receives the response from the SUT and sends
 the response back to the protocol adapter.
 
 ### Helper methods
@@ -216,7 +215,7 @@ Adapter
 -------
 
 Adapters are interfaces between the test suites and the SUT. There are
-two types of adapter: protocol adapter and SUT control adapter. In most
+two types of adapters: protocol adapter and SUT control adapter. In most
 cases, modifications to the protocol adapter will not be required for
 non-Microsoft SUT implementation. However, the SUT control adapter
 should be appropriately configured to connect to non-Microsoft SUT
@@ -227,11 +226,11 @@ adapter, six of which contain a SUT control adapter.
 
 The protocol adapter is a managed adapter, which is derived from the
 ManagedAdapterBase class in PTF. It provides an interface that is
-used by the test cases to construct protocol request messages that will
+used by test cases to construct protocol request messages that will
 be sent to the SUT. The protocol adapter also acts as an intermediary
-between the test cases and the transport classes, receiving messages,
-sending messages, parsing responses from the transport classes, and
-validating the SUT response according to normative requirements in
+between test cases and transport classes to receive messages,
+send messages, parse responses from transport classes, and
+validate the SUT response according to normative requirements in
 the technical specification.
 
 All protocol adapters use ActiveSyncClient transport classes defined in
