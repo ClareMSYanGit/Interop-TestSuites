@@ -9,7 +9,7 @@ Exchange EWS Test Suites Specification
 Introduction
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 Exchange EWS Protocol Test Suites are implemented as synthetic
-clients running against a server-side implementation of a given Exchange
+clients running against server-side implementation of a given Exchange
 protocol. They are designed in a client-to-server relationship and were
 originally developed for the in-house testing of Microsoft Open
 Specifications. 
@@ -145,7 +145,7 @@ adapters and nine test suites.
     control adapter to verify if an SUT is behaving in
     compliance with normative protocol requirements.
 
--   Expect the MS-OXWSITEMID adapter, all other protocol adapters to
+-   Except for the MS-OXWSITEMID adapter, all other protocol adapters
     communicate with an SUT through the common library.
 
 -   The MS-OXWSITEMID protocol adapter implements Web Service
@@ -183,7 +183,7 @@ Except for MS-OXWSITEMID, all protocols are SOAP protocols. Therefore the
 message structures are used by multiple test suites. These message
 structures are defined in the common library.
 
-Adapter
+Adapters
 -------
 
 Adapters are interfaces between the test suites and the SUT. There are
@@ -198,24 +198,24 @@ adapter, three of which contain an SUT control adapter.
 
 The protocol adapter is a managed adapter, which is derived from the
 ManagedAdapterBase class in PTF. It provides an interface that is
-used by the test cases to construct protocol request messages that will
+used by test cases to construct protocol request messages that will
 be sent to the SUT. The protocol adapter also acts as an intermediary
-between the test cases and the transport classes, receiving messages,
-sending messages, parsing responses from the transport classes, and
-validating the SUT response according to normative requirements in
+between test cases and transport classes to receive messages,
+send messages, parse responses from transport classes, and
+validate the SUT response according to normative requirements in
 the technical specification.
 
-Except for MS-OXWSITEMID, all other protocol adapters use
+Except for MS-OXWSITEMID, all other protocol adapters use the
 ExchangeServiceBinding transport class defined in the common library to
 send and receive messages. The MS-OXWSITEMID protocol adapter implements the
-Web Service Item Algorithm which describes the format of the Id and how
+Web Service Item Algorithm that describes the format of the Id and how
 to process the Id. All other test suites use the MS-OXWSITEMID protocol
 adapter to parse and process the Id of an ItemId object in a SOAP request
 and a SOAP response.
 
 ### SUT Control Adapter 
 
-The SUT control adapter manages all the control functions of the test
+The SUT control adapter manages all control functions of the test
 suites that are not associated with the protocol. For example, the setup
 and teardown are managed through the SUT control adapter. The SUT
 control adapter is designed to work with Microsoft implementation of
@@ -229,11 +229,11 @@ MS-OXWSMSG.
 Test suites
 ----------
 
-Test suites verify the server-side and testable requirements listed
+Test suites verify the server-side and testable requirements
 in the requirement specification. Test suites call a protocol
 adapter to send and receive message between a protocol adapter and an
 SUT, and call an SUT control adapter to change the SUT state. A test
-suite consist of a series of test cases that are categorized into several
+suite consists of a series of test cases that are categorized into several
 scenarios.
 
 ### MS-OXWSATT

@@ -213,7 +213,7 @@ are ROP protocols. Therefore the ROP message structures are used by
 multiple test suites. These ROP message structures are defined in the
 common library.
 
-Adapter
+Adapters
 -------
 
 Adapters are interfaces between the test suites and the SUT. There are

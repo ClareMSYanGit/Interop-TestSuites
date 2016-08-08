@@ -9,7 +9,7 @@ Introduction
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 SharePoint File Sync and WOPI Protocol Test Suites are implemented
-as synthetic clients running against a server-side implementation of a
+as synthetic clients running against server-side implementation of a
 given SharePoint protocol. They are designed in a client-to-server
 relationship and were originally developed for the in-house testing of
 Microsoft Open Specifications. 
@@ -58,9 +58,9 @@ does not affect interoperability, the requirement is informative.
 
 Each requirement applies to a specific scope: server, client, or both.
 If the requirement describes the behavior of the responder, the
-scope of the requirement is server. If the requirement describes the
+scope of the requirement is the server. If the requirement describes the
 behavior of the initiator, the scope of the requirement is
-client. If the requirement describes the behavior of the
+the client. If the requirement describes the behavior of the
 initiator and responder, the scope of the requirement is both the client and server.
 
 Test suites cover normative requirements that describe the behavior
@@ -76,7 +76,7 @@ Assumptions
 -   The MS-FSSHTTP-FSSHTTPB test suite tests one client and
     one connection.
 
-	This is because there is no specification stated in the open
+	This is because there is no specification in the open
 	specification. By default, it is assumed that the server behaves the
 	same toward multiple clients as toward a single client.
 
@@ -85,7 +85,6 @@ Assumptions
 
 	-   The SUT can store files of the following three file types in a
 		document library:
-
 		-   \*.txt
 		-   \*.zip
 		-   \*.one
@@ -101,7 +100,7 @@ Assumptions
 		**Note** In Microsoft SharePoint Foundation 2013 Service Pack
 		1 (SP1) and Microsoft SharePoint Server 2013 Service Pack 1 (SP1),
 		the **Get-SPWOPIBinding** command can be used to get the binding
-		information, and the **Remove-SPWOPIBinding** command can be used to
+		information and the **Remove-SPWOPIBinding** command can be used to
 		remove the binding.
 
 Dependencies
@@ -157,7 +156,7 @@ adapters and three test suites.
     compliance with normative protocol requirements.
 
 -   The shared test suite implements MS-FSSHTTP and is shared with MS-WOPI to
-    verify whether or not MS-FSSHTTP can be sent as HTTP body by using the
+    verify whether or not MS-FSSHTTP can be sent as an HTTP body by using the
     MS-WOPI transport format.
 
 -   All protocol adapters communicate directly with an SUT.
@@ -184,7 +183,7 @@ Becuase the C\# proxy class is used by the MS-FSSHTTP-FSSHTTPB test
 suite and the MS-WOPI test suite. So the C\# proxy class is defined in
 the common library.
 
-Adapter
+Adapters
 -------
 
 Adapters are interfaces between the test suites and the SUT. There are
@@ -201,17 +200,17 @@ The protocol adapter is a managed adapter, which is derived from the
 ManagedAdapterBase class in PTF. It provides an interface that is
 used by test cases to construct protocol request messages that will
 be sent to the SUT. The protocol adapter also acts as an intermediary
-between test cases and transport classes, receiving messages,
-sending messages, parsing responses from transport classes, and
-validating the SUT response according to the normative requirement in
+between test cases and transport classes to receive messages,
+send messages, parse responses from transport classes, and
+validate the SUT response according to the normative requirement in
 the technical specification.
 
 All protocols in SharePoint File Sync and WOPI Protocol Test Suites
-package use HTTP transport to communicate with the SUT.
+package use the HTTP transport to communicate with the SUT.
 
 ### SUT Control Adapter 
 
-The SUT control adapter manages all the control functions of the test
+The SUT control adapter manages all control functions of the test
 suites that are not associated with the protocol. For example, the setup
 and teardown are managed through the SUT control adapter (that is,
 enabling or disabling the asynchronous RPC notification on the SUT). The
@@ -235,7 +234,7 @@ several scenarios.
 ### Shared test suite
 
 The fifteen shared test scenarios are designed to cover testable requirements for
-MS-FSSHTTP behaviors in both MS-WOPI and MS-FSSHTTP-FSSHTTPB test
+MS-FSSHTTP behavior in both MS-WOPI and MS-FSSHTTP-FSSHTTPB test
 suites. The following table lists the scenarios in the shared test suite:
 
  Scenario| Description

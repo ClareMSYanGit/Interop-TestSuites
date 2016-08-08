@@ -211,7 +211,7 @@ methods can be classified into the following categories:
 Becuase the C\# proxy class is used by the multiple test suites. So
 the C\# proxy class is defined in the common library.
 
-Adapter
+Adapters
 -------
 
 Adapters are interfaces between the test suites and the SUT. There are
