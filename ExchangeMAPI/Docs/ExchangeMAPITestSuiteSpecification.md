@@ -182,10 +182,10 @@ The MapiHttpAdapter transport class or RpcAdapter transport class is
 chosen according to the setting of the “TransportSeq” property in the
 ExchangeCommonConfiguration.deployment.ptfconfig file. If the
 “TransportSeq” property is set as “mapi\_http”, the MapiHttpAdapter
-transport class is chosen to send and receive message with
+transport class is chosen to send and receive message with the
 MS-OXCMAPIHTTP transport. If the “TransportSeq” property is set as
 either “ncacn\_ip\_tcp” or “ncacn\_http”, the RpcAdapter transport class
-is chosen to send and receive messages with MS-OXCRPC transport.
+is chosen to send and receive messages with the MS-OXCRPC transport.
 
 The OxcropsClient works as an intermediary between the protocol adapter
 and MapiHttpAdapter/RpcAdapter class. The protocol adapter calls the
@@ -534,8 +534,8 @@ scenarios in this test suite.
 |Scenario  |  Description|
 |:------------ | :-------------|
 |S01\_AddModifyDeleteRetrieveRules   |      Validates server behaviors of the following:                                            
-||   The operations of RopModifyRules and RopGetRulesTable when adding, modifying, deleting and retrieving standard rules.    |      
-||   The functions of ROPs that are referenced in MS-OXCMSG and MS-OXCTABL for adding, modifying, deleting, and retrieving extended rules. |                                        
+||   - The operations of RopModifyRules and RopGetRulesTable when adding, modifying, deleting and retrieving standard rules.    |      
+||   - The functions of ROPs that are referenced in MS-OXCMSG and MS-OXCTABL for adding, modifying, deleting, and retrieving extended rules. |                                        
 |  S02\_ProcessServerSideRulesOtherthanOOF |  Validates server behaviors of processing server-side rules other than the Out-of-Office rule, because the action of OP\_OOF\_REPLY is complicated enough to be a separate scenario.|
 |  S03\_ProcessOutOfOfficeRule             |  Validates server behaviors of processing the Out-of-Office rule.|
 |  S04\_ProcessRulesOnPublicFolder        |  Validates server behaviors of processing server-side rules on the public folder.|
