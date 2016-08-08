@@ -306,19 +306,19 @@ test cases generation. They construct the test cases by applying
 
 ### Model design patterns
 
-The five patterns are used in the models of the Exchange MAPI Protocol Test
-Suites package including SynchronousProtocols, AbstractIdentifiers,
+Five patterns are used in the models of the Exchange MAPI Protocol Test
+Suites package, including SynchronousProtocols, AbstractIdentifiers,
 Server Initialization Pattern, Check Return Value, and Helper File
 Pattern.
 
 -   SynchronousProtocols: The protocol operations are modeled as
-    synchronous behavior where the test suite client sends a request and
+    synchronous behavior in which the test suite client sends a request and
     waits for a response. A request is always immediately followed by
-    its response, without interleaving packets from other interchanges.
+    its response without interleaving packets from other interchanges.
 
 -   AbstractIdentifiers: The models explore a set of simple types
     (Boolean, enumeration) as placeholders for the concrete values that
-    will appear during protocol testing. For example, the actual values
+    will appear during the protocol testing. For example, the actual values
     of CodePage GUID cannot be identified at modeling time, so these
     variables are replaced by abstract identifiers and the real data is
     stored in the protocol adapter.
@@ -331,8 +331,8 @@ Pattern.
     verified by the model test case. The capture codes are written in
     corresponding actions in the protocol model.
 
--   Helper File Pattern: The models add a new file, ModelHelper.cs in
-    the Model project, and design the capture requirement method in the
+-   Helper File Pattern: The models add a new file, ModelHelper.cs, in
+    the Model project and design the capture requirement method in the
     ModelHelper.cs file.
 
 Test suites
@@ -343,13 +343,13 @@ in the requirement specification. Test suites call a protocol
 adapter to send and receive message between a protocol adapter and an
 SUT, and call an SUT control adapter to change the SUT state. A test
 suite consists of a series of test cases that are categorized into several
-scenarios. Some test cases rely on a second SUT. If the second SUT is
+scenarios. Some test cases rely on a second SUT. If a second SUT is
 not present, then some steps of these test cases will not be run.
 
 ### MS-OXCFOLD
 
 The five scenarios are designed to verify the server-side, testable
-requirements in MS-OXCFOLD test suite. The S04\_OperateOnPublicFolder
+requirements in the MS-OXCFOLD test suite. The S04\_OperateOnPublicFolder
 scenario relies on the second SUT. It will not be run if the second SUT
 is not available. The following table lists the scenarios in
 the test suite.
@@ -389,13 +389,13 @@ scenarios in this test suite.
 
 Scenario  |  Description
 :------------ | :-------------
-S01\_RequestTypesForMailboxServerEndpoint    |   Verifies the HTTP header, common response format, and the request types for a mailbox server endpoint.
+S01\_RequestTypesForMailboxServerEndpoint    |   Verifies the HTTP header, the common response format, and the request types for a mailbox server endpoint.
 S02\_RequestTypesForAddressBookServerEndpoint|   Verifies the request types for an address book server endpoint.
 
 ### MS-OXCMSG
 
 The nine scenarios are designed to verify the server-side, testable
-requirements in MS-OXCMSG test suite. The following table lists the
+requirements in the MS-OXCMSG test suite. The following table lists the
 scenarios in this test suite.
 
 Scenario  |  Description
@@ -429,7 +429,7 @@ scenarios in this test suite.
 
    Scenario  |  Description
 :------------ | :-------------
-  S01\_RetrieveFolderPermissions |   Verifies the response for retrieving the folder permissions request.
+  S01\_RetrieveFolderPermissions |  Verifies the response for retrieving the folder permissions request.
   S02\_ModifyFolderPermissions   |  Verifies the response for modifying the folder permissions request.
   S03\_NegativeOrErrorValidation |  Verifies the responses for the wrong message sequences and the negative behaviors.
 
@@ -441,10 +441,10 @@ scenarios in this test suite.
 
  Scenario  |  Description
 :------------ | :-------------
-  S01\_QueryDataFromObject        |       Validates the operations used for querying data from an object.
-  S02\_SetDataForObject           |      Validates the operations used for [setting data](#S2) for an object.
-  S03\_QueryDataFromStreamObject  |   Validates the operations used for querying data of a stream object.
-  S04\_SetDataForStreamObject     |   Validates the operations for setting data for a stream object.
+  S01\_QueryDataFromObject        |  Validates the operations used for querying data from an object.
+  S02\_SetDataForObject           |  Validates the operations used for [setting data](#S2) for an object.
+  S03\_QueryDataFromStreamObject  |  Validates the operations used for querying data of a stream object.
+  S04\_SetDataForStreamObject     |  Validates the operations for setting data for a stream object.
   S05\_AsynchronousScenario       |  Validates the operations used for an asynchronous transition.
   S06\_TestCommonObjectProperties |  Validates the common object properties.
 
@@ -519,10 +519,10 @@ scenarios in this test suite.
 
  Scenario  |  Description
 :------------ | :-------------
-  S01\_ObtainGeneralInfo   | Tests the server behavior for the NSPI calls related to obtaining general information of an Address Book object.
+  S01\_ObtainGeneralInfo   | Tests the server behavior for the NSPI calls related to obtaining the general information of an Address Book object.
   S02\_ObtainDetailsInfo   | Tests the server behavior for the NSPI calls related to obtaining the detailed information of an Address Book object.
-  S03\_ANRRelatedBehavior  | Tests the server behavior for the NSPI calls related to Ambiguous Name Resolution process.
-  S04\_ModifyProperty      | Tests the server behavior for the NSPI calls related to modify property of Address Book object.
+  S03\_ANRRelatedBehavior  | Tests the server behavior for the NSPI calls related to the Ambiguous Name Resolution process.
+  S04\_ModifyProperty      | Tests the server behavior for the NSPI calls related to modifying the property of an Address Book object.
   S05\_NegativeBehavior    | Tests the negative server behavior for each NSPI call.
 
 ### MS-OXORULE
@@ -535,9 +535,9 @@ scenarios in this test suite.
 |:------------ | :-------------|
 |S01\_AddModifyDeleteRetrieveRules   |      Validates server behaviors of the following:                                            
 ||   The operations of RopModifyRules and RopGetRulesTable when adding, modifying, deleting and retrieving standard rules.    |      
-||   The functions of ROPs referenced from MS-OXCMSG and MS-OXCTABL for adding, modifying, deleting, and retrieving extended rules. |                                        
-|  S02\_ProcessServerSideRulesOtherthanOOF |  Validates server behaviors of processing server-side rules other than the Out-of-Office rule because the action of OP\_OOF\_REPLY is complicated enough to be a separate scenario.|
+||   The functions of ROPs that are referenced in MS-OXCMSG and MS-OXCTABL for adding, modifying, deleting, and retrieving extended rules. |                                        
+|  S02\_ProcessServerSideRulesOtherthanOOF |  Validates server behaviors of processing server-side rules other than the Out-of-Office rule, because the action of OP\_OOF\_REPLY is complicated enough to be a separate scenario.|
 |  S03\_ProcessOutOfOfficeRule             |  Validates server behaviors of processing the Out-of-Office rule.|
 |  S04\_ProcessRulesOnPublicFolder        |  Validates server behaviors of processing server-side rules on the public folder.|
-|  S05\_GenerateDAMAndDEM              |      Validates server behaviors about DAM and the DEM message.|
+|  S05\_GenerateDAMAndDEM              |      Validates server behaviors of DAM and the DEM message.|
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
