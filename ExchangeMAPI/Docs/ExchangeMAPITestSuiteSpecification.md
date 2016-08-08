@@ -247,9 +247,9 @@ The SUT control adapter manages all control functions of the test
 suites that are not associated with the protocol. For example, the setup
 and the teardown are managed through the SUT control adapter (that is,
 enabling or disabling the asynchronous RPC notification on the SUT). The
-SUT control adapter is designed to work with the Microsoft
+SUT control adapter is designed to work with Microsoft
 implementation of the SUT. However, it is configurable to allow test
-suites to run against the non-Microsoft implementation of the SUT.
+suites to run against non-Microsoft implementation of the SUT.
 
 There are six protocols that have a SUT control adapter in Exchange
 MAPI Protocol Test Suites package: MS-OXCMAPIHTTP, MS-OXCPERM,
