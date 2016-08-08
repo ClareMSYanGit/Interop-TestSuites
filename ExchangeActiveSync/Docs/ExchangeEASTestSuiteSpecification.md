@@ -220,7 +220,7 @@ cases, modifications to the protocol adapter will not be required for
 non-Microsoft SUT implementation. However, the SUT control adapter
 should be appropriately configured to connect to non-Microsoft SUT
 implementation. All test suites in the package contain a protocol
-adapter, six of which contain an SUT control adapter.
+adapter, and six of which contain an SUT control adapter.
 
 ### Protocol Adapter
 
@@ -241,9 +241,9 @@ the common library to send and receive messages.
 The SUT control adapter manages all control functions of the test
 suites that are not associated with the protocol. For example, the setup
 and the teardown are managed through the SUT control adapter. The SUT
-control adapter is designed to work with Microsoft implementation of
+control adapter is designed to work with the Microsoft implementation of
 the SUT. However, it is configurable to allow test suites to run
-against non-Microsoft implementation of the SUT.
+against the non-Microsoft implementation of the SUT.
 
 There are four protocols that have an SUT control adapter in the Exchange
 EAS Protocol Test Suites package: MS-ASCMD, MS-ASHTTP, MS-ASPROV and

@@ -216,7 +216,7 @@ and teardown are managed through the SUT control adapter (that is,
 enabling or disabling the asynchronous RPC notification on the SUT). The
 SUT control adapter is designed to work with the Microsoft
 implementation of the SUT. However, it is configurable to allow the test
-suites to run against non-Microsoft implementations of the SUT.
+suites to run against the non-Microsoft implementations of the SUT.
 
 All protocols in SharePoint File Sync and WOPI Protocol Test Suites
 package have an SUT control adapter.
