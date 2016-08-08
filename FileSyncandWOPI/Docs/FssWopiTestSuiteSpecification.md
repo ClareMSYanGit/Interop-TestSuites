@@ -224,7 +224,7 @@ package have an SUT control adapter.
 Test suites
 -----------
 
-Test suites verify the server-side and testable requirements listed
+Test suites verify the server-side and testable requirements
 in the requirement specification. Test suites call the protocol
 adapter to send and receive messages between a protocol adapter and
 an SUT, and call an SUT control adapter to change the SUT state. A

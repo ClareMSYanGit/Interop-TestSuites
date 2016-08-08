@@ -252,7 +252,7 @@ MS-ASRM.
 Test suites
 ----------
 
-Test suites verify the server-side and testable requirements listed
+Test suites verify the server-side and testable requirements 
 in the requirement specification. Test suites call a protocol
 adapter to send and receive message between a protocol adapter and an
 SUT, and call an SUT control adapter to change the SUT state. A test
