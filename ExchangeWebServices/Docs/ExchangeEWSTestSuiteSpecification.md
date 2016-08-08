@@ -90,7 +90,7 @@ Assumptions
 -   Test suites do not cover every protocol requirement and in no
     way certify implementation even if all tests pass.
 
--   Test suites verify the server-side testable requirements. but
+-   Test suites verify the server-side testable requirements, but
     do not verify the requirements related to client behavior and
     server internal behavior.
 
