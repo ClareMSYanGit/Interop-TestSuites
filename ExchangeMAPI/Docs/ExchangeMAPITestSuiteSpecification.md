@@ -10,7 +10,7 @@ Introduction
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 Exchange MAPI Protocol Test Suites are implemented as synthetic
-clients running against server-side implementation of a given Exchange
+clients running against the server-side implementation of a given Exchange
 protocol. They are designed in a client-to-server relationship and were
 originally developed for the in-house testing of Microsoft Open
 Specifications. 
@@ -132,7 +132,7 @@ The following outlines details of the test suites architecture:
 The system under test (SUT) hosts the server-side implementation of the
 protocol, which test suites run against.
 
--   From a third-party’s point of view, the SUT is a
+-   From a third-party’s point of view, the SUT is of 
     server implementation.
 
 -   The following products have been tested with the test suites on the

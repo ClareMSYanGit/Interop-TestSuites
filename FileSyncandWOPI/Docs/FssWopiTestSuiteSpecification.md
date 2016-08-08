@@ -9,7 +9,7 @@ Introduction
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 SharePoint File Sync and WOPI Protocol Test Suites are implemented
-as synthetic clients running against server-side implementation of a
+as synthetic clients running against the server-side implementation of a
 given SharePoint protocol. They are designed in a client-to-server
 relationship and were originally developed for the in-house testing of
 Microsoft Open Specifications. 
@@ -113,7 +113,7 @@ Package design
 ==============
 
 SharePoint File Sync and WOPI Protocol Test Suites are implemented
-as synthetic clients running against server-side implementation of a
+as synthetic clients running against the server-side implementation of a
 given SharePoint protocol. Test suites verify the server-side and
 testable requirements.
 
@@ -134,7 +134,7 @@ The following outlines details of the test suites architecture:
 The SUT hosts the server-side implementation of the protocol, which test
 suites run against.
 
--   From a third-party user’s point of view, the SUT is the protocol
+-   From a third-party user’s point of view, the SUT is of the protocol
     server implementation.
 
 -   The following products have been tested with the test suite on the
