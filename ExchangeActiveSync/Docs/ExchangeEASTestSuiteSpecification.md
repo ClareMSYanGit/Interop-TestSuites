@@ -133,7 +133,7 @@ Package design
 ==============
 
 Exchange EAS Protocol Test Suites are implemented as synthetic
-clients running against server-side implementation of a given Exchange
+clients running against the server-side implementation of a given Exchange
 protocol. The test suites verify the server-side and testable
 requirements.
 
