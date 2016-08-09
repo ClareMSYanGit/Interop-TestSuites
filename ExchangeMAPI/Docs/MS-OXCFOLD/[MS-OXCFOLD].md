@@ -6,7 +6,8 @@ The new landing page includes the following:
 - A short abstract describing the document.
 - An RSS subscription.
 - Published dates for each version.
-- Revision type (protocol revision) and an indication of whether the changes were
+- *Protocol Revision* to indicate the type of revision and their versions
+- *Revision Class* to indicate whether the changes were
 major or minor.
 - A link to the errata when available.
 - The navigation allows you to find subcollections within the product collection and download a
