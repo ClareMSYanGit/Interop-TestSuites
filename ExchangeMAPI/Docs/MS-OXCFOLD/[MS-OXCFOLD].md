@@ -6,9 +6,9 @@ The new landing page includes the following:
 - A short abstract describing the document.
 - An RSS subscription.
 - Published dates for each version.
-- Revision type (protocol or document revision) and an indication of whether the changes were
+- Revision type (protocol revision) and an indication of whether the changes were
 major or minor.
 - A link to the errata when available.
 - The navigation allows you to find subcollections within the product collection and download a
 zip file of any collection.
-Links to development resources.
+- Links to development resources.
