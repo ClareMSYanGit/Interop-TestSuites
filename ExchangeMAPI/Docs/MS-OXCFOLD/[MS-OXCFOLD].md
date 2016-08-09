@@ -1,6 +1,6 @@
 ## [MS-OXCFOLD]
-Please follow the link below to find the new landing page for [MS-OXCFOLD]. 
-https://msdn.microsoft.com/en-us/library/cc433475(v=exchg.80).aspx
+Please follow the link https://msdn.microsoft.com/en-us/library/cc433475(v=exchg.80).aspx to find the new landing page for [MS-OXCFOLD]. 
+
 
 The new landinganding page includes the following:
 - The ability to download the preview, published, and previous versions of the documents in PDF
