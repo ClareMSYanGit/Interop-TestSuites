@@ -1,4 +1,4 @@
-## [MS-OXCFOLD]
+## [MS-OXCFXICS]
 To find the new landing page for [MS-OXCFXICS], please visit https://msdn.microsoft.com/en-us/library/cc463916(v=exchg.80).aspx
 
 The new landing page includes the following:
