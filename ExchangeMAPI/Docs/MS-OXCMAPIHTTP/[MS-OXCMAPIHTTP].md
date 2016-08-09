@@ -1,4 +1,4 @@
-## [MS-OXCMAPIHTTP]]
+## [MS-OXCMAPIHTTP]
 To find the new landing page for [MS-OXCMAPIHTTP]], please visit https://msdn.microsoft.com/en-us/library/dn530952(v=exchg.80).aspx
 
 The new landing page includes the following:
