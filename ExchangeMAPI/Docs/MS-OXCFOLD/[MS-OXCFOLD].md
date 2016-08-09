@@ -2,8 +2,7 @@
 To find the new landing page for [MS-OXCFOLD], please follow the link https://msdn.microsoft.com/en-us/library/cc433475(v=exchg.80).aspx 
 
 The new landinganding page includes the following:
-- The ability to download the preview, published, and previous versions of the documents in PDF
-- and .docx format.
+- The ability to download the preview, published, and previous versions of the documents in PDF and .docx format.
 - A short abstract describing the document.
 - An RSS subscription.
 - Published dates for each version.
