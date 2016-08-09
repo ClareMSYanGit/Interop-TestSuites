@@ -1,5 +1,4 @@
 Please follow the link below to find the new landing page for [MS-OXCFOLD].
-
 https://msdn.microsoft.com/en-us/library/cc433475(v=exchg.80).aspx
 
 The new landinganding pages include the following:
