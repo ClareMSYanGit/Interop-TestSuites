@@ -204,13 +204,13 @@ your test suites:
 The test suites provide detailed reporting in a variety of formats that
 allows you to quickly debug failures.
 
-**Test suite configuration logs**: The SUT and test suite client
+- **Test suite configuration logs**: The SUT and test suite client
 configuration logs are available to inform you whether or not each
 configuration step has succeeded and the detailed error information if
 the configuration step fails. For the location of where the logs are
 saved, please refer to the deployment guide.
 
-**Test suite reports**: Reports and logs are generated after a test
+- **Test suite reports**: Reports and logs are generated after a test
 suite has run successfully, which include a **.trx file** containing the
 pass/fail information of the run in the TestResults folder along with an
 associated directory named **user\_MACHINENAME DateTimeStamp** that
