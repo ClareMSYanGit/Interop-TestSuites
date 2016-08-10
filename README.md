@@ -181,7 +181,7 @@ your test suites:
     -   Select test cases, right click and select the option to **Run**
         or **Debug**.
 
--   Using the batch files
+-   Using batch files
 
     -   Run an individual test case or all test cases.
 
