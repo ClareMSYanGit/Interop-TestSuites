@@ -1,6 +1,6 @@
----
+
 Interop SharePoint and Exchange Protocol Test Suites
----
+======================================================================================================
 
 Microsoft Protocol Test Suites are implemented as synthetic clients
 running against the server-side implementation of a given protocol. They
@@ -8,8 +8,8 @@ are designed in a client-to-server relationship and were originally
 developed for the in-house testing of Microsoft Open Specifications.
 
 Test suites evaluate whether or not protocol implementation meets
-certain interoperability requirements that are published in *Microsoft
-Open Specifications*. Test suites do not cover every protocol
+certain interoperability requirements in Microsoft
+Open Specifications. Test suites do not cover every protocol
 requirement and do not certify any implementation even if all tests
 pass. However, each test suite provides you with a useful indication of
 interoperability.
@@ -17,10 +17,10 @@ interoperability.
 This repository contains SharePoint and Exchange Protocol Test Suites,
 and the README document includes the following:
 
--   *Overview*: An introduction on the test suite design and
+-   [Overview](#Overview): An introduction on the test suite design and
     its components.
 
--   *Getting started*: A generic quick-start guide on how to deploy,
+-   [Getting started](#Getting started): A generic quick-start guide on how to deploy,
     configure and run test suites, and view test suite reports.
 
     **Note**: For the detailed guidance on how to deploy a certain
