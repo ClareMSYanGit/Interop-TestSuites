@@ -42,8 +42,7 @@ components.
 
 Figure 1: The high-level design of a test suite
 
-![](media/image1.png){width="5.270833333333333in"
-height="3.000884733158355in"}
+![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/Doc-Images/Design.png)
 
 -   **Test case:** A test case is a group of programs and scripts that
     validates how your implementation conforms to the
@@ -105,9 +104,9 @@ the following:
 
 -   ***Source*:** Test suite source code and scripts.
 
-    Figure 2: Interop test suite folder structure and its content
+Figure 2: Interop test suite folder structure and its content
 
-![](media/image2.png){width="6.5in" height="3.488888888888889in"}
+![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/Doc-Images/FolderStructure.png)
 
 ### Test environment for the test suites
 
@@ -128,11 +127,11 @@ Client |  Microsoft Visual Studio 2013 | Microsoft Visual Studio 2013 Ultimate
                                                                                                                                                                                                             
 ### Workflow
 
-
 The following flowchart illustrates the end-to-end process of
 configuring and running test suites, and viewing the results.
 
 Figure 3: The process of using a test suite
+![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/Doc-Images/Workflow.png)
 
 #### Configure the test suites
 
