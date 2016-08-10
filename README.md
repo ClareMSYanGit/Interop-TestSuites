@@ -60,9 +60,7 @@ height="3.000884733158355in"}
 
     b.  **SUT control adapter**: Queries and configures the SUT at
         runtime when a test case has to control the server outside of
-        the protocol.
-
-        By default, the SUT control adapter can be implemented as one of
+        the protocol. By default, the SUT control adapter can be implemented as one of
         the following:
 
     -   **managed**: The SUT control adapter is implemented in C\#
