@@ -88,7 +88,7 @@ height="3.000884733158355in"}
     suite environment. The SUT can either be Microsoft implementation of
     the protocol or third-party implementation.
 
-## Getting started on using a test suite
+## Getting started
 
 This section offers a quick introduction to using a test suite. For the
 detailed guidance, please go to the test suite folder &gt; *Docs* folder
