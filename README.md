@@ -65,10 +65,10 @@ height="3.000884733158355in"}
         By default, the SUT control adapter can be implemented as one of
         the following:
 
-        -   **managed**: The SUT control adapter is implemented in C\#
+    -   **managed**: The SUT control adapter is implemented in C\#
             managed code.
 
-        -   **powershell**: The SUT control adapter is implemented
+	-   **powershell**: The SUT control adapter is implemented
             through Windows PowerShell.
 
             However, the SUT Control Adapter is primarily designed to
