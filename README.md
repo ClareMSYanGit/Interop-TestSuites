@@ -17,10 +17,10 @@ interoperability.
 This repository contains SharePoint and Exchange Protocol Test Suites,
 and the README document includes the following:
 
--   [Overview](#Overview): An introduction on the test suite design and
+-   [Overview](#overview): An introduction on the test suite design and
     its components.
 
--   [Getting started](#Getting started): A generic quick-start guide on how to deploy,
+-   [Getting started](#getting-started): A generic quick-start guide on how to deploy,
     configure and run test suites, and view test suite reports.
 
     **Note**: For the detailed guidance on how to deploy a certain
