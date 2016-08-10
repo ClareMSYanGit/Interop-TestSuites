@@ -40,7 +40,7 @@ into one scenario.
 The following diagram illustrates the test suite design and its
 components.
 
-Figure 1: High-level design of a test suite
+Figure 1: The high-level design of a test suite
 
 ![](media/image1.png){width="5.270833333333333in"
 height="3.000884733158355in"}
@@ -72,15 +72,13 @@ height="3.000884733158355in"}
             However, the SUT Control Adapter is primarily designed to
             work with Microsoft implementation of the SUT. If you’re a
             third-party implementer, it is recommended that you further
-            configure the test suite by setting the test suite to
+            configure the test suite by setting the test suite to the
             interactive mode. The SUT Control Adapter can be switched
             between powershell/managed code and interactive adapter by
             changing the MS-XXXX\_TestSuite.ptfconfig file.
 
     -   **interactive**: Interactive adapters are used for manually
         configuring a server.
-
-<!-- -->
 
 -   **System Under Test (SUT):** The SUT is the server side of the test
     suite environment. The SUT can either be Microsoft implementation of
@@ -118,26 +116,14 @@ The following table summarizes the test environment for the test suites.
 Table 1: Tools and software that are necessary to set up your
 environment for Exchange and SharePoint Test Suites
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  **Machine name**   **SharePoint test suite environment**                                               **Exchange test suite environment**
-  ------------------ ----------------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------
-  SUT                -   Microsoft SharePoint Sever 2013/2010/2007                                       -   Microsoft Exchange Server 2015/2013/2010/2007
-                                                                                                         
-                                                                                                         
-
-  Client             -   Microsoft Visual Studio 2013                                                    -   Microsoft Visual Studio 2013 Ultimate
-                                                                                                         
-                     -   [Protocol Test Framework](https://github.com/microsoft/protocoltestframework)   -   [Protocol Test Framework](https://github.com/microsoft/protocoltestframework)
-                                                                                                         
-                                                                                                         
-
-  Optional           -   Microsoft Network Monitor and Parsers or Message Analyzer                       -   [Spec Explorer 2010](https://visualstudiogallery.msdn.microsoft.com/271d0904-f178-4ce9-956b-d9bfa4902745/)
-                                                                                                         
-                                                                                                         -   Microsoft Network Monitor and Parsers or Message Analyzer
-                                                                                                         
-                                                                                                         
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+ 
+Machine name | SharePoint test suite environment | Exchange test suite environment 
+:--- | :--- | :---
+SUT | -   Microsoft SharePoint Sever 2013/2010/2007  | -   Microsoft Exchange Server 2015/2013/2010/2007
+Client |  -  Microsoft Visual Studio 2013 | -   Microsoft Visual Studio 2013 Ultimate
+       |  -  [Protocol Test Framework](https://github.com/microsoft/protocoltestframework)  | -   [Protocol Test Framework](https://github.com/microsoft/protocoltestframework)
+                                                                                                                                                              Optional | -   Microsoft Network Monitor and Parsers or Message Analyzer   | -   [Spec Explorer 2010](https://visualstudiogallery.msdn.microsoft.com/271d0904-f178-4ce9-956b-d9bfa4902745/) -   Microsoft Network Monitor and Parsers or Message Analyzer
+                                                                                                                                                                                                                
 ### Workflow
 
 
