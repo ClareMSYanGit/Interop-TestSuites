@@ -40,7 +40,7 @@ into one scenario.
 The following diagram illustrates the test suite design and its
 components.
 
-Figure 1: The high-level design of a test suite
+**Figure 1: The high-level design of a test suite**
 
 ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/Doc-Images/Design.png)
 
@@ -104,7 +104,7 @@ the following:
 
 -   ***Source*:** Test suite source code and scripts.
 
-Figure 2: Interop test suite folder structure and its content
+**Figure 2: Interop test suite folder structure and its content**
 
 ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/Doc-Images/FolderStructure.png)
 
@@ -130,7 +130,7 @@ Client |  Microsoft Visual Studio 2013 | Microsoft Visual Studio 2013 Ultimate
 The following flowchart illustrates the end-to-end process of
 configuring and running test suites, and viewing the results.
 
-Figure 3: The process of using a test suite
+**Figure 3: The process of using a test suite**
 
 ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/Doc-Images/Workflow.png)
 
