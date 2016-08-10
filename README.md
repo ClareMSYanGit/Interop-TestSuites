@@ -1,6 +1,7 @@
 
-#Interop SharePoint and Exchange Protocol Test Suites
-======================================================================================================
+---
+title: Interop SharePoint and Exchange Protocol Test Suites
+---
 
 Microsoft Protocol Test Suites are implemented as synthetic clients
 running against the server-side implementation of a given protocol. They
@@ -26,7 +27,7 @@ and the README document includes the following:
     **Note**: For the detailed guidance on how to deploy a certain
     protocol test suite, see *Deployment Guide* in *Docs* folders.
 
-##Overview
+Overview
 ========
 
 Test Suites are designed to verify that the server behavior is in
