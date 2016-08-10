@@ -140,7 +140,7 @@ environment for Exchange and SharePoint Test Suites
                                                                                                          
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Workflow
+### Workflow
 
 
 The following flowchart illustrates the end-to-end process of
@@ -148,7 +148,7 @@ configuring and running test suites, and viewing the results.
 
 Figure 3: The process of using a test suite
 
-### Configuring the test suites
+#### Configure the test suites
 
 The configuration is done in a certain order. The SUT is usually
 configured before the test suite client. 
@@ -180,7 +180,7 @@ configuration scripts.
     Suite Client &gt; Right click **\[ClientConfiguration.cmd\]** &gt;
     select **Run as administrator**.
 
-### Running the test suites
+#### Run the test suites
 
 Once the required software is installed and both the SUT and the test
 suite client are configured appropriately. There are several ways to run
@@ -200,7 +200,7 @@ your test suites:
 
     -   Run an individual test case or all test cases.
 
-### Viewing the test results
+#### View the test results
 
 The test suites provide detailed reporting in a variety of formats that
 allows you to quickly debug failures.
