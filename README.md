@@ -151,7 +151,9 @@ Figure 3: The process of using a test suite
 ### Configuring the test suites
 
 The configuration is done in a certain order. The SUT is usually
-configured before the test suite client. **Configuring the SUT**:
+configured before the test suite client. 
+
+**Configuring the SUT**:
 Automated script or manual configuration can be used. Varying level of
 resources on the SUT may be required for the test suite packages.
 
