@@ -1,7 +1,6 @@
 
----
-title: Interop SharePoint and Exchange Protocol Test Suites
----
+#Interop SharePoint and Exchange Protocol Test Suites
+
 
 Microsoft Protocol Test Suites are implemented as synthetic clients
 running against the server-side implementation of a given protocol. They
@@ -27,8 +26,7 @@ and the README document includes the following:
     **Note**: For the detailed guidance on how to deploy a certain
     protocol test suite, see *Deployment Guide* in *Docs* folders.
 
-Overview
-========
+##Overview
 
 Test Suites are designed to verify that the server behavior is in
 compliance with normative protocol requirements in the technical
@@ -90,15 +88,13 @@ height="3.000884733158355in"}
     suite environment. The SUT can either be Microsoft implementation of
     the protocol or third-party implementation.
 
-Getting started on using a test suite
-=====================================
+## Getting started on using a test suite
 
 This section offers a quick introduction to using a test suite. For the
 detailed guidance, please go to the test suite folder &gt; *Docs* folder
 &gt; *deployment guide*.
 
-Test suite directories 
------------------------
+### Test suite directories 
 
 A SharePoint or Exchange Protocol test suite folder mainly consists of
 the following:
@@ -117,8 +113,7 @@ the following:
 
 ![](media/image2.png){width="6.5in" height="3.488888888888889in"}
 
-Test environment for the test suites
-------------------------------------
+### Test environment for the test suites
 
 The following table summarizes the test environment for the test suites.
 
@@ -145,18 +140,15 @@ environment for Exchange and SharePoint Test Suites
                                                                                                          
   -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### 
+## Workflow
 
-Workflow
---------
 
 The following flowchart illustrates the end-to-end process of
 configuring and running test suites, and viewing the results.
 
 Figure 3: The process of using a test suite
 
-Configuring the test suites
----------------------------
+### Configuring the test suites
 
 The configuration is done in a certain order. The SUT is usually
 configured before the test suite client. **Configuring the SUT**:
@@ -186,8 +178,7 @@ configuration scripts.
     Suite Client &gt; Right click **\[ClientConfiguration.cmd\]** &gt;
     select **Run as administrator**.
 
-Running the test suites
------------------------
+### Running the test suites
 
 Once the required software is installed and both the SUT and the test
 suite client are configured appropriately. There are several ways to run
@@ -203,14 +194,11 @@ your test suites:
     -   Select test cases, right click and select the option to **Run**
         or **Debug**.
 
-<!-- -->
-
 -   Using the batch files
 
     -   Run an individual test case or all test cases.
 
-Viewing the test results
-------------------------
+### Viewing the test results
 
 The test suites provide detailed reporting in a variety of formats that
 allows you to quickly debug failures.
