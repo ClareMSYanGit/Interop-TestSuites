@@ -20,7 +20,7 @@ and the README document includes the following:
 -   [Overview](#overview): An introduction on the test suite design and
     its components.
 
--   [Getting started](#getting-started): A generic quick-start guide on how to deploy,
+-   [Get started](#get-started): A generic quick-start guide on how to deploy,
     configure and run test suites, and view test suite reports.
 
     **Note**: For the detailed guidance on how to deploy a certain
@@ -88,7 +88,7 @@ height="3.000884733158355in"}
     suite environment. The SUT can either be Microsoft implementation of
     the protocol or third-party implementation.
 
-## Getting started
+## Get started
 
 This section offers a quick introduction to using a test suite. For the
 detailed guidance, please go to the test suite folder &gt; *Docs* folder
