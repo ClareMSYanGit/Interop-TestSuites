@@ -131,6 +131,7 @@ The following flowchart illustrates the end-to-end process of
 configuring and running test suites, and viewing the results.
 
 Figure 3: The process of using a test suite
+
 ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/Doc-Images/Workflow.png)
 
 #### Configure the test suites
