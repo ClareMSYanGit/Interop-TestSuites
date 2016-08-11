@@ -1197,7 +1197,7 @@ Batch script  | Script description
 **RunAllMSXXXXTestCases.cmd**       |  Runs all MS-XXXX test cases.
 **RunMSXXXX\_S01\_TC01\_TestCaseDescription.cmd** |  Runs a specific test case in the test suite.
 
-Viewing the test suite results, logs, and reporting
+View the test suite results, logs, and reporting
 ==============================================================================================================================================================================================================================================================================================================================================================================================================
 
 The test suites provide detailed reporting in a variety of formats that enables users to quickly debug failures.

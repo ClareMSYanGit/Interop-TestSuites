@@ -2,7 +2,7 @@ SharePoint File Sync and WOPI Protocol Test Suite deployment guide
 =====================================================================================================================================================
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
-- [Deploythe test suites](#deploying-the-test-suites)
+- [Deploy the test suites](#deploying-the-test-suites)
 - [Use the test suite directories](#use-the-test-suite-directories)
 - [Configure the test suites](#configure-the-test-suites)
 - [Run the test suites](#run-the-test-suites)
