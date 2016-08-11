@@ -14,7 +14,7 @@ Overview
 ======================================================================================================
 
 Exchange Server EAS Protocol Test Suites are implemented as
-synthetic clients running against a server-side implementation of a
+synthetic clients running against the server-side implementation of a
 given Exchange protocol. They are designed in a client-to-server
 relationship and were originally developed for the in-house testing of
 Microsoft Open Specifications. Test suites have been used

@@ -13,7 +13,7 @@ Overview
 =====================================================================================================================================================
 
 SharePoint Server Protocol Test Suites are implemented as synthetic
-clients running against a server-side implementation of a given
+clients running against the server-side implementation of a given
 SharePoint protocol. They are designed in a client-to-server
 relationship and were originally developed for the in-house testing of
 Microsoft Open Specifications. Test Suites have been used
