@@ -139,10 +139,10 @@ configuring and running test suites, and viewing the results.
 The configuration is done in a certain order. The SUT is usually
 configured before the test suite client. 
 
-- Configure the SUT: Automated script or manual configuration can be used. Varying level of
+- **Configure the SUT**: Automated script or manual configuration can be used. Varying level of
 resources on the SUT may be required for the test suite packages.
 
-- Configure the test suite client: The test suite client is managed
+- **Configure the test suite client**: The test suite client is managed
 through a common configuration file and test suite-specific
 configuration files. Modification through direct means or automated
 script can be used.
