@@ -2,11 +2,11 @@ SharePoint Test Suite deployment guide
 =====================================================================================================================================================
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
-- [Deploying the test suites](#deploying-the-test-suites)
-- [Using the test suite directories](#using-the-test-suite-directories)
-- [Configuring the test suites](#configuring-the-test-suites)
-- [Running the test suites](#running-the-test-suites)
-- [Viewing the test suite results, logs, and reporting](#viewing-the-test-suite-results-logs-and-reporting)
+- [Deploy the test suites](#deploy-the-test-suites)
+- [Use the test suite directories](#use-the-test-suite-directories)
+- [Configure the test suites](#configure-the-test-suites)
+- [Run the test suites](#run-the-test-suites)
+- [View the test suite results, logs, and reporting](#view-the-test-suite-results-logs-and-reporting)
 - [Appendix](#appendix)
 
 Overview
@@ -144,7 +144,7 @@ client.
 |Microsoft Protocol Test Framework 1.0.2220.0 and above|
 
 
-Deploying the test suites
+Deploy the test suites
 ================================================================================================================================================================================================================================================================================================================================================================================================================
 
 This section describes the deployment of SharePoint Server Protocol
@@ -178,7 +178,7 @@ steps to successfully configure the test suites.
   ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/SharePoint/Docs/Doc-Images/SP_Deploy2.png)                                         
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-Using the test suite directories
+Use the test suite directories
 ========================================================================================================================================================================================================
 
 This section shows the folder structures in the **SharePointServerProtocolTestSuites.zip** file.
@@ -235,7 +235,7 @@ Folders/file | Description
 **- RunMSXXXX\_SYY\_TCZZ\_TestCaseName.cmd**              |    A script that can be used to run a single test case of MS-XXXX.
 
 
-Configuring the test suites
+Configure the test suites
 ================================================================================================================================================================================================================================================================================================================================================================================================================
 
 This section provides the guidance on configuring SharePoint
@@ -1109,7 +1109,7 @@ below to update configuration files and configure the test suite client.
         against the SUT if the test suite client is not joined to
         the domain.
 
-Running the test suites
+Run the test suites
 ==============================================================================================================================================================================================================================================================================================================================================================================================================
 
 Once the required software is installed and both the SUT and test
