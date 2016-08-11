@@ -107,13 +107,7 @@ table outlines the software dependencies for the test suite client.
 |Microsoft Visual Studio 2013 Professional| 
 |Microsoft Protocol Test Framework 1.0.2220.0 and above| 
 
-
-
-<<<<<<< HEAD
-Deploy the test suites
-=======
 Deploying the test suites
->>>>>>> parent of 9784da1... Content fix
 =======================================================================================================================
 
 This section describes the deployment of Exchange Server EAS Protocol
