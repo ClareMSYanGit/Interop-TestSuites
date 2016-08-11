@@ -50,7 +50,7 @@ components.
     a scenario.
 
 -   **Adapters:** Adapters are interfaces between the test suites and
-    the SUT. There are two types of adapters: a protocol adapter and an
+    the SUT. There are two types of adapters: the protocol adapter and the
     SUT control adapter.
 
     a.  **Protocol adapter**: Creates and manages connection between a
