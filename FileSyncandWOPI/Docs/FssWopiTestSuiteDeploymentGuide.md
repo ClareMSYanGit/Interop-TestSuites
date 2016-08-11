@@ -2,11 +2,19 @@ SharePoint File Sync and WOPI Protocol Test Suite deployment guide
 =====================================================================================================================================================
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
+<<<<<<< HEAD
 - [Deploy the test suites](#deploy-the-test-suites)
 - [Use the test suite directories](#use-the-test-suite-directories)
 - [Configure the test suites](#configure-the-test-suites)
 - [Run the test suites](#run-the-test-suites)
 - [View the test suite results, logs, and reporting](#view-the-test-suite-results-logs-and-reporting)
+=======
+- [Deploying the test suites](#deploying-the-test-suites)
+- [Using the test suite directories](#using-the-test-suite-directories)
+- [Configuring the test suites](#configuring-the-test-suites)
+- [Running the test suites](#running-the-test-suites)
+- [Viewing the test suite results, logs, and reporting](#viewing-the-test-suite-results-logs-and-reporting)
+>>>>>>> parent of b2dba96... Content fix
 - [Appendix](#appendix)
 
 Overview
@@ -106,7 +114,7 @@ client. The following table outlines the software dependencies for the test suit
 | Microsoft Protocol Test Framework 1.0.2220.0 and above|
 ----------------------------------------------------------------------------
 
-Deploy the test suites
+Deploying the test suites
 ================================================================================================================================================================================================================================================================================================================================================================================================================
 
 This section describes the deployment of SharePoint File Sync and
@@ -142,7 +150,7 @@ downloaded the test suites, perform the following steps to successfully configur
   
 	![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/FileSyncandWOPI/Docs/Doc-Images/FssWopi_Deploy2.png)	  
 												   
-Use the test suite directories
+Using the test suite directories
 ============================================================================================================================================================================================================================
 
 This section shows the folder structures in the **SharePointFileSyncAndWOPIProtocolTestSuites.zip** file.
@@ -191,7 +199,7 @@ This section shows the folder structures in the **SharePointFileSyncAndWOPIProto
 | **- RunMSXXXX\_SYY\_TCZZ\_Name.cmd**                          |   A script that can be used to run a single test case of MS-XXXX. |
 
 
-Configure the test suites
+Configuring the test suites
 ========================================================================================================================================================================================================
 
 This section provides the guidance on configuring SharePoint
@@ -583,7 +591,7 @@ below to update configuration files and configure the test suite client.
 
 1.  Add a firewall rule to allow the TCP protocol for port 80.
 
-Run the test suites
+Running the test suites
 ========================================================================================================================================================================================================
 
 Once the required software is installed and both the SUT and test
@@ -672,7 +680,7 @@ Batch script | Script description
 **RunAllMSXXXXTestCases.cmd**                         | Runs all MS-XXXX test cases.
 **RunMSXXXX\_SYY\_TCZZ\_Name.cmd**                    | Runs a specific test case in the test suite.
 
-View the test suite results, logs, and reporting
+Viewing the test suite results, logs, and reporting
 =====================================================================================================================================
 
 The test suites provide detailed reporting in a variety of formats that enables users to quickly debug failures.
