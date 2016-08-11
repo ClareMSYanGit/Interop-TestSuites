@@ -64,7 +64,7 @@ with the technical specification.
 The requirements are categorized as normative or informative. If the
 statement of the requirement is required for interoperability, the
 requirement is normative. If the statement of the requirement is for
-a high-level introduction or clarification, and the removal of content
+a high-level introduction or clarification, and removal of the content
 does not affect interoperability, the requirement is informative.
 
 Each requirement applies to a specific scope: server, client, or both.
