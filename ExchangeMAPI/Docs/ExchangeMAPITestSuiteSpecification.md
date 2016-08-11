@@ -164,7 +164,7 @@ adapters, thirteen test suites, and three models.
 Common library
 --------------
 
-The common library provides implementation of transport layer,
+The common library provides implementation of the transport layer,
 common messages, structures, and helper methods.
 
 ### Transport classes
