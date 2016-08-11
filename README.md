@@ -24,7 +24,7 @@ and the README document includes the following:
     configure and run test suites, and view test suite reports.
 
     **Note**: For the detailed guidance on how to deploy a certain
-    protocol test suite, see *Deployment Guide* in *Docs* folders.
+    protocol test suite, see *Deployment Guide* in the *Docs* folder.
 
 ##Overview
 
