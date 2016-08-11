@@ -45,7 +45,7 @@ components.
 ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/Doc-Images/Design.png)
 
 -   **Test case:** A test case is a group of programs and scripts that
-    validates how your implementation conforms to the
+    validates how your implementation conform to the
     technical specification. A series of test cases is called
     a scenario.
 
