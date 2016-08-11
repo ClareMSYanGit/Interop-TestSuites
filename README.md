@@ -112,8 +112,8 @@ the following:
 
 The following table summarizes the test environment for the test suites.
 
-Table 1: Tools and software that are necessary to set up your
-environment for Exchange and SharePoint Test Suites
+**Table 1: Tools and software that are necessary to set up your
+environment for Exchange and SharePoint Test Suites**
 
  
 Machine name | SharePoint test suite environment | Exchange test suite environment 
