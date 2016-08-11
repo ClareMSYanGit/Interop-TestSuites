@@ -197,7 +197,7 @@ the configuration step fails. For the location of where the logs are
 saved, please refer to the deployment guide.
 
 - Test suite reports: Reports and logs are generated after a test
-suite has run successfully, which include a **.trx file** containing the
+suite has run successfully, which include a .trx file containing the
 pass/fail information of the run in the TestResults folder along with an
-associated directory named **user\_MACHINENAME DateTimeStamp** that
+associated directory named user\_MACHINENAME DateTimeStamp that
 contains a log file and an HTML report.
