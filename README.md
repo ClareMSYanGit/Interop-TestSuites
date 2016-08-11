@@ -139,10 +139,10 @@ configuring and running test suites, and viewing the results.
 The configuration is done in a certain order. The SUT is usually
 configured before the test suite client. 
 
-- **Configure the SUT**: Automated script or manual configuration can be used. Varying level of
+- Configure the SUT: Automated script or manual configuration can be used. Varying level of
 resources on the SUT may be required for the test suite packages.
 
-- **Configure the test suite client**: The test suite client is managed
+- Configure the test suite client: The test suite client is managed
 through a common configuration file and test suite-specific
 configuration files. Modification through direct means or automated
 script can be used.
@@ -155,13 +155,13 @@ third-party implementer.
 The following summarizes the configuration steps when using the setup
 configuration scripts.
 
-1.  **Extract the test suite files**: Extract files from the downloaded
+1.  Extract the test suite files: Extract files from the downloaded
     zip package.
 
-2.  **Setting up the SUT**: Navigate to …\\Setup\\SUT &gt; Right click
+2.  Setting up the SUT: Navigate to …\\Setup\\SUT &gt; Right click
     **\[SUTConfiguration.cmd\]** &gt; select **Run as administrator**.
 
-3.  **Setting up the test suite client**: Navigate to …\\Setup\\Test
+3.  Setting up the test suite client: Navigate to …\\Setup\\Test
     Suite Client &gt; Right click **\[ClientConfiguration.cmd\]** &gt;
     select **Run as administrator**.
 
