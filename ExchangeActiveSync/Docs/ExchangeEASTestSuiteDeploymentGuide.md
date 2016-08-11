@@ -4,7 +4,7 @@ Exchange EAS Test Suite deployment guide
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Deploy the test suites](#deploy-the-test-suites)
-- [Us the test suite directories](#use-the-test-suite-directories)
+- [Use the test suite directories](#use-the-test-suite-directories)
 - [Configure the test suites](#configure-the-test-suites)
 - [Run the test suites](#run-the-test-suites)
 - [View the test suite results, logs, and reports](#view-the-test-suite-results-logs-and-reports)
