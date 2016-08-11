@@ -3,11 +3,11 @@ Exchange MAPI Test Suite deployment guide
 
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
-- [Deploy the test suites](#deploy-the-test-suites)
-- [Use the test suite directories](#use-the-test-suite-directories)
-- [Configure the test suites](#configure-the-test-suites)
-- [Run the test suites](#run-the-test-suites)
-- [View the test suite results, logs, and reports](#view-the-test-suite-results-logs-and-reports)
+- [Deploying the test suites](#deploying-the-test-suites)
+- [Using the test suite directories](#using-the-test-suite-directories)
+- [Configuring the test suites](#configuring-the-test-suites)
+- [Running the test suites](#running-the-test-suites)
+- [Viewing the test suite results, logs, and reports](#viewing-the-test-suite-results-logs-and-reports)
 - [Appendix](#appendix)
 
 Overview
@@ -112,7 +112,7 @@ table outlines the software dependencies for the test suite client.
 | Microsoft Spec Explorer 3.6.14230.01 and above|
 
 
-Deploy the test suites
+Deploying the test suites
 =======================================================================================================================
 
 This section describes the deployment of Exchange MAPI Protocol Test
@@ -143,7 +143,7 @@ for security reasons, follow these steps to unblock PowerShell scripts.
                                                         
   
 
-Use the test suite directories
+Using the test suite directories
 ======================
 
 This section shows the folder structures in the **ExchangeMAPIProtocolTestSuites.zip** file.
@@ -195,7 +195,7 @@ This section shows the folder structures in the **ExchangeMAPIProtocolTestSuites
 |  **- RunAllMSXXXXTestCases.cmd** | A script that can be used to run all test cases of MS-XXXX.|
 |  **- RunMSXXXX\_SXX\_TCXX\_TestCaseName.cmd** | A script that can be used to run a single test case of MS-XXXX.|
 
-Configure the test suites
+Configuring the test suites
 ===========================
 
 This section provides the guidance on configuring Exchange
@@ -614,7 +614,7 @@ below to update configuration files and configure the test suite client.
 		Management (WinRM) client can process remote calls against the SUT
 		when the test suite client is not joined to the domain.
 
-Run the test suites
+Running the test suites
 =================================================================================================================
 
 Once the required software is installed and both the SUT and test suite client are
@@ -689,7 +689,7 @@ Batch script  |  Script description
 **RunMSXXXX\_SYY\_TCZZ\_Name.cmd**  |  Runs a specific test case in the test suite.
 
 
-View the test suite results, logs, and reports
+Viewing the test suite results, logs, and reports
 =====================================================================================================================================
 
 The test suites provide detailed reporting in a variety of formats that
