@@ -149,7 +149,7 @@ script can be used.
 
 **Note**: The setup configuration scripts are only implemented for
 configuring SUT and test suite clients on the Windows platform. See the
-sections on manual configuration in the *deployment guide* if you’re a
+sections on manual configuration in the *Deployment Guide* if you’re a
 third-party implementer.
 
 The following summarizes the configuration steps when using the setup
