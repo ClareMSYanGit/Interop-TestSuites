@@ -332,7 +332,7 @@ steps explain what needs to be created or configured on the SUT to run the test 
 	-  AssistantName: "assistant"
 	-  PhoneticDisplayName: "phoneticdisplayname"
 
-	a.  For MSOXNSPI\_TestUser02, set the following values:
+	b.  For MSOXNSPI\_TestUser02, set the following values:
 	
 	-  AssistantName: "assistant"
 	-  PhoneticDisplayName: "phoneticdisplayname"
