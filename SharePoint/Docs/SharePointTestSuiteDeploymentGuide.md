@@ -195,20 +195,20 @@ Folders/file | Description
 **- MS-XXXX**                                 | The MS-XXXX help documentation.
 **- \[MS-XXXX\].pdf**                         | The protocol technical specification.
 **- MS-XXXX\_TestSuiteSpecification.docx**    | A doc on the test suite-specific configuration details, architecture, and test case details.
-**- MS-XXXX\_SUTControlAdapter.chm**          | A help doc with info on the SUT control adapter class library such as declaration syntax and their description.
+**- MS-XXXX\_SUTControlAdapter.chm**          | A help doc on the SUT control adapter class library such as declaration syntax and their description.
 **- MS-XXXX\_RequirementSpecification.xlsx**  | A spreadsheet that outlines all requirements that are associated with the technical specification.
-**- Setup**                                   | A folder that contains configuration scripts.
-**- Test Suite Client**                       | A folder that contains the configuration script to configure the test suite client.
+**- Setup**                                   | A folder with configuration scripts.
+**- Test Suite Client**                       | A folder with the configuration script to configure the test suite client.
 **- SharePointClientConfiguration.cmd**       | A command file that runs SharePointClientConfiguration.ps1 to configure the properties for the protocol test suites.
 **- SharePointClientConfiguration.ps1**     | A configuration script that will be invoked by SharePointClientConfiguration.cmd
-**- SUT**                                   | A folder that contains the configuration script to configure the SUT.
+**- SUT**                                   | A folder with the configuration script to configure the SUT.
 **- SharePointSUTConfiguration.cmd**        | A command file that runs the SharePointSUTConfiguration.ps1 to create resources and configure settings on the first SUT.
 **- SharePointSUTConfiguration.ps1**        | A configuration script that will be invoked by SharePointSUTConfiguration.cmd.
 **-SharePointSecondSUTConfiguration.cmd**   | A command file that runs the SharePointSecondSUTConfiguration.ps1 to create resources and configure settings on the second SUT.
 **- SharePointSecondSUTConfiguration.ps1**  | A configuration script that will be invoked by SharePointSecondSUTConfiguration.cmd.
-**- MSCOPYS\_SourceFile.txt**               |  A source file, used to be copied from a source location to a destination location.
+**- MSCOPYS\_SourceFile.txt**               |  A source file, to be copied from a source location to a destination location.
 **- MSDWSS\_TestData.txt**                  |  A test file used by the MS-DWSS test suite.
-**- MSSHDACCWS\_CoStatusTestData.txt**      |  A test file that will be uploaded to MSSHDACCWS\_DocumentLibrary. This file allows multiple users to edit it.
+**- MSSHDACCWS\_CoStatusTestData.txt**      |  A test file that will be uploaded to MSSHDACCWS\_DocumentLibrary. This file allows multi-user editing.
 **- MSSHDACCWS\_LockedTestData.txt**        |  A test file that will be uploaded to the MSSHDACCWS\_DocumentLibrary. An exclusive lock is applied to this file.
 **- MSSHDACCWS\_TestData.txt**              |  A test file that will be uploaded to MSSHDACCWS\_DocumentLibrary without any locks or Co-Authoring status.
 **- MSSITESS\_CustomPage.aspx**             |  A custom page used by the MS-SITESS test suite.
@@ -216,14 +216,14 @@ Folders/file | Description
 **- MSWDVMODUU\_TestData2.txt**             |  The second text test file used by the MS-WDVMODUU test suite.
 **- MSWDVMODUU\_TestData3.txt**             |  The third text test file used by the MS-WDVMODUU test suite.
 **- MSWEBSS\_TestData.docx**                |  A test file used by the MS-WEBSS test suite.
-**- Common**                                |  A folder that contains common configuration scripts and resources.
-**-CommonConfiguration.ps1**                |  A library that contains common functions for configuring Microsoft products and the test suite client.
-**-SharePointCommonConfiguration.ps1**      |  A library that contains common functions for configuring the SUT.
+**- Common**                                |  A folder with common configuration scripts and resources.
+**-CommonConfiguration.ps1**                |  A library of common functions for configuring Microsoft products and the test suite client.
+**-SharePointCommonConfiguration.ps1**      |  A library of common functions for configuring the SUT.
 **-SharePointTestSuite.config**             |  The configuration file to store all configuration resources.
 **- Source**                                |  A folder with Microsoft Visual Studio solution that contains the source code for the test suites.
 **- Common**                                |  A folder with Visual Studio projects that contains the common source code for the test suites.
 **- SharePointCommonConfiguration. deployment.ptfconfig** | The common configuration file.
-**-SharePointServerProtocolTestSuites.sln**               |    A Visual Studio solution that contains projects of the protocol test suites source code.
+**-SharePointServerProtocolTestSuites.sln**               |    A Visual Studio solution with projects that encapsulate the protocol test suites source code.
 **- MS-XXXX**                                             |    A folder with the MS-XXXX test suite source code.
 **+ Adapter**                                             |    The Adapter test suite code.
 **+ TestSuite**                                           |    The test suite code.

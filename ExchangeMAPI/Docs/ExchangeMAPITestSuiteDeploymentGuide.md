@@ -153,17 +153,17 @@ This section shows the folder structures in the **ExchangeMAPIProtocolTestSuites
 | Folder/file   | Description |
 | :--- | :--- |
 |  **EULA.rtf** | End-User License Agreement.|
-|  **ReadMe.txt** | A doc that contains info on deployment and prerequisite software.|
+|  **ReadMe.txt** | A doc on deployment and prerequisite software.|
 |  **Exchange MAPI Protocol Test Suites** | -- |
-|  **- Docs** | A folder that contains documents of all protocol test suites.|
+|  **- Docs** | A folder with documents of all protocol test suites.|
 |  **- ExchangeMAPITestSuiteDeploymentGuide.docx** | A doc on the protocol test suite deployment.|
-|  **- ExchangeMAPITestSuiteSpecification.docx** |  A doc that contains test suites design, test suites architecture, adapter and test suites details.|
+|  **- ExchangeMAPITestSuiteSpecification.docx** |  A doc on the test suite configuration details, architecture, adapters and test case details.|
 |  **+ MS-XXXX** | The MS-XXXX help documentation|
 |  **- \[MS-XXXX\].pdf** |  The protocol technical specification.|
-|  **- MS-XXXX \_SUTControlAdapter.chm** | A help doc with info on the SUT control adapter class library such as declaration syntax and their description.|
+|  **- MS-XXXX \_SUTControlAdapter.chm** | A help doc on the SUT control adapter class library such as declaration syntax and their description.|
 |  **- MS-XXXX \_RequirementSpecification.xlsx** |  A spreadsheet that outlines all requirements that are associated with the technical specification.|
-|  **- Setup** |A folder that contains configuration scripts.|
-|  **- Test Suite Client** |  A folder that contains the configuration script to configure the test suite client.|
+|  **- Setup** |A folder with configuration scripts.|
+|  **- Test Suite Client** |  A folder with the configuration script to configure the test suite client.|
 |  **- ExchangeClientConfiguration.cmd** | A command file that runs the ExchangeClientConfiguration.ps1 file to configure the properties for the protocol test suites.|
 |  **- ExchangeClientConfiguration.ps1** | A configuration script that will be triggered by the ExchangeClientConfiguration.cmd.|
 |  **- SUT** | A folder that contains the configuration script to configure the Exchange Server.|
@@ -171,18 +171,18 @@ This section shows the folder structures in the **ExchangeMAPIProtocolTestSuites
 |  **- ExchangeSecondSUTConfiguration.cmd** | A command file that runs the ExchangeSecondSUTConfiguration.ps1 file to create resources and configure settings on the second SUT.|
 |  **- ExchangeSUTConfiguration.ps1** |  A configuration script that will be triggered by ExchangeSUTConfiguration.cmd.|
 |  **- ExchangeSecondSUTConfiguration.ps1** | A configuration script that will be triggered by ExchangeSecondSUTConfiguration.cmd.|
-|  **- Common** | A folder that contains common configuration scripts and resources.|
-|  **- CommonConfiguration.ps1** | A library that contains common functions for configuring the Microsoft server SUT and test suite client.|
-|  **- ExchangeCommonConfiguration.ps1** | A library that contains common functions for configuring Exchange Server.|
+|  **- Common** | A folder with common configuration scripts and resources.|
+|  **- CommonConfiguration.ps1** | A library of common functions for configuring the Microsoft server SUT and test suite client.|
+|  **- ExchangeCommonConfiguration.ps1** | A library of common functions for configuring Exchange Server.|
 |  **- ExchangeTestSuite.config** | The configuration file to store all configuration resources.|
 |  **- Source** | A folder with Microsoft Visual Studio solutions that contain the source code for the test suites.|
 |  **- Common** | A folder with Microsoft Visual Studio projects that contains the common source code for the test suites.|
-|  **- Common** | A folder that contains common methods or properties used by the test suites.|
+|  **- Common** | A folder with common methods or properties that are used by the test suites.|
 |  **- ExchangeCommonConfiguration.deployment.ptfconfig** |  The common configuration file.|
 |  **+ OXCRPCStub** | The RPC transport with unmanaged code.|
-|  **- ExchangeMAPIProtocolTestSuites.sln** |  A Microsoft Visual Studio solution that contains projects of the test suites source code.|
-|  **- ExchangeMAPIProtocolTestSuites.runsettings** | A configuration file used for the unit test.|
-|  **- ExchangeMAPIProtocolTestSuites.testsettings**| A configuration file used for running test cases.|
+|  **- ExchangeMAPIProtocolTestSuites.sln** |  A Microsoft Visual Studio solution with projects that encapsulate the protocol test suites source code.|
+|  **- ExchangeMAPIProtocolTestSuites.runsettings** | A configuration file for the unit test.|
+|  **- ExchangeMAPIProtocolTestSuites.testsettings**| A configuration file for running test cases.|
 |  **- MS-XXXX** | A folder for the MS-XXXX test suite source code.|
 |  **- MS-XXXX.sln** | A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.|
 |  **- MS-XXXX.runsettings** | A configuration file used for MS-XXXX unit test.|
