@@ -6,7 +6,7 @@ Exchange EWS Test Suite deployment guide
 - [Using test suite directories](#using-test-suite-directories)
 - [Configuring test suites](#configuring-test-suites)
 - [Running test suites](#running-test-suites)
-- [Viewing test suite results, logs, and reporting](#viewing-test-suite-results-logs-and-reporting)
+- [Viewing test suite results, logs, and reports](#viewing-test-suite-results-logs-and-reports)
 - [Appendix](#appendix)
 
 Overview
@@ -516,7 +516,7 @@ Batch script | Script description
 **RunAllMSXXXXTestCases.cmd**       |  Runs all MS-XXXX test cases.
 **RunMSXXXX\_SXX\_TCXX\_Name.cmd**  |  Runs a specific test case in the test suite.
 
-Viewing test suite results, logs, and reporting
+Viewing test suite results, logs, and reports
 =====================================================================================================================================
 
 The test suites provide detailed reporting in a variety of formats that
