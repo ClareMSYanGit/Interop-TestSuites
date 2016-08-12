@@ -228,7 +228,7 @@ Folders/file | Description
 **+ Adapter**                                             |    The Adapter test suite code.
 **+ TestSuite**                                           |    The test suite code.
 **- MS-XXXX.sln**                                         |    A Visual Studio solution that contains projects of the MS-XXXX test suite.
-**-Scripts**                                              |    SharePoint Server Protocol Test Suites can be run using Visual Studio or through batch scripts. The Scripts folder contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.
+**-Scripts**                                              |    SharePoint Server Protocol Test Suites can be run using Visual Studio or batch scripts. The Scripts folder contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.
 **- RunAllSharePointTestCases.cmd**                       |    A script that can be used to run all test cases in the whole package.
 **-MS-XXXX**                                              |    A folder with scripts that belong to the MS-XXXX test suite.
 **- RunAllMSXXXXTestCases.cmd**                           |    A script that can be used to run all test cases of MS-XXXX.
