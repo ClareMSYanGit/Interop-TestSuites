@@ -396,7 +396,7 @@ select **Run as administrator**.
 
 If the SUT is non-Microsoft implementation of SharePoint Server, you
 will not be able to run the setup configuration script. The following
-steps explain what needs to be created or configured on the SUT in order
+steps explain what needs to be created or configured on the SUT
 to run the test suites.
 
 1.  In Windows Powershell, set the execution policy to **RemoteSigned**,

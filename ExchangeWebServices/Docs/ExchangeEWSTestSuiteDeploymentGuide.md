@@ -271,7 +271,7 @@ steps explain what needs to be created or configured on the SUT to run the test 
     mailbox users.
 
 	**Note** This role enables applications to impersonate users in an
-	organization in order to perform a task on behalf of them.
+	organization to perform a task on behalf of users.
 
 	MS-OXWSATT\_User01, MS-OXWSBTRF\_User01, MSOXWSCORE\_User01,
 	MSOXWSFOLD\_User01, and MSOXWSSYNC\_User01
