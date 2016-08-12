@@ -2,11 +2,11 @@ SharePoint Test Suite deployment guide
 =====================================================================================================================================================
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
-- [Deploying the test suites](#deploying-the-test-suites)
-- [Using the test suite directories](#using-the-test-suite-directories)
-- [Configuring the test suites](#configuring-the-test-suites)
-- [Running the test suites](#running-the-test-suites)
-- [Viewing the test suite results, logs, and reporting](#viewing-the-test-suite-results-logs-and-reporting)
+- [Deploying test suites](#deploying-test-suites)
+- [Using test suite directories](#using-test-suite-directories)
+- [Configuring test suites](#configuring-test-suites)
+- [Running test suites](#running-test-suites)
+- [Viewing test suite results, logs, and reporting](#viewing-test-suite-results-logs-and-reporting)
 - [Appendix](#appendix)
 
 Overview
@@ -144,7 +144,7 @@ client.
 |Microsoft Protocol Test Framework 1.0.2220.0 and above|
 
 
-Deploying the test suites
+Deploying test suites
 ================================================================================================================================================================================================================================================================================================================================================================================================================
 
 This section describes the deployment of SharePoint Server Protocol
@@ -178,7 +178,7 @@ steps to successfully configure the test suites.
   ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/SharePoint/Docs/Doc-Images/SP_Deploy2.png)                                         
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-Using the test suite directories
+Using test suite directories
 ========================================================================================================================================================================================================
 
 This section shows the folder structures in the **SharePointServerProtocolTestSuites.zip** file.
@@ -235,7 +235,7 @@ Folders/file | Description
 **- RunMSXXXX\_SYY\_TCZZ\_TestCaseName.cmd**              |    A script that can be used to run a single test case of MS-XXXX.
 
 
-Configuring the test suites
+Configuring test suites
 ================================================================================================================================================================================================================================================================================================================================================================================================================
 
 This section provides the guidance on configuring SharePoint
@@ -1109,7 +1109,7 @@ below to update configuration files and configure the test suite client.
         against the SUT if the test suite client is not joined to
         the domain.
 
-Running the test suites
+Running test suites
 ==============================================================================================================================================================================================================================================================================================================================================================================================================
 
 Once the required software is installed and both the SUT and test
@@ -1197,7 +1197,7 @@ Batch script  | Script description
 **RunAllMSXXXXTestCases.cmd**       |  Runs all MS-XXXX test cases.
 **RunMSXXXX\_S01\_TC01\_TestCaseDescription.cmd** |  Runs a specific test case in the test suite.
 
-View the test suite results, logs, and reporting
+Viewing test suite results, logs, and reporting
 ==============================================================================================================================================================================================================================================================================================================================================================================================================
 
 The test suites provide detailed reporting in a variety of formats that enables users to quickly debug failures.
