@@ -3,11 +3,11 @@ Exchange EAS Test Suite deployment guide
 
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
-- [Deploying the test suites](#deploying-the-test-suites)
-- [Using the test suite directories](#using-the-test-suite-directories)
-- [Configuring the test suites](#configuring-the-test-suites)
-- [Running the test suites](#running-the-test-suites)
-- [Viewing the test suite results, logs, and reports](#viewing-the-test-suite-results-logs-and-reports)
+- [Deploying test suites](#deploying-test-suites)
+- [Using test suite directories](#using-test-suite-directories)
+- [Configuring test suites](#configuring-test-suites)
+- [Running test suites](#running-test-suites)
+- [Viewing test suite results, logs, and reports](#viewing-test-suite-results-logs-and-reports)
 - [Appendix](#appendix)
 
 Overview
@@ -107,7 +107,7 @@ table outlines the software dependencies for the test suite client.
 |Microsoft Visual Studio 2013 Professional| 
 |Microsoft Protocol Test Framework 1.0.2220.0 and above| 
 
-Deploying the test suites
+Deploying test suites
 =======================================================================================================================
 
 This section describes the deployment of Exchange Server EAS Protocol
@@ -153,7 +153,7 @@ To unblock MS\_OXWSDLGM\_ServerAdapter.dll, do the following:
       ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeActiveSync/Docs/Doc-Images/EAS_Deploy4.png)                                                                                       
                                                                                           
 
-Using the test suite directories
+Using test suite directories
 ============================================================================================================
 
 This section shows the folder structures in the **ExchangeServerEASProtocolTestSuites.zip** file.
@@ -197,7 +197,7 @@ This section shows the folder structures in the **ExchangeServerEASProtocolTestS
 |**- RunAllMSXXXXTestCases.cmd**|  A script that can be used to run all test cases of MS-XXXX.| 
 |**- RunMSXXXX\_SXX\_TCXX\_Name.cmd**| A script that can be used to run a single test case of MS-XXXX.| 
 
-Configuring the test suites
+Configuring test suites
 ==============================================================================================================================
 
 This section provides the guidance on configuring Exchange
@@ -649,7 +649,7 @@ below to update configuration files and configure the test suite client.
     Management (WinRM) client can process remote calls against the SUT
     when the test suite client is not joined to the domain.
 
-Running the test suites
+Running test suites
 =================================================================================================================
 
 Once the required software is installed and both the SUT and test suite client 
@@ -725,7 +725,7 @@ scripts can be found in the **\\Source\\Scripts** directory.
 | **RunMSXXXX\_SXX\_TCXX\_Name.cmd**  |  Runs a specific test case in the test suite.| 
 
 
-Viewing the test suite results, logs, and reports
+Viewing test suite results, logs, and reports
 =============================================================================================================================
 
 The test suites provide detailed reporting in a variety of formats that enables users to quickly debug failures.
