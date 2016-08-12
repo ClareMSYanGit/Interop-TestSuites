@@ -235,7 +235,7 @@ several scenarios.
 
 The fifteen shared test scenarios are designed to cover testable requirements for
 MS-FSSHTTP behavior in both MS-WOPI and MS-FSSHTTP-FSSHTTPB test
-suites. The following table lists the scenarios in the shared test suite:
+suites. The following table lists the scenarios in the shared test suite.
 
  Scenario| Description
 :------------ | :-------------
@@ -258,7 +258,7 @@ S15\_CreateFile |   Verifies the PutChanges sub-request to create a new file on 
 ### MS-FSSHTTP-FSSHTTPB
 
 The fifteen test scenarios are designed to cover testable requirements in the
-MS-FSSHTTP-FSSHTTPB test suite. The following table lists the scenarios in the MS-FSSHTTP-FSSHTTPB test suite:
+MS-FSSHTTP-FSSHTTPB test suite. The following table lists the scenarios in the MS-FSSHTTP-FSSHTTPB test suite.
 
   Scenario| Description
 :------------ | :-------------
@@ -290,7 +290,7 @@ MS-FSSHTTP is implemented.
 The four scenarios (from MSWOPI\_S17 to MSWOPI\_S20) are designed to verify the
 operations defined in the MS-WOPI Open Specification.
 
-The following table lists the scenarios in the MS-WOPI test suite:
+The following table lists the scenarios in the MS-WOPI test suite.
 
 Scenario| Description
 :------------ | :-------------
