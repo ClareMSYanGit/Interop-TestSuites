@@ -185,8 +185,8 @@ This section shows the folder structures in the **ExchangeMAPIProtocolTestSuites
 |  **- ExchangeMAPIProtocolTestSuites.testsettings**| A configuration file for running test cases.|
 |  **- MS-XXXX** | A folder for the MS-XXXX test suite source code.|
 |  **- MS-XXXX.sln** | A Microsoft Visual Studio solution that contains projects of the MS-XXXX test suite.|
-|  **- MS-XXXX.runsettings** | A configuration file used for MS-XXXX unit test.|
-|  **- MS-XXXX.testsettings** | A configuration file used for MS-XXXX running test cases.|
+|  **- MS-XXXX.runsettings** | A configuration file for the MS-XXXX unit test.|
+|  **- MS-XXXX.testsettings** | A configuration file for running MS-XXXX test cases.|
 |  **+ Adapter** | The Adapter test suite code.|
 |  **+ TestSuite** |  The test suite code.|
 |  **- Scripts** | Exchange MAPI Test Suites can be run using Visual Studio or through batch scripts. The Scripts folder contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.|

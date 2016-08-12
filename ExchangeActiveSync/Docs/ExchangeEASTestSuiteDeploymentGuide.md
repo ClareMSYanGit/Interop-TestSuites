@@ -182,13 +182,13 @@ This section shows the folder structures in the **ExchangeServerEASProtocolTestS
 |**- Source** | A folder with Microsoft Visual Studio solutions that contain source code for the test suites.| 
 |**- Common** | A folder with Microsoft Visual Studio projects that contains the common source code for the test suites.| 
 |**- ExchangeCommonConfiguration.deployment.ptfconfig** | A common configuration file.| 
-|**- ExchangeServerEASProtocolTestSuites.runsettings**  |A configuration file for unit test.| 
+|**- ExchangeServerEASProtocolTestSuites.runsettings**  |A configuration file for the unit test.| 
 |**- ExchangeServerEASProtocolTestSuites.sln**| A Visual Studio solution with projects that encapsulate the protocol test suites source code.| 
 |**- ExchangeServerEASProtocolTestSuites.testsettings** |  A configuration file for running test cases.| 
 |**- MS-XXXX**    |  A folder for the MS-XXXX test suite source code.| 
 |**- MS-XXXX.sln**|  A Microsoft Visual Studio solution with projects of the MS-XXXX test suite.| 
 |**- MS-XXXX.runsettings** | A configuration file for the MS-XXXX unit test.| 
-|**- MS-XXXX.testsettings**| A configuration file for MS-XXXX running test cases.| 
+|**- MS-XXXX.testsettings**| A configuration file for running MS-XXXX test cases.| 
 |**+ Adapter**|The Adapter test suite code.| 
 |**+ TestSuite**|The test suite code.| 
 |**- Scripts** | Exchange Server EAS Test Suites can be run using Visual Studio or batch scripts. The Scripts directory contains a collection of command files that allows users to run specific test cases in the test suite or the entire test suite.| 
