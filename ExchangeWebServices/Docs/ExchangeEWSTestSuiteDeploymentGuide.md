@@ -2,11 +2,11 @@ Exchange EWS Test Suite deployment guide
 ======================================================================================================
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
-- [Deploying the test suites](#deploying-the-test-suites)
-- [Using the test suite directories](#using-the-test-suite-directories)
-- [Configuring the test suites](#configuring-the-test-suites)
-- [Running the test suites](#running-the-test-suites)
-- [Viewing the test suite results, logs, and reporting](#viewing-the-test-suite-results-logs-and-reporting)
+- [Deploying test suites](#deploying-test-suites)
+- [Using test suite directories](#using-test-suite-directories)
+- [Configuring test suites](#configuring-test-suites)
+- [Running test suites](#running-test-suites)
+- [Viewing test suite results, logs, and reporting](#viewing-test-suite-results-logs-and-reporting)
 - [Appendix](#appendix)
 
 Overview
@@ -105,7 +105,7 @@ table outlines the software dependencies for the test suite client.
 | Microsoft Visual Studio 2013 Professional |
 | Microsoft Protocol Test Framework 1.0.2220.0 and above|
 
-Deploying the test suites
+Deploying test suites
 =======================================================================================================================
 
 This section describes the deployment of Exchange Server EWS Protocol
@@ -123,7 +123,7 @@ steps to successfully configure the test suites.
     configuration scripts are the only requirement for the SUT. The
     scripts facilitate the SUT configuration process in the **ExchangeServerEWSProtocolTestSuites.zip** file.
 
-Using the test suite directories
+Using test suite directories
 ================================================================================================================================================================================================================================================================================================================================================================================================================
 
 This section shows the folder structures in the **ExchangeServerEWSProtocolTestSuites.zip** file.
@@ -171,7 +171,7 @@ Folder/file  | Description
 **- RunAllMSXXXXTestCases.cmd**                        |  A script that can be used to run all test cases of MS-XXXX.
 **- RunMSXXXX\_SXX\_TCXX\_Name.cmd**                   |  A script that can be used to run a single test case of MS-XXXX.
 
-Configuring the test suites
+Configuring test suites
 ================================================================================================================================================================================================================================================================================================================================================================================================================
 
 This section provides the guidance on configuring Exchange
@@ -436,7 +436,7 @@ below to update configuration files and configure the test suite client.
     test-suite specific configuration files according to the comment of
     the property.
 
-Running the test suites
+Running test suites
 ========================================================================================================================================================================================================
 
 Once the required software is installed and both the SUT and test suite client are configured appropriately, the test suite is ready to run. The test
@@ -516,7 +516,7 @@ Batch script | Script description
 **RunAllMSXXXXTestCases.cmd**       |  Runs all MS-XXXX test cases.
 **RunMSXXXX\_SXX\_TCXX\_Name.cmd**  |  Runs a specific test case in the test suite.
 
-Viewing the test suite results, logs, and reporting
+Viewing test suite results, logs, and reporting
 =====================================================================================================================================
 
 The test suites provide detailed reporting in a variety of formats that
