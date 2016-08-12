@@ -1,5 +1,5 @@
 ## [MS-COPYS]
-To find the new landing page for [MS-COPYS], please visit https://msdn.microsoft.com/en-us/library/cc313085(v=office.12).aspx
+To find the new landing page for [MS-COPYS], please visit https://msdn.microsoft.com/en-us/library/cc313170(v=office.12).aspx
 
 The new landing page includes the following:
 - The ability to download the preview, published, and previous versions of the documents in PDF and .docx format.
