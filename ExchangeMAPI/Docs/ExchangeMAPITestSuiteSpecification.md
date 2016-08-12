@@ -400,15 +400,15 @@ scenarios in this test suite.
 
 Scenario  |  Description
 :------------ | :-------------
-  S01\_CreateAndSaveMessage   |    Validates the behaviors when the client calls the Message methods to create and save Message objects on the server. Finally, the client releases the Message object by calling the RopRelease operation.
-  S02\_SetMessageStatus        |   Validates the behaviors when the client calls the Message methods to set and get the message status. Finally, the client releases the Message object by calling the RopRelease operation.
-  S03\_SetMessageFlags         |   Validates the behaviors when the client calls the Message methods to set and get read flags of a message. Finally, the client releases the Message object by calling the RopRelease operation.
+  S01\_CreateAndSaveMessage   |    Validates the behavior when the client calls the Message methods to create and save Message objects on the server. Finally, the client releases the Message object by calling the RopRelease operation.
+  S02\_SetMessageStatus        |   Validates the behavior when the client calls the Message methods to set and get the message status. Finally, the client releases the Message object by calling the RopRelease operation.
+  S03\_SetMessageFlags         |   Validates the behavior when the client calls the Message methods to set and get read flags of a message. Finally, the client releases the Message object by calling the RopRelease operation.
   S04\_MessageObjectProperties  |  Validates the Message object properties on the server. Finally, the client releases the Message object by calling the RopRelease operation.
-  S05\_OpenMessage               | Validates the behaviors when the client calls the Message methods to create, save, and open Message objects on the server. Finally, the client releases the Message object by calling the RopRelease operation.
-  S06\_ReloadCachedInformation   | Validates the behaviors when the client calls the Message methods to open and reload Message objects on the server. Finally, the client releases the Message object by calling the RopRelease operation.
-  S07\_RopRecipient             |  Validates the behaviors when the client calls the Recipient methods to read, modify, and remove all recipients on a Message object. Finally, the client releases the Message object by calling the RopRelease operation.
-  S08\_RopAttachment             | Validates the behaviors when the client calls the Attachment methods to open, get attachment tables, and delete attachment on a Message object. The client releases the Attachment object and Message object by calling RopRelease operation.
-  S09\_RopEmbeddedMessage        | Validates the behaviors when the client calls the Embedded Message methods to create, save, and open an embedded Message object in an Attachment object on the server.
+  S05\_OpenMessage               | Validates the behavior when the client calls the Message methods to create, save, and open Message objects on the server. Finally, the client releases the Message object by calling the RopRelease operation.
+  S06\_ReloadCachedInformation   | Validates the behavior when the client calls the Message methods to open and reload Message objects on the server. Finally, the client releases the Message object by calling the RopRelease operation.
+  S07\_RopRecipient             |  Validates the behavior when the client calls the Recipient methods to read, modify, and remove all recipients on a Message object. Finally, the client releases the Message object by calling the RopRelease operation.
+  S08\_RopAttachment             | Validates the behavior when the client calls the Attachment methods to open, get attachment tables, and delete attachment on a Message object. The client releases the Attachment object and Message object by calling RopRelease operation.
+  S09\_RopEmbeddedMessage        | Validates the behavior when the client calls the Embedded Message methods to create, save, and open an embedded Message object in an Attachment object on the server.
 
 ### MS-OXCNOTIF
 
@@ -533,11 +533,11 @@ scenarios in this test suite.
 
 |Scenario  |  Description|
 |:------------ | :-------------|
-|S01\_AddModifyDeleteRetrieveRules   |      Validates server behaviors of the following:                                            
+|S01\_AddModifyDeleteRetrieveRules   |      Validates server behavior of the following:                                            
 ||   - The operations of RopModifyRules and RopGetRulesTable when adding, modifying, deleting and retrieving standard rules.    |      
 ||   - The functions of ROPs that are referenced in MS-OXCMSG and MS-OXCTABL for adding, modifying, deleting, and retrieving extended rules. |                                        
-|  S02\_ProcessServerSideRulesOtherthanOOF |  Validates server behaviors of processing server-side rules other than the Out-of-Office rule, because the action of OP\_OOF\_REPLY is complicated enough to be a separate scenario.|
-|  S03\_ProcessOutOfOfficeRule             |  Validates server behaviors of processing the Out-of-Office rule.|
-|  S04\_ProcessRulesOnPublicFolder        |  Validates server behaviors of processing server-side rules on the public folder.|
-|  S05\_GenerateDAMAndDEM              |      Validates server behaviors of DAM and the DEM message.|
+|  S02\_ProcessServerSideRulesOtherthanOOF |  Validates server behavior of processing server-side rules other than the Out-of-Office rule, because the action of OP\_OOF\_REPLY is complicated enough to be a separate scenario.|
+|  S03\_ProcessOutOfOfficeRule             |  Validates server behavior of processing the Out-of-Office rule.|
+|  S04\_ProcessRulesOnPublicFolder        |  Validates server behavior of processing server-side rules on the public folder.|
+|  S05\_GenerateDAMAndDEM              |      Validates server behavior of DAM and the DEM message.|
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

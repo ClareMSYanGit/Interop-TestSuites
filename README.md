@@ -68,16 +68,16 @@ components.
 	-   **powershell**: The SUT control adapter is implemented
             through Windows PowerShell.
 
-            However, the SUT Control Adapter is primarily designed to
+    -   **interactive**: Interactive adapters are used for manually
+        configuring a server.
+		
+			The SUT Control Adapter is primarily designed to
             work with Microsoft implementation of the SUT. If you’re a
             third-party implementer, it is recommended that you further
             configure the test suite by setting the test suite to the
             interactive mode. The SUT Control Adapter can be switched
             between powershell/managed code and interactive adapter by
             changing the MS-XXXX\_TestSuite.ptfconfig file.
-
-    -   **interactive**: Interactive adapters are used for manually
-        configuring a server.
 
 -   **System Under Test (SUT):** The SUT is the server side of the test
     suite environment. The SUT can either be Microsoft implementation of
