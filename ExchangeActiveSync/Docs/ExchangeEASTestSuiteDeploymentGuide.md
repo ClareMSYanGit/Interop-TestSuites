@@ -494,10 +494,10 @@ Configuring the test suite client
 ------------------------------------------------------------------------------------------------------------------------------
 
 The test suite client is managed through a common configuration file,
-two test suite-specific configuration files, and three SHOULD/MAY
+two test-suite specific configuration files, and three SHOULD/MAY
 configuration files that all have a “.ptfconfig” extension. These
 configuration files can be modified directly. The common configuration
-file and the test suite-specific configuration files can also be
+file and the test-suite specific configuration files can also be
 modified through a script.
 
 ### Common configuration file
@@ -515,14 +515,14 @@ are installed.
 ### Test-suite specific configuration files
 
 In addition to the common configuration file, each individual test suite
-has the following two configuration files for test suite-specific
+has the following two configuration files for test-suite specific
 modification.
 
 **Test-suite specific configuration files**
 
 | Configuration file | Description |
 | :--- | :--- |
-| **MS-XXXX\_TestSuite.deployment.ptfconfig** | The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows for test suite-specific customization.|
+| **MS-XXXX\_TestSuite.deployment.ptfconfig** | The deployment configuration file provides the environmental details that are specific to the test suite. The configuration file allows for test- suite specific customization.|
 | **MS-XXXX\_TestSuite.ptfconfig**| The test suite configuration file contains details that specify the behavior of the test suite operation.|
 
 Both files are in the TestSuite folder in each test suite directory.
@@ -635,7 +635,7 @@ suite client as described in the previous section, follow the steps
 below to update configuration files and configure the test suite client.
 
 1.  Update the property value in the common configuration file and the
-    test suite-specific configuration files according to the comment of
+    test-suite specific configuration files according to the comment of
     the property.
 
 2.  By default, the test suites use PowerShell script in the SUT control
