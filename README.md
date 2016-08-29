@@ -14,10 +14,9 @@ requirement and do not certify any implementation even if all tests
 pass. However, each test suite provides you with a useful indication of
 interoperability.
 
-This repository contains SharePoint and Exchange Protocol Test Suites,
-and the README document includes the following:
+This repository contains SharePoint and Exchange Protocol Test Suites. Inside each test suite folder, you will find configuration files, test cases, and associated supporting files, such as scripts source coder, reference guide, deployment guide, and specifications. To get a quick introduction, review this README document which includes the following:
 
--   [Overview](#overview): An introduction on the test suite design and
+-   [Overview](#overview): An introduction to the test suite design and
     its components.
 
 -   [Get started](#get-started): A generic quick-start guide on how to deploy,
