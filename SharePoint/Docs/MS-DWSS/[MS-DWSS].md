@@ -1,4 +1,7 @@
-## [MS-DWSS]
+## [MS-DWSS]: Document Workspace Web Service Protocol
+- [MS-DWSS] v20121003 is used to develop the test suite.
+- Release date, 10/8/2012.
+
 To find the new landing page for [MS-DWSS], please visit https://msdn.microsoft.com/en-us/library/cc313084(v=office.12).aspx
 
 The new landing page includes the following:
