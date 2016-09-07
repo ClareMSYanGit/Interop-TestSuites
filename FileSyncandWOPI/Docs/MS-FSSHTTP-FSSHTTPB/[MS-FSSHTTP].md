@@ -1,4 +1,7 @@
-## [MS-FSSHTTP]
+## [MS-FSSHTTP]: File Synchronization via SOAP over HTTP Protocol
+- [MS-FSSHTTP] v20130726 is used to develop the test suites.
+- Release date, 7/30/2013.
+
 To find the new landing page for [MS-FSSHTTP], please visit https://msdn.microsoft.com/en-us/library/dd943623(v=office.12).aspx
 
 The new landing page includes the following:
