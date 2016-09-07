@@ -1,10 +1,8 @@
-## [MS-OXCNOTIF]
-To find the new landing page for [MS-OXCNOTIF], please visit https://msdn.microsoft.com/en-us/library/cc463898(v=exchg.80).aspx
-
-Note: 
+## [MS-OXCNOTIF]: Core Notifications Protocol
 - [MS-OXCNOTIF] v20160613 is used to develop the test suite. 
-- Core Notifications Protocol.
 - Release date, 6/13/2016.
+
+To find the new landing page for [MS-OXCNOTIF], please visit https://msdn.microsoft.com/en-us/library/cc463898(v=exchg.80).aspx
 
 The new landing page includes the following:
 - The ability to download the preview, published, and previous versions of the documents in PDF and .docx format.
