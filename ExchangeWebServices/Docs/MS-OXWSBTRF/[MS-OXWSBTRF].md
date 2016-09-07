@@ -1,6 +1,6 @@
 ## [MS-OXWSBTRF]: Bulk Transfer Web Service Protocol
 - [MS-OXWSBTRF] v20121003 is used to develop the test suite.
-- Release date, 10/3/2012.
+- Release date, 10/8/2012.
 
 To find the new landing page for [MS-OXWSBTRF], please visit https://msdn.microsoft.com/en-us/library/ff631305(v=exchg.80).aspx
 
