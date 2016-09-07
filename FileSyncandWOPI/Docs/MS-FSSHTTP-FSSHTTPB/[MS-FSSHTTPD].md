@@ -1,5 +1,5 @@
 ## [MS-FSSHTTPD]: Binary Data Format for File Synchronization via SOAP 
-- [MS-FSSHTTD] v20130726 is used to develop the test suite.
+- [MS-FSSHTTPD] v20130726 is used to develop the test suite.
 - Release date, 7/30/2013.
 
 
