@@ -1,4 +1,7 @@
-## [MS-OXWSMSG]
+## [MS-OXWSMSG]: Email Message Types Web Service Protocol
+- [MS-OXWSMSG] v20150914 is used to develop the test suite.
+- Release date, 9/14/2015.
+
 To find the new landing page for [MS-OXWSMSG], please visit https://msdn.microsoft.com/en-us/library/ee201574(v=exchg.80).aspx
 
 The new landing page includes the following:
