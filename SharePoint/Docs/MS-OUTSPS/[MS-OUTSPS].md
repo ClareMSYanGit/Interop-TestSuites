@@ -1,4 +1,7 @@
-## [MS-OUTSPS]
+## [MS-OUTSPS]: Lists Client Sync Protocol
+- [MS-MEETS] v20130726 is used to develop the test suite.
+- Release date, 7/30/2013.
+
 To find the new landing page for [MS-OUTSPS], please visit https://msdn.microsoft.com/en-us/library/cc313169(v=office.12).aspx
 
 The new landing page includes the following:
