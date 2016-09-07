@@ -1,4 +1,7 @@
-## [MS-OXWSITEMID]
+## [MS-OXWSITEMID]: Web Service Item ID Algorithm
+- [MS-OXWSITEMID] v20150330 is used to develop the test suite.
+- Release date, 3/30/2015.
+
 To find the new landing page for [MS-OXWSITEMID], please visit https://msdn.microsoft.com/en-us/library/dn959220(v=exchg.80).aspx
 
 The new landing page includes the following:
