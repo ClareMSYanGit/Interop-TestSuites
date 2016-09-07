@@ -1,6 +1,6 @@
 ## [MS-OXWSATT]: Attachment Handling Web Service Protocol
 - [MS-OXWSATT] v20150914 is used to develop the test suite.
-- Release date, 9/14/2015 
+- Release date, 9/14/2015.
 
 To find the new landing page for [MS-OXWSATT], please visit https://msdn.microsoft.com/en-us/library/ee219541(v=EXCHG.80).aspx
 
