@@ -1,10 +1,9 @@
-## [MS-OXCFXICS]
-To find the new landing page for [MS-OXCFXICS], please visit https://msdn.microsoft.com/en-us/library/cc463916(v=exchg.80).aspx
+## [MS-OXCFXICS]: Bulk Data Transfer Protocol 
 
-Note: 
 - [MS-OXCFXICS] v20150914 is used to develop the test suite. 
-- Bulk Data Transfer Protocol.
 - Release date, 9/14/2015.
+
+To find the new landing page for [MS-OXCFXICS], please visit https://msdn.microsoft.com/en-us/library/cc463916(v=exchg.80).aspx
 
 The new landing page includes the following:
 - The ability to download the preview, published, and previous versions of the documents in PDF and .docx format.
