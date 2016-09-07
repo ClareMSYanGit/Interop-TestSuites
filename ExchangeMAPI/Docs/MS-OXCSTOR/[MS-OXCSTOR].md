@@ -1,5 +1,5 @@
 ## [MS-OXCSTOR]: Store Object Protocol
--[MS-OXCSTOR] v20160613 is used to develop the test suite. 
+- [MS-OXCSTOR] v20160613 is used to develop the test suite. 
 - Release date, 6/13/2015.
 
 
