@@ -1,8 +1,7 @@
 Exchange MAPI Test Suites Specification
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
-
-
 **Contents**
+=====================================================
 
 - [1 Introduction ](#introduction)
 
@@ -48,11 +47,11 @@ Exchange MAPI Test Suites Specification
 
 		- [4.5.2 MS-OXCFXICS ](#ms-oxcfxics)
 
-		- [4.5.3 MS-OXCMAPIHTTP ](#_Toc400796677)
+		- [4.5.3 MS-OXCMAPIHTTP ](#ms_oxcmapihttp)
 
 		- [4.5.4 MS-OXCMSG ](#ms-oxcmsg)
 
-		- [4.5.5 MS-OXCNOTIF ](#_Toc400796679)
+		- [4.5.5 MS-OXCNOTIF ](#ms_oxcnotif)
 
 		- [4.5.6 MS-OXCPERM ](#ms-oxcperm)
 
@@ -60,9 +59,9 @@ Exchange MAPI Test Suites Specification
 
 		- [4.5.8 MS-OXCROPS ](#ms-oxcrops)
 
-		- [4.5.9 MS-OXCRPC ](#_Toc400796683)
+		- [4.5.9 MS-OXCRPC ](#ms_oxcrpc)
 
-		- [4.5.10 MS-OXCSTOR ](#_Toc400796684)
+		- [4.5.10 MS-OXCSTOR ](#ms_oxcstor)
 
 		- [4.5.11 MS-OXCTABL ](#ms-oxctabl)
 
