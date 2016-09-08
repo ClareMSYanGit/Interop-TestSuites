@@ -1,78 +1,74 @@
 Exchange MAPI Test Suites Specification
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
-- [Introduction](#introduction)
-- [Requirement specification](#requirement-specification)
-- [Design considerations](#design-considerations)
-- [Package design](#package-design)
 
 **Contents**
 
-[1 Introduction 3](#_Toc400796655)
+- [1 Introduction ](#introduction)
 
-[2 Requirement specification 4](#_Toc400796656)
+- [2 Requirement specification ](#requirement-specification)
 
-[3 Design considerations 5](#design-considerations)
+- [3 Design considerations](#design-considerations)
 
-[3.1 Assumptions 5](#assumptions)
+	- [3.1 Assumptions ](#assumptions)
 
-[3.2 Dependencies 5](#dependencies)
+	- [3.2 Dependencies ](#dependencies)
 
-[4 Package design 6](#package-design)
+- [4 Package design ](#package-design)
 
-[4.1 Architecture 6](#architecture)
+	- [4.1 Architecture ](#architecture)
 
-[4.2 Common library 7](#common-library)
+	- [4.2 Common library ](#common-library)
 
-[4.2.1 Transport classes 7](#transport-classes)
+		- [4.2.1 Transport classes ](#transport-classes)
 
-[4.2.2 Helper methods 7](#helper-methods)
+		- [4.2.2 Helper methods ](#helper-methods)
 
-[4.2.3 Message structures 7](#message-structures)
+		- [4.2.3 Message structures](#message-structures)
 
-[4.3 Adapter 7](#adapter)
+	- [4.3 Adapter ](#adapter)
 
-[4.3.1 Protocol Adapter 7](#protocol-adapter)
+		- [4.3.1 Protocol Adapter ](#protocol-adapter)
 
-[4.3.2 SUT Control Adapter 8](#sut-control-adapter)
+		- [4.3.2 SUT Control Adapter ](#sut-control-adapter)
 
-[4.4 Model 8](#model)
+	- [4.4 Model ](#model)
 
-[4.4.1 Actions 8](#actions)
+		- [4.4.1 Actions ](#actions)
 
-[4.4.2 States 8](#states)
+		- [4.4.2 States ](#states)
 
-[4.4.3 Machines 8](#machines)
+		- [4.4.3 Machines ](#machines)
 
-[4.4.4 Model design patterns 9](#model-design-patterns)
+		- [4.4.4 Model design patterns ](#model-design-patterns)
 
-[4.5 Test suite 9](#test-suite)
+	- [4.5 Test suite ](#test-suite)
 
-[4.5.1 MS-OXCFOLD 9](#ms-oxcfold)
+		- [4.5.1 MS-OXCFOLD ](#ms-oxcfold)
 
-[4.5.2 MS-OXCFXICS 9](#ms-oxcfxics)
+		- [4.5.2 MS-OXCFXICS ](#ms-oxcfxics)
 
-[4.5.3 MS-OXCMAPIHTTP 10](#_Toc400796677)
+		- [4.5.3 MS-OXCMAPIHTTP ](#_Toc400796677)
 
-[4.5.4 MS-OXCMSG 10](#ms-oxcmsg)
+		- [4.5.4 MS-OXCMSG ](#ms-oxcmsg)
 
-[4.5.5 MS-OXCNOTIF 11](#_Toc400796679)
+		- [4.5.5 MS-OXCNOTIF ](#_Toc400796679)
 
-[4.5.6 MS-OXCPERM 11](#ms-oxcperm)
+		- [4.5.6 MS-OXCPERM ](#ms-oxcperm)
 
-[4.5.7 MS-OXCPRPT 11](#ms-oxcprpt)
+		- [4.5.7 MS-OXCPRPT ](#ms-oxcprpt)
 
-[4.5.8 MS-OXCROPS 12](#ms-oxcrops)
+		- [4.5.8 MS-OXCROPS ](#ms-oxcrops)
 
-[4.5.9 MS-OXCRPC 12](#_Toc400796683)
+		- [4.5.9 MS-OXCRPC ](#_Toc400796683)
 
-[4.5.10 MS-OXCSTOR 12](#_Toc400796684)
+		- [4.5.10 MS-OXCSTOR ](#_Toc400796684)
 
-[4.5.11 MS-OXCTABL 13](#ms-oxctabl)
+		- [4.5.11 MS-OXCTABL ](#ms-oxctabl)
 
-[4.5.12 MS-OXNSPI 13](#ms-oxnspi)
+		- [4.5.12 MS-OXNSPI ](#ms-oxnspi)
 
-[4.5.13 MS-OXORULE 13](#ms-oxorule)
+		- [4.5.13 MS-OXORULE ](#ms-oxorule)
 
 Introduction
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
