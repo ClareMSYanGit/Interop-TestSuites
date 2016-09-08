@@ -47,11 +47,11 @@ Contents
 
 		- [4.5.2 MS-OXCFXICS ](#ms-oxcfxics)
 
-		- [4.5.3 MS-OXCMAPIHTTP ](#ms_oxcmapihttp)
+		- [4.5.3 MS-OXCMAPIHTTP ](#ms-oxcmapihttp)
 
 		- [4.5.4 MS-OXCMSG ](#ms-oxcmsg)
 
-		- [4.5.5 MS-OXCNOTIF ](#ms_oxcnotif)
+		- [4.5.5 MS-OXCNOTIF ](#ms-oxcnotif)
 
 		- [4.5.6 MS-OXCPERM ](#ms-oxcperm)
 
@@ -59,9 +59,9 @@ Contents
 
 		- [4.5.8 MS-OXCROPS ](#ms-oxcrops)
 
-		- [4.5.9 MS-OXCRPC ](#ms_oxcrpc)
+		- [4.5.9 MS-OXCRPC ](#ms-oxcrpc)
 
-		- [4.5.10 MS-OXCSTOR ](#ms_oxcstor)
+		- [4.5.10 MS-OXCSTOR ](#ms-oxcstor)
 
 		- [4.5.11 MS-OXCTABL ](#ms-oxctabl)
 
