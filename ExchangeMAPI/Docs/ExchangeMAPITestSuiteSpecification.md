@@ -2,72 +2,40 @@
 
 Contents
 -----------------------------
+- [1 Introduction ](#introduction)			
+- [2 Requirement specification ](#requirement-specification)			
+- [3 Design considerations](#design-considerations)			
+	- [3.1 Assumptions ](#assumptions)		
+	- [3.2 Dependencies ](#dependencies)		
+- [4 Package design ](#package-design)			
+	- [4.1 Architecture ](#architecture)		
+	- [4.2 Common library ](#common-library)		
+		- [4.2.1 Transport classes ](#transport-classes)	
+		- [4.2.2 Helper methods ](#helper-methods)	
+		- [4.2.3 Message structures](#message-structures)	
+	- [4.3 Adapter ](#adapter)		
+		- [4.3.1 Protocol Adapter ](#protocol-adapter)	
+		- [4.3.2 SUT Control Adapter ](#sut-control-adapter)	
+	- [4.4 Model ](#model)		
+		- [4.4.1 Actions ](#actions)	
+		- [4.4.2 States ](#states)	
+		- [4.4.3 Machines ](#machines)	
+		- [4.4.4 Model design patterns ](#model-design-patterns)	
+	- [4.5 Test suite ](#test-suite)		
+		- [4.5.1 MS-OXCFOLD ](#ms-oxcfold)	
+		- [4.5.2 MS-OXCFXICS ](#ms-oxcfxics)	
+		- [4.5.3 MS-OXCMAPIHTTP ](#ms-oxcmapihttp)	
+		- [4.5.4 MS-OXCMSG ](#ms-oxcmsg)	
+		- [4.5.5 MS-OXCNOTIF ](#ms-oxcnotif)	
+		- [4.5.6 MS-OXCPERM ](#ms-oxcperm)	
+		- [4.5.7 MS-OXCPRPT ](#ms-oxcprpt)	
+		- [4.5.8 MS-OXCROPS ](#ms-oxcrops)	
+		- [4.5.9 MS-OXCRPC ](#ms-oxcrpc)	
+		- [4.5.10 MS-OXCSTOR ](#ms-oxcstor)	
+		- [4.5.11 MS-OXCTABL ](#ms-oxctabl)	
+		- [4.5.12 MS-OXNSPI ](#ms-oxnspi)	
+		- [4.5.13 MS-OXORULE ](#ms-oxorule)	
 
-- [1 Introduction ](#introduction)
-
-- [2 Requirement specification ](#requirement-specification)
-
-- [3 Design considerations](#design-considerations)
-
-	- [3.1 Assumptions ](#assumptions)
-
-	- [3.2 Dependencies ](#dependencies)
-
-- [4 Package design ](#package-design)
-
-	- [4.1 Architecture ](#architecture)
-
-	- [4.2 Common library ](#common-library)
-
-		- [4.2.1 Transport classes ](#transport-classes)
-
-		- [4.2.2 Helper methods ](#helper-methods)
-
-		- [4.2.3 Message structures](#message-structures)
-
-	- [4.3 Adapter ](#adapter)
-
-		- [4.3.1 Protocol Adapter ](#protocol-adapter)
-
-		- [4.3.2 SUT Control Adapter ](#sut-control-adapter)
-
-	- [4.4 Model ](#model)
-
-		- [4.4.1 Actions ](#actions)
-
-		- [4.4.2 States ](#states)
-
-		- [4.4.3 Machines ](#machines)
-
-		- [4.4.4 Model design patterns ](#model-design-patterns)
-
-	- [4.5 Test suite ](#test-suite)
-
-		- [4.5.1 MS-OXCFOLD ](#ms-oxcfold)
-
-		- [4.5.2 MS-OXCFXICS ](#ms-oxcfxics)
-
-		- [4.5.3 MS-OXCMAPIHTTP ](#ms-oxcmapihttp)
-
-		- [4.5.4 MS-OXCMSG ](#ms-oxcmsg)
-
-		- [4.5.5 MS-OXCNOTIF ](#ms-oxcnotif)
-
-		- [4.5.6 MS-OXCPERM ](#ms-oxcperm)
-
-		- [4.5.7 MS-OXCPRPT ](#ms-oxcprpt)
-
-		- [4.5.8 MS-OXCROPS ](#ms-oxcrops)
-
-		- [4.5.9 MS-OXCRPC ](#ms-oxcrpc)
-
-		- [4.5.10 MS-OXCSTOR ](#ms-oxcstor)
-
-		- [4.5.11 MS-OXCTABL ](#ms-oxctabl)
-
-		- [4.5.12 MS-OXNSPI ](#ms-oxnspi)
-
-		- [4.5.13 MS-OXORULE ](#ms-oxorule)
 
 Introduction
 =====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
