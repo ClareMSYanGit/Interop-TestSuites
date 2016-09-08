@@ -1,7 +1,7 @@
 #Exchange MAPI Test Suites Specification
 
 Contents
-=====================================================
+-----------------------------
 
 - [1 Introduction ](#introduction)
 
