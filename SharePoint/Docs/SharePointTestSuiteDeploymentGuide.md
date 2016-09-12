@@ -938,17 +938,6 @@ to run the test suites.
 
 	For Microsoft SharePoint Server, use the *Basic Meeting Workspace* site template.
 
-1.  Create column named **MSCOPYS\_TestReadOnlyField** in list
-    MSCOPYS\_SourceDocumentLibrary with “Text” type, set the default
-    value to **MSCOPYS\_Source**.
-
-2.  Create a column named **MSCOPYS\_WorkFlowEventField** in list
-    MSCOPYS\_SourceDocumentLibrary with “WorkFlowEvent” type.
-
-3.  Upload a file MSCOPYS\_SourceFile.txt use a form of ANSI with the
-=======
-	For Microsoft SharePoint Server, use the **Basic Meeting Workspace** site template.
-
 4.  Create column named **MSCOPYS\_TestReadOnlyField** in list
     MSCOPYS\_SourceDocumentLibrary with “Text” type, set the default
     value to **MSCOPYS\_Source**.
@@ -956,9 +945,7 @@ to run the test suites.
 5.  Create a column named **MSCOPYS\_WorkFlowEventField** in list
     MSCOPYS\_SourceDocumentLibrary with “WorkFlowEvent” type.
 
-6.  Upload a file MSCOPYS\_SourceFile.txt use a form of ANSI with the
->>>>>>> refs/remotes/origin/master
-    content **MSCOPYS\_SourceFile** to MSCOPYS\_SourceDocumentLibrary
+6.  Upload a file MSCOPYS\_SourceFile.txt use a form of ANSI with the content **MSCOPYS\_SourceFile** to MSCOPYS\_SourceDocumentLibrary
     under MSCOPYS\_SiteCollection.
 
 Configuring the test suite client
