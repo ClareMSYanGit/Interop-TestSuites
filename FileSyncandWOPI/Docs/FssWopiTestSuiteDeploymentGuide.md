@@ -140,7 +140,7 @@ downloaded the test suites, perform the following steps to successfully configur
 												   
 1.  Click **Unblock** and then click **OK**.         
   
-	![alt tag](./Docs/Doc-Images/FssWopi_Deploy2.png)	  
+	![alt tag](./Doc-Images/FssWopi_Deploy2.png)	  
 												   
 Using test suite directories
 ============================================================================================================================================================================================================================
