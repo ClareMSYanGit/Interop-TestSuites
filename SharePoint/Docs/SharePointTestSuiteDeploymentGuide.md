@@ -622,7 +622,11 @@ The MS-WWSP test suite supports only the following versions of SharePoint:
 
 #### MS-AUTHWS 
 
+<<<<<<< HEAD
 1.  Web Applications named
+=======
+1.  Create three web Applications named
+>>>>>>> refs/remotes/origin/master
     **MSAUTHWS\_FormsWebAPP**, **MSAUTHWS\_NoneWebAPP**, and
     **MSAUTHWS\_PassportWebAPP** with authentication mode set to Forms,
     None, and Passport respectively.
@@ -930,12 +934,17 @@ to run the test suites.
 
 1.  Create a site collection named **MSCOPYS\_SiteCollection**.
 
+<<<<<<< HEAD
 2.  Create a document library *MSCOPYS\_SourceDocumentLibrary*
+=======
+2.  Create a document library **MSCOPYS\_SourceDocumentLibrary**
+>>>>>>> refs/remotes/origin/master
     on MSCOPYS\_SiteCollection.
 
 3.  Create subsites named **MSCOPYS\_SubSiteMeetingWorkspace**
     in MSCOPYS\_SiteCollection.
 
+<<<<<<< HEAD
 For Microsoft SharePoint Server, use the *Basic Meeting Workspace* site template.
 
 1.  Create column named **MSCOPYS\_TestReadOnlyField** in list
@@ -946,6 +955,18 @@ For Microsoft SharePoint Server, use the *Basic Meeting Workspace* site template
     MSCOPYS\_SourceDocumentLibrary with “WorkFlowEvent” type.
 
 3.  Upload a file MSCOPYS\_SourceFile.txt use a form of ANSI with the
+=======
+	For Microsoft SharePoint Server, use the **Basic Meeting Workspace** site template.
+
+4.  Create column named **MSCOPYS\_TestReadOnlyField** in list
+    MSCOPYS\_SourceDocumentLibrary with “Text” type, set the default
+    value to **MSCOPYS\_Source**.
+
+5.  Create a column named **MSCOPYS\_WorkFlowEventField** in list
+    MSCOPYS\_SourceDocumentLibrary with “WorkFlowEvent” type.
+
+6.  Upload a file MSCOPYS\_SourceFile.txt use a form of ANSI with the
+>>>>>>> refs/remotes/origin/master
     content **MSCOPYS\_SourceFile** to MSCOPYS\_SourceDocumentLibrary
     under MSCOPYS\_SiteCollection.
 
