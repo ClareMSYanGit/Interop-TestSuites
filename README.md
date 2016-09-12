@@ -41,7 +41,7 @@ components.
 
 **Figure 1: The high-level design of a test suite**
 
-![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/Doc-Images/Design.png)
+![alt tag](./Doc-Images/Design.png)
 
 -   **Test case:** A test case is a group of programs and scripts that
     validates how your implementation conform to the
@@ -105,7 +105,7 @@ the following:
 
 **Figure 2: Interop test suite folder structure and its content**
 
-![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/Doc-Images/FolderStructure.png)
+![alt tag](./Doc-Images/FolderStructure.png)
 
 ### Test environment for the test suites
 
@@ -131,7 +131,7 @@ configuring and running test suites, and viewing the results.
 
 **Figure 3: The process of using a test suite**
 
-![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/Doc-Images/Workflow.png)
+![alt tag](./Doc-Images/Workflow.png)
 
 #### Configure the test suites
 
