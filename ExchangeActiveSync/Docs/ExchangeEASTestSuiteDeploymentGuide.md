@@ -87,7 +87,7 @@ Exchange Server on a domain controller (DC) is not recommended.
 The following diagram is an example of what a typical Exchange test suite environment may look like. This example uses an IPv4, but IPv6 is also supported by the test suites.
 
 **Note** When AD DC and SUT are on the same machine, test cases for MS-ASRM will fail.
-![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeActiveSync/Docs/Doc-Images/EAS_RequiredSUTroles.png)
+![alt tag](./Docs/Doc-Images/EAS_RequiredSUTroles.png)
 
 ### Test suite client
 
@@ -137,7 +137,7 @@ PowerShell scripts and the MS\_OXWSDLGM\_ServerAdapter.dll file.
                                                              
   ---------------------------------------------------------- --
  1.  Click **Unblock,** and then click **OK**.              
- ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeActiveSync/Docs/Doc-Images/EAS_Deploy2.png)                                                                                                                         
+ ![alt tag](./Docs/Doc-Images/EAS_Deploy2.png)                                                                                                                         
 
 To unblock MS\_OXWSDLGM\_ServerAdapter.dll, do the following:
 
@@ -146,11 +146,11 @@ To unblock MS\_OXWSDLGM\_ServerAdapter.dll, do the following:
   ------------------------------------------------------------------------------------------
 1.  Right click **MS\_OXWSDLGM\_ServerAdapter.dll,** and then click **Properties**.   
    
-   ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeActiveSync/Docs/Doc-Images/EAS_Deploy3.png)                                                                                        
+   ![alt tag](./Doc-Images/EAS_Deploy3.png)                                                                                        
                                                                                           
   --------------------------------------------------------------------------------------- --
 1.  Click **Unblock,** and then click **OK**.                                           
-      ![alt tag](https://github.com/ClareMSYanGit/Interop-TestSuites/blob/EASDeployGuide/ExchangeActiveSync/Docs/Doc-Images/EAS_Deploy4.png)                                                                                       
+      ![alt tag](./Docs/Doc-Images/EAS_Deploy4.png)                                                                                       
                                                                                           
 
 Using test suite directories
