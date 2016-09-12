@@ -117,7 +117,7 @@ environment for Exchange and SharePoint Test Suites**
  
 Machine name | SharePoint test suite environment | Exchange test suite environment 
 :--- | :--- | :---
-SUT | Microsoft SharePoint Sever 2013/2010/2007  | Microsoft Exchange Server 2015/2013/2010/2007
+SUT | Microsoft SharePoint Sever 2013/2010/2007  | Microsoft Exchange Server 2016/2013/2010/2007
 Client |  Microsoft Visual Studio 2013 | Microsoft Visual Studio 2013 Ultimate
        |  [Protocol Test Framework](https://github.com/microsoft/protocoltestframework)  | [Protocol Test Framework](https://github.com/microsoft/protocoltestframework)
                                                                                                                                                               Optional | Microsoft Network Monitor and Parsers or Message Analyzer   | Microsoft Network Monitor and Parsers or Message Analyzer																																					
