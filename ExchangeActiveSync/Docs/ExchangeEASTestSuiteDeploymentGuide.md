@@ -685,23 +685,22 @@ Studio.
 A Visual Studio solution file
 **MS-XXXX.sln** is provided in each test suite folder.
 
-  1.  Select the test suite you would like to run. Let’s take MS-ASDOC as an example here, so browse to the **Source\\MS-ASDOC** directory.
+1.  Select the test suite you would like to run. Let’s take MS-ASDOC as an example here, so browse to the **Source\\MS-ASDOC** directory.
 
 
-  2.  Open **MS-ASDOC.sln** in Visual Studio.
-
-	![alt tag](./Doc-Images/EAS_RunningTS5.png)
-
-
-  3.  In the **Solution Explorer** pane, right-click **Solution ‘MS-ASDOC’**, and then click **Rebuild Solution**.
-  ![alt tag](./Doc-Images/EAS_RunningTS6.png)
+2.  Open **MS-ASDOC.sln** in Visual Studio.
+![alt tag](./Doc-Images/EAS_RunningTS5.png)
 
 
-  4.  Open Test Explorer. On the ribbon, click **TEST**, then click **Windows**, and finally click **Test Explorer**.
-  ![alt tag](./Doc-Images/EAS_RunningTS7.png)
+3.  In the **Solution Explorer** pane, right-click **Solution ‘MS-ASDOC’**, and then click **Rebuild Solution**.
+![alt tag](./Doc-Images/EAS_RunningTS6.png)
 
-  5.  Select the test case to run. Right-click and then select **Run Selected Tests**.
-	![alt tag](./Doc-Images/EAS_RunningTS8.png)
+
+4.  Open Test Explorer. On the ribbon, click **TEST**, then click **Windows**, and finally click **Test Explorer**.
+![alt tag](./Doc-Images/EAS_RunningTS7.png)
+
+5.  Select the test case to run. Right-click and then select **Run Selected Tests**.
+![alt tag](./Doc-Images/EAS_RunningTS8.png)
 
 
 
