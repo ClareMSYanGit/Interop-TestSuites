@@ -641,8 +641,7 @@ A Visual Studio solution file
 
 
   5.  Select the test case to run. Right-click the test case and then select **Run Selected Tests**.
-
-    ![alt tag](./Doc-Images/FssWopi_RunningTS8.png)
+  ![alt tag](./Doc-Images/FssWopi_RunningTS8.png)
 
 
 Batch scripts
