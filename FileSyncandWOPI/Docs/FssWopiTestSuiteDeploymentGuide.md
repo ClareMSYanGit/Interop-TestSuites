@@ -628,6 +628,7 @@ A Visual Studio solution file
 
 
   2.  Open **MS-FSSHTTP-FSSHTTPB.sln** in Visual Studio.
+
   ![alt tag](./Doc-Images/FssWopi_RunningTS5.png)
 
 
