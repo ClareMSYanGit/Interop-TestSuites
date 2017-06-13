@@ -665,14 +665,14 @@ A Microsoft Visual Studio solution file
 **Source** folder. You can run a single or multiple test cases in Visual
 Studio.
 
-  1.  Open **ExchangeServerEASProtocolTestSuites.sln** in Visual Studio                                                                         
+1.  Open **ExchangeServerEASProtocolTestSuites.sln** in Visual Studio                                                                         
 ![alt tag](./Doc-Images/EAS_RunningTS1.png)                                                                                                                                          
 
-  2.  In the **Solution Explorer** pane, right-click **Solution ‘ExchangeServerEASProtocolTestSuites’**, and then click **Rebuild Solution**.   
+2.  In the **Solution Explorer** pane, right-click **Solution ‘ExchangeServerEASProtocolTestSuites’**, and then click **Rebuild Solution**.   
 
 ![alt tag](./Doc-Images/EAS_RunningTS2.png)                                                                                                                                         
 
-  3.  Open **Test Explorer**. On the ribbon, click **TEST** then click **Windows**, and finally click **Test Explorer**.                        
+3.  Open **Test Explorer**. On the ribbon, click **TEST** then click **Windows**, and finally click **Test Explorer**.                        
 
 ![alt tag](./Doc-Images/EAS_RunningTS3.png)                                                                                                                                         
 
@@ -694,10 +694,12 @@ A Visual Studio solution file
 
 
 3.  In the **Solution Explorer** pane, right-click **Solution ‘MS-ASDOC’**, and then click **Rebuild Solution**.
+
 ![alt tag](./Doc-Images/EAS_RunningTS6.png)
 
 
 4.  Open Test Explorer. On the ribbon, click **TEST**, then click **Windows**, and finally click **Test Explorer**.
+
 ![alt tag](./Doc-Images/EAS_RunningTS7.png)
 
 5.  Select the test case to run. Right-click and then select **Run Selected Tests**.
