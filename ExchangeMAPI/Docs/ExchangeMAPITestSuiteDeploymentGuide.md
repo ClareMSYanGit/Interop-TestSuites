@@ -652,19 +652,19 @@ A Microsoft Visual Studio solution file
 
 1.  Select the test suite you would like to run. Let’s take MS-OXCROPS as an example here, so browse to the **Source\\MS-OXCROPS** directory.
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------  
+
 2.  Open **MS-OXCROPS.sln** in Microsoft Visual Studio.
 
 ![alt tag](./Doc-Images/ExMAPI_Running5.png)
-   ---------------------------------------------------------------------------------------------------------------------------------------- --
+
 
 3.  In the **Solution Explorer** pane, right-click **Solution ‘MS-OXCROPS’**, and then click **Rebuild Solution**.
 ![alt tag](./Doc-Images/ExMAPI_Running6.png)
-   ---------------------------------------------------------------------------------------------------------------------------------------- --
+
 
 4.  Open **Test Explorer**. Select **TEST** and click **Windows**, then select **Test Explorer**.
 ![alt tag](./Doc-Images/ExMAPI_Running7.png)
-   ---------------------------------------------------------------------------------------------------------------------------------------- --
+  
 
 5.  Select the test case to run, right-click and then select **Run Selected Tests**.
 ![alt tag](./Doc-Images/ExMAPI_Running8.png)
