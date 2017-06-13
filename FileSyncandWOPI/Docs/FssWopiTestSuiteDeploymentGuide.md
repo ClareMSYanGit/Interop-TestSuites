@@ -606,7 +606,7 @@ A Visual Studio solution file
 
   1.  Open **SharePointFileSyncAndWOPIProtocolTestSuites.sln** in Visual Studio.                                                                            
 
-       ![alt tag](./Doc-Images/FssWopi_RunningTS1.png)                                                                                                                                                   
+![alt tag](./Doc-Images/FssWopi_RunningTS1.png)                                                                                                                                  
 
   2.  In the **Solution Explorer** pane, right-click **Solution** ‘**SharePointFileSyncAndWOPIProtocolTestSuites**’, and then click **Rebuild Solution**.                                                                                                                           
 
@@ -618,7 +618,7 @@ A Visual Studio solution file
    ![alt tag](./Doc-Images/FssWopi_RunningTS3.png)                                                                                                                                                                                                                                                                                                              
   4.  Select the test case to run, right-click the test case and then select **Run Selected Tests**.                                                        
 
-      ![alt tag](./Doc-Images/FssWopi_RunningTS4.png)                                                                                                                                                  
+  ![alt tag](./Doc-Images/FssWopi_RunningTS4.png)                                                                                                                                                  
 
 A Visual Studio solution file
 **MS-XXXX.sln** is provided in each test suite folder.
@@ -628,18 +628,15 @@ A Visual Studio solution file
 
 
   2.  Open **MS-FSSHTTP-FSSHTTPB.sln** in Visual Studio.
-
-    ![alt tag](./Doc-Images/FssWopi_RunningTS5.png)
+  ![alt tag](./Doc-Images/FssWopi_RunningTS5.png)
 
 
   3.  In the **Solution Explorer** pane, right-click **Solution** ‘**MS-FSSHTTP-FSSHTTPB**’, and then click **Rebuild Solution**.
-
-    ![alt tag](./Doc-Images/FssWopi_RunningTS6.png)
+  ![alt tag](./Doc-Images/FssWopi_RunningTS6.png)
 
 
   4.  Open **Test Explorer**. On the ribbon, click **TEST**, then click **Windows**, and finally click **Test Explorer**.
-
-    ![alt tag](./Doc-Images/FssWopi_RunningTS7.png)
+  ![alt tag](./Doc-Images/FssWopi_RunningTS7.png)
 
 
   5.  Select the test case to run. Right-click the test case and then select **Run Selected Tests**.
