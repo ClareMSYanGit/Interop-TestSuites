@@ -452,50 +452,49 @@ A Microsoft Visual Studio solution file
 Studio.
 
 
-  1.  Open **ExchangeServerEWSProtocolTestSuites.sln** in Visual Studio.                                                                       
-      ![alt tag](./Doc-Images/EWS_RunningTS1.png)                                                                                                                                         
+1.  Open **ExchangeServerEWSProtocolTestSuites.sln** in Visual Studio.                                                                       
+![alt tag](./Doc-Images/EWS_RunningTS1.png)                                                                                                                                         
 
   -------------------------------------------------------------------------------------------------------------------------------------------- --
-  1.  In the **Solution Explorer** pane, right-click **Solution ‘ExchangeServerEWSProtocolTestSuites’** and then click **Rebuild Solution**.   
-       ![alt tag](./Doc-Images/EWS_RunningTS2.png)                                                                                                                                         
+2.  In the **Solution Explorer** pane, right-click **Solution ‘ExchangeServerEWSProtocolTestSuites’** and then click **Rebuild Solution**.   
+![alt tag](./Doc-Images/EWS_RunningTS2.png)                                                                                                                                         
    -------------------------------------------------------------------------------------------------------------------------------------------- --                                                                                                                                            
 
-  1.  Open **Test Explorer**. On the ribbon click **TEST**, then click **Windows**, and finally click **Test Explorer**.                       
-       ![alt tag](./Doc-Images/EWS_RunningTS3.png)                                                                                                                                      
+3.  Open **Test Explorer**. On the ribbon click **TEST**, then click **Windows**, and finally click **Test Explorer**.                       
+![alt tag](./Doc-Images/EWS_RunningTS3.png)                                                                                                                                      
    -------------------------------------------------------------------------------------------------------------------------------------------- --                                                                                                                                            
 
-  1.  Select the test case to run. Right-click and then select **Run Selected Tests**.
-	   ![alt tag](./Doc-Images/EWS_RunningTS4.png)
+4.  Select the test case to run. Right-click and then select **Run Selected Tests**.
+![alt tag](./Doc-Images/EWS_RunningTS4.png)
   -----------------------------------------------------------------------------------------------------------------------------------------------
 
 A Visual Studio solution file
 **MS-XXXX.sln** is provided in each test suite folder.
 
-
-  1.  Select the test suite you would like to run. Let’s take MS-OXWSCORE as an example here, so browse to the **Source\\MS-OXWSCORE** directory.
+1.  Select the test suite you would like to run. Let’s take MS-OXWSCORE as an example here, so browse to the **Source\\MS-OXWSCORE** directory.
 
   ------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------
-  1.  Open **MS-OXWSCORE.sln** in Microsoft Visual Studio.
+2.  Open **MS-OXWSCORE.sln** in Microsoft Visual Studio.
 
-	  ![alt tag](./Doc-Images/EWS_RunningTS5.png)
-
-  -------------------------------------------------------------------------------------------------------------------------------------------- --
-
-  1.  In the **Solution Explorer** pane, right-click **Solution ‘MS-OXWSCORE’**, and then click **Rebuild Solution**.
-
-  ![alt tag](./Doc-Images/EWS_RunningTS6.png)
+![alt tag](./Doc-Images/EWS_RunningTS5.png)
 
   -------------------------------------------------------------------------------------------------------------------------------------------- --
 
-  1.  Open **Test Explorer**. On the ribbon click **TEST**, then click **Windows**, and finally click **Test Explorer**.
+3.  In the **Solution Explorer** pane, right-click **Solution ‘MS-OXWSCORE’**, and then click **Rebuild Solution**.
 
-  ![alt tag](./Doc-Images/EWS_RunningTS7.png)
+![alt tag](./Doc-Images/EWS_RunningTS6.png)
 
   -------------------------------------------------------------------------------------------------------------------------------------------- --
 
-  1.  Select the test case to run. Right-click and then select **Run Selected Tests**.
+4.  Open **Test Explorer**. On the ribbon click **TEST**, then click **Windows**, and finally click **Test Explorer**.
 
-  ![alt tag](./Doc-Images/EWS_RunningTS8.png)
+![alt tag](./Doc-Images/EWS_RunningTS7.png)
+
+  -------------------------------------------------------------------------------------------------------------------------------------------- --
+
+5.  Select the test case to run. Right-click and then select **Run Selected Tests**.
+
+![alt tag](./Doc-Images/EWS_RunningTS8.png)
 
 
 Batch scripts
