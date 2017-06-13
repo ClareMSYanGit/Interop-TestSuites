@@ -689,6 +689,7 @@ A Visual Studio solution file
 
 
 2.  Open **MS-ASDOC.sln** in Visual Studio.
+
 ![alt tag](./Doc-Images/EAS_RunningTS5.png)
 
 
@@ -700,6 +701,7 @@ A Visual Studio solution file
 ![alt tag](./Doc-Images/EAS_RunningTS7.png)
 
 5.  Select the test case to run. Right-click and then select **Run Selected Tests**.
+
 ![alt tag](./Doc-Images/EAS_RunningTS8.png)
 
 
