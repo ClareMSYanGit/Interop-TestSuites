@@ -607,7 +607,7 @@ A Visual Studio solution file
   1.  Open **SharePointFileSyncAndWOPIProtocolTestSuites.sln** in Visual Studio.                                                                            
 
        ![alt tag](./Doc-Images/FssWopi_RunningTS1.png)                                                                                                                                                   
-  --------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------
+  
   1.  In the **Solution Explorer** pane, right-click **Solution** ‘**SharePointFileSyncAndWOPIProtocolTestSuites**’, and then click **Rebuild Solution**.                                                                                                                           
 
   ![alt tag](./Doc-Images/FssWopi_RunningTS2.png)
