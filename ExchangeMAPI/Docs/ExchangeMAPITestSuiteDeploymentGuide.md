@@ -629,44 +629,42 @@ A Microsoft Visual Studio solution file
 **ExchangeMAPIProtocolTestSuites.sln** is provided in the **Source**
 folder. You can run a single or multiple test cases in Visual Studio.
 
-  1.  Open **ExchangeMAPIProtocolTestSuites.sln** in Microsoft Visual Studio.                                                              
-      ![alt tag](./Doc-Images/ExMAPI_Running1.png)                                                                                                                                     
+1.  Open **ExchangeMAPIProtocolTestSuites.sln** in Microsoft Visual Studio.                                                              
+  ![alt tag](./Doc-Images/ExMAPI_Running1.png)                                                                                                                                     
 
-  ---------------------------------------------------------------------------------------------------------------------------------------- --
-  1.  In the **Solution Explorer** pane, right-click **Solution ‘ExchangeMAPIProtocolTestSuites’**, and then click **Rebuild Solution**.   
-      ![alt tag](./Doc-Images/ExMAPI_Running2.png)                                                                                                                                     
-  ---------------------------------------------------------------------------------------------------------------------------------------- --                                                                                                                                          
 
-  1.  Open **Test Explorer**. Select **TEST** and click **Windows**, then select **Test Explorer**.                                        
-      ![alt tag](./Doc-Images/ExMAPI_Running3.png)                                                                                                                                      
-  ---------------------------------------------------------------------------------------------------------------------------------------- --                                                                                                                                          
+2.  In the **Solution Explorer** pane, right-click **Solution ‘ExchangeMAPIProtocolTestSuites’**, and then click **Rebuild Solution**.   
+![alt tag](./Doc-Images/ExMAPI_Running2.png)                                                                                                                                     
 
-  1.  Select the test case to run, right-click and then select **Run Selected Tests**.                                                     
-      ![alt tag](./Doc-Images/ExMAPI_Running4.png)                                                                                                                                     
+3.  Open **Test Explorer**. Select **TEST** and click **Windows**, then select **Test Explorer**.                                        
+![alt tag](./Doc-Images/ExMAPI_Running3.png)                                                                                                                                      
+
+4.  Select the test case to run, right-click and then select **Run Selected Tests**.                                                     
+![alt tag](./Doc-Images/ExMAPI_Running4.png)                                                                                                                                     
 
   -------------------------------------------------------------------------------------------------------------------------------------------
 
 A Microsoft Visual Studio solution file
 **MS-XXXX.sln** is provided in each test suite folder.
 
-  1.  Select the test suite you would like to run. Let’s take MS-OXCROPS as an example here, so browse to the **Source\\MS-OXCROPS** directory.
+1.  Select the test suite you would like to run. Let’s take MS-OXCROPS as an example here, so browse to the **Source\\MS-OXCROPS** directory.
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------
-  1.  Open **MS-OXCROPS.sln** in Microsoft Visual Studio.
+  ----------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------  
+2.  Open **MS-OXCROPS.sln** in Microsoft Visual Studio.
 
-	  ![alt tag](./Doc-Images/ExMAPI_Running5.png)
+![alt tag](./Doc-Images/ExMAPI_Running5.png)
    ---------------------------------------------------------------------------------------------------------------------------------------- --
 
-  1.  In the **Solution Explorer** pane, right-click **Solution ‘MS-OXCROPS’**, and then click **Rebuild Solution**.
-      ![alt tag](./Doc-Images/ExMAPI_Running6.png)
+3.  In the **Solution Explorer** pane, right-click **Solution ‘MS-OXCROPS’**, and then click **Rebuild Solution**.
+![alt tag](./Doc-Images/ExMAPI_Running6.png)
    ---------------------------------------------------------------------------------------------------------------------------------------- --
 
-  1.  Open **Test Explorer**. Select **TEST** and click **Windows**, then select **Test Explorer**.
-      ![alt tag](./Doc-Images/ExMAPI_Running7.png)
+4.  Open **Test Explorer**. Select **TEST** and click **Windows**, then select **Test Explorer**.
+![alt tag](./Doc-Images/ExMAPI_Running7.png)
    ---------------------------------------------------------------------------------------------------------------------------------------- --
 
-  1.  Select the test case to run, right-click and then select **Run Selected Tests**.
-      ![alt tag](./Doc-Images/ExMAPI_Running8.png)
+5.  Select the test case to run, right-click and then select **Run Selected Tests**.
+![alt tag](./Doc-Images/ExMAPI_Running8.png)
 
 
 Batch scripts
