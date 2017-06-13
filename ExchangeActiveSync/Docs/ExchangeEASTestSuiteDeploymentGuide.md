@@ -132,25 +132,25 @@ PowerShell scripts and the MS\_OXWSDLGM\_ServerAdapter.dll file.
 
  1.  Right-click xxxx.ps1, and then click **Properties**.
 
-   ![alt tag](./Doc-Images/EAS_Deploy1.png)
+![alt tag](./Doc-Images/EAS_Deploy1.png)
 
 
-  ---------------------------------------------------------- --
- 1.  Click **Unblock,** and then click **OK**.              
-   ![alt tag](./Doc-Images/EAS_Deploy2.png)                                                                                                                          
+
+ 2.  Click **Unblock,** and then click **OK**.              
+![alt tag](./Doc-Images/EAS_Deploy2.png)                                                                                                                          
 
 To unblock MS\_OXWSDLGM\_ServerAdapter.dll, do the following:
 
 1.  Browse to **MS\_OXWSDLGM\_ServerAdapter.dll** in **\\Setup\\SUT**.
 
-  ------------------------------------------------------------------------------------------
-1.  Right click **MS\_OXWSDLGM\_ServerAdapter.dll,** and then click **Properties**.   
 
-   ![alt tag](./Doc-Images/EAS_Deploy3.png)                                                                                        
+2.  Right click **MS\_OXWSDLGM\_ServerAdapter.dll,** and then click **Properties**.   
 
-  --------------------------------------------------------------------------------------- --
-1.  Click **Unblock,** and then click **OK**.                                           
-   ![alt tag](./Doc-Images/EAS_Deploy4.png)                                                                                       
+![alt tag](./Doc-Images/EAS_Deploy3.png)                                                                                        
+
+
+3.  Click **Unblock,** and then click **OK**.                                           
+![alt tag](./Doc-Images/EAS_Deploy4.png)                                                                                       
 
 
 Using test suite directories
