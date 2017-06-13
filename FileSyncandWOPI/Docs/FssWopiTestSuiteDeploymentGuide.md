@@ -607,19 +607,19 @@ A Visual Studio solution file
   1.  Open **SharePointFileSyncAndWOPIProtocolTestSuites.sln** in Visual Studio.                                                                            
 
        ![alt tag](./Doc-Images/FssWopi_RunningTS1.png)                                                                                                                                                   
-  
-  1.  In the **Solution Explorer** pane, right-click **Solution** ‘**SharePointFileSyncAndWOPIProtocolTestSuites**’, and then click **Rebuild Solution**.                                                                                                                           
+
+  2.  In the **Solution Explorer** pane, right-click **Solution** ‘**SharePointFileSyncAndWOPIProtocolTestSuites**’, and then click **Rebuild Solution**.                                                                                                                           
 
   ![alt tag](./Doc-Images/FssWopi_RunningTS2.png)
 
   --------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------  
 
-  1.  Open **Test Explorer**. On the ribbon, click **TEST,** then click **Windows**, and finally click **Test Explorer**.                                   
+  3.  Open **Test Explorer**. On the ribbon, click **TEST,** then click **Windows**, and finally click **Test Explorer**.                                   
 
    ![alt tag](./Doc-Images/FssWopi_RunningTS3.png)                                                                                                                                                        
     --------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------                                                                                                                                                        
 
-  1.  Select the test case to run, right-click the test case and then select **Run Selected Tests**.                                                        
+  4.  Select the test case to run, right-click the test case and then select **Run Selected Tests**.                                                        
 
       ![alt tag](./Doc-Images/FssWopi_RunningTS4.png)                                                                                                                                                  
     ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -631,25 +631,25 @@ A Visual Studio solution file
   1.  Select the test suite you would like to run. Let’s take MS-FSSHTTP-FSSHTTPB as an example here, so browse to the **Source\\MS-FSSHTTP-FSSHTTPB** directory.
 
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------
-  1.  Open **MS-FSSHTTP-FSSHTTPB.sln** in Visual Studio.
+  2.  Open **MS-FSSHTTP-FSSHTTPB.sln** in Visual Studio.
 
     ![alt tag](./Doc-Images/FssWopi_RunningTS5.png)
 
 	----------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------
 
-  1.  In the **Solution Explorer** pane, right-click **Solution** ‘**MS-FSSHTTP-FSSHTTPB**’, and then click **Rebuild Solution**.
+  3.  In the **Solution Explorer** pane, right-click **Solution** ‘**MS-FSSHTTP-FSSHTTPB**’, and then click **Rebuild Solution**.
 
     ![alt tag](./Doc-Images/FssWopi_RunningTS6.png)
 
 	----------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------
 
-  1.  Open **Test Explorer**. On the ribbon, click **TEST**, then click **Windows**, and finally click **Test Explorer**.
+  4.  Open **Test Explorer**. On the ribbon, click **TEST**, then click **Windows**, and finally click **Test Explorer**.
 
     ![alt tag](./Doc-Images/FssWopi_RunningTS7.png)
 
 	----------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------
 
-  1.  Select the test case to run. Right-click the test case and then select **Run Selected Tests**.
+  5.  Select the test case to run. Right-click the test case and then select **Run Selected Tests**.
 
     ![alt tag](./Doc-Images/FssWopi_RunningTS8.png)
 
