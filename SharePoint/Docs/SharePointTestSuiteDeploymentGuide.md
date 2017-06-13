@@ -1138,23 +1138,22 @@ folder. You can run a single or multiple test cases in Visual Studio.
 
 ![alt tag](./Doc-Images/SP_RunningTS1.png)
 
-  -------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------
+
 2.  In the **Solution Explorer** pane, right-click **Solution ‘SharePointServerProtocolTestSuites’**, and then click **Rebuild Solution**.                                                                                                   
 
 ![alt tag](./Doc-Images/SP_RunningTS2.png)
 
-	-------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------
 
 3.  Open **Test Explorer**. On the ribbon, click **TEST** , then click **Windows**, and finally click **Test Explorer**.                   
 
 ![alt tag](./Doc-Images/SP_RunningTS3.png)
 
-	-------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------------------------
+
 
 4.  Select the test case to run. Right-click the test case and then select **Run Selected Tests**.                                                                                                                                                      
 
 ![alt tag](./Doc-Images/SP_RunningTS4.png)
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 A Visual Studio solution file
 **MS-XXXX.sln** is provided in each test suite folder.
@@ -1162,23 +1161,21 @@ A Visual Studio solution file
 
 1.  Select the test suite you would like to run. Let’s take MS-DWSS as an example here, so browse to the **Source\\MS-DWSS\\** directory.
 
-  ------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------
+
 2.  Open **MS-DWSS.sln** in Visual Studio.
 
 ![alt tag](./Doc-Images/SP_RunningTS5.png)
-   ------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------
+
 
 3.  In the Solution Explorer pane, right-click **Solution ‘MS-DWSS**’, and then click **Rebuild Solution**.
 
 ![alt tag](./Doc-Images/SP_RunningTS6.png)
 
-   ------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------
 
 4.  Open Test Explorer. On the ribbon, click **TEST** , then click **Windows**, and finally click **Test Explorer**
 
 ![alt tag](./Doc-Images/SP_RunningTS7.png)
 
-   ------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------------------
 
 5.  Select the test case to run. Right-click the test case and then select **Run Selected Tests**.
 
