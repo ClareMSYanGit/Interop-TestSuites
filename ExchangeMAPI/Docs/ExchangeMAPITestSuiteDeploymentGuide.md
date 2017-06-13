@@ -659,14 +659,17 @@ A Microsoft Visual Studio solution file
 
 
 3.  In the **Solution Explorer** pane, right-click **Solution ‘MS-OXCROPS’**, and then click **Rebuild Solution**.
+
 ![alt tag](./Doc-Images/ExMAPI_Running6.png)
 
 
 4.  Open **Test Explorer**. Select **TEST** and click **Windows**, then select **Test Explorer**.
+
 ![alt tag](./Doc-Images/ExMAPI_Running7.png)
-  
+
 
 5.  Select the test case to run, right-click and then select **Run Selected Tests**.
+
 ![alt tag](./Doc-Images/ExMAPI_Running8.png)
 
 
