@@ -230,8 +230,8 @@ configuration script will be required.
 |                |  Public Folder Database  | PublicFolderDatabase     | Public Folder Database created for the mailbox of the organization configuration of Exchange 2010 and for the server configuration of Exchange 2007.|  
 | **MS-OXWSMSG**|  Mailbox  |  MSOXWSMSG\_User01  |  Mailbox type user|  
 |               |  Mailbox  |  MSOXWSMSG\_User02  |  Mailbox type user|  
-              |  Mailbox  |  MSOXWSMSG\_User03  |  Mailbox type user|  
-              |  Mailbox  |  MSOXWSMSG\_Room01  |  Mailbox type room|  
+|               |  Mailbox  |  MSOXWSMSG\_User03  |  Mailbox type user|  
+|               |  Mailbox  |  MSOXWSMSG\_Room01  |  Mailbox type room|  
 |  **MS-OXWSMTGS** |  Mailbox|  MSOXWSMTGS\_User01 |  Mailbox type user|  
 |                |  Mailbox  |  MSOXWSMTGS\_User02 |  Mailbox type user|  
 |                |  Mailbox  |  MSOXWSMTGS\_Room01 |  Mailbox type room|  
