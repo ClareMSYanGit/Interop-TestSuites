@@ -286,72 +286,72 @@ SharePointTestSuite.config is required.
 |:------------ | :------------- | :-------------|
 |**All**       |      --        |                --|
 |**MS-LISTSWS**|      Site collection     |      MSLISTSWS\_SiteCollection|
-              |      Document library    |     MSLISTSWS\_DocumentLibrary|
-**MS-VERSS**  |      Site collection     |     MSVERSS\_SiteCollection|
-**MS-SITESS** |      Site collection     |     MSSITESS\_SiteCollection|
-              |      Site                |     MSSITESS\_Site|
-              |      Site                |     MSSITESS\_NormalSubSite|
-              |      Site                |     MSSITESS\_SpecialSubSite|
-              |      Document library    |     MSSITESS\_DocumentLibrary|
-              |      Document library    |     MSSITESS\_SubSite\_DocumentLibrary|
-              |      Text document       |     MSSITESS\_TestData.txt|
-              |      ASPX file           |     MSSITESS\_CustomPage.aspx|
-**MS-DWSS**   |      Site collection     |     MSDWSS\_SiteCollection|
-              |      Site collection     |     MSDWSS\_SiteCollection\_DocumentWorkspace|
-              |      Site                |     MSDWSS\_Site|
-              |      Site                |     MSDWSS\_InheritPermissionSite|
-              |      Document library    |     MSDWSS\_DocumentLibrary|
-              |      Folder              |     MSDWSS\_TestFolder|
-              |      Text document       |     MSDWSS\_TestData.txt|
-              |      User                |     MSDWSS\_NoneRole|
-              |      User                |     MSDWSS\_ReaderRole|
-              |      User                |     MSDWSS\_GroupOwner|
-              |      Group               |     MSDWSS\_CustomGroup|
-**MS-MEETS**  |      Site collection     |     MSMEETS\_SiteCollection|
-              |      User                |     MSMEETS\_User|
-**MSWEBSS**   |      Site collection     |     MSWEBSS\_SiteCollection|
-              |      Document library    |     MSWEBSS\_DocumentLibrary|
-              |      Word document       |     MSWEBSS\_TestData.docx|
-              |      Site                |     MSWEBSS\_Site|
-**MS-WDVMODUU** |      Site collection   |     MSWDVMODUU\_SiteCollection|
-              |      Document library    |     MSWDVMODUU\_DocumentLibrary1|
-              |      Document library    |     MSWDVMODUU\_DocumentLibrary2|
-              |      Text document       |     MSWDVMODUU\_TestData1.txt|
-              |      Text document       |     MSWDVMODUU\_TestData2.txt|
-              |      Text document       |     MSWDVMODUU\_TestData3.txt|
-              |      Fake virus file     |     FakeVirusInfectedFile\_Get.txt|
-**MS-WWSP**   |      Site collection     |     MSWWSP\_SiteCollection|
-              |      Work Flow           |     MSWWSP\_Workflow|
-              |      Work Flow Task List |     Tasks|
-              |      Work flow History List |  MSWWSP\_WorkflowHistoryList|
-              |      Document library       |  MSWWSP\_DocumentLibrary|
-              |       Group                 |  MSWWSP\_UserGroup|
-              |      User                   |  MSWWSP\_User|
-**MS-OUTSPS** |      Site collection        |  MSOUTSPS\_SiteCollection|
-**MS-AUTHWS** |      Web Application        |  MSAUTHWS\_FormsWebAPP|
-              |      Web Application        |  MSAUTHWS\_NoneWebAPP|
-              |      Web Application        |  MSAUTHWS\_PassportWebAPP|
-              |      Web Application        |  MSAUTHWS\_WindowsAPP|
-**MS-SHDACCWS** |      Site collection      |  MSSHDACCWS\_SiteCollection|
-              |      Document library       |  MSSHDACCWS\_DocumentLibrary|
-              |      Text document          |  MSSHDACCWS\_LockedTestData.txt|
-              |      Text document          |  MSSHDACCWS\_CoStatusTestData.txt|
-              |      Text document          |  MSSHDACCWS\_TestData.txt|
-**MS-CPSWS**  |      User                   |  MSCPSWS\_User|
-**MS-WSSREST**|      Site collection        |  MSWSSREST\_SiteCollection|
-              |      Document library       |  MSWSSREST\_DocumentLibrary|
-              |      Calendar               |  MSWSSREST\_Calendar|
-              |      DiscussionBoard        |  MSWSSREST\_DiscussionBoard|
-              |      GenericList            |  MSWSSREST\_GenericList|
-              |      Survey                 |  MSWSSREST\_Survey|
-              |      WorkflowHistoryList    |  MSWSSREST\_WorkflowHistoryList|
-              |      Tasks                  |  MSWSSREST\_Tasks|
-              |      Work Flow              |  MSWSSREST\_Workflow|
-              |      ChoiceField            |  MSWSSREST\_ChoiceField|
-              |      MultiChoiceField       |  MSWSSREST\_MultiChoiceField|
-              |      ChoiceFieldValue       |  MSWSSREST\_SingleChoiceOption1, MSWSSREST\_SingleChoiceOption2|
-              |      MultiChoiceFieldValue  |  MSWSSREST\_MultiChoiceOption1, MSWSSREST\_MultiChoiceOption2|
-              |      LookupField            |  MSWSSREST\_LookupField|
+|              |      Document library    |     MSLISTSWS\_DocumentLibrary|
+|**MS-VERSS**  |      Site collection     |     MSVERSS\_SiteCollection|
+|**MS-SITESS** |      Site collection     |     MSSITESS\_SiteCollection|
+|              |      Site                |     MSSITESS\_Site|
+|               |      Site                |     MSSITESS\_NormalSubSite|
+|              |      Site                |     MSSITESS\_SpecialSubSite|
+|               |      Document library    |     MSSITESS\_DocumentLibrary|
+|              |      Document library    |     MSSITESS\_SubSite\_DocumentLibrary|
+|              |      Text document       |     MSSITESS\_TestData.txt|
+|              |      ASPX file           |     MSSITESS\_CustomPage.aspx|
+|**MS-DWSS**   |      Site collection     |     MSDWSS\_SiteCollection|
+|              |      Site collection     |     MSDWSS\_SiteCollection\_DocumentWorkspace|
+|              |      Site                |     MSDWSS\_Site|
+|              |      Site                |     MSDWSS\_InheritPermissionSite|
+|              |      Document library    |     MSDWSS\_DocumentLibrary|
+|              |      Folder              |     MSDWSS\_TestFolder|
+|              |      Text document       |     MSDWSS\_TestData.txt|
+|              |      User                |     MSDWSS\_NoneRole|
+|              |      User                |     MSDWSS\_ReaderRole|
+|              |      User                |     MSDWSS\_GroupOwner|
+|              |      Group               |     MSDWSS\_CustomGroup|
+|**MS-MEETS**  |      Site collection     |     MSMEETS\_SiteCollection|
+|              |      User                |     MSMEETS\_User|
+|**MSWEBSS**   |      Site collection     |     MSWEBSS\_SiteCollection|
+|              |      Document library    |     MSWEBSS\_DocumentLibrary|
+|              |      Word document       |     MSWEBSS\_TestData.docx|
+|              |      Site                |     MSWEBSS\_Site|
+|**MS-WDVMODUU** |      Site collection   |     MSWDVMODUU\_SiteCollection|
+|              |      Document library    |     MSWDVMODUU\_DocumentLibrary1|
+|              |      Document library    |     MSWDVMODUU\_DocumentLibrary2|
+|              |      Text document       |     MSWDVMODUU\_TestData1.txt|
+|              |      Text document       |     MSWDVMODUU\_TestData2.txt|
+|              |      Text document       |     MSWDVMODUU\_TestData3.txt|
+|              |      Fake virus file     |     FakeVirusInfectedFile\_Get.txt|
+|**MS-WWSP**   |      Site collection     |     MSWWSP\_SiteCollection|
+|              |      Work Flow           |     MSWWSP\_Workflow|
+|              |      Work Flow Task List |     Tasks|
+|              |      Work flow History List |  MSWWSP\_WorkflowHistoryList|
+|              |      Document library       |  MSWWSP\_DocumentLibrary|
+|              |       Group                 |  MSWWSP\_UserGroup|
+|              |      User                   |  MSWWSP\_User|
+|**MS-OUTSPS** |      Site collection        |  MSOUTSPS\_SiteCollection|
+|**MS-AUTHWS** |      Web Application        |  MSAUTHWS\_FormsWebAPP|
+|              |      Web Application        |  MSAUTHWS\_NoneWebAPP|
+|              |      Web Application        |  MSAUTHWS\_PassportWebAPP|
+|              |      Web Application        |  MSAUTHWS\_WindowsAPP|
+|**MS-SHDACCWS** |      Site collection      |  MSSHDACCWS\_SiteCollection|
+|              |      Document library       |  MSSHDACCWS\_DocumentLibrary|
+|              |      Text document          |  MSSHDACCWS\_LockedTestData.txt|
+|              |      Text document          |  MSSHDACCWS\_CoStatusTestData.txt|
+|              |      Text document          |  MSSHDACCWS\_TestData.txt|
+|**MS-CPSWS**  |      User                   |  MSCPSWS\_User|
+|**MS-WSSREST**|      Site collection        |  MSWSSREST\_SiteCollection|
+|              |      Document library       |  MSWSSREST\_DocumentLibrary|
+|              |      Calendar               |  MSWSSREST\_Calendar|
+|              |      DiscussionBoard        |  MSWSSREST\_DiscussionBoard|
+|              |      GenericList            |  MSWSSREST\_GenericList|
+|              |      Survey                 |  MSWSSREST\_Survey|
+|              |      WorkflowHistoryList    |  MSWSSREST\_WorkflowHistoryList|
+|              |      Tasks                  |  MSWSSREST\_Tasks|
+|              |      Work Flow              |  MSWSSREST\_Workflow|
+|              |      ChoiceField            |  MSWSSREST\_ChoiceField|
+|              |      MultiChoiceField       |  MSWSSREST\_MultiChoiceField|
+|              |      ChoiceFieldValue       |  MSWSSREST\_SingleChoiceOption1, MSWSSREST\_SingleChoiceOption2|
+|              |      MultiChoiceFieldValue  |  MSWSSREST\_MultiChoiceOption1, MSWSSREST\_MultiChoiceOption2|
+|              |      LookupField            |  MSWSSREST\_LookupField|
 |**MS-OFFICIALFILE** |  Site collection      |  MSOFFICIALFILE\_SiteCollection|
 |                  |  Site                   |  MSOFFICIALFILE\_RoutingRepository|
 |                  |  Site                   |  MSOFFICIALFILE\_NoRoutingRepository|
