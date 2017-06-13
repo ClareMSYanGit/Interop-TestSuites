@@ -634,12 +634,15 @@ folder. You can run a single or multiple test cases in Visual Studio.
 
 
 2.  In the **Solution Explorer** pane, right-click **Solution ‘ExchangeMAPIProtocolTestSuites’**, and then click **Rebuild Solution**.   
+
 ![alt tag](./Doc-Images/ExMAPI_Running2.png)                                                                                                                                     
 
 3.  Open **Test Explorer**. Select **TEST** and click **Windows**, then select **Test Explorer**.                                        
+
 ![alt tag](./Doc-Images/ExMAPI_Running3.png)                                                                                                                                      
 
 4.  Select the test case to run, right-click and then select **Run Selected Tests**.                                                     
+
 ![alt tag](./Doc-Images/ExMAPI_Running4.png)                                                                                                                                     
 
   -------------------------------------------------------------------------------------------------------------------------------------------
